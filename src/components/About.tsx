@@ -1,4 +1,5 @@
 import { KIND_LABEL, knowledge, sourceById } from "../data.ts";
+import { SITE } from "../site.ts";
 
 const KIND_TEXT = { ideal: "理想に近いほど良い", ...KIND_LABEL } as const;
 
@@ -108,7 +109,26 @@ export function About({ onBack }: { onBack: () => void }) {
       </p>
 
       <h2>プライバシー</h2>
-      <p>回答はブラウザの中だけで計算し、どこにも送信・保存しません。ページを閉じると消えます。</p>
+      <p>
+        回答はブラウザの中だけで計算し、どこにも送信・保存しません。ページを閉じると消えます。アクセス解析も入れていません。
+        「誤りを報告する」のリンクは GitHub に移動し、都市・指標・値・データ版だけを書き込みます。回答は含みません。
+      </p>
+
+      <h2>つくっている人</h2>
+      <p>
+        運営者 {SITE.operator} が、AI（Anthropic の
+        Claude）と一緒につくっています。データの取得と計算のプログラム、説明文は AI
+        と一緒に書き、何を採用するかは運営者が決めて確認しています。数値は AI
+        が書いたものではなく、公開統計からプログラムで計算したものです。
+      </p>
+      <p>
+        公式サイトは <a href={SITE.url}>{SITE.url}</a> だけです。コードとデータは <a href={SITE.repo}>GitHub</a>{" "}
+        で公開しています（コード MIT、データ ODbL 1.0）。
+      </p>
+      <p>
+        数値の誤り・不具合・ご意見は <a href={`${SITE.repo}/issues/new/choose`}>GitHub の Issue</a>{" "}
+        で受け付けています。根拠欄の「この数値の誤りを報告する」から開くと、どの数値かが自動で入ります。
+      </p>
       <div className="actions">
         <button type="button" className="primary" onClick={onBack}>
           戻る

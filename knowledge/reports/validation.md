@@ -1,10 +1,10 @@
 ---
 type: Validation Report
 title: スコアリングの検証（実データ）
-description: データ版 13ab01284afc・モデル 0.2.0 での分布・頑健性・偏りの検証結果。
+description: データ版 f4c37f5b03af・モデル 0.2.0 での分布・頑健性・偏りの検証結果。
 status: generated
 tags: [report, validation]
-data_version: 13ab01284afc
+data_version: f4c37f5b03af
 model_version: 0.2.0
 samples: 3000
 seed: 20261029
@@ -12,7 +12,7 @@ seed: 20261029
 
 # スコアリングの検証
 
-データ版 `13ab01284afc`、モデル `0.2.0`、86 都市 × 13 指標、設問 13。`pnpm validate` が生成する。手で編集しない。
+データ版 `f4c37f5b03af`、モデル `0.2.0`、86 都市 × 13 指標、設問 13。`pnpm validate` が生成する。手で編集しない。
 
 ## 1. スコア分布と到達可能性
 

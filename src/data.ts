@@ -43,3 +43,13 @@ export const KIND_LABEL = { higher_better: "多いほど良い", lower_better: "
 
 export const formatCoord = (lat: number, lon: number) =>
   `${Math.abs(lat).toFixed(2)}°${lat >= 0 ? "N" : "S"} ${Math.abs(lon).toFixed(2)}°${lon >= 0 ? "E" : "W"}`;
+
+/**
+ * Round a 0–max quantity without overstating the ends: 99.6 → "99", 0.3 → "1 未満", only exact values give max / 0.
+ */
+export function roundBounded(x: number, max = 100): string {
+  const r = Math.round(x);
+  if (r >= max && x < max) return String(max - 1);
+  if (r <= 0 && x > 0) return "1 未満";
+  return String(r);
+}

@@ -1,4 +1,4 @@
-import { knowledge } from "../data.ts";
+import { knowledge, roundBounded } from "../data.ts";
 
 interface Props {
   /** cityId -> total score (0–100). Omitted: plain dots. */
@@ -37,7 +37,7 @@ export function WorldPlot({ scores, pin, label }: Props) {
             r={r}
             style={s === undefined ? undefined : { opacity: 0.25 + (s / 100) * 0.75 }}
           >
-            <title>{s === undefined ? c.nameJa : `${c.nameJa} ${Math.round(s)}`}</title>
+            <title>{s === undefined ? c.nameJa : `${c.nameJa} ${roundBounded(s)}`}</title>
           </circle>
         );
       })}

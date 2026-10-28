@@ -134,6 +134,10 @@ const metrics: Metric[] = metricDocs
 const metricKeys = new Set(metrics.map((m) => m.key));
 const allMetricKeys = new Set(metricDocs.map((d) => String(d.fm.metric_key)));
 
+const placeDoc = docs.find((d) => d.fm.type === "Decision Record" && d.fm.country_names);
+const countryNames = (placeDoc?.fm.country_names ?? {}) as Record<string, string>;
+if (!placeDoc) fail(ROOT, "no Decision Record with country_names (knowledge/decisions/place-names.md)");
+
 const cities: City[] = ofType("City").map((d) => {
   const raw = (d.fm.metrics ?? {}) as Record<string, Record<string, unknown>>;
   const values: Record<string, MetricValue> = {};
@@ -170,6 +174,11 @@ const cities: City[] = ofType("City").map((d) => {
     nameJa: str(d, "name_ja"),
     nameEn: str(d, "title"),
     country: str(d, "country"),
+    countryName: (() => {
+      const n = countryNames[String(d.fm.country)];
+      if (!n) fail(d.path, `country ${String(d.fm.country)} has no display name in place-names.md`);
+      return String(n);
+    })(),
     region: str(d, "region"),
     lat: num(d, "lat"),
     lon: num(d, "lon"),

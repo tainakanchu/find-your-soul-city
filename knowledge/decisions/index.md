@@ -6,4 +6,5 @@
 * [外部サービスへのアクセス方針](external-access-policy.md) - データ取得は提供元が用意した経路に限り、Web UI の自動操作はしない。2026-10-28 の ITDP Atlas での事象を受けて制定。
 * [ホスティングは当面 GitHub Pages](hosting-github-pages.md) - P1 の静的 SPA を GitHub Pages で配信し、P2 以降で再判断する。
 * [仮値を廃止し、本番ビルドで検出したら失敗させる](no-placeholder.md) - P1 のデモ用仮値をすべて実データに置き換え、仮値の混入をビルドで止める。
+* [国・地域名の表示](place-names.md) - 都市の所属は「国・地域」として日本語の通称で表示する。香港は「香港」とし、国名の判断はしない。
 * [価値観スコア（EVS/WVS）は P1 では扱わない](values-score-separate.md) - 国別調査を都市に外挿しないため、価値観の設問は別枠とし P1 には入れない。

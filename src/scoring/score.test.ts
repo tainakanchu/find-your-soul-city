@@ -27,6 +27,7 @@ const city = (
   nameJa: id,
   nameEn: id,
   country: "XX",
+  countryName: "XX",
   region: "R",
   lat: 0,
   lon: 0,
@@ -232,5 +233,16 @@ describe("bounds", () => {
       expect(r.bounds[1]).toBeGreaterThanOrEqual(r.total - 1e-9);
       expect(r.coverage === 1 ? r.bounds[1] - r.bounds[0] : 0).toBeCloseTo(0);
     }
+  });
+});
+
+describe("roundBounded", () => {
+  it("never shows 100 or 0 for values that are not exactly at the ends", async () => {
+    const { roundBounded } = await import("../data.ts");
+    expect(roundBounded(99.6)).toBe("99");
+    expect(roundBounded(100)).toBe("100");
+    expect(roundBounded(0.3)).toBe("1 未満");
+    expect(roundBounded(0)).toBe("0");
+    expect(roundBounded(57.5)).toBe("58");
   });
 });

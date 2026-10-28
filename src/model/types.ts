@@ -16,7 +16,10 @@ export interface City {
   id: string;
   nameJa: string;
   nameEn: string;
+  /** ISO 3166-1 alpha-2. */
   country: string;
+  /** Display name of the country or region (knowledge/decisions/place-names.md). */
+  countryName: string;
   region: string;
   lat: number;
   lon: number;

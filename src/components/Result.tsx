@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { cityById, formatCoord, formatValue, knowledge, metricByKey, QUALITY_LABEL } from "../data.ts";
+import { cityById, formatCoord, formatValue, knowledge, metricByKey, QUALITY_LABEL, roundBounded } from "../data.ts";
 import { explain, rank, stability, type AxisScore, type Preference } from "../scoring/score.ts";
 import { Evidence } from "./Evidence.tsx";
 import { WorldPlot } from "./WorldPlot.tsx";
@@ -42,20 +42,22 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
       <p className="kicker">あなたの魂の故郷は</p>
       <h1 className="city">{city.nameEn}</h1>
       <p className="where">
-        {city.nameJa}（{city.country}） {formatCoord(city.lat, city.lon)}
+        {city.nameJa}（{city.countryName}） {formatCoord(city.lat, city.lon)}
       </p>
       <p className="summary">
-        適合度は {Math.round(first.total)} / 100。重みを 1 項目ずつ ±10% 動かしても、{Math.round(stable * 100)}%
+        適合度は {roundBounded(first.total)} / 100。重みを 1 項目ずつ ±10% 動かしても、{roundBounded(stable * 100)}%
         の条件で 1 位のままでした。使ったデータの品質は、最も低いもので「{QUALITY_LABEL[first.quality]}」です。
         {gap !== null && gap < 2 && <> 2 位との差は {gap.toFixed(1)} 点で、僅差です。</>}
       </p>
-      <p className="note">適合度は回答と統計の近さを表す独自の指標で、住みやすさや幸福度の評価ではありません。</p>
+      <p className="note">
+        適合度は回答と統計の近さを表す独自の指標で、住みやすさや幸福度の評価ではありません。「魂の故郷」は遊びの呼び名で、占いや前世、あなたとこの街の実際の縁を示すものではありません。順位は都市の優劣ではなく、あなたの答えとの近さの順です。
+      </p>
       {missingAxes.length > 0 && (
         <p className="note">
           {city.nameJa}は次の条件のデータがないため、これらを除いて計算しています:{" "}
           {missingAxes.map((a) => metricByKey.get(a.metric)!.label).join("、")}（理由は根拠欄に記載）。
-          欠けた条件が最も合わなかった場合から最も合った場合まで、適合度は {Math.round(first.bounds[0])}〜
-          {Math.round(first.bounds[1])} の幅があります。
+          欠けた条件が最も合わなかった場合から最も合った場合まで、適合度は {roundBounded(first.bounds[0])}〜
+          {roundBounded(first.bounds[1])} の幅があります。
           {ranked[1] && first.bounds[0] < ranked[1].total && <>この幅の中では 2 位以下と入れ替わる可能性があります。</>}
         </p>
       )}
@@ -101,11 +103,11 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
             <li key={r.cityId}>
               <span className="name">{c.nameJa}</span>
               <span className="score">
-                {Math.round(r.total)}
+                {roundBounded(r.total)}
                 {r.coverage < 1 && (
                   <span className="muted">
                     {" "}
-                    （欠損あり {Math.round(r.bounds[0])}〜{Math.round(r.bounds[1])}）
+                    （欠損あり {roundBounded(r.bounds[0])}〜{roundBounded(r.bounds[1])}）
                   </span>
                 )}
               </span>

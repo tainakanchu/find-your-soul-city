@@ -463,3 +463,9 @@ th {
 .table-wrap table {
   min-width: 38rem;
 }
+
+.report {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
