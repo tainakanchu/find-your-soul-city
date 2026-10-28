@@ -1,0 +1,38 @@
+{
+  "name": "soul-city",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "knowledge:build": "node scripts/knowledge.ts build",
+    "knowledge:check": "node scripts/knowledge.ts check",
+    "dev": "pnpm knowledge:build && vite",
+    "build": "pnpm knowledge:build && tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "pnpm knowledge:build && tsc",
+    "lint": "oxlint",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "test": "pnpm knowledge:build && vitest run"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "oxfmt": "0.73.0",
+    "oxlint": "1.88.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.4",
+    "yaml": "2.9.1"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "packageManager": "pnpm@12.13.0"
+}
