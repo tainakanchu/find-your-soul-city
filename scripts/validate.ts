@@ -154,12 +154,17 @@ const targetCdf = (cities: City[]): Scales =>
         .filter((v): v is number => v != null)
         .map((v) => (m.transform === "log10" ? Math.log10(v) : v))
         .toSorted((a, b) => a - b);
-      return [key, { type: "cdf" as const, levels: k.reference.levels, quantiles: k.reference.levels.map((q) => quantile(vs, q)) }];
+      return [
+        key,
+        { type: "cdf" as const, levels: k.reference.levels, quantiles: k.reference.levels.map((q) => quantile(vs, q)) },
+      ];
     }),
   );
 const rowsN: string[][] = [
   compare("対象都市の q10–q90 で線形（P1 方式）", (p) => top(p, { scales: buildScales(k) }).map((x) => x.cityId)),
-  compare("対象都市の min–max で線形", (p) => top(p, { scales: buildScales(k, k.cities, [0, 1]) }).map((x) => x.cityId)),
+  compare("対象都市の min–max で線形", (p) =>
+    top(p, { scales: buildScales(k, k.cities, [0, 1]) }).map((x) => x.cityId),
+  ),
   compare("対象都市の百分位", (p) => top(p, { scales: targetCdf(k.cities) }).map((x) => x.cityId)),
 ];
 const jack = Array.from({ length: 20 }, () => k.cities.filter(() => rand() >= 0.2));
@@ -236,9 +241,7 @@ table(
   [
     compare("充足率の下限なし（0）", (p) => top(p, { minCoverage: 0 }).map((x) => x.cityId)),
     compare("充足率の下限 1.0（欠損のある都市は除外）", (p) => top(p, { minCoverage: 1 }).map((x) => x.cityId)),
-    compare("中央値で補完（比較用。本番では使わない）", (p) =>
-      top(p, {}, medianImputed).map((x) => x.cityId),
-    ),
+    compare("中央値で補完（比較用。本番では使わない）", (p) => top(p, {}, medianImputed).map((x) => x.cityId)),
   ],
 );
 

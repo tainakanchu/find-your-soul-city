@@ -214,7 +214,9 @@ const reference: Knowledge["reference"] = {
   set: refDoc ? str(refDoc, "reference_set") : "",
   levels: refLevels,
   metrics: Object.fromEntries(
-    metrics.filter((m) => refMetrics[m.key]).map((m) => [m.key, { n: refMetrics[m.key].n, quantiles: refMetrics[m.key].quantiles }]),
+    metrics
+      .filter((m) => refMetrics[m.key])
+      .map((m) => [m.key, { n: refMetrics[m.key].n, quantiles: refMetrics[m.key].quantiles }]),
   ),
 };
 

@@ -1,6 +1,16 @@
 import { describe, expect, it } from "vitest";
 import type { City, Knowledge, Metric, Quality } from "../model/types.ts";
-import { buildScales, cdf, explain, fit, rank, referenceScales, stability, type Preference, type Scales } from "./score.ts";
+import {
+  buildScales,
+  cdf,
+  explain,
+  fit,
+  rank,
+  referenceScales,
+  stability,
+  type Preference,
+  type Scales,
+} from "./score.ts";
 
 const mv = (value: number | null, quality: Quality = "observed") =>
   value === null
