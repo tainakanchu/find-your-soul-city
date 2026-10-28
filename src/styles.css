@@ -469,3 +469,43 @@ th {
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+/* Share */
+.share-preview {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.75rem;
+  font-size: 0.9375rem;
+  overflow-wrap: anywhere;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.share-buttons button,
+.share-buttons a {
+  display: inline-block;
+  padding: 0.5rem 1.125rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.share-status {
+  min-height: 1.5em;
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  color: var(--sea);
+}
+
+.share .note {
+  margin-top: 0.25rem;
+}
