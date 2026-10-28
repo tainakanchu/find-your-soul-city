@@ -30,3 +30,7 @@ line-length = 120
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff.lint]
+# Implicit concatenation of long prose lines is intentional; int(math.floor()) is kept for readability.
+ignore = ["ISC004", "RUF046"]

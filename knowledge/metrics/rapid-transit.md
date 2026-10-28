@@ -11,7 +11,7 @@ kind: higher_better
 transform: linear
 source: itdp-atlas
 period: "2024 年"
-geography: "徒歩圏と同じ"
+geography: "GHS-UCDB 都市圏（Atlas と同一ポリゴン、IoU ≥ 0.9999）"
 method: "ITDP の People Near Rapid Transport"
 caveat: "ITDP の定義では多くの通勤鉄道・近郊鉄道が対象外で、東京などの鉄道都市を過小評価する。駅データが路線長に比べて極端に少ない都市（ロンドン、メルボルン、クアラルンプール、ベンガルール）は欠損扱い"
 generated: { by: claude, at: 2026-10-28T00:00:00Z }
@@ -22,7 +22,7 @@ generated: { by: claude, at: 2026-10-28T00:00:00Z }
 地下鉄・LRT・BRT の駅まで 1 km 以内に住む住民の割合。
 
 - 期間: 2024 年
-- 範囲: 徒歩圏と同じ
+- 範囲: GHS-UCDB 都市圏（Atlas と同一ポリゴン、IoU ≥ 0.9999）
 - 算出: ITDP の People Near Rapid Transport
 
 # スコアへの入り方

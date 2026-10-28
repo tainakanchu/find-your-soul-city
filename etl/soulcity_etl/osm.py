@@ -85,8 +85,29 @@ OVERTURE_MIN_CONF = 0.5
 
 
 # --- SPARQL plumbing ------------------------------------------------------------------------------------------
-def _sparql_tsv(endpoint: str, query: str, dest: Path, *, retries: int = 5, timeout: float = 600) -> list[list[str]]:
-    """Run `query` against a QLever endpoint, cache the TSV at `dest`, return parsed rows (header dropped)."""
+def _sparql_tsv(endpoint: str, query: str, dest: Path, *, retries: int = 5, timeout: float = 600,
+                expected: int | None = None) -> list[list[str]]:
+    """Run `query` against a QLever endpoint, cache the TSV at `dest`, return parsed rows (header dropped).
+
+    `expected`: row count the result must have (from a COUNT query) - responses can be silently truncated by the
+    server or proxy, so a mismatching cache file is discarded and the query re-run."""
+    for _ in range(3):
+        rows = _sparql_tsv_once(endpoint, query, dest, retries=retries, timeout=timeout)
+        if expected is None or len(rows) == expected:
+            return rows
+        print(f"    truncated response ({len(rows)} rows, expected {expected}); retrying {dest.name}")
+        dest.unlink()
+        time.sleep(30)
+    raise RuntimeError(f"{dest}: could not obtain a complete result")
+
+
+def _count(endpoint: str, where: str, prefixes: str, dest: Path) -> int:
+    rows = _sparql_tsv_once(endpoint, prefixes + f"SELECT (COUNT(DISTINCT ?x) AS ?n) WHERE {{ {where} }}", dest)
+    return _int(rows[0][0])
+
+
+def _sparql_tsv_once(endpoint: str, query: str, dest: Path, *, retries: int = 5,
+                     timeout: float = 600) -> list[list[str]]:
     if not dest.exists():
         dest.parent.mkdir(parents=True, exist_ok=True)
         for attempt in range(retries + 1):
@@ -172,15 +193,13 @@ def load_osm_features(stats: dict[str, Any]) -> dict[tuple[str, str], dict[str, 
     hashes = {}
     for k, v in CULTURE_TAGS + NIGHTLIFE_TAGS:
         rows: list[list[str]] = []
-        off = 0
-        while True:
+        base = RAW / "qlever" / f"planet-{snap}"
+        total = _count(QLEVER_OSM, f'?x osmkey:{k} "{v}" . ?x geo:hasGeometry/geo:asWKT ?w .', PFX,
+                       base / f"{k}={v}.count.tsv")
+        for off in range(0, total, PAGE):
             q = _osm_tag_query(k, v, off)
             hashes[f"{k}={v}@{off}"] = _qhash(q)
-            page = _sparql_tsv(QLEVER_OSM, q, RAW / "qlever" / f"planet-{snap}" / f"{k}={v}.{off:07d}.tsv")
-            rows += page
-            if len(page) < PAGE:
-                break
-            off += PAGE
+            rows += _sparql_tsv(QLEVER_OSM, q, base / f"{k}={v}.{off:07d}.tsv", expected=min(PAGE, total - off))
         ids, lon, lat, nm, nme, wd = [], [], [], [], [], []
         for row in rows:
             row += [""] * (5 - len(row))
@@ -315,7 +334,10 @@ WHERE {{
   OPTIONAL {{ ?x wdt:P361 ?part . ?part wdt:P31/wdt:P279* wd:{qc} }}
 }} GROUP BY ?x"""
         qh[qc] = _qhash(q)
-        rows = _sparql_tsv(QLEVER_WD, q, RAW / "wikidata" / tag / f"{qc}.{qh[qc]}.tsv")
+        n = _count(QLEVER_WD, f"?x wdt:P31/wdt:P279* wd:{qc} . ?x wdt:P625 ?c . "
+                   "FILTER NOT EXISTS { ?x wdt:P576 ?d } FILTER NOT EXISTS { ?x wdt:P3999 ?e }", WPFX,
+                   RAW / "wikidata" / tag / f"{qc}.count.tsv")
+        rows = _sparql_tsv(QLEVER_WD, q, RAW / "wikidata" / tag / f"{qc}.{qh[qc]}.tsv", expected=n)
         for row in rows:
             row += [""] * (7 - len(row))
             m = _PT.search(row[1].replace("Point(", "POINT("))
@@ -518,7 +540,7 @@ def _agreement(tgt: list[dict]) -> dict[str, Any]:
     """Does coverage noise swamp the signal? Rank agreement of densities between OSM and the independent sources,
     and the spread of the OSM/Overture ratio (log10 sd) versus the spread of the metric itself."""
     out: dict[str, Any] = {}
-    for name, keys in (("culture_core", ("museum", "performing_arts", "cinema")), ("nightlife", ("bar_pub", "nightclub"))):
+    for name, keys in (("culture_core", ("museum", "cinema")), ("nightlife", ("bar_pub", "nightclub"))):
         rs = [r for r in tgt if r["overture"][name]["overture"] > 0 and r["overture"][name]["osm"] > 0]
         osm_d = np.array([r["overture"][name]["osm"] / r["area"] for r in rs])
         ov_d = np.array([r["overture"][name]["overture"] / r["area"] for r in rs])
@@ -637,7 +659,7 @@ def main() -> None:
         if "overture" in r:
             for k in OVERTURE_PAIRS:
                 r[f"ov_{k}"] = r["overture"][k]["ratio"] if r["overture"][k]["overture"] >= 10 else None
-            for name, keys in (("culture_core", ("museum", "performing_arts", "cinema")),
+            for name, keys in (("culture_core", ("museum", "cinema")),
                                ("nightlife", ("bar_pub", "nightclub"))):
                 a = sum(r["overture"][k]["osm"] for k in keys)
                 b = sum(r["overture"][k]["overture"] for k in keys)
@@ -670,28 +692,50 @@ def main() -> None:
     out = Interim(source_id=SOURCE_ID, inputs=[f"{QLEVER_OSM}#{snap}", f"{QLEVER_WD}#{_qhash(wst['name-index'])}",
                                                 OVERTURE_URL])
     out.notes = [
-        f"OSM snapshot planet-{snap}.osm.pbf via QLever osm-planet (osm2rdf). (c) OpenStreetMap contributors, "
-        "ODbL 1.0, https://www.openstreetmap.org/copyright. Values are a Produced Work (ODbL 4.3).",
-        "culture = tourism=museum|gallery, amenity=theatre|arts_centre|cinema|music_venue|concert_hall; "
-        "nightlife = amenity=nightclub|bar|pub. Counts de-duplicated (same group, same name, <150 m).",
-        "quality=estimated: OSM POI completeness varies by region; see detail.coverage and etl/notes/osm.md.",
+        (f"OSM snapshot planet-{snap}.osm.pbf via QLever osm-planet (osm2rdf). (c) OpenStreetMap contributors, "
+         "ODbL 1.0, https://www.openstreetmap.org/copyright. Values are a Produced Work (ODbL 4.3)."),
+        ("culture = tourism=museum|gallery, amenity=theatre|arts_centre|cinema|music_venue|concert_hall; "
+         "nightlife = amenity=nightclub|bar|pub. Counts de-duplicated (same group, same name, <150 m)."),
+        ("quality=estimated: OSM POI completeness varies by city and region (OSM/Overture ratio p10-p90 spans ~3-5x); "
+         "see detail.coverage_flag and etl/notes/osm.md before using."),
+        ("Recommendation: culture_venues_per_km2 usable (estimated); nightlife_* NOT recommended for ranking - OSM "
+         "bar/club coverage is regionally biased (OSM/Overture median Europe ~0.6 vs E/SE Asia ~0.25)."),
     ]
+    ov_key = {"culture": "culture_core", "nightlife": "nightlife"}
+    med_ratio = {g: median(r[f"ov_{k}"] for r in tgt if r.get(f"ov_{k}") is not None) for g, k in ov_key.items()}
+    flags: dict[str, dict[str, list[str]]] = {g: defaultdict(list) for g in GROUPS}
     for r in tgt:
         cid = r["city_id"]
-        cov = {"wikidata": r["wikidata"], **({"overture": r["overture"]} if "overture" in r else {})}
-        for g in GROUPS:
+        cov = {"wikidata": r["wikidata"], "overture": r["overture"]}
+        for g, tags in GROUPS.items():
+            o = r["overture"][ov_key[g]]
+            if o["overture"] < 10:
+                flag = "unverified_overture_sparse"
+            elif o["ratio"] < med_ratio[g] / 2:
+                flag = "osm_low_vs_overture"  # OSM likely undercounts >= 2x relative to the typical target city
+            elif o["ratio"] > med_ratio[g] * 2:
+                flag = "overture_low_vs_osm"  # Overture sparse here (e.g. Meta absent); OSM not contradicted
+            else:
+                flag = "ok"
+            flags[g][flag].append(cid)
             det = {"count_dedup": r[f"{g}_dedup"], "count_raw": r[f"{g}_raw"],
                    "named_share": r[f"{g}_named_share"],
-                   "raw_counts": {k: v for k, v in r["raw_counts"].items()
-                                  if tuple(k.split("=")) in GROUPS[g]},
+                   "raw_counts": {k: v for k, v in r["raw_counts"].items() if tuple(k.split("=")) in tags},
                    "area_km2": round(r["area"], 2), "pop_2025": round(r["pop"]),
-                   "osm_snapshot": f"planet-{snap}", "coverage": cov}
+                   "osm_snapshot": f"planet-{snap}",
+                   "coverage_flag": flag,
+                   "osm_over_overture": o["ratio"], "median_osm_over_overture_86": round(med_ratio[g], 3),
+                   "overture_density_per_km2": round(o["overture"] / r["area"], 4),
+                   "coverage": cov}
             out.put(f"{g}_venues_per_km2", cid, r[f"{g}_dedup"] / r["area"], quality="estimated", year=year,
                     detail=det)
             out.put(f"{g}_venues_per_100k", cid, r[f"{g}_dedup"] / r["pop"] * 1e5, quality="estimated",
                     year=year, detail={"count_dedup": r[f"{g}_dedup"], "pop_2025": round(r["pop"])})
+    summary["coverage_flags_targets_86"] = {g: {k: sorted(v) for k, v in f.items()} for g, f in flags.items()}
+    (RAW / "validation_summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
     p = out.write()
     print(f"wrote {p}")
+    print(json.dumps(summary["coverage_flags_targets_86"], indent=1))
     print(json.dumps({k: v for k, v in summary.items() if "targets" in k or "reference" in k}, indent=1))
 
 

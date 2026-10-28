@@ -15,10 +15,11 @@ boundary:
   id: 498
   name: "Perth"
   area_km2: 784.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 38.2, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 37.5, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.16, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 2534, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 14.4, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 9.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 498「Perth」。面積 784.0 k
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 38.2 % | 2024 | observed |
 | 年平均雲量 | 37.5 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.16 件/km² | 2026 | estimated |
 | 人口加重密度 | 2534 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 14.4 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 9.0 µg/m³ | 2020 | estimated |

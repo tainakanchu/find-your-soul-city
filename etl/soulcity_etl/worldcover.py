@@ -399,11 +399,12 @@ def main() -> None:
         from .common import REFERENCE
 
         REFERENCE.mkdir(parents=True, exist_ok=True)
-        allr = {**sums, **rs}
+        by_id = {c.city_id: c for c in reference_centres()}
+        # reference set only: target cities below the population threshold are not part of it
+        allr = {cid: s for cid, s in {**sums, **rs}.items() if cid in by_id}
         with (REFERENCE / f"{SOURCE_ID}.csv").open("w", newline="") as f:
             w = csv.writer(f)
             w.writerow(["city_id", "ucdb_id", "coverage", "tree_share", "green_share", "water_share", "built_share"])
-            by_id = {c.city_id: c for c in reference_centres()}
             for cid, s in sorted(allr.items()):
                 w.writerow(
                     [cid, by_id[cid].ucdb_id, round(s["coverage"], 4)]

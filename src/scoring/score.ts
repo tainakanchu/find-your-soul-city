@@ -19,6 +19,8 @@ export interface CityResult {
   cityId: string;
   total: number;
   coverage: number;
+  /** Total if every missing weighted axis had fit 0 / fit 1. Equal to `total` when nothing is missing. No imputation. */
+  bounds: [number, number];
   quality: Quality;
   axes: AxisScore[];
 }
@@ -128,6 +130,7 @@ function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], s
     cityId: c.id,
     total: used === 0 ? 0 : (100 * sum) / used,
     coverage: all === 0 ? 0 : used / all,
+    bounds: all === 0 ? [0, 0] : [(100 * sum) / all, (100 * (sum + all - used)) / all],
     quality,
     axes,
   };

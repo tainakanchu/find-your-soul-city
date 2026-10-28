@@ -15,10 +15,11 @@ boundary:
   id: 39
   name: "Dakar"
   area_km2: 277.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 44.1, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.2, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 24623, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 24.6, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 42.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 39「Dakar」。面積 277.0 km
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 0.0 % | 2024 | observed |
 | 年平均雲量 | 44.1 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.2 件/km² | 2026 | estimated |
 | 人口加重密度 | 24623 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 24.6 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 42.0 µg/m³ | 2020 | estimated |

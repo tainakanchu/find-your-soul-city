@@ -15,10 +15,11 @@ boundary:
   id: 7963
   name: "New Delhi"
   area_km2: 2139
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 0.97, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 32.4, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.13, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 31478, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 25.4, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 94.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 7963「New Delhi」。面積 21
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 0.97 % | 2024 | observed |
 | 年平均雲量 | 32.4 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.13 件/km² | 2026 | estimated |
 | 人口加重密度 | 31478 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 25.4 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 94.0 µg/m³ | 2020 | estimated |

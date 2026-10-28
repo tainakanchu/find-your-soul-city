@@ -1,11 +1,12 @@
 # 欠損率
 
-生成: 2026-10-28T21:28:39Z（`pnpm etl`）。対象 86 都市。
+生成: 2026-10-28T22:03:04Z（`pnpm etl`）。対象 86 都市。
 
 | 指標               | 出典           | 欠損率 | Australia and New Zealand | Central and Southern Asia | Eastern and South-Eastern Asia | Europe | Latin America and the Caribbean | Northern Africa and Western Asia | Northern America | Sub-Saharan Africa |
 | ------------------ | -------------- | ------ | ------------------------- | ------------------------- | ------------------------------ | ------ | ------------------------------- | -------------------------------- | ---------------- | ------------------ |
 | bike_protected     | itdp-atlas     | 1%     | 0/4                       | 0/7                       | 0/17                           | 1/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
 | cloud_cover_annual | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| culture            | osm            | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
 | density_weighted   | ghsl-pop       | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
 | dewpoint_max_month | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
 | pm25               | ghsl-ucdb      | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |

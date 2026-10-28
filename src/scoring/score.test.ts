@@ -220,3 +220,17 @@ describe("explain / stability", () => {
     expect(stability(k, prefs)).toBe(1);
   });
 });
+
+describe("bounds", () => {
+  it("brackets the total by fit 0 / fit 1 on missing axes, without imputing", async () => {
+    const { rank: rk } = await import("./score.ts");
+    const k2 = (await import("../generated/knowledge.json"))
+      .default as unknown as import("../model/types.ts").Knowledge;
+    const prefs2 = k2.metrics.map((m) => ({ metric: m.key, weight: 1, ideal: m.kind === "ideal" ? 1 : undefined }));
+    for (const r of [...rk(k2, prefs2).ranked, ...rk(k2, prefs2).insufficient]) {
+      expect(r.bounds[0]).toBeLessThanOrEqual(r.total + 1e-9);
+      expect(r.bounds[1]).toBeGreaterThanOrEqual(r.total - 1e-9);
+      expect(r.coverage === 1 ? r.bounds[1] - r.bounds[0] : 0).toBeCloseTo(0);
+    }
+  });
+});

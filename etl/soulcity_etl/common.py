@@ -14,6 +14,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
+import math
 import os
 import time
 from dataclasses import dataclass, field
@@ -123,7 +124,7 @@ class Interim:
             detail: dict[str, Any] | None = None) -> None:
         if quality not in QUALITIES - {"missing"}:
             raise ValueError(f"bad quality {quality}")
-        if value is None or value != value:  # None / NaN must go through miss()
+        if value is None or math.isnan(value):  # None / NaN must go through miss()
             raise ValueError(f"{metric}/{city_id}: use miss() for absent values")
         entry: dict[str, Any] = {"value": float(value), "quality": quality, "year": year}
         if detail:

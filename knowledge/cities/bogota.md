@@ -15,10 +15,11 @@ boundary:
   id: 3881
   name: "Bogota"
   area_km2: 534.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 41.8, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 87.9, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.46, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 27679, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 13.0, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 22.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 3881「Bogota」。面積 534.0
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 41.8 % | 2024 | observed |
 | 年平均雲量 | 87.9 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.46 件/km² | 2026 | estimated |
 | 人口加重密度 | 27679 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 13.0 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 22.0 µg/m³ | 2020 | estimated |

@@ -11,7 +11,7 @@ kind: higher_better
 transform: linear
 source: itdp-atlas
 period: "2024 年"
-geography: "徒歩圏と同じ"
+geography: "GHS-UCDB 都市圏（Atlas と同一ポリゴン、IoU ≥ 0.9999）"
 method: "ITDP の People Near Protected Bikeways"
 caveat: "OSM の自転車道の登録状況に依存する。0% の都市が 1 割ある"
 generated: { by: claude, at: 2026-10-28T00:00:00Z }
@@ -22,7 +22,7 @@ generated: { by: claude, at: 2026-10-28T00:00:00Z }
 車道から分離された自転車道まで 300 m 以内に住む住民の割合。
 
 - 期間: 2024 年
-- 範囲: 徒歩圏と同じ
+- 範囲: GHS-UCDB 都市圏（Atlas と同一ポリゴン、IoU ≥ 0.9999）
 - 算出: ITDP の People Near Protected Bikeways
 
 # スコアへの入り方

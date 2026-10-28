@@ -15,10 +15,11 @@ boundary:
   id: 48
   name: "Reykjavik"
   area_km2: 97.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: null, quality: missing, source: itdp-atlas, year: null, reason: "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)" }
   cloud_cover_annual: { value: 76.6, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.76, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 3355, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 8.16, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 4.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 48「Reykjavik」。面積 97.0
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 欠損 | — | not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a) |
 | 年平均雲量 | 76.6 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.76 件/km² | 2026 | estimated |
 | 人口加重密度 | 3355 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 8.16 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 4.0 µg/m³ | 2020 | estimated |

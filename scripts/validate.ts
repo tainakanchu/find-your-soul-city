@@ -125,6 +125,40 @@ table(
   }),
 );
 
+// --- 2b. Which axes drive the regional skew ---
+const dirKeys = new Set(k.metrics.filter((m) => m.kind !== "ideal").map((m) => m.key));
+const regionShare = (only: "ideal" | "directional") => {
+  const won = new Map<string, number>();
+  for (const p of samples) {
+    const q = p.map((x) => ((only === "ideal") === dirKeys.has(x.metric) ? { ...x, weight: 0 } : x));
+    const id = top(q)[0]?.cityId;
+    if (id) won.set(regionOf.get(id)!, (won.get(regionOf.get(id)!) ?? 0) + 1);
+  }
+  return won;
+};
+const wonIdeal = regionShare("ideal");
+const wonDir = regionShare("directional");
+out.push(
+  "",
+  "どの設問が偏りを生むかを見るため、理想値型（気候・密度・規模）だけ、方向型（徒歩・自転車・交通・樹木・空気・文化）だけで同じ回答を採点した。",
+  "",
+);
+table(
+  ["地域", "都市数の割合", "理想値型だけ", "方向型だけ"],
+  regions.map((rg) => [
+    rg,
+    pct(k.cities.filter((c) => c.region === rg).length / k.cities.length),
+    pct((wonIdeal.get(rg) ?? 0) / N),
+    pct((wonDir.get(rg) ?? 0) / N),
+  ]),
+);
+out.push(
+  "",
+  "方向型の指標は世界の人口 100 万人以上の都市圏を基準にした百分位で、対象の欧州都市はどの指標でも基準分布の上位にある。" +
+    "方向型を重視する回答ほど欧州の都市が上位に来るのはこのデータの性質で、補正はしていない。" +
+    "ただし徒歩圏の生活サービスは OSM の登録率の影響で南半球の都市を過小評価している可能性がある（指標の注意点に記載）。",
+);
+
 // --- 3. Normalisation sensitivity ---
 h("3. 正規化の対象都市への依存");
 out.push(

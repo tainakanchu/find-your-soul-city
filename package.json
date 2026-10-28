@@ -14,7 +14,7 @@
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "test": "pnpm knowledge:build && vitest run",
-    "validate": "pnpm knowledge:build && node scripts/validate.ts",
+    "validate": "pnpm knowledge:build && node scripts/validate.ts && pnpm knowledge:build",
     "etl": "cd etl && uv run python -m soulcity_etl"
   },
   "dependencies": {

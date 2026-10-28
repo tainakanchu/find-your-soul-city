@@ -24,7 +24,7 @@ from .common import DATA, INTERIM, REPO, now_iso
 KNOWLEDGE = REPO / "knowledge"
 CITY_DIR = KNOWLEDGE / "cities"
 PROCESSED = DATA / "processed"
-FM = re.compile(r"^---\n(.*?)\n---\n", re.S)
+FM = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 
 
 def frontmatter(path: Path) -> dict[str, Any]:

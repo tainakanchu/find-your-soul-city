@@ -15,10 +15,11 @@ boundary:
   id: 2324
   name: "Sydney"
   area_km2: 1378
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 26.3, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 46.4, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.24, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 5243, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 17.2, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 12.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 2324「Sydney」。面積 1378 
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 26.3 % | 2024 | observed |
 | 年平均雲量 | 46.4 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.24 件/km² | 2026 | estimated |
 | 人口加重密度 | 5243 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 17.2 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 12.0 µg/m³ | 2020 | estimated |

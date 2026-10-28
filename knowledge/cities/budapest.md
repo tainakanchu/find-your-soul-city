@@ -15,10 +15,11 @@ boundary:
   id: 964
   name: "Budapest"
   area_km2: 368.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 20.2, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 57.9, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 1.38, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 8055, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 14.2, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 13.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 964「Budapest」。面積 368.
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 20.2 % | 2024 | observed |
 | 年平均雲量 | 57.9 % | 1990-2019 | observed |
+| 文化施設の密度 | 1.38 件/km² | 2026 | estimated |
 | 人口加重密度 | 8055 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 14.2 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 13.0 µg/m³ | 2020 | estimated |

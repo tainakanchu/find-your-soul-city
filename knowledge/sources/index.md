@@ -7,4 +7,4 @@
 * [GHS-POP R2023A（1 km 人口グリッド）](ghsl-pop.md) - 人口加重密度の算出に使う 2025 年の 1 km 人口グリッド。CC BY 4.0。
 * [GHS Urban Centre Database R2024A](ghsl-ucdb.md) - 都市圏ポリゴン（全指標の共通境界）、人口、PM2.5 などの都市圏集計値。CC BY 4.0。
 * [ITDP Atlas of Sustainable City Transport](itdp-atlas.md) - 徒歩圏の生活サービス・保護自転車道・高速公共交通への近接人口割合。ODbL 1.0。
-* [OpenStreetMap (via Geofabrik)](osm.md) - OpenStreetMap contributors が提供。用途：文化施設 POI 密度
+* [OpenStreetMap](osm.md) - 文化施設の数え上げ。QLever の osm-planet SPARQL（planet 2026-09-21）から取得。ODbL 1.0。

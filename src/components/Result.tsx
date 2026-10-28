@@ -54,6 +54,9 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
         <p className="note">
           {city.nameJa}は次の条件のデータがないため、これらを除いて計算しています:{" "}
           {missingAxes.map((a) => metricByKey.get(a.metric)!.label).join("、")}（理由は根拠欄に記載）。
+          欠けた条件が最も合わなかった場合から最も合った場合まで、適合度は {Math.round(first.bounds[0])}〜
+          {Math.round(first.bounds[1])} の幅があります。
+          {ranked[1] && first.bounds[0] < ranked[1].total && <>この幅の中では 2 位以下と入れ替わる可能性があります。</>}
         </p>
       )}
 
@@ -97,7 +100,15 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
           return (
             <li key={r.cityId}>
               <span className="name">{c.nameJa}</span>
-              <span className="score">{Math.round(r.total)}</span>
+              <span className="score">
+                {Math.round(r.total)}
+                {r.coverage < 1 && (
+                  <span className="muted">
+                    {" "}
+                    （欠損あり {Math.round(r.bounds[0])}〜{Math.round(r.bounds[1])}）
+                  </span>
+                )}
+              </span>
             </li>
           );
         })}

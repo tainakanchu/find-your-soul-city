@@ -15,10 +15,11 @@ boundary:
   id: 5929
   name: "Tokyo"
   area_km2: 5165
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T21:28:39Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
 metrics:
   bike_protected: { value: 5.03, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 59.9, quality: observed, source: era5, year: "1990-2019" }
+  culture: { value: 0.3, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 10264, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 22.5, quality: observed, source: era5, year: "1990-2019" }
   pm25: { value: 17.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
@@ -41,6 +42,7 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 5929「Tokyo」。面積 5165 k
 | --- | --- | --- | --- |
 | 保護自転車道の近くに住む人口の割合 | 5.03 % | 2024 | observed |
 | 年平均雲量 | 59.9 % | 1990-2019 | observed |
+| 文化施設の密度 | 0.3 件/km² | 2026 | estimated |
 | 人口加重密度 | 10264 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 22.5 ℃ | 1990-2019 | observed |
 | PM2.5 年平均濃度（人口加重） | 17.0 µg/m³ | 2020 | estimated |

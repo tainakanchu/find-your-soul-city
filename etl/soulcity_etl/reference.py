@@ -30,7 +30,7 @@ def main() -> None:
     for m in adopted_metrics():
         if m["kind"] == "ideal":
             continue
-        col = m.get("etl_key", m["metric_key"])
+        col = m.get("reference_column", m.get("etl_key", m["metric_key"]))
         path = REFERENCE / f"{m['source']}.csv"
         if not path.exists():
             raise SystemExit(f"{m['metric_key']}: {path} missing — run the {m['source']} module with --reference")

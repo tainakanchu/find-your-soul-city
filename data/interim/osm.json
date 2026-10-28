@@ -1,6 +1,6 @@
 {
   "source_id": "osm",
-  "generated_at": "2026-10-28T21:29:40Z",
+  "generated_at": "2026-10-28T21:55:39Z",
   "inputs": [
     "https://qlever.cs.uni-freiburg.de/api/osm-planet#260921",
     "https://qlever.cs.uni-freiburg.de/api/wikidata#0dd66fbb94f388cc",
@@ -9,7 +9,8 @@
   "notes": [
     "OSM snapshot planet-260921.osm.pbf via QLever osm-planet (osm2rdf). (c) OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/copyright. Values are a Produced Work (ODbL 4.3).",
     "culture = tourism=museum|gallery, amenity=theatre|arts_centre|cinema|music_venue|concert_hall; nightlife = amenity=nightclub|bar|pub. Counts de-duplicated (same group, same name, <150 m).",
-    "quality=estimated: OSM POI completeness varies by region; see detail.coverage and etl/notes/osm.md."
+    "quality=estimated: OSM POI completeness varies by city and region (OSM/Overture ratio p10-p90 spans ~3-5x); see detail.coverage_flag and etl/notes/osm.md before using.",
+    "Recommendation: culture_venues_per_km2 usable (estimated); nightlife_* NOT recommended for ranking - OSM bar/club coverage is regionally biased (OSM/Overture median Europe ~0.6 vs E/SE Asia ~0.25)."
   ],
   "values": {
     "culture_venues_per_100k": {
@@ -809,16 +810,20 @@
           "area_km2": 1121.0,
           "pop_2025": 5890466,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.8,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0178,
           "coverage": {
             "wikidata": {
               "n_items": 7,
               "n_museums": 6,
-              "n_notable": 5,
+              "n_notable": 6,
               "matched_by_wikidata_link": 2,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.714,
-              "recall": 0.8,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 3.29
             },
@@ -854,9 +859,9 @@
                 "ratio": 0.579
               },
               "culture_core": {
-                "osm": 21,
-                "overture": 91,
-                "ratio": 0.231
+                "osm": 16,
+                "overture": 20,
+                "ratio": 0.8
               },
               "nightlife": {
                 "osm": 626,
@@ -887,6 +892,10 @@
           "area_km2": 465.0,
           "pop_2025": 7280463,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 2.045,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0473,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -932,9 +941,9 @@
                 "ratio": 1.188
               },
               "culture_core": {
-                "osm": 52,
-                "overture": 30,
-                "ratio": 1.733
+                "osm": 45,
+                "overture": 22,
+                "ratio": 2.045
               },
               "nightlife": {
                 "osm": 173,
@@ -965,16 +974,20 @@
           "area_km2": 331.0,
           "pop_2025": 2315538,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.545,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2326,
           "coverage": {
             "wikidata": {
               "n_items": 36,
               "n_museums": 20,
-              "n_notable": 34,
+              "n_notable": 36,
               "matched_by_wikidata_link": 21,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.639,
-              "recall": 0.676,
+              "recall": 0.639,
               "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 2.08
             },
@@ -1010,9 +1023,9 @@
                 "ratio": 0.333
               },
               "culture_core": {
-                "osm": 68,
-                "overture": 260,
-                "ratio": 0.262
+                "osm": 42,
+                "overture": 77,
+                "ratio": 0.545
               },
               "nightlife": {
                 "osm": 154,
@@ -1043,16 +1056,20 @@
           "area_km2": 308.0,
           "pop_2025": 1223407,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.395,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.1266,
           "coverage": {
             "wikidata": {
               "n_items": 181,
               "n_museums": 106,
-              "n_notable": 143,
+              "n_notable": 154,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 22,
               "recall_all": 0.63,
-              "recall": 0.629,
+              "recall": 0.643,
               "recall_museums": 0.651,
               "osm_culture_to_wikidata_ratio": 2.07
             },
@@ -1088,9 +1105,9 @@
                 "ratio": 0.277
               },
               "culture_core": {
-                "osm": 293,
-                "overture": 1009,
-                "ratio": 0.29
+                "osm": 137,
+                "overture": 347,
+                "ratio": 0.395
               },
               "nightlife": {
                 "osm": 679,
@@ -1121,16 +1138,20 @@
           "area_km2": 412.0,
           "pop_2025": 3166757,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.567,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.0704,
           "coverage": {
             "wikidata": {
               "n_items": 237,
               "n_museums": 112,
-              "n_notable": 143,
+              "n_notable": 147,
               "matched_by_wikidata_link": 127,
               "matched_by_name_250m": 39,
               "unmatched_but_linked_from_other_osm_object": 13,
               "recall_all": 0.7,
-              "recall": 0.769,
+              "recall": 0.762,
               "recall_museums": 0.67,
               "osm_culture_to_wikidata_ratio": 2.63
             },
@@ -1166,9 +1187,9 @@
                 "ratio": 0.364
               },
               "culture_core": {
-                "osm": 559,
-                "overture": 1251,
-                "ratio": 0.447
+                "osm": 250,
+                "overture": 441,
+                "ratio": 0.567
               },
               "nightlife": {
                 "osm": 682,
@@ -1199,16 +1220,20 @@
           "area_km2": 638.0,
           "pop_2025": 1623898,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.603,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1144,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 27,
-              "n_notable": 38,
+              "n_notable": 39,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 10,
               "recall_all": 0.568,
-              "recall": 0.605,
+              "recall": 0.59,
               "recall_museums": 0.481,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -1244,9 +1269,9 @@
                 "ratio": 0.387
               },
               "culture_core": {
-                "osm": 115,
-                "overture": 224,
-                "ratio": 0.513
+                "osm": 44,
+                "overture": 73,
+                "ratio": 0.603
               },
               "nightlife": {
                 "osm": 309,
@@ -1277,16 +1302,20 @@
           "area_km2": 2697.0,
           "pop_2025": 19048032,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.245,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2874,
           "coverage": {
             "wikidata": {
               "n_items": 82,
               "n_museums": 76,
-              "n_notable": 68,
+              "n_notable": 78,
               "matched_by_wikidata_link": 38,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.61,
-              "recall": 0.632,
+              "recall": 0.628,
               "recall_museums": 0.605,
               "osm_culture_to_wikidata_ratio": 3.71
             },
@@ -1322,9 +1351,9 @@
                 "ratio": 0.219
               },
               "culture_core": {
-                "osm": 267,
-                "overture": 2144,
-                "ratio": 0.125
+                "osm": 190,
+                "overture": 775,
+                "ratio": 0.245
               },
               "nightlife": {
                 "osm": 862,
@@ -1355,16 +1384,20 @@
           "area_km2": 438.0,
           "pop_2025": 3908362,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.4,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.9703,
           "coverage": {
             "wikidata": {
               "n_items": 238,
               "n_museums": 119,
-              "n_notable": 183,
+              "n_notable": 220,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 36,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.563,
-              "recall": 0.536,
+              "recall": 0.555,
               "recall_museums": 0.681,
               "osm_culture_to_wikidata_ratio": 1.83
             },
@@ -1400,9 +1433,9 @@
                 "ratio": 0.165
               },
               "culture_core": {
-                "osm": 404,
-                "overture": 1206,
-                "ratio": 0.335
+                "osm": 170,
+                "overture": 425,
+                "ratio": 0.4
               },
               "nightlife": {
                 "osm": 2308,
@@ -1433,16 +1466,20 @@
           "area_km2": 2179.0,
           "pop_2025": 18150576,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.171,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1019,
           "coverage": {
             "wikidata": {
               "n_items": 140,
               "n_museums": 121,
-              "n_notable": 129,
+              "n_notable": 137,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.464,
-              "recall": 0.481,
+              "recall": 0.467,
               "recall_museums": 0.405,
               "osm_culture_to_wikidata_ratio": 2.96
             },
@@ -1478,9 +1515,9 @@
                 "ratio": 2.286
               },
               "culture_core": {
-                "osm": 382,
-                "overture": 336,
-                "ratio": 1.137
+                "osm": 260,
+                "overture": 222,
+                "ratio": 1.171
               },
               "nightlife": {
                 "osm": 288,
@@ -1511,6 +1548,10 @@
           "area_km2": 1008.0,
           "pop_2025": 15178533,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.404,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3343,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -1556,9 +1597,9 @@
                 "ratio": 0.111
               },
               "culture_core": {
-                "osm": 297,
-                "overture": 669,
-                "ratio": 0.444
+                "osm": 136,
+                "overture": 337,
+                "ratio": 0.404
               },
               "nightlife": {
                 "osm": 442,
@@ -1589,16 +1630,20 @@
           "area_km2": 681.0,
           "pop_2025": 3549997,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.452,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.0822,
           "coverage": {
             "wikidata": {
               "n_items": 358,
               "n_museums": 223,
-              "n_notable": 217,
+              "n_notable": 241,
               "matched_by_wikidata_link": 183,
               "matched_by_name_250m": 42,
               "unmatched_but_linked_from_other_osm_object": 25,
               "recall_all": 0.628,
-              "recall": 0.691,
+              "recall": 0.701,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.88
             },
@@ -1634,9 +1679,9 @@
                 "ratio": 0.422
               },
               "culture_core": {
-                "osm": 673,
-                "overture": 1988,
-                "ratio": 0.339
+                "osm": 333,
+                "overture": 737,
+                "ratio": 0.452
               },
               "nightlife": {
                 "osm": 2011,
@@ -1667,16 +1712,20 @@
           "area_km2": 534.0,
           "pop_2025": 10419361,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.42,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5131,
           "coverage": {
             "wikidata": {
               "n_items": 45,
               "n_museums": 33,
-              "n_notable": 41,
+              "n_notable": 42,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.622,
-              "recall": 0.659,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 5.49
             },
@@ -1712,9 +1761,9 @@
                 "ratio": 0.241
               },
               "culture_core": {
-                "osm": 238,
-                "overture": 673,
-                "ratio": 0.354
+                "osm": 115,
+                "overture": 274,
+                "ratio": 0.42
               },
               "nightlife": {
                 "osm": 916,
@@ -1745,16 +1794,20 @@
           "area_km2": 368.0,
           "pop_2025": 1743875,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.52,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.9402,
           "coverage": {
             "wikidata": {
               "n_items": 123,
               "n_museums": 81,
-              "n_notable": 92,
+              "n_notable": 99,
               "matched_by_wikidata_link": 89,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.821,
-              "recall": 0.87,
+              "recall": 0.838,
               "recall_museums": 0.84,
               "osm_culture_to_wikidata_ratio": 4.12
             },
@@ -1790,9 +1843,9 @@
                 "ratio": 0.37
               },
               "culture_core": {
-                "osm": 316,
-                "overture": 821,
-                "ratio": 0.385
+                "osm": 180,
+                "overture": 346,
+                "ratio": 0.52
               },
               "nightlife": {
                 "osm": 955,
@@ -1823,16 +1876,20 @@
           "area_km2": 2186.0,
           "pop_2025": 14179912,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.544,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2429,
           "coverage": {
             "wikidata": {
               "n_items": 309,
               "n_museums": 265,
-              "n_notable": 111,
+              "n_notable": 129,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.657,
-              "recall": 0.766,
+              "recall": 0.783,
               "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 2.08
             },
@@ -1868,9 +1925,9 @@
                 "ratio": 0.244
               },
               "culture_core": {
-                "osm": 614,
-                "overture": 1882,
-                "ratio": 0.326
+                "osm": 289,
+                "overture": 531,
+                "ratio": 0.544
               },
               "nightlife": {
                 "osm": 1086,
@@ -1901,16 +1958,20 @@
           "area_km2": 1680.0,
           "pop_2025": 25230325,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.467,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1262,
           "coverage": {
             "wikidata": {
               "n_items": 65,
               "n_museums": 60,
-              "n_notable": 52,
+              "n_notable": 57,
               "matched_by_wikidata_link": 15,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.446,
-              "recall": 0.5,
+              "recall": 0.509,
               "recall_museums": 0.467,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -1946,9 +2007,9 @@
                 "ratio": 0.097
               },
               "culture_core": {
-                "osm": 142,
-                "overture": 398,
-                "ratio": 0.357
+                "osm": 99,
+                "overture": 212,
+                "ratio": 0.467
               },
               "nightlife": {
                 "osm": 50,
@@ -1979,16 +2040,20 @@
           "area_km2": 695.0,
           "pop_2025": 4338251,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.4,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1295,
           "coverage": {
             "wikidata": {
               "n_items": 29,
               "n_museums": 24,
-              "n_notable": 22,
+              "n_notable": 24,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.759,
-              "recall": 0.727,
+              "recall": 0.75,
               "recall_museums": 0.75,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -2024,9 +2089,9 @@
                 "ratio": 0.188
               },
               "culture_core": {
-                "osm": 61,
-                "overture": 227,
-                "ratio": 0.269
+                "osm": 36,
+                "overture": 90,
+                "ratio": 0.4
               },
               "nightlife": {
                 "osm": 163,
@@ -2057,6 +2122,10 @@
           "area_km2": 415.0,
           "pop_2025": 4577677,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.414,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0699,
           "coverage": {
             "wikidata": {
               "n_items": 6,
@@ -2102,9 +2171,9 @@
                 "ratio": 0.207
               },
               "culture_core": {
-                "osm": 31,
-                "overture": 84,
-                "ratio": 0.369
+                "osm": 12,
+                "overture": 29,
+                "ratio": 0.414
               },
               "nightlife": {
                 "osm": 57,
@@ -2135,16 +2204,20 @@
           "area_km2": 2046.0,
           "pop_2025": 5318735,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.387,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.239,
           "coverage": {
             "wikidata": {
               "n_items": 115,
               "n_museums": 64,
-              "n_notable": 102,
+              "n_notable": 108,
               "matched_by_wikidata_link": 71,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 10,
               "recall_all": 0.696,
-              "recall": 0.716,
+              "recall": 0.713,
               "recall_museums": 0.734,
               "osm_culture_to_wikidata_ratio": 4.03
             },
@@ -2180,9 +2253,9 @@
                 "ratio": 0.194
               },
               "culture_core": {
-                "osm": 400,
-                "overture": 1314,
-                "ratio": 0.304
+                "osm": 189,
+                "overture": 489,
+                "ratio": 0.387
               },
               "nightlife": {
                 "osm": 1101,
@@ -2213,16 +2286,20 @@
           "area_km2": 302.0,
           "pop_2025": 1258202,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.532,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.7715,
           "coverage": {
             "wikidata": {
               "n_items": 106,
               "n_museums": 71,
-              "n_notable": 83,
+              "n_notable": 88,
               "matched_by_wikidata_link": 69,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.717,
-              "recall": 0.711,
+              "recall": 0.727,
               "recall_museums": 0.761,
               "osm_culture_to_wikidata_ratio": 2.49
             },
@@ -2258,9 +2335,9 @@
                 "ratio": 0.358
               },
               "culture_core": {
-                "osm": 216,
-                "overture": 827,
-                "ratio": 0.261
+                "osm": 124,
+                "overture": 233,
+                "ratio": 0.532
               },
               "nightlife": {
                 "osm": 721,
@@ -2291,6 +2368,10 @@
           "area_km2": 277.0,
           "pop_2025": 3970202,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.667,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0866,
           "coverage": {
             "wikidata": {
               "n_items": 13,
@@ -2336,9 +2417,9 @@
                 "ratio": 0.412
               },
               "culture_core": {
-                "osm": 39,
-                "overture": 38,
-                "ratio": 1.026
+                "osm": 16,
+                "overture": 24,
+                "ratio": 0.667
               },
               "nightlife": {
                 "osm": 114,
@@ -2369,16 +2450,20 @@
           "area_km2": 1194.0,
           "pop_2025": 2425086,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.37,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1516,
           "coverage": {
             "wikidata": {
               "n_items": 62,
               "n_museums": 53,
-              "n_notable": 35,
+              "n_notable": 37,
               "matched_by_wikidata_link": 21,
               "matched_by_name_250m": 16,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.597,
-              "recall": 0.657,
+              "recall": 0.676,
               "recall_museums": 0.585,
               "osm_culture_to_wikidata_ratio": 3.73
             },
@@ -2414,9 +2499,9 @@
                 "ratio": 0.492
               },
               "culture_core": {
-                "osm": 179,
-                "overture": 533,
-                "ratio": 0.336
+                "osm": 67,
+                "overture": 181,
+                "ratio": 0.37
               },
               "nightlife": {
                 "osm": 547,
@@ -2447,6 +2532,10 @@
           "area_km2": 6611.0,
           "pop_2025": 37307160,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.618,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0206,
           "coverage": {
             "wikidata": {
               "n_items": 21,
@@ -2492,9 +2581,9 @@
                 "ratio": 1.25
               },
               "culture_core": {
-                "osm": 117,
-                "overture": 362,
-                "ratio": 0.323
+                "osm": 84,
+                "overture": 136,
+                "ratio": 0.618
               },
               "nightlife": {
                 "osm": 39,
@@ -2525,6 +2614,10 @@
           "area_km2": 854.0,
           "pop_2025": 4565478,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.42,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.226,
           "coverage": {
             "wikidata": {
               "n_items": 33,
@@ -2570,9 +2663,9 @@
                 "ratio": 0.11
               },
               "culture_core": {
-                "osm": 107,
-                "overture": 366,
-                "ratio": 0.292
+                "osm": 81,
+                "overture": 193,
+                "ratio": 0.42
               },
               "nightlife": {
                 "osm": 200,
@@ -2603,16 +2696,20 @@
           "area_km2": 301.0,
           "pop_2025": 1124520,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.62,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3588,
           "coverage": {
             "wikidata": {
               "n_items": 60,
               "n_museums": 43,
-              "n_notable": 50,
+              "n_notable": 52,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.7,
-              "recall": 0.72,
+              "recall": 0.712,
               "recall_museums": 0.744,
               "osm_culture_to_wikidata_ratio": 2.53
             },
@@ -2648,9 +2745,9 @@
                 "ratio": 0.294
               },
               "culture_core": {
-                "osm": 128,
-                "overture": 289,
-                "ratio": 0.443
+                "osm": 67,
+                "overture": 108,
+                "ratio": 0.62
               },
               "nightlife": {
                 "osm": 701,
@@ -2681,16 +2778,20 @@
           "area_km2": 130.0,
           "pop_2025": 530165,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.367,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.8385,
           "coverage": {
             "wikidata": {
               "n_items": 69,
               "n_museums": 48,
-              "n_notable": 29,
+              "n_notable": 43,
               "matched_by_wikidata_link": 37,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.623,
-              "recall": 0.724,
+              "recall": 0.791,
               "recall_museums": 0.583,
               "osm_culture_to_wikidata_ratio": 2.0
             },
@@ -2726,9 +2827,9 @@
                 "ratio": 0.226
               },
               "culture_core": {
-                "osm": 102,
-                "overture": 302,
-                "ratio": 0.338
+                "osm": 40,
+                "overture": 109,
+                "ratio": 0.367
               },
               "nightlife": {
                 "osm": 499,
@@ -2759,16 +2860,20 @@
           "area_km2": 450.0,
           "pop_2025": 2213305,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.628,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2089,
           "coverage": {
             "wikidata": {
               "n_items": 40,
               "n_museums": 31,
-              "n_notable": 32,
+              "n_notable": 39,
               "matched_by_wikidata_link": 22,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.7,
-              "recall": 0.688,
+              "recall": 0.718,
               "recall_museums": 0.806,
               "osm_culture_to_wikidata_ratio": 2.05
             },
@@ -2804,9 +2909,9 @@
                 "ratio": 0.133
               },
               "culture_core": {
-                "osm": 80,
-                "overture": 425,
-                "ratio": 0.188
+                "osm": 59,
+                "overture": 94,
+                "ratio": 0.628
               },
               "nightlife": {
                 "osm": 698,
@@ -2837,6 +2942,10 @@
           "area_km2": 925.0,
           "pop_2025": 4965520,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.313,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2692,
           "coverage": {
             "wikidata": {
               "n_items": 16,
@@ -2882,9 +2991,9 @@
                 "ratio": 0.167
               },
               "culture_core": {
-                "osm": 110,
-                "overture": 1396,
-                "ratio": 0.079
+                "osm": 78,
+                "overture": 249,
+                "ratio": 0.313
               },
               "nightlife": {
                 "osm": 250,
@@ -2915,6 +3024,10 @@
           "area_km2": 321.0,
           "pop_2025": 1632772,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 2.329,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2274,
           "coverage": {
             "wikidata": {
               "n_items": 25,
@@ -2960,9 +3073,9 @@
                 "ratio": 1.783
               },
               "culture_core": {
-                "osm": 285,
-                "overture": 132,
-                "ratio": 2.159
+                "osm": 170,
+                "overture": 73,
+                "ratio": 2.329
               },
               "nightlife": {
                 "osm": 407,
@@ -2993,16 +3106,20 @@
           "area_km2": 381.0,
           "pop_2025": 1001125,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.514,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.4856,
           "coverage": {
             "wikidata": {
               "n_items": 106,
               "n_museums": 88,
-              "n_notable": 55,
+              "n_notable": 79,
               "matched_by_wikidata_link": 57,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.755,
-              "recall": 0.709,
+              "recall": 0.759,
               "recall_museums": 0.716,
               "osm_culture_to_wikidata_ratio": 2.86
             },
@@ -3038,9 +3155,9 @@
                 "ratio": 0.483
               },
               "culture_core": {
-                "osm": 221,
-                "overture": 530,
-                "ratio": 0.417
+                "osm": 95,
+                "overture": 185,
+                "ratio": 0.514
               },
               "nightlife": {
                 "osm": 514,
@@ -3071,6 +3188,10 @@
           "area_km2": 1487.0,
           "pop_2025": 14557830,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.243,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2186,
           "coverage": {
             "wikidata": {
               "n_items": 13,
@@ -3116,9 +3237,9 @@
                 "ratio": 0.183
               },
               "culture_core": {
-                "osm": 106,
-                "overture": 1794,
-                "ratio": 0.059
+                "osm": 79,
+                "overture": 325,
+                "ratio": 0.243
               },
               "nightlife": {
                 "osm": 222,
@@ -3149,16 +3270,20 @@
           "area_km2": 220.0,
           "pop_2025": 4807599,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.351,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.2045,
           "coverage": {
             "wikidata": {
               "n_items": 52,
               "n_museums": 42,
-              "n_notable": 47,
+              "n_notable": 49,
               "matched_by_wikidata_link": 35,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.731,
-              "recall": 0.766,
+              "recall": 0.776,
               "recall_museums": 0.762,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -3194,9 +3319,9 @@
                 "ratio": 0.214
               },
               "culture_core": {
-                "osm": 148,
-                "overture": 632,
-                "ratio": 0.234
+                "osm": 93,
+                "overture": 265,
+                "ratio": 0.351
               },
               "nightlife": {
                 "osm": 228,
@@ -3227,16 +3352,20 @@
           "area_km2": 177.0,
           "pop_2025": 541957,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.265,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5537,
           "coverage": {
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
-              "n_notable": 11,
+              "n_notable": 15,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.75,
-              "recall": 0.818,
+              "recall": 0.8,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 3.12
             },
@@ -3272,9 +3401,9 @@
                 "ratio": 0.44
               },
               "culture_core": {
-                "osm": 48,
-                "overture": 207,
-                "ratio": 0.232
+                "osm": 26,
+                "overture": 98,
+                "ratio": 0.265
               },
               "nightlife": {
                 "osm": 90,
@@ -3305,16 +3434,20 @@
           "area_km2": 1269.0,
           "pop_2025": 14210222,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.298,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.6194,
           "coverage": {
             "wikidata": {
               "n_items": 190,
               "n_museums": 154,
-              "n_notable": 111,
+              "n_notable": 118,
               "matched_by_wikidata_link": 56,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.463,
-              "recall": 0.649,
+              "recall": 0.644,
               "recall_museums": 0.494,
               "osm_culture_to_wikidata_ratio": 2.22
             },
@@ -3350,9 +3483,9 @@
                 "ratio": 0.056
               },
               "culture_core": {
-                "osm": 400,
-                "overture": 1942,
-                "ratio": 0.206
+                "osm": 234,
+                "overture": 786,
+                "ratio": 0.298
               },
               "nightlife": {
                 "osm": 483,
@@ -3383,16 +3516,20 @@
           "area_km2": 4614.0,
           "pop_2025": 40545126,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.203,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1508,
           "coverage": {
             "wikidata": {
               "n_items": 127,
               "n_museums": 122,
-              "n_notable": 85,
+              "n_notable": 95,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.567,
-              "recall": 0.612,
+              "recall": 0.589,
               "recall_museums": 0.566,
               "osm_culture_to_wikidata_ratio": 1.6
             },
@@ -3428,9 +3565,9 @@
                 "ratio": 0.246
               },
               "culture_core": {
-                "osm": 176,
-                "overture": 2150,
-                "ratio": 0.082
+                "osm": 141,
+                "overture": 696,
+                "ratio": 0.203
               },
               "nightlife": {
                 "osm": 137,
@@ -3461,16 +3598,20 @@
           "area_km2": 1756.0,
           "pop_2025": 8592843,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.465,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0735,
           "coverage": {
             "wikidata": {
               "n_items": 20,
               "n_museums": 15,
-              "n_notable": 17,
+              "n_notable": 20,
               "matched_by_wikidata_link": 11,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.65,
-              "recall": 0.647,
+              "recall": 0.65,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.95
             },
@@ -3506,9 +3647,9 @@
                 "ratio": 0.056
               },
               "culture_core": {
-                "osm": 98,
-                "overture": 442,
-                "ratio": 0.222
+                "osm": 60,
+                "overture": 129,
+                "ratio": 0.465
               },
               "nightlife": {
                 "osm": 149,
@@ -3539,6 +3680,10 @@
           "area_km2": 350.0,
           "pop_2025": 3862697,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.598,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2771,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -3584,9 +3729,9 @@
                 "ratio": 0.879
               },
               "culture_core": {
-                "osm": 93,
-                "overture": 241,
-                "ratio": 0.386
+                "osm": 58,
+                "overture": 97,
+                "ratio": 0.598
               },
               "nightlife": {
                 "osm": 159,
@@ -3617,16 +3762,20 @@
           "area_km2": 1340.0,
           "pop_2025": 8413206,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.289,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.253,
           "coverage": {
             "wikidata": {
               "n_items": 41,
               "n_museums": 39,
-              "n_notable": 27,
+              "n_notable": 30,
               "matched_by_wikidata_link": 17,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.585,
-              "recall": 0.778,
+              "recall": 0.733,
               "recall_museums": 0.564,
               "osm_culture_to_wikidata_ratio": 3.78
             },
@@ -3662,9 +3811,9 @@
                 "ratio": 0.169
               },
               "culture_core": {
-                "osm": 139,
-                "overture": 1225,
-                "ratio": 0.113
+                "osm": 98,
+                "overture": 339,
+                "ratio": 0.289
               },
               "nightlife": {
                 "osm": 315,
@@ -3695,16 +3844,20 @@
           "area_km2": 1199.0,
           "pop_2025": 12846045,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.171,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0584,
           "coverage": {
             "wikidata": {
               "n_items": 10,
               "n_museums": 8,
-              "n_notable": 6,
+              "n_notable": 7,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.4,
-              "recall": 0.5,
+              "recall": 0.571,
               "recall_museums": 0.375,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -3740,9 +3893,9 @@
                 "ratio": 0.12
               },
               "culture_core": {
-                "osm": 19,
-                "overture": 255,
-                "ratio": 0.075
+                "osm": 12,
+                "overture": 70,
+                "ratio": 0.171
               },
               "nightlife": {
                 "osm": 67,
@@ -3773,16 +3926,20 @@
           "area_km2": 984.0,
           "pop_2025": 10828104,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.583,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2947,
           "coverage": {
             "wikidata": {
               "n_items": 73,
               "n_museums": 59,
-              "n_notable": 65,
+              "n_notable": 69,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.712,
-              "recall": 0.738,
+              "recall": 0.739,
               "recall_museums": 0.678,
               "osm_culture_to_wikidata_ratio": 4.89
             },
@@ -3818,9 +3975,9 @@
                 "ratio": 0.236
               },
               "culture_core": {
-                "osm": 327,
-                "overture": 952,
-                "ratio": 0.343
+                "osm": 169,
+                "overture": 290,
+                "ratio": 0.583
               },
               "nightlife": {
                 "osm": 315,
@@ -3851,16 +4008,20 @@
           "area_km2": 426.0,
           "pop_2025": 1974574,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.619,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.6221,
           "coverage": {
             "wikidata": {
               "n_items": 124,
               "n_museums": 94,
-              "n_notable": 101,
+              "n_notable": 111,
               "matched_by_wikidata_link": 81,
               "matched_by_name_250m": 18,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.798,
-              "recall": 0.832,
+              "recall": 0.838,
               "recall_museums": 0.798,
               "osm_culture_to_wikidata_ratio": 3.05
             },
@@ -3896,9 +4057,9 @@
                 "ratio": 0.4
               },
               "culture_core": {
-                "osm": 318,
-                "overture": 550,
-                "ratio": 0.578
+                "osm": 164,
+                "overture": 265,
+                "ratio": 0.619
               },
               "nightlife": {
                 "osm": 528,
@@ -3929,16 +4090,20 @@
           "area_km2": 1649.0,
           "pop_2025": 10408332,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.286,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.7793,
           "coverage": {
             "wikidata": {
               "n_items": 664,
               "n_museums": 350,
-              "n_notable": 448,
+              "n_notable": 508,
               "matched_by_wikidata_link": 325,
               "matched_by_name_250m": 47,
               "unmatched_but_linked_from_other_osm_object": 79,
               "recall_all": 0.56,
-              "recall": 0.621,
+              "recall": 0.636,
               "recall_museums": 0.546,
               "osm_culture_to_wikidata_ratio": 1.7
             },
@@ -3974,9 +4139,9 @@
                 "ratio": 0.195
               },
               "culture_core": {
-                "osm": 803,
-                "overture": 3856,
-                "ratio": 0.208
+                "osm": 367,
+                "overture": 1285,
+                "ratio": 0.286
               },
               "nightlife": {
                 "osm": 4746,
@@ -4007,16 +4172,20 @@
           "area_km2": 4498.0,
           "pop_2025": 13474333,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.363,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2612,
           "coverage": {
             "wikidata": {
               "n_items": 234,
               "n_museums": 149,
-              "n_notable": 178,
+              "n_notable": 202,
               "matched_by_wikidata_link": 97,
               "matched_by_name_250m": 34,
               "unmatched_but_linked_from_other_osm_object": 20,
               "recall_all": 0.56,
-              "recall": 0.556,
+              "recall": 0.594,
               "recall_museums": 0.604,
               "osm_culture_to_wikidata_ratio": 4.34
             },
@@ -4052,9 +4221,9 @@
                 "ratio": 0.205
               },
               "culture_core": {
-                "osm": 890,
-                "overture": 3015,
-                "ratio": 0.295
+                "osm": 426,
+                "overture": 1175,
+                "ratio": 0.363
               },
               "nightlife": {
                 "osm": 834,
@@ -4085,16 +4254,20 @@
           "area_km2": 680.0,
           "pop_2025": 5680137,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.399,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.6485,
           "coverage": {
             "wikidata": {
               "n_items": 193,
               "n_museums": 113,
-              "n_notable": 152,
+              "n_notable": 167,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 37,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.617,
-              "recall": 0.618,
+              "recall": 0.611,
               "recall_museums": 0.673,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -4130,9 +4303,9 @@
                 "ratio": 0.212
               },
               "culture_core": {
-                "osm": 457,
-                "overture": 1414,
-                "ratio": 0.323
+                "osm": 176,
+                "overture": 441,
+                "ratio": 0.399
               },
               "nightlife": {
                 "osm": 3374,
@@ -4163,16 +4336,20 @@
           "area_km2": 2555.0,
           "pop_2025": 25921189,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.379,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2344,
           "coverage": {
             "wikidata": {
               "n_items": 54,
               "n_museums": 49,
-              "n_notable": 47,
+              "n_notable": 53,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.759,
-              "recall": 0.745,
+              "recall": 0.774,
               "recall_museums": 0.776,
               "osm_culture_to_wikidata_ratio": 6.24
             },
@@ -4208,9 +4385,9 @@
                 "ratio": 0.234
               },
               "culture_core": {
-                "osm": 315,
-                "overture": 1765,
-                "ratio": 0.178
+                "osm": 227,
+                "overture": 599,
+                "ratio": 0.379
               },
               "nightlife": {
                 "osm": 771,
@@ -4241,16 +4418,20 @@
           "area_km2": 124.0,
           "pop_2025": 1152691,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.643,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3387,
           "coverage": {
             "wikidata": {
               "n_items": 16,
               "n_museums": 15,
-              "n_notable": 9,
+              "n_notable": 14,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.75,
-              "recall": 0.778,
+              "recall": 0.786,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -4286,9 +4467,9 @@
                 "ratio": 0.379
               },
               "culture_core": {
-                "osm": 33,
-                "overture": 54,
-                "ratio": 0.611
+                "osm": 27,
+                "overture": 42,
+                "ratio": 0.643
               },
               "nightlife": {
                 "osm": 49,
@@ -4319,16 +4500,20 @@
           "area_km2": 1611.0,
           "pop_2025": 4010658,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.382,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1819,
           "coverage": {
             "wikidata": {
               "n_items": 81,
               "n_museums": 57,
-              "n_notable": 65,
+              "n_notable": 71,
               "matched_by_wikidata_link": 30,
               "matched_by_name_250m": 17,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.58,
-              "recall": 0.538,
+              "recall": 0.577,
               "recall_museums": 0.526,
               "osm_culture_to_wikidata_ratio": 4.05
             },
@@ -4364,9 +4549,9 @@
                 "ratio": 0.133
               },
               "culture_core": {
-                "osm": 256,
-                "overture": 877,
-                "ratio": 0.292
+                "osm": 112,
+                "overture": 293,
+                "ratio": 0.382
               },
               "nightlife": {
                 "osm": 1040,
@@ -4397,16 +4582,20 @@
           "area_km2": 2134.0,
           "pop_2025": 17639164,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.332,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5333,
           "coverage": {
             "wikidata": {
               "n_items": 271,
               "n_museums": 242,
-              "n_notable": 85,
+              "n_notable": 159,
               "matched_by_wikidata_link": 60,
               "matched_by_name_250m": 84,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.531,
-              "recall": 0.682,
+              "recall": 0.73,
               "recall_museums": 0.521,
               "osm_culture_to_wikidata_ratio": 3.03
             },
@@ -4442,9 +4631,9 @@
                 "ratio": 0.052
               },
               "culture_core": {
-                "osm": 794,
-                "overture": 2779,
-                "ratio": 0.286
+                "osm": 378,
+                "overture": 1138,
+                "ratio": 0.332
               },
               "nightlife": {
                 "osm": 526,
@@ -4475,16 +4664,20 @@
           "area_km2": 2784.0,
           "pop_2025": 5733042,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.341,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1516,
           "coverage": {
             "wikidata": {
               "n_items": 65,
               "n_museums": 55,
-              "n_notable": 52,
+              "n_notable": 56,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.631,
-              "recall": 0.635,
+              "recall": 0.661,
               "recall_museums": 0.618,
               "osm_culture_to_wikidata_ratio": 4.58
             },
@@ -4520,9 +4713,9 @@
                 "ratio": 0.165
               },
               "culture_core": {
-                "osm": 252,
-                "overture": 1069,
-                "ratio": 0.236
+                "osm": 144,
+                "overture": 422,
+                "ratio": 0.341
               },
               "nightlife": {
                 "osm": 302,
@@ -4553,11 +4746,15 @@
           "area_km2": 785.0,
           "pop_2025": 3135553,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.405,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.535,
           "coverage": {
             "wikidata": {
               "n_items": 236,
               "n_museums": 141,
-              "n_notable": 122,
+              "n_notable": 139,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 44,
               "unmatched_but_linked_from_other_osm_object": 14,
@@ -4598,9 +4795,9 @@
                 "ratio": 0.264
               },
               "culture_core": {
-                "osm": 371,
-                "overture": 1249,
-                "ratio": 0.297
+                "osm": 170,
+                "overture": 420,
+                "ratio": 0.405
               },
               "nightlife": {
                 "osm": 1544,
@@ -4631,16 +4828,20 @@
           "area_km2": 237.0,
           "pop_2025": 1219222,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.526,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.4895,
           "coverage": {
             "wikidata": {
               "n_items": 72,
               "n_museums": 54,
-              "n_notable": 48,
+              "n_notable": 51,
               "matched_by_wikidata_link": 36,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.556,
-              "recall": 0.625,
+              "recall": 0.608,
               "recall_museums": 0.556,
               "osm_culture_to_wikidata_ratio": 1.56
             },
@@ -4676,9 +4877,9 @@
                 "ratio": 0.153
               },
               "culture_core": {
-                "osm": 103,
-                "overture": 262,
-                "ratio": 0.393
+                "osm": 61,
+                "overture": 116,
+                "ratio": 0.526
               },
               "nightlife": {
                 "osm": 152,
@@ -4709,16 +4910,20 @@
           "area_km2": 1020.0,
           "pop_2025": 3221844,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.415,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2314,
           "coverage": {
             "wikidata": {
               "n_items": 82,
               "n_museums": 49,
-              "n_notable": 63,
+              "n_notable": 68,
               "matched_by_wikidata_link": 26,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.561,
-              "recall": 0.587,
+              "recall": 0.574,
               "recall_museums": 0.531,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -4754,9 +4959,9 @@
                 "ratio": 0.304
               },
               "culture_core": {
-                "osm": 226,
-                "overture": 620,
-                "ratio": 0.365
+                "osm": 98,
+                "overture": 236,
+                "ratio": 0.415
               },
               "nightlife": {
                 "osm": 536,
@@ -4787,11 +4992,15 @@
           "area_km2": 738.0,
           "pop_2025": 20453270,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.231,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5813,
           "coverage": {
             "wikidata": {
               "n_items": 19,
               "n_museums": 15,
-              "n_notable": 15,
+              "n_notable": 18,
               "matched_by_wikidata_link": 7,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 2,
@@ -4832,9 +5041,9 @@
                 "ratio": 0.082
               },
               "culture_core": {
-                "osm": 163,
-                "overture": 851,
-                "ratio": 0.192
+                "osm": 99,
+                "overture": 429,
+                "ratio": 0.231
               },
               "nightlife": {
                 "osm": 128,
@@ -4865,16 +5074,20 @@
           "area_km2": 345.0,
           "pop_2025": 1827704,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.476,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.713,
           "coverage": {
             "wikidata": {
               "n_items": 120,
               "n_museums": 81,
-              "n_notable": 85,
+              "n_notable": 97,
               "matched_by_wikidata_link": 74,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.725,
-              "recall": 0.765,
+              "recall": 0.773,
               "recall_museums": 0.815,
               "osm_culture_to_wikidata_ratio": 3.62
             },
@@ -4910,9 +5123,9 @@
                 "ratio": 0.266
               },
               "culture_core": {
-                "osm": 267,
-                "overture": 770,
-                "ratio": 0.347
+                "osm": 117,
+                "overture": 246,
+                "ratio": 0.476
               },
               "nightlife": {
                 "osm": 640,
@@ -4943,6 +5156,10 @@
           "area_km2": 598.0,
           "pop_2025": 6646257,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.491,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0886,
           "coverage": {
             "wikidata": {
               "n_items": 5,
@@ -4988,9 +5205,9 @@
                 "ratio": 0.391
               },
               "culture_core": {
-                "osm": 132,
-                "overture": 152,
-                "ratio": 0.868
+                "osm": 79,
+                "overture": 53,
+                "ratio": 1.491
               },
               "nightlife": {
                 "osm": 651,
@@ -5021,16 +5238,20 @@
           "area_km2": 2139.0,
           "pop_2025": 31422508,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.288,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.237,
           "coverage": {
             "wikidata": {
               "n_items": 31,
               "n_museums": 31,
-              "n_notable": 28,
+              "n_notable": 29,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.613,
-              "recall": 0.643,
+              "recall": 0.655,
               "recall_museums": 0.613,
               "osm_culture_to_wikidata_ratio": 9.29
             },
@@ -5066,9 +5287,9 @@
                 "ratio": 0.065
               },
               "culture_core": {
-                "osm": 272,
-                "overture": 992,
-                "ratio": 0.274
+                "osm": 146,
+                "overture": 507,
+                "ratio": 0.288
               },
               "nightlife": {
                 "osm": 136,
@@ -5099,16 +5320,20 @@
           "area_km2": 3031.0,
           "pop_2025": 14197659,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.302,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.4187,
           "coverage": {
             "wikidata": {
               "n_items": 441,
               "n_museums": 233,
-              "n_notable": 357,
+              "n_notable": 393,
               "matched_by_wikidata_link": 195,
               "matched_by_name_250m": 57,
               "unmatched_but_linked_from_other_osm_object": 39,
               "recall_all": 0.571,
-              "recall": 0.574,
+              "recall": 0.585,
               "recall_museums": 0.588,
               "osm_culture_to_wikidata_ratio": 2.92
             },
@@ -5144,9 +5369,9 @@
                 "ratio": 0.326
               },
               "culture_core": {
-                "osm": 942,
-                "overture": 3585,
-                "ratio": 0.263
+                "osm": 383,
+                "overture": 1269,
+                "ratio": 0.302
               },
               "nightlife": {
                 "osm": 2275,
@@ -5177,16 +5402,20 @@
           "area_km2": 2212.0,
           "pop_2025": 12653994,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.661,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3223,
           "coverage": {
             "wikidata": {
               "n_items": 346,
               "n_museums": 283,
-              "n_notable": 277,
+              "n_notable": 292,
               "matched_by_wikidata_link": 197,
               "matched_by_name_250m": 33,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.665,
-              "recall": 0.718,
+              "recall": 0.709,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -5222,9 +5451,9 @@
                 "ratio": 0.22
               },
               "culture_core": {
-                "osm": 752,
-                "overture": 3114,
-                "ratio": 0.241
+                "osm": 471,
+                "overture": 713,
+                "ratio": 0.661
               },
               "nightlife": {
                 "osm": 7451,
@@ -5255,11 +5484,15 @@
           "area_km2": 244.0,
           "pop_2025": 889573,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.648,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5246,
           "coverage": {
             "wikidata": {
               "n_items": 76,
               "n_museums": 58,
-              "n_notable": 55,
+              "n_notable": 58,
               "matched_by_wikidata_link": 43,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 6,
@@ -5300,9 +5533,9 @@
                 "ratio": 0.263
               },
               "culture_core": {
-                "osm": 145,
-                "overture": 432,
-                "ratio": 0.336
+                "osm": 83,
+                "overture": 128,
+                "ratio": 0.648
               },
               "nightlife": {
                 "osm": 330,
@@ -5333,16 +5566,20 @@
           "area_km2": 1421.0,
           "pop_2025": 9328385,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.348,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.0021,
           "coverage": {
             "wikidata": {
               "n_items": 584,
               "n_museums": 303,
-              "n_notable": 468,
+              "n_notable": 509,
               "matched_by_wikidata_link": 302,
               "matched_by_name_250m": 91,
               "unmatched_but_linked_from_other_osm_object": 36,
               "recall_all": 0.673,
-              "recall": 0.682,
+              "recall": 0.684,
               "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 3.6
             },
@@ -5378,9 +5615,9 @@
                 "ratio": 0.181
               },
               "culture_core": {
-                "osm": 1485,
-                "overture": 3633,
-                "ratio": 0.409
+                "osm": 495,
+                "overture": 1424,
+                "ratio": 0.348
               },
               "nightlife": {
                 "osm": 3236,
@@ -5411,16 +5648,20 @@
           "area_km2": 784.0,
           "pop_2025": 1357382,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.296,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1811,
           "coverage": {
             "wikidata": {
               "n_items": 36,
               "n_museums": 24,
-              "n_notable": 31,
+              "n_notable": 33,
               "matched_by_wikidata_link": 13,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 12,
               "recall_all": 0.472,
-              "recall": 0.387,
+              "recall": 0.424,
               "recall_museums": 0.542,
               "osm_culture_to_wikidata_ratio": 3.53
             },
@@ -5456,9 +5697,9 @@
                 "ratio": 0.352
               },
               "culture_core": {
-                "osm": 100,
-                "overture": 375,
-                "ratio": 0.267
+                "osm": 42,
+                "overture": 142,
+                "ratio": 0.296
               },
               "nightlife": {
                 "osm": 347,
@@ -5489,16 +5730,20 @@
           "area_km2": 263.0,
           "pop_2025": 1201278,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.542,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.1635,
           "coverage": {
             "wikidata": {
               "n_items": 188,
               "n_museums": 96,
-              "n_notable": 125,
+              "n_notable": 141,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 17,
               "recall_all": 0.66,
-              "recall": 0.736,
+              "recall": 0.723,
               "recall_museums": 0.708,
               "osm_culture_to_wikidata_ratio": 2.1
             },
@@ -5534,9 +5779,9 @@
                 "ratio": 0.588
               },
               "culture_core": {
-                "osm": 326,
-                "overture": 731,
-                "ratio": 0.446
+                "osm": 166,
+                "overture": 306,
+                "ratio": 0.542
               },
               "nightlife": {
                 "osm": 949,
@@ -5567,6 +5812,10 @@
           "area_km2": 380.0,
           "pop_2025": 2605678,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.664,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3132,
           "coverage": {
             "wikidata": {
               "n_items": 22,
@@ -5612,9 +5861,9 @@
                 "ratio": 0.64
               },
               "culture_core": {
-                "osm": 137,
-                "overture": 294,
-                "ratio": 0.466
+                "osm": 79,
+                "overture": 119,
+                "ratio": 0.664
               },
               "nightlife": {
                 "osm": 298,
@@ -5645,16 +5894,20 @@
           "area_km2": 97.0,
           "pop_2025": 206895,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.569,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.7423,
           "coverage": {
             "wikidata": {
               "n_items": 27,
               "n_museums": 23,
-              "n_notable": 23,
+              "n_notable": 24,
               "matched_by_wikidata_link": 18,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.778,
-              "recall": 0.826,
+              "recall": 0.792,
               "recall_museums": 0.783,
               "osm_culture_to_wikidata_ratio": 2.74
             },
@@ -5690,9 +5943,9 @@
                 "ratio": 0.538
               },
               "culture_core": {
-                "osm": 53,
-                "overture": 140,
-                "ratio": 0.379
+                "osm": 41,
+                "overture": 72,
+                "ratio": 0.569
               },
               "nightlife": {
                 "osm": 89,
@@ -5723,16 +5976,20 @@
           "area_km2": 1285.0,
           "pop_2025": 9853693,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.397,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3121,
           "coverage": {
             "wikidata": {
               "n_items": 138,
               "n_museums": 125,
-              "n_notable": 68,
+              "n_notable": 73,
               "matched_by_wikidata_link": 52,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.464,
-              "recall": 0.662,
+              "recall": 0.644,
               "recall_museums": 0.432,
               "osm_culture_to_wikidata_ratio": 2.32
             },
@@ -5768,9 +6025,9 @@
                 "ratio": 0.175
               },
               "culture_core": {
-                "osm": 319,
-                "overture": 1736,
-                "ratio": 0.184
+                "osm": 159,
+                "overture": 401,
+                "ratio": 0.397
               },
               "nightlife": {
                 "osm": 1051,
@@ -5801,16 +6058,20 @@
           "area_km2": 467.0,
           "pop_2025": 2476089,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.33,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.4133,
           "coverage": {
             "wikidata": {
               "n_items": 272,
               "n_museums": 220,
-              "n_notable": 165,
+              "n_notable": 199,
               "matched_by_wikidata_link": 99,
               "matched_by_name_250m": 43,
               "unmatched_but_linked_from_other_osm_object": 30,
               "recall_all": 0.522,
-              "recall": 0.545,
+              "recall": 0.568,
               "recall_museums": 0.509,
               "osm_culture_to_wikidata_ratio": 1.47
             },
@@ -5846,9 +6107,9 @@
                 "ratio": 0.216
               },
               "culture_core": {
-                "osm": 384,
-                "overture": 1588,
-                "ratio": 0.242
+                "osm": 218,
+                "overture": 660,
+                "ratio": 0.33
               },
               "nightlife": {
                 "osm": 666,
@@ -5879,16 +6140,20 @@
           "area_km2": 1614.0,
           "pop_2025": 4718349,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.395,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.347,
           "coverage": {
             "wikidata": {
               "n_items": 159,
               "n_museums": 116,
-              "n_notable": 129,
+              "n_notable": 138,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 19,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.736,
-              "recall": 0.721,
+              "recall": 0.732,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.45
             },
@@ -5924,9 +6189,9 @@
                 "ratio": 0.467
               },
               "culture_core": {
-                "osm": 557,
-                "overture": 1421,
-                "ratio": 0.392
+                "osm": 221,
+                "overture": 560,
+                "ratio": 0.395
               },
               "nightlife": {
                 "osm": 1038,
@@ -5957,16 +6222,20 @@
           "area_km2": 801.0,
           "pop_2025": 6633767,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.534,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3159,
           "coverage": {
             "wikidata": {
               "n_items": 110,
               "n_museums": 92,
-              "n_notable": 72,
+              "n_notable": 75,
               "matched_by_wikidata_link": 63,
               "matched_by_name_250m": 26,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.809,
-              "recall": 0.889,
+              "recall": 0.88,
               "recall_museums": 0.793,
               "osm_culture_to_wikidata_ratio": 3.33
             },
@@ -6002,9 +6271,9 @@
                 "ratio": 0.305
               },
               "culture_core": {
-                "osm": 318,
-                "overture": 665,
-                "ratio": 0.478
+                "osm": 135,
+                "overture": 253,
+                "ratio": 0.534
               },
               "nightlife": {
                 "osm": 408,
@@ -6035,16 +6304,20 @@
           "area_km2": 2111.0,
           "pop_2025": 19485158,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.269,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2762,
           "coverage": {
             "wikidata": {
               "n_items": 204,
               "n_museums": 166,
-              "n_notable": 136,
+              "n_notable": 144,
               "matched_by_wikidata_link": 83,
               "matched_by_name_250m": 15,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.48,
-              "recall": 0.588,
+              "recall": 0.583,
               "recall_museums": 0.428,
               "osm_culture_to_wikidata_ratio": 2.44
             },
@@ -6080,9 +6353,9 @@
                 "ratio": 0.161
               },
               "culture_core": {
-                "osm": 483,
-                "overture": 2587,
-                "ratio": 0.187
+                "osm": 157,
+                "overture": 583,
+                "ratio": 0.269
               },
               "nightlife": {
                 "osm": 1319,
@@ -6113,16 +6386,20 @@
           "area_km2": 353.0,
           "pop_2025": 1931424,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.553,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2408,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 40,
-              "n_notable": 35,
+              "n_notable": 39,
               "matched_by_wikidata_link": 27,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 2,
               "recall_all": 0.682,
-              "recall": 0.743,
+              "recall": 0.769,
               "recall_museums": 0.675,
               "osm_culture_to_wikidata_ratio": 1.73
             },
@@ -6158,9 +6435,9 @@
                 "ratio": 0.244
               },
               "culture_core": {
-                "osm": 73,
-                "overture": 416,
-                "ratio": 0.175
+                "osm": 47,
+                "overture": 85,
+                "ratio": 0.553
               },
               "nightlife": {
                 "osm": 294,
@@ -6191,16 +6468,20 @@
           "area_km2": 1123.0,
           "pop_2025": 2099643,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.432,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.171,
           "coverage": {
             "wikidata": {
               "n_items": 54,
               "n_museums": 33,
-              "n_notable": 49,
+              "n_notable": 52,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.667,
-              "recall": 0.673,
+              "recall": 0.692,
               "recall_museums": 0.606,
               "osm_culture_to_wikidata_ratio": 4.67
             },
@@ -6236,9 +6517,9 @@
                 "ratio": 0.825
               },
               "culture_core": {
-                "osm": 217,
-                "overture": 519,
-                "ratio": 0.418
+                "osm": 83,
+                "overture": 192,
+                "ratio": 0.432
               },
               "nightlife": {
                 "osm": 725,
@@ -6269,16 +6550,20 @@
           "area_km2": 2282.0,
           "pop_2025": 22261692,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.659,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3878,
           "coverage": {
             "wikidata": {
               "n_items": 130,
               "n_museums": 121,
-              "n_notable": 115,
+              "n_notable": 121,
               "matched_by_wikidata_link": 64,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.8,
-              "recall": 0.817,
+              "recall": 0.818,
               "recall_museums": 0.802,
               "osm_culture_to_wikidata_ratio": 14.09
             },
@@ -6314,9 +6599,9 @@
                 "ratio": 0.229
               },
               "culture_core": {
-                "osm": 1636,
-                "overture": 2131,
-                "ratio": 0.768
+                "osm": 583,
+                "overture": 885,
+                "ratio": 0.659
               },
               "nightlife": {
                 "osm": 2796,
@@ -6347,16 +6632,20 @@
           "area_km2": 3128.0,
           "pop_2025": 30678616,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.146,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.0764,
           "coverage": {
             "wikidata": {
               "n_items": 69,
               "n_museums": 60,
-              "n_notable": 64,
+              "n_notable": 66,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 2,
               "recall_all": 0.667,
-              "recall": 0.703,
+              "recall": 0.682,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 6.57
             },
@@ -6392,9 +6681,9 @@
                 "ratio": 0.729
               },
               "culture_core": {
-                "osm": 427,
-                "overture": 389,
-                "ratio": 1.098
+                "osm": 274,
+                "overture": 239,
+                "ratio": 1.146
               },
               "nightlife": {
                 "osm": 403,
@@ -6425,16 +6714,20 @@
           "area_km2": 438.0,
           "pop_2025": 5117759,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.481,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.484,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 41,
-              "n_notable": 40,
+              "n_notable": 42,
               "matched_by_wikidata_link": 19,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.659,
-              "recall": 0.625,
+              "recall": 0.643,
               "recall_museums": 0.634,
               "osm_culture_to_wikidata_ratio": 5.41
             },
@@ -6470,9 +6763,9 @@
                 "ratio": 0.989
               },
               "culture_core": {
-                "osm": 195,
-                "overture": 632,
-                "ratio": 0.309
+                "osm": 102,
+                "overture": 212,
+                "ratio": 0.481
               },
               "nightlife": {
                 "osm": 542,
@@ -6503,16 +6796,20 @@
           "area_km2": 339.0,
           "pop_2025": 1543892,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.368,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.8171,
           "coverage": {
             "wikidata": {
               "n_items": 334,
               "n_museums": 299,
-              "n_notable": 203,
+              "n_notable": 218,
               "matched_by_wikidata_link": 68,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 136,
               "recall_all": 0.272,
-              "recall": 0.33,
+              "recall": 0.358,
               "recall_museums": 0.224,
               "osm_culture_to_wikidata_ratio": 0.74
             },
@@ -6548,9 +6845,9 @@
                 "ratio": 0.161
               },
               "culture_core": {
-                "osm": 185,
-                "overture": 681,
-                "ratio": 0.272
+                "osm": 102,
+                "overture": 277,
+                "ratio": 0.368
               },
               "nightlife": {
                 "osm": 344,
@@ -6581,16 +6878,20 @@
           "area_km2": 1378.0,
           "pop_2025": 4375394,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.431,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1851,
           "coverage": {
             "wikidata": {
               "n_items": 77,
               "n_museums": 48,
-              "n_notable": 62,
+              "n_notable": 68,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.623,
-              "recall": 0.694,
+              "recall": 0.662,
               "recall_museums": 0.646,
               "osm_culture_to_wikidata_ratio": 4.29
             },
@@ -6626,9 +6927,9 @@
                 "ratio": 0.114
               },
               "culture_core": {
-                "osm": 227,
-                "overture": 813,
-                "ratio": 0.279
+                "osm": 110,
+                "overture": 255,
+                "ratio": 0.431
               },
               "nightlife": {
                 "osm": 867,
@@ -6659,16 +6960,20 @@
           "area_km2": 972.0,
           "pop_2025": 9686521,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.354,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.7027,
           "coverage": {
             "wikidata": {
               "n_items": 119,
               "n_museums": 115,
-              "n_notable": 94,
+              "n_notable": 104,
               "matched_by_wikidata_link": 67,
               "matched_by_name_250m": 11,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.655,
-              "recall": 0.649,
+              "recall": 0.663,
               "recall_museums": 0.643,
               "osm_culture_to_wikidata_ratio": 3.5
             },
@@ -6704,9 +7009,9 @@
                 "ratio": 0.275
               },
               "culture_core": {
-                "osm": 382,
-                "overture": 1657,
-                "ratio": 0.231
+                "osm": 242,
+                "overture": 683,
+                "ratio": 0.354
               },
               "nightlife": {
                 "osm": 313,
@@ -6737,16 +7042,20 @@
           "area_km2": 151.0,
           "pop_2025": 988278,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.52,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.6755,
           "coverage": {
             "wikidata": {
               "n_items": 43,
               "n_museums": 31,
-              "n_notable": 31,
+              "n_notable": 36,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.744,
-              "recall": 0.774,
+              "recall": 0.722,
               "recall_museums": 0.774,
               "osm_culture_to_wikidata_ratio": 3.26
             },
@@ -6782,9 +7091,9 @@
                 "ratio": 0.583
               },
               "culture_core": {
-                "osm": 110,
-                "overture": 242,
-                "ratio": 0.455
+                "osm": 53,
+                "overture": 102,
+                "ratio": 0.52
               },
               "nightlife": {
                 "osm": 336,
@@ -6815,16 +7124,20 @@
           "area_km2": 825.0,
           "pop_2025": 9363124,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.849,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1442,
           "coverage": {
             "wikidata": {
               "n_items": 53,
               "n_museums": 40,
-              "n_notable": 37,
+              "n_notable": 50,
               "matched_by_wikidata_link": 24,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.698,
-              "recall": 0.73,
+              "recall": 0.7,
               "recall_museums": 0.775,
               "osm_culture_to_wikidata_ratio": 7.09
             },
@@ -6860,9 +7173,9 @@
                 "ratio": 0.0
               },
               "culture_core": {
-                "osm": 331,
-                "overture": 169,
-                "ratio": 1.959
+                "osm": 220,
+                "overture": 119,
+                "ratio": 1.849
               },
               "nightlife": {
                 "osm": 6,
@@ -6893,16 +7206,20 @@
           "area_km2": 333.0,
           "pop_2025": 2628335,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.412,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.5826,
           "coverage": {
             "wikidata": {
               "n_items": 138,
               "n_museums": 108,
-              "n_notable": 128,
+              "n_notable": 132,
               "matched_by_wikidata_link": 50,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 28,
               "recall_all": 0.42,
-              "recall": 0.438,
+              "recall": 0.432,
               "recall_museums": 0.426,
               "osm_culture_to_wikidata_ratio": 1.28
             },
@@ -6938,9 +7255,9 @@
                 "ratio": 0.143
               },
               "culture_core": {
-                "osm": 164,
-                "overture": 646,
-                "ratio": 0.254
+                "osm": 80,
+                "overture": 194,
+                "ratio": 0.412
               },
               "nightlife": {
                 "osm": 265,
@@ -6971,16 +7288,20 @@
           "area_km2": 5165.0,
           "pop_2025": 33155907,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.599,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.3258,
           "coverage": {
             "wikidata": {
               "n_items": 637,
               "n_museums": 516,
-              "n_notable": 524,
+              "n_notable": 577,
               "matched_by_wikidata_link": 437,
               "matched_by_name_250m": 53,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.769,
-              "recall": 0.773,
+              "recall": 0.775,
               "recall_museums": 0.816,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -7016,9 +7337,9 @@
                 "ratio": 0.539
               },
               "culture_core": {
-                "osm": 1416,
-                "overture": 7416,
-                "ratio": 0.191
+                "osm": 1008,
+                "overture": 1683,
+                "ratio": 0.599
               },
               "nightlife": {
                 "osm": 12665,
@@ -7049,16 +7370,20 @@
           "area_km2": 1620.0,
           "pop_2025": 5566382,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.371,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.1728,
           "coverage": {
             "wikidata": {
               "n_items": 94,
               "n_museums": 50,
-              "n_notable": 64,
+              "n_notable": 69,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.553,
-              "recall": 0.562,
+              "recall": 0.58,
               "recall_museums": 0.54,
               "osm_culture_to_wikidata_ratio": 3.47
             },
@@ -7094,9 +7419,9 @@
                 "ratio": 0.285
               },
               "culture_core": {
-                "osm": 256,
-                "overture": 860,
-                "ratio": 0.298
+                "osm": 104,
+                "overture": 280,
+                "ratio": 0.371
               },
               "nightlife": {
                 "osm": 760,
@@ -7127,6 +7452,10 @@
           "area_km2": 235.0,
           "pop_2025": 1634097,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.792,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2043,
           "coverage": {
             "wikidata": {
               "n_items": 19,
@@ -7172,9 +7501,9 @@
                 "ratio": 0.386
               },
               "culture_core": {
-                "osm": 57,
-                "overture": 211,
-                "ratio": 0.27
+                "osm": 38,
+                "overture": 48,
+                "ratio": 0.792
               },
               "nightlife": {
                 "osm": 175,
@@ -7205,6 +7534,10 @@
           "area_km2": 649.0,
           "pop_2025": 2198107,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.489,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.2018,
           "coverage": {
             "wikidata": {
               "n_items": 50,
@@ -7250,9 +7583,9 @@
                 "ratio": 0.49
               },
               "culture_core": {
-                "osm": 163,
-                "overture": 400,
-                "ratio": 0.407
+                "osm": 64,
+                "overture": 131,
+                "ratio": 0.489
               },
               "nightlife": {
                 "osm": 323,
@@ -7283,16 +7616,20 @@
           "area_km2": 325.0,
           "pop_2025": 2056565,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.645,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 1.16,
           "coverage": {
             "wikidata": {
               "n_items": 283,
               "n_museums": 190,
-              "n_notable": 195,
+              "n_notable": 226,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 30,
               "recall_all": 0.717,
-              "recall": 0.713,
+              "recall": 0.743,
               "recall_museums": 0.784,
               "osm_culture_to_wikidata_ratio": 1.9
             },
@@ -7328,9 +7665,9 @@
                 "ratio": 0.297
               },
               "culture_core": {
-                "osm": 416,
-                "overture": 1067,
-                "ratio": 0.39
+                "osm": 243,
+                "overture": 377,
+                "ratio": 0.645
               },
               "nightlife": {
                 "osm": 768,
@@ -7361,16 +7698,20 @@
           "area_km2": 415.0,
           "pop_2025": 1999986,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.505,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.6723,
           "coverage": {
             "wikidata": {
               "n_items": 166,
               "n_museums": 122,
-              "n_notable": 134,
+              "n_notable": 145,
               "matched_by_wikidata_link": 77,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.651,
-              "recall": 0.672,
+              "recall": 0.669,
               "recall_museums": 0.656,
               "osm_culture_to_wikidata_ratio": 2.19
             },
@@ -7406,9 +7747,9 @@
                 "ratio": 0.396
               },
               "culture_core": {
-                "osm": 322,
-                "overture": 617,
-                "ratio": 0.522
+                "osm": 141,
+                "overture": 279,
+                "ratio": 0.505
               },
               "nightlife": {
                 "osm": 498,
@@ -7439,16 +7780,20 @@
           "area_km2": 187.0,
           "pop_2025": 689208,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.531,
+          "median_osm_over_overture_86": 0.442,
+          "overture_density_per_km2": 0.9465,
           "coverage": {
             "wikidata": {
               "n_items": 83,
               "n_museums": 72,
-              "n_notable": 42,
+              "n_notable": 67,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.663,
-              "recall": 0.69,
+              "recall": 0.701,
               "recall_museums": 0.625,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -7484,9 +7829,9 @@
                 "ratio": 0.301
               },
               "culture_core": {
-                "osm": 168,
-                "overture": 459,
-                "ratio": 0.366
+                "osm": 94,
+                "overture": 177,
+                "ratio": 0.531
               },
               "nightlife": {
                 "osm": 393,
@@ -8291,16 +8636,20 @@
           "area_km2": 1121.0,
           "pop_2025": 5890466,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 2.445,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.2284,
           "coverage": {
             "wikidata": {
               "n_items": 7,
               "n_museums": 6,
-              "n_notable": 5,
+              "n_notable": 6,
               "matched_by_wikidata_link": 2,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.714,
-              "recall": 0.8,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 3.29
             },
@@ -8336,9 +8685,9 @@
                 "ratio": 0.579
               },
               "culture_core": {
-                "osm": 21,
-                "overture": 91,
-                "ratio": 0.231
+                "osm": 16,
+                "overture": 20,
+                "ratio": 0.8
               },
               "nightlife": {
                 "osm": 626,
@@ -8365,6 +8714,10 @@
           "area_km2": 465.0,
           "pop_2025": 7280463,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 3.035,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.1226,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -8410,9 +8763,9 @@
                 "ratio": 1.188
               },
               "culture_core": {
-                "osm": 52,
-                "overture": 30,
-                "ratio": 1.733
+                "osm": 45,
+                "overture": 22,
+                "ratio": 2.045
               },
               "nightlife": {
                 "osm": 173,
@@ -8439,16 +8792,20 @@
           "area_km2": 331.0,
           "pop_2025": 2315538,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.438,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.0634,
           "coverage": {
             "wikidata": {
               "n_items": 36,
               "n_museums": 20,
-              "n_notable": 34,
+              "n_notable": 36,
               "matched_by_wikidata_link": 21,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.639,
-              "recall": 0.676,
+              "recall": 0.639,
               "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 2.08
             },
@@ -8484,9 +8841,9 @@
                 "ratio": 0.333
               },
               "culture_core": {
-                "osm": 68,
-                "overture": 260,
-                "ratio": 0.262
+                "osm": 42,
+                "overture": 77,
+                "ratio": 0.545
               },
               "nightlife": {
                 "osm": 154,
@@ -8513,16 +8870,20 @@
           "area_km2": 308.0,
           "pop_2025": 1223407,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.681,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.237,
           "coverage": {
             "wikidata": {
               "n_items": 181,
               "n_museums": 106,
-              "n_notable": 143,
+              "n_notable": 154,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 22,
               "recall_all": 0.63,
-              "recall": 0.629,
+              "recall": 0.643,
               "recall_museums": 0.651,
               "osm_culture_to_wikidata_ratio": 2.07
             },
@@ -8558,9 +8919,9 @@
                 "ratio": 0.277
               },
               "culture_core": {
-                "osm": 293,
-                "overture": 1009,
-                "ratio": 0.29
+                "osm": 137,
+                "overture": 347,
+                "ratio": 0.395
               },
               "nightlife": {
                 "osm": 679,
@@ -8587,16 +8948,20 @@
           "area_km2": 412.0,
           "pop_2025": 3166757,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.38,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 4.3519,
           "coverage": {
             "wikidata": {
               "n_items": 237,
               "n_museums": 112,
-              "n_notable": 143,
+              "n_notable": 147,
               "matched_by_wikidata_link": 127,
               "matched_by_name_250m": 39,
               "unmatched_but_linked_from_other_osm_object": 13,
               "recall_all": 0.7,
-              "recall": 0.769,
+              "recall": 0.762,
               "recall_museums": 0.67,
               "osm_culture_to_wikidata_ratio": 2.63
             },
@@ -8632,9 +8997,9 @@
                 "ratio": 0.364
               },
               "culture_core": {
-                "osm": 559,
-                "overture": 1251,
-                "ratio": 0.447
+                "osm": 250,
+                "overture": 441,
+                "ratio": 0.567
               },
               "nightlife": {
                 "osm": 682,
@@ -8661,16 +9026,20 @@
           "area_km2": 638.0,
           "pop_2025": 1623898,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.663,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7304,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 27,
-              "n_notable": 38,
+              "n_notable": 39,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 10,
               "recall_all": 0.568,
-              "recall": 0.605,
+              "recall": 0.59,
               "recall_museums": 0.481,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -8706,9 +9075,9 @@
                 "ratio": 0.387
               },
               "culture_core": {
-                "osm": 115,
-                "overture": 224,
-                "ratio": 0.513
+                "osm": 44,
+                "overture": 73,
+                "ratio": 0.603
               },
               "nightlife": {
                 "osm": 309,
@@ -8735,16 +9104,20 @@
           "area_km2": 2697.0,
           "pop_2025": 19048032,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.207,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.5428,
           "coverage": {
             "wikidata": {
               "n_items": 82,
               "n_museums": 76,
-              "n_notable": 68,
+              "n_notable": 78,
               "matched_by_wikidata_link": 38,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.61,
-              "recall": 0.632,
+              "recall": 0.628,
               "recall_museums": 0.605,
               "osm_culture_to_wikidata_ratio": 3.71
             },
@@ -8780,9 +9153,9 @@
                 "ratio": 0.219
               },
               "culture_core": {
-                "osm": 267,
-                "overture": 2144,
-                "ratio": 0.125
+                "osm": 190,
+                "overture": 775,
+                "ratio": 0.245
               },
               "nightlife": {
                 "osm": 862,
@@ -8809,16 +9182,20 @@
           "area_km2": 438.0,
           "pop_2025": 3908362,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.543,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 9.7055,
           "coverage": {
             "wikidata": {
               "n_items": 238,
               "n_museums": 119,
-              "n_notable": 183,
+              "n_notable": 220,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 36,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.563,
-              "recall": 0.536,
+              "recall": 0.555,
               "recall_museums": 0.681,
               "osm_culture_to_wikidata_ratio": 1.83
             },
@@ -8854,9 +9231,9 @@
                 "ratio": 0.165
               },
               "culture_core": {
-                "osm": 404,
-                "overture": 1206,
-                "ratio": 0.335
+                "osm": 170,
+                "overture": 425,
+                "ratio": 0.4
               },
               "nightlife": {
                 "osm": 2308,
@@ -8883,16 +9260,20 @@
           "area_km2": 2179.0,
           "pop_2025": 18150576,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.778,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.0743,
           "coverage": {
             "wikidata": {
               "n_items": 140,
               "n_museums": 121,
-              "n_notable": 129,
+              "n_notable": 137,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.464,
-              "recall": 0.481,
+              "recall": 0.467,
               "recall_museums": 0.405,
               "osm_culture_to_wikidata_ratio": 2.96
             },
@@ -8928,9 +9309,9 @@
                 "ratio": 2.286
               },
               "culture_core": {
-                "osm": 382,
-                "overture": 336,
-                "ratio": 1.137
+                "osm": 260,
+                "overture": 222,
+                "ratio": 1.171
               },
               "nightlife": {
                 "osm": 288,
@@ -8957,6 +9338,10 @@
           "area_km2": 1008.0,
           "pop_2025": 15178533,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.554,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7917,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -9002,9 +9387,9 @@
                 "ratio": 0.111
               },
               "culture_core": {
-                "osm": 297,
-                "overture": 669,
-                "ratio": 0.444
+                "osm": 136,
+                "overture": 337,
+                "ratio": 0.404
               },
               "nightlife": {
                 "osm": 442,
@@ -9031,16 +9416,20 @@
           "area_km2": 681.0,
           "pop_2025": 3549997,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.747,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.9545,
           "coverage": {
             "wikidata": {
               "n_items": 358,
               "n_museums": 223,
-              "n_notable": 217,
+              "n_notable": 241,
               "matched_by_wikidata_link": 183,
               "matched_by_name_250m": 42,
               "unmatched_but_linked_from_other_osm_object": 25,
               "recall_all": 0.628,
-              "recall": 0.691,
+              "recall": 0.701,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.88
             },
@@ -9076,9 +9465,9 @@
                 "ratio": 0.422
               },
               "culture_core": {
-                "osm": 673,
-                "overture": 1988,
-                "ratio": 0.339
+                "osm": 333,
+                "overture": 737,
+                "ratio": 0.452
               },
               "nightlife": {
                 "osm": 2011,
@@ -9105,16 +9494,20 @@
           "area_km2": 534.0,
           "pop_2025": 10419361,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.323,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 5.3071,
           "coverage": {
             "wikidata": {
               "n_items": 45,
               "n_museums": 33,
-              "n_notable": 41,
+              "n_notable": 42,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.622,
-              "recall": 0.659,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 5.49
             },
@@ -9150,9 +9543,9 @@
                 "ratio": 0.241
               },
               "culture_core": {
-                "osm": 238,
-                "overture": 673,
-                "ratio": 0.354
+                "osm": 115,
+                "overture": 274,
+                "ratio": 0.42
               },
               "nightlife": {
                 "osm": 916,
@@ -9179,16 +9572,20 @@
           "area_km2": 368.0,
           "pop_2025": 1743875,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.723,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.587,
           "coverage": {
             "wikidata": {
               "n_items": 123,
               "n_museums": 81,
-              "n_notable": 92,
+              "n_notable": 99,
               "matched_by_wikidata_link": 89,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.821,
-              "recall": 0.87,
+              "recall": 0.838,
               "recall_museums": 0.84,
               "osm_culture_to_wikidata_ratio": 4.12
             },
@@ -9224,9 +9621,9 @@
                 "ratio": 0.37
               },
               "culture_core": {
-                "osm": 316,
-                "overture": 821,
-                "ratio": 0.385
+                "osm": 180,
+                "overture": 346,
+                "ratio": 0.52
               },
               "nightlife": {
                 "osm": 955,
@@ -9253,16 +9650,20 @@
           "area_km2": 2186.0,
           "pop_2025": 14179912,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.31,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.6011,
           "coverage": {
             "wikidata": {
               "n_items": 309,
               "n_museums": 265,
-              "n_notable": 111,
+              "n_notable": 129,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.657,
-              "recall": 0.766,
+              "recall": 0.783,
               "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 2.08
             },
@@ -9298,9 +9699,9 @@
                 "ratio": 0.244
               },
               "culture_core": {
-                "osm": 614,
-                "overture": 1882,
-                "ratio": 0.326
+                "osm": 289,
+                "overture": 531,
+                "ratio": 0.544
               },
               "nightlife": {
                 "osm": 1086,
@@ -9327,16 +9728,20 @@
           "area_km2": 1680.0,
           "pop_2025": 25230325,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.214,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.1393,
           "coverage": {
             "wikidata": {
               "n_items": 65,
               "n_museums": 60,
-              "n_notable": 52,
+              "n_notable": 57,
               "matched_by_wikidata_link": 15,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.446,
-              "recall": 0.5,
+              "recall": 0.509,
               "recall_museums": 0.467,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -9372,9 +9777,9 @@
                 "ratio": 0.097
               },
               "culture_core": {
-                "osm": 142,
-                "overture": 398,
-                "ratio": 0.357
+                "osm": 99,
+                "overture": 212,
+                "ratio": 0.467
               },
               "nightlife": {
                 "osm": 50,
@@ -9401,16 +9806,20 @@
           "area_km2": 695.0,
           "pop_2025": 4338251,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.304,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7727,
           "coverage": {
             "wikidata": {
               "n_items": 29,
               "n_museums": 24,
-              "n_notable": 22,
+              "n_notable": 24,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.759,
-              "recall": 0.727,
+              "recall": 0.75,
               "recall_museums": 0.75,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -9446,9 +9855,9 @@
                 "ratio": 0.188
               },
               "culture_core": {
-                "osm": 61,
-                "overture": 227,
-                "ratio": 0.269
+                "osm": 36,
+                "overture": 90,
+                "ratio": 0.4
               },
               "nightlife": {
                 "osm": 163,
@@ -9475,6 +9884,10 @@
           "area_km2": 415.0,
           "pop_2025": 4577677,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.432,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.3181,
           "coverage": {
             "wikidata": {
               "n_items": 6,
@@ -9520,9 +9933,9 @@
                 "ratio": 0.207
               },
               "culture_core": {
-                "osm": 31,
-                "overture": 84,
-                "ratio": 0.369
+                "osm": 12,
+                "overture": 29,
+                "ratio": 0.414
               },
               "nightlife": {
                 "osm": 57,
@@ -9549,16 +9962,20 @@
           "area_km2": 2046.0,
           "pop_2025": 5318735,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.455,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.1833,
           "coverage": {
             "wikidata": {
               "n_items": 115,
               "n_museums": 64,
-              "n_notable": 102,
+              "n_notable": 108,
               "matched_by_wikidata_link": 71,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 10,
               "recall_all": 0.696,
-              "recall": 0.716,
+              "recall": 0.713,
               "recall_museums": 0.734,
               "osm_culture_to_wikidata_ratio": 4.03
             },
@@ -9594,9 +10011,9 @@
                 "ratio": 0.194
               },
               "culture_core": {
-                "osm": 400,
-                "overture": 1314,
-                "ratio": 0.304
+                "osm": 189,
+                "overture": 489,
+                "ratio": 0.387
               },
               "nightlife": {
                 "osm": 1101,
@@ -9623,16 +10040,20 @@
           "area_km2": 302.0,
           "pop_2025": 1258202,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.709,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.3675,
           "coverage": {
             "wikidata": {
               "n_items": 106,
               "n_museums": 71,
-              "n_notable": 83,
+              "n_notable": 88,
               "matched_by_wikidata_link": 69,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.717,
-              "recall": 0.711,
+              "recall": 0.727,
               "recall_museums": 0.761,
               "osm_culture_to_wikidata_ratio": 2.49
             },
@@ -9668,9 +10089,9 @@
                 "ratio": 0.358
               },
               "culture_core": {
-                "osm": 216,
-                "overture": 827,
-                "ratio": 0.261
+                "osm": 124,
+                "overture": 233,
+                "ratio": 0.532
               },
               "nightlife": {
                 "osm": 721,
@@ -9697,6 +10118,10 @@
           "area_km2": 277.0,
           "pop_2025": 3970202,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 2.073,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.1986,
           "coverage": {
             "wikidata": {
               "n_items": 13,
@@ -9742,9 +10167,9 @@
                 "ratio": 0.412
               },
               "culture_core": {
-                "osm": 39,
-                "overture": 38,
-                "ratio": 1.026
+                "osm": 16,
+                "overture": 24,
+                "ratio": 0.667
               },
               "nightlife": {
                 "osm": 114,
@@ -9771,16 +10196,20 @@
           "area_km2": 1194.0,
           "pop_2025": 2425086,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.551,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.8308,
           "coverage": {
             "wikidata": {
               "n_items": 62,
               "n_museums": 53,
-              "n_notable": 35,
+              "n_notable": 37,
               "matched_by_wikidata_link": 21,
               "matched_by_name_250m": 16,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.597,
-              "recall": 0.657,
+              "recall": 0.676,
               "recall_museums": 0.585,
               "osm_culture_to_wikidata_ratio": 3.73
             },
@@ -9816,9 +10245,9 @@
                 "ratio": 0.492
               },
               "culture_core": {
-                "osm": 179,
-                "overture": 533,
-                "ratio": 0.336
+                "osm": 67,
+                "overture": 181,
+                "ratio": 0.37
               },
               "nightlife": {
                 "osm": 547,
@@ -9845,6 +10274,10 @@
           "area_km2": 6611.0,
           "pop_2025": 37307160,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.513,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.0115,
           "coverage": {
             "wikidata": {
               "n_items": 21,
@@ -9890,9 +10323,9 @@
                 "ratio": 1.25
               },
               "culture_core": {
-                "osm": 117,
-                "overture": 362,
-                "ratio": 0.323
+                "osm": 84,
+                "overture": 136,
+                "ratio": 0.618
               },
               "nightlife": {
                 "osm": 39,
@@ -9919,6 +10352,10 @@
           "area_km2": 854.0,
           "pop_2025": 4565478,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.243,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.9649,
           "coverage": {
             "wikidata": {
               "n_items": 33,
@@ -9964,9 +10401,9 @@
                 "ratio": 0.11
               },
               "culture_core": {
-                "osm": 107,
-                "overture": 366,
-                "ratio": 0.292
+                "osm": 81,
+                "overture": 193,
+                "ratio": 0.42
               },
               "nightlife": {
                 "osm": 200,
@@ -9993,16 +10430,20 @@
           "area_km2": 301.0,
           "pop_2025": 1124520,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.739,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.1528,
           "coverage": {
             "wikidata": {
               "n_items": 60,
               "n_museums": 43,
-              "n_notable": 50,
+              "n_notable": 52,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.7,
-              "recall": 0.72,
+              "recall": 0.712,
               "recall_museums": 0.744,
               "osm_culture_to_wikidata_ratio": 2.53
             },
@@ -10038,9 +10479,9 @@
                 "ratio": 0.294
               },
               "culture_core": {
-                "osm": 128,
-                "overture": 289,
-                "ratio": 0.443
+                "osm": 67,
+                "overture": 108,
+                "ratio": 0.62
               },
               "nightlife": {
                 "osm": 701,
@@ -10067,16 +10508,20 @@
           "area_km2": 130.0,
           "pop_2025": 530165,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.644,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 5.9615,
           "coverage": {
             "wikidata": {
               "n_items": 69,
               "n_museums": 48,
-              "n_notable": 29,
+              "n_notable": 43,
               "matched_by_wikidata_link": 37,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.623,
-              "recall": 0.724,
+              "recall": 0.791,
               "recall_museums": 0.583,
               "osm_culture_to_wikidata_ratio": 2.0
             },
@@ -10112,9 +10557,9 @@
                 "ratio": 0.226
               },
               "culture_core": {
-                "osm": 102,
-                "overture": 302,
-                "ratio": 0.338
+                "osm": 40,
+                "overture": 109,
+                "ratio": 0.367
               },
               "nightlife": {
                 "osm": 499,
@@ -10141,16 +10586,20 @@
           "area_km2": 450.0,
           "pop_2025": 2213305,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.248,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 6.2622,
           "coverage": {
             "wikidata": {
               "n_items": 40,
               "n_museums": 31,
-              "n_notable": 32,
+              "n_notable": 39,
               "matched_by_wikidata_link": 22,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.7,
-              "recall": 0.688,
+              "recall": 0.718,
               "recall_museums": 0.806,
               "osm_culture_to_wikidata_ratio": 2.05
             },
@@ -10186,9 +10635,9 @@
                 "ratio": 0.133
               },
               "culture_core": {
-                "osm": 80,
-                "overture": 425,
-                "ratio": 0.188
+                "osm": 59,
+                "overture": 94,
+                "ratio": 0.628
               },
               "nightlife": {
                 "osm": 698,
@@ -10215,6 +10664,10 @@
           "area_km2": 925.0,
           "pop_2025": 4965520,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.201,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.3427,
           "coverage": {
             "wikidata": {
               "n_items": 16,
@@ -10260,9 +10713,9 @@
                 "ratio": 0.167
               },
               "culture_core": {
-                "osm": 110,
-                "overture": 1396,
-                "ratio": 0.079
+                "osm": 78,
+                "overture": 249,
+                "ratio": 0.313
               },
               "nightlife": {
                 "osm": 250,
@@ -10289,6 +10742,10 @@
           "area_km2": 321.0,
           "pop_2025": 1632772,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.825,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.6947,
           "coverage": {
             "wikidata": {
               "n_items": 25,
@@ -10334,9 +10791,9 @@
                 "ratio": 1.783
               },
               "culture_core": {
-                "osm": 285,
-                "overture": 132,
-                "ratio": 2.159
+                "osm": 170,
+                "overture": 73,
+                "ratio": 2.329
               },
               "nightlife": {
                 "osm": 407,
@@ -10363,16 +10820,20 @@
           "area_km2": 381.0,
           "pop_2025": 1001125,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.794,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.6982,
           "coverage": {
             "wikidata": {
               "n_items": 106,
               "n_museums": 88,
-              "n_notable": 55,
+              "n_notable": 79,
               "matched_by_wikidata_link": 57,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.755,
-              "recall": 0.709,
+              "recall": 0.759,
               "recall_museums": 0.716,
               "osm_culture_to_wikidata_ratio": 2.86
             },
@@ -10408,9 +10869,9 @@
                 "ratio": 0.483
               },
               "culture_core": {
-                "osm": 221,
-                "overture": 530,
-                "ratio": 0.417
+                "osm": 95,
+                "overture": 185,
+                "ratio": 0.514
               },
               "nightlife": {
                 "osm": 514,
@@ -10437,6 +10898,10 @@
           "area_km2": 1487.0,
           "pop_2025": 14557830,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.134,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.115,
           "coverage": {
             "wikidata": {
               "n_items": 13,
@@ -10482,9 +10947,9 @@
                 "ratio": 0.183
               },
               "culture_core": {
-                "osm": 106,
-                "overture": 1794,
-                "ratio": 0.059
+                "osm": 79,
+                "overture": 325,
+                "ratio": 0.243
               },
               "nightlife": {
                 "osm": 222,
@@ -10511,16 +10976,20 @@
           "area_km2": 220.0,
           "pop_2025": 4807599,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.226,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 4.5955,
           "coverage": {
             "wikidata": {
               "n_items": 52,
               "n_museums": 42,
-              "n_notable": 47,
+              "n_notable": 49,
               "matched_by_wikidata_link": 35,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.731,
-              "recall": 0.766,
+              "recall": 0.776,
               "recall_museums": 0.762,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -10556,9 +11025,9 @@
                 "ratio": 0.214
               },
               "culture_core": {
-                "osm": 148,
-                "overture": 632,
-                "ratio": 0.234
+                "osm": 93,
+                "overture": 265,
+                "ratio": 0.351
               },
               "nightlife": {
                 "osm": 228,
@@ -10585,16 +11054,20 @@
           "area_km2": 177.0,
           "pop_2025": 541957,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.357,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.4237,
           "coverage": {
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
-              "n_notable": 11,
+              "n_notable": 15,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.75,
-              "recall": 0.818,
+              "recall": 0.8,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 3.12
             },
@@ -10630,9 +11103,9 @@
                 "ratio": 0.44
               },
               "culture_core": {
-                "osm": 48,
-                "overture": 207,
-                "ratio": 0.232
+                "osm": 26,
+                "overture": 98,
+                "ratio": 0.265
               },
               "nightlife": {
                 "osm": 90,
@@ -10659,16 +11132,20 @@
           "area_km2": 1269.0,
           "pop_2025": 14210222,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.158,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.4137,
           "coverage": {
             "wikidata": {
               "n_items": 190,
               "n_museums": 154,
-              "n_notable": 111,
+              "n_notable": 118,
               "matched_by_wikidata_link": 56,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.463,
-              "recall": 0.649,
+              "recall": 0.644,
               "recall_museums": 0.494,
               "osm_culture_to_wikidata_ratio": 2.22
             },
@@ -10704,9 +11181,9 @@
                 "ratio": 0.056
               },
               "culture_core": {
-                "osm": 400,
-                "overture": 1942,
-                "ratio": 0.206
+                "osm": 234,
+                "overture": 786,
+                "ratio": 0.298
               },
               "nightlife": {
                 "osm": 483,
@@ -10733,16 +11210,20 @@
           "area_km2": 4614.0,
           "pop_2025": 40545126,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.136,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.2191,
           "coverage": {
             "wikidata": {
               "n_items": 127,
               "n_museums": 122,
-              "n_notable": 85,
+              "n_notable": 95,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.567,
-              "recall": 0.612,
+              "recall": 0.589,
               "recall_museums": 0.566,
               "osm_culture_to_wikidata_ratio": 1.6
             },
@@ -10778,9 +11259,9 @@
                 "ratio": 0.246
               },
               "culture_core": {
-                "osm": 176,
-                "overture": 2150,
-                "ratio": 0.082
+                "osm": 141,
+                "overture": 696,
+                "ratio": 0.203
               },
               "nightlife": {
                 "osm": 137,
@@ -10807,16 +11288,20 @@
           "area_km2": 1756.0,
           "pop_2025": 8592843,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.108,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7825,
           "coverage": {
             "wikidata": {
               "n_items": 20,
               "n_museums": 15,
-              "n_notable": 17,
+              "n_notable": 20,
               "matched_by_wikidata_link": 11,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.65,
-              "recall": 0.647,
+              "recall": 0.65,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.95
             },
@@ -10852,9 +11337,9 @@
                 "ratio": 0.056
               },
               "culture_core": {
-                "osm": 98,
-                "overture": 442,
-                "ratio": 0.222
+                "osm": 60,
+                "overture": 129,
+                "ratio": 0.465
               },
               "nightlife": {
                 "osm": 149,
@@ -10881,6 +11366,10 @@
           "area_km2": 350.0,
           "pop_2025": 3862697,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.464,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.98,
           "coverage": {
             "wikidata": {
               "n_items": 11,
@@ -10926,9 +11415,9 @@
                 "ratio": 0.879
               },
               "culture_core": {
-                "osm": 93,
-                "overture": 241,
-                "ratio": 0.386
+                "osm": 58,
+                "overture": 97,
+                "ratio": 0.598
               },
               "nightlife": {
                 "osm": 159,
@@ -10955,16 +11444,20 @@
           "area_km2": 1340.0,
           "pop_2025": 8413206,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.208,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.1299,
           "coverage": {
             "wikidata": {
               "n_items": 41,
               "n_museums": 39,
-              "n_notable": 27,
+              "n_notable": 30,
               "matched_by_wikidata_link": 17,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.585,
-              "recall": 0.778,
+              "recall": 0.733,
               "recall_museums": 0.564,
               "osm_culture_to_wikidata_ratio": 3.78
             },
@@ -11000,9 +11493,9 @@
                 "ratio": 0.169
               },
               "culture_core": {
-                "osm": 139,
-                "overture": 1225,
-                "ratio": 0.113
+                "osm": 98,
+                "overture": 339,
+                "ratio": 0.289
               },
               "nightlife": {
                 "osm": 315,
@@ -11029,16 +11522,20 @@
           "area_km2": 1199.0,
           "pop_2025": 12846045,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.221,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.2527,
           "coverage": {
             "wikidata": {
               "n_items": 10,
               "n_museums": 8,
-              "n_notable": 6,
+              "n_notable": 7,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.4,
-              "recall": 0.5,
+              "recall": 0.571,
               "recall_museums": 0.375,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -11074,9 +11571,9 @@
                 "ratio": 0.12
               },
               "culture_core": {
-                "osm": 19,
-                "overture": 255,
-                "ratio": 0.075
+                "osm": 12,
+                "overture": 70,
+                "ratio": 0.171
               },
               "nightlife": {
                 "osm": 67,
@@ -11103,16 +11600,20 @@
           "area_km2": 984.0,
           "pop_2025": 10828104,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.205,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.565,
           "coverage": {
             "wikidata": {
               "n_items": 73,
               "n_museums": 59,
-              "n_notable": 65,
+              "n_notable": 69,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.712,
-              "recall": 0.738,
+              "recall": 0.739,
               "recall_museums": 0.678,
               "osm_culture_to_wikidata_ratio": 4.89
             },
@@ -11148,9 +11649,9 @@
                 "ratio": 0.236
               },
               "culture_core": {
-                "osm": 327,
-                "overture": 952,
-                "ratio": 0.343
+                "osm": 169,
+                "overture": 290,
+                "ratio": 0.583
               },
               "nightlife": {
                 "osm": 315,
@@ -11177,16 +11678,20 @@
           "area_km2": 426.0,
           "pop_2025": 1974574,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.435,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.8474,
           "coverage": {
             "wikidata": {
               "n_items": 124,
               "n_museums": 94,
-              "n_notable": 101,
+              "n_notable": 111,
               "matched_by_wikidata_link": 81,
               "matched_by_name_250m": 18,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.798,
-              "recall": 0.832,
+              "recall": 0.838,
               "recall_museums": 0.798,
               "osm_culture_to_wikidata_ratio": 3.05
             },
@@ -11222,9 +11727,9 @@
                 "ratio": 0.4
               },
               "culture_core": {
-                "osm": 318,
-                "overture": 550,
-                "ratio": 0.578
+                "osm": 164,
+                "overture": 265,
+                "ratio": 0.619
               },
               "nightlife": {
                 "osm": 528,
@@ -11251,16 +11756,20 @@
           "area_km2": 1649.0,
           "pop_2025": 10408332,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.518,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 5.5609,
           "coverage": {
             "wikidata": {
               "n_items": 664,
               "n_museums": 350,
-              "n_notable": 448,
+              "n_notable": 508,
               "matched_by_wikidata_link": 325,
               "matched_by_name_250m": 47,
               "unmatched_but_linked_from_other_osm_object": 79,
               "recall_all": 0.56,
-              "recall": 0.621,
+              "recall": 0.636,
               "recall_museums": 0.546,
               "osm_culture_to_wikidata_ratio": 1.7
             },
@@ -11296,9 +11805,9 @@
                 "ratio": 0.195
               },
               "culture_core": {
-                "osm": 803,
-                "overture": 3856,
-                "ratio": 0.208
+                "osm": 367,
+                "overture": 1285,
+                "ratio": 0.286
               },
               "nightlife": {
                 "osm": 4746,
@@ -11325,16 +11834,20 @@
           "area_km2": 4498.0,
           "pop_2025": 13474333,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.256,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7239,
           "coverage": {
             "wikidata": {
               "n_items": 234,
               "n_museums": 149,
-              "n_notable": 178,
+              "n_notable": 202,
               "matched_by_wikidata_link": 97,
               "matched_by_name_250m": 34,
               "unmatched_but_linked_from_other_osm_object": 20,
               "recall_all": 0.56,
-              "recall": 0.556,
+              "recall": 0.594,
               "recall_museums": 0.604,
               "osm_culture_to_wikidata_ratio": 4.34
             },
@@ -11370,9 +11883,9 @@
                 "ratio": 0.205
               },
               "culture_core": {
-                "osm": 890,
-                "overture": 3015,
-                "ratio": 0.295
+                "osm": 426,
+                "overture": 1175,
+                "ratio": 0.363
               },
               "nightlife": {
                 "osm": 834,
@@ -11399,16 +11912,20 @@
           "area_km2": 680.0,
           "pop_2025": 5680137,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.671,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 7.3941,
           "coverage": {
             "wikidata": {
               "n_items": 193,
               "n_museums": 113,
-              "n_notable": 152,
+              "n_notable": 167,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 37,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.617,
-              "recall": 0.618,
+              "recall": 0.611,
               "recall_museums": 0.673,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -11444,9 +11961,9 @@
                 "ratio": 0.212
               },
               "culture_core": {
-                "osm": 457,
-                "overture": 1414,
-                "ratio": 0.323
+                "osm": 176,
+                "overture": 441,
+                "ratio": 0.399
               },
               "nightlife": {
                 "osm": 3374,
@@ -11473,16 +11990,20 @@
           "area_km2": 2555.0,
           "pop_2025": 25921189,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.339,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.8892,
           "coverage": {
             "wikidata": {
               "n_items": 54,
               "n_museums": 49,
-              "n_notable": 47,
+              "n_notable": 53,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.759,
-              "recall": 0.745,
+              "recall": 0.774,
               "recall_museums": 0.776,
               "osm_culture_to_wikidata_ratio": 6.24
             },
@@ -11518,9 +12039,9 @@
                 "ratio": 0.234
               },
               "culture_core": {
-                "osm": 315,
-                "overture": 1765,
-                "ratio": 0.178
+                "osm": 227,
+                "overture": 599,
+                "ratio": 0.379
               },
               "nightlife": {
                 "osm": 771,
@@ -11547,16 +12068,20 @@
           "area_km2": 124.0,
           "pop_2025": 1152691,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.454,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.871,
           "coverage": {
             "wikidata": {
               "n_items": 16,
               "n_museums": 15,
-              "n_notable": 9,
+              "n_notable": 14,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.75,
-              "recall": 0.778,
+              "recall": 0.786,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -11592,9 +12117,9 @@
                 "ratio": 0.379
               },
               "culture_core": {
-                "osm": 33,
-                "overture": 54,
-                "ratio": 0.611
+                "osm": 27,
+                "overture": 42,
+                "ratio": 0.643
               },
               "nightlife": {
                 "osm": 49,
@@ -11621,16 +12146,20 @@
           "area_km2": 1611.0,
           "pop_2025": 4010658,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.551,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.1726,
           "coverage": {
             "wikidata": {
               "n_items": 81,
               "n_museums": 57,
-              "n_notable": 65,
+              "n_notable": 71,
               "matched_by_wikidata_link": 30,
               "matched_by_name_250m": 17,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.58,
-              "recall": 0.538,
+              "recall": 0.577,
               "recall_museums": 0.526,
               "osm_culture_to_wikidata_ratio": 4.05
             },
@@ -11666,9 +12195,9 @@
                 "ratio": 0.133
               },
               "culture_core": {
-                "osm": 256,
-                "overture": 877,
-                "ratio": 0.292
+                "osm": 112,
+                "overture": 293,
+                "ratio": 0.382
               },
               "nightlife": {
                 "osm": 1040,
@@ -11695,16 +12224,20 @@
           "area_km2": 2134.0,
           "pop_2025": 17639164,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.081,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.0417,
           "coverage": {
             "wikidata": {
               "n_items": 271,
               "n_museums": 242,
-              "n_notable": 85,
+              "n_notable": 159,
               "matched_by_wikidata_link": 60,
               "matched_by_name_250m": 84,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.531,
-              "recall": 0.682,
+              "recall": 0.73,
               "recall_museums": 0.521,
               "osm_culture_to_wikidata_ratio": 3.03
             },
@@ -11740,9 +12273,9 @@
                 "ratio": 0.052
               },
               "culture_core": {
-                "osm": 794,
-                "overture": 2779,
-                "ratio": 0.286
+                "osm": 378,
+                "overture": 1138,
+                "ratio": 0.332
               },
               "nightlife": {
                 "osm": 526,
@@ -11769,16 +12302,20 @@
           "area_km2": 2784.0,
           "pop_2025": 5733042,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.144,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7547,
           "coverage": {
             "wikidata": {
               "n_items": 65,
               "n_museums": 55,
-              "n_notable": 52,
+              "n_notable": 56,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.631,
-              "recall": 0.635,
+              "recall": 0.661,
               "recall_museums": 0.618,
               "osm_culture_to_wikidata_ratio": 4.58
             },
@@ -11814,9 +12351,9 @@
                 "ratio": 0.165
               },
               "culture_core": {
-                "osm": 252,
-                "overture": 1069,
-                "ratio": 0.236
+                "osm": 144,
+                "overture": 422,
+                "ratio": 0.341
               },
               "nightlife": {
                 "osm": 302,
@@ -11843,11 +12380,15 @@
           "area_km2": 785.0,
           "pop_2025": 3135553,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.441,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 4.4624,
           "coverage": {
             "wikidata": {
               "n_items": 236,
               "n_museums": 141,
-              "n_notable": 122,
+              "n_notable": 139,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 44,
               "unmatched_but_linked_from_other_osm_object": 14,
@@ -11888,9 +12429,9 @@
                 "ratio": 0.264
               },
               "culture_core": {
-                "osm": 371,
-                "overture": 1249,
-                "ratio": 0.297
+                "osm": 170,
+                "overture": 420,
+                "ratio": 0.405
               },
               "nightlife": {
                 "osm": 1544,
@@ -11917,16 +12458,20 @@
           "area_km2": 237.0,
           "pop_2025": 1219222,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.404,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.5865,
           "coverage": {
             "wikidata": {
               "n_items": 72,
               "n_museums": 54,
-              "n_notable": 48,
+              "n_notable": 51,
               "matched_by_wikidata_link": 36,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.556,
-              "recall": 0.625,
+              "recall": 0.608,
               "recall_museums": 0.556,
               "osm_culture_to_wikidata_ratio": 1.56
             },
@@ -11962,9 +12507,9 @@
                 "ratio": 0.153
               },
               "culture_core": {
-                "osm": 103,
-                "overture": 262,
-                "ratio": 0.393
+                "osm": 61,
+                "overture": 116,
+                "ratio": 0.526
               },
               "nightlife": {
                 "osm": 152,
@@ -11991,16 +12536,20 @@
           "area_km2": 1020.0,
           "pop_2025": 3221844,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.647,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.8127,
           "coverage": {
             "wikidata": {
               "n_items": 82,
               "n_museums": 49,
-              "n_notable": 63,
+              "n_notable": 68,
               "matched_by_wikidata_link": 26,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.561,
-              "recall": 0.587,
+              "recall": 0.574,
               "recall_museums": 0.531,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -12036,9 +12585,9 @@
                 "ratio": 0.304
               },
               "culture_core": {
-                "osm": 226,
-                "overture": 620,
-                "ratio": 0.365
+                "osm": 98,
+                "overture": 236,
+                "ratio": 0.415
               },
               "nightlife": {
                 "osm": 536,
@@ -12065,11 +12614,15 @@
           "area_km2": 738.0,
           "pop_2025": 20453270,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.141,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.2317,
           "coverage": {
             "wikidata": {
               "n_items": 19,
               "n_museums": 15,
-              "n_notable": 15,
+              "n_notable": 18,
               "matched_by_wikidata_link": 7,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 2,
@@ -12110,9 +12663,9 @@
                 "ratio": 0.082
               },
               "culture_core": {
-                "osm": 163,
-                "overture": 851,
-                "ratio": 0.192
+                "osm": 99,
+                "overture": 429,
+                "ratio": 0.231
               },
               "nightlife": {
                 "osm": 128,
@@ -12139,16 +12692,20 @@
           "area_km2": 345.0,
           "pop_2025": 1827704,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.574,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.2319,
           "coverage": {
             "wikidata": {
               "n_items": 120,
               "n_museums": 81,
-              "n_notable": 85,
+              "n_notable": 97,
               "matched_by_wikidata_link": 74,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.725,
-              "recall": 0.765,
+              "recall": 0.773,
               "recall_museums": 0.815,
               "osm_culture_to_wikidata_ratio": 3.62
             },
@@ -12184,9 +12741,9 @@
                 "ratio": 0.266
               },
               "culture_core": {
-                "osm": 267,
-                "overture": 770,
-                "ratio": 0.347
+                "osm": 117,
+                "overture": 246,
+                "ratio": 0.476
               },
               "nightlife": {
                 "osm": 640,
@@ -12213,6 +12770,10 @@
           "area_km2": 598.0,
           "pop_2025": 6646257,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.132,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.9615,
           "coverage": {
             "wikidata": {
               "n_items": 5,
@@ -12258,9 +12819,9 @@
                 "ratio": 0.391
               },
               "culture_core": {
-                "osm": 132,
-                "overture": 152,
-                "ratio": 0.868
+                "osm": 79,
+                "overture": 53,
+                "ratio": 1.491
               },
               "nightlife": {
                 "osm": 651,
@@ -12287,16 +12848,20 @@
           "area_km2": 2139.0,
           "pop_2025": 31422508,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.142,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.4465,
           "coverage": {
             "wikidata": {
               "n_items": 31,
               "n_museums": 31,
-              "n_notable": 28,
+              "n_notable": 29,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.613,
-              "recall": 0.643,
+              "recall": 0.655,
               "recall_museums": 0.613,
               "osm_culture_to_wikidata_ratio": 9.29
             },
@@ -12332,9 +12897,9 @@
                 "ratio": 0.065
               },
               "culture_core": {
-                "osm": 272,
-                "overture": 992,
-                "ratio": 0.274
+                "osm": 146,
+                "overture": 507,
+                "ratio": 0.288
               },
               "nightlife": {
                 "osm": 136,
@@ -12361,16 +12926,20 @@
           "area_km2": 3031.0,
           "pop_2025": 14197659,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.4,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.8769,
           "coverage": {
             "wikidata": {
               "n_items": 441,
               "n_museums": 233,
-              "n_notable": 357,
+              "n_notable": 393,
               "matched_by_wikidata_link": 195,
               "matched_by_name_250m": 57,
               "unmatched_but_linked_from_other_osm_object": 39,
               "recall_all": 0.571,
-              "recall": 0.574,
+              "recall": 0.585,
               "recall_museums": 0.588,
               "osm_culture_to_wikidata_ratio": 2.92
             },
@@ -12406,9 +12975,9 @@
                 "ratio": 0.326
               },
               "culture_core": {
-                "osm": 942,
-                "overture": 3585,
-                "ratio": 0.263
+                "osm": 383,
+                "overture": 1269,
+                "ratio": 0.302
               },
               "nightlife": {
                 "osm": 2275,
@@ -12435,16 +13004,20 @@
           "area_km2": 2212.0,
           "pop_2025": 12653994,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.512,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 6.5809,
           "coverage": {
             "wikidata": {
               "n_items": 346,
               "n_museums": 283,
-              "n_notable": 277,
+              "n_notable": 292,
               "matched_by_wikidata_link": 197,
               "matched_by_name_250m": 33,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.665,
-              "recall": 0.718,
+              "recall": 0.709,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -12480,9 +13053,9 @@
                 "ratio": 0.22
               },
               "culture_core": {
-                "osm": 752,
-                "overture": 3114,
-                "ratio": 0.241
+                "osm": 471,
+                "overture": 713,
+                "ratio": 0.661
               },
               "nightlife": {
                 "osm": 7451,
@@ -12509,11 +13082,15 @@
           "area_km2": 244.0,
           "pop_2025": 889573,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.623,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.1721,
           "coverage": {
             "wikidata": {
               "n_items": 76,
               "n_museums": 58,
-              "n_notable": 55,
+              "n_notable": 58,
               "matched_by_wikidata_link": 43,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 6,
@@ -12554,9 +13131,9 @@
                 "ratio": 0.263
               },
               "culture_core": {
-                "osm": 145,
-                "overture": 432,
-                "ratio": 0.336
+                "osm": 83,
+                "overture": 128,
+                "ratio": 0.648
               },
               "nightlife": {
                 "osm": 330,
@@ -12583,16 +13160,20 @@
           "area_km2": 1421.0,
           "pop_2025": 9328385,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.748,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.0464,
           "coverage": {
             "wikidata": {
               "n_items": 584,
               "n_museums": 303,
-              "n_notable": 468,
+              "n_notable": 509,
               "matched_by_wikidata_link": 302,
               "matched_by_name_250m": 91,
               "unmatched_but_linked_from_other_osm_object": 36,
               "recall_all": 0.673,
-              "recall": 0.682,
+              "recall": 0.684,
               "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 3.6
             },
@@ -12628,9 +13209,9 @@
                 "ratio": 0.181
               },
               "culture_core": {
-                "osm": 1485,
-                "overture": 3633,
-                "ratio": 0.409
+                "osm": 495,
+                "overture": 1424,
+                "ratio": 0.348
               },
               "nightlife": {
                 "osm": 3236,
@@ -12657,16 +13238,20 @@
           "area_km2": 784.0,
           "pop_2025": 1357382,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.592,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7474,
           "coverage": {
             "wikidata": {
               "n_items": 36,
               "n_museums": 24,
-              "n_notable": 31,
+              "n_notable": 33,
               "matched_by_wikidata_link": 13,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 12,
               "recall_all": 0.472,
-              "recall": 0.387,
+              "recall": 0.424,
               "recall_museums": 0.542,
               "osm_culture_to_wikidata_ratio": 3.53
             },
@@ -12702,9 +13287,9 @@
                 "ratio": 0.352
               },
               "culture_core": {
-                "osm": 100,
-                "overture": 375,
-                "ratio": 0.267
+                "osm": 42,
+                "overture": 142,
+                "ratio": 0.296
               },
               "nightlife": {
                 "osm": 347,
@@ -12731,16 +13316,20 @@
           "area_km2": 263.0,
           "pop_2025": 1201278,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.596,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 6.0494,
           "coverage": {
             "wikidata": {
               "n_items": 188,
               "n_museums": 96,
-              "n_notable": 125,
+              "n_notable": 141,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 17,
               "recall_all": 0.66,
-              "recall": 0.736,
+              "recall": 0.723,
               "recall_museums": 0.708,
               "osm_culture_to_wikidata_ratio": 2.1
             },
@@ -12776,9 +13365,9 @@
                 "ratio": 0.588
               },
               "culture_core": {
-                "osm": 326,
-                "overture": 731,
-                "ratio": 0.446
+                "osm": 166,
+                "overture": 306,
+                "ratio": 0.542
               },
               "nightlife": {
                 "osm": 949,
@@ -12805,6 +13394,10 @@
           "area_km2": 380.0,
           "pop_2025": 2605678,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.5,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.5684,
           "coverage": {
             "wikidata": {
               "n_items": 22,
@@ -12850,9 +13443,9 @@
                 "ratio": 0.64
               },
               "culture_core": {
-                "osm": 137,
-                "overture": 294,
-                "ratio": 0.466
+                "osm": 79,
+                "overture": 119,
+                "ratio": 0.664
               },
               "nightlife": {
                 "osm": 298,
@@ -12879,16 +13472,20 @@
           "area_km2": 97.0,
           "pop_2025": 206895,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.712,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.2887,
           "coverage": {
             "wikidata": {
               "n_items": 27,
               "n_museums": 23,
-              "n_notable": 23,
+              "n_notable": 24,
               "matched_by_wikidata_link": 18,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.778,
-              "recall": 0.826,
+              "recall": 0.792,
               "recall_museums": 0.783,
               "osm_culture_to_wikidata_ratio": 2.74
             },
@@ -12924,9 +13521,9 @@
                 "ratio": 0.538
               },
               "culture_core": {
-                "osm": 53,
-                "overture": 140,
-                "ratio": 0.379
+                "osm": 41,
+                "overture": 72,
+                "ratio": 0.569
               },
               "nightlife": {
                 "osm": 89,
@@ -12953,16 +13550,20 @@
           "area_km2": 1285.0,
           "pop_2025": 9853693,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.187,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 4.3735,
           "coverage": {
             "wikidata": {
               "n_items": 138,
               "n_museums": 125,
-              "n_notable": 68,
+              "n_notable": 73,
               "matched_by_wikidata_link": 52,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 3,
               "recall_all": 0.464,
-              "recall": 0.662,
+              "recall": 0.644,
               "recall_museums": 0.432,
               "osm_culture_to_wikidata_ratio": 2.32
             },
@@ -12998,9 +13599,9 @@
                 "ratio": 0.175
               },
               "culture_core": {
-                "osm": 319,
-                "overture": 1736,
-                "ratio": 0.184
+                "osm": 159,
+                "overture": 401,
+                "ratio": 0.397
               },
               "nightlife": {
                 "osm": 1051,
@@ -13027,16 +13628,20 @@
           "area_km2": 467.0,
           "pop_2025": 2476089,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.2,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 7.1392,
           "coverage": {
             "wikidata": {
               "n_items": 272,
               "n_museums": 220,
-              "n_notable": 165,
+              "n_notable": 199,
               "matched_by_wikidata_link": 99,
               "matched_by_name_250m": 43,
               "unmatched_but_linked_from_other_osm_object": 30,
               "recall_all": 0.522,
-              "recall": 0.545,
+              "recall": 0.568,
               "recall_museums": 0.509,
               "osm_culture_to_wikidata_ratio": 1.47
             },
@@ -13072,9 +13677,9 @@
                 "ratio": 0.216
               },
               "culture_core": {
-                "osm": 384,
-                "overture": 1588,
-                "ratio": 0.242
+                "osm": 218,
+                "overture": 660,
+                "ratio": 0.33
               },
               "nightlife": {
                 "osm": 666,
@@ -13101,16 +13706,20 @@
           "area_km2": 1614.0,
           "pop_2025": 4718349,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.575,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.1177,
           "coverage": {
             "wikidata": {
               "n_items": 159,
               "n_museums": 116,
-              "n_notable": 129,
+              "n_notable": 138,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 19,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.736,
-              "recall": 0.721,
+              "recall": 0.732,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.45
             },
@@ -13146,9 +13755,9 @@
                 "ratio": 0.467
               },
               "culture_core": {
-                "osm": 557,
-                "overture": 1421,
-                "ratio": 0.392
+                "osm": 221,
+                "overture": 560,
+                "ratio": 0.395
               },
               "nightlife": {
                 "osm": 1038,
@@ -13175,16 +13784,20 @@
           "area_km2": 801.0,
           "pop_2025": 6633767,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.353,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.4432,
           "coverage": {
             "wikidata": {
               "n_items": 110,
               "n_museums": 92,
-              "n_notable": 72,
+              "n_notable": 75,
               "matched_by_wikidata_link": 63,
               "matched_by_name_250m": 26,
               "unmatched_but_linked_from_other_osm_object": 4,
               "recall_all": 0.809,
-              "recall": 0.889,
+              "recall": 0.88,
               "recall_museums": 0.793,
               "osm_culture_to_wikidata_ratio": 3.33
             },
@@ -13220,9 +13833,9 @@
                 "ratio": 0.305
               },
               "culture_core": {
-                "osm": 318,
-                "overture": 665,
-                "ratio": 0.478
+                "osm": 135,
+                "overture": 253,
+                "ratio": 0.534
               },
               "nightlife": {
                 "osm": 408,
@@ -13249,16 +13862,20 @@
           "area_km2": 2111.0,
           "pop_2025": 19485158,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.116,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 5.3747,
           "coverage": {
             "wikidata": {
               "n_items": 204,
               "n_museums": 166,
-              "n_notable": 136,
+              "n_notable": 144,
               "matched_by_wikidata_link": 83,
               "matched_by_name_250m": 15,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.48,
-              "recall": 0.588,
+              "recall": 0.583,
               "recall_museums": 0.428,
               "osm_culture_to_wikidata_ratio": 2.44
             },
@@ -13294,9 +13911,9 @@
                 "ratio": 0.161
               },
               "culture_core": {
-                "osm": 483,
-                "overture": 2587,
-                "ratio": 0.187
+                "osm": 157,
+                "overture": 583,
+                "ratio": 0.269
               },
               "nightlife": {
                 "osm": 1319,
@@ -13323,16 +13940,20 @@
           "area_km2": 353.0,
           "pop_2025": 1931424,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.119,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 7.0,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 40,
-              "n_notable": 35,
+              "n_notable": 39,
               "matched_by_wikidata_link": 27,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 2,
               "recall_all": 0.682,
-              "recall": 0.743,
+              "recall": 0.769,
               "recall_museums": 0.675,
               "osm_culture_to_wikidata_ratio": 1.73
             },
@@ -13368,9 +13989,9 @@
                 "ratio": 0.244
               },
               "culture_core": {
-                "osm": 73,
-                "overture": 416,
-                "ratio": 0.175
+                "osm": 47,
+                "overture": 85,
+                "ratio": 0.553
               },
               "nightlife": {
                 "osm": 294,
@@ -13397,16 +14018,20 @@
           "area_km2": 1123.0,
           "pop_2025": 2099643,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.754,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.8566,
           "coverage": {
             "wikidata": {
               "n_items": 54,
               "n_museums": 33,
-              "n_notable": 49,
+              "n_notable": 52,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 8,
               "recall_all": 0.667,
-              "recall": 0.673,
+              "recall": 0.692,
               "recall_museums": 0.606,
               "osm_culture_to_wikidata_ratio": 4.67
             },
@@ -13442,9 +14067,9 @@
                 "ratio": 0.825
               },
               "culture_core": {
-                "osm": 217,
-                "overture": 519,
-                "ratio": 0.418
+                "osm": 83,
+                "overture": 192,
+                "ratio": 0.432
               },
               "nightlife": {
                 "osm": 725,
@@ -13471,16 +14096,20 @@
           "area_km2": 2282.0,
           "pop_2025": 22261692,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.641,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.9124,
           "coverage": {
             "wikidata": {
               "n_items": 130,
               "n_museums": 121,
-              "n_notable": 115,
+              "n_notable": 121,
               "matched_by_wikidata_link": 64,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
               "recall_all": 0.8,
-              "recall": 0.817,
+              "recall": 0.818,
               "recall_museums": 0.802,
               "osm_culture_to_wikidata_ratio": 14.09
             },
@@ -13516,9 +14145,9 @@
                 "ratio": 0.229
               },
               "culture_core": {
-                "osm": 1636,
-                "overture": 2131,
-                "ratio": 0.768
+                "osm": 583,
+                "overture": 885,
+                "ratio": 0.659
               },
               "nightlife": {
                 "osm": 2796,
@@ -13545,16 +14174,20 @@
           "area_km2": 3128.0,
           "pop_2025": 30678616,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.225,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.1052,
           "coverage": {
             "wikidata": {
               "n_items": 69,
               "n_museums": 60,
-              "n_notable": 64,
+              "n_notable": 66,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 2,
               "recall_all": 0.667,
-              "recall": 0.703,
+              "recall": 0.682,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 6.57
             },
@@ -13590,9 +14223,9 @@
                 "ratio": 0.729
               },
               "culture_core": {
-                "osm": 427,
-                "overture": 389,
-                "ratio": 1.098
+                "osm": 274,
+                "overture": 239,
+                "ratio": 1.146
               },
               "nightlife": {
                 "osm": 403,
@@ -13619,16 +14252,20 @@
           "area_km2": 438.0,
           "pop_2025": 5117759,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.523,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.3653,
           "coverage": {
             "wikidata": {
               "n_items": 44,
               "n_museums": 41,
-              "n_notable": 40,
+              "n_notable": 42,
               "matched_by_wikidata_link": 19,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 6,
               "recall_all": 0.659,
-              "recall": 0.625,
+              "recall": 0.643,
               "recall_museums": 0.634,
               "osm_culture_to_wikidata_ratio": 5.41
             },
@@ -13664,9 +14301,9 @@
                 "ratio": 0.989
               },
               "culture_core": {
-                "osm": 195,
-                "overture": 632,
-                "ratio": 0.309
+                "osm": 102,
+                "overture": 212,
+                "ratio": 0.481
               },
               "nightlife": {
                 "osm": 542,
@@ -13693,16 +14330,20 @@
           "area_km2": 339.0,
           "pop_2025": 1543892,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.449,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.2596,
           "coverage": {
             "wikidata": {
               "n_items": 334,
               "n_museums": 299,
-              "n_notable": 203,
+              "n_notable": 218,
               "matched_by_wikidata_link": 68,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 136,
               "recall_all": 0.272,
-              "recall": 0.33,
+              "recall": 0.358,
               "recall_museums": 0.224,
               "osm_culture_to_wikidata_ratio": 0.74
             },
@@ -13738,9 +14379,9 @@
                 "ratio": 0.161
               },
               "culture_core": {
-                "osm": 185,
-                "overture": 681,
-                "ratio": 0.272
+                "osm": 102,
+                "overture": 277,
+                "ratio": 0.368
               },
               "nightlife": {
                 "osm": 344,
@@ -13767,16 +14408,20 @@
           "area_km2": 1378.0,
           "pop_2025": 4375394,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.509,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.2358,
           "coverage": {
             "wikidata": {
               "n_items": 77,
               "n_museums": 48,
-              "n_notable": 62,
+              "n_notable": 68,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.623,
-              "recall": 0.694,
+              "recall": 0.662,
               "recall_museums": 0.646,
               "osm_culture_to_wikidata_ratio": 4.29
             },
@@ -13812,9 +14457,9 @@
                 "ratio": 0.114
               },
               "culture_core": {
-                "osm": 227,
-                "overture": 813,
-                "ratio": 0.279
+                "osm": 110,
+                "overture": 255,
+                "ratio": 0.431
               },
               "nightlife": {
                 "osm": 867,
@@ -13841,16 +14486,20 @@
           "area_km2": 972.0,
           "pop_2025": 9686521,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.177,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 1.8148,
           "coverage": {
             "wikidata": {
               "n_items": 119,
               "n_museums": 115,
-              "n_notable": 94,
+              "n_notable": 104,
               "matched_by_wikidata_link": 67,
               "matched_by_name_250m": 11,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.655,
-              "recall": 0.649,
+              "recall": 0.663,
               "recall_museums": 0.643,
               "osm_culture_to_wikidata_ratio": 3.5
             },
@@ -13886,9 +14535,9 @@
                 "ratio": 0.275
               },
               "culture_core": {
-                "osm": 382,
-                "overture": 1657,
-                "ratio": 0.231
+                "osm": 242,
+                "overture": 683,
+                "ratio": 0.354
               },
               "nightlife": {
                 "osm": 313,
@@ -13915,16 +14564,20 @@
           "area_km2": 151.0,
           "pop_2025": 988278,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.635,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.5033,
           "coverage": {
             "wikidata": {
               "n_items": 43,
               "n_museums": 31,
-              "n_notable": 31,
+              "n_notable": 36,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 5,
               "recall_all": 0.744,
-              "recall": 0.774,
+              "recall": 0.722,
               "recall_museums": 0.774,
               "osm_culture_to_wikidata_ratio": 3.26
             },
@@ -13960,9 +14613,9 @@
                 "ratio": 0.583
               },
               "culture_core": {
-                "osm": 110,
-                "overture": 242,
-                "ratio": 0.455
+                "osm": 53,
+                "overture": 102,
+                "ratio": 0.52
               },
               "nightlife": {
                 "osm": 336,
@@ -13989,16 +14642,20 @@
           "area_km2": 825.0,
           "pop_2025": 9363124,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.286,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.0255,
           "coverage": {
             "wikidata": {
               "n_items": 53,
               "n_museums": 40,
-              "n_notable": 37,
+              "n_notable": 50,
               "matched_by_wikidata_link": 24,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 0,
               "recall_all": 0.698,
-              "recall": 0.73,
+              "recall": 0.7,
               "recall_museums": 0.775,
               "osm_culture_to_wikidata_ratio": 7.09
             },
@@ -14034,9 +14691,9 @@
                 "ratio": 0.0
               },
               "culture_core": {
-                "osm": 331,
-                "overture": 169,
-                "ratio": 1.959
+                "osm": 220,
+                "overture": 119,
+                "ratio": 1.849
               },
               "nightlife": {
                 "osm": 6,
@@ -14063,16 +14720,20 @@
           "area_km2": 333.0,
           "pop_2025": 2628335,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.284,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.8018,
           "coverage": {
             "wikidata": {
               "n_items": 138,
               "n_museums": 108,
-              "n_notable": 128,
+              "n_notable": 132,
               "matched_by_wikidata_link": 50,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 28,
               "recall_all": 0.42,
-              "recall": 0.438,
+              "recall": 0.432,
               "recall_museums": 0.426,
               "osm_culture_to_wikidata_ratio": 1.28
             },
@@ -14108,9 +14769,9 @@
                 "ratio": 0.143
               },
               "culture_core": {
-                "osm": 164,
-                "overture": 646,
-                "ratio": 0.254
+                "osm": 80,
+                "overture": 194,
+                "ratio": 0.412
               },
               "nightlife": {
                 "osm": 265,
@@ -14137,16 +14798,20 @@
           "area_km2": 5165.0,
           "pop_2025": 33155907,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.395,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 6.2134,
           "coverage": {
             "wikidata": {
               "n_items": 637,
               "n_museums": 516,
-              "n_notable": 524,
+              "n_notable": 577,
               "matched_by_wikidata_link": 437,
               "matched_by_name_250m": 53,
               "unmatched_but_linked_from_other_osm_object": 26,
               "recall_all": 0.769,
-              "recall": 0.773,
+              "recall": 0.775,
               "recall_museums": 0.816,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -14182,9 +14847,9 @@
                 "ratio": 0.539
               },
               "culture_core": {
-                "osm": 1416,
-                "overture": 7416,
-                "ratio": 0.191
+                "osm": 1008,
+                "overture": 1683,
+                "ratio": 0.599
               },
               "nightlife": {
                 "osm": 12665,
@@ -14211,16 +14876,20 @@
           "area_km2": 1620.0,
           "pop_2025": 5566382,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.512,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.9154,
           "coverage": {
             "wikidata": {
               "n_items": 94,
               "n_museums": 50,
-              "n_notable": 64,
+              "n_notable": 69,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.553,
-              "recall": 0.562,
+              "recall": 0.58,
               "recall_museums": 0.54,
               "osm_culture_to_wikidata_ratio": 3.47
             },
@@ -14256,9 +14925,9 @@
                 "ratio": 0.285
               },
               "culture_core": {
-                "osm": 256,
-                "overture": 860,
-                "ratio": 0.298
+                "osm": 104,
+                "overture": 280,
+                "ratio": 0.371
               },
               "nightlife": {
                 "osm": 760,
@@ -14285,6 +14954,10 @@
           "area_km2": 235.0,
           "pop_2025": 1634097,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.875,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.8511,
           "coverage": {
             "wikidata": {
               "n_items": 19,
@@ -14330,9 +15003,9 @@
                 "ratio": 0.386
               },
               "culture_core": {
-                "osm": 57,
-                "overture": 211,
-                "ratio": 0.27
+                "osm": 38,
+                "overture": 48,
+                "ratio": 0.792
               },
               "nightlife": {
                 "osm": 175,
@@ -14359,6 +15032,10 @@
           "area_km2": 649.0,
           "pop_2025": 2198107,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.686,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 0.7257,
           "coverage": {
             "wikidata": {
               "n_items": 50,
@@ -14404,9 +15081,9 @@
                 "ratio": 0.49
               },
               "culture_core": {
-                "osm": 163,
-                "overture": 400,
-                "ratio": 0.407
+                "osm": 64,
+                "overture": 131,
+                "ratio": 0.489
               },
               "nightlife": {
                 "osm": 323,
@@ -14433,16 +15110,20 @@
           "area_km2": 325.0,
           "pop_2025": 2056565,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.606,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.9015,
           "coverage": {
             "wikidata": {
               "n_items": 283,
               "n_museums": 190,
-              "n_notable": 195,
+              "n_notable": 226,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 30,
               "recall_all": 0.717,
-              "recall": 0.713,
+              "recall": 0.743,
               "recall_museums": 0.784,
               "osm_culture_to_wikidata_ratio": 1.9
             },
@@ -14478,9 +15159,9 @@
                 "ratio": 0.297
               },
               "culture_core": {
-                "osm": 416,
-                "overture": 1067,
-                "ratio": 0.39
+                "osm": 243,
+                "overture": 377,
+                "ratio": 0.645
               },
               "nightlife": {
                 "osm": 768,
@@ -14507,16 +15188,20 @@
           "area_km2": 415.0,
           "pop_2025": 1999986,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.578,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 2.0771,
           "coverage": {
             "wikidata": {
               "n_items": 166,
               "n_museums": 122,
-              "n_notable": 134,
+              "n_notable": 145,
               "matched_by_wikidata_link": 77,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 7,
               "recall_all": 0.651,
-              "recall": 0.672,
+              "recall": 0.669,
               "recall_museums": 0.656,
               "osm_culture_to_wikidata_ratio": 2.19
             },
@@ -14552,9 +15237,9 @@
                 "ratio": 0.396
               },
               "culture_core": {
-                "osm": 322,
-                "overture": 617,
-                "ratio": 0.522
+                "osm": 141,
+                "overture": 279,
+                "ratio": 0.505
               },
               "nightlife": {
                 "osm": 498,
@@ -14581,16 +15266,20 @@
           "area_km2": 187.0,
           "pop_2025": 689208,
           "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.585,
+          "median_osm_over_overture_86": 0.482,
+          "overture_density_per_km2": 3.5936,
           "coverage": {
             "wikidata": {
               "n_items": 83,
               "n_museums": 72,
-              "n_notable": 42,
+              "n_notable": 67,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
               "recall_all": 0.663,
-              "recall": 0.69,
+              "recall": 0.701,
               "recall_museums": 0.625,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -14626,9 +15315,9 @@
                 "ratio": 0.301
               },
               "culture_core": {
-                "osm": 168,
-                "overture": 459,
-                "ratio": 0.366
+                "osm": 94,
+                "overture": 177,
+                "ratio": 0.531
               },
               "nightlife": {
                 "osm": 393,

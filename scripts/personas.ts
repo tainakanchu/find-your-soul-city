@@ -19,6 +19,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(1),
       green: A(1),
       air: A(1),
+      culture: A(1),
     },
   },
   {
@@ -36,6 +37,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(2),
       green: A(0),
       air: A(0),
+      culture: A(1),
     },
   },
   {
@@ -53,6 +55,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(1),
       green: A(2),
       air: A(2),
+      culture: A(1),
     },
   },
   {
@@ -70,6 +73,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(1),
       green: A(0),
       air: A(1),
+      culture: A(1),
     },
   },
   {
@@ -87,6 +91,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(0),
       green: A(2),
       air: A(2),
+      culture: A(0),
     },
   },
   {
@@ -104,6 +109,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(2),
       green: A(0),
       air: A(2),
+      culture: A(2),
     },
   },
   {
@@ -121,15 +127,16 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(1),
       green: A(1),
       air: A(0),
+      culture: A(0),
     },
   },
   {
-    label: "乾燥・晴天・暑い夏",
+    label: "砂漠の酷暑・晴天",
     answers: {
-      summer: A(29, 2),
+      summer: A(33, 2),
       winter: A(12),
-      humidity: A(10, 2),
-      rain: A(400, 2),
+      humidity: A(16, 0),
+      rain: A(100, 2),
       sky: A(35, 2),
       crowd: A(11000, 0),
       size: A(4500000, 0),
@@ -138,6 +145,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       transit: A(0),
       green: A(0),
       air: A(0),
+      culture: A(0),
     },
   },
 ];

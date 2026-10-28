@@ -1,29 +1,32 @@
 ---
 type: Data Source
-title: OpenStreetMap (via Geofabrik)
-description: OpenStreetMap contributors が提供。用途：文化施設 POI 密度
-status: draft
+title: OpenStreetMap
+description: 文化施設の数え上げ。QLever の osm-planet SPARQL（planet 2026-09-21）から取得。ODbL 1.0。
+status: verified
 resource: https://www.openstreetmap.org/copyright
-tags: [data-source]
+tags: [data-source, osm, odbl]
 source_id: osm
-provider: OpenStreetMap contributors
-geo_granularity: 施設・道路
-license_status: unverified
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
-sources:
-  - { id: proposal, resource: /references/proposal-v1-0.md, title: 企画書 v1.0 §4 }
+adoption: adopted
+provider: "OpenStreetMap contributors（取得経路は University of Freiburg の QLever osm-planet エンドポイント）"
+version: planet-260921.osm.pbf（2026-09-21）via osm2rdf
+geo_granularity: 点・線・面（重心で都市圏ポリゴン内判定）
+license: ODbL-1.0
+license_url: https://opendatacommons.org/licenses/odbl/1-0/
+license_status: verified
+attribution: "© OpenStreetMap contributors. OpenStreetMap のデータは Open Database License (ODbL) 1.0 で提供されています。https://www.openstreetmap.org/copyright"
+etl_module: etl/soulcity_etl/osm.py
+methodology: etl/notes/osm.md
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 用途
 
-文化施設 POI 密度
+[文化施設の密度](/metrics/culture.md)。夜の店の密度は登録率の地域差のため不採用（[nightlife](/metrics/nightlife.md)）。
 
-# 注意点
+# 取得経路
 
-地域ごとに登録率が違う。POI 数を文化の豊かさと同一視しない。派生 DB の配布は ODbL の条件を受ける。[^proposal]
+overpass-api.de と Geofabrik は接続不可、到達できた Overpass ミラーはすべてタイムアウトした。QLever の osm-planet SPARQL を使い、小さな範囲で OSM API と件数が一致することを確認した（レイキャビク 92/92、ナイロビ 18/17、バンコク 96/96）。応答の切り詰めを COUNT で検出する。
 
 # ライセンス
 
-未確認。公開前に提供元の現行ライセンス・帰属表示・派生データ配布条件・API 利用制限を原文で確認し、`license_status` を更新する。
-
-[^proposal]: 企画書 v1.0 §4 データソース戦略
+ODbL 1.0。件数は "Produced Work" で、公開するときは "© OpenStreetMap contributors" と ODbL であることを表示する（§4.3）。検証にだけ使った Wikidata（CC0）と Overture Maps（CDLA-Permissive-2.0 ほか）の値は診断に使わない。
