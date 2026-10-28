@@ -4,7 +4,7 @@ import { About } from "./components/About.tsx";
 import { Intro } from "./components/Intro.tsx";
 import { Quiz } from "./components/Quiz.tsx";
 import { Result } from "./components/Result.tsx";
-import { hasPlaceholder, knowledge } from "./data.ts";
+import { knowledge } from "./data.ts";
 
 type Screen = "intro" | "quiz" | "result" | "about";
 
@@ -30,11 +30,6 @@ export function App() {
 
   return (
     <>
-      {hasPlaceholder && (
-        <p className="banner" role="note">
-          仮のデータで動いている試作版です。都市の数値は実測ではありません。
-        </p>
-      )}
       <main>
         {screen === "intro" && <Intro onStart={restart} onAbout={about} />}
         {screen === "quiz" && (

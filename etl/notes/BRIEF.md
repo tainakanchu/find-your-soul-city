@@ -6,6 +6,7 @@ Repo: /home/user/find-your-soul-city. Python ETL lives in `etl/` (uv project; ru
 The goal is real, traceable public statistics — NOT a prototype.
 
 ## Hard rules
+
 1. No hand-typed numbers, no unfounded estimates. Every value is computed by code from a downloaded/queried input.
 2. A value that cannot be computed is recorded as missing with a reason (`Interim.miss`). Never fill gaps.
 3. Comparability: a "city" is exactly one GHS-UCDB R2024A urban-centre polygon (`soulcity_etl.cities.load_cities()`,
@@ -22,6 +23,7 @@ The goal is real, traceable public statistics — NOT a prototype.
 8. Licenses: read the provider's actual license text (URL + quote the operative sentence) — do not guess.
 
 ## Deliverables per source
+
 - `etl/soulcity_etl/<module>.py` with a `main()` runnable as `python -m soulcity_etl.<module>`.
 - `data/interim/<source_id>.json` produced by actually running it for all 86 target cities.
 - Optionally `data/reference/<source_id>.csv` for the 524-centre reference set (normalisation checks).
@@ -32,6 +34,7 @@ The goal is real, traceable public statistics — NOT a prototype.
 - Final message to the orchestrator: short summary of metrics produced, missing rate, validation results, caveats.
 
 ## Environment
+
 - Outbound HTTPS works via proxy (CA bundle already configured; requests works). Reachable (checked): jeodpp.jrc.ec.europa.eu,
   storage.googleapis.com (weatherbench2 / arco-era5 public buckets), esa-worldcover.s3.eu-central-1.amazonaws.com,
   planetarycomputer.microsoft.com, overturemaps S3, maps.mail.ru Overpass mirror, api.openstreetmap.org, atlas.itdp.org.

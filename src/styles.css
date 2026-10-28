@@ -64,15 +64,6 @@ a {
   color: var(--sea);
 }
 
-.banner {
-  margin: 0;
-  padding: 0.5rem 1.25rem;
-  font-size: 0.8125rem;
-  text-align: center;
-  background: var(--sun);
-  color: var(--sun-ink);
-}
-
 .muted,
 .note,
 .count,
@@ -410,12 +401,6 @@ legend {
   font-size: 1.75rem;
 }
 
-.callout {
-  padding: 1rem 1.25rem;
-  border-left: 4px solid var(--sun);
-  background: color-mix(in srgb, var(--sun) 12%, transparent);
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -442,4 +427,39 @@ th {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.caveat {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--sun);
+  background: color-mix(in srgb, var(--sun) 10%, transparent);
+  font-size: 0.8125rem;
+}
+
+.missing {
+  font-weight: 600;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.attribution {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.about h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.about ul.attribution {
+  padding-left: 1.25rem;
+}
+
+.table-wrap table {
+  min-width: 38rem;
 }

@@ -312,7 +312,7 @@ WHERE {{
   OPTIONAL {{ ?x wdt:P10689 ?w }}
   OPTIONAL {{ ?x wdt:P402 ?r }}
   OPTIONAL {{ ?x wikibase:sitelinks ?sl }}
-  OPTIONAL {{ ?x wdt:P361 ?part }}
+  OPTIONAL {{ ?x wdt:P361 ?part . ?part wdt:P31/wdt:P279* wd:{qc} }}
 }} GROUP BY ?x"""
         qh[qc] = _qhash(q)
         rows = _sparql_tsv(QLEVER_WD, q, RAW / "wikidata" / tag / f"{qc}.{qh[qc]}.tsv")
@@ -327,8 +327,8 @@ WHERE {{
                                         "osm": set()})
             it["classes"].add(label)
             it["osm"] |= osm_ids
-            # "notable, stand-alone": has >= 1 Wikipedia/Wikimedia sitelink and is not `part of` (P361) something
-            # (drops e.g. the ~150 individual buildings of the Skansen open-air museum, bulk heritage imports)
+            # "notable, stand-alone": has >= 1 Wikimedia sitelink and is not `part of` (P361) another item of the
+            # same class (drops e.g. the individual buildings of the Skansen open-air museum, rooms of Versailles)
             it["notable"] = _int(row[5]) >= 1 and _int(row[6]) == 0
         print(f"  wikidata {label}: {len(rows):,} items")
     record_dataset(

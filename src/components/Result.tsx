@@ -34,6 +34,8 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
   const { matches, mismatches } = explain(first);
   const top3 = ranked.slice(0, 3);
   const used = first.axes.filter((a) => a.weight > 0).toSorted((a, b) => b.weight - a.weight);
+  const missingAxes = used.filter((a) => a.value === null);
+  const gap = ranked[1] ? first.total - ranked[1].total : null;
 
   return (
     <section className="result">
@@ -44,8 +46,16 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
       </p>
       <p className="summary">
         適合度は {Math.round(first.total)} / 100。重みを 1 項目ずつ ±10% 動かしても、{Math.round(stable * 100)}%
-        の条件で 1 位のままでした。データ品質は「{QUALITY_LABEL[first.quality]}」です。
+        の条件で 1 位のままでした。使ったデータの品質は、最も低いもので「{QUALITY_LABEL[first.quality]}」です。
+        {gap !== null && gap < 2 && <> 2 位との差は {gap.toFixed(1)} 点で、僅差です。</>}
       </p>
+      <p className="note">適合度は回答と統計の近さを表す独自の指標で、住みやすさや幸福度の評価ではありません。</p>
+      {missingAxes.length > 0 && (
+        <p className="note">
+          {city.nameJa}は次の条件のデータがないため、これらを除いて計算しています:{" "}
+          {missingAxes.map((a) => metricByKey.get(a.metric)!.label).join("、")}（理由は根拠欄に記載）。
+        </p>
+      )}
 
       <WorldPlot
         scores={new Map(ranked.map((r) => [r.cityId, r.total]))}
@@ -98,12 +108,7 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
       {used.map((a) => (
         <Evidence key={a.metric} axis={a} city={city} />
       ))}
-      {insufficient.length > 0 && (
-        <p className="muted">
-          {insufficient.map((r) => cityById.get(r.cityId)!.nameJa).join("、")}
-          は、あなたが重視した条件のデータが足りないため順位から外しています。
-        </p>
-      )}
+      {insufficient.length > 0 && <p className="muted">データ不足で比較から外した都市: {insufficient.length}</p>}
 
       <div className="actions">
         <button type="button" className="primary" onClick={onRetry}>

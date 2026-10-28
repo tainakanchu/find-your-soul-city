@@ -16,7 +16,8 @@ export function findPlaceholders(k: Loose): string[] {
   for (const c of k.cities ?? []) {
     for (const [key, v] of Object.entries(c.metrics ?? {})) {
       const where = `${c.id}.${key}`;
-      if (!v.quality || !ALLOWED_QUALITIES.has(v.quality)) out.push(`${where}: quality "${v.quality}" is not real data`);
+      if (!v.quality || !ALLOWED_QUALITIES.has(v.quality))
+        out.push(`${where}: quality "${v.quality}" is not real data`);
       if (/placeholder|demo/i.test(v.sourceId ?? "")) out.push(`${where}: source "${v.sourceId}" is a placeholder`);
       if (v.value != null && !sources.has(v.sourceId)) out.push(`${where}: source "${v.sourceId}" is not registered`);
     }
