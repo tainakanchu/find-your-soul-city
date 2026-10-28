@@ -105,6 +105,12 @@ out.push(
   `- 1 位率の最大: ${maxP1.c.nameJa} ${pct(maxP1.p1)}（期待値の ${f1(maxP1.p1 * k.cities.length)} 倍）。1 位率のジニ係数 ${gini.toFixed(2)}。`,
   `- 一度も上位 3 位に入らない都市（${never.length}）: ${never.join("、") || "なし"}`,
 );
+const { concentration } = await import("../src/scoring/concentration.ts");
+const conc = concentration(k, N, SEED);
+out.push(
+  `- 実質的に 1 位を分け合っている都市の数（1 / Σ p²）: ${conc.effectiveWinners.toFixed(1)}（完全に均等なら ${k.cities.length}）。` +
+    `1 位になったことがない都市: ${conc.neverFirst.length}。テスト（src/scoring/concentration.test.ts）の基準は 1 位率の最大が期待値の 15 倍以下、実質の都市数 18 以上、ジニ係数 0.70 以下。`,
+);
 const gaps = base
   .filter((r) => r.length > 1)
   .map((r) => r[0].total - r[1].total)
