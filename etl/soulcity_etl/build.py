@@ -61,12 +61,12 @@ def city_doc(city: Any, attrs: dict[str, Any], rows: list[tuple[dict[str, Any], 
         "---",
         "type: City",
         f"title: {_yaml_scalar(city.name_en)}",
-        f"description: {_yaml_scalar(f'{city.name_ja}（{attrs.get('iso2', city.country)}）の都市プロファイル。GHS-UCDB 都市圏 {city.ucdb_id} 上で集計した実データ。')}",
+        f"description: {_yaml_scalar(f'{city.name_ja}（{city.display_country or attrs.get('iso2', city.country)}）の都市プロファイル。GHS-UCDB 都市圏 {city.ucdb_id} 上で集計した実データ。')}",
         "status: generated",
         f"tags: [city, {_yaml_scalar(city.region)}]",
         f"city_id: {city.city_id}",
         f"name_ja: {_yaml_scalar(city.name_ja)}",
-        f"country: {attrs.get('iso2', '')}",
+        f"country: {city.display_country or attrs.get('iso2', '')}",
         f"region: {_yaml_scalar(city.region)}",
         f"lat: {city.lat}",
         f"lon: {city.lon}",
@@ -131,11 +131,12 @@ def main() -> None:
         rows = []
         for m in metrics:
             src = interim.get(m["source"], {})
-            v = src.get("values", {}).get(m["metric_key"], {}).get(c.city_id)
+            ek = m.get("etl_key", m["metric_key"])
+            v = src.get("values", {}).get(ek, {}).get(c.city_id)
             if v is not None:
                 e = v
             else:
-                reason = src.get("missing", {}).get(m["metric_key"], {}).get(c.city_id)
+                reason = src.get("missing", {}).get(ek, {}).get(c.city_id)
                 if reason is None:
                     reason = f"ETL ({m['source']}) がこの都市の値を出力していない"
                 e = {"value": None, "reason": reason}

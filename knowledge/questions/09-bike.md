@@ -1,7 +1,7 @@
 ---
 type: Question
-title: 車道から守られた自転車道で移動できることは？
-description: bike_protected への重要度を尋ねる設問。
+title: 車道から分けられた自転車道で移動できることは？
+description: bike_protected について尋ねる設問（重要度）。
 status: draft
 tags: [question]
 question_id: bike
@@ -10,15 +10,19 @@ metric: bike_protected
 answer_kind: importance
 importance_control: false
 options:
-  - { label: 自転車には乗らない, value: 0 }
-  - { label: あると嬉しい, value: 1 }
-  - { label: 絶対にほしい, value: 2 }
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
+  - { label: "なくていい", value: 0 }
+  - { label: "あると嬉しい", value: 1 }
+  - { label: "絶対にほしい", value: 2 }
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 回答の変換
 
-選択肢の `value` をそのまま [bike_protected](/metrics/bike-protected.md) の重み（0 / 1 / 2）として使う。方向は「高いほど良い」で固定。
+選択肢の `value`（0 / 1 / 2）をそのまま [bike_protected](/metrics/) の重みにする。方向は指標の種類（多いほど良い／少ないほど良い）で固定。
+
+# 選択肢の根拠
+
+重要度だけを尋ねる。
 
 # 未検証の点
 

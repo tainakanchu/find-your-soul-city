@@ -1,24 +1,28 @@
 ---
 type: Question
-title: 人混みの中にいるとき、どう感じる？
-description: density への理想値を尋ねる設問。
+title: 家の近所の人の多さは？
+description: density_weighted について尋ねる設問（理想値）。
 status: draft
 tags: [question]
 question_id: crowd
 order: 6
-metric: density
+metric: density_weighted
 answer_kind: ideal
 importance_control: true
 options:
-  - { label: 人の気配が少ない静かな街がいい, value: 2500 }
-  - { label: ほどよく賑わっているのがいい, value: 7000 }
-  - { label: 人波に紛れているほうが落ち着く, value: 18000 }
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
+  - { label: "人の気配が少ない、ゆったりした街（5,000 人/km² 前後）", value: 5000 }
+  - { label: "ほどよく賑わっている街（11,000 人/km² 前後）", value: 11000 }
+  - { label: "いつも人であふれている街（28,000 人/km² 前後）", value: 28000 }
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 回答の変換
 
-選択肢の `value` を [density](/metrics/density.md) の理想値として使う。重要度（気にしない / ふつう / 重要）は別コントロールで 0 / 1 / 2 の重みに変換する。
+選択肢の `value` を [density_weighted](/metrics/) の理想値として使う。重要度（気にしない / ふつう / 重要）は別に尋ね、0 / 1 / 2 の重みにする。
+
+# 選択肢の根拠
+
+選択肢の値は、対象 86 都市の分布（おおむね 15・50・85 パーセンタイル付近）に置き、どの選択肢にも近い都市が複数あるようにした。括弧内の数値を画面に出し、言葉の印象と実測値のずれを減らす。
 
 # 未検証の点
 

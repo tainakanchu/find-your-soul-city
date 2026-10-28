@@ -1,6 +1,6 @@
 {
   "source_id": "osm",
-  "generated_at": "2026-10-28T21:09:33Z",
+  "generated_at": "2026-10-28T21:29:40Z",
   "inputs": [
     "https://qlever.cs.uni-freiburg.de/api/osm-planet#260921",
     "https://qlever.cs.uni-freiburg.de/api/wikidata#0dd66fbb94f388cc",
@@ -68,11 +68,11 @@
         }
       },
       "bangkok": {
-        "value": 1.6012152906963257,
+        "value": 1.5959654044973215,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 305,
+          "count_dedup": 304,
           "pop_2025": 19048032
         }
       },
@@ -86,11 +86,11 @@
         }
       },
       "beijing": {
-        "value": 2.2754099036206723,
+        "value": 2.2864288377786415,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 413,
+          "count_dedup": 415,
           "pop_2025": 18150576
         }
       },
@@ -140,11 +140,11 @@
         }
       },
       "cairo": {
-        "value": 0.5628147882562984,
+        "value": 0.5667782726806385,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 142,
+          "count_dedup": 143,
           "pop_2025": 25230325
         }
       },
@@ -185,11 +185,11 @@
         }
       },
       "dakar": {
-        "value": 1.4105076493751643,
+        "value": 1.3853200127791792,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 56,
+          "count_dedup": 55,
           "pop_2025": 3970202
         }
       },
@@ -203,11 +203,11 @@
         }
       },
       "dhaka": {
-        "value": 0.30557137242567567,
+        "value": 0.30825182306098864,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 114,
+          "count_dedup": 115,
           "pop_2025": 37307160
         }
       },
@@ -428,11 +428,11 @@
         }
       },
       "mexico-city": {
-        "value": 4.665754003231533,
+        "value": 4.660084800311447,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 823,
+          "count_dedup": 822,
           "pop_2025": 17639164
         }
       },
@@ -464,11 +464,11 @@
         }
       },
       "montreal": {
-        "value": 9.063131445167167,
+        "value": 9.032093323779609,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 292,
+          "count_dedup": 291,
           "pop_2025": 3221844
         }
       },
@@ -509,20 +509,20 @@
         }
       },
       "new-york": {
-        "value": 9.08600511334307,
+        "value": 9.078961698526527,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1290,
+          "count_dedup": 1289,
           "pop_2025": 14197659
         }
       },
       "osaka": {
-        "value": 6.740954450333953,
+        "value": 6.75675973626674,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 853,
+          "count_dedup": 855,
           "pop_2025": 12653994
         }
       },
@@ -644,20 +644,20 @@
         }
       },
       "seoul": {
-        "value": 8.166495304352122,
+        "value": 8.2293836070259,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1818,
+          "count_dedup": 1832,
           "pop_2025": 22261692
         }
       },
       "shanghai": {
-        "value": 1.4733389427062824,
+        "value": 1.4765985421370487,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 452,
+          "count_dedup": 453,
           "pop_2025": 30678616
         }
       },
@@ -698,11 +698,11 @@
         }
       },
       "tbilisi": {
-        "value": 14.064872273911408,
+        "value": 14.166058405378395,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 139,
+          "count_dedup": 140,
           "pop_2025": 988278
         }
       },
@@ -716,20 +716,20 @@
         }
       },
       "tel-aviv": {
-        "value": 6.315785223645352,
+        "value": 6.7343011119592004,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 166,
+          "count_dedup": 177,
           "pop_2025": 2628335
         }
       },
       "tokyo": {
-        "value": 4.73218846388924,
+        "value": 4.741236625388072,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1569,
+          "count_dedup": 1572,
           "pop_2025": 33155907
         }
       },
@@ -813,10 +813,12 @@
             "wikidata": {
               "n_items": 7,
               "n_museums": 6,
+              "n_notable": 5,
               "matched_by_wikidata_link": 2,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.714,
+              "recall_all": 0.714,
+              "recall": 0.8,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 3.29
             },
@@ -850,6 +852,16 @@
                 "osm": 22,
                 "overture": 38,
                 "ratio": 0.579
+              },
+              "culture_core": {
+                "osm": 21,
+                "overture": 91,
+                "ratio": 0.231
+              },
+              "nightlife": {
+                "osm": 626,
+                "overture": 256,
+                "ratio": 2.445
               }
             }
           }
@@ -879,10 +891,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 9,
+              "n_notable": 9,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.727,
+              "recall_all": 0.727,
+              "recall": 0.889,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 4.91
             },
@@ -916,6 +930,16 @@
                 "osm": 19,
                 "overture": 16,
                 "ratio": 1.188
+              },
+              "culture_core": {
+                "osm": 52,
+                "overture": 30,
+                "ratio": 1.733
+              },
+              "nightlife": {
+                "osm": 173,
+                "overture": 57,
+                "ratio": 3.035
               }
             }
           }
@@ -945,11 +969,13 @@
             "wikidata": {
               "n_items": 36,
               "n_museums": 20,
+              "n_notable": 34,
               "matched_by_wikidata_link": 21,
-              "matched_by_name_250m": 3,
+              "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.667,
-              "recall_museums": 0.55,
+              "recall_all": 0.639,
+              "recall": 0.676,
+              "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 2.08
             },
             "overture": {
@@ -982,6 +1008,16 @@
                 "osm": 8,
                 "overture": 24,
                 "ratio": 0.333
+              },
+              "culture_core": {
+                "osm": 68,
+                "overture": 260,
+                "ratio": 0.262
+              },
+              "nightlife": {
+                "osm": 154,
+                "overture": 352,
+                "ratio": 0.438
               }
             }
           }
@@ -1011,10 +1047,12 @@
             "wikidata": {
               "n_items": 181,
               "n_museums": 106,
+              "n_notable": 143,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 22,
-              "recall": 0.63,
+              "recall_all": 0.63,
+              "recall": 0.629,
               "recall_museums": 0.651,
               "osm_culture_to_wikidata_ratio": 2.07
             },
@@ -1048,6 +1086,16 @@
                 "osm": 44,
                 "overture": 159,
                 "ratio": 0.277
+              },
+              "culture_core": {
+                "osm": 293,
+                "overture": 1009,
+                "ratio": 0.29
+              },
+              "nightlife": {
+                "osm": 679,
+                "overture": 997,
+                "ratio": 0.681
               }
             }
           }
@@ -1077,11 +1125,13 @@
             "wikidata": {
               "n_items": 237,
               "n_museums": 112,
+              "n_notable": 143,
               "matched_by_wikidata_link": 127,
-              "matched_by_name_250m": 67,
-              "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.819,
-              "recall_museums": 0.723,
+              "matched_by_name_250m": 39,
+              "unmatched_but_linked_from_other_osm_object": 13,
+              "recall_all": 0.7,
+              "recall": 0.769,
+              "recall_museums": 0.67,
               "osm_culture_to_wikidata_ratio": 2.63
             },
             "overture": {
@@ -1114,6 +1164,16 @@
                 "osm": 94,
                 "overture": 258,
                 "ratio": 0.364
+              },
+              "culture_core": {
+                "osm": 559,
+                "overture": 1251,
+                "ratio": 0.447
+              },
+              "nightlife": {
+                "osm": 682,
+                "overture": 1793,
+                "ratio": 0.38
               }
             }
           }
@@ -1143,10 +1203,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 27,
+              "n_notable": 38,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 10,
-              "recall": 0.568,
+              "recall_all": 0.568,
+              "recall": 0.605,
               "recall_museums": 0.481,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -1180,17 +1242,27 @@
                 "osm": 12,
                 "overture": 31,
                 "ratio": 0.387
+              },
+              "culture_core": {
+                "osm": 115,
+                "overture": 224,
+                "ratio": 0.513
+              },
+              "nightlife": {
+                "osm": 309,
+                "overture": 466,
+                "ratio": 0.663
               }
             }
           }
         }
       },
       "bangkok": {
-        "value": 0.11308861698183166,
+        "value": 0.11271783463107156,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 305,
+          "count_dedup": 304,
           "count_raw": 314,
           "named_share": 0.825,
           "raw_counts": {
@@ -1209,12 +1281,14 @@
             "wikidata": {
               "n_items": 82,
               "n_museums": 76,
+              "n_notable": 68,
               "matched_by_wikidata_link": 38,
-              "matched_by_name_250m": 14,
-              "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.634,
-              "recall_museums": 0.632,
-              "osm_culture_to_wikidata_ratio": 3.72
+              "matched_by_name_250m": 12,
+              "unmatched_but_linked_from_other_osm_object": 4,
+              "recall_all": 0.61,
+              "recall": 0.632,
+              "recall_museums": 0.605,
+              "osm_culture_to_wikidata_ratio": 3.71
             },
             "overture": {
               "museum": {
@@ -1246,6 +1320,16 @@
                 "osm": 93,
                 "overture": 425,
                 "ratio": 0.219
+              },
+              "culture_core": {
+                "osm": 267,
+                "overture": 2144,
+                "ratio": 0.125
+              },
+              "nightlife": {
+                "osm": 862,
+                "overture": 4161,
+                "ratio": 0.207
               }
             }
           }
@@ -1275,11 +1359,13 @@
             "wikidata": {
               "n_items": 238,
               "n_museums": 119,
+              "n_notable": 183,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 36,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.563,
-              "recall_museums": 0.689,
+              "recall_all": 0.563,
+              "recall": 0.536,
+              "recall_museums": 0.681,
               "osm_culture_to_wikidata_ratio": 1.83
             },
             "overture": {
@@ -1312,17 +1398,27 @@
                 "osm": 85,
                 "overture": 514,
                 "ratio": 0.165
+              },
+              "culture_core": {
+                "osm": 404,
+                "overture": 1206,
+                "ratio": 0.335
+              },
+              "nightlife": {
+                "osm": 2308,
+                "overture": 4251,
+                "ratio": 0.543
               }
             }
           }
         }
       },
       "beijing": {
-        "value": 0.18953648462597522,
+        "value": 0.19045433685176685,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 413,
+          "count_dedup": 415,
           "count_raw": 418,
           "named_share": 0.919,
           "raw_counts": {
@@ -1341,12 +1437,14 @@
             "wikidata": {
               "n_items": 140,
               "n_museums": 121,
+              "n_notable": 129,
               "matched_by_wikidata_link": 34,
-              "matched_by_name_250m": 34,
+              "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.486,
-              "recall_museums": 0.43,
-              "osm_culture_to_wikidata_ratio": 2.95
+              "recall_all": 0.464,
+              "recall": 0.481,
+              "recall_museums": 0.405,
+              "osm_culture_to_wikidata_ratio": 2.96
             },
             "overture": {
               "museum": {
@@ -1378,6 +1476,16 @@
                 "osm": 32,
                 "overture": 14,
                 "ratio": 2.286
+              },
+              "culture_core": {
+                "osm": 382,
+                "overture": 336,
+                "ratio": 1.137
+              },
+              "nightlife": {
+                "osm": 288,
+                "overture": 162,
+                "ratio": 1.778
               }
             }
           }
@@ -1407,10 +1515,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 10,
+              "n_notable": 10,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.727,
+              "recall_all": 0.727,
+              "recall": 0.7,
               "recall_museums": 0.7,
               "osm_culture_to_wikidata_ratio": 29.09
             },
@@ -1444,6 +1554,16 @@
                 "osm": 7,
                 "overture": 63,
                 "ratio": 0.111
+              },
+              "culture_core": {
+                "osm": 297,
+                "overture": 669,
+                "ratio": 0.444
+              },
+              "nightlife": {
+                "osm": 442,
+                "overture": 798,
+                "ratio": 0.554
               }
             }
           }
@@ -1473,10 +1593,12 @@
             "wikidata": {
               "n_items": 358,
               "n_museums": 223,
+              "n_notable": 217,
               "matched_by_wikidata_link": 183,
               "matched_by_name_250m": 42,
               "unmatched_but_linked_from_other_osm_object": 25,
-              "recall": 0.628,
+              "recall_all": 0.628,
+              "recall": 0.691,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.88
             },
@@ -1510,6 +1632,16 @@
                 "osm": 139,
                 "overture": 329,
                 "ratio": 0.422
+              },
+              "culture_core": {
+                "osm": 673,
+                "overture": 1988,
+                "ratio": 0.339
+              },
+              "nightlife": {
+                "osm": 2011,
+                "overture": 2693,
+                "ratio": 0.747
               }
             }
           }
@@ -1539,10 +1671,12 @@
             "wikidata": {
               "n_items": 45,
               "n_museums": 33,
+              "n_notable": 41,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.622,
+              "recall_all": 0.622,
+              "recall": 0.659,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 5.49
             },
@@ -1576,6 +1710,16 @@
                 "osm": 69,
                 "overture": 286,
                 "ratio": 0.241
+              },
+              "culture_core": {
+                "osm": 238,
+                "overture": 673,
+                "ratio": 0.354
+              },
+              "nightlife": {
+                "osm": 916,
+                "overture": 2834,
+                "ratio": 0.323
               }
             }
           }
@@ -1605,10 +1749,12 @@
             "wikidata": {
               "n_items": 123,
               "n_museums": 81,
+              "n_notable": 92,
               "matched_by_wikidata_link": 89,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.821,
+              "recall_all": 0.821,
+              "recall": 0.87,
               "recall_museums": 0.84,
               "osm_culture_to_wikidata_ratio": 4.12
             },
@@ -1642,6 +1788,16 @@
                 "osm": 44,
                 "overture": 119,
                 "ratio": 0.37
+              },
+              "culture_core": {
+                "osm": 316,
+                "overture": 821,
+                "ratio": 0.385
+              },
+              "nightlife": {
+                "osm": 955,
+                "overture": 1320,
+                "ratio": 0.723
               }
             }
           }
@@ -1671,11 +1827,13 @@
             "wikidata": {
               "n_items": 309,
               "n_museums": 265,
+              "n_notable": 111,
               "matched_by_wikidata_link": 165,
-              "matched_by_name_250m": 37,
+              "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.654,
-              "recall_museums": 0.653,
+              "recall_all": 0.657,
+              "recall": 0.766,
+              "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 2.08
             },
             "overture": {
@@ -1708,17 +1866,27 @@
                 "osm": 142,
                 "overture": 583,
                 "ratio": 0.244
+              },
+              "culture_core": {
+                "osm": 614,
+                "overture": 1882,
+                "ratio": 0.326
+              },
+              "nightlife": {
+                "osm": 1086,
+                "overture": 3500,
+                "ratio": 0.31
               }
             }
           }
         }
       },
       "cairo": {
-        "value": 0.08452380952380953,
+        "value": 0.08511904761904762,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 142,
+          "count_dedup": 143,
           "count_raw": 145,
           "named_share": 0.841,
           "raw_counts": {
@@ -1737,12 +1905,14 @@
             "wikidata": {
               "n_items": 65,
               "n_museums": 60,
+              "n_notable": 52,
               "matched_by_wikidata_link": 15,
-              "matched_by_name_250m": 18,
-              "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.508,
-              "recall_museums": 0.517,
-              "osm_culture_to_wikidata_ratio": 2.18
+              "matched_by_name_250m": 14,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.446,
+              "recall": 0.5,
+              "recall_museums": 0.467,
+              "osm_culture_to_wikidata_ratio": 2.2
             },
             "overture": {
               "museum": {
@@ -1774,6 +1944,16 @@
                 "osm": 6,
                 "overture": 62,
                 "ratio": 0.097
+              },
+              "culture_core": {
+                "osm": 142,
+                "overture": 398,
+                "ratio": 0.357
+              },
+              "nightlife": {
+                "osm": 50,
+                "overture": 234,
+                "ratio": 0.214
               }
             }
           }
@@ -1803,10 +1983,12 @@
             "wikidata": {
               "n_items": 29,
               "n_museums": 24,
+              "n_notable": 22,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.759,
+              "recall_all": 0.759,
+              "recall": 0.727,
               "recall_museums": 0.75,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -1840,6 +2022,16 @@
                 "osm": 15,
                 "overture": 80,
                 "ratio": 0.188
+              },
+              "culture_core": {
+                "osm": 61,
+                "overture": 227,
+                "ratio": 0.269
+              },
+              "nightlife": {
+                "osm": 163,
+                "overture": 537,
+                "ratio": 0.304
               }
             }
           }
@@ -1869,10 +2061,12 @@
             "wikidata": {
               "n_items": 6,
               "n_museums": 4,
+              "n_notable": 5,
               "matched_by_wikidata_link": 1,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.333,
+              "recall_all": 0.333,
+              "recall": 0.4,
               "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 5.5
             },
@@ -1906,6 +2100,16 @@
                 "osm": 6,
                 "overture": 29,
                 "ratio": 0.207
+              },
+              "culture_core": {
+                "osm": 31,
+                "overture": 84,
+                "ratio": 0.369
+              },
+              "nightlife": {
+                "osm": 57,
+                "overture": 132,
+                "ratio": 0.432
               }
             }
           }
@@ -1935,10 +2139,12 @@
             "wikidata": {
               "n_items": 115,
               "n_museums": 64,
+              "n_notable": 102,
               "matched_by_wikidata_link": 71,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 10,
-              "recall": 0.696,
+              "recall_all": 0.696,
+              "recall": 0.716,
               "recall_museums": 0.734,
               "osm_culture_to_wikidata_ratio": 4.03
             },
@@ -1972,6 +2178,16 @@
                 "osm": 26,
                 "overture": 134,
                 "ratio": 0.194
+              },
+              "culture_core": {
+                "osm": 400,
+                "overture": 1314,
+                "ratio": 0.304
+              },
+              "nightlife": {
+                "osm": 1101,
+                "overture": 2421,
+                "ratio": 0.455
               }
             }
           }
@@ -2001,10 +2217,12 @@
             "wikidata": {
               "n_items": 106,
               "n_museums": 71,
+              "n_notable": 83,
               "matched_by_wikidata_link": 69,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.717,
+              "recall_all": 0.717,
+              "recall": 0.711,
               "recall_museums": 0.761,
               "osm_culture_to_wikidata_ratio": 2.49
             },
@@ -2038,17 +2256,27 @@
                 "osm": 39,
                 "overture": 109,
                 "ratio": 0.358
+              },
+              "culture_core": {
+                "osm": 216,
+                "overture": 827,
+                "ratio": 0.261
+              },
+              "nightlife": {
+                "osm": 721,
+                "overture": 1017,
+                "ratio": 0.709
               }
             }
           }
         }
       },
       "dakar": {
-        "value": 0.20216606498194944,
+        "value": 0.19855595667870035,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 56,
+          "count_dedup": 55,
           "count_raw": 56,
           "named_share": 0.929,
           "raw_counts": {
@@ -2067,12 +2295,14 @@
             "wikidata": {
               "n_items": 13,
               "n_museums": 11,
+              "n_notable": 8,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.769,
+              "recall_all": 0.769,
+              "recall": 0.875,
               "recall_museums": 0.818,
-              "osm_culture_to_wikidata_ratio": 4.31
+              "osm_culture_to_wikidata_ratio": 4.23
             },
             "overture": {
               "museum": {
@@ -2104,6 +2334,16 @@
                 "osm": 7,
                 "overture": 17,
                 "ratio": 0.412
+              },
+              "culture_core": {
+                "osm": 39,
+                "overture": 38,
+                "ratio": 1.026
+              },
+              "nightlife": {
+                "osm": 114,
+                "overture": 55,
+                "ratio": 2.073
               }
             }
           }
@@ -2133,11 +2373,13 @@
             "wikidata": {
               "n_items": 62,
               "n_museums": 53,
+              "n_notable": 35,
               "matched_by_wikidata_link": 21,
-              "matched_by_name_250m": 15,
+              "matched_by_name_250m": 16,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.581,
-              "recall_museums": 0.566,
+              "recall_all": 0.597,
+              "recall": 0.657,
+              "recall_museums": 0.585,
               "osm_culture_to_wikidata_ratio": 3.73
             },
             "overture": {
@@ -2170,17 +2412,27 @@
                 "osm": 31,
                 "overture": 63,
                 "ratio": 0.492
+              },
+              "culture_core": {
+                "osm": 179,
+                "overture": 533,
+                "ratio": 0.336
+              },
+              "nightlife": {
+                "osm": 547,
+                "overture": 992,
+                "ratio": 0.551
               }
             }
           }
         }
       },
       "dhaka": {
-        "value": 0.017243987293904098,
+        "value": 0.017395250340341853,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 114,
+          "count_dedup": 115,
           "count_raw": 118,
           "named_share": 0.864,
           "raw_counts": {
@@ -2199,12 +2451,14 @@
             "wikidata": {
               "n_items": 21,
               "n_museums": 19,
+              "n_notable": 21,
               "matched_by_wikidata_link": 10,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.667,
               "recall": 0.667,
               "recall_museums": 0.684,
-              "osm_culture_to_wikidata_ratio": 5.43
+              "osm_culture_to_wikidata_ratio": 5.48
             },
             "overture": {
               "museum": {
@@ -2236,6 +2490,16 @@
                 "osm": 5,
                 "overture": 4,
                 "ratio": 1.25
+              },
+              "culture_core": {
+                "osm": 117,
+                "overture": 362,
+                "ratio": 0.323
+              },
+              "nightlife": {
+                "osm": 39,
+                "overture": 76,
+                "ratio": 0.513
               }
             }
           }
@@ -2265,10 +2529,12 @@
             "wikidata": {
               "n_items": 33,
               "n_museums": 31,
+              "n_notable": 28,
               "matched_by_wikidata_link": 10,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.697,
+              "recall_all": 0.697,
+              "recall": 0.75,
               "recall_museums": 0.71,
               "osm_culture_to_wikidata_ratio": 3.52
             },
@@ -2302,6 +2568,16 @@
                 "osm": 22,
                 "overture": 200,
                 "ratio": 0.11
+              },
+              "culture_core": {
+                "osm": 107,
+                "overture": 366,
+                "ratio": 0.292
+              },
+              "nightlife": {
+                "osm": 200,
+                "overture": 824,
+                "ratio": 0.243
               }
             }
           }
@@ -2331,10 +2607,12 @@
             "wikidata": {
               "n_items": 60,
               "n_museums": 43,
+              "n_notable": 50,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.7,
+              "recall_all": 0.7,
+              "recall": 0.72,
               "recall_museums": 0.744,
               "osm_culture_to_wikidata_ratio": 2.53
             },
@@ -2368,6 +2646,16 @@
                 "osm": 15,
                 "overture": 51,
                 "ratio": 0.294
+              },
+              "culture_core": {
+                "osm": 128,
+                "overture": 289,
+                "ratio": 0.443
+              },
+              "nightlife": {
+                "osm": 701,
+                "overture": 949,
+                "ratio": 0.739
               }
             }
           }
@@ -2397,10 +2685,12 @@
             "wikidata": {
               "n_items": 69,
               "n_museums": 48,
+              "n_notable": 29,
               "matched_by_wikidata_link": 37,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.623,
+              "recall_all": 0.623,
+              "recall": 0.724,
               "recall_museums": 0.583,
               "osm_culture_to_wikidata_ratio": 2.0
             },
@@ -2434,6 +2724,16 @@
                 "osm": 19,
                 "overture": 84,
                 "ratio": 0.226
+              },
+              "culture_core": {
+                "osm": 102,
+                "overture": 302,
+                "ratio": 0.338
+              },
+              "nightlife": {
+                "osm": 499,
+                "overture": 775,
+                "ratio": 0.644
               }
             }
           }
@@ -2463,10 +2763,12 @@
             "wikidata": {
               "n_items": 40,
               "n_museums": 31,
+              "n_notable": 32,
               "matched_by_wikidata_link": 22,
-              "matched_by_name_250m": 7,
+              "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.725,
+              "recall_all": 0.7,
+              "recall": 0.688,
               "recall_museums": 0.806,
               "osm_culture_to_wikidata_ratio": 2.05
             },
@@ -2500,6 +2802,16 @@
                 "osm": 8,
                 "overture": 60,
                 "ratio": 0.133
+              },
+              "culture_core": {
+                "osm": 80,
+                "overture": 425,
+                "ratio": 0.188
+              },
+              "nightlife": {
+                "osm": 698,
+                "overture": 2818,
+                "ratio": 0.248
               }
             }
           }
@@ -2529,10 +2841,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
+              "n_notable": 15,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.8,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 7.81
             },
@@ -2566,6 +2880,16 @@
                 "osm": 14,
                 "overture": 84,
                 "ratio": 0.167
+              },
+              "culture_core": {
+                "osm": 110,
+                "overture": 1396,
+                "ratio": 0.079
+              },
+              "nightlife": {
+                "osm": 250,
+                "overture": 1242,
+                "ratio": 0.201
               }
             }
           }
@@ -2595,10 +2919,12 @@
             "wikidata": {
               "n_items": 25,
               "n_museums": 16,
+              "n_notable": 21,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.68,
+              "recall_all": 0.68,
+              "recall": 0.762,
               "recall_museums": 0.562,
               "osm_culture_to_wikidata_ratio": 13.4
             },
@@ -2632,6 +2958,16 @@
                 "osm": 82,
                 "overture": 46,
                 "ratio": 1.783
+              },
+              "culture_core": {
+                "osm": 285,
+                "overture": 132,
+                "ratio": 2.159
+              },
+              "nightlife": {
+                "osm": 407,
+                "overture": 223,
+                "ratio": 1.825
               }
             }
           }
@@ -2661,10 +2997,12 @@
             "wikidata": {
               "n_items": 106,
               "n_museums": 88,
+              "n_notable": 55,
               "matched_by_wikidata_link": 57,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.755,
+              "recall_all": 0.755,
+              "recall": 0.709,
               "recall_museums": 0.716,
               "osm_culture_to_wikidata_ratio": 2.86
             },
@@ -2698,6 +3036,16 @@
                 "osm": 28,
                 "overture": 58,
                 "ratio": 0.483
+              },
+              "culture_core": {
+                "osm": 221,
+                "overture": 530,
+                "ratio": 0.417
+              },
+              "nightlife": {
+                "osm": 514,
+                "overture": 647,
+                "ratio": 0.794
               }
             }
           }
@@ -2727,10 +3075,12 @@
             "wikidata": {
               "n_items": 13,
               "n_museums": 11,
+              "n_notable": 12,
               "matched_by_wikidata_link": 6,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.923,
+              "recall_all": 0.923,
+              "recall": 0.917,
               "recall_museums": 0.909,
               "osm_culture_to_wikidata_ratio": 8.46
             },
@@ -2764,6 +3114,16 @@
                 "osm": 21,
                 "overture": 115,
                 "ratio": 0.183
+              },
+              "culture_core": {
+                "osm": 106,
+                "overture": 1794,
+                "ratio": 0.059
+              },
+              "nightlife": {
+                "osm": 222,
+                "overture": 1658,
+                "ratio": 0.134
               }
             }
           }
@@ -2793,10 +3153,12 @@
             "wikidata": {
               "n_items": 52,
               "n_museums": 42,
+              "n_notable": 47,
               "matched_by_wikidata_link": 35,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.731,
+              "recall_all": 0.731,
+              "recall": 0.766,
               "recall_museums": 0.762,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -2830,6 +3192,16 @@
                 "osm": 9,
                 "overture": 42,
                 "ratio": 0.214
+              },
+              "culture_core": {
+                "osm": 148,
+                "overture": 632,
+                "ratio": 0.234
+              },
+              "nightlife": {
+                "osm": 228,
+                "overture": 1011,
+                "ratio": 0.226
               }
             }
           }
@@ -2859,10 +3231,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
+              "n_notable": 11,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.818,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 3.12
             },
@@ -2896,6 +3270,16 @@
                 "osm": 11,
                 "overture": 25,
                 "ratio": 0.44
+              },
+              "culture_core": {
+                "osm": 48,
+                "overture": 207,
+                "ratio": 0.232
+              },
+              "nightlife": {
+                "osm": 90,
+                "overture": 252,
+                "ratio": 0.357
               }
             }
           }
@@ -2925,11 +3309,13 @@
             "wikidata": {
               "n_items": 190,
               "n_museums": 154,
+              "n_notable": 111,
               "matched_by_wikidata_link": 56,
-              "matched_by_name_250m": 34,
+              "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.474,
-              "recall_museums": 0.506,
+              "recall_all": 0.463,
+              "recall": 0.649,
+              "recall_museums": 0.494,
               "osm_culture_to_wikidata_ratio": 2.22
             },
             "overture": {
@@ -2962,6 +3348,16 @@
                 "osm": 38,
                 "overture": 682,
                 "ratio": 0.056
+              },
+              "culture_core": {
+                "osm": 400,
+                "overture": 1942,
+                "ratio": 0.206
+              },
+              "nightlife": {
+                "osm": 483,
+                "overture": 3063,
+                "ratio": 0.158
               }
             }
           }
@@ -2991,10 +3387,12 @@
             "wikidata": {
               "n_items": 127,
               "n_museums": 122,
+              "n_notable": 85,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.567,
+              "recall_all": 0.567,
+              "recall": 0.612,
               "recall_museums": 0.566,
               "osm_culture_to_wikidata_ratio": 1.6
             },
@@ -3028,6 +3426,16 @@
                 "osm": 34,
                 "overture": 138,
                 "ratio": 0.246
+              },
+              "culture_core": {
+                "osm": 176,
+                "overture": 2150,
+                "ratio": 0.082
+              },
+              "nightlife": {
+                "osm": 137,
+                "overture": 1011,
+                "ratio": 0.136
               }
             }
           }
@@ -3057,10 +3465,12 @@
             "wikidata": {
               "n_items": 20,
               "n_museums": 15,
+              "n_notable": 17,
               "matched_by_wikidata_link": 11,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.65,
+              "recall_all": 0.65,
+              "recall": 0.647,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.95
             },
@@ -3094,6 +3504,16 @@
                 "osm": 9,
                 "overture": 160,
                 "ratio": 0.056
+              },
+              "culture_core": {
+                "osm": 98,
+                "overture": 442,
+                "ratio": 0.222
+              },
+              "nightlife": {
+                "osm": 149,
+                "overture": 1374,
+                "ratio": 0.108
               }
             }
           }
@@ -3123,10 +3543,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 11,
+              "n_notable": 10,
               "matched_by_wikidata_link": 1,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.455,
+              "recall_all": 0.455,
+              "recall": 0.5,
               "recall_museums": 0.455,
               "osm_culture_to_wikidata_ratio": 8.73
             },
@@ -3160,6 +3582,16 @@
                 "osm": 29,
                 "overture": 33,
                 "ratio": 0.879
+              },
+              "culture_core": {
+                "osm": 93,
+                "overture": 241,
+                "ratio": 0.386
+              },
+              "nightlife": {
+                "osm": 159,
+                "overture": 343,
+                "ratio": 0.464
               }
             }
           }
@@ -3189,10 +3621,12 @@
             "wikidata": {
               "n_items": 41,
               "n_museums": 39,
+              "n_notable": 27,
               "matched_by_wikidata_link": 17,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.585,
+              "recall_all": 0.585,
+              "recall": 0.778,
               "recall_museums": 0.564,
               "osm_culture_to_wikidata_ratio": 3.78
             },
@@ -3226,6 +3660,16 @@
                 "osm": 39,
                 "overture": 231,
                 "ratio": 0.169
+              },
+              "culture_core": {
+                "osm": 139,
+                "overture": 1225,
+                "ratio": 0.113
+              },
+              "nightlife": {
+                "osm": 315,
+                "overture": 1514,
+                "ratio": 0.208
               }
             }
           }
@@ -3255,10 +3699,12 @@
             "wikidata": {
               "n_items": 10,
               "n_museums": 8,
+              "n_notable": 6,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.4,
+              "recall_all": 0.4,
+              "recall": 0.5,
               "recall_museums": 0.375,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -3292,6 +3738,16 @@
                 "osm": 11,
                 "overture": 92,
                 "ratio": 0.12
+              },
+              "culture_core": {
+                "osm": 19,
+                "overture": 255,
+                "ratio": 0.075
+              },
+              "nightlife": {
+                "osm": 67,
+                "overture": 303,
+                "ratio": 0.221
               }
             }
           }
@@ -3321,10 +3777,12 @@
             "wikidata": {
               "n_items": 73,
               "n_museums": 59,
+              "n_notable": 65,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.712,
+              "recall_all": 0.712,
+              "recall": 0.738,
               "recall_museums": 0.678,
               "osm_culture_to_wikidata_ratio": 4.89
             },
@@ -3358,6 +3816,16 @@
                 "osm": 92,
                 "overture": 390,
                 "ratio": 0.236
+              },
+              "culture_core": {
+                "osm": 327,
+                "overture": 952,
+                "ratio": 0.343
+              },
+              "nightlife": {
+                "osm": 315,
+                "overture": 1540,
+                "ratio": 0.205
               }
             }
           }
@@ -3387,10 +3855,12 @@
             "wikidata": {
               "n_items": 124,
               "n_museums": 94,
+              "n_notable": 101,
               "matched_by_wikidata_link": 81,
               "matched_by_name_250m": 18,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.798,
+              "recall_all": 0.798,
+              "recall": 0.832,
               "recall_museums": 0.798,
               "osm_culture_to_wikidata_ratio": 3.05
             },
@@ -3424,6 +3894,16 @@
                 "osm": 40,
                 "overture": 100,
                 "ratio": 0.4
+              },
+              "culture_core": {
+                "osm": 318,
+                "overture": 550,
+                "ratio": 0.578
+              },
+              "nightlife": {
+                "osm": 528,
+                "overture": 1213,
+                "ratio": 0.435
               }
             }
           }
@@ -3453,11 +3933,13 @@
             "wikidata": {
               "n_items": 664,
               "n_museums": 350,
+              "n_notable": 448,
               "matched_by_wikidata_link": 325,
-              "matched_by_name_250m": 46,
+              "matched_by_name_250m": 47,
               "unmatched_but_linked_from_other_osm_object": 79,
-              "recall": 0.559,
-              "recall_museums": 0.543,
+              "recall_all": 0.56,
+              "recall": 0.621,
+              "recall_museums": 0.546,
               "osm_culture_to_wikidata_ratio": 1.7
             },
             "overture": {
@@ -3490,6 +3972,16 @@
                 "osm": 160,
                 "overture": 819,
                 "ratio": 0.195
+              },
+              "culture_core": {
+                "osm": 803,
+                "overture": 3856,
+                "ratio": 0.208
+              },
+              "nightlife": {
+                "osm": 4746,
+                "overture": 9170,
+                "ratio": 0.518
               }
             }
           }
@@ -3519,10 +4011,12 @@
             "wikidata": {
               "n_items": 234,
               "n_museums": 149,
+              "n_notable": 178,
               "matched_by_wikidata_link": 97,
               "matched_by_name_250m": 34,
               "unmatched_but_linked_from_other_osm_object": 20,
-              "recall": 0.56,
+              "recall_all": 0.56,
+              "recall": 0.556,
               "recall_museums": 0.604,
               "osm_culture_to_wikidata_ratio": 4.34
             },
@@ -3556,6 +4050,16 @@
                 "osm": 74,
                 "overture": 361,
                 "ratio": 0.205
+              },
+              "culture_core": {
+                "osm": 890,
+                "overture": 3015,
+                "ratio": 0.295
+              },
+              "nightlife": {
+                "osm": 834,
+                "overture": 3256,
+                "ratio": 0.256
               }
             }
           }
@@ -3585,10 +4089,12 @@
             "wikidata": {
               "n_items": 193,
               "n_museums": 113,
+              "n_notable": 152,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 37,
               "unmatched_but_linked_from_other_osm_object": 26,
-              "recall": 0.617,
+              "recall_all": 0.617,
+              "recall": 0.618,
               "recall_museums": 0.673,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -3622,6 +4128,16 @@
                 "osm": 191,
                 "overture": 902,
                 "ratio": 0.212
+              },
+              "culture_core": {
+                "osm": 457,
+                "overture": 1414,
+                "ratio": 0.323
+              },
+              "nightlife": {
+                "osm": 3374,
+                "overture": 5028,
+                "ratio": 0.671
               }
             }
           }
@@ -3651,10 +4167,12 @@
             "wikidata": {
               "n_items": 54,
               "n_museums": 49,
+              "n_notable": 47,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.759,
+              "recall_all": 0.759,
+              "recall": 0.745,
               "recall_museums": 0.776,
               "osm_culture_to_wikidata_ratio": 6.24
             },
@@ -3688,6 +4206,16 @@
                 "osm": 48,
                 "overture": 205,
                 "ratio": 0.234
+              },
+              "culture_core": {
+                "osm": 315,
+                "overture": 1765,
+                "ratio": 0.178
+              },
+              "nightlife": {
+                "osm": 771,
+                "overture": 2272,
+                "ratio": 0.339
               }
             }
           }
@@ -3717,10 +4245,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 15,
+              "n_notable": 9,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.778,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -3754,6 +4284,16 @@
                 "osm": 11,
                 "overture": 29,
                 "ratio": 0.379
+              },
+              "culture_core": {
+                "osm": 33,
+                "overture": 54,
+                "ratio": 0.611
+              },
+              "nightlife": {
+                "osm": 49,
+                "overture": 108,
+                "ratio": 0.454
               }
             }
           }
@@ -3783,11 +4323,13 @@
             "wikidata": {
               "n_items": 81,
               "n_museums": 57,
+              "n_notable": 65,
               "matched_by_wikidata_link": 30,
-              "matched_by_name_250m": 16,
+              "matched_by_name_250m": 17,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.568,
-              "recall_museums": 0.509,
+              "recall_all": 0.58,
+              "recall": 0.538,
+              "recall_museums": 0.526,
               "osm_culture_to_wikidata_ratio": 4.05
             },
             "overture": {
@@ -3820,17 +4362,27 @@
                 "osm": 29,
                 "overture": 218,
                 "ratio": 0.133
+              },
+              "culture_core": {
+                "osm": 256,
+                "overture": 877,
+                "ratio": 0.292
+              },
+              "nightlife": {
+                "osm": 1040,
+                "overture": 1889,
+                "ratio": 0.551
               }
             }
           }
         }
       },
       "mexico-city": {
-        "value": 0.3856607310215558,
+        "value": 0.3851921274601687,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 823,
+          "count_dedup": 822,
           "count_raw": 832,
           "named_share": 0.912,
           "raw_counts": {
@@ -3849,12 +4401,14 @@
             "wikidata": {
               "n_items": 271,
               "n_museums": 242,
+              "n_notable": 85,
               "matched_by_wikidata_link": 60,
-              "matched_by_name_250m": 82,
+              "matched_by_name_250m": 84,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.524,
-              "recall_museums": 0.512,
-              "osm_culture_to_wikidata_ratio": 3.04
+              "recall_all": 0.531,
+              "recall": 0.682,
+              "recall_museums": 0.521,
+              "osm_culture_to_wikidata_ratio": 3.03
             },
             "overture": {
               "museum": {
@@ -3886,6 +4440,16 @@
                 "osm": 37,
                 "overture": 717,
                 "ratio": 0.052
+              },
+              "culture_core": {
+                "osm": 794,
+                "overture": 2779,
+                "ratio": 0.286
+              },
+              "nightlife": {
+                "osm": 526,
+                "overture": 6491,
+                "ratio": 0.081
               }
             }
           }
@@ -3915,10 +4479,12 @@
             "wikidata": {
               "n_items": 65,
               "n_museums": 55,
+              "n_notable": 52,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.631,
+              "recall_all": 0.631,
+              "recall": 0.635,
               "recall_museums": 0.618,
               "osm_culture_to_wikidata_ratio": 4.58
             },
@@ -3952,6 +4518,16 @@
                 "osm": 43,
                 "overture": 261,
                 "ratio": 0.165
+              },
+              "culture_core": {
+                "osm": 252,
+                "overture": 1069,
+                "ratio": 0.236
+              },
+              "nightlife": {
+                "osm": 302,
+                "overture": 2101,
+                "ratio": 0.144
               }
             }
           }
@@ -3981,10 +4557,12 @@
             "wikidata": {
               "n_items": 236,
               "n_museums": 141,
+              "n_notable": 122,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 44,
               "unmatched_but_linked_from_other_osm_object": 14,
-              "recall": 0.581,
+              "recall_all": 0.581,
+              "recall": 0.705,
               "recall_museums": 0.617,
               "osm_culture_to_wikidata_ratio": 1.76
             },
@@ -4018,6 +4596,16 @@
                 "osm": 76,
                 "overture": 288,
                 "ratio": 0.264
+              },
+              "culture_core": {
+                "osm": 371,
+                "overture": 1249,
+                "ratio": 0.297
+              },
+              "nightlife": {
+                "osm": 1544,
+                "overture": 3503,
+                "ratio": 0.441
               }
             }
           }
@@ -4047,10 +4635,12 @@
             "wikidata": {
               "n_items": 72,
               "n_museums": 54,
+              "n_notable": 48,
               "matched_by_wikidata_link": 36,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.556,
+              "recall_all": 0.556,
+              "recall": 0.625,
               "recall_museums": 0.556,
               "osm_culture_to_wikidata_ratio": 1.56
             },
@@ -4084,17 +4674,27 @@
                 "osm": 9,
                 "overture": 59,
                 "ratio": 0.153
+              },
+              "culture_core": {
+                "osm": 103,
+                "overture": 262,
+                "ratio": 0.393
+              },
+              "nightlife": {
+                "osm": 152,
+                "overture": 376,
+                "ratio": 0.404
               }
             }
           }
         }
       },
       "montreal": {
-        "value": 0.28627450980392155,
+        "value": 0.2852941176470588,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 292,
+          "count_dedup": 291,
           "count_raw": 297,
           "named_share": 0.976,
           "raw_counts": {
@@ -4113,12 +4713,14 @@
             "wikidata": {
               "n_items": 82,
               "n_museums": 49,
+              "n_notable": 63,
               "matched_by_wikidata_link": 26,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.561,
+              "recall_all": 0.561,
+              "recall": 0.587,
               "recall_museums": 0.531,
-              "osm_culture_to_wikidata_ratio": 3.56
+              "osm_culture_to_wikidata_ratio": 3.55
             },
             "overture": {
               "museum": {
@@ -4150,6 +4752,16 @@
                 "osm": 24,
                 "overture": 79,
                 "ratio": 0.304
+              },
+              "culture_core": {
+                "osm": 226,
+                "overture": 620,
+                "ratio": 0.365
+              },
+              "nightlife": {
+                "osm": 536,
+                "overture": 829,
+                "ratio": 0.647
               }
             }
           }
@@ -4179,11 +4791,13 @@
             "wikidata": {
               "n_items": 19,
               "n_museums": 15,
+              "n_notable": 15,
               "matched_by_wikidata_link": 7,
-              "matched_by_name_250m": 6,
+              "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.684,
-              "recall_museums": 0.667,
+              "recall_all": 0.632,
+              "recall": 0.667,
+              "recall_museums": 0.6,
               "osm_culture_to_wikidata_ratio": 9.21
             },
             "overture": {
@@ -4216,6 +4830,16 @@
                 "osm": 7,
                 "overture": 85,
                 "ratio": 0.082
+              },
+              "culture_core": {
+                "osm": 163,
+                "overture": 851,
+                "ratio": 0.192
+              },
+              "nightlife": {
+                "osm": 128,
+                "overture": 909,
+                "ratio": 0.141
               }
             }
           }
@@ -4245,10 +4869,12 @@
             "wikidata": {
               "n_items": 120,
               "n_museums": 81,
+              "n_notable": 85,
               "matched_by_wikidata_link": 74,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.733,
+              "recall_all": 0.725,
+              "recall": 0.765,
               "recall_museums": 0.815,
               "osm_culture_to_wikidata_ratio": 3.62
             },
@@ -4282,6 +4908,16 @@
                 "osm": 46,
                 "overture": 173,
                 "ratio": 0.266
+              },
+              "culture_core": {
+                "osm": 267,
+                "overture": 770,
+                "ratio": 0.347
+              },
+              "nightlife": {
+                "osm": 640,
+                "overture": 1115,
+                "ratio": 0.574
               }
             }
           }
@@ -4311,10 +4947,12 @@
             "wikidata": {
               "n_items": 5,
               "n_museums": 3,
+              "n_notable": 4,
               "matched_by_wikidata_link": 3,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.8,
+              "recall_all": 0.8,
+              "recall": 1.0,
               "recall_museums": 1.0,
               "osm_culture_to_wikidata_ratio": 27.8
             },
@@ -4348,6 +4986,16 @@
                 "osm": 34,
                 "overture": 87,
                 "ratio": 0.391
+              },
+              "culture_core": {
+                "osm": 132,
+                "overture": 152,
+                "ratio": 0.868
+              },
+              "nightlife": {
+                "osm": 651,
+                "overture": 575,
+                "ratio": 1.132
               }
             }
           }
@@ -4377,10 +5025,12 @@
             "wikidata": {
               "n_items": 31,
               "n_museums": 31,
+              "n_notable": 28,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.613,
+              "recall_all": 0.613,
+              "recall": 0.643,
               "recall_museums": 0.613,
               "osm_culture_to_wikidata_ratio": 9.29
             },
@@ -4414,17 +5064,27 @@
                 "osm": 13,
                 "overture": 200,
                 "ratio": 0.065
+              },
+              "culture_core": {
+                "osm": 272,
+                "overture": 992,
+                "ratio": 0.274
+              },
+              "nightlife": {
+                "osm": 136,
+                "overture": 955,
+                "ratio": 0.142
               }
             }
           }
         }
       },
       "new-york": {
-        "value": 0.4256021115143517,
+        "value": 0.4252721873968987,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1290,
+          "count_dedup": 1289,
           "count_raw": 1322,
           "named_share": 0.964,
           "raw_counts": {
@@ -4443,12 +5103,14 @@
             "wikidata": {
               "n_items": 441,
               "n_museums": 233,
+              "n_notable": 357,
               "matched_by_wikidata_link": 195,
               "matched_by_name_250m": 57,
               "unmatched_but_linked_from_other_osm_object": 39,
-              "recall": 0.571,
+              "recall_all": 0.571,
+              "recall": 0.574,
               "recall_museums": 0.588,
-              "osm_culture_to_wikidata_ratio": 2.93
+              "osm_culture_to_wikidata_ratio": 2.92
             },
             "overture": {
               "museum": {
@@ -4480,17 +5142,27 @@
                 "osm": 126,
                 "overture": 387,
                 "ratio": 0.326
+              },
+              "culture_core": {
+                "osm": 942,
+                "overture": 3585,
+                "ratio": 0.263
+              },
+              "nightlife": {
+                "osm": 2275,
+                "overture": 5689,
+                "ratio": 0.4
               }
             }
           }
         }
       },
       "osaka": {
-        "value": 0.385623869801085,
+        "value": 0.38652802893309224,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 853,
+          "count_dedup": 855,
           "count_raw": 864,
           "named_share": 0.956,
           "raw_counts": {
@@ -4509,11 +5181,13 @@
             "wikidata": {
               "n_items": 346,
               "n_museums": 283,
+              "n_notable": 277,
               "matched_by_wikidata_link": 197,
-              "matched_by_name_250m": 39,
-              "unmatched_but_linked_from_other_osm_object": 25,
-              "recall": 0.682,
-              "recall_museums": 0.693,
+              "matched_by_name_250m": 33,
+              "unmatched_but_linked_from_other_osm_object": 26,
+              "recall_all": 0.665,
+              "recall": 0.718,
+              "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.47
             },
             "overture": {
@@ -4546,6 +5220,16 @@
                 "osm": 38,
                 "overture": 173,
                 "ratio": 0.22
+              },
+              "culture_core": {
+                "osm": 752,
+                "overture": 3114,
+                "ratio": 0.241
+              },
+              "nightlife": {
+                "osm": 7451,
+                "overture": 14557,
+                "ratio": 0.512
               }
             }
           }
@@ -4575,10 +5259,12 @@
             "wikidata": {
               "n_items": 76,
               "n_museums": 58,
+              "n_notable": 55,
               "matched_by_wikidata_link": 43,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.684,
+              "recall_all": 0.684,
+              "recall": 0.655,
               "recall_museums": 0.69,
               "osm_culture_to_wikidata_ratio": 2.28
             },
@@ -4612,6 +5298,16 @@
                 "osm": 15,
                 "overture": 57,
                 "ratio": 0.263
+              },
+              "culture_core": {
+                "osm": 145,
+                "overture": 432,
+                "ratio": 0.336
+              },
+              "nightlife": {
+                "osm": 330,
+                "overture": 530,
+                "ratio": 0.623
               }
             }
           }
@@ -4641,11 +5337,13 @@
             "wikidata": {
               "n_items": 584,
               "n_museums": 303,
+              "n_notable": 468,
               "matched_by_wikidata_link": 302,
-              "matched_by_name_250m": 93,
+              "matched_by_name_250m": 91,
               "unmatched_but_linked_from_other_osm_object": 36,
-              "recall": 0.676,
-              "recall_museums": 0.66,
+              "recall_all": 0.673,
+              "recall": 0.682,
+              "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 3.6
             },
             "overture": {
@@ -4678,6 +5376,16 @@
                 "osm": 91,
                 "overture": 503,
                 "ratio": 0.181
+              },
+              "culture_core": {
+                "osm": 1485,
+                "overture": 3633,
+                "ratio": 0.409
+              },
+              "nightlife": {
+                "osm": 3236,
+                "overture": 4329,
+                "ratio": 0.748
               }
             }
           }
@@ -4707,10 +5415,12 @@
             "wikidata": {
               "n_items": 36,
               "n_museums": 24,
+              "n_notable": 31,
               "matched_by_wikidata_link": 13,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 12,
-              "recall": 0.472,
+              "recall_all": 0.472,
+              "recall": 0.387,
               "recall_museums": 0.542,
               "osm_culture_to_wikidata_ratio": 3.53
             },
@@ -4744,6 +5454,16 @@
                 "osm": 25,
                 "overture": 71,
                 "ratio": 0.352
+              },
+              "culture_core": {
+                "osm": 100,
+                "overture": 375,
+                "ratio": 0.267
+              },
+              "nightlife": {
+                "osm": 347,
+                "overture": 586,
+                "ratio": 0.592
               }
             }
           }
@@ -4773,11 +5493,13 @@
             "wikidata": {
               "n_items": 188,
               "n_museums": 96,
+              "n_notable": 125,
               "matched_by_wikidata_link": 93,
-              "matched_by_name_250m": 32,
+              "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 17,
-              "recall": 0.665,
-              "recall_museums": 0.719,
+              "recall_all": 0.66,
+              "recall": 0.736,
+              "recall_museums": 0.708,
               "osm_culture_to_wikidata_ratio": 2.1
             },
             "overture": {
@@ -4810,6 +5532,16 @@
                 "osm": 67,
                 "overture": 114,
                 "ratio": 0.588
+              },
+              "culture_core": {
+                "osm": 326,
+                "overture": 731,
+                "ratio": 0.446
+              },
+              "nightlife": {
+                "osm": 949,
+                "overture": 1591,
+                "ratio": 0.596
               }
             }
           }
@@ -4839,10 +5571,12 @@
             "wikidata": {
               "n_items": 22,
               "n_museums": 16,
+              "n_notable": 21,
               "matched_by_wikidata_link": 7,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.5,
+              "recall_all": 0.5,
+              "recall": 0.476,
               "recall_museums": 0.562,
               "osm_culture_to_wikidata_ratio": 6.55
             },
@@ -4876,6 +5610,16 @@
                 "osm": 87,
                 "overture": 136,
                 "ratio": 0.64
+              },
+              "culture_core": {
+                "osm": 137,
+                "overture": 294,
+                "ratio": 0.466
+              },
+              "nightlife": {
+                "osm": 298,
+                "overture": 596,
+                "ratio": 0.5
               }
             }
           }
@@ -4905,10 +5649,12 @@
             "wikidata": {
               "n_items": 27,
               "n_museums": 23,
+              "n_notable": 23,
               "matched_by_wikidata_link": 18,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.778,
+              "recall_all": 0.778,
+              "recall": 0.826,
               "recall_museums": 0.783,
               "osm_culture_to_wikidata_ratio": 2.74
             },
@@ -4942,6 +5688,16 @@
                 "osm": 7,
                 "overture": 13,
                 "ratio": 0.538
+              },
+              "culture_core": {
+                "osm": 53,
+                "overture": 140,
+                "ratio": 0.379
+              },
+              "nightlife": {
+                "osm": 89,
+                "overture": 125,
+                "ratio": 0.712
               }
             }
           }
@@ -4971,10 +5727,12 @@
             "wikidata": {
               "n_items": 138,
               "n_museums": 125,
+              "n_notable": 68,
               "matched_by_wikidata_link": 52,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.464,
+              "recall_all": 0.464,
+              "recall": 0.662,
               "recall_museums": 0.432,
               "osm_culture_to_wikidata_ratio": 2.32
             },
@@ -5008,6 +5766,16 @@
                 "osm": 37,
                 "overture": 211,
                 "ratio": 0.175
+              },
+              "culture_core": {
+                "osm": 319,
+                "overture": 1736,
+                "ratio": 0.184
+              },
+              "nightlife": {
+                "osm": 1051,
+                "overture": 5620,
+                "ratio": 0.187
               }
             }
           }
@@ -5037,10 +5805,12 @@
             "wikidata": {
               "n_items": 272,
               "n_museums": 220,
+              "n_notable": 165,
               "matched_by_wikidata_link": 99,
               "matched_by_name_250m": 43,
               "unmatched_but_linked_from_other_osm_object": 30,
-              "recall": 0.522,
+              "recall_all": 0.522,
+              "recall": 0.545,
               "recall_museums": 0.509,
               "osm_culture_to_wikidata_ratio": 1.47
             },
@@ -5074,6 +5844,16 @@
                 "osm": 58,
                 "overture": 268,
                 "ratio": 0.216
+              },
+              "culture_core": {
+                "osm": 384,
+                "overture": 1588,
+                "ratio": 0.242
+              },
+              "nightlife": {
+                "osm": 666,
+                "overture": 3334,
+                "ratio": 0.2
               }
             }
           }
@@ -5103,10 +5883,12 @@
             "wikidata": {
               "n_items": 159,
               "n_museums": 116,
+              "n_notable": 129,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 19,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.736,
+              "recall_all": 0.736,
+              "recall": 0.721,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.45
             },
@@ -5140,6 +5922,16 @@
                 "osm": 77,
                 "overture": 165,
                 "ratio": 0.467
+              },
+              "culture_core": {
+                "osm": 557,
+                "overture": 1421,
+                "ratio": 0.392
+              },
+              "nightlife": {
+                "osm": 1038,
+                "overture": 1804,
+                "ratio": 0.575
               }
             }
           }
@@ -5169,10 +5961,12 @@
             "wikidata": {
               "n_items": 110,
               "n_museums": 92,
+              "n_notable": 72,
               "matched_by_wikidata_link": 63,
               "matched_by_name_250m": 26,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.809,
+              "recall_all": 0.809,
+              "recall": 0.889,
               "recall_museums": 0.793,
               "osm_culture_to_wikidata_ratio": 3.33
             },
@@ -5206,6 +6000,16 @@
                 "osm": 68,
                 "overture": 223,
                 "ratio": 0.305
+              },
+              "culture_core": {
+                "osm": 318,
+                "overture": 665,
+                "ratio": 0.478
+              },
+              "nightlife": {
+                "osm": 408,
+                "overture": 1156,
+                "ratio": 0.353
               }
             }
           }
@@ -5235,10 +6039,12 @@
             "wikidata": {
               "n_items": 204,
               "n_museums": 166,
+              "n_notable": 136,
               "matched_by_wikidata_link": 83,
               "matched_by_name_250m": 15,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.48,
+              "recall_all": 0.48,
+              "recall": 0.588,
               "recall_museums": 0.428,
               "osm_culture_to_wikidata_ratio": 2.44
             },
@@ -5272,6 +6078,16 @@
                 "osm": 81,
                 "overture": 504,
                 "ratio": 0.161
+              },
+              "culture_core": {
+                "osm": 483,
+                "overture": 2587,
+                "ratio": 0.187
+              },
+              "nightlife": {
+                "osm": 1319,
+                "overture": 11346,
+                "ratio": 0.116
               }
             }
           }
@@ -5301,10 +6117,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 40,
+              "n_notable": 35,
               "matched_by_wikidata_link": 27,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.682,
+              "recall_all": 0.682,
+              "recall": 0.743,
               "recall_museums": 0.675,
               "osm_culture_to_wikidata_ratio": 1.73
             },
@@ -5338,6 +6156,16 @@
                 "osm": 10,
                 "overture": 41,
                 "ratio": 0.244
+              },
+              "culture_core": {
+                "osm": 73,
+                "overture": 416,
+                "ratio": 0.175
+              },
+              "nightlife": {
+                "osm": 294,
+                "overture": 2471,
+                "ratio": 0.119
               }
             }
           }
@@ -5367,10 +6195,12 @@
             "wikidata": {
               "n_items": 54,
               "n_museums": 33,
+              "n_notable": 49,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.667,
+              "recall_all": 0.667,
+              "recall": 0.673,
               "recall_museums": 0.606,
               "osm_culture_to_wikidata_ratio": 4.67
             },
@@ -5404,17 +6234,27 @@
                 "osm": 33,
                 "overture": 40,
                 "ratio": 0.825
+              },
+              "culture_core": {
+                "osm": 217,
+                "overture": 519,
+                "ratio": 0.418
+              },
+              "nightlife": {
+                "osm": 725,
+                "overture": 962,
+                "ratio": 0.754
               }
             }
           }
         }
       },
       "seoul": {
-        "value": 0.796669588080631,
+        "value": 0.8028045574057844,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1818,
+          "count_dedup": 1832,
           "count_raw": 1892,
           "named_share": 0.949,
           "raw_counts": {
@@ -5433,12 +6273,14 @@
             "wikidata": {
               "n_items": 130,
               "n_museums": 121,
+              "n_notable": 115,
               "matched_by_wikidata_link": 64,
-              "matched_by_name_250m": 46,
+              "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.846,
-              "recall_museums": 0.851,
-              "osm_culture_to_wikidata_ratio": 13.98
+              "recall_all": 0.8,
+              "recall": 0.817,
+              "recall_museums": 0.802,
+              "osm_culture_to_wikidata_ratio": 14.09
             },
             "overture": {
               "museum": {
@@ -5470,17 +6312,27 @@
                 "osm": 46,
                 "overture": 201,
                 "ratio": 0.229
+              },
+              "culture_core": {
+                "osm": 1636,
+                "overture": 2131,
+                "ratio": 0.768
+              },
+              "nightlife": {
+                "osm": 2796,
+                "overture": 4364,
+                "ratio": 0.641
               }
             }
           }
         }
       },
       "shanghai": {
-        "value": 0.1445012787723785,
+        "value": 0.14482097186700768,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 452,
+          "count_dedup": 453,
           "count_raw": 473,
           "named_share": 0.871,
           "raw_counts": {
@@ -5499,12 +6351,14 @@
             "wikidata": {
               "n_items": 69,
               "n_museums": 60,
+              "n_notable": 64,
               "matched_by_wikidata_link": 33,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.681,
-              "recall_museums": 0.683,
-              "osm_culture_to_wikidata_ratio": 6.55
+              "recall_all": 0.667,
+              "recall": 0.703,
+              "recall_museums": 0.667,
+              "osm_culture_to_wikidata_ratio": 6.57
             },
             "overture": {
               "museum": {
@@ -5536,6 +6390,16 @@
                 "osm": 35,
                 "overture": 48,
                 "ratio": 0.729
+              },
+              "culture_core": {
+                "osm": 427,
+                "overture": 389,
+                "ratio": 1.098
+              },
+              "nightlife": {
+                "osm": 403,
+                "overture": 329,
+                "ratio": 1.225
               }
             }
           }
@@ -5565,10 +6429,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 41,
+              "n_notable": 40,
               "matched_by_wikidata_link": 19,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.659,
+              "recall_all": 0.659,
+              "recall": 0.625,
               "recall_museums": 0.634,
               "osm_culture_to_wikidata_ratio": 5.41
             },
@@ -5602,6 +6468,16 @@
                 "osm": 90,
                 "overture": 91,
                 "ratio": 0.989
+              },
+              "culture_core": {
+                "osm": 195,
+                "overture": 632,
+                "ratio": 0.309
+              },
+              "nightlife": {
+                "osm": 542,
+                "overture": 1036,
+                "ratio": 0.523
               }
             }
           }
@@ -5631,10 +6507,12 @@
             "wikidata": {
               "n_items": 334,
               "n_museums": 299,
+              "n_notable": 203,
               "matched_by_wikidata_link": 68,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 136,
-              "recall": 0.272,
+              "recall_all": 0.272,
+              "recall": 0.33,
               "recall_museums": 0.224,
               "osm_culture_to_wikidata_ratio": 0.74
             },
@@ -5668,6 +6546,16 @@
                 "osm": 25,
                 "overture": 155,
                 "ratio": 0.161
+              },
+              "culture_core": {
+                "osm": 185,
+                "overture": 681,
+                "ratio": 0.272
+              },
+              "nightlife": {
+                "osm": 344,
+                "overture": 766,
+                "ratio": 0.449
               }
             }
           }
@@ -5697,10 +6585,12 @@
             "wikidata": {
               "n_items": 77,
               "n_museums": 48,
+              "n_notable": 62,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.623,
+              "recall_all": 0.623,
+              "recall": 0.694,
               "recall_museums": 0.646,
               "osm_culture_to_wikidata_ratio": 4.29
             },
@@ -5734,6 +6624,16 @@
                 "osm": 21,
                 "overture": 184,
                 "ratio": 0.114
+              },
+              "culture_core": {
+                "osm": 227,
+                "overture": 813,
+                "ratio": 0.279
+              },
+              "nightlife": {
+                "osm": 867,
+                "overture": 1703,
+                "ratio": 0.509
               }
             }
           }
@@ -5763,11 +6663,13 @@
             "wikidata": {
               "n_items": 119,
               "n_museums": 115,
+              "n_notable": 94,
               "matched_by_wikidata_link": 67,
-              "matched_by_name_250m": 13,
-              "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.672,
-              "recall_museums": 0.661,
+              "matched_by_name_250m": 11,
+              "unmatched_but_linked_from_other_osm_object": 9,
+              "recall_all": 0.655,
+              "recall": 0.649,
+              "recall_museums": 0.643,
               "osm_culture_to_wikidata_ratio": 3.5
             },
             "overture": {
@@ -5800,17 +6702,27 @@
                 "osm": 22,
                 "overture": 80,
                 "ratio": 0.275
+              },
+              "culture_core": {
+                "osm": 382,
+                "overture": 1657,
+                "ratio": 0.231
+              },
+              "nightlife": {
+                "osm": 313,
+                "overture": 1764,
+                "ratio": 0.177
               }
             }
           }
         }
       },
       "tbilisi": {
-        "value": 0.9205298013245033,
+        "value": 0.9271523178807947,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 139,
+          "count_dedup": 140,
           "count_raw": 140,
           "named_share": 0.879,
           "raw_counts": {
@@ -5829,12 +6741,14 @@
             "wikidata": {
               "n_items": 43,
               "n_museums": 31,
+              "n_notable": 31,
               "matched_by_wikidata_link": 29,
-              "matched_by_name_250m": 7,
-              "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.837,
-              "recall_museums": 0.839,
-              "osm_culture_to_wikidata_ratio": 3.23
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 5,
+              "recall_all": 0.744,
+              "recall": 0.774,
+              "recall_museums": 0.774,
+              "osm_culture_to_wikidata_ratio": 3.26
             },
             "overture": {
               "museum": {
@@ -5866,6 +6780,16 @@
                 "osm": 35,
                 "overture": 60,
                 "ratio": 0.583
+              },
+              "culture_core": {
+                "osm": 110,
+                "overture": 242,
+                "ratio": 0.455
+              },
+              "nightlife": {
+                "osm": 336,
+                "overture": 529,
+                "ratio": 0.635
               }
             }
           }
@@ -5895,10 +6819,12 @@
             "wikidata": {
               "n_items": 53,
               "n_museums": 40,
+              "n_notable": 37,
               "matched_by_wikidata_link": 24,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.717,
+              "recall_all": 0.698,
+              "recall": 0.73,
               "recall_museums": 0.775,
               "osm_culture_to_wikidata_ratio": 7.09
             },
@@ -5932,19 +6858,29 @@
                 "osm": 0,
                 "overture": 2,
                 "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 331,
+                "overture": 169,
+                "ratio": 1.959
+              },
+              "nightlife": {
+                "osm": 6,
+                "overture": 21,
+                "ratio": 0.286
               }
             }
           }
         }
       },
       "tel-aviv": {
-        "value": 0.4984984984984985,
+        "value": 0.5315315315315315,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 166,
+          "count_dedup": 177,
           "count_raw": 178,
-          "named_share": 0.556,
+          "named_share": 0.888,
           "raw_counts": {
             "tourism=museum": 60,
             "tourism=gallery": 14,
@@ -5961,12 +6897,14 @@
             "wikidata": {
               "n_items": 138,
               "n_museums": 108,
+              "n_notable": 128,
               "matched_by_wikidata_link": 50,
-              "matched_by_name_250m": 21,
-              "unmatched_but_linked_from_other_osm_object": 20,
-              "recall": 0.514,
-              "recall_museums": 0.519,
-              "osm_culture_to_wikidata_ratio": 1.2
+              "matched_by_name_250m": 8,
+              "unmatched_but_linked_from_other_osm_object": 28,
+              "recall_all": 0.42,
+              "recall": 0.438,
+              "recall_museums": 0.426,
+              "osm_culture_to_wikidata_ratio": 1.28
             },
             "overture": {
               "museum": {
@@ -5998,17 +6936,27 @@
                 "osm": 26,
                 "overture": 182,
                 "ratio": 0.143
+              },
+              "culture_core": {
+                "osm": 164,
+                "overture": 646,
+                "ratio": 0.254
+              },
+              "nightlife": {
+                "osm": 265,
+                "overture": 933,
+                "ratio": 0.284
               }
             }
           }
         }
       },
       "tokyo": {
-        "value": 0.3037754114230397,
+        "value": 0.30435624394966115,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 1569,
+          "count_dedup": 1572,
           "count_raw": 1596,
           "named_share": 0.957,
           "raw_counts": {
@@ -6027,12 +6975,14 @@
             "wikidata": {
               "n_items": 637,
               "n_museums": 516,
+              "n_notable": 524,
               "matched_by_wikidata_link": 437,
-              "matched_by_name_250m": 69,
-              "unmatched_but_linked_from_other_osm_object": 22,
-              "recall": 0.794,
-              "recall_museums": 0.824,
-              "osm_culture_to_wikidata_ratio": 2.46
+              "matched_by_name_250m": 53,
+              "unmatched_but_linked_from_other_osm_object": 26,
+              "recall_all": 0.769,
+              "recall": 0.773,
+              "recall_museums": 0.816,
+              "osm_culture_to_wikidata_ratio": 2.47
             },
             "overture": {
               "museum": {
@@ -6064,6 +7014,16 @@
                 "osm": 241,
                 "overture": 447,
                 "ratio": 0.539
+              },
+              "culture_core": {
+                "osm": 1416,
+                "overture": 7416,
+                "ratio": 0.191
+              },
+              "nightlife": {
+                "osm": 12665,
+                "overture": 32092,
+                "ratio": 0.395
               }
             }
           }
@@ -6093,10 +7053,12 @@
             "wikidata": {
               "n_items": 94,
               "n_museums": 50,
+              "n_notable": 64,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.553,
+              "recall_all": 0.553,
+              "recall": 0.562,
               "recall_museums": 0.54,
               "osm_culture_to_wikidata_ratio": 3.47
             },
@@ -6130,6 +7092,16 @@
                 "osm": 41,
                 "overture": 144,
                 "ratio": 0.285
+              },
+              "culture_core": {
+                "osm": 256,
+                "overture": 860,
+                "ratio": 0.298
+              },
+              "nightlife": {
+                "osm": 760,
+                "overture": 1483,
+                "ratio": 0.512
               }
             }
           }
@@ -6159,9 +7131,11 @@
             "wikidata": {
               "n_items": 19,
               "n_museums": 17,
+              "n_notable": 19,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.684,
               "recall": 0.684,
               "recall_museums": 0.647,
               "osm_culture_to_wikidata_ratio": 3.05
@@ -6196,6 +7170,16 @@
                 "osm": 17,
                 "overture": 44,
                 "ratio": 0.386
+              },
+              "culture_core": {
+                "osm": 57,
+                "overture": 211,
+                "ratio": 0.27
+              },
+              "nightlife": {
+                "osm": 175,
+                "overture": 200,
+                "ratio": 0.875
               }
             }
           }
@@ -6225,10 +7209,12 @@
             "wikidata": {
               "n_items": 50,
               "n_museums": 39,
+              "n_notable": 36,
               "matched_by_wikidata_link": 25,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.66,
+              "recall_all": 0.66,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 4.04
             },
@@ -6262,6 +7248,16 @@
                 "osm": 25,
                 "overture": 51,
                 "ratio": 0.49
+              },
+              "culture_core": {
+                "osm": 163,
+                "overture": 400,
+                "ratio": 0.407
+              },
+              "nightlife": {
+                "osm": 323,
+                "overture": 471,
+                "ratio": 0.686
               }
             }
           }
@@ -6291,10 +7287,12 @@
             "wikidata": {
               "n_items": 283,
               "n_museums": 190,
+              "n_notable": 195,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 30,
-              "recall": 0.717,
+              "recall_all": 0.717,
+              "recall": 0.713,
               "recall_museums": 0.784,
               "osm_culture_to_wikidata_ratio": 1.9
             },
@@ -6328,6 +7326,16 @@
                 "osm": 60,
                 "overture": 202,
                 "ratio": 0.297
+              },
+              "culture_core": {
+                "osm": 416,
+                "overture": 1067,
+                "ratio": 0.39
+              },
+              "nightlife": {
+                "osm": 768,
+                "overture": 1268,
+                "ratio": 0.606
               }
             }
           }
@@ -6357,10 +7365,12 @@
             "wikidata": {
               "n_items": 166,
               "n_museums": 122,
+              "n_notable": 134,
               "matched_by_wikidata_link": 77,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.651,
+              "recall_all": 0.651,
+              "recall": 0.672,
               "recall_museums": 0.656,
               "osm_culture_to_wikidata_ratio": 2.19
             },
@@ -6394,6 +7404,16 @@
                 "osm": 55,
                 "overture": 139,
                 "ratio": 0.396
+              },
+              "culture_core": {
+                "osm": 322,
+                "overture": 617,
+                "ratio": 0.522
+              },
+              "nightlife": {
+                "osm": 498,
+                "overture": 862,
+                "ratio": 0.578
               }
             }
           }
@@ -6423,11 +7443,13 @@
             "wikidata": {
               "n_items": 83,
               "n_museums": 72,
+              "n_notable": 42,
               "matched_by_wikidata_link": 42,
-              "matched_by_name_250m": 12,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.651,
-              "recall_museums": 0.611,
+              "recall_all": 0.663,
+              "recall": 0.69,
+              "recall_museums": 0.625,
               "osm_culture_to_wikidata_ratio": 3.13
             },
             "overture": {
@@ -6460,6 +7482,16 @@
                 "osm": 41,
                 "overture": 136,
                 "ratio": 0.301
+              },
+              "culture_core": {
+                "osm": 168,
+                "overture": 459,
+                "ratio": 0.366
+              },
+              "nightlife": {
+                "osm": 393,
+                "overture": 672,
+                "ratio": 0.585
               }
             }
           }
@@ -6558,11 +7590,11 @@
         }
       },
       "berlin": {
-        "value": 56.394414410435985,
+        "value": 56.366245372268935,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2002,
+          "count_dedup": 2001,
           "pop_2025": 3549997
         }
       },
@@ -6693,11 +7725,11 @@
         }
       },
       "fukuoka": {
-        "value": 31.310638722138176,
+        "value": 31.401001315852863,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 693,
+          "count_dedup": 695,
           "pop_2025": 2213305
         }
       },
@@ -6963,20 +7995,20 @@
         }
       },
       "new-york": {
-        "value": 15.995595048373733,
+        "value": 15.988551633557186,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2271,
+          "count_dedup": 2270,
           "pop_2025": 14197659
         }
       },
       "osaka": {
-        "value": 57.373187936019335,
+        "value": 58.68502666844072,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 7260,
+          "count_dedup": 7426,
           "pop_2025": 12653994
         }
       },
@@ -7080,11 +8112,11 @@
         }
       },
       "sapporo": {
-        "value": 15.066607296295041,
+        "value": 15.118382579100178,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 291,
+          "count_dedup": 292,
           "pop_2025": 1931424
         }
       },
@@ -7098,11 +8130,11 @@
         }
       },
       "seoul": {
-        "value": 12.299155194343294,
+        "value": 12.501296167223295,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2738,
+          "count_dedup": 2783,
           "pop_2025": 22261692
         }
       },
@@ -7152,11 +8184,11 @@
         }
       },
       "tbilisi": {
-        "value": 32.278375937969344,
+        "value": 33.79616790997417,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 319,
+          "count_dedup": 334,
           "pop_2025": 988278
         }
       },
@@ -7179,11 +8211,11 @@
         }
       },
       "tokyo": {
-        "value": 36.85617783857649,
+        "value": 38.00831040276112,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 12220,
+          "count_dedup": 12602,
           "pop_2025": 33155907
         }
       },
@@ -7263,10 +8295,12 @@
             "wikidata": {
               "n_items": 7,
               "n_museums": 6,
+              "n_notable": 5,
               "matched_by_wikidata_link": 2,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.714,
+              "recall_all": 0.714,
+              "recall": 0.8,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 3.29
             },
@@ -7300,6 +8334,16 @@
                 "osm": 22,
                 "overture": 38,
                 "ratio": 0.579
+              },
+              "culture_core": {
+                "osm": 21,
+                "overture": 91,
+                "ratio": 0.231
+              },
+              "nightlife": {
+                "osm": 626,
+                "overture": 256,
+                "ratio": 2.445
               }
             }
           }
@@ -7325,10 +8369,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 9,
+              "n_notable": 9,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.727,
+              "recall_all": 0.727,
+              "recall": 0.889,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 4.91
             },
@@ -7362,6 +8408,16 @@
                 "osm": 19,
                 "overture": 16,
                 "ratio": 1.188
+              },
+              "culture_core": {
+                "osm": 52,
+                "overture": 30,
+                "ratio": 1.733
+              },
+              "nightlife": {
+                "osm": 173,
+                "overture": 57,
+                "ratio": 3.035
               }
             }
           }
@@ -7387,11 +8443,13 @@
             "wikidata": {
               "n_items": 36,
               "n_museums": 20,
+              "n_notable": 34,
               "matched_by_wikidata_link": 21,
-              "matched_by_name_250m": 3,
+              "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.667,
-              "recall_museums": 0.55,
+              "recall_all": 0.639,
+              "recall": 0.676,
+              "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 2.08
             },
             "overture": {
@@ -7424,6 +8482,16 @@
                 "osm": 8,
                 "overture": 24,
                 "ratio": 0.333
+              },
+              "culture_core": {
+                "osm": 68,
+                "overture": 260,
+                "ratio": 0.262
+              },
+              "nightlife": {
+                "osm": 154,
+                "overture": 352,
+                "ratio": 0.438
               }
             }
           }
@@ -7449,10 +8517,12 @@
             "wikidata": {
               "n_items": 181,
               "n_museums": 106,
+              "n_notable": 143,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 22,
-              "recall": 0.63,
+              "recall_all": 0.63,
+              "recall": 0.629,
               "recall_museums": 0.651,
               "osm_culture_to_wikidata_ratio": 2.07
             },
@@ -7486,6 +8556,16 @@
                 "osm": 44,
                 "overture": 159,
                 "ratio": 0.277
+              },
+              "culture_core": {
+                "osm": 293,
+                "overture": 1009,
+                "ratio": 0.29
+              },
+              "nightlife": {
+                "osm": 679,
+                "overture": 997,
+                "ratio": 0.681
               }
             }
           }
@@ -7511,11 +8591,13 @@
             "wikidata": {
               "n_items": 237,
               "n_museums": 112,
+              "n_notable": 143,
               "matched_by_wikidata_link": 127,
-              "matched_by_name_250m": 67,
-              "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.819,
-              "recall_museums": 0.723,
+              "matched_by_name_250m": 39,
+              "unmatched_but_linked_from_other_osm_object": 13,
+              "recall_all": 0.7,
+              "recall": 0.769,
+              "recall_museums": 0.67,
               "osm_culture_to_wikidata_ratio": 2.63
             },
             "overture": {
@@ -7548,6 +8630,16 @@
                 "osm": 94,
                 "overture": 258,
                 "ratio": 0.364
+              },
+              "culture_core": {
+                "osm": 559,
+                "overture": 1251,
+                "ratio": 0.447
+              },
+              "nightlife": {
+                "osm": 682,
+                "overture": 1793,
+                "ratio": 0.38
               }
             }
           }
@@ -7573,10 +8665,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 27,
+              "n_notable": 38,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 10,
-              "recall": 0.568,
+              "recall_all": 0.568,
+              "recall": 0.605,
               "recall_museums": 0.481,
               "osm_culture_to_wikidata_ratio": 3.55
             },
@@ -7610,6 +8704,16 @@
                 "osm": 12,
                 "overture": 31,
                 "ratio": 0.387
+              },
+              "culture_core": {
+                "osm": 115,
+                "overture": 224,
+                "ratio": 0.513
+              },
+              "nightlife": {
+                "osm": 309,
+                "overture": 466,
+                "ratio": 0.663
               }
             }
           }
@@ -7635,12 +8739,14 @@
             "wikidata": {
               "n_items": 82,
               "n_museums": 76,
+              "n_notable": 68,
               "matched_by_wikidata_link": 38,
-              "matched_by_name_250m": 14,
-              "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.634,
-              "recall_museums": 0.632,
-              "osm_culture_to_wikidata_ratio": 3.72
+              "matched_by_name_250m": 12,
+              "unmatched_but_linked_from_other_osm_object": 4,
+              "recall_all": 0.61,
+              "recall": 0.632,
+              "recall_museums": 0.605,
+              "osm_culture_to_wikidata_ratio": 3.71
             },
             "overture": {
               "museum": {
@@ -7672,6 +8778,16 @@
                 "osm": 93,
                 "overture": 425,
                 "ratio": 0.219
+              },
+              "culture_core": {
+                "osm": 267,
+                "overture": 2144,
+                "ratio": 0.125
+              },
+              "nightlife": {
+                "osm": 862,
+                "overture": 4161,
+                "ratio": 0.207
               }
             }
           }
@@ -7697,11 +8813,13 @@
             "wikidata": {
               "n_items": 238,
               "n_museums": 119,
+              "n_notable": 183,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 36,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.563,
-              "recall_museums": 0.689,
+              "recall_all": 0.563,
+              "recall": 0.536,
+              "recall_museums": 0.681,
               "osm_culture_to_wikidata_ratio": 1.83
             },
             "overture": {
@@ -7734,6 +8852,16 @@
                 "osm": 85,
                 "overture": 514,
                 "ratio": 0.165
+              },
+              "culture_core": {
+                "osm": 404,
+                "overture": 1206,
+                "ratio": 0.335
+              },
+              "nightlife": {
+                "osm": 2308,
+                "overture": 4251,
+                "ratio": 0.543
               }
             }
           }
@@ -7759,12 +8887,14 @@
             "wikidata": {
               "n_items": 140,
               "n_museums": 121,
+              "n_notable": 129,
               "matched_by_wikidata_link": 34,
-              "matched_by_name_250m": 34,
+              "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.486,
-              "recall_museums": 0.43,
-              "osm_culture_to_wikidata_ratio": 2.95
+              "recall_all": 0.464,
+              "recall": 0.481,
+              "recall_museums": 0.405,
+              "osm_culture_to_wikidata_ratio": 2.96
             },
             "overture": {
               "museum": {
@@ -7796,6 +8926,16 @@
                 "osm": 32,
                 "overture": 14,
                 "ratio": 2.286
+              },
+              "culture_core": {
+                "osm": 382,
+                "overture": 336,
+                "ratio": 1.137
+              },
+              "nightlife": {
+                "osm": 288,
+                "overture": 162,
+                "ratio": 1.778
               }
             }
           }
@@ -7821,10 +8961,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 10,
+              "n_notable": 10,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.727,
+              "recall_all": 0.727,
+              "recall": 0.7,
               "recall_museums": 0.7,
               "osm_culture_to_wikidata_ratio": 29.09
             },
@@ -7858,17 +9000,27 @@
                 "osm": 7,
                 "overture": 63,
                 "ratio": 0.111
+              },
+              "culture_core": {
+                "osm": 297,
+                "overture": 669,
+                "ratio": 0.444
+              },
+              "nightlife": {
+                "osm": 442,
+                "overture": 798,
+                "ratio": 0.554
               }
             }
           }
         }
       },
       "berlin": {
-        "value": 2.9397944199706316,
+        "value": 2.9383259911894273,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2002,
+          "count_dedup": 2001,
           "count_raw": 2011,
           "named_share": 0.989,
           "raw_counts": {
@@ -7883,10 +9035,12 @@
             "wikidata": {
               "n_items": 358,
               "n_museums": 223,
+              "n_notable": 217,
               "matched_by_wikidata_link": 183,
               "matched_by_name_250m": 42,
               "unmatched_but_linked_from_other_osm_object": 25,
-              "recall": 0.628,
+              "recall_all": 0.628,
+              "recall": 0.691,
               "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.88
             },
@@ -7920,6 +9074,16 @@
                 "osm": 139,
                 "overture": 329,
                 "ratio": 0.422
+              },
+              "culture_core": {
+                "osm": 673,
+                "overture": 1988,
+                "ratio": 0.339
+              },
+              "nightlife": {
+                "osm": 2011,
+                "overture": 2693,
+                "ratio": 0.747
               }
             }
           }
@@ -7945,10 +9109,12 @@
             "wikidata": {
               "n_items": 45,
               "n_museums": 33,
+              "n_notable": 41,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.622,
+              "recall_all": 0.622,
+              "recall": 0.659,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 5.49
             },
@@ -7982,6 +9148,16 @@
                 "osm": 69,
                 "overture": 286,
                 "ratio": 0.241
+              },
+              "culture_core": {
+                "osm": 238,
+                "overture": 673,
+                "ratio": 0.354
+              },
+              "nightlife": {
+                "osm": 916,
+                "overture": 2834,
+                "ratio": 0.323
               }
             }
           }
@@ -8007,10 +9183,12 @@
             "wikidata": {
               "n_items": 123,
               "n_museums": 81,
+              "n_notable": 92,
               "matched_by_wikidata_link": 89,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.821,
+              "recall_all": 0.821,
+              "recall": 0.87,
               "recall_museums": 0.84,
               "osm_culture_to_wikidata_ratio": 4.12
             },
@@ -8044,6 +9222,16 @@
                 "osm": 44,
                 "overture": 119,
                 "ratio": 0.37
+              },
+              "culture_core": {
+                "osm": 316,
+                "overture": 821,
+                "ratio": 0.385
+              },
+              "nightlife": {
+                "osm": 955,
+                "overture": 1320,
+                "ratio": 0.723
               }
             }
           }
@@ -8069,11 +9257,13 @@
             "wikidata": {
               "n_items": 309,
               "n_museums": 265,
+              "n_notable": 111,
               "matched_by_wikidata_link": 165,
-              "matched_by_name_250m": 37,
+              "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.654,
-              "recall_museums": 0.653,
+              "recall_all": 0.657,
+              "recall": 0.766,
+              "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 2.08
             },
             "overture": {
@@ -8106,6 +9296,16 @@
                 "osm": 142,
                 "overture": 583,
                 "ratio": 0.244
+              },
+              "culture_core": {
+                "osm": 614,
+                "overture": 1882,
+                "ratio": 0.326
+              },
+              "nightlife": {
+                "osm": 1086,
+                "overture": 3500,
+                "ratio": 0.31
               }
             }
           }
@@ -8131,12 +9331,14 @@
             "wikidata": {
               "n_items": 65,
               "n_museums": 60,
+              "n_notable": 52,
               "matched_by_wikidata_link": 15,
-              "matched_by_name_250m": 18,
-              "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.508,
-              "recall_museums": 0.517,
-              "osm_culture_to_wikidata_ratio": 2.18
+              "matched_by_name_250m": 14,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.446,
+              "recall": 0.5,
+              "recall_museums": 0.467,
+              "osm_culture_to_wikidata_ratio": 2.2
             },
             "overture": {
               "museum": {
@@ -8168,6 +9370,16 @@
                 "osm": 6,
                 "overture": 62,
                 "ratio": 0.097
+              },
+              "culture_core": {
+                "osm": 142,
+                "overture": 398,
+                "ratio": 0.357
+              },
+              "nightlife": {
+                "osm": 50,
+                "overture": 234,
+                "ratio": 0.214
               }
             }
           }
@@ -8193,10 +9405,12 @@
             "wikidata": {
               "n_items": 29,
               "n_museums": 24,
+              "n_notable": 22,
               "matched_by_wikidata_link": 20,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.759,
+              "recall_all": 0.759,
+              "recall": 0.727,
               "recall_museums": 0.75,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -8230,6 +9444,16 @@
                 "osm": 15,
                 "overture": 80,
                 "ratio": 0.188
+              },
+              "culture_core": {
+                "osm": 61,
+                "overture": 227,
+                "ratio": 0.269
+              },
+              "nightlife": {
+                "osm": 163,
+                "overture": 537,
+                "ratio": 0.304
               }
             }
           }
@@ -8255,10 +9479,12 @@
             "wikidata": {
               "n_items": 6,
               "n_museums": 4,
+              "n_notable": 5,
               "matched_by_wikidata_link": 1,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.333,
+              "recall_all": 0.333,
+              "recall": 0.4,
               "recall_museums": 0.5,
               "osm_culture_to_wikidata_ratio": 5.5
             },
@@ -8292,6 +9518,16 @@
                 "osm": 6,
                 "overture": 29,
                 "ratio": 0.207
+              },
+              "culture_core": {
+                "osm": 31,
+                "overture": 84,
+                "ratio": 0.369
+              },
+              "nightlife": {
+                "osm": 57,
+                "overture": 132,
+                "ratio": 0.432
               }
             }
           }
@@ -8317,10 +9553,12 @@
             "wikidata": {
               "n_items": 115,
               "n_museums": 64,
+              "n_notable": 102,
               "matched_by_wikidata_link": 71,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 10,
-              "recall": 0.696,
+              "recall_all": 0.696,
+              "recall": 0.716,
               "recall_museums": 0.734,
               "osm_culture_to_wikidata_ratio": 4.03
             },
@@ -8354,6 +9592,16 @@
                 "osm": 26,
                 "overture": 134,
                 "ratio": 0.194
+              },
+              "culture_core": {
+                "osm": 400,
+                "overture": 1314,
+                "ratio": 0.304
+              },
+              "nightlife": {
+                "osm": 1101,
+                "overture": 2421,
+                "ratio": 0.455
               }
             }
           }
@@ -8379,10 +9627,12 @@
             "wikidata": {
               "n_items": 106,
               "n_museums": 71,
+              "n_notable": 83,
               "matched_by_wikidata_link": 69,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.717,
+              "recall_all": 0.717,
+              "recall": 0.711,
               "recall_museums": 0.761,
               "osm_culture_to_wikidata_ratio": 2.49
             },
@@ -8416,6 +9666,16 @@
                 "osm": 39,
                 "overture": 109,
                 "ratio": 0.358
+              },
+              "culture_core": {
+                "osm": 216,
+                "overture": 827,
+                "ratio": 0.261
+              },
+              "nightlife": {
+                "osm": 721,
+                "overture": 1017,
+                "ratio": 0.709
               }
             }
           }
@@ -8441,12 +9701,14 @@
             "wikidata": {
               "n_items": 13,
               "n_museums": 11,
+              "n_notable": 8,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.769,
+              "recall_all": 0.769,
+              "recall": 0.875,
               "recall_museums": 0.818,
-              "osm_culture_to_wikidata_ratio": 4.31
+              "osm_culture_to_wikidata_ratio": 4.23
             },
             "overture": {
               "museum": {
@@ -8478,6 +9740,16 @@
                 "osm": 7,
                 "overture": 17,
                 "ratio": 0.412
+              },
+              "culture_core": {
+                "osm": 39,
+                "overture": 38,
+                "ratio": 1.026
+              },
+              "nightlife": {
+                "osm": 114,
+                "overture": 55,
+                "ratio": 2.073
               }
             }
           }
@@ -8503,11 +9775,13 @@
             "wikidata": {
               "n_items": 62,
               "n_museums": 53,
+              "n_notable": 35,
               "matched_by_wikidata_link": 21,
-              "matched_by_name_250m": 15,
+              "matched_by_name_250m": 16,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.581,
-              "recall_museums": 0.566,
+              "recall_all": 0.597,
+              "recall": 0.657,
+              "recall_museums": 0.585,
               "osm_culture_to_wikidata_ratio": 3.73
             },
             "overture": {
@@ -8540,6 +9814,16 @@
                 "osm": 31,
                 "overture": 63,
                 "ratio": 0.492
+              },
+              "culture_core": {
+                "osm": 179,
+                "overture": 533,
+                "ratio": 0.336
+              },
+              "nightlife": {
+                "osm": 547,
+                "overture": 992,
+                "ratio": 0.551
               }
             }
           }
@@ -8565,12 +9849,14 @@
             "wikidata": {
               "n_items": 21,
               "n_museums": 19,
+              "n_notable": 21,
               "matched_by_wikidata_link": 10,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.667,
               "recall": 0.667,
               "recall_museums": 0.684,
-              "osm_culture_to_wikidata_ratio": 5.43
+              "osm_culture_to_wikidata_ratio": 5.48
             },
             "overture": {
               "museum": {
@@ -8602,6 +9888,16 @@
                 "osm": 5,
                 "overture": 4,
                 "ratio": 1.25
+              },
+              "culture_core": {
+                "osm": 117,
+                "overture": 362,
+                "ratio": 0.323
+              },
+              "nightlife": {
+                "osm": 39,
+                "overture": 76,
+                "ratio": 0.513
               }
             }
           }
@@ -8627,10 +9923,12 @@
             "wikidata": {
               "n_items": 33,
               "n_museums": 31,
+              "n_notable": 28,
               "matched_by_wikidata_link": 10,
               "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.697,
+              "recall_all": 0.697,
+              "recall": 0.75,
               "recall_museums": 0.71,
               "osm_culture_to_wikidata_ratio": 3.52
             },
@@ -8664,6 +9962,16 @@
                 "osm": 22,
                 "overture": 200,
                 "ratio": 0.11
+              },
+              "culture_core": {
+                "osm": 107,
+                "overture": 366,
+                "ratio": 0.292
+              },
+              "nightlife": {
+                "osm": 200,
+                "overture": 824,
+                "ratio": 0.243
               }
             }
           }
@@ -8689,10 +9997,12 @@
             "wikidata": {
               "n_items": 60,
               "n_museums": 43,
+              "n_notable": 50,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.7,
+              "recall_all": 0.7,
+              "recall": 0.72,
               "recall_museums": 0.744,
               "osm_culture_to_wikidata_ratio": 2.53
             },
@@ -8726,6 +10036,16 @@
                 "osm": 15,
                 "overture": 51,
                 "ratio": 0.294
+              },
+              "culture_core": {
+                "osm": 128,
+                "overture": 289,
+                "ratio": 0.443
+              },
+              "nightlife": {
+                "osm": 701,
+                "overture": 949,
+                "ratio": 0.739
               }
             }
           }
@@ -8751,10 +10071,12 @@
             "wikidata": {
               "n_items": 69,
               "n_museums": 48,
+              "n_notable": 29,
               "matched_by_wikidata_link": 37,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.623,
+              "recall_all": 0.623,
+              "recall": 0.724,
               "recall_museums": 0.583,
               "osm_culture_to_wikidata_ratio": 2.0
             },
@@ -8788,17 +10110,27 @@
                 "osm": 19,
                 "overture": 84,
                 "ratio": 0.226
+              },
+              "culture_core": {
+                "osm": 102,
+                "overture": 302,
+                "ratio": 0.338
+              },
+              "nightlife": {
+                "osm": 499,
+                "overture": 775,
+                "ratio": 0.644
               }
             }
           }
         }
       },
       "fukuoka": {
-        "value": 1.54,
+        "value": 1.5444444444444445,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 693,
+          "count_dedup": 695,
           "count_raw": 698,
           "named_share": 0.979,
           "raw_counts": {
@@ -8813,10 +10145,12 @@
             "wikidata": {
               "n_items": 40,
               "n_museums": 31,
+              "n_notable": 32,
               "matched_by_wikidata_link": 22,
-              "matched_by_name_250m": 7,
+              "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.725,
+              "recall_all": 0.7,
+              "recall": 0.688,
               "recall_museums": 0.806,
               "osm_culture_to_wikidata_ratio": 2.05
             },
@@ -8850,6 +10184,16 @@
                 "osm": 8,
                 "overture": 60,
                 "ratio": 0.133
+              },
+              "culture_core": {
+                "osm": 80,
+                "overture": 425,
+                "ratio": 0.188
+              },
+              "nightlife": {
+                "osm": 698,
+                "overture": 2818,
+                "ratio": 0.248
               }
             }
           }
@@ -8875,10 +10219,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
+              "n_notable": 15,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.8,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 7.81
             },
@@ -8912,6 +10258,16 @@
                 "osm": 14,
                 "overture": 84,
                 "ratio": 0.167
+              },
+              "culture_core": {
+                "osm": 110,
+                "overture": 1396,
+                "ratio": 0.079
+              },
+              "nightlife": {
+                "osm": 250,
+                "overture": 1242,
+                "ratio": 0.201
               }
             }
           }
@@ -8937,10 +10293,12 @@
             "wikidata": {
               "n_items": 25,
               "n_museums": 16,
+              "n_notable": 21,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.68,
+              "recall_all": 0.68,
+              "recall": 0.762,
               "recall_museums": 0.562,
               "osm_culture_to_wikidata_ratio": 13.4
             },
@@ -8974,6 +10332,16 @@
                 "osm": 82,
                 "overture": 46,
                 "ratio": 1.783
+              },
+              "culture_core": {
+                "osm": 285,
+                "overture": 132,
+                "ratio": 2.159
+              },
+              "nightlife": {
+                "osm": 407,
+                "overture": 223,
+                "ratio": 1.825
               }
             }
           }
@@ -8999,10 +10367,12 @@
             "wikidata": {
               "n_items": 106,
               "n_museums": 88,
+              "n_notable": 55,
               "matched_by_wikidata_link": 57,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.755,
+              "recall_all": 0.755,
+              "recall": 0.709,
               "recall_museums": 0.716,
               "osm_culture_to_wikidata_ratio": 2.86
             },
@@ -9036,6 +10406,16 @@
                 "osm": 28,
                 "overture": 58,
                 "ratio": 0.483
+              },
+              "culture_core": {
+                "osm": 221,
+                "overture": 530,
+                "ratio": 0.417
+              },
+              "nightlife": {
+                "osm": 514,
+                "overture": 647,
+                "ratio": 0.794
               }
             }
           }
@@ -9061,10 +10441,12 @@
             "wikidata": {
               "n_items": 13,
               "n_museums": 11,
+              "n_notable": 12,
               "matched_by_wikidata_link": 6,
               "matched_by_name_250m": 6,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.923,
+              "recall_all": 0.923,
+              "recall": 0.917,
               "recall_museums": 0.909,
               "osm_culture_to_wikidata_ratio": 8.46
             },
@@ -9098,6 +10480,16 @@
                 "osm": 21,
                 "overture": 115,
                 "ratio": 0.183
+              },
+              "culture_core": {
+                "osm": 106,
+                "overture": 1794,
+                "ratio": 0.059
+              },
+              "nightlife": {
+                "osm": 222,
+                "overture": 1658,
+                "ratio": 0.134
               }
             }
           }
@@ -9123,10 +10515,12 @@
             "wikidata": {
               "n_items": 52,
               "n_museums": 42,
+              "n_notable": 47,
               "matched_by_wikidata_link": 35,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.731,
+              "recall_all": 0.731,
+              "recall": 0.766,
               "recall_museums": 0.762,
               "osm_culture_to_wikidata_ratio": 3.13
             },
@@ -9160,6 +10554,16 @@
                 "osm": 9,
                 "overture": 42,
                 "ratio": 0.214
+              },
+              "culture_core": {
+                "osm": 148,
+                "overture": 632,
+                "ratio": 0.234
+              },
+              "nightlife": {
+                "osm": 228,
+                "overture": 1011,
+                "ratio": 0.226
               }
             }
           }
@@ -9185,10 +10589,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 13,
+              "n_notable": 11,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.818,
               "recall_museums": 0.769,
               "osm_culture_to_wikidata_ratio": 3.12
             },
@@ -9222,6 +10628,16 @@
                 "osm": 11,
                 "overture": 25,
                 "ratio": 0.44
+              },
+              "culture_core": {
+                "osm": 48,
+                "overture": 207,
+                "ratio": 0.232
+              },
+              "nightlife": {
+                "osm": 90,
+                "overture": 252,
+                "ratio": 0.357
               }
             }
           }
@@ -9247,11 +10663,13 @@
             "wikidata": {
               "n_items": 190,
               "n_museums": 154,
+              "n_notable": 111,
               "matched_by_wikidata_link": 56,
-              "matched_by_name_250m": 34,
+              "matched_by_name_250m": 32,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.474,
-              "recall_museums": 0.506,
+              "recall_all": 0.463,
+              "recall": 0.649,
+              "recall_museums": 0.494,
               "osm_culture_to_wikidata_ratio": 2.22
             },
             "overture": {
@@ -9284,6 +10702,16 @@
                 "osm": 38,
                 "overture": 682,
                 "ratio": 0.056
+              },
+              "culture_core": {
+                "osm": 400,
+                "overture": 1942,
+                "ratio": 0.206
+              },
+              "nightlife": {
+                "osm": 483,
+                "overture": 3063,
+                "ratio": 0.158
               }
             }
           }
@@ -9309,10 +10737,12 @@
             "wikidata": {
               "n_items": 127,
               "n_museums": 122,
+              "n_notable": 85,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.567,
+              "recall_all": 0.567,
+              "recall": 0.612,
               "recall_museums": 0.566,
               "osm_culture_to_wikidata_ratio": 1.6
             },
@@ -9346,6 +10776,16 @@
                 "osm": 34,
                 "overture": 138,
                 "ratio": 0.246
+              },
+              "culture_core": {
+                "osm": 176,
+                "overture": 2150,
+                "ratio": 0.082
+              },
+              "nightlife": {
+                "osm": 137,
+                "overture": 1011,
+                "ratio": 0.136
               }
             }
           }
@@ -9371,10 +10811,12 @@
             "wikidata": {
               "n_items": 20,
               "n_museums": 15,
+              "n_notable": 17,
               "matched_by_wikidata_link": 11,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.65,
+              "recall_all": 0.65,
+              "recall": 0.647,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.95
             },
@@ -9408,6 +10850,16 @@
                 "osm": 9,
                 "overture": 160,
                 "ratio": 0.056
+              },
+              "culture_core": {
+                "osm": 98,
+                "overture": 442,
+                "ratio": 0.222
+              },
+              "nightlife": {
+                "osm": 149,
+                "overture": 1374,
+                "ratio": 0.108
               }
             }
           }
@@ -9433,10 +10885,12 @@
             "wikidata": {
               "n_items": 11,
               "n_museums": 11,
+              "n_notable": 10,
               "matched_by_wikidata_link": 1,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.455,
+              "recall_all": 0.455,
+              "recall": 0.5,
               "recall_museums": 0.455,
               "osm_culture_to_wikidata_ratio": 8.73
             },
@@ -9470,6 +10924,16 @@
                 "osm": 29,
                 "overture": 33,
                 "ratio": 0.879
+              },
+              "culture_core": {
+                "osm": 93,
+                "overture": 241,
+                "ratio": 0.386
+              },
+              "nightlife": {
+                "osm": 159,
+                "overture": 343,
+                "ratio": 0.464
               }
             }
           }
@@ -9495,10 +10959,12 @@
             "wikidata": {
               "n_items": 41,
               "n_museums": 39,
+              "n_notable": 27,
               "matched_by_wikidata_link": 17,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.585,
+              "recall_all": 0.585,
+              "recall": 0.778,
               "recall_museums": 0.564,
               "osm_culture_to_wikidata_ratio": 3.78
             },
@@ -9532,6 +10998,16 @@
                 "osm": 39,
                 "overture": 231,
                 "ratio": 0.169
+              },
+              "culture_core": {
+                "osm": 139,
+                "overture": 1225,
+                "ratio": 0.113
+              },
+              "nightlife": {
+                "osm": 315,
+                "overture": 1514,
+                "ratio": 0.208
               }
             }
           }
@@ -9557,10 +11033,12 @@
             "wikidata": {
               "n_items": 10,
               "n_museums": 8,
+              "n_notable": 6,
               "matched_by_wikidata_link": 4,
               "matched_by_name_250m": 0,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.4,
+              "recall_all": 0.4,
+              "recall": 0.5,
               "recall_museums": 0.375,
               "osm_culture_to_wikidata_ratio": 2.2
             },
@@ -9594,6 +11072,16 @@
                 "osm": 11,
                 "overture": 92,
                 "ratio": 0.12
+              },
+              "culture_core": {
+                "osm": 19,
+                "overture": 255,
+                "ratio": 0.075
+              },
+              "nightlife": {
+                "osm": 67,
+                "overture": 303,
+                "ratio": 0.221
               }
             }
           }
@@ -9619,10 +11107,12 @@
             "wikidata": {
               "n_items": 73,
               "n_museums": 59,
+              "n_notable": 65,
               "matched_by_wikidata_link": 32,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.712,
+              "recall_all": 0.712,
+              "recall": 0.738,
               "recall_museums": 0.678,
               "osm_culture_to_wikidata_ratio": 4.89
             },
@@ -9656,6 +11146,16 @@
                 "osm": 92,
                 "overture": 390,
                 "ratio": 0.236
+              },
+              "culture_core": {
+                "osm": 327,
+                "overture": 952,
+                "ratio": 0.343
+              },
+              "nightlife": {
+                "osm": 315,
+                "overture": 1540,
+                "ratio": 0.205
               }
             }
           }
@@ -9681,10 +11181,12 @@
             "wikidata": {
               "n_items": 124,
               "n_museums": 94,
+              "n_notable": 101,
               "matched_by_wikidata_link": 81,
               "matched_by_name_250m": 18,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.798,
+              "recall_all": 0.798,
+              "recall": 0.832,
               "recall_museums": 0.798,
               "osm_culture_to_wikidata_ratio": 3.05
             },
@@ -9718,6 +11220,16 @@
                 "osm": 40,
                 "overture": 100,
                 "ratio": 0.4
+              },
+              "culture_core": {
+                "osm": 318,
+                "overture": 550,
+                "ratio": 0.578
+              },
+              "nightlife": {
+                "osm": 528,
+                "overture": 1213,
+                "ratio": 0.435
               }
             }
           }
@@ -9743,11 +11255,13 @@
             "wikidata": {
               "n_items": 664,
               "n_museums": 350,
+              "n_notable": 448,
               "matched_by_wikidata_link": 325,
-              "matched_by_name_250m": 46,
+              "matched_by_name_250m": 47,
               "unmatched_but_linked_from_other_osm_object": 79,
-              "recall": 0.559,
-              "recall_museums": 0.543,
+              "recall_all": 0.56,
+              "recall": 0.621,
+              "recall_museums": 0.546,
               "osm_culture_to_wikidata_ratio": 1.7
             },
             "overture": {
@@ -9780,6 +11294,16 @@
                 "osm": 160,
                 "overture": 819,
                 "ratio": 0.195
+              },
+              "culture_core": {
+                "osm": 803,
+                "overture": 3856,
+                "ratio": 0.208
+              },
+              "nightlife": {
+                "osm": 4746,
+                "overture": 9170,
+                "ratio": 0.518
               }
             }
           }
@@ -9805,10 +11329,12 @@
             "wikidata": {
               "n_items": 234,
               "n_museums": 149,
+              "n_notable": 178,
               "matched_by_wikidata_link": 97,
               "matched_by_name_250m": 34,
               "unmatched_but_linked_from_other_osm_object": 20,
-              "recall": 0.56,
+              "recall_all": 0.56,
+              "recall": 0.556,
               "recall_museums": 0.604,
               "osm_culture_to_wikidata_ratio": 4.34
             },
@@ -9842,6 +11368,16 @@
                 "osm": 74,
                 "overture": 361,
                 "ratio": 0.205
+              },
+              "culture_core": {
+                "osm": 890,
+                "overture": 3015,
+                "ratio": 0.295
+              },
+              "nightlife": {
+                "osm": 834,
+                "overture": 3256,
+                "ratio": 0.256
               }
             }
           }
@@ -9867,10 +11403,12 @@
             "wikidata": {
               "n_items": 193,
               "n_museums": 113,
+              "n_notable": 152,
               "matched_by_wikidata_link": 82,
               "matched_by_name_250m": 37,
               "unmatched_but_linked_from_other_osm_object": 26,
-              "recall": 0.617,
+              "recall_all": 0.617,
+              "recall": 0.618,
               "recall_museums": 0.673,
               "osm_culture_to_wikidata_ratio": 2.47
             },
@@ -9904,6 +11442,16 @@
                 "osm": 191,
                 "overture": 902,
                 "ratio": 0.212
+              },
+              "culture_core": {
+                "osm": 457,
+                "overture": 1414,
+                "ratio": 0.323
+              },
+              "nightlife": {
+                "osm": 3374,
+                "overture": 5028,
+                "ratio": 0.671
               }
             }
           }
@@ -9929,10 +11477,12 @@
             "wikidata": {
               "n_items": 54,
               "n_museums": 49,
+              "n_notable": 47,
               "matched_by_wikidata_link": 33,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.759,
+              "recall_all": 0.759,
+              "recall": 0.745,
               "recall_museums": 0.776,
               "osm_culture_to_wikidata_ratio": 6.24
             },
@@ -9966,6 +11516,16 @@
                 "osm": 48,
                 "overture": 205,
                 "ratio": 0.234
+              },
+              "culture_core": {
+                "osm": 315,
+                "overture": 1765,
+                "ratio": 0.178
+              },
+              "nightlife": {
+                "osm": 771,
+                "overture": 2272,
+                "ratio": 0.339
               }
             }
           }
@@ -9991,10 +11551,12 @@
             "wikidata": {
               "n_items": 16,
               "n_museums": 15,
+              "n_notable": 9,
               "matched_by_wikidata_link": 5,
               "matched_by_name_250m": 7,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.75,
+              "recall_all": 0.75,
+              "recall": 0.778,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 2.38
             },
@@ -10028,6 +11590,16 @@
                 "osm": 11,
                 "overture": 29,
                 "ratio": 0.379
+              },
+              "culture_core": {
+                "osm": 33,
+                "overture": 54,
+                "ratio": 0.611
+              },
+              "nightlife": {
+                "osm": 49,
+                "overture": 108,
+                "ratio": 0.454
               }
             }
           }
@@ -10053,11 +11625,13 @@
             "wikidata": {
               "n_items": 81,
               "n_museums": 57,
+              "n_notable": 65,
               "matched_by_wikidata_link": 30,
-              "matched_by_name_250m": 16,
+              "matched_by_name_250m": 17,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.568,
-              "recall_museums": 0.509,
+              "recall_all": 0.58,
+              "recall": 0.538,
+              "recall_museums": 0.526,
               "osm_culture_to_wikidata_ratio": 4.05
             },
             "overture": {
@@ -10090,6 +11664,16 @@
                 "osm": 29,
                 "overture": 218,
                 "ratio": 0.133
+              },
+              "culture_core": {
+                "osm": 256,
+                "overture": 877,
+                "ratio": 0.292
+              },
+              "nightlife": {
+                "osm": 1040,
+                "overture": 1889,
+                "ratio": 0.551
               }
             }
           }
@@ -10115,12 +11699,14 @@
             "wikidata": {
               "n_items": 271,
               "n_museums": 242,
+              "n_notable": 85,
               "matched_by_wikidata_link": 60,
-              "matched_by_name_250m": 82,
+              "matched_by_name_250m": 84,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.524,
-              "recall_museums": 0.512,
-              "osm_culture_to_wikidata_ratio": 3.04
+              "recall_all": 0.531,
+              "recall": 0.682,
+              "recall_museums": 0.521,
+              "osm_culture_to_wikidata_ratio": 3.03
             },
             "overture": {
               "museum": {
@@ -10152,6 +11738,16 @@
                 "osm": 37,
                 "overture": 717,
                 "ratio": 0.052
+              },
+              "culture_core": {
+                "osm": 794,
+                "overture": 2779,
+                "ratio": 0.286
+              },
+              "nightlife": {
+                "osm": 526,
+                "overture": 6491,
+                "ratio": 0.081
               }
             }
           }
@@ -10177,10 +11773,12 @@
             "wikidata": {
               "n_items": 65,
               "n_museums": 55,
+              "n_notable": 52,
               "matched_by_wikidata_link": 29,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.631,
+              "recall_all": 0.631,
+              "recall": 0.635,
               "recall_museums": 0.618,
               "osm_culture_to_wikidata_ratio": 4.58
             },
@@ -10214,6 +11812,16 @@
                 "osm": 43,
                 "overture": 261,
                 "ratio": 0.165
+              },
+              "culture_core": {
+                "osm": 252,
+                "overture": 1069,
+                "ratio": 0.236
+              },
+              "nightlife": {
+                "osm": 302,
+                "overture": 2101,
+                "ratio": 0.144
               }
             }
           }
@@ -10239,10 +11847,12 @@
             "wikidata": {
               "n_items": 236,
               "n_museums": 141,
+              "n_notable": 122,
               "matched_by_wikidata_link": 93,
               "matched_by_name_250m": 44,
               "unmatched_but_linked_from_other_osm_object": 14,
-              "recall": 0.581,
+              "recall_all": 0.581,
+              "recall": 0.705,
               "recall_museums": 0.617,
               "osm_culture_to_wikidata_ratio": 1.76
             },
@@ -10276,6 +11886,16 @@
                 "osm": 76,
                 "overture": 288,
                 "ratio": 0.264
+              },
+              "culture_core": {
+                "osm": 371,
+                "overture": 1249,
+                "ratio": 0.297
+              },
+              "nightlife": {
+                "osm": 1544,
+                "overture": 3503,
+                "ratio": 0.441
               }
             }
           }
@@ -10301,10 +11921,12 @@
             "wikidata": {
               "n_items": 72,
               "n_museums": 54,
+              "n_notable": 48,
               "matched_by_wikidata_link": 36,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.556,
+              "recall_all": 0.556,
+              "recall": 0.625,
               "recall_museums": 0.556,
               "osm_culture_to_wikidata_ratio": 1.56
             },
@@ -10338,6 +11960,16 @@
                 "osm": 9,
                 "overture": 59,
                 "ratio": 0.153
+              },
+              "culture_core": {
+                "osm": 103,
+                "overture": 262,
+                "ratio": 0.393
+              },
+              "nightlife": {
+                "osm": 152,
+                "overture": 376,
+                "ratio": 0.404
               }
             }
           }
@@ -10363,12 +11995,14 @@
             "wikidata": {
               "n_items": 82,
               "n_museums": 49,
+              "n_notable": 63,
               "matched_by_wikidata_link": 26,
               "matched_by_name_250m": 20,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.561,
+              "recall_all": 0.561,
+              "recall": 0.587,
               "recall_museums": 0.531,
-              "osm_culture_to_wikidata_ratio": 3.56
+              "osm_culture_to_wikidata_ratio": 3.55
             },
             "overture": {
               "museum": {
@@ -10400,6 +12034,16 @@
                 "osm": 24,
                 "overture": 79,
                 "ratio": 0.304
+              },
+              "culture_core": {
+                "osm": 226,
+                "overture": 620,
+                "ratio": 0.365
+              },
+              "nightlife": {
+                "osm": 536,
+                "overture": 829,
+                "ratio": 0.647
               }
             }
           }
@@ -10425,11 +12069,13 @@
             "wikidata": {
               "n_items": 19,
               "n_museums": 15,
+              "n_notable": 15,
               "matched_by_wikidata_link": 7,
-              "matched_by_name_250m": 6,
+              "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.684,
-              "recall_museums": 0.667,
+              "recall_all": 0.632,
+              "recall": 0.667,
+              "recall_museums": 0.6,
               "osm_culture_to_wikidata_ratio": 9.21
             },
             "overture": {
@@ -10462,6 +12108,16 @@
                 "osm": 7,
                 "overture": 85,
                 "ratio": 0.082
+              },
+              "culture_core": {
+                "osm": 163,
+                "overture": 851,
+                "ratio": 0.192
+              },
+              "nightlife": {
+                "osm": 128,
+                "overture": 909,
+                "ratio": 0.141
               }
             }
           }
@@ -10487,10 +12143,12 @@
             "wikidata": {
               "n_items": 120,
               "n_museums": 81,
+              "n_notable": 85,
               "matched_by_wikidata_link": 74,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.733,
+              "recall_all": 0.725,
+              "recall": 0.765,
               "recall_museums": 0.815,
               "osm_culture_to_wikidata_ratio": 3.62
             },
@@ -10524,6 +12182,16 @@
                 "osm": 46,
                 "overture": 173,
                 "ratio": 0.266
+              },
+              "culture_core": {
+                "osm": 267,
+                "overture": 770,
+                "ratio": 0.347
+              },
+              "nightlife": {
+                "osm": 640,
+                "overture": 1115,
+                "ratio": 0.574
               }
             }
           }
@@ -10549,10 +12217,12 @@
             "wikidata": {
               "n_items": 5,
               "n_museums": 3,
+              "n_notable": 4,
               "matched_by_wikidata_link": 3,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.8,
+              "recall_all": 0.8,
+              "recall": 1.0,
               "recall_museums": 1.0,
               "osm_culture_to_wikidata_ratio": 27.8
             },
@@ -10586,6 +12256,16 @@
                 "osm": 34,
                 "overture": 87,
                 "ratio": 0.391
+              },
+              "culture_core": {
+                "osm": 132,
+                "overture": 152,
+                "ratio": 0.868
+              },
+              "nightlife": {
+                "osm": 651,
+                "overture": 575,
+                "ratio": 1.132
               }
             }
           }
@@ -10611,10 +12291,12 @@
             "wikidata": {
               "n_items": 31,
               "n_museums": 31,
+              "n_notable": 28,
               "matched_by_wikidata_link": 14,
               "matched_by_name_250m": 5,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.613,
+              "recall_all": 0.613,
+              "recall": 0.643,
               "recall_museums": 0.613,
               "osm_culture_to_wikidata_ratio": 9.29
             },
@@ -10648,17 +12330,27 @@
                 "osm": 13,
                 "overture": 200,
                 "ratio": 0.065
+              },
+              "culture_core": {
+                "osm": 272,
+                "overture": 992,
+                "ratio": 0.274
+              },
+              "nightlife": {
+                "osm": 136,
+                "overture": 955,
+                "ratio": 0.142
               }
             }
           }
         }
       },
       "new-york": {
-        "value": 0.7492576707357308,
+        "value": 0.7489277466182778,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2271,
+          "count_dedup": 2270,
           "count_raw": 2275,
           "named_share": 0.983,
           "raw_counts": {
@@ -10673,12 +12365,14 @@
             "wikidata": {
               "n_items": 441,
               "n_museums": 233,
+              "n_notable": 357,
               "matched_by_wikidata_link": 195,
               "matched_by_name_250m": 57,
               "unmatched_but_linked_from_other_osm_object": 39,
-              "recall": 0.571,
+              "recall_all": 0.571,
+              "recall": 0.574,
               "recall_museums": 0.588,
-              "osm_culture_to_wikidata_ratio": 2.93
+              "osm_culture_to_wikidata_ratio": 2.92
             },
             "overture": {
               "museum": {
@@ -10710,17 +12404,27 @@
                 "osm": 126,
                 "overture": 387,
                 "ratio": 0.326
+              },
+              "culture_core": {
+                "osm": 942,
+                "overture": 3585,
+                "ratio": 0.263
+              },
+              "nightlife": {
+                "osm": 2275,
+                "overture": 5689,
+                "ratio": 0.4
               }
             }
           }
         }
       },
       "osaka": {
-        "value": 3.2820976491862566,
+        "value": 3.357142857142857,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 7260,
+          "count_dedup": 7426,
           "count_raw": 7451,
           "named_share": 0.977,
           "raw_counts": {
@@ -10735,11 +12439,13 @@
             "wikidata": {
               "n_items": 346,
               "n_museums": 283,
+              "n_notable": 277,
               "matched_by_wikidata_link": 197,
-              "matched_by_name_250m": 39,
-              "unmatched_but_linked_from_other_osm_object": 25,
-              "recall": 0.682,
-              "recall_museums": 0.693,
+              "matched_by_name_250m": 33,
+              "unmatched_but_linked_from_other_osm_object": 26,
+              "recall_all": 0.665,
+              "recall": 0.718,
+              "recall_museums": 0.682,
               "osm_culture_to_wikidata_ratio": 2.47
             },
             "overture": {
@@ -10772,6 +12478,16 @@
                 "osm": 38,
                 "overture": 173,
                 "ratio": 0.22
+              },
+              "culture_core": {
+                "osm": 752,
+                "overture": 3114,
+                "ratio": 0.241
+              },
+              "nightlife": {
+                "osm": 7451,
+                "overture": 14557,
+                "ratio": 0.512
               }
             }
           }
@@ -10797,10 +12513,12 @@
             "wikidata": {
               "n_items": 76,
               "n_museums": 58,
+              "n_notable": 55,
               "matched_by_wikidata_link": 43,
               "matched_by_name_250m": 9,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.684,
+              "recall_all": 0.684,
+              "recall": 0.655,
               "recall_museums": 0.69,
               "osm_culture_to_wikidata_ratio": 2.28
             },
@@ -10834,6 +12552,16 @@
                 "osm": 15,
                 "overture": 57,
                 "ratio": 0.263
+              },
+              "culture_core": {
+                "osm": 145,
+                "overture": 432,
+                "ratio": 0.336
+              },
+              "nightlife": {
+                "osm": 330,
+                "overture": 530,
+                "ratio": 0.623
               }
             }
           }
@@ -10859,11 +12587,13 @@
             "wikidata": {
               "n_items": 584,
               "n_museums": 303,
+              "n_notable": 468,
               "matched_by_wikidata_link": 302,
-              "matched_by_name_250m": 93,
+              "matched_by_name_250m": 91,
               "unmatched_but_linked_from_other_osm_object": 36,
-              "recall": 0.676,
-              "recall_museums": 0.66,
+              "recall_all": 0.673,
+              "recall": 0.682,
+              "recall_museums": 0.657,
               "osm_culture_to_wikidata_ratio": 3.6
             },
             "overture": {
@@ -10896,6 +12626,16 @@
                 "osm": 91,
                 "overture": 503,
                 "ratio": 0.181
+              },
+              "culture_core": {
+                "osm": 1485,
+                "overture": 3633,
+                "ratio": 0.409
+              },
+              "nightlife": {
+                "osm": 3236,
+                "overture": 4329,
+                "ratio": 0.748
               }
             }
           }
@@ -10921,10 +12661,12 @@
             "wikidata": {
               "n_items": 36,
               "n_museums": 24,
+              "n_notable": 31,
               "matched_by_wikidata_link": 13,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 12,
-              "recall": 0.472,
+              "recall_all": 0.472,
+              "recall": 0.387,
               "recall_museums": 0.542,
               "osm_culture_to_wikidata_ratio": 3.53
             },
@@ -10958,6 +12700,16 @@
                 "osm": 25,
                 "overture": 71,
                 "ratio": 0.352
+              },
+              "culture_core": {
+                "osm": 100,
+                "overture": 375,
+                "ratio": 0.267
+              },
+              "nightlife": {
+                "osm": 347,
+                "overture": 586,
+                "ratio": 0.592
               }
             }
           }
@@ -10983,11 +12735,13 @@
             "wikidata": {
               "n_items": 188,
               "n_museums": 96,
+              "n_notable": 125,
               "matched_by_wikidata_link": 93,
-              "matched_by_name_250m": 32,
+              "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 17,
-              "recall": 0.665,
-              "recall_museums": 0.719,
+              "recall_all": 0.66,
+              "recall": 0.736,
+              "recall_museums": 0.708,
               "osm_culture_to_wikidata_ratio": 2.1
             },
             "overture": {
@@ -11020,6 +12774,16 @@
                 "osm": 67,
                 "overture": 114,
                 "ratio": 0.588
+              },
+              "culture_core": {
+                "osm": 326,
+                "overture": 731,
+                "ratio": 0.446
+              },
+              "nightlife": {
+                "osm": 949,
+                "overture": 1591,
+                "ratio": 0.596
               }
             }
           }
@@ -11045,10 +12809,12 @@
             "wikidata": {
               "n_items": 22,
               "n_museums": 16,
+              "n_notable": 21,
               "matched_by_wikidata_link": 7,
               "matched_by_name_250m": 4,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.5,
+              "recall_all": 0.5,
+              "recall": 0.476,
               "recall_museums": 0.562,
               "osm_culture_to_wikidata_ratio": 6.55
             },
@@ -11082,6 +12848,16 @@
                 "osm": 87,
                 "overture": 136,
                 "ratio": 0.64
+              },
+              "culture_core": {
+                "osm": 137,
+                "overture": 294,
+                "ratio": 0.466
+              },
+              "nightlife": {
+                "osm": 298,
+                "overture": 596,
+                "ratio": 0.5
               }
             }
           }
@@ -11107,10 +12883,12 @@
             "wikidata": {
               "n_items": 27,
               "n_museums": 23,
+              "n_notable": 23,
               "matched_by_wikidata_link": 18,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.778,
+              "recall_all": 0.778,
+              "recall": 0.826,
               "recall_museums": 0.783,
               "osm_culture_to_wikidata_ratio": 2.74
             },
@@ -11144,6 +12922,16 @@
                 "osm": 7,
                 "overture": 13,
                 "ratio": 0.538
+              },
+              "culture_core": {
+                "osm": 53,
+                "overture": 140,
+                "ratio": 0.379
+              },
+              "nightlife": {
+                "osm": 89,
+                "overture": 125,
+                "ratio": 0.712
               }
             }
           }
@@ -11169,10 +12957,12 @@
             "wikidata": {
               "n_items": 138,
               "n_museums": 125,
+              "n_notable": 68,
               "matched_by_wikidata_link": 52,
               "matched_by_name_250m": 12,
               "unmatched_but_linked_from_other_osm_object": 3,
-              "recall": 0.464,
+              "recall_all": 0.464,
+              "recall": 0.662,
               "recall_museums": 0.432,
               "osm_culture_to_wikidata_ratio": 2.32
             },
@@ -11206,6 +12996,16 @@
                 "osm": 37,
                 "overture": 211,
                 "ratio": 0.175
+              },
+              "culture_core": {
+                "osm": 319,
+                "overture": 1736,
+                "ratio": 0.184
+              },
+              "nightlife": {
+                "osm": 1051,
+                "overture": 5620,
+                "ratio": 0.187
               }
             }
           }
@@ -11231,10 +13031,12 @@
             "wikidata": {
               "n_items": 272,
               "n_museums": 220,
+              "n_notable": 165,
               "matched_by_wikidata_link": 99,
               "matched_by_name_250m": 43,
               "unmatched_but_linked_from_other_osm_object": 30,
-              "recall": 0.522,
+              "recall_all": 0.522,
+              "recall": 0.545,
               "recall_museums": 0.509,
               "osm_culture_to_wikidata_ratio": 1.47
             },
@@ -11268,6 +13070,16 @@
                 "osm": 58,
                 "overture": 268,
                 "ratio": 0.216
+              },
+              "culture_core": {
+                "osm": 384,
+                "overture": 1588,
+                "ratio": 0.242
+              },
+              "nightlife": {
+                "osm": 666,
+                "overture": 3334,
+                "ratio": 0.2
               }
             }
           }
@@ -11293,10 +13105,12 @@
             "wikidata": {
               "n_items": 159,
               "n_museums": 116,
+              "n_notable": 129,
               "matched_by_wikidata_link": 98,
               "matched_by_name_250m": 19,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.736,
+              "recall_all": 0.736,
+              "recall": 0.721,
               "recall_museums": 0.733,
               "osm_culture_to_wikidata_ratio": 4.45
             },
@@ -11330,6 +13144,16 @@
                 "osm": 77,
                 "overture": 165,
                 "ratio": 0.467
+              },
+              "culture_core": {
+                "osm": 557,
+                "overture": 1421,
+                "ratio": 0.392
+              },
+              "nightlife": {
+                "osm": 1038,
+                "overture": 1804,
+                "ratio": 0.575
               }
             }
           }
@@ -11355,10 +13179,12 @@
             "wikidata": {
               "n_items": 110,
               "n_museums": 92,
+              "n_notable": 72,
               "matched_by_wikidata_link": 63,
               "matched_by_name_250m": 26,
               "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.809,
+              "recall_all": 0.809,
+              "recall": 0.889,
               "recall_museums": 0.793,
               "osm_culture_to_wikidata_ratio": 3.33
             },
@@ -11392,6 +13218,16 @@
                 "osm": 68,
                 "overture": 223,
                 "ratio": 0.305
+              },
+              "culture_core": {
+                "osm": 318,
+                "overture": 665,
+                "ratio": 0.478
+              },
+              "nightlife": {
+                "osm": 408,
+                "overture": 1156,
+                "ratio": 0.353
               }
             }
           }
@@ -11417,10 +13253,12 @@
             "wikidata": {
               "n_items": 204,
               "n_museums": 166,
+              "n_notable": 136,
               "matched_by_wikidata_link": 83,
               "matched_by_name_250m": 15,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.48,
+              "recall_all": 0.48,
+              "recall": 0.588,
               "recall_museums": 0.428,
               "osm_culture_to_wikidata_ratio": 2.44
             },
@@ -11454,17 +13292,27 @@
                 "osm": 81,
                 "overture": 504,
                 "ratio": 0.161
+              },
+              "culture_core": {
+                "osm": 483,
+                "overture": 2587,
+                "ratio": 0.187
+              },
+              "nightlife": {
+                "osm": 1319,
+                "overture": 11346,
+                "ratio": 0.116
               }
             }
           }
         }
       },
       "sapporo": {
-        "value": 0.8243626062322946,
+        "value": 0.8271954674220963,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 291,
+          "count_dedup": 292,
           "count_raw": 294,
           "named_share": 0.956,
           "raw_counts": {
@@ -11479,10 +13327,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 40,
+              "n_notable": 35,
               "matched_by_wikidata_link": 27,
               "matched_by_name_250m": 3,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.682,
+              "recall_all": 0.682,
+              "recall": 0.743,
               "recall_museums": 0.675,
               "osm_culture_to_wikidata_ratio": 1.73
             },
@@ -11516,6 +13366,16 @@
                 "osm": 10,
                 "overture": 41,
                 "ratio": 0.244
+              },
+              "culture_core": {
+                "osm": 73,
+                "overture": 416,
+                "ratio": 0.175
+              },
+              "nightlife": {
+                "osm": 294,
+                "overture": 2471,
+                "ratio": 0.119
               }
             }
           }
@@ -11541,10 +13401,12 @@
             "wikidata": {
               "n_items": 54,
               "n_museums": 33,
+              "n_notable": 49,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 2,
               "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.667,
+              "recall_all": 0.667,
+              "recall": 0.673,
               "recall_museums": 0.606,
               "osm_culture_to_wikidata_ratio": 4.67
             },
@@ -11578,17 +13440,27 @@
                 "osm": 33,
                 "overture": 40,
                 "ratio": 0.825
+              },
+              "culture_core": {
+                "osm": 217,
+                "overture": 519,
+                "ratio": 0.418
+              },
+              "nightlife": {
+                "osm": 725,
+                "overture": 962,
+                "ratio": 0.754
               }
             }
           }
         }
       },
       "seoul": {
-        "value": 1.1998247151621384,
+        "value": 1.21954425942156,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 2738,
+          "count_dedup": 2783,
           "count_raw": 2796,
           "named_share": 0.953,
           "raw_counts": {
@@ -11603,12 +13475,14 @@
             "wikidata": {
               "n_items": 130,
               "n_museums": 121,
+              "n_notable": 115,
               "matched_by_wikidata_link": 64,
-              "matched_by_name_250m": 46,
+              "matched_by_name_250m": 40,
               "unmatched_but_linked_from_other_osm_object": 1,
-              "recall": 0.846,
-              "recall_museums": 0.851,
-              "osm_culture_to_wikidata_ratio": 13.98
+              "recall_all": 0.8,
+              "recall": 0.817,
+              "recall_museums": 0.802,
+              "osm_culture_to_wikidata_ratio": 14.09
             },
             "overture": {
               "museum": {
@@ -11640,6 +13514,16 @@
                 "osm": 46,
                 "overture": 201,
                 "ratio": 0.229
+              },
+              "culture_core": {
+                "osm": 1636,
+                "overture": 2131,
+                "ratio": 0.768
+              },
+              "nightlife": {
+                "osm": 2796,
+                "overture": 4364,
+                "ratio": 0.641
               }
             }
           }
@@ -11665,12 +13549,14 @@
             "wikidata": {
               "n_items": 69,
               "n_museums": 60,
+              "n_notable": 64,
               "matched_by_wikidata_link": 33,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 2,
-              "recall": 0.681,
-              "recall_museums": 0.683,
-              "osm_culture_to_wikidata_ratio": 6.55
+              "recall_all": 0.667,
+              "recall": 0.703,
+              "recall_museums": 0.667,
+              "osm_culture_to_wikidata_ratio": 6.57
             },
             "overture": {
               "museum": {
@@ -11702,6 +13588,16 @@
                 "osm": 35,
                 "overture": 48,
                 "ratio": 0.729
+              },
+              "culture_core": {
+                "osm": 427,
+                "overture": 389,
+                "ratio": 1.098
+              },
+              "nightlife": {
+                "osm": 403,
+                "overture": 329,
+                "ratio": 1.225
               }
             }
           }
@@ -11727,10 +13623,12 @@
             "wikidata": {
               "n_items": 44,
               "n_museums": 41,
+              "n_notable": 40,
               "matched_by_wikidata_link": 19,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 6,
-              "recall": 0.659,
+              "recall_all": 0.659,
+              "recall": 0.625,
               "recall_museums": 0.634,
               "osm_culture_to_wikidata_ratio": 5.41
             },
@@ -11764,6 +13662,16 @@
                 "osm": 90,
                 "overture": 91,
                 "ratio": 0.989
+              },
+              "culture_core": {
+                "osm": 195,
+                "overture": 632,
+                "ratio": 0.309
+              },
+              "nightlife": {
+                "osm": 542,
+                "overture": 1036,
+                "ratio": 0.523
               }
             }
           }
@@ -11789,10 +13697,12 @@
             "wikidata": {
               "n_items": 334,
               "n_museums": 299,
+              "n_notable": 203,
               "matched_by_wikidata_link": 68,
               "matched_by_name_250m": 23,
               "unmatched_but_linked_from_other_osm_object": 136,
-              "recall": 0.272,
+              "recall_all": 0.272,
+              "recall": 0.33,
               "recall_museums": 0.224,
               "osm_culture_to_wikidata_ratio": 0.74
             },
@@ -11826,6 +13736,16 @@
                 "osm": 25,
                 "overture": 155,
                 "ratio": 0.161
+              },
+              "culture_core": {
+                "osm": 185,
+                "overture": 681,
+                "ratio": 0.272
+              },
+              "nightlife": {
+                "osm": 344,
+                "overture": 766,
+                "ratio": 0.449
               }
             }
           }
@@ -11851,10 +13771,12 @@
             "wikidata": {
               "n_items": 77,
               "n_museums": 48,
+              "n_notable": 62,
               "matched_by_wikidata_link": 34,
               "matched_by_name_250m": 14,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.623,
+              "recall_all": 0.623,
+              "recall": 0.694,
               "recall_museums": 0.646,
               "osm_culture_to_wikidata_ratio": 4.29
             },
@@ -11888,6 +13810,16 @@
                 "osm": 21,
                 "overture": 184,
                 "ratio": 0.114
+              },
+              "culture_core": {
+                "osm": 227,
+                "overture": 813,
+                "ratio": 0.279
+              },
+              "nightlife": {
+                "osm": 867,
+                "overture": 1703,
+                "ratio": 0.509
               }
             }
           }
@@ -11913,11 +13845,13 @@
             "wikidata": {
               "n_items": 119,
               "n_museums": 115,
+              "n_notable": 94,
               "matched_by_wikidata_link": 67,
-              "matched_by_name_250m": 13,
-              "unmatched_but_linked_from_other_osm_object": 8,
-              "recall": 0.672,
-              "recall_museums": 0.661,
+              "matched_by_name_250m": 11,
+              "unmatched_but_linked_from_other_osm_object": 9,
+              "recall_all": 0.655,
+              "recall": 0.649,
+              "recall_museums": 0.643,
               "osm_culture_to_wikidata_ratio": 3.5
             },
             "overture": {
@@ -11950,17 +13884,27 @@
                 "osm": 22,
                 "overture": 80,
                 "ratio": 0.275
+              },
+              "culture_core": {
+                "osm": 382,
+                "overture": 1657,
+                "ratio": 0.231
+              },
+              "nightlife": {
+                "osm": 313,
+                "overture": 1764,
+                "ratio": 0.177
               }
             }
           }
         }
       },
       "tbilisi": {
-        "value": 2.1125827814569536,
+        "value": 2.2119205298013247,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 319,
+          "count_dedup": 334,
           "count_raw": 336,
           "named_share": 0.875,
           "raw_counts": {
@@ -11975,12 +13919,14 @@
             "wikidata": {
               "n_items": 43,
               "n_museums": 31,
+              "n_notable": 31,
               "matched_by_wikidata_link": 29,
-              "matched_by_name_250m": 7,
-              "unmatched_but_linked_from_other_osm_object": 4,
-              "recall": 0.837,
-              "recall_museums": 0.839,
-              "osm_culture_to_wikidata_ratio": 3.23
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 5,
+              "recall_all": 0.744,
+              "recall": 0.774,
+              "recall_museums": 0.774,
+              "osm_culture_to_wikidata_ratio": 3.26
             },
             "overture": {
               "museum": {
@@ -12012,6 +13958,16 @@
                 "osm": 35,
                 "overture": 60,
                 "ratio": 0.583
+              },
+              "culture_core": {
+                "osm": 110,
+                "overture": 242,
+                "ratio": 0.455
+              },
+              "nightlife": {
+                "osm": 336,
+                "overture": 529,
+                "ratio": 0.635
               }
             }
           }
@@ -12037,10 +13993,12 @@
             "wikidata": {
               "n_items": 53,
               "n_museums": 40,
+              "n_notable": 37,
               "matched_by_wikidata_link": 24,
-              "matched_by_name_250m": 14,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 0,
-              "recall": 0.717,
+              "recall_all": 0.698,
+              "recall": 0.73,
               "recall_museums": 0.775,
               "osm_culture_to_wikidata_ratio": 7.09
             },
@@ -12074,6 +14032,16 @@
                 "osm": 0,
                 "overture": 2,
                 "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 331,
+                "overture": 169,
+                "ratio": 1.959
+              },
+              "nightlife": {
+                "osm": 6,
+                "overture": 21,
+                "ratio": 0.286
               }
             }
           }
@@ -12086,7 +14054,7 @@
         "detail": {
           "count_dedup": 263,
           "count_raw": 265,
-          "named_share": 0.608,
+          "named_share": 0.849,
           "raw_counts": {
             "amenity=nightclub": 26,
             "amenity=bar": 169,
@@ -12099,12 +14067,14 @@
             "wikidata": {
               "n_items": 138,
               "n_museums": 108,
+              "n_notable": 128,
               "matched_by_wikidata_link": 50,
-              "matched_by_name_250m": 21,
-              "unmatched_but_linked_from_other_osm_object": 20,
-              "recall": 0.514,
-              "recall_museums": 0.519,
-              "osm_culture_to_wikidata_ratio": 1.2
+              "matched_by_name_250m": 8,
+              "unmatched_but_linked_from_other_osm_object": 28,
+              "recall_all": 0.42,
+              "recall": 0.438,
+              "recall_museums": 0.426,
+              "osm_culture_to_wikidata_ratio": 1.28
             },
             "overture": {
               "museum": {
@@ -12136,17 +14106,27 @@
                 "osm": 26,
                 "overture": 182,
                 "ratio": 0.143
+              },
+              "culture_core": {
+                "osm": 164,
+                "overture": 646,
+                "ratio": 0.254
+              },
+              "nightlife": {
+                "osm": 265,
+                "overture": 933,
+                "ratio": 0.284
               }
             }
           }
         }
       },
       "tokyo": {
-        "value": 2.365924491771539,
+        "value": 2.4398838334946755,
         "quality": "estimated",
         "year": 2026,
         "detail": {
-          "count_dedup": 12220,
+          "count_dedup": 12602,
           "count_raw": 12665,
           "named_share": 0.969,
           "raw_counts": {
@@ -12161,12 +14141,14 @@
             "wikidata": {
               "n_items": 637,
               "n_museums": 516,
+              "n_notable": 524,
               "matched_by_wikidata_link": 437,
-              "matched_by_name_250m": 69,
-              "unmatched_but_linked_from_other_osm_object": 22,
-              "recall": 0.794,
-              "recall_museums": 0.824,
-              "osm_culture_to_wikidata_ratio": 2.46
+              "matched_by_name_250m": 53,
+              "unmatched_but_linked_from_other_osm_object": 26,
+              "recall_all": 0.769,
+              "recall": 0.773,
+              "recall_museums": 0.816,
+              "osm_culture_to_wikidata_ratio": 2.47
             },
             "overture": {
               "museum": {
@@ -12198,6 +14180,16 @@
                 "osm": 241,
                 "overture": 447,
                 "ratio": 0.539
+              },
+              "culture_core": {
+                "osm": 1416,
+                "overture": 7416,
+                "ratio": 0.191
+              },
+              "nightlife": {
+                "osm": 12665,
+                "overture": 32092,
+                "ratio": 0.395
               }
             }
           }
@@ -12223,10 +14215,12 @@
             "wikidata": {
               "n_items": 94,
               "n_museums": 50,
+              "n_notable": 64,
               "matched_by_wikidata_link": 42,
               "matched_by_name_250m": 10,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.553,
+              "recall_all": 0.553,
+              "recall": 0.562,
               "recall_museums": 0.54,
               "osm_culture_to_wikidata_ratio": 3.47
             },
@@ -12260,6 +14254,16 @@
                 "osm": 41,
                 "overture": 144,
                 "ratio": 0.285
+              },
+              "culture_core": {
+                "osm": 256,
+                "overture": 860,
+                "ratio": 0.298
+              },
+              "nightlife": {
+                "osm": 760,
+                "overture": 1483,
+                "ratio": 0.512
               }
             }
           }
@@ -12285,9 +14289,11 @@
             "wikidata": {
               "n_items": 19,
               "n_museums": 17,
+              "n_notable": 19,
               "matched_by_wikidata_link": 12,
               "matched_by_name_250m": 1,
               "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.684,
               "recall": 0.684,
               "recall_museums": 0.647,
               "osm_culture_to_wikidata_ratio": 3.05
@@ -12322,6 +14328,16 @@
                 "osm": 17,
                 "overture": 44,
                 "ratio": 0.386
+              },
+              "culture_core": {
+                "osm": 57,
+                "overture": 211,
+                "ratio": 0.27
+              },
+              "nightlife": {
+                "osm": 175,
+                "overture": 200,
+                "ratio": 0.875
               }
             }
           }
@@ -12347,10 +14363,12 @@
             "wikidata": {
               "n_items": 50,
               "n_museums": 39,
+              "n_notable": 36,
               "matched_by_wikidata_link": 25,
               "matched_by_name_250m": 8,
               "unmatched_but_linked_from_other_osm_object": 5,
-              "recall": 0.66,
+              "recall_all": 0.66,
+              "recall": 0.667,
               "recall_museums": 0.667,
               "osm_culture_to_wikidata_ratio": 4.04
             },
@@ -12384,6 +14402,16 @@
                 "osm": 25,
                 "overture": 51,
                 "ratio": 0.49
+              },
+              "culture_core": {
+                "osm": 163,
+                "overture": 400,
+                "ratio": 0.407
+              },
+              "nightlife": {
+                "osm": 323,
+                "overture": 471,
+                "ratio": 0.686
               }
             }
           }
@@ -12409,10 +14437,12 @@
             "wikidata": {
               "n_items": 283,
               "n_museums": 190,
+              "n_notable": 195,
               "matched_by_wikidata_link": 165,
               "matched_by_name_250m": 38,
               "unmatched_but_linked_from_other_osm_object": 30,
-              "recall": 0.717,
+              "recall_all": 0.717,
+              "recall": 0.713,
               "recall_museums": 0.784,
               "osm_culture_to_wikidata_ratio": 1.9
             },
@@ -12446,6 +14476,16 @@
                 "osm": 60,
                 "overture": 202,
                 "ratio": 0.297
+              },
+              "culture_core": {
+                "osm": 416,
+                "overture": 1067,
+                "ratio": 0.39
+              },
+              "nightlife": {
+                "osm": 768,
+                "overture": 1268,
+                "ratio": 0.606
               }
             }
           }
@@ -12471,10 +14511,12 @@
             "wikidata": {
               "n_items": 166,
               "n_museums": 122,
+              "n_notable": 134,
               "matched_by_wikidata_link": 77,
               "matched_by_name_250m": 31,
               "unmatched_but_linked_from_other_osm_object": 7,
-              "recall": 0.651,
+              "recall_all": 0.651,
+              "recall": 0.672,
               "recall_museums": 0.656,
               "osm_culture_to_wikidata_ratio": 2.19
             },
@@ -12508,6 +14550,16 @@
                 "osm": 55,
                 "overture": 139,
                 "ratio": 0.396
+              },
+              "culture_core": {
+                "osm": 322,
+                "overture": 617,
+                "ratio": 0.522
+              },
+              "nightlife": {
+                "osm": 498,
+                "overture": 862,
+                "ratio": 0.578
               }
             }
           }
@@ -12533,11 +14585,13 @@
             "wikidata": {
               "n_items": 83,
               "n_museums": 72,
+              "n_notable": 42,
               "matched_by_wikidata_link": 42,
-              "matched_by_name_250m": 12,
+              "matched_by_name_250m": 13,
               "unmatched_but_linked_from_other_osm_object": 9,
-              "recall": 0.651,
-              "recall_museums": 0.611,
+              "recall_all": 0.663,
+              "recall": 0.69,
+              "recall_museums": 0.625,
               "osm_culture_to_wikidata_ratio": 3.13
             },
             "overture": {
@@ -12570,6 +14624,16 @@
                 "osm": 41,
                 "overture": 136,
                 "ratio": 0.301
+              },
+              "culture_core": {
+                "osm": 168,
+                "overture": 459,
+                "ratio": 0.366
+              },
+              "nightlife": {
+                "osm": 393,
+                "overture": 672,
+                "ratio": 0.585
               }
             }
           }

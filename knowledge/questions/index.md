@@ -1,14 +1,14 @@
 # questions
 
-* [真夏の午後、どんな空気の中にいたい？](01-summer.md) - temp_warmest への理想値を尋ねる設問。
-* [冬の朝、窓の外はどうなっていてほしい？](02-winter.md) - temp_coldest への理想値を尋ねる設問。
-* [一年の移り変わりはどれくらいほしい？](03-seasons.md) - seasonal_range への理想値を尋ねる設問。
-* [雨とのつきあい方は？](04-rain.md) - precip_annual への理想値を尋ねる設問。
-* [空の明るさはどれくらいがいい？](05-sunshine.md) - sunshine_annual への理想値を尋ねる設問。
-* [人混みの中にいるとき、どう感じる？](06-crowd.md) - density への理想値を尋ねる設問。
-* [住む街の大きさは？](07-size.md) - urban_pop への理想値を尋ねる設問。
-* [学校や病院、日々の用事が歩ける範囲にあることは？](08-walk.md) - walk_services への重要度を尋ねる設問。
-* [車道から守られた自転車道で移動できることは？](09-bike.md) - bike_protected への重要度を尋ねる設問。
-* [鉄道や BRT ですぐ移動できることは？](10-transit.md) - rapid_transit への重要度を尋ねる設問。
-* [街の中に木や芝生が多いことは？](11-green.md) - green_share への重要度を尋ねる設問。
-* [美術館、劇場、ライブ会場がたくさんあることは？](12-culture.md) - culture_density への重要度を尋ねる設問。
+* [真夏の午後、どんな空気の中にいたい？](01-summer.md) - temp_warmest について尋ねる設問（理想値）。
+* [冬のいちばん寒い時期、外はどうなっていてほしい？](02-winter.md) - temp_coldest について尋ねる設問（理想値）。
+* [いちばん蒸す季節の空気は？](03-humidity.md) - dewpoint_max_month について尋ねる設問（理想値）。
+* [雨とのつきあい方は？](04-rain.md) - precip_annual について尋ねる設問（理想値）。
+* [ふだんの空はどうあってほしい？](05-sky.md) - cloud_cover_annual について尋ねる設問（理想値）。
+* [家の近所の人の多さは？](06-crowd.md) - density_weighted について尋ねる設問（理想値）。
+* [住む都市圏の大きさは？](07-size.md) - urban_pop について尋ねる設問（理想値）。
+* [病院や学校が歩いて行ける範囲にあることは？](08-walk.md) - walk_services について尋ねる設問（重要度）。
+* [車道から分けられた自転車道で移動できることは？](09-bike.md) - bike_protected について尋ねる設問（重要度）。
+* [地下鉄や LRT・BRT の駅が近くにあることは？](10-transit.md) - rapid_transit について尋ねる設問（重要度）。
+* [街の中に木が多いことは？](11-green.md) - tree_share について尋ねる設問（重要度）。
+* [空気のきれいさ（微小粒子 PM2.5 の少なさ）は？](12-air.md) - pm25 について尋ねる設問（重要度）。

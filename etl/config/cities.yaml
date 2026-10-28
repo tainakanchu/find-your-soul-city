@@ -41,7 +41,8 @@ cities:
   - { city_id: sapporo, name_ja: 札幌, ucdb_id: 351, ucdb_name: Sapporo }
   - { city_id: shanghai, name_ja: 上海, ucdb_id: 11345, ucdb_name: Shanghai }
   - { city_id: beijing, name_ja: 北京, ucdb_id: 8745, ucdb_name: Beijing }
-  - { city_id: hong-kong, name_ja: 香港, ucdb_id: 11185, ucdb_name: Hong Kong }
+  # GHS-UCDB codes Hong Kong as China; the display label uses the ISO 3166-1 code HK (display only).
+  - { city_id: hong-kong, name_ja: 香港, ucdb_id: 11185, ucdb_name: Hong Kong, display_country: HK }
   - { city_id: ulaanbaatar, name_ja: ウランバートル, ucdb_id: 337, ucdb_name: Ulaanbaatar }
   - { city_id: ho-chi-minh, name_ja: ホーチミン, ucdb_id: 5239, ucdb_name: Ho Chi Minh City }
   - { city_id: kuala-lumpur, name_ja: クアラルンプール, ucdb_id: 1648, ucdb_name: Kuala Lumpur }

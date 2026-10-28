@@ -28,8 +28,14 @@ export interface Ranking {
   insufficient: CityResult[];
 }
 
-/** Robust range per directional metric: values at or below `lo` score 0, at or above `hi` score 1 (reversed for lower_better). */
-export type Scales = Map<string, { lo: number; hi: number }>;
+/**
+ * How a directional metric value becomes 0–1 (reversed for lower_better):
+ * - `cdf`: percentile within a reference distribution (piecewise-linear between quantiles, mid-rank on ties). Default.
+ * - `range`: linear between `lo` and `hi`, clamped (validation alternative).
+ * Values are in transformed space (log10 where the metric says so).
+ */
+export type Scale = { type: "cdf"; levels: number[]; quantiles: number[] } | { type: "range"; lo: number; hi: number };
+export type Scales = Map<string, Scale>;
 
 export interface RankOptions {
   /** Override the directional scales (validation: normalisation sensitivity). */
@@ -58,9 +64,30 @@ export function buildScales(k: Knowledge, cities: City[] = k.cities, q: [number,
       .filter((v): v is number => v != null)
       .map((v) => t(m, v))
       .toSorted((a, b) => a - b);
-    if (vs.length) scales.set(m.key, { lo: quantile(vs, q[0]), hi: quantile(vs, q[1]) });
+    if (vs.length) scales.set(m.key, { type: "range", lo: quantile(vs, q[0]), hi: quantile(vs, q[1]) });
   }
   return scales;
+}
+
+/** Percentile scales from the knowledge bundle's reference distribution (all urban centres >= 1M). */
+export function referenceScales(k: Knowledge): Scales {
+  const scales: Scales = new Map();
+  for (const m of k.metrics) {
+    const r = k.reference.metrics[m.key];
+    if (m.kind === "ideal" || !r) continue;
+    scales.set(m.key, { type: "cdf", levels: k.reference.levels, quantiles: r.quantiles.map((v) => t(m, v)) });
+  }
+  return scales;
+}
+
+/** Empirical CDF from quantiles: linear between quantile points; a run of equal quantiles gets its middle level. */
+export function cdf(levels: number[], qs: number[], x: number): number {
+  if (x < qs[0]) return 0;
+  if (x > qs[qs.length - 1]) return 1;
+  const eq = qs.flatMap((q, i) => (q === x ? [levels[i]] : []));
+  if (eq.length) return (eq[0] + eq[eq.length - 1]) / 2;
+  const i = qs.findIndex((q) => q > x);
+  return levels[i - 1] + ((levels[i] - levels[i - 1]) * (x - qs[i - 1])) / (qs[i] - qs[i - 1]);
 }
 
 export function fit(m: Metric, value: number, ideal: number | undefined, scales: Scales): number {
@@ -71,7 +98,13 @@ export function fit(m: Metric, value: number, ideal: number | undefined, scales:
   }
   const s = scales.get(m.key);
   if (!s) throw new Error(`no scale for ${m.key}`);
-  const x = s.hi === s.lo ? 1 : Math.min(1, Math.max(0, (t(m, value) - s.lo) / (s.hi - s.lo)));
+  const v = t(m, value);
+  const x =
+    s.type === "cdf"
+      ? cdf(s.levels, s.quantiles, v)
+      : s.hi === s.lo
+        ? 1
+        : Math.min(1, Math.max(0, (v - s.lo) / (s.hi - s.lo)));
   return m.kind === "lower_better" ? 1 - x : x;
 }
 
@@ -101,7 +134,7 @@ function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], s
 }
 
 export function rank(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): Ranking {
-  const scales = opts.scales ?? buildScales(k);
+  const scales = opts.scales ?? referenceScales(k);
   const minCoverage = opts.minCoverage ?? k.minCoverage;
   const metrics = new Map(k.metrics.map((m) => [m.key, m]));
   const results = k.cities
@@ -115,7 +148,7 @@ export function rank(k: Knowledge, prefs: Preference[], opts: RankOptions = {}):
 
 /** Share of ±10% single-axis weight perturbations that keep the same #1. */
 export function stability(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): number {
-  const scales = opts.scales ?? buildScales(k);
+  const scales = opts.scales ?? referenceScales(k);
   const top = rank(k, prefs, { ...opts, scales }).ranked[0]?.cityId;
   const runs = prefs
     .filter((p) => p.weight > 0)

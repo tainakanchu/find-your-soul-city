@@ -1,0 +1,18 @@
+# 欠損率
+
+生成: 2026-10-28T21:28:39Z（`pnpm etl`）。対象 86 都市。
+
+| 指標               | 出典           | 欠損率 | Australia and New Zealand | Central and Southern Asia | Eastern and South-Eastern Asia | Europe | Latin America and the Caribbean | Northern Africa and Western Asia | Northern America | Sub-Saharan Africa |
+| ------------------ | -------------- | ------ | ------------------------- | ------------------------- | ------------------------------ | ------ | ------------------------------- | -------------------------------- | ---------------- | ------------------ |
+| bike_protected     | itdp-atlas     | 1%     | 0/4                       | 0/7                       | 0/17                           | 1/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| cloud_cover_annual | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| density_weighted   | ghsl-pop       | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| dewpoint_max_month | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| pm25               | ghsl-ucdb      | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| precip_annual      | era5           | 8%     | 0/4                       | 2/7                       | 0/17                           | 0/23   | 4/10                            | 0/7                              | 0/11             | 1/7                |
+| rapid_transit      | itdp-atlas     | 6%     | 1/4                       | 1/7                       | 1/17                           | 2/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| temp_coldest       | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| temp_warmest       | era5           | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| tree_share         | esa-worldcover | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| urban_pop          | ghsl-ucdb      | 0%     | 0/4                       | 0/7                       | 0/17                           | 0/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |
+| walk_services      | itdp-atlas     | 1%     | 0/4                       | 0/7                       | 0/17                           | 1/23   | 0/10                            | 0/7                              | 0/11             | 0/7                |

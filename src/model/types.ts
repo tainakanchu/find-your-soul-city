@@ -66,6 +66,13 @@ export interface Source {
   licenseStatus: "verified" | "restricted" | "unverified";
 }
 
+/** Quantiles of directional metrics over a fixed reference set of urban centres (not the target cities). */
+export interface ReferenceDistribution {
+  set: string;
+  levels: number[];
+  metrics: Record<string, { n: number; quantiles: number[] }>;
+}
+
 export interface Knowledge {
   modelVersion: string;
   minCoverage: number;
@@ -74,4 +81,5 @@ export interface Knowledge {
   cities: City[];
   questions: Question[];
   sources: Source[];
+  reference: ReferenceDistribution;
 }

@@ -1,27 +1,18 @@
 ---
 type: Metric
-title: 緑の被覆率
-description: 都市圏内の樹木・草地の被覆率。
-status: draft
-tags: [metric, esa-worldcover]
+title: 緑被率（樹木・低木・草地）
+description: 不採用。乾燥地の自然の低木・草原も「緑」として数えてしまい、街の木の多さとずれる。樹木被覆率を採用。
+status: rejected
+tags: [metric, rejected, esa-worldcover]
 metric_key: green_share
-unit: "%"
-kind: higher_better
-transform: linear
-planned_source: esa-worldcover
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
+adoption: rejected
+source: esa-worldcover
+rejection_reason: "乾燥地の自然の低木・草原も「緑」として数えてしまい、街の木の多さとずれる。樹木被覆率を採用。"
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
-# 定義
+# 不採用の理由
 
-都市圏内の樹木・草地の被覆率。
+乾燥地の自然の低木・草原も「緑」として数えてしまい、街の木の多さとずれる。樹木被覆率を採用。
 
-# スコアへの入り方
-
-高いほど良い型。都市横断の 10〜90 パーセンタイルで 0〜1 に線形スケールし、ユーザーの重要度で重み付けする。
-
-# 注意点
-
-公園へのアクセスとは別物。
-
-予定ソース: [esa-worldcover](/sources/esa-worldcover.md)
+出典候補: [esa-worldcover](/sources/esa-worldcover.md)

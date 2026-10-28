@@ -98,13 +98,17 @@ const never = rows1.filter((r) => r.p3 === 0).map((r) => r.c.nameJa);
 const maxP1 = rows1[0];
 const p1s = rows1.map((r) => r.p1).toSorted((a, b) => a - b);
 const gini =
-  p1s.reduce((acc, x, i) => acc + (2 * (i + 1) - p1s.length - 1) * x, 0) / (p1s.length * p1s.reduce((a, b) => a + b, 0));
+  p1s.reduce((acc, x, i) => acc + (2 * (i + 1) - p1s.length - 1) * x, 0) /
+  (p1s.length * p1s.reduce((a, b) => a + b, 0));
 out.push(
   "",
   `- 1 位率の最大: ${maxP1.c.nameJa} ${pct(maxP1.p1)}（期待値の ${f1(maxP1.p1 * k.cities.length)} 倍）。1 位率のジニ係数 ${gini.toFixed(2)}。`,
   `- 一度も上位 3 位に入らない都市（${never.length}）: ${never.join("、") || "なし"}`,
 );
-const gaps = base.filter((r) => r.length > 1).map((r) => r[0].total - r[1].total).toSorted((a, b) => a - b);
+const gaps = base
+  .filter((r) => r.length > 1)
+  .map((r) => r[0].total - r[1].total)
+  .toSorted((a, b) => a - b);
 out.push(
   `- 1 位と 2 位の差: 中央値 ${f1(quantile(gaps, 0.5))} 点、差が 1 点未満の割合 ${pct(gaps.filter((g) => g < 1).length / gaps.length)}。`,
 );
@@ -124,9 +128,11 @@ table(
 // --- 3. Normalisation sensitivity ---
 h("3. 正規化の対象都市への依存");
 out.push(
-  "「多いほど良い／少ないほど良い」型の指標は、都市横断の分位点で 0〜1 に変換している。対象都市の選び方への依存を、" +
-    "(a) 分位点の取り方、(b) 都市の 20% を無作為に除いた集合でスケールを作り直す（ジャックナイフ、20 回）で確認した。" +
-    "比較は「元の 1 位が変わらない割合」と「上位 3 都市の Jaccard 係数の平均」。",
+  "方向型（多いほど良い／少ないほど良い）の指標は、人口 100 万人以上の全都市圏（" +
+    `${k.reference.set.match(/\((\d+)\)/)?.[1] ?? "?"}）での百分位を 0〜1 にしている（本番方式）。` +
+    "対象都市だけで作るスケールと比べ、さらに対象都市の 20% を無作為に除いた集合でスケールを作り直したとき（ジャックナイフ、20 回）の変化を見た。" +
+    "本番方式は対象都市に依存しないため、ジャックナイフでも結果は変わらない（下表の最終行で確認）。" +
+    "比較は「本番方式の 1 位が変わらない割合」と「上位 3 都市の Jaccard 係数の平均」。",
   "",
 );
 const compare = (label: string, rankFn: (p: Preference[], i: number) => string[]) => {
@@ -139,20 +145,42 @@ const compare = (label: string, rankFn: (p: Preference[], i: number) => string[]
   }
   return [label, pct(same1 / N), (jac / N).toFixed(2)];
 };
-const scaleVariants: [string, Scales][] = [
-  ["q05–q95", buildScales(k, k.cities, [0.05, 0.95])],
-  ["q25–q75", buildScales(k, k.cities, [0.25, 0.75])],
-  ["min–max", buildScales(k, k.cities, [0, 1])],
+const targetCdf = (cities: City[]): Scales =>
+  new Map(
+    [...buildScales(k, cities, [0, 1])].map(([key]) => {
+      const m = k.metrics.find((x) => x.key === key)!;
+      const vs = cities
+        .map((c) => c.metrics[key]?.value)
+        .filter((v): v is number => v != null)
+        .map((v) => (m.transform === "log10" ? Math.log10(v) : v))
+        .toSorted((a, b) => a - b);
+      return [key, { type: "cdf" as const, levels: k.reference.levels, quantiles: k.reference.levels.map((q) => quantile(vs, q)) }];
+    }),
+  );
+const rowsN: string[][] = [
+  compare("対象都市の q10–q90 で線形（P1 方式）", (p) => top(p, { scales: buildScales(k) }).map((x) => x.cityId)),
+  compare("対象都市の min–max で線形", (p) => top(p, { scales: buildScales(k, k.cities, [0, 1]) }).map((x) => x.cityId)),
+  compare("対象都市の百分位", (p) => top(p, { scales: targetCdf(k.cities) }).map((x) => x.cityId)),
 ];
-const rowsN = scaleVariants.map(([label, scales]) => compare(label, (p) => top(p, { scales }).map((x) => x.cityId)));
-const jackScales = Array.from({ length: 20 }, () => {
-  const kept = k.cities.filter(() => rand() >= 0.2);
-  return buildScales(k, kept);
-});
+const jack = Array.from({ length: 20 }, () => k.cities.filter(() => rand() >= 0.2));
+const jackTarget = jack.map((cs) => targetCdf(cs));
 rowsN.push(
-  compare("ジャックナイフ（20% 除外 ×20）", (p, i) => top(p, { scales: jackScales[i % 20] }).map((x) => x.cityId)),
+  compare("対象都市の百分位・20% 除外 ×20", (p, i) => top(p, { scales: jackTarget[i % 20] }).map((x) => x.cityId)),
 );
 table(["スケール", "1 位不変", "上位 3 の Jaccard"], rowsN);
+// Production scales do not depend on the target set: removing cities must not reorder the remaining ones.
+let invariant = 0;
+for (const [i, p] of samples.entries()) {
+  const sub = jack[i % 20];
+  const keep = new Set(sub.map((c) => c.id));
+  const r = top(p, {}, { ...k, cities: sub }).map((x) => x.cityId);
+  const b = base[i].map((x) => x.cityId).filter((id) => keep.has(id));
+  if (r.join() === b.join()) invariant++;
+}
+out.push(
+  "",
+  `- 本番方式で対象都市の 20% を除いたとき、残った都市の順位が完全に一致した割合: ${pct(invariant / N)}（スケールが対象都市に依存しないことの確認）。`,
+);
 
 // --- 4. Weight robustness ---
 h("4. 重みの変更への頑健性");
@@ -189,21 +217,19 @@ table(
 out.push("");
 const medianImputed: Knowledge = {
   ...k,
-  cities: k.cities.map(
-    (c): City => ({
-      ...c,
-      metrics: Object.fromEntries(
-        Object.entries(c.metrics).map(([key, v]) => {
-          if (v.value != null) return [key, v];
-          const vs = k.cities
-            .map((x) => x.metrics[key]?.value)
-            .filter((x): x is number => x != null)
-            .toSorted((a, b) => a - b);
-          return [key, { ...v, value: vs.length ? quantile(vs, 0.5) : null, quality: "imputed" as const }];
-        }),
-      ),
-    }),
-  ),
+  cities: k.cities.map((c): City => ({
+    ...c,
+    metrics: Object.fromEntries(
+      Object.entries(c.metrics).map(([key, v]) => {
+        if (v.value != null) return [key, v];
+        const vs = k.cities
+          .map((x) => x.metrics[key]?.value)
+          .filter((x): x is number => x != null)
+          .toSorted((a, b) => a - b);
+        return [key, { ...v, value: vs.length ? quantile(vs, 0.5) : null, quality: "imputed" as const }];
+      }),
+    ),
+  })),
 };
 table(
   ["欠損の扱い", "1 位不変", "上位 3 の Jaccard"],
@@ -211,7 +237,7 @@ table(
     compare("充足率の下限なし（0）", (p) => top(p, { minCoverage: 0 }).map((x) => x.cityId)),
     compare("充足率の下限 1.0（欠損のある都市は除外）", (p) => top(p, { minCoverage: 1 }).map((x) => x.cityId)),
     compare("中央値で補完（比較用。本番では使わない）", (p) =>
-      top(p, { scales: buildScales(k) }, medianImputed).map((x) => x.cityId),
+      top(p, {}, medianImputed).map((x) => x.cityId),
     ),
   ],
 );

@@ -1,7 +1,7 @@
 ---
 type: Question
-title: 住む街の大きさは？
-description: urban_pop への理想値を尋ねる設問。
+title: 住む都市圏の大きさは？
+description: urban_pop について尋ねる設問（理想値）。
 status: draft
 tags: [question]
 question_id: size
@@ -10,15 +10,19 @@ metric: urban_pop
 answer_kind: ideal
 importance_control: true
 options:
-  - { label: 全体を把握できる中くらいの都市, value: 1 }
-  - { label: なんでも揃う大都市, value: 5 }
-  - { label: 終わりが見えない巨大都市圏, value: 20 }
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
+  - { label: "100 万人くらいの、こぢんまりした都市", value: 1200000 }
+  - { label: "数百万人規模の大都市（450 万人前後）", value: 4500000 }
+  - { label: "1,000 万人を超える巨大都市", value: 15000000 }
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 回答の変換
 
-選択肢の `value` を [urban_pop](/metrics/urban-pop.md) の理想値として使う。重要度（気にしない / ふつう / 重要）は別コントロールで 0 / 1 / 2 の重みに変換する。
+選択肢の `value` を [urban_pop](/metrics/) の理想値として使う。重要度（気にしない / ふつう / 重要）は別に尋ね、0 / 1 / 2 の重みにする。
+
+# 選択肢の根拠
+
+選択肢の値は、対象 86 都市の分布（おおむね 15・50・85 パーセンタイル付近）に置き、どの選択肢にも近い都市が複数あるようにした。括弧内の数値を画面に出し、言葉の印象と実測値のずれを減らす。
 
 # 未検証の点
 

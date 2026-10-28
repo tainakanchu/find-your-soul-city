@@ -446,6 +446,24 @@ def pearson(a, b) -> float:
     return float(np.corrcoef(a, b)[0, 1])
 
 
+# Withhold annual precipitation where an independent observation disagrees by more than this factor.
+# ERA5 is known to overestimate rain over steep tropical / Andean terrain (notes/era5.md, station check).
+PRECIP_STATION_MAX_FACTOR = 1.5
+
+
+def screen_precip(out: Interim) -> None:
+    """Move precip_annual values whose ERA5/GHCN-M station ratio is outside [1/F, F] to missing."""
+    vals = out.values.get("precip_annual", {})
+    for city_id in sorted(vals):
+        r = vals[city_id].get("detail", {}).get("era5_to_station_ratio")
+        if r is not None and not (1 / PRECIP_STATION_MAX_FACTOR <= r <= PRECIP_STATION_MAX_FACTOR):
+            v = vals.pop(city_id)
+            out.miss("precip_annual", city_id,
+                     f"ERA5 の年降水量 {v['value']:.0f} mm が近傍の気象観測所（GHCN-M v4）の"
+                     f" {v['detail']['ghcnm_station_annual_mm']} mm と {r:.2f} 倍ずれており、"
+                     f"許容範囲（×{1 / PRECIP_STATION_MAX_FACTOR:.2f}〜×{PRECIP_STATION_MAX_FACTOR}）を外れるため不採用")
+
+
 def main() -> None:
     RAW.mkdir(parents=True, exist_ok=True)
     clim = Store(CLIM_URL, "clim")
@@ -724,6 +742,7 @@ def main() -> None:
                         "max_dewpoint_month": MONTHS[int(np.argmax(dm))]})
         out.put("dewpoint_max_month", c.city_id, round(float(dm.max()), 2), quality=q, year=PERIOD,
                 detail={"month": MONTHS[int(np.argmax(dm))], "n_cells": s["n_cells"]})
+    screen_precip(out)
     path = out.write()
 
     REFERENCE.mkdir(parents=True, exist_ok=True)

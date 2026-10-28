@@ -44,6 +44,7 @@ class City:
     lat: float
     lon: float
     geom: shapely.Geometry  # EPSG:4326 (MultiPolygon)
+    display_country: str | None = None  # label override (cities.yaml), never used in statistics
 
 
 def ucdb_gpkg() -> Path:
@@ -99,6 +100,7 @@ def _make(entry: dict, t: dict[str, np.ndarray], i: int) -> City:
         lat=round(p.y, 4),
         lon=round(p.x, 4),
         geom=g,
+        display_country=entry.get("display_country"),
     )
 
 

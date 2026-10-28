@@ -1,7 +1,7 @@
 ---
 type: Question
-title: 学校や病院、日々の用事が歩ける範囲にあることは？
-description: walk_services への重要度を尋ねる設問。
+title: 病院や学校が歩いて行ける範囲にあることは？
+description: walk_services について尋ねる設問（重要度）。
 status: draft
 tags: [question]
 question_id: walk
@@ -10,15 +10,19 @@ metric: walk_services
 answer_kind: importance
 importance_control: false
 options:
-  - { label: 乗り物で出かければいい, value: 0 }
-  - { label: あると嬉しい, value: 1 }
-  - { label: 絶対にほしい, value: 2 }
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
+  - { label: "乗り物で出かければいい", value: 0 }
+  - { label: "あると嬉しい", value: 1 }
+  - { label: "絶対にほしい", value: 2 }
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 回答の変換
 
-選択肢の `value` をそのまま [walk_services](/metrics/walk-services.md) の重み（0 / 1 / 2）として使う。方向は「高いほど良い」で固定。
+選択肢の `value`（0 / 1 / 2）をそのまま [walk_services](/metrics/) の重みにする。方向は指標の種類（多いほど良い／少ないほど良い）で固定。
+
+# 選択肢の根拠
+
+重要度だけを尋ねる。
 
 # 未検証の点
 

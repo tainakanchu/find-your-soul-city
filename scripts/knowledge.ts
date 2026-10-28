@@ -145,10 +145,13 @@ const cities: City[] = ofType("City").map((d) => {
     }
     const quality = String(e.quality);
     const value = e.value === null ? null : Number(e.value);
-    if (!QUALITIES.has(quality)) fail(d.path, `${m.key}: quality "${quality}" is not allowed (placeholder data is banned)`);
-    if ((quality === "missing") !== (value === null)) fail(d.path, `${m.key}: value must be null iff quality is missing`);
+    if (!QUALITIES.has(quality))
+      fail(d.path, `${m.key}: quality "${quality}" is not allowed (placeholder data is banned)`);
+    if ((quality === "missing") !== (value === null))
+      fail(d.path, `${m.key}: value must be null iff quality is missing`);
     if (quality === "missing" && typeof e.reason !== "string") fail(d.path, `${m.key}: missing value needs a reason`);
-    if (String(e.source) !== m.sourceId) fail(d.path, `${m.key}: source ${String(e.source)} ≠ metric source ${m.sourceId}`);
+    if (String(e.source) !== m.sourceId)
+      fail(d.path, `${m.key}: source ${String(e.source)} ≠ metric source ${m.sourceId}`);
     if (value !== null && !Number.isFinite(value)) fail(d.path, `${m.key}: value is not finite`);
     values[m.key] = {
       value,
@@ -160,7 +163,8 @@ const cities: City[] = ofType("City").map((d) => {
   }
   for (const key of Object.keys(raw)) if (!allMetricKeys.has(key)) fail(d.path, `unknown metric ${key}`);
   const b = (d.fm.boundary ?? {}) as Fm;
-  if (typeof b.id !== "number" || typeof b.area_km2 !== "number") fail(d.path, "boundary.id / boundary.area_km2 required");
+  if (typeof b.id !== "number" || typeof b.area_km2 !== "number")
+    fail(d.path, "boundary.id / boundary.area_km2 required");
   return {
     id: str(d, "city_id"),
     nameJa: str(d, "name_ja"),
@@ -194,6 +198,26 @@ const questions: Question[] = ofType("Question")
   })
   .toSorted((a, b) => a.order - b.order);
 
+const refDocs = ofType("Reference Distribution");
+if (refDocs.length !== 1) fail(ROOT, `expected exactly 1 Reference Distribution, found ${refDocs.length}`);
+const refDoc = refDocs[0];
+const refLevels = Array.isArray(refDoc?.fm.levels) ? (refDoc.fm.levels as number[]) : [];
+const refMetrics = (refDoc?.fm.metrics ?? {}) as Record<string, { n: number; quantiles: number[] }>;
+for (const m of metrics) {
+  if (m.kind === "ideal") continue;
+  const r = refMetrics[m.key];
+  if (!r) fail(refDoc?.path ?? ROOT, `no reference distribution for directional metric ${m.key}; run pnpm etl`);
+  else if (r.quantiles.length !== refLevels.length || r.quantiles.some((q, i) => i > 0 && q < r.quantiles[i - 1]))
+    fail(refDoc.path, `${m.key}: quantiles must be non-decreasing and match levels`);
+}
+const reference: Knowledge["reference"] = {
+  set: refDoc ? str(refDoc, "reference_set") : "",
+  levels: refLevels,
+  metrics: Object.fromEntries(
+    metrics.filter((m) => refMetrics[m.key]).map((m) => [m.key, { n: refMetrics[m.key].n, quantiles: refMetrics[m.key].quantiles }]),
+  ),
+};
+
 const models = ofType("Model Specification");
 if (models.length !== 1) fail(ROOT, `expected exactly 1 Model Specification, found ${models.length}`);
 const model = models[0];
@@ -218,7 +242,7 @@ for (const dir of new Set(docs.map((d) => dirname(d.path)))) {
   indexes.set(join(dir, "index.md"), `# ${dir.slice(ROOT.length + 1)}\n\n${items.join("\n")}\n`);
 }
 
-const body = { metrics, cities, questions, sources };
+const body = { metrics, cities, questions, sources, reference };
 for (const msg of findPlaceholders(body)) fail(ROOT, msg);
 
 if (errors.length) {

@@ -13,7 +13,9 @@
     "lint": "oxlint",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "test": "pnpm knowledge:build && vitest run"
+    "test": "pnpm knowledge:build && vitest run",
+    "validate": "pnpm knowledge:build && node scripts/validate.ts",
+    "etl": "cd etl && uv run python -m soulcity_etl"
   },
   "dependencies": {
     "react": "19.3.1",

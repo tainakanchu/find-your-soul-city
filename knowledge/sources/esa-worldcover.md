@@ -1,29 +1,32 @@
 ---
 type: Data Source
-title: ESA WorldCover
-description: European Space Agency が提供。用途：都市圏内の樹木・草地の被覆率
-status: draft
+title: ESA WorldCover 10 m 2021 v200
+description: 10 m 解像度の土地被覆。都市圏内の樹木被覆率に使う。CC BY 4.0。
+status: verified
 resource: https://esa-worldcover.org/en/data-access
-tags: [data-source]
+tags: [data-source, land-cover]
 source_id: esa-worldcover
-provider: European Space Agency
-geo_granularity: 10m 土地被覆
-license_status: unverified
-generated: { by: claude, at: 2026-10-29T00:00:00Z }
-sources:
-  - { id: proposal, resource: /references/proposal-v1-0.md, title: 企画書 v1.0 §4 }
+adoption: adopted
+provider: European Space Agency（WorldCover consortium）
+version: 2021 v200, doi:10.5281/zenodo.7254221
+geo_granularity: 10 m ラスタ
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/
+license_status: verified
+attribution: "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium. Zanaga, D. et al. (2022), doi:10.5281/zenodo.7254221. 都市圏ごとの割合は本プロジェクトが算出。"
+etl_module: etl/soulcity_etl/worldcover.py
+methodology: etl/notes/esa-worldcover.md
+generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
 # 用途
 
-都市圏内の樹木・草地の被覆率
+[樹木被覆率](/metrics/tree-share.md)。
+
+# ライセンス（原文で確認済み）
+
+"The ESA WorldCover product is provided free of charge, without restriction of use. For the full license information see the Creative Commons Attribution 4.0 International License."
 
 # 注意点
 
-版（2020/2021）で分類器が異なる。都市圏境界と組み合わせて集計する。[^proposal]
-
-# ライセンス
-
-未確認。公開前に提供元の現行ライセンス・帰属表示・派生データ配布条件・API 利用制限を原文で確認し、`license_status` を更新する。
-
-[^proposal]: 企画書 v1.0 §4 データソース戦略
+全体精度 76.7 ± 0.5%（v200 検証報告）。樹木の利用者精度 80.0%、市街地 65.9%。高密度な中心部では樹木と市街地の混同がありうる。
