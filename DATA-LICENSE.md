@@ -23,4 +23,14 @@ This license covers the data only. The application source code is under the MIT 
   (ITDP, atlas.itdp.org, release update_2024), which is made available under the Open Database License (ODbL).
   Based on OpenStreetMap data © OpenStreetMap contributors.
 
+## Validation-only fields
+
+Some `detail` fields in `data/interim/` and columns in `data/reference/` hold values used only to validate the
+metrics above; they are not used for scoring:
+
+- OSM coverage checks: counts from **Overture Maps Foundation** places, release 2026-10-21.0
+  ([CDLA-Permissive-2.0](https://cdla.dev/permissive-2-0/); Foursquare-sourced data Apache-2.0; AllThePlaces CC0),
+  and **Wikidata** items (CC0).
+- ERA5 checks: station normals from **NOAA NCEI GHCN-M v4** (Menne et al. 2018, doi:10.1175/JCLI-D-18-0094.1).
+
 All values above are aggregated or otherwise modified by this project; see `knowledge/sources/` and `etl/notes/`.

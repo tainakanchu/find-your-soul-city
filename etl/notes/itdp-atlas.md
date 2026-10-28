@@ -34,12 +34,11 @@ Shares are stored as fractions 0–1; we multiply by 100.
 
 - `https://atlas.itdp.org/` HTML: Shiny UI only; `robots.txt`, `sitemap.xml`, `terms.html` → 404. No terms-of-use page
   found. `about/about_data.html`, `about_atlas.html`, `about_faq.html`, `about_methodology.html` → 200 (quoted below).
-- Shiny download handlers (`downloadData_cities_csv`, `downloadData2_gpkg` …) via the SockJS xhr transport
-  (`/__sockjs__/<n>/<id>/xhr`, multiplex `0|o|/s=1`, Shiny `init`). It works technically, but the app expects a full
-  browser input set; one probe that set only `indicator` ended with the server message _"The application unexpectedly
-  exited"_ (code 4503). **Abandoned**: not documented, fragile, and risk of disrupting the public service. (Disclosure:
-  our probes may have triggered that restart once or a few times on 2026-10-28 ~20:40 UTC.) The GitHub release is the
-  documented, bulk, machine-readable route and is what the module uses.
+- Scripting the Shiny app's download handlers: tried and **abandoned** — not a documented data route. One probe
+  ended with the server message _"The application unexpectedly exited"_; our probes may have restarted an app
+  session once or a few times on 2026-10-28 ~20:40 UTC (the site responded normally afterwards). This led to
+  `knowledge/decisions/external-access-policy.md`. The GitHub release is the documented, bulk, machine-readable
+  route and is what the module uses.
 - Web search for Zenodo / figshare / HDX copies: none found. ITDP's data page says "For larger data extracts, contact
   data@itdp.org."
 

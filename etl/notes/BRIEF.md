@@ -1,7 +1,7 @@
 # ETL brief (shared by all source modules)
 
 Project: "find your soul city" — a web quiz that ranks world cities by fit to a user's stated preferences.
-Repo: /home/user/find-your-soul-city. Python ETL lives in `etl/` (uv project; run with
+Python ETL lives in `etl/` (uv project; run with
 `cd etl && UV_SYSTEM_CERTS=1 uv run python -m soulcity_etl.<module>`; unset UV_NATIVE_TLS if uv warns).
 The goal is real, traceable public statistics — NOT a prototype.
 
@@ -38,7 +38,7 @@ The goal is real, traceable public statistics — NOT a prototype.
   alternative sources you considered and why rejected. Be concrete and numeric; this becomes the public methodology.
 - Final message to the orchestrator: short summary of metrics produced, missing rate, validation results, caveats.
 
-## Environment
+## Environment (as observed when the ETL was first built, 2026-10-28)
 
 - Outbound HTTPS works via proxy (CA bundle already configured; requests works). Reachable (checked): jeodpp.jrc.ec.europa.eu,
   storage.googleapis.com (weatherbench2 / arco-era5 public buckets), esa-worldcover.s3.eu-central-1.amazonaws.com,
