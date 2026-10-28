@@ -295,6 +295,19 @@ for (const persona of PERSONAS) {
   );
 }
 
+// --- 7. Reachability ---
+h("7. どの都市にも届くか");
+const { reachability } = await import("../src/scoring/reachability.ts");
+const reach = reachability(k);
+const notTop = reach.filter((r) => r.bestRank > 1);
+out.push(
+  "各都市について、その都市の値に最も近い選択肢から始めて回答を 1 つずつ変える探索（山登り法）で、1 位になる回答があるかを調べた。" +
+    "すべての回答の組み合わせを調べたわけではないので、見つからなくても「届かない」と断定はできない。",
+  "",
+  `- 1 位になる回答が見つかった都市: ${reach.length - notTop.length} / ${reach.length}`,
+  ...notTop.map((r) => `- ${nameOf.get(r.cityId)}: 最高 ${r.bestRank} 位`),
+);
+
 const header = [
   "---",
   "type: Validation Report",
