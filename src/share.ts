@@ -1,7 +1,7 @@
 // Sharing a result: fixed text, per-city share pages and card images. Pure (no data import), so vite.config.ts and
 // scripts/og.ts can use it as well as the UI. Nothing here takes the user's answers: a share carries only the
 // city and the rounded score, and the share page / card show only the city's own statistics.
-import { formatValue, formatYear } from "./format.ts";
+import { placeLabel, formatValue, formatYear } from "./format.ts";
 import type { City, Knowledge } from "./model/types.ts";
 import { SITE } from "./site.ts";
 
@@ -37,6 +37,10 @@ export function cityFacts(k: Knowledge, city: City): Fact[] {
 }
 
 /** "最暖月 26.9℃・最寒月 4.9℃・人口加重密度 10,264 人/km²" */
+/** What a city card shows; `public/og/manifest.json` stores it per card so stale cards fail the test. */
+export const cardContent = (k: Knowledge, city: City) =>
+  [city.nameJa, city.nameEn, city.countryName, factsLine(cityFacts(k, city))].join(" | ");
+
 export const factsLine = (facts: Fact[]) => facts.map((f) => `${f.short} ${f.value}`).join("・");
 
 export const resultPath = (cityId: string) => `r/${cityId}/`;
@@ -46,7 +50,7 @@ export const ogImageUrl = (cityId: string) => `${SITE.url}${ogImagePath(cityId)}
 
 /** The only text a share sends. Fixed template, no free text. `score` is already rounded (roundBounded). */
 export const shareText = (city: Pick<City, "nameJa" | "countryName">, score: string) =>
-  `私の魂の故郷は${city.nameJa}（${city.countryName}）でした。適合度 ${score}/100 ${HASHTAG}`;
+  `私の魂の故郷は${placeLabel(city)}でした。適合度 ${score}/100 ${HASHTAG}`;
 
 export const xIntentUrl = (text: string, url: string) =>
   `https://x.com/intent/post?${new URLSearchParams({ text, url }).toString()}`;
@@ -71,7 +75,7 @@ export const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => ESC[c]);
 export function renderSharePage(k: Knowledge, city: City, base: string): string {
   const facts = cityFacts(k, city);
   const title = `魂の故郷診断の結果: ${city.nameJa}`;
-  const description = `${city.nameJa}（${city.countryName}）: ${factsLine(facts)}。公開統計で世界の ${k.cities.length} 都市を比べる診断です。`;
+  const description = `${placeLabel(city)}: ${factsLine(facts)}。公開統計で世界の ${k.cities.length} 都市を比べる診断です。`;
   const image = ogImageUrl(city.id);
   const url = shareUrl(city.id);
   const alt = `あなたの魂の故郷は${city.nameJa}。${factsLine(facts)}`;
@@ -140,7 +144,7 @@ ${meta}
       <img src="${e(base + ogImagePath(city.id))}" width="${OG_WIDTH}" height="${OG_HEIGHT}" alt="${e(alt)}" />
       <p class="kicker">魂の故郷診断で選ばれた都市</p>
       <h1>${e(city.nameJa)}</h1>
-      <p class="where">${e(city.nameEn)}（${e(city.countryName)}）</p>
+      <p class="where">${e(city.nameEn)}${city.countryName === city.nameJa ? "" : `（${e(city.countryName)}）`}</p>
       <ul>
 ${rows}
       </ul>

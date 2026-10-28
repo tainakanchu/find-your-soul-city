@@ -34,3 +34,7 @@ export function roundBounded(x: number, max = 100): string {
   if (r <= 0 && x > 0) return "1 未満";
   return String(r);
 }
+
+/** "東京（日本）", or just the name when the city and the country/region share it (香港, シンガポール). */
+export const placeLabel = (c: { nameJa: string; countryName: string }) =>
+  c.nameJa === c.countryName ? c.nameJa : `${c.nameJa}（${c.countryName}）`;

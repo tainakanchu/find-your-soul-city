@@ -67,3 +67,12 @@ describe("share page", () => {
     expect(k.cities.filter((c) => cityFacts(k, c).length < 2).map((c) => c.id)).toEqual([]);
   });
 });
+
+describe("card freshness", () => {
+  it("every committed card matches the current data (else run `pnpm og`)", async () => {
+    const { cardContent } = await import("./share.ts");
+    const manifest = JSON.parse(readFileSync("public/og/manifest.json", "utf8")) as Record<string, string>;
+    const stale = k.cities.filter((c) => manifest[c.id] !== cardContent(k, c)).map((c) => c.id);
+    expect(stale).toEqual([]);
+  });
+});

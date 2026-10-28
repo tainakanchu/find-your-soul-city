@@ -4,10 +4,10 @@
 //
 // Playwright is not a project dependency; it is resolved from the environment (global install / NODE_PATH).
 // Fonts are the system's: the Japanese text needs a Japanese font installed (fc-list :lang=ja).
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import type { City, Knowledge } from "../src/model/types.ts";
-import { CREDIT, OG_HEIGHT, OG_WIDTH, SITE_TITLE, cityFacts, escapeHtml as e } from "../src/share.ts";
+import { CREDIT, OG_HEIGHT, OG_WIDTH, SITE_TITLE, cardContent, cityFacts, escapeHtml as e } from "../src/share.ts";
 import { SITE } from "../src/site.ts";
 
 interface Page {
@@ -81,7 +81,7 @@ function cityCard(city: City): string {
   return doc(`${map(city)}<div class="card">
     <p class="kicker">あなたの魂の故郷は</p>
     <p class="name">${e(city.nameJa)}</p>
-    <p class="en">${e(city.nameEn)}<span>${e(city.countryName)}</span></p>
+    <p class="en">${e(city.nameEn)}${city.countryName === city.nameJa ? "" : `<span>${e(city.countryName)}</span>`}</p>
     <div class="facts">${facts}</div>
     ${foot}
   </div>`);
@@ -135,7 +135,15 @@ try {
     await page.screenshot({ path, type: "png" });
   };
   const cities = only.size ? k.cities.filter((c) => only.has(c.id)) : k.cities;
-  for (const city of cities) await render(cityCard(city), `${OUT}/${city.id}.png`);
+  const manifestPath = `${OUT}/manifest.json`;
+  const manifest: Record<string, string> = existsSync(manifestPath)
+    ? JSON.parse(readFileSync(manifestPath, "utf8"))
+    : {};
+  for (const city of cities) {
+    await render(cityCard(city), `${OUT}/${city.id}.png`);
+    manifest[city.id] = cardContent(k, city);
+  }
+  writeFileSync(manifestPath, `${JSON.stringify(Object.fromEntries(Object.entries(manifest).toSorted()), null, 2)}\n`);
   if (!only.size) await render(defaultCard(), `${OUT}/default.png`);
   console.log(`✓ ${cities.length} city card(s)${only.size ? "" : " + default"} → ${OUT}/`);
 } finally {

@@ -4,6 +4,7 @@ import {
   formatCoord,
   formatValue,
   formatYear,
+  placeLabel,
   knowledge,
   metricByKey,
   QUALITY_LABEL,
@@ -66,7 +67,7 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
       <p className="kicker">あなたの魂の故郷は</p>
       <h1 className="city">{city.nameEn}</h1>
       <p className="where">
-        {city.nameJa}（{city.countryName}） {formatCoord(city.lat, city.lon)}
+        {placeLabel(city)} {formatCoord(city.lat, city.lon)}
       </p>
       <p className="summary">
         適合度は {roundBounded(first.total)} / 100。{stabilityWords(stable)}（重みを 1 項目ずつ ±10% 動かしても、

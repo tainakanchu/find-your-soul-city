@@ -1,7 +1,7 @@
 import raw from "./generated/knowledge.json";
 import type { Knowledge, Quality } from "./model/types.ts";
 
-export { formatValue, formatYear, roundBounded } from "./format.ts";
+export { formatValue, formatYear, roundBounded, placeLabel } from "./format.ts";
 
 export const knowledge = raw as Knowledge;
 
