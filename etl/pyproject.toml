@@ -14,6 +14,7 @@ dependencies = [
   "pyyaml",
   "pycountry>=26.2.16",
   "duckdb>=1.5.6",
+  "rdata>=1.1.0",
 ]
 
 [dependency-groups]
