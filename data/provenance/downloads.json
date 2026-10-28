@@ -1,4 +1,28 @@
 {
+  "https://api.openstreetmap.org/api/0.6/map?bbox=-21.95,64.14,-21.92,64.15": {
+    "path": ".cache/raw/osm/api/reykjavik-centre.osm",
+    "bytes": 9300516,
+    "sha256": "b907462481e858ad74b33a96827f7effbe1d77729b64727d08d0c6d26a6c7cfe",
+    "retrieved_at": "2026-10-28T21:09:23Z"
+  },
+  "https://api.openstreetmap.org/api/0.6/map?bbox=100.52,13.72,100.54,13.735": {
+    "path": ".cache/raw/osm/api/bangkok-silom.osm",
+    "bytes": 15216641,
+    "sha256": "ea25201678e39362b2127c1e51e6ffda10bde6143882bf487bb1e91a29068f3e",
+    "retrieved_at": "2026-10-28T21:09:32Z"
+  },
+  "https://api.openstreetmap.org/api/0.6/map?bbox=36.81,-1.295,36.83,-1.28": {
+    "path": ".cache/raw/osm/api/nairobi-cbd.osm",
+    "bytes": 7246531,
+    "sha256": "932dc50b218d0979812efb71249f66068dee1f6d214fe89df955ffcf4a8c5978",
+    "retrieved_at": "2026-10-28T21:09:26Z"
+  },
+  "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels": {
+    "path": ".cache/raw/era5/cds_reanalysis-era5-single-levels.json",
+    "bytes": 7666,
+    "sha256": "595c0f9cf92f116a68470f621b5f66467be5a06736da7af8cdd469da4746d7ce",
+    "retrieved_at": "2026-10-28T21:16:53Z"
+  },
   "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf": {
     "path": ".cache/raw/esa-worldcover/docs/WorldCover_PUM_V2.0.pdf",
     "bytes": 4102952,
@@ -11619,7 +11643,7 @@
     },
     "path": ".cache/raw/osm/qlever/planet-260921",
     "license": "ODbL 1.0 (c) OpenStreetMap contributors",
-    "retrieved_at": "2026-10-28T20:46:54Z"
+    "retrieved_at": "2026-10-28T21:16:49Z"
   },
   "https://qlever.cs.uni-freiburg.de/api/wikidata#0dd66fbb94f388cc": {
     "endpoint": "https://qlever.cs.uni-freiburg.de/api/wikidata",
@@ -11630,12 +11654,337 @@
       "Q1060829": "concert hall"
     },
     "query_sha256_16": {
-      "Q33506": "7f7d1e407d656f68",
-      "Q24354": "585a791b62c2c52e",
-      "Q1060829": "6019724a6a24b632"
+      "Q33506": "b1ec1bfde87611d3",
+      "Q24354": "e283bdcd0f4320b9",
+      "Q1060829": "707f934ee60f74a3"
     },
     "path": ".cache/raw/osm/wikidata/0dd66fbb94f388cc",
     "license": "CC0 1.0 (Wikidata structured data)",
-    "retrieved_at": "2026-10-28T20:47:26Z"
+    "retrieved_at": "2026-10-28T21:18:39Z"
+  },
+  "https://storage.googleapis.com/weatherbench2/datasets/era5-hourly-climatology/1990-2019_6h_1440x721.zarr": {
+    "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
+    "variables": {
+      "2m_temperature": {
+        "shape": [
+          4,
+          366,
+          721,
+          1440
+        ],
+        "chunks": [
+          3,
+          3,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "hour",
+            "dayofyear",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "2 metre temperature",
+          "short_name": "t2m",
+          "units": "K"
+        }
+      },
+      "total_precipitation_24hr": {
+        "shape": [
+          4,
+          366,
+          721,
+          1440
+        ],
+        "chunks": [
+          3,
+          3,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "hour",
+            "dayofyear",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "Total precipitation",
+          "short_name": "tp",
+          "units": "m"
+        }
+      },
+      "total_cloud_cover": {
+        "shape": [
+          4,
+          366,
+          721,
+          1440
+        ],
+        "chunks": [
+          3,
+          3,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "hour",
+            "dayofyear",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "Total cloud cover",
+          "short_name": "tcc",
+          "standard_name": "cloud_area_fraction",
+          "units": "(0 - 1)"
+        }
+      },
+      "latitude": {
+        "shape": [
+          721
+        ],
+        "chunks": [
+          721
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "latitude"
+          ],
+          "long_name": "latitude",
+          "units": "degrees_north"
+        }
+      },
+      "longitude": {
+        "shape": [
+          1440
+        ],
+        "chunks": [
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "longitude"
+          ],
+          "long_name": "longitude",
+          "units": "degrees_east"
+        }
+      },
+      "hour": {
+        "shape": [
+          4
+        ],
+        "chunks": [
+          4
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "hour"
+          ]
+        }
+      },
+      "dayofyear": {
+        "shape": [
+          366
+        ],
+        "chunks": [
+          366
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "dayofyear"
+          ]
+        }
+      }
+    },
+    "store_attrs": {},
+    "zmetadata_sha256": "ede177e4412fca744d65f35ee9a32d8b8b9a1a216eb2b5e35df9512ff340c6fb",
+    "note": "WB2 ERA5 hourly climatology 1990-2019 (61-day triangular smoothing), streamed; only cells for UCDB centres kept",
+    "retrieved_at": "2026-10-28T21:22:25Z"
+  },
+  "https://storage.googleapis.com/weatherbench2/datasets/era5-hourly-climatology/LICENSE": {
+    "path": ".cache/raw/era5/LICENSE_era5-hourly-climatology",
+    "bytes": 8435,
+    "sha256": "ffe05f9653f14ffd23322bf1ebecfd6dd519ba59726280b34593fcf69ccab60e",
+    "retrieved_at": "2026-10-28T21:16:51Z"
+  },
+  "https://storage.googleapis.com/weatherbench2/datasets/era5/1959-2022-6h-1440x721.zarr": {
+    "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
+    "variables": {
+      "land_sea_mask": {
+        "shape": [
+          721,
+          1440
+        ],
+        "chunks": [
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "Land-sea mask",
+          "short_name": "lsm",
+          "standard_name": "land_binary_mask",
+          "units": "(0 - 1)"
+        }
+      },
+      "geopotential_at_surface": {
+        "shape": [
+          721,
+          1440
+        ],
+        "chunks": [
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "Geopotential",
+          "short_name": "z",
+          "standard_name": "geopotential",
+          "units": "m**2 s**-2"
+        }
+      }
+    },
+    "store_attrs": {},
+    "zmetadata_sha256": "a2a26be5f97d12305d7a986c8fbb3ba881b01da7527b5337d32fff6e6d7540eb",
+    "note": "static fields land_sea_mask, geopotential_at_surface",
+    "retrieved_at": "2026-10-28T21:22:25Z"
+  },
+  "https://storage.googleapis.com/weatherbench2/datasets/era5/1959-2023_01_10-full_37-1h-0p25deg-chunk-1.zarr": {
+    "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
+    "variables": {
+      "2m_temperature": {
+        "shape": [
+          561264,
+          721,
+          1440
+        ],
+        "chunks": [
+          1,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "time",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "2 metre temperature",
+          "short_name": "t2m",
+          "units": "K"
+        }
+      },
+      "2m_dewpoint_temperature": {
+        "shape": [
+          561264,
+          721,
+          1440
+        ],
+        "chunks": [
+          1,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "time",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "2 metre dewpoint temperature",
+          "short_name": "d2m",
+          "units": "K"
+        }
+      },
+      "total_cloud_cover": {
+        "shape": [
+          561264,
+          721,
+          1440
+        ],
+        "chunks": [
+          1,
+          721,
+          1440
+        ],
+        "attrs": {
+          "_ARRAY_DIMENSIONS": [
+            "time",
+            "latitude",
+            "longitude"
+          ],
+          "long_name": "Total cloud cover",
+          "short_name": "tcc",
+          "standard_name": "cloud_area_fraction",
+          "units": "(0 - 1)"
+        }
+      }
+    },
+    "store_attrs": {},
+    "zmetadata_sha256": "390ad861a75e0ef85788fa2963fba434e02b672d7cccabb06e95be543c04f833",
+    "note": "WB2 copy of hourly ERA5; 00/06/12/18 UTC of every day 1990-2019 streamed for t2m/d2m monthly means, plus 48 days x 24 h of 2010 for the 6-hourly sampling-bias check",
+    "retrieved_at": "2026-10-28T21:22:16Z"
+  },
+  "https://storage.googleapis.com/weatherbench2/datasets/era5/LICENSE": {
+    "path": ".cache/raw/era5/LICENSE_era5",
+    "bytes": 8435,
+    "sha256": "ffe05f9653f14ffd23322bf1ebecfd6dd519ba59726280b34593fcf69ccab60e",
+    "retrieved_at": "2026-10-28T21:16:52Z"
+  },
+  "https://www.ncei.noaa.gov/data/ghcnm/v4/precipitation/access/": {
+    "kind": "GHCN-M v4 precipitation per-station CSVs (validation only)",
+    "n_files": 465,
+    "station_ids_sha256": "b6746b19a45c5422413f11092df51bcdcbcf45936b37cf2ff5e21d2d3eaeb23d",
+    "retrieved_at": "2026-10-28T21:22:25Z"
+  },
+  "https://www.ncei.noaa.gov/data/ghcnm/v4/precipitation/doc/ghcn-m_v4_prcp_inventory.txt": {
+    "path": ".cache/raw/era5/ghcnm_prcp/inventory.txt",
+    "bytes": 12371328,
+    "sha256": "d9cb53b2c1f3f7f2526c096353c367d2f7b209170fedcc3137b6932e86d876d5",
+    "retrieved_at": "2026-10-28T21:20:20Z"
+  },
+  "https://www.ncei.noaa.gov/pub/data/ghcn/v4/ghcnm.tavg.latest.qcf.tar.gz": {
+    "path": ".cache/raw/era5/ghcnm/ghcnm.tavg.latest.qcf.tar.gz",
+    "bytes": 44194593,
+    "sha256": "7327142987afd5a9c2c156c43f24d84c9dd634918f0944cebc0ca5dc5c145197",
+    "retrieved_at": "2026-10-28T21:16:45Z"
+  },
+  "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/*.parquet": {
+    "release": "2026-10-21.0",
+    "categories": {
+      "museum": [
+        "museum"
+      ],
+      "performing_arts": [
+        "theatre_venue",
+        "performing_arts_venue",
+        "music_venue"
+      ],
+      "cinema": [
+        "movie_theater"
+      ],
+      "gallery": [
+        "art_gallery"
+      ],
+      "bar_pub": [
+        "bar"
+      ],
+      "nightclub": [
+        "dance_club"
+      ]
+    },
+    "filter": "bbox of each target polygon, then point-in-polygon; confidence >= 0.5; operating_status != permanently_closed",
+    "path": ".cache/raw/osm/overture/2026-10-21.0",
+    "license": "Places theme: CDLA-Permissive-2.0 (Meta, Microsoft, ...), Apache-2.0 (Foursquare), CC0 (AllThePlaces); https://docs.overturemaps.org/attribution/",
+    "retrieved_at": "2026-10-28T21:09:20Z"
   }
 }

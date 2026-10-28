@@ -47,6 +47,7 @@ HOURLY_URL = f"{GCS}/era5/1959-2023_01_10-full_37-1h-0p25deg-chunk-1.zarr"
 LICENSE_URLS = [f"{GCS}/era5-hourly-climatology/LICENSE", f"{GCS}/era5/LICENSE"]
 CDS_ERA5_CATALOGUE = "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels"
 GHCNM_URL = "https://www.ncei.noaa.gov/pub/data/ghcn/v4/ghcnm.tavg.latest.qcf.tar.gz"
+GHCNM_P = "https://www.ncei.noaa.gov/data/ghcnm/v4/precipitation"
 PERIOD = "1990-2019"
 YEARS = range(1990, 2020)
 
@@ -73,9 +74,11 @@ MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 
 
 # Standard-atmosphere tropospheric lapse rate (ICAO / U.S. Standard Atmosphere 1976), K per m.
 STD_LAPSE = 0.0065
-# Decision taken from the GHCN-M validation (see etl/notes/era5.md): report ERA5 temperatures at the model
-# orography without a lapse-rate correction, and flag the elevation mismatch in `detail`.
-APPLY_LAPSE = False
+# Decision from the GHCN-M station validation (etl/notes/era5.md): 2 m temperatures are shifted from the ERA5
+# model orography to the city's mean elevation (GHS-UCDB GE_ELV_AVG_2025, Copernicus GLO-90) with STD_LAPSE.
+# Values whose shift exceeds LAPSE_ESTIMATED_K are labelled quality="estimated". Dewpoint is not adjusted.
+APPLY_LAPSE = True
+LAPSE_ESTIMATED_K = 0.5
 
 _tls = threading.local()
 
@@ -383,6 +386,61 @@ def ghcnm_normals() -> list[dict]:
     return out
 
 
+def ghcnm_prcp_normals(centres: list[City]) -> dict[str, list[dict]]:
+    """GHCN-M v4 precipitation stations inside each centre polygon with a 1990-2019 normal.
+
+    A station normal needs >= 20 valid years (QC flag blank) in every calendar month; annual = sum of the 12
+    monthly means (mm). Only the per-station CSVs of candidate stations are downloaded.
+    """
+    inv = fetch(f"{GHCNM_P}/doc/ghcn-m_v4_prcp_inventory.txt", RAW / "ghcnm_prcp" / "inventory.txt")
+    st = []
+    for line in inv.read_text(encoding="latin-1").splitlines():
+        try:
+            first, last = int(line[86:90]), int(line[91:95])
+        except ValueError:
+            continue
+        if first <= 1995 and last >= 2015:
+            st.append((line[0:11], float(line[12:20]), float(line[21:30]), float(line[31:37])))
+    slat = np.array([x[1] for x in st])
+    slon = np.array([x[2] for x in st])
+    want: dict[str, list[str]] = {}
+    for c in centres:
+        near = np.flatnonzero((np.abs(slat - c.lat) < 1.0) & (np.abs(slon - c.lon) < 1.5))
+        if near.size:
+            ins = near[shapely.contains_xy(c.geom, slon[near], slat[near])]
+            if ins.size:
+                want[c.city_id] = [st[k][0] for k in ins]
+    ids = sorted({i for v in want.values() for i in v})
+
+    def get(sid):
+        return sid, fetch(f"{GHCNM_P}/access/{sid}.csv", RAW / "ghcnm_prcp" / f"{sid}.csv", record=False)
+
+    with ThreadPoolExecutor(8) as ex:
+        paths = dict(ex.map(get, ids))
+    record_dataset(f"{GHCNM_P}/access/", kind="GHCN-M v4 precipitation per-station CSVs (validation only)",
+                   n_files=len(ids), station_ids_sha256=hashlib.sha256(",".join(ids).encode()).hexdigest())
+    normals = {}
+    for sid, path in paths.items():
+        tot, n = np.zeros(12), np.zeros(12)
+        elev = float("nan")
+        for line in path.read_text(encoding="latin-1").splitlines():
+            if len(line) < 100:
+                continue
+            ym = line[83:89]
+            y, m = int(ym[:4]), int(ym[4:6]) - 1
+            if y not in YEARS or line[99] != " ":
+                continue
+            v = int(line[90:96])
+            if v < -1:
+                continue
+            tot[m] += max(v, 0) / 10.0
+            n[m] += 1
+            elev = float(line[74:82])
+        if n.min() >= 20:
+            normals[sid] = {"id": sid, "pann": float((tot / n).sum()), "elev": elev}
+    return {cid: [normals[i] for i in v if i in normals] for cid, v in want.items()}
+
+
 # --------------------------------------------------------------------------------------------- main
 def pearson(a, b) -> float:
     return float(np.corrcoef(a, b)[0, 1])
@@ -463,6 +521,7 @@ def main() -> None:
             "p_ann": float(pm.sum()), "cloud": float(city_mean(c_ann[ii], w)),
             "t_wb2": city_mean(t_wb2[:, ii], w),
             "iw": iw, "ic": ic, "z_era5": z_era5, "elev": elev,
+            "lapse_K": -STD_LAPSE * (elev - z_era5) if APPLY_LAPSE and np.isfinite(elev) else 0.0,
             "lsm_mean": float(city_mean(lsm[s["rows"], s["cols"]], w)),
             "hb_t": float(city_mean(hb["t2m"][ii], w)), "hb_c": float(city_mean(hb["tcc"][ii], w)) * 100,
         }
@@ -529,6 +588,7 @@ def main() -> None:
     slat = np.array([s["lat"] for s in stns])
     slon = np.array([s["lon"] for s in stns])
     pairs = []
+    n_bad_elev = [0]
     for cid in rids:
         r = rec[cid]
         c = r["city"]
@@ -539,17 +599,25 @@ def main() -> None:
         if not inside.any():
             continue
         ss = [stns[k] for k in near[inside]]
+        # GHCN inventory elevations that differ from the city's GLO-90 mean elevation by > 1 km are metadata
+        # errors (e.g. a Buenos Aires station listed at 3 3xx m); drop those stations.
+        bad = [s for s in ss if np.isfinite(r["elev"]) and abs(s["elev"] - r["elev"]) > 1000]
+        n_bad_elev[0] += len(bad)
+        ss = [s for s in ss if s not in bad]
+        if not ss:
+            continue
         t_st = float(np.mean([s["tann"] for s in ss]))
         z_st = float(np.mean([s["elev"] for s in ss]))
         pairs.append((cid, r["t_ann"], t_st, z_st, r["z_era5"], len(ss)))
     if pairs:
         e = np.array([p[1] - p[2] for p in pairs])
         dzs = np.array([p[3] - p[4] for p in pairs])
-        ecorr = e + STD_LAPSE * dzs  # ERA5 lapse-adjusted to station height, minus station
+        ecorr = e - STD_LAPSE * dzs  # ERA5 lapse-adjusted to station height, minus station
         slope = float(np.polyfit(dzs, -e, 1)[0]) if len(pairs) > 5 else float("nan")
         big = np.abs(dzs) > 200
         val["ghcnm_reference"] = {
             "n_centres": len(pairs), "n_stations": int(sum(p[5] for p in pairs)),
+            "n_stations_dropped_bad_elev": n_bad_elev[0],
             "raw_bias_K": round(float(e.mean()), 3), "raw_mae_K": round(float(np.abs(e).mean()), 3),
             "raw_rmse_K": round(float(np.sqrt((e ** 2).mean())), 3),
             "lapse_bias_K": round(float(ecorr.mean()), 3), "lapse_mae_K": round(float(np.abs(ecorr).mean()), 3),
@@ -558,8 +626,29 @@ def main() -> None:
             "n_abs_dz_gt_200m": int(big.sum()),
             "raw_mae_K_dz_gt_200m": round(float(np.abs(e[big]).mean()), 3) if big.any() else None,
             "lapse_mae_K_dz_gt_200m": round(float(np.abs(ecorr[big]).mean()), 3) if big.any() else None,
-            "targets": [(p[0], round(p[1] - p[2], 2), round(p[1] - p[2] + STD_LAPSE * (p[3] - p[4]), 2),
+            "raw_bias_K_dz_gt_200m": round(float(e[big].mean()), 3) if big.any() else None,
+            "lapse_bias_K_dz_gt_200m": round(float(ecorr[big].mean()), 3) if big.any() else None,
+            "worst_raw": sorted(((p[0], round(p[1] - p[2], 2), round(p[3] - p[4])) for p in pairs),
+                                key=lambda x: -abs(x[1]))[:8],
+            "targets": [(p[0], round(p[1] - p[2], 2), round(p[1] - p[2] - STD_LAPSE * (p[3] - p[4]), 2),
                          round(p[3] - p[4]), p[5]) for p in pairs if p[0] in set(tids)],
+        }
+
+    pst = ghcnm_prcp_normals([rec[c]["city"] for c in rids])
+    pp = [(cid, rec[cid]["p_ann"], float(np.mean([x["pann"] for x in v])), len(v)) for cid, v in pst.items() if v]
+    if pp:
+        a = np.array([p[1] for p in pp])
+        b = np.array([p[2] for p in pp])
+        val["ghcnm_prcp_reference"] = {
+            "n_centres": len(pp), "n_stations": int(sum(p[3] for p in pp)),
+            "r": round(pearson(a, b), 4), "r_log": round(pearson(np.log(a), np.log(b)), 4),
+            "median_ratio": round(float(np.median(a / b)), 3), "mean_bias_mm": round(float((a - b).mean()), 1),
+            "share_within_25pct": round(float(np.mean(np.abs(a / b - 1) <= 0.25)), 3),
+            "share_ratio_gt_1_5": round(float(np.mean(a / b > 1.5)), 3),
+            "worst_log_ratio": [(p[0], round(p[1]), round(p[2]), round(float(x), 2))
+                                for p, x in sorted(zip(pp, a / b, strict=True), key=lambda t: -abs(math.log(t[1])))[:10]],
+            "targets": [(p[0], round(p[1]), round(p[2]), round(p[1] / p[2], 2), p[3]) for p in pp
+                        if p[0] in set(tids)],
         }
 
     # ------------------------------------------------ outputs
@@ -571,7 +660,7 @@ def main() -> None:
         fetch(u, RAW / ("LICENSE_" + u.split("/")[-2]))
         inputs.append(u)
     fetch(CDS_ERA5_CATALOGUE, RAW / "cds_reanalysis-era5-single-levels.json")
-    inputs += [CDS_ERA5_CATALOGUE, GHCNM_URL]
+    inputs += [HOURLY_URL, CDS_ERA5_CATALOGUE, GHCNM_URL, f"{GHCNM_P}/doc/ghcn-m_v4_prcp_inventory.txt", f"{GHCNM_P}/access/"]
 
     out = Interim(source_id=SOURCE_ID, inputs=inputs)
     out.notes += [
@@ -579,16 +668,18 @@ def main() -> None:
          "(WB2 hourly ERA5 copy). Precipitation and cloud cover: WB2 ERA5 climatology (61-day triangular smoothing)."),
         ("City value = cos(lat)-weighted mean of ERA5 land cells (lsm>=0.5) whose centres lie in the UCDB polygon; "
         "else nearest land cell to the representative point (detail.cell_rule)."),
-        ("Temperatures are at ERA5 model orography (no lapse-rate correction); detail.elev_diff_m = UCDB mean "
-        "elevation - ERA5 orography."),
+        ("temp_* are shifted from ERA5 model orography to the UCDB mean elevation with 6.5 K/km "
+         "(detail.lapse_adjustment_K; quality=estimated when |shift| > 0.5 K). Dewpoint is not adjusted."),
         ("Contains modified Copernicus Climate Change Service information (ERA5, 1990-2019). Neither the European "
         "Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it "
         "contains."),
         f"validation: {json.dumps(val, ensure_ascii=False)}",
     ]
+    st_t = {p[0]: (p[2], p[3], p[5]) for p in pairs}
+    st_p = {p[0]: (p[2], p[3]) for p in pp}
     q = "observed"
     metrics = ["temp_warmest", "temp_coldest", "seasonal_range", "precip_annual", "cloud_cover_annual",
-               "dewpoint_warmest"]
+               "dewpoint_warmest", "dewpoint_max_month"]
     for c in targets:
         if c.city_id not in rec:
             for m in metrics:
@@ -600,42 +691,59 @@ def main() -> None:
                 **({"nearest_km": s["nearest_km"]} if s["nearest_km"] is not None else {}),
                 "era5_orography_m": round(r["z_era5"]), "ucdb_elev_m": round(r["elev"]),
                 "elev_diff_m": round(r["elev"] - r["z_era5"]),
-                "lapse_equiv_K": round(-STD_LAPSE * (r["elev"] - r["z_era5"]), 2)}
-        tm, dm, pm = r["tm"], r["dm"], r["pm"]
-        out.put("temp_warmest", c.city_id, round(float(tm[r["iw"]]), 2), quality=q, year=PERIOD,
-                detail={**base, "month": MONTHS[r["iw"]], "monthly_temp_c": [round(float(x), 2) for x in tm],
-                        "annual_mean_c": round(r["t_ann"], 2), "diurnal_sampling_bias_K_2010": round(r["hb_t"], 3)})
-        out.put("temp_coldest", c.city_id, round(float(tm[r["ic"]]), 2), quality=q, year=PERIOD,
-                detail={"month": MONTHS[r["ic"]], "elev_diff_m": base["elev_diff_m"]})
+                }
+        dm, pm = r["dm"], r["pm"]
+        corr = r["lapse_K"]
+        tm = r["tm"] + corr
+        qt = "estimated" if abs(corr) > LAPSE_ESTIMATED_K else "observed"
+        lapse = {"lapse_adjustment_K": round(corr, 2), "elev_diff_m": base["elev_diff_m"]}
+        out.put("temp_warmest", c.city_id, round(float(tm[r["iw"]]), 2), quality=qt, year=PERIOD,
+                detail={**base, **lapse, "unadjusted_c": round(float(r["tm"][r["iw"]]), 2), "month": MONTHS[r["iw"]],
+                        "monthly_temp_c": [round(float(x), 2) for x in tm],
+                        "annual_mean_c": round(r["t_ann"] + corr, 2),
+                        "diurnal_sampling_bias_K_2010": round(r["hb_t"], 3),
+                        **({"ghcnm_station_annual_c": round(st_t[c.city_id][0], 2),
+                            "ghcnm_station_elev_m": round(st_t[c.city_id][1]),
+                            "ghcnm_n_stations": st_t[c.city_id][2]} if c.city_id in st_t else {})})
+        out.put("temp_coldest", c.city_id, round(float(tm[r["ic"]]), 2), quality=qt, year=PERIOD,
+                detail={**lapse, "unadjusted_c": round(float(r["tm"][r["ic"]]), 2), "month": MONTHS[r["ic"]]})
         out.put("seasonal_range", c.city_id, round(float(tm[r["iw"]] - tm[r["ic"]]), 2), quality=q, year=PERIOD,
                 detail={"warmest": MONTHS[r["iw"]], "coldest": MONTHS[r["ic"]]})
         out.put("precip_annual", c.city_id, round(r["p_ann"], 1), quality=q, year=PERIOD,
                 detail={"n_cells": s["n_cells"], "cell_rule": s["rule"],
-                        "monthly_precip_mm": [round(float(x), 1) for x in pm]})
+                        "monthly_precip_mm": [round(float(x), 1) for x in pm],
+                        **({"ghcnm_station_annual_mm": round(st_p[c.city_id][0]),
+                            "ghcnm_n_stations": st_p[c.city_id][1],
+                            "era5_to_station_ratio": round(r["p_ann"] / st_p[c.city_id][0], 2)}
+                           if c.city_id in st_p else {})})
         out.put("cloud_cover_annual", c.city_id, round(r["cloud"], 1), quality=q, year=PERIOD,
                 detail={"n_cells": s["n_cells"], "diurnal_sampling_bias_pct_2010": round(r["hb_c"], 2)})
         out.put("dewpoint_warmest", c.city_id, round(float(dm[r["iw"]]), 2), quality=q, year=PERIOD,
                 detail={"month": MONTHS[r["iw"]], "monthly_dewpoint_c": [round(float(x), 2) for x in dm],
                         "max_monthly_dewpoint_c": round(float(dm.max()), 2),
                         "max_dewpoint_month": MONTHS[int(np.argmax(dm))]})
+        out.put("dewpoint_max_month", c.city_id, round(float(dm.max()), 2), quality=q, year=PERIOD,
+                detail={"month": MONTHS[int(np.argmax(dm))], "n_cells": s["n_cells"]})
     path = out.write()
 
     REFERENCE.mkdir(parents=True, exist_ok=True)
     with (REFERENCE / f"{SOURCE_ID}.csv").open("w", newline="") as f:
         wr = csv.writer(f)
         wr.writerow(["city_id", "ucdb_id", "name_en", "temp_warmest", "temp_coldest", "seasonal_range",
-                     "precip_annual", "cloud_cover_annual", "dewpoint_warmest", "temp_annual",
-                     "cell_rule", "n_cells", "era5_orography_m", "ucdb_elev_m"])
+                     "precip_annual", "cloud_cover_annual", "dewpoint_warmest", "dewpoint_max_month", "temp_annual",
+                     "cell_rule", "n_cells", "era5_orography_m", "ucdb_elev_m", "lapse_adjustment_K"])
         for c in refs:
             if c.city_id not in rec:
-                wr.writerow([c.city_id, c.ucdb_id, c.name_en] + [""] * 7 + ["no_land_cell_within_2deg", 0, "", ""])
+                wr.writerow([c.city_id, c.ucdb_id, c.name_en] + [""] * 8 + ["no_land_cell_within_2deg", 0, "", "", ""])
                 continue
             r = rec[c.city_id]
-            tm = r["tm"]
+            tm = r["tm"] + r["lapse_K"]
             wr.writerow([c.city_id, c.ucdb_id, c.name_en, round(float(tm[r["iw"]]), 2), round(float(tm[r["ic"]]), 2),
                          round(float(tm[r["iw"]] - tm[r["ic"]]), 2), round(r["p_ann"], 1), round(r["cloud"], 1),
-                         round(float(r["dm"][r["iw"]]), 2), round(r["t_ann"], 2),
-                         r["sel"]["rule"], r["sel"]["n_cells"], round(r["z_era5"]), round(r["elev"])])
+                         round(float(r["dm"][r["iw"]]), 2), round(float(r["dm"].max()), 2),
+                         round(r["t_ann"] + r["lapse_K"], 2),
+                         r["sel"]["rule"], r["sel"]["n_cells"], round(r["z_era5"]),
+                         round(r["elev"]) if np.isfinite(r["elev"]) else "", round(r["lapse_K"], 2)])
 
     (RAW / "validation.json").write_text(json.dumps(val, indent=1, ensure_ascii=False))
     print(json.dumps(val, indent=1, ensure_ascii=False))

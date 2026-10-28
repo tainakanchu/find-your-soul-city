@@ -94,7 +94,7 @@ def _sparql_tsv(endpoint: str, query: str, dest: Path, *, retries: int = 5, time
                 r = requests.post(endpoint, data={"query": query}, timeout=timeout,
                                   headers={**UA, "Accept": "text/tab-separated-values"})
                 r.raise_for_status()
-                text = r.text
+                text = r.content.decode("utf-8")  # QLever sends no charset; requests would guess latin-1
                 if not text.startswith("?"):
                     raise ValueError(f"unexpected response: {text[:200]}")
                 tmp = dest.with_suffix(".part")
@@ -300,7 +300,9 @@ def load_wikidata(stats) -> dict[str, dict]:
     items: dict[str, dict] = {}
     qh = {}
     for qc, label in WD_CLASSES.items():
-        q = WPFX + f"""SELECT ?x (SAMPLE(?c) AS ?coord) (SAMPLE(?n) AS ?node) (SAMPLE(?w) AS ?way) (SAMPLE(?r) AS ?rel)
+        q = WPFX + f"""PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?x (SAMPLE(?c) AS ?coord) (SAMPLE(?n) AS ?node) (SAMPLE(?w) AS ?way) (SAMPLE(?r) AS ?rel)
+       (MAX(?sl) AS ?sitelinks) (COUNT(?part) AS ?n_part_of)
 WHERE {{
   ?x wdt:P31/wdt:P279* wd:{qc} .
   ?x wdt:P625 ?c .
@@ -309,11 +311,13 @@ WHERE {{
   OPTIONAL {{ ?x wdt:P11693 ?n }}
   OPTIONAL {{ ?x wdt:P10689 ?w }}
   OPTIONAL {{ ?x wdt:P402 ?r }}
+  OPTIONAL {{ ?x wikibase:sitelinks ?sl }}
+  OPTIONAL {{ ?x wdt:P361 ?part }}
 }} GROUP BY ?x"""
         qh[qc] = _qhash(q)
-        rows = _sparql_tsv(QLEVER_WD, q, RAW / "wikidata" / tag / f"{qc}.tsv")
+        rows = _sparql_tsv(QLEVER_WD, q, RAW / "wikidata" / tag / f"{qc}.{qh[qc]}.tsv")
         for row in rows:
-            row += [""] * (5 - len(row))
+            row += [""] * (7 - len(row))
             m = _PT.search(row[1].replace("Point(", "POINT("))
             if not m:
                 continue
@@ -323,6 +327,9 @@ WHERE {{
                                         "osm": set()})
             it["classes"].add(label)
             it["osm"] |= osm_ids
+            # "notable, stand-alone": has >= 1 Wikipedia/Wikimedia sitelink and is not `part of` (P361) something
+            # (drops e.g. the ~150 individual buildings of the Skansen open-air museum, bulk heritage imports)
+            it["notable"] = _int(row[5]) >= 1 and _int(row[6]) == 0
         print(f"  wikidata {label}: {len(rows):,} items")
     record_dataset(
         f"{QLEVER_WD}#{tag}",
@@ -334,6 +341,11 @@ WHERE {{
         license="CC0 1.0 (Wikidata structured data)",
     )
     return items
+
+
+def _int(v: str) -> int:
+    m = re.match(r"-?\d+", v.strip())
+    return int(m.group(0)) if m else 0
 
 
 def wd_labels(qids: list[str], stats) -> dict[str, list[str]]:
@@ -433,7 +445,7 @@ def overture_city(c: City) -> list[tuple]:
                      TO '{tmp}' (HEADER, DELIMITER ',')""")
                 tmp.replace(dest)
                 break
-            except Exception:  # noqa: BLE001 - network errors surface as duckdb IOException
+            except duckdb.Error:  # network errors surface as duckdb IOException
                 if attempt == 3:
                     raise
                 time.sleep(10 * 2 ** attempt)
@@ -496,6 +508,38 @@ def _region_summary(rows: list[dict], key: str) -> dict[str, dict]:
                 "max": round(max(v), 3)} for g, v in sorted(by.items())}
 
 
+def _spearman(a, b) -> float:
+    ra = np.argsort(np.argsort(a))
+    rb = np.argsort(np.argsort(b))
+    return float(np.corrcoef(ra, rb)[0, 1])
+
+
+def _agreement(tgt: list[dict]) -> dict[str, Any]:
+    """Does coverage noise swamp the signal? Rank agreement of densities between OSM and the independent sources,
+    and the spread of the OSM/Overture ratio (log10 sd) versus the spread of the metric itself."""
+    out: dict[str, Any] = {}
+    for name, keys in (("culture_core", ("museum", "performing_arts", "cinema")), ("nightlife", ("bar_pub", "nightclub"))):
+        rs = [r for r in tgt if r["overture"][name]["overture"] > 0 and r["overture"][name]["osm"] > 0]
+        osm_d = np.array([r["overture"][name]["osm"] / r["area"] for r in rs])
+        ov_d = np.array([r["overture"][name]["overture"] / r["area"] for r in rs])
+        ratio = osm_d / ov_d
+        out[name] = {
+            "n_cities": len(rs),
+            "spearman_osm_vs_overture_density": round(_spearman(osm_d, ov_d), 3),
+            "log10_sd_osm_density": round(float(np.std(np.log10(osm_d))), 3),
+            "log10_sd_overture_density": round(float(np.std(np.log10(ov_d))), 3),
+            "log10_sd_ratio": round(float(np.std(np.log10(ratio))), 3),
+            "ratio_p10_p50_p90": [round(float(x), 3) for x in np.percentile(ratio, [10, 50, 90])],
+            "osm_density_p90_over_p10": round(float(np.percentile(osm_d, 90) / np.percentile(osm_d, 10)), 1),
+        }
+        if name == "culture_core":
+            rw = [(r["culture_dedup"] / r["area"], r["wikidata"]["n_notable"] / r["area"]) for r in tgt
+                  if r["wikidata"]["n_notable"] > 0]
+            out["culture_osm_vs_wikidata_notable_density_spearman"] = round(
+                _spearman(np.array([x[0] for x in rw]), np.array([x[1] for x in rw])), 3)
+    return out
+
+
 def main() -> None:
     RAW.mkdir(parents=True, exist_ok=True)
     targets = load_cities()
@@ -540,11 +584,13 @@ def main() -> None:
         n_name = sum(1 for v in mt.values() if v == "name")
         n_other = sum(1 for q, v in mt.items() if v is None and q in anylink)
         mus = [q for q in items if "museum" in wd[q]["classes"]]
+        nb = [q for q in items if wd[q]["notable"]]
         res["wikidata"] = {
-            "n_items": n, "n_museums": len(mus),
+            "n_items": n, "n_museums": len(mus), "n_notable": len(nb),
             "matched_by_wikidata_link": n_link, "matched_by_name_250m": n_name,
             "unmatched_but_linked_from_other_osm_object": n_other,
-            "recall": round((n_link + n_name) / n, 3) if n else None,
+            "recall_all": round((n_link + n_name) / n, 3) if n else None,
+            "recall": round(sum(1 for q in nb if mt[q]) / len(nb), 3) if nb else None,
             "recall_museums": round(sum(1 for q in mus if mt[q]) / len(mus), 3) if mus else None,
             "osm_culture_to_wikidata_ratio": round(res["culture_dedup"] / n, 2) if n else None,
         }
@@ -585,29 +631,40 @@ def main() -> None:
     # --- summaries & output ----------------------------------------------------------------------------------
     for r in rows:
         w = r["wikidata"]
-        r["wd_recall"] = w["recall"] if w["n_items"] >= 5 else None
+        r["wd_recall"] = w["recall"] if w["n_notable"] >= 5 else None
+        r["wd_recall_all"] = w["recall_all"] if w["n_items"] >= 5 else None
         r["wd_recall_museums"] = w["recall_museums"] if w["n_museums"] >= 5 else None
         if "overture" in r:
             for k in OVERTURE_PAIRS:
                 r[f"ov_{k}"] = r["overture"][k]["ratio"] if r["overture"][k]["overture"] >= 10 else None
+            for name, keys in (("culture_core", ("museum", "performing_arts", "cinema")),
+                               ("nightlife", ("bar_pub", "nightclub"))):
+                a = sum(r["overture"][k]["osm"] for k in keys)
+                b = sum(r["overture"][k]["overture"] for k in keys)
+                r["overture"][name] = {"osm": a, "overture": b, "ratio": round(a / b, 3) if b else None}
+                r[f"ov_{name}"] = r["overture"][name]["ratio"] if b >= 10 else None
     tgt = [r for r in rows if r["target"]]
     summary = {
         "wikidata_recall_reference_524": _region_summary(rows, "wd_recall"),
         "wikidata_recall_targets_86": _region_summary(tgt, "wd_recall"),
+        "wikidata_recall_all_items_reference_524": _region_summary(rows, "wd_recall_all"),
         "wikidata_museum_recall_reference_524": _region_summary(rows, "wd_recall_museums"),
         **{f"osm_over_overture_{k}_targets_86": _region_summary(tgt, f"ov_{k}") for k in OVERTURE_PAIRS},
+        "osm_over_overture_culture_core_targets_86": _region_summary(tgt, "ov_culture_core"),
+        "osm_over_overture_nightlife_targets_86": _region_summary(tgt, "ov_nightlife"),
+        "agreement_targets_86": _agreement(tgt),
         "api_consistency": chk,
     }
     (RAW / "validation_summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
     REFERENCE.mkdir(parents=True, exist_ok=True)
     with (REFERENCE / f"{SOURCE_ID}.csv").open("w") as f:
         f.write("city_id,region,pop_2025,area_km2,culture_dedup,nightlife_dedup,culture_per_km2,"
-                "nightlife_per_km2,culture_per_100k,nightlife_per_100k,wd_items,wd_recall\n")
+                "nightlife_per_km2,culture_per_100k,nightlife_per_100k,wd_items,wd_notable,wd_recall_notable\n")
         for r in sorted(rows, key=lambda r: r["city_id"]):
             f.write(f"{r['city_id']},\"{r['region']}\",{r['pop']:.0f},{r['area']:.1f},{r['culture_dedup']},"
                     f"{r['nightlife_dedup']},{r['culture_dedup'] / r['area']:.4f},"
                     f"{r['nightlife_dedup'] / r['area']:.4f},{r['culture_dedup'] / r['pop'] * 1e5:.3f},"
-                    f"{r['nightlife_dedup'] / r['pop'] * 1e5:.3f},{r['wikidata']['n_items']},"
+                    f"{r['nightlife_dedup'] / r['pop'] * 1e5:.3f},{r['wikidata']['n_items']},{r['wikidata']['n_notable']},"
                     f"{'' if r['wikidata']['recall'] is None else r['wikidata']['recall']}\n")
 
     out = Interim(source_id=SOURCE_ID, inputs=[f"{QLEVER_OSM}#{snap}", f"{QLEVER_WD}#{_qhash(wst['name-index'])}",
