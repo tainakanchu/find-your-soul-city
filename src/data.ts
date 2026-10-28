@@ -53,3 +53,20 @@ export function roundBounded(x: number, max = 100): string {
   if (r <= 0 && x > 0) return "1 未満";
   return String(r);
 }
+
+const REF_COUNT = /\((\d+)\)/.exec(knowledge.reference.set)?.[1] ?? "";
+
+/** Plain-language position of a directional value in the reference distribution (fit = percentile, reversed for lower_better). */
+export function rankWords(kind: "higher_better" | "lower_better", fit: number): string {
+  const top = Math.max(1, Math.round((1 - fit) * 100));
+  const side = kind === "higher_better" ? "多いほうから" : "少ないほうから";
+  return `世界の人口 100 万人以上の都市圏 ${REF_COUNT} の中で、${side}およそ ${top}% の位置`;
+}
+
+/** Words for the ±10% weight-perturbation stability. */
+export const stabilityWords = (s: number) =>
+  s >= 0.9
+    ? "はっきりした 1 位です"
+    : s >= 0.6
+      ? "おおむね安定した 1 位です"
+      : "僅差で、条件が少し変わると入れ替わりやすい 1 位です";

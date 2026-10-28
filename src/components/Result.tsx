@@ -1,5 +1,16 @@
 import { useMemo } from "react";
-import { cityById, formatCoord, formatValue, knowledge, metricByKey, QUALITY_LABEL, roundBounded } from "../data.ts";
+import {
+  cityById,
+  formatCoord,
+  formatValue,
+  formatYear,
+  knowledge,
+  metricByKey,
+  QUALITY_LABEL,
+  roundBounded,
+  sourceById,
+  stabilityWords,
+} from "../data.ts";
 import { explain, rank, stability, type AxisScore, type Preference } from "../scoring/score.ts";
 import { Evidence } from "./Evidence.tsx";
 import { WorldPlot } from "./WorldPlot.tsx";
@@ -36,6 +47,18 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
   const used = first.axes.filter((a) => a.weight > 0).toSorted((a, b) => b.weight - a.weight);
   const missingAxes = used.filter((a) => a.value === null);
   const gap = ranked[1] ? first.total - ranked[1].total : null;
+  // Which observation years / periods this result rests on, per source (they differ, see each metric).
+  const periods = [
+    ...new Map(
+      used
+        .filter((a) => a.value !== null)
+        .map((a) => {
+          const mv = city.metrics[a.metric];
+          const src = sourceById.get(mv.sourceId)?.title ?? mv.sourceId;
+          return [src, `${src}: ${formatYear(mv.year)}`] as const;
+        }),
+    ).values(),
+  ];
 
   return (
     <section className="result">
@@ -45,8 +68,9 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
         {city.nameJa}（{city.countryName}） {formatCoord(city.lat, city.lon)}
       </p>
       <p className="summary">
-        適合度は {roundBounded(first.total)} / 100。重みを 1 項目ずつ ±10% 動かしても、{roundBounded(stable * 100)}%
-        の条件で 1 位のままでした。使ったデータの品質は、最も低いもので「{QUALITY_LABEL[first.quality]}」です。
+        適合度は {roundBounded(first.total)} / 100。{stabilityWords(stable)}（重みを 1 項目ずつ ±10% 動かしても、
+        {roundBounded(stable * 100)}% の条件で 1 位のまま）。使ったデータの品質は、最も低いもので「
+        {QUALITY_LABEL[first.quality]}」です。
         {gap !== null && gap < 2 && <> 2 位との差は {gap.toFixed(1)} 点で、僅差です。</>}
       </p>
       <p className="note">
@@ -59,6 +83,14 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
           欠けた条件が最も合わなかった場合から最も合った場合まで、適合度は {roundBounded(first.bounds[0])}〜
           {roundBounded(first.bounds[1])} の幅があります。
           {ranked[1] && first.bounds[0] < ranked[1].total && <>この幅の中では 2 位以下と入れ替わる可能性があります。</>}
+        </p>
+      )}
+
+      {periods.length > 0 && (
+        <p className="note">
+          使ったデータの時期はソースごとに違います。{periods.join("、")}。
+          {used.some((a) => a.metric === "urban_pop" || a.metric === "density_weighted") &&
+            "人口は国連の推計に合わせた 2025 年の推定値です。"}
         </p>
       )}
 

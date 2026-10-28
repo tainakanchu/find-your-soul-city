@@ -1,4 +1,5 @@
 import {
+  rankWords,
   KIND_LABEL,
   QUALITY_LABEL,
   formatValue,
@@ -56,6 +57,12 @@ export function Evidence({ axis, city }: { axis: AxisScore; city: City }) {
           <>
             <dt>向き</dt>
             <dd>{KIND_LABEL[m.kind]}</dd>
+            {axis.fit !== null && (
+              <>
+                <dt>位置</dt>
+                <dd>{rankWords(m.kind, axis.fit)}</dd>
+              </>
+            )}
           </>
         )}
         <dt>重み</dt>
