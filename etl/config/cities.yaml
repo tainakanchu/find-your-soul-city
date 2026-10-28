@@ -1,0 +1,94 @@
+# Target cities. Each city IS one GHS-UCDB R2024A urban centre (ID_UC_G0); every metric is
+# computed on (or matched to) that polygon so values are comparable across sources.
+# `ucdb_name` must equal GC_UCN_MAI_2025 for the id (checked by `cities.py`), guarding against id typos.
+# Selection: the 30 P1 cities + 56 added for region / climate / size diversity (see
+# knowledge/decisions/city-selection.md). Kyoto is excluded: GHS-UCDB merges it into the Osaka centre.
+cities:
+  # --- P1 set ---
+  - { city_id: tokyo, name_ja: 東京, ucdb_id: 5929, ucdb_name: Tokyo }
+  - { city_id: seoul, name_ja: ソウル, ucdb_id: 348, ucdb_name: Seoul }
+  - { city_id: taipei, name_ja: 台北, ucdb_id: 1142, ucdb_name: Taipei }
+  - { city_id: singapore, name_ja: シンガポール, ucdb_id: 178, ucdb_name: Singapore }
+  - { city_id: bangkok, name_ja: バンコク, ucdb_id: 2315, ucdb_name: Bangkok }
+  - { city_id: hanoi, name_ja: ハノイ, ucdb_id: 1999, ucdb_name: Hanoi }
+  - { city_id: mumbai, name_ja: ムンバイ, ucdb_id: 7599, ucdb_name: Mumbai }
+  - { city_id: dubai, name_ja: ドバイ, ucdb_id: 1007, ucdb_name: Dubai }
+  - { city_id: istanbul, name_ja: イスタンブール, ucdb_id: 2637, ucdb_name: Istanbul }
+  - { city_id: cairo, name_ja: カイロ, ucdb_id: 4605, ucdb_name: Cairo }
+  - { city_id: lagos, name_ja: ラゴス, ucdb_id: 1289, ucdb_name: Lagos }
+  - { city_id: nairobi, name_ja: ナイロビ, ucdb_id: 1717, ucdb_name: Nairobi }
+  - { city_id: cape-town, name_ja: ケープタウン, ucdb_id: 431, ucdb_name: Cape Town }
+  - { city_id: london, name_ja: ロンドン, ucdb_id: 5816, ucdb_name: London }
+  - { city_id: paris, name_ja: パリ, ucdb_id: 2878, ucdb_name: Paris }
+  - { city_id: berlin, name_ja: ベルリン, ucdb_id: 5483, ucdb_name: Berlin }
+  - { city_id: amsterdam, name_ja: アムステルダム, ucdb_id: 1590, ucdb_name: Amsterdam }
+  - { city_id: copenhagen, name_ja: コペンハーゲン, ucdb_id: 698, ucdb_name: Copenhagen }
+  - { city_id: vienna, name_ja: ウィーン, ucdb_id: 1081, ucdb_name: Vienna }
+  - { city_id: helsinki, name_ja: ヘルシンキ, ucdb_id: 572, ucdb_name: Helsinki }
+  - { city_id: reykjavik, name_ja: レイキャビク, ucdb_id: 48, ucdb_name: Reykjavik }
+  - { city_id: lisbon, name_ja: リスボン, ucdb_id: 231, ucdb_name: Lisbon }
+  - { city_id: barcelona, name_ja: バルセロナ, ucdb_id: 5071, ucdb_name: Barcelona }
+  - { city_id: new-york, name_ja: ニューヨーク, ucdb_id: 8099, ucdb_name: New York City }
+  - { city_id: vancouver, name_ja: バンクーバー, ucdb_id: 358, ucdb_name: Vancouver }
+  - { city_id: mexico-city, name_ja: メキシコシティ, ucdb_id: 5402, ucdb_name: Mexico City }
+  - { city_id: bogota, name_ja: ボゴタ, ucdb_id: 3881, ucdb_name: Bogota }
+  - { city_id: sao-paulo, name_ja: サンパウロ, ucdb_id: 7277, ucdb_name: São Paulo }
+  - { city_id: buenos-aires, name_ja: ブエノスアイレス, ucdb_id: 4443, ucdb_name: Buenos Aires }
+  - { city_id: sydney, name_ja: シドニー, ucdb_id: 2324, ucdb_name: Sydney }
+  # --- added for diversity ---
+  - { city_id: osaka, name_ja: 大阪, ucdb_id: 4399, ucdb_name: Osaka }
+  - { city_id: fukuoka, name_ja: 福岡, ucdb_id: 907, ucdb_name: Fukuoka }
+  - { city_id: sapporo, name_ja: 札幌, ucdb_id: 351, ucdb_name: Sapporo }
+  - { city_id: shanghai, name_ja: 上海, ucdb_id: 11345, ucdb_name: Shanghai }
+  - { city_id: beijing, name_ja: 北京, ucdb_id: 8745, ucdb_name: Beijing }
+  - { city_id: hong-kong, name_ja: 香港, ucdb_id: 11185, ucdb_name: Hong Kong }
+  - { city_id: ulaanbaatar, name_ja: ウランバートル, ucdb_id: 337, ucdb_name: Ulaanbaatar }
+  - { city_id: ho-chi-minh, name_ja: ホーチミン, ucdb_id: 5239, ucdb_name: Ho Chi Minh City }
+  - { city_id: kuala-lumpur, name_ja: クアラルンプール, ucdb_id: 1648, ucdb_name: Kuala Lumpur }
+  - { city_id: jakarta, name_ja: ジャカルタ, ucdb_id: 5472, ucdb_name: Jakarta }
+  - { city_id: manila, name_ja: マニラ, ucdb_id: 2323, ucdb_name: Manila }
+  - { city_id: new-delhi, name_ja: デリー, ucdb_id: 7963, ucdb_name: New Delhi }
+  - { city_id: bengaluru, name_ja: ベンガルール, ucdb_id: 9558, ucdb_name: Bengaluru }
+  - { city_id: dhaka, name_ja: ダッカ, ucdb_id: 6090, ucdb_name: Dhaka }
+  - { city_id: kathmandu, name_ja: カトマンズ, ucdb_id: 1822, ucdb_name: Kathmandu }
+  - { city_id: almaty, name_ja: アルマトイ, ucdb_id: 2847, ucdb_name: Almaty }
+  - { city_id: tehran, name_ja: テヘラン, ucdb_id: 5174, ucdb_name: Tehran }
+  - { city_id: tbilisi, name_ja: トビリシ, ucdb_id: 467, ucdb_name: Tbilisi }
+  - { city_id: tel-aviv, name_ja: テルアビブ, ucdb_id: 457, ucdb_name: Tel Aviv }
+  - { city_id: athens, name_ja: アテネ, ucdb_id: 854, ucdb_name: Athens }
+  - { city_id: rome, name_ja: ローマ, ucdb_id: 3938, ucdb_name: Rome }
+  - { city_id: milan, name_ja: ミラノ, ucdb_id: 1498, ucdb_name: Milan }
+  - { city_id: madrid, name_ja: マドリード, ucdb_id: 3338, ucdb_name: Madrid }
+  - { city_id: zurich, name_ja: チューリッヒ, ucdb_id: 1689, ucdb_name: Zurich }
+  - { city_id: munich, name_ja: ミュンヘン, ucdb_id: 5249, ucdb_name: Munich }
+  - { city_id: prague, name_ja: プラハ, ucdb_id: 560, ucdb_name: Prague }
+  - { city_id: budapest, name_ja: ブダペスト, ucdb_id: 964, ucdb_name: Budapest }
+  - { city_id: warsaw, name_ja: ワルシャワ, ucdb_id: 3712, ucdb_name: Warsaw }
+  - { city_id: stockholm, name_ja: ストックホルム, ucdb_id: 1693, ucdb_name: Stockholm }
+  - { city_id: oslo, name_ja: オスロ, ucdb_id: 828, ucdb_name: Oslo }
+  - { city_id: dublin, name_ja: ダブリン, ucdb_id: 394, ucdb_name: Dublin }
+  - { city_id: edinburgh, name_ja: エディンバラ, ucdb_id: 2186, ucdb_name: Edinburgh }
+  - { city_id: casablanca, name_ja: カサブランカ, ucdb_id: 2102, ucdb_name: Casablanca }
+  - { city_id: marrakesh, name_ja: マラケシュ, ucdb_id: 1853, ucdb_name: Marrakesh }
+  - { city_id: dakar, name_ja: ダカール, ucdb_id: 39, ucdb_name: Dakar }
+  - { city_id: accra, name_ja: アクラ, ucdb_id: 3175, ucdb_name: Accra }
+  - { city_id: addis-ababa, name_ja: アディスアベバ, ucdb_id: 5862, ucdb_name: Addis Ababa }
+  - { city_id: johannesburg, name_ja: ヨハネスブルグ, ucdb_id: 3512, ucdb_name: Johannesburg }
+  - { city_id: toronto, name_ja: トロント, ucdb_id: 2869, ucdb_name: Toronto }
+  - { city_id: montreal, name_ja: モントリオール, ucdb_id: 3700, ucdb_name: Montreal }
+  - { city_id: seattle, name_ja: シアトル, ucdb_id: 5098, ucdb_name: Seattle }
+  - { city_id: san-francisco, name_ja: サンフランシスコ, ucdb_id: 1461, ucdb_name: San Francisco }
+  - { city_id: los-angeles, name_ja: ロサンゼルス, ucdb_id: 2007, ucdb_name: Los Angeles }
+  - { city_id: denver, name_ja: デンバー, ucdb_id: 5932, ucdb_name: Denver }
+  - { city_id: chicago, name_ja: シカゴ, ucdb_id: 7532, ucdb_name: Chicago }
+  - { city_id: miami, name_ja: マイアミ, ucdb_id: 7168, ucdb_name: Miami }
+  - { city_id: honolulu, name_ja: ホノルル, ucdb_id: 193, ucdb_name: Honolulu }
+  - { city_id: havana, name_ja: ハバナ, ucdb_id: 367, ucdb_name: Havana }
+  - { city_id: lima, name_ja: リマ, ucdb_id: 2171, ucdb_name: Lima }
+  - { city_id: quito, name_ja: キト, ucdb_id: 2544, ucdb_name: Quito }
+  - { city_id: santiago, name_ja: サンティアゴ, ucdb_id: 2334, ucdb_name: Santiago }
+  - { city_id: rio-de-janeiro, name_ja: リオデジャネイロ, ucdb_id: 7799, ucdb_name: Rio de Janeiro }
+  - { city_id: montevideo, name_ja: モンテビデオ, ucdb_id: 804, ucdb_name: Montevideo }
+  - { city_id: melbourne, name_ja: メルボルン, ucdb_id: 1747, ucdb_name: Melbourne }
+  - { city_id: perth, name_ja: パース, ucdb_id: 498, ucdb_name: Perth }
+  - { city_id: auckland, name_ja: オークランド, ucdb_id: 1147, ucdb_name: Auckland }

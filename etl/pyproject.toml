@@ -1,0 +1,29 @@
+[project]
+name = "soulcity-etl"
+version = "0.1.0"
+description = "Offline ETL: public statistics -> per-city metrics for the soul-city diagnosis"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy",
+  "shapely",
+  "pyogrio",
+  "pyproj",
+  "rasterio",
+  "numcodecs",
+  "requests",
+  "pyyaml",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.uv]
+# Same rule as the JS side: only versions published at least two weeks ago.
+exclude-newer = "2026-10-14T00:00:00Z"
+package = false
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

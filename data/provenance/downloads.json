@@ -1,0 +1,8 @@
+{
+  "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_UCDB_GLOBE_R2024A/GHS_UCDB_GLOBE_R2024A/V1-2/GHS_UCDB_GLOBE_R2024A_V1_2.zip": {
+    "path": ".cache/raw/ghsl/GHS_UCDB_GLOBE_R2024A_V1_2.zip",
+    "bytes": 276662440,
+    "sha256": "12dc8d366a6057b832a070ba3f7b7b7c601bad191da0417a666851f35f10db2e",
+    "retrieved_at": "2026-10-28T20:30:50Z"
+  }
+}
