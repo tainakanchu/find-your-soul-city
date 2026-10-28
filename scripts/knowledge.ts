@@ -4,12 +4,15 @@ import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
 import { parse } from "yaml";
+import { findPlaceholders } from "../src/model/guard.ts";
 import type { City, Knowledge, Metric, MetricValue, Question, Source } from "../src/model/types.ts";
 
 const ROOT = "knowledge";
 const OUT = "src/generated/knowledge.json";
 const RESERVED = new Set(["index.md", "log.md"]);
-const QUALITIES = new Set(["observed", "estimated", "imputed", "placeholder", "missing"]);
+const QUALITIES = new Set(["observed", "estimated", "imputed", "missing"]);
+const KINDS = new Set(["ideal", "higher_better", "lower_better"]);
+const LICENSE_STATUSES = new Set(["verified", "restricted", "unverified"]);
 
 type Fm = Record<string, unknown>;
 interface Doc {
@@ -74,85 +77,99 @@ const num = (d: Doc, k: string): number => {
   return Number(v);
 };
 
-const sources: Source[] = ofType("Data Source").map((d) => ({
-  id: str(d, "source_id"),
-  title: str(d, "title"),
-  provider: str(d, "provider"),
-  url: typeof d.fm.resource === "string" ? d.fm.resource : null,
-  licenseStatus: str(d, "license_status"),
-}));
+const sourceDocs = ofType("Data Source");
+const sources: Source[] = sourceDocs
+  .filter((d) => d.fm.adoption === "adopted")
+  .map((d) => {
+    const status = str(d, "license_status");
+    if (!LICENSE_STATUSES.has(status)) fail(d.path, `unknown license_status ${status}`);
+    // A source the app shows numbers from must have a checked licence that allows publication.
+    if (status !== "verified") fail(d.path, `adopted source must have license_status: verified (is ${status})`);
+    return {
+      id: str(d, "source_id"),
+      title: str(d, "title"),
+      provider: str(d, "provider"),
+      url: str(d, "resource"),
+      version: str(d, "version"),
+      license: str(d, "license"),
+      licenseUrl: str(d, "license_url"),
+      attribution: str(d, "attribution"),
+      licenseStatus: status as Source["licenseStatus"],
+    };
+  });
 const sourceIds = new Set(sources.map((s) => s.id));
+const allSourceIds = new Set(sourceDocs.map((d) => String(d.fm.source_id)));
 
 const metricDocs = ofType("Metric");
-const derived = new Map<string, string[]>();
-const metrics: Metric[] = metricDocs.map((d) => {
-  const key = str(d, "metric_key");
-  const kind = str(d, "kind");
-  const transform = str(d, "transform");
-  if (kind !== "ideal" && kind !== "higher_better") fail(d.path, `unknown kind ${kind}`);
-  if (transform !== "linear" && transform !== "log10") fail(d.path, `unknown transform ${transform}`);
-  if (kind === "ideal") num(d, "tolerance");
-  const sourceId = str(d, "planned_source");
-  if (!sourceIds.has(sourceId)) fail(d.path, `unknown planned_source ${sourceId}`);
-  if (Array.isArray(d.fm.derived_from)) derived.set(key, d.fm.derived_from.map(String));
-  return {
-    key,
-    label: str(d, "title"),
-    unit: str(d, "unit"),
-    kind: kind as Metric["kind"],
-    transform: transform as Metric["transform"],
-    tolerance: typeof d.fm.tolerance === "number" ? d.fm.tolerance : null,
-    sourceId,
-  };
-});
+for (const d of metricDocs) {
+  const a = d.fm.adoption;
+  if (a !== "adopted" && a !== "rejected") fail(d.path, "`adoption` must be adopted or rejected");
+  if (a === "rejected") str(d, "rejection_reason");
+  if (!allSourceIds.has(String(d.fm.source))) fail(d.path, `unknown source ${String(d.fm.source)}`);
+}
+const metrics: Metric[] = metricDocs
+  .filter((d) => d.fm.adoption === "adopted")
+  .map((d) => {
+    const kind = str(d, "kind");
+    const transform = str(d, "transform");
+    if (!KINDS.has(kind)) fail(d.path, `unknown kind ${kind}`);
+    if (transform !== "linear" && transform !== "log10") fail(d.path, `unknown transform ${transform}`);
+    if (kind === "ideal") num(d, "tolerance");
+    const sourceId = str(d, "source");
+    if (!sourceIds.has(sourceId)) fail(d.path, `adopted metric uses non-adopted source ${sourceId}`);
+    return {
+      key: str(d, "metric_key"),
+      label: str(d, "title"),
+      unit: str(d, "unit"),
+      kind: kind as Metric["kind"],
+      transform: transform as Metric["transform"],
+      tolerance: typeof d.fm.tolerance === "number" ? d.fm.tolerance : null,
+      sourceId,
+      period: str(d, "period"),
+      geography: str(d, "geography"),
+      method: str(d, "method"),
+      caveat: str(d, "caveat"),
+    };
+  });
 const metricKeys = new Set(metrics.map((m) => m.key));
-const rawKeys = metrics.map((m) => m.key).filter((k) => !derived.has(k));
-
-const worst = (vs: MetricValue[]): MetricValue["quality"] => {
-  const order = ["missing", "placeholder", "imputed", "estimated", "observed"];
-  return vs.map((v) => v.quality).toSorted((a, b) => order.indexOf(a) - order.indexOf(b))[0];
-};
+const allMetricKeys = new Set(metricDocs.map((d) => String(d.fm.metric_key)));
 
 const cities: City[] = ofType("City").map((d) => {
   const raw = (d.fm.metrics ?? {}) as Record<string, Record<string, unknown>>;
   const values: Record<string, MetricValue> = {};
-  for (const key of rawKeys) {
-    const e = raw[key];
+  for (const m of metrics) {
+    const e = raw[m.key];
     if (!e) {
-      fail(d.path, `metric ${key} not recorded (use quality: missing instead of omitting)`);
+      fail(d.path, `metric ${m.key} not recorded (use quality: missing instead of omitting); run pnpm etl`);
       continue;
     }
     const quality = String(e.quality);
     const value = e.value === null ? null : Number(e.value);
-    if (!QUALITIES.has(quality)) fail(d.path, `${key}: unknown quality ${quality}`);
-    if ((quality === "missing") !== (value === null)) fail(d.path, `${key}: value must be null iff quality is missing`);
-    if (!sourceIds.has(String(e.source))) fail(d.path, `${key}: unknown source ${String(e.source)}`);
-    values[key] = {
+    if (!QUALITIES.has(quality)) fail(d.path, `${m.key}: quality "${quality}" is not allowed (placeholder data is banned)`);
+    if ((quality === "missing") !== (value === null)) fail(d.path, `${m.key}: value must be null iff quality is missing`);
+    if (quality === "missing" && typeof e.reason !== "string") fail(d.path, `${m.key}: missing value needs a reason`);
+    if (String(e.source) !== m.sourceId) fail(d.path, `${m.key}: source ${String(e.source)} ≠ metric source ${m.sourceId}`);
+    if (value !== null && !Number.isFinite(value)) fail(d.path, `${m.key}: value is not finite`);
+    values[m.key] = {
       value,
       quality: quality as MetricValue["quality"],
       sourceId: String(e.source),
-      year: e.year == null ? null : Number(e.year),
+      year: e.year == null ? null : typeof e.year === "number" ? e.year : String(e.year),
+      ...(quality === "missing" ? { reason: String(e.reason) } : {}),
     };
   }
-  for (const key of Object.keys(raw)) if (!metricKeys.has(key)) fail(d.path, `unknown metric ${key}`);
-  for (const [key, from] of derived) {
-    const parts = from.map((k) => values[k]).filter(Boolean);
-    const [a, b] = parts;
-    const missing = parts.length !== 2 || a.value === null || b.value === null;
-    values[key] = {
-      value: missing ? null : Math.round((a.value! - b.value!) * 10) / 10,
-      quality: missing ? "missing" : worst(parts),
-      sourceId: a?.sourceId ?? "",
-      year: a?.year ?? null,
-    };
-  }
+  for (const key of Object.keys(raw)) if (!allMetricKeys.has(key)) fail(d.path, `unknown metric ${key}`);
+  const b = (d.fm.boundary ?? {}) as Fm;
+  if (typeof b.id !== "number" || typeof b.area_km2 !== "number") fail(d.path, "boundary.id / boundary.area_km2 required");
   return {
     id: str(d, "city_id"),
     nameJa: str(d, "name_ja"),
     nameEn: str(d, "title"),
     country: str(d, "country"),
+    region: str(d, "region"),
     lat: num(d, "lat"),
     lon: num(d, "lon"),
+    boundary: { sourceId: String(b.source), id: Number(b.id), areaKm2: Number(b.area_km2) },
     metrics: values,
   };
 });
@@ -160,7 +177,7 @@ const cities: City[] = ofType("City").map((d) => {
 const questions: Question[] = ofType("Question")
   .map((d) => {
     const metric = str(d, "metric");
-    if (!metricKeys.has(metric)) fail(d.path, `unknown metric ${metric}`);
+    if (!metricKeys.has(metric)) fail(d.path, `metric ${metric} is not an adopted metric`);
     const answerKind = str(d, "answer_kind");
     if (answerKind !== "ideal" && answerKind !== "importance") fail(d.path, `unknown answer_kind ${answerKind}`);
     const options = Array.isArray(d.fm.options) ? (d.fm.options as Fm[]) : [];
@@ -184,8 +201,8 @@ const model = models[0];
 for (const [label, ids] of [
   ["city_id", cities.map((c) => c.id)],
   ["question_id", questions.map((q) => q.id)],
-  ["metric_key", [...metricKeys]],
-  ["source_id", [...sourceIds]],
+  ["metric_key", metricDocs.map((d) => String(d.fm.metric_key))],
+  ["source_id", sourceDocs.map((d) => String(d.fm.source_id))],
 ] as const) {
   const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
   if (dup.length) fail(ROOT, `duplicate ${label}: ${dup.join(", ")}`);
@@ -201,12 +218,14 @@ for (const dir of new Set(docs.map((d) => dirname(d.path)))) {
   indexes.set(join(dir, "index.md"), `# ${dir.slice(ROOT.length + 1)}\n\n${items.join("\n")}\n`);
 }
 
+const body = { metrics, cities, questions, sources };
+for (const msg of findPlaceholders(body)) fail(ROOT, msg);
+
 if (errors.length) {
   console.error(errors.map((e) => `✗ ${e}`).join("\n"));
   process.exit(1);
 }
 
-const body = { metrics, cities, questions, sources };
 const knowledge: Knowledge = {
   modelVersion: str(model, "model_version"),
   minCoverage: num(model, "min_coverage"),

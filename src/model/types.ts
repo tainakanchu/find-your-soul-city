@@ -1,11 +1,15 @@
-export const QUALITY_ORDER = ["placeholder", "imputed", "estimated", "observed"] as const;
+/** Worst → best. `missing` is not a quality of a value but its absence. */
+export const QUALITY_ORDER = ["imputed", "estimated", "observed"] as const;
 export type Quality = (typeof QUALITY_ORDER)[number] | "missing";
 
 export interface MetricValue {
   value: number | null;
   quality: Quality;
   sourceId: string;
-  year: number | null;
+  /** Observation year, or "YYYY-YYYY" for a climatological period. */
+  year: number | string | null;
+  /** Why the value is missing (only when quality is missing). */
+  reason?: string;
 }
 
 export interface City {
@@ -13,8 +17,10 @@ export interface City {
   nameJa: string;
   nameEn: string;
   country: string;
+  region: string;
   lat: number;
   lon: number;
+  boundary: { sourceId: string; id: number; areaKm2: number };
   metrics: Record<string, MetricValue>;
 }
 
@@ -22,10 +28,15 @@ export interface Metric {
   key: string;
   label: string;
   unit: string;
-  kind: "ideal" | "higher_better";
+  /** ideal: distance to the user's ideal. higher_better / lower_better: position in the reference distribution. */
+  kind: "ideal" | "higher_better" | "lower_better";
   transform: "linear" | "log10";
   tolerance: number | null;
   sourceId: string;
+  period: string;
+  geography: string;
+  method: string;
+  caveat: string;
 }
 
 export interface QuestionOption {
@@ -47,8 +58,12 @@ export interface Source {
   id: string;
   title: string;
   provider: string;
-  url: string | null;
-  licenseStatus: string;
+  url: string;
+  version: string;
+  license: string;
+  licenseUrl: string;
+  attribution: string;
+  licenseStatus: "verified" | "restricted" | "unverified";
 }
 
 export interface Knowledge {

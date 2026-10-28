@@ -28,28 +28,37 @@ export interface Ranking {
   insufficient: CityResult[];
 }
 
-type Scales = Map<string, { lo: number; hi: number }>;
+/** Robust range per directional metric: values at or below `lo` score 0, at or above `hi` score 1 (reversed for lower_better). */
+export type Scales = Map<string, { lo: number; hi: number }>;
+
+export interface RankOptions {
+  /** Override the directional scales (validation: normalisation sensitivity). */
+  scales?: Scales;
+  /** Override the coverage threshold (validation: missing-data handling). */
+  minCoverage?: number;
+}
 
 const qualityRank = (q: Quality) => QUALITY_ORDER.indexOf(q as (typeof QUALITY_ORDER)[number]);
 
 const t = (m: Metric, v: number) => (m.transform === "log10" ? Math.log10(v) : v);
 
-function quantile(sorted: number[], q: number): number {
+export function quantile(sorted: number[], q: number): number {
   const pos = (sorted.length - 1) * q;
   const i = Math.floor(pos);
   return sorted[i] + (sorted[Math.min(i + 1, sorted.length - 1)] - sorted[i]) * (pos - i);
 }
 
-/** q10–q90 robust scale for higher_better metrics, over cities with a value. */
-export function buildScales(k: Knowledge): Scales {
+/** q10–q90 robust scale for directional metrics, over the given cities (default: all) that have a value. */
+export function buildScales(k: Knowledge, cities: City[] = k.cities, q: [number, number] = [0.1, 0.9]): Scales {
   const scales: Scales = new Map();
   for (const m of k.metrics) {
-    if (m.kind !== "higher_better") continue;
-    const vs = k.cities
+    if (m.kind === "ideal") continue;
+    const vs = cities
       .map((c) => c.metrics[m.key]?.value)
       .filter((v): v is number => v != null)
+      .map((v) => t(m, v))
       .toSorted((a, b) => a - b);
-    scales.set(m.key, { lo: quantile(vs, 0.1), hi: quantile(vs, 0.9) });
+    if (vs.length) scales.set(m.key, { lo: quantile(vs, q[0]), hi: quantile(vs, q[1]) });
   }
   return scales;
 }
@@ -60,12 +69,13 @@ export function fit(m: Metric, value: number, ideal: number | undefined, scales:
     const d = (t(m, value) - t(m, ideal)) / m.tolerance;
     return Math.exp(-0.5 * d * d);
   }
-  const { lo, hi } = scales.get(m.key)!;
-  return hi === lo ? 1 : Math.min(1, Math.max(0, (value - lo) / (hi - lo)));
+  const s = scales.get(m.key);
+  if (!s) throw new Error(`no scale for ${m.key}`);
+  const x = s.hi === s.lo ? 1 : Math.min(1, Math.max(0, (t(m, value) - s.lo) / (s.hi - s.lo)));
+  return m.kind === "lower_better" ? 1 - x : x;
 }
 
-function scoreCity(k: Knowledge, c: City, prefs: Preference[], scales: Scales): CityResult {
-  const metrics = new Map(k.metrics.map((m) => [m.key, m]));
+function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], scales: Scales): CityResult {
   let sum = 0;
   let used = 0;
   let all = 0;
@@ -90,25 +100,28 @@ function scoreCity(k: Knowledge, c: City, prefs: Preference[], scales: Scales): 
   };
 }
 
-export function rank(k: Knowledge, prefs: Preference[]): Ranking {
-  const scales = buildScales(k);
+export function rank(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): Ranking {
+  const scales = opts.scales ?? buildScales(k);
+  const minCoverage = opts.minCoverage ?? k.minCoverage;
+  const metrics = new Map(k.metrics.map((m) => [m.key, m]));
   const results = k.cities
-    .map((c) => scoreCity(k, c, prefs, scales))
+    .map((c) => scoreCity(metrics, c, prefs, scales))
     .toSorted((a, b) => b.total - a.total || a.cityId.localeCompare(b.cityId));
   return {
-    ranked: results.filter((r) => r.coverage >= k.minCoverage),
-    insufficient: results.filter((r) => r.coverage < k.minCoverage),
+    ranked: results.filter((r) => r.coverage >= minCoverage),
+    insufficient: results.filter((r) => r.coverage < minCoverage),
   };
 }
 
 /** Share of ±10% single-axis weight perturbations that keep the same #1. */
-export function stability(k: Knowledge, prefs: Preference[]): number {
-  const top = rank(k, prefs).ranked[0]?.cityId;
+export function stability(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): number {
+  const scales = opts.scales ?? buildScales(k);
+  const top = rank(k, prefs, { ...opts, scales }).ranked[0]?.cityId;
   const runs = prefs
     .filter((p) => p.weight > 0)
     .flatMap((p) => [0.9, 1.1].map((f) => prefs.map((q) => (q === p ? { ...q, weight: q.weight * f } : q))));
   if (!top || runs.length === 0) return 1;
-  return runs.filter((r) => rank(k, r).ranked[0]?.cityId === top).length / runs.length;
+  return runs.filter((r) => rank(k, r, { ...opts, scales }).ranked[0]?.cityId === top).length / runs.length;
 }
 
 export function explain(r: CityResult): { matches: AxisScore[]; mismatches: AxisScore[] } {
