@@ -161,7 +161,7 @@ def main() -> None:
         w.writeheader()
         w.writerows(table)
 
-    # Missing-rate report, overall and by region (fairness monitoring, proposal §5).
+    # Missing-rate report, overall and by region (fairness monitoring).
     by_metric: dict[str, list[bool]] = defaultdict(list)
     by_region: dict[tuple[str, str], list[bool]] = defaultdict(list)
     for r in table:

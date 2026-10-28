@@ -1,6 +1,6 @@
 # あなたの魂の故郷は世界のどこ？
 
-都市統計 × 個人の好みによる都市適合診断。[企画書 v1.0](knowledge/references/proposal-v1-0.md) の P1（診断試作）。
+都市統計 × 個人の好みによる都市適合診断。
 
 都市の指標はすべて公開統計から ETL で算出した実データ（86 都市 × 13 指標、欠損 14/1118）。仮値は使っておらず、混入したらビルドが失敗する。
 
@@ -18,7 +18,6 @@
 
 ```
 knowledge/        OKF v0.2 バンドル。データ・設問・モデル定義の正本
-  references/     企画書原文
   sources/        データソース（license_status を管理）
   metrics/        指標定義（kind / transform / tolerance）
   questions/      設問と回答→理想値・重みの変換

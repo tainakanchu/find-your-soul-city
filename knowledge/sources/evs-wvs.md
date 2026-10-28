@@ -14,4 +14,4 @@ generated: { by: claude, at: 2026-10-28T00:00:00Z }
 
 # 不採用の理由
 
-国単位の標本を都市住民の属性とみなせない（企画書 §4, §10）。[価値観スコアは別枠](/decisions/values-score-separate.md)。
+国単位の標本を都市住民の属性とみなせない。[価値観スコアは別枠](/decisions/values-score-separate.md)。

@@ -8,13 +8,11 @@ tags: [model, scoring]
 model_version: 0.2.0
 min_coverage: 0.75
 generated: { by: claude, at: 2026-10-28T00:00:00Z }
-sources:
-  - { id: proposal, resource: /references/proposal-v1-0.md, title: 企画書 v1.0 §5 }
 ---
 
 # 総合スコア
 
-都市 c・ユーザー u・軸 i について S(u,c) = 100 × Σ w_i f_i / Σ w_i。和は都市 c で欠損していない軸だけで取る。[^proposal]
+都市 c・ユーザー u・軸 i について S(u,c) = 100 × Σ w_i f_i / Σ w_i。和は都市 c で欠損していない軸だけで取る。
 
 # 適合関数 f_i
 
@@ -55,4 +53,3 @@ v0.1 は方向型を「対象都市の 10〜90 パーセンタイルで線形、
 
 同点は `city_id` の昇順。乱数は使わない（検証スクリプトは seed 固定）。同じ回答・同じデータ版・同じモデル版なら結果は一致する。
 
-[^proposal]: 企画書 v1.0 §5 スコアリング仕様（仮説）
