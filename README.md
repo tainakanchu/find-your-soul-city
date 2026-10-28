@@ -75,3 +75,8 @@ gh api -X POST "repos/{owner}/{repo}/pages" -f build_type=workflow
 ```
 
 `BASE_PATH` はリポジトリ名から設定している。`<owner>.github.io` リポジトリやカスタムドメインで配信する場合は `/` にする。ホスティング判断の経緯は [decisions/hosting-github-pages](knowledge/decisions/hosting-github-pages.md)。
+
+## ライセンス
+
+- コード: [MIT](LICENSE)
+- 都市指標データ（`data/`、`knowledge/cities/`、生成される `src/generated/knowledge.json` など）: [ODbL 1.0](DATA-LICENSE.md)。各ソースの帰属表示も同ファイルとアプリの「データと計算方法」に記載。

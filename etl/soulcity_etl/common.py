@@ -32,6 +32,8 @@ REFERENCE = DATA / "reference"
 DOWNLOADS = PROVENANCE / "downloads.json"
 
 QUALITIES = {"observed", "estimated", "imputed", "missing"}
+# Identify ourselves to data providers (knowledge/decisions/external-access-policy.md).
+USER_AGENT = "soul-city-etl/0.1 (+https://github.com/tainakanchu/find-your-soul-city)"
 
 
 def now_iso() -> str:
@@ -65,15 +67,24 @@ def fetch(url: str, dest: Path, *, refresh: bool = False, record: bool = True, r
     dest.parent.mkdir(parents=True, exist_ok=True)
     if refresh or not dest.exists():
         tmp = dest.with_suffix(dest.suffix + ".part")
+        headers = {"User-Agent": USER_AGENT, **kwargs.pop("headers", {})}
         for attempt in range(retries + 1):
             try:
-                with requests.get(url, stream=True, timeout=timeout, **kwargs) as r:
+                with requests.get(url, stream=True, timeout=timeout, headers=headers, **kwargs) as r:
                     r.raise_for_status()
                     with tmp.open("wb") as f:
                         for chunk in r.iter_content(1 << 20):
                             f.write(chunk)
                 os.replace(tmp, dest)
                 break
+            except requests.HTTPError as e:
+                # Rate limiting / server distress: stop instead of hammering the provider.
+                if e.response is not None and e.response.status_code in (429, 503):
+                    raise
+                if attempt == retries:
+                    raise
+                time.sleep(2 ** (attempt + 1))
+                continue
             except (requests.RequestException, OSError):
                 if attempt == retries:
                     raise

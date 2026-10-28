@@ -2,6 +2,7 @@
   "name": "soul-city",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "knowledge:build": "node scripts/knowledge.ts build",

@@ -27,4 +27,4 @@ generated: { by: claude, at: 2026-10-28T00:00:00Z }
 | ESA WorldCover | CC BY 4.0 | 可 | "© ESA WorldCover project 2021 / ..." の表示 |
 | ITDP Atlas | ODbL 1.0 | 可 | 表示・派生 DB の share-alike |
 
-アプリのソースコード自体のライセンスは別途オーナーが決める。
+アプリのソースコードは MIT License（`LICENSE`）。データとコードでライセンスを分ける。

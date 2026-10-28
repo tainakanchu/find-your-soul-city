@@ -21,6 +21,11 @@ The goal is real, traceable public statistics — NOT a prototype.
 7. Pin any new Python dependency through `uv add` (pyproject has exclude-newer; keep it). Don't touch the JS app,
    `knowledge/`, or other agents' modules. Don't run git commit/checkout/reset/stash — the orchestrator commits.
 8. Licenses: read the provider's actual license text (URL + quote the operative sentence) — do not guess.
+9. External services (knowledge/decisions/external-access-policy.md): use only routes the provider documents for
+   data access (downloads, documented APIs, public buckets, releases). Never script a web UI (Shiny/websocket
+   handlers, form posts, hidden endpoints, headless browsers) to extract data. Read terms/rate limits first, go
+   sequential, use common.fetch(). On 429/5xx/timeouts/"too busy" or any error you caused: stop, don't retry,
+   write it in your notes and report it. If only an undocumented route is left, stop and ask the orchestrator.
 
 ## Deliverables per source
 

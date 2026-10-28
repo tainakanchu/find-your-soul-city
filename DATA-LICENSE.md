@@ -6,7 +6,7 @@ and the generated `src/generated/knowledge.json` — is made available under the
 Individual contents are under the [Database Contents License v1.0](https://opendatacommons.org/licenses/dbcl/1-0/).
 The method used to produce it is the ETL in `etl/` (ODbL §4.6).
 
-This license covers the data only. It does not cover the application source code.
+This license covers the data only. The application source code is under the MIT License (`LICENSE`).
 
 ## Sources and required attribution
 
