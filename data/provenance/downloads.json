@@ -4082,6 +4082,24 @@
     "license": "ODbL 1.0 (database) + DbCL 1.0 (contents) - https://atlas.itdp.org/about/about_data.html",
     "retrieved_at": "2026-10-29T02:12:59Z"
   },
+  "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/CHANGELOG.txt": {
+    "path": ".cache/raw/ghsl-hazard/glofas_flood_hazard_CHANGELOG.txt",
+    "bytes": 3266,
+    "sha256": "e55dccb71899edd807ab637155ea23edd07f0b7853c3d0587090d5b06f9f5282",
+    "retrieved_at": "2026-10-29T03:24:32Z"
+  },
+  "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/README.txt": {
+    "path": ".cache/raw/ghsl-hazard/glofas_flood_hazard_README.txt",
+    "bytes": 5073,
+    "sha256": "5082d406ba1e0460374670e3216c816db927116731ee64310dd383eff668cc21",
+    "retrieved_at": "2026-10-29T03:24:31Z"
+  },
+  "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/copyright.txt": {
+    "path": ".cache/raw/ghsl-hazard/glofas_flood_hazard_copyright.txt",
+    "bytes": 540,
+    "sha256": "f20723519a580fb35b3499870f0b1baea54f483195105416e547f0014f1610d2",
+    "retrieved_at": "2026-10-29T03:24:30Z"
+  },
   "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2025_GLOBE_R2023A_54009_1000_V1_0.zip": {
     "path": ".cache/raw/ghsl-pop/GHS_POP_E2025_GLOBE_R2023A_54009_1000_V1_0.zip",
     "bytes": 323340844,
@@ -4099,6 +4117,12 @@
     "bytes": 540,
     "sha256": "f20723519a580fb35b3499870f0b1baea54f483195105416e547f0014f1610d2",
     "retrieved_at": "2026-10-28T20:40:07Z"
+  },
+  "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/LISCOAST/copyright.txt": {
+    "path": ".cache/raw/ghsl-hazard/liscoast_copyright.txt",
+    "bytes": 540,
+    "sha256": "f20723519a580fb35b3499870f0b1baea54f483195105416e547f0014f1610d2",
+    "retrieved_at": "2026-10-29T03:25:51Z"
   },
   "https://ndownloader.figshare.com/files/12407516": {
     "path": ".cache/raw/ghsl/Beck_KG_V1.zip",
@@ -4461,6 +4485,24 @@
     "bytes": 44194593,
     "sha256": "7327142987afd5a9c2c156c43f24d84c9dd634918f0944cebc0ca5dc5c145197",
     "retrieved_at": "2026-10-28T21:16:45Z"
+  },
+  "https://zenodo.org/api/records/8269680": {
+    "path": ".cache/raw/ghsl-hazard/zenodo_8269680_myriad_hes.json",
+    "bytes": 10298,
+    "sha256": "6f649e01f610e416fd83439fa298062ad3d588a8a7c1b62e292c6e1ab3bcd0d1",
+    "retrieved_at": "2026-10-29T03:25:50Z"
+  },
+  "https://zenodo.org/api/records/8269680/files/METADATA.pdf/content": {
+    "path": ".cache/raw/ghsl-hazard/MYRIAD-HES_METADATA.pdf",
+    "bytes": 259145,
+    "sha256": "6736860c91336e24aabdadc5c5514c08032175f0ab6094f676b72d4711f2d471",
+    "retrieved_at": "2026-10-29T03:26:00Z"
+  },
+  "https://zenodo.org/api/records/8409647": {
+    "path": ".cache/raw/ghsl-hazard/zenodo_8409647_gem_gshm.json",
+    "bytes": 6370,
+    "sha256": "411e805c76a1b0b8026bf2017cc86cb5dfd6346bedbb1db21ea70af93f750362",
+    "retrieved_at": "2026-10-29T03:23:52Z"
   },
   "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/*.parquet": {
     "release": "2026-10-21.0",

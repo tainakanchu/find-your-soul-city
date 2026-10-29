@@ -68,8 +68,8 @@ export function Evidence({ axis, city }: { axis: AxisScore; city: City }) {
                 )}
                 <dt>十分な水準</dt>
                 <dd>
-                  {(knowledge.directionalTargets[String(axis.weight)] ?? 1) < 1
-                    ? `参照集合の上位 ${Math.round((1 - knowledge.directionalTargets[String(axis.weight)]) * 100)}% 以内なら満点`
+                  {(knowledge.directionalTargets[String(axis.answerWeight ?? axis.weight)] ?? 1) < 1
+                    ? `参照集合の上位 ${Math.round((1 - knowledge.directionalTargets[String(axis.answerWeight ?? axis.weight)]) * 100)}% 以内なら満点`
                     : "多いほど良い（上限なし）"}
                 </dd>
               </>
@@ -77,7 +77,12 @@ export function Evidence({ axis, city }: { axis: AxisScore; city: City }) {
           </>
         )}
         <dt>重み</dt>
-        <dd>{axis.weight}</dd>
+        <dd>
+          {axis.answerWeight ?? axis.weight}
+          {axis.answerWeight !== undefined && (
+            <span className="muted">（同じ設問やよく似た条件と分け合い {axis.weight.toFixed(2)}）</span>
+          )}
+        </dd>
         <dt>出典</dt>
         <dd>{source?.title ?? mv.sourceId}</dd>
         <dt>データの種類</dt>

@@ -15,19 +15,21 @@ boundary:
   id: 1717
   name: "Nairobi"
   area_km2: 598.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
 metrics:
   bike_protected: { value: 0.73, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 66.4, quality: observed, source: era5, year: "1990-2019" }
   culture: { value: 0.23, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 42214, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 14.9, quality: observed, source: era5, year: "1990-2019" }
+  flood: { value: 0.0, quality: estimated, source: ghsl-hazard, year: 2025 }
   pm25: { value: 20.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 678.4, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   temp_coldest: { value: 17.1, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 20.9, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 24.6, quality: observed, source: esa-worldcover, year: 2021 }
+  typhoon: { value: null, quality: missing, source: ghsl-hazard, year: null, reason: "HZ_CEV_TEV null for an epoch: centre not covered by the join" }
   urban_pop: { value: 6646257, quality: estimated, source: ghsl-ucdb, year: 2025 }
   walk_services: { value: 40.8, quality: observed, source: itdp-atlas, year: 2024 }
 ---
@@ -45,12 +47,14 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 1717「Nairobi」。面積 598.
 | 文化施設の密度 | 0.23 件/km² | 2026 | estimated |
 | 人口加重密度 | 42214 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 14.9 ℃ | 1990-2019 | observed |
+| 洪水の想定範囲に住む人口の割合 | 0.0 % | 2025 | estimated |
 | PM2.5 年平均濃度（人口加重） | 20.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 678.4 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 0.0 % | 2024 | observed |
 | 最寒月の平均気温 | 17.1 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 20.9 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 24.6 % | 2021 | observed |
+| 熱帯低気圧（台風・ハリケーン）の被災回数 | 欠損 | — | HZ_CEV_TEV null for an epoch: centre not covered by the join |
 | 都市圏の人口 | 6646257 人 | 2025 | estimated |
 | 徒歩圏に医療・教育がある人口の割合 | 40.8 % | 2024 | observed |
 

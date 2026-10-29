@@ -7,11 +7,16 @@ export interface Preference {
   ideal?: number;
   /** Directional metrics: percentile that counts as "enough" for this answer (overrides the model default). */
   target?: number;
+  /** Set by shareCorrelatedWeights: the answer's own weight before sharing. */
+  answerWeight?: number;
 }
 
 export interface AxisScore {
   metric: string;
+  /** Weight actually used, after sharing with correlated answers. */
   weight: number;
+  /** Weight from the answer (0 / 1 / 2) before sharing. */
+  answerWeight?: number;
   value: number | null;
   ideal?: number;
   fit: number | null;
@@ -48,6 +53,8 @@ export interface RankOptions {
   scales?: Scales;
   /** Override the coverage threshold (validation: missing-data handling). */
   minCoverage?: number;
+  /** Override the redundancy threshold (validation); a value above 1 disables weight sharing. */
+  redundancyThreshold?: number;
   /** Override the model's directional "enough" percentiles by weight (validation); `{}` = more is always better. */
   directionalTargets?: Record<string, number>;
 }
@@ -139,7 +146,7 @@ function scoreCity(
     all += p.weight;
     if (value === null || p.weight === 0) return { ...p, value, fit: null };
     const m = metrics.get(p.metric)!;
-    const f = fit(m, value, p.ideal, scales, p.target ?? targets[String(p.weight)]);
+    const f = fit(m, value, p.ideal, scales, p.target ?? targets[String(p.answerWeight ?? p.weight)]);
     sum += p.weight * f;
     sumOpen += p.weight * (m.kind === "ideal" ? f : fit(m, value, undefined, scales));
     used += p.weight;
@@ -157,13 +164,36 @@ function scoreCity(
   };
 }
 
+/**
+ * Correlated answers share their weight: w'_i = w_i / (1 + Σ_j |ρ_ij|) over the other weighted answers j with
+ * |ρ_ij| >= threshold (ρ from the reference set). Two answers on near-duplicate metrics then count about once,
+ * instead of twice. Depends only on the answers, so every city is scored with the same weights.
+ */
+export function shareCorrelatedWeights(
+  k: Knowledge,
+  prefs: Preference[],
+  threshold = k.redundancyThreshold,
+): Preference[] {
+  const corr = k.reference.correlations ?? {};
+  return prefs.map((p) => {
+    if (p.weight === 0) return p;
+    const shared = prefs
+      .filter((q) => q !== p && q.weight > 0)
+      .map((q) => Math.abs(corr[p.metric]?.[q.metric] ?? 0))
+      .filter((r) => r >= threshold)
+      .reduce((a, r) => a + r, 0);
+    return shared === 0 ? p : { ...p, weight: p.weight / (1 + shared), answerWeight: p.answerWeight ?? p.weight };
+  });
+}
+
 export function rank(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): Ranking {
   const scales = opts.scales ?? referenceScales(k);
   const minCoverage = opts.minCoverage ?? k.minCoverage;
   const targets = opts.directionalTargets ?? k.directionalTargets ?? {};
   const metrics = new Map(k.metrics.map((m) => [m.key, m]));
+  const shared = shareCorrelatedWeights(k, prefs, opts.redundancyThreshold);
   const results = k.cities
-    .map((c) => scoreCity(metrics, c, prefs, scales, targets))
+    .map((c) => scoreCity(metrics, c, shared, scales, targets))
     .toSorted(
       (a, b) =>
         (Math.abs(b.total - a.total) < 1e-9 ? 0 : b.total - a.total) ||

@@ -15,19 +15,21 @@ boundary:
   id: 348
   name: "Seoul"
   area_km2: 2282
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
 metrics:
   bike_protected: { value: 15.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 53.9, quality: observed, source: era5, year: "1990-2019" }
   culture: { value: 0.8, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 19829, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 22.0, quality: observed, source: era5, year: "1990-2019" }
+  flood: { value: 10.5, quality: estimated, source: ghsl-hazard, year: 2025 }
   pm25: { value: 26.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 1197, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 32.7, quality: observed, source: itdp-atlas, year: 2024 }
   temp_coldest: { value: -2.28, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 25.7, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 34.1, quality: observed, source: esa-worldcover, year: 2021 }
+  typhoon: { value: 1.0, quality: estimated, source: ghsl-hazard, year: "2004-2016" }
   urban_pop: { value: 22261692, quality: estimated, source: ghsl-ucdb, year: 2025 }
   walk_services: { value: 50.6, quality: observed, source: itdp-atlas, year: 2024 }
 ---
@@ -45,12 +47,14 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 348「Seoul」。面積 2282 km
 | 文化施設の密度 | 0.8 件/km² | 2026 | estimated |
 | 人口加重密度 | 19829 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 22.0 ℃ | 1990-2019 | observed |
+| 洪水の想定範囲に住む人口の割合 | 10.5 % | 2025 | estimated |
 | PM2.5 年平均濃度（人口加重） | 26.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 1197 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 32.7 % | 2024 | observed |
 | 最寒月の平均気温 | -2.28 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 25.7 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 34.1 % | 2021 | observed |
+| 熱帯低気圧（台風・ハリケーン）の被災回数 | 1.0 回/年 | 2004-2016 | estimated |
 | 都市圏の人口 | 22261692 人 | 2025 | estimated |
 | 徒歩圏に医療・教育がある人口の割合 | 50.6 % | 2024 | observed |
 

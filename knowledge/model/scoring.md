@@ -1,14 +1,16 @@
 ---
 type: Model Specification
-title: 都市適合スコア v0.3
+title: 都市適合スコア v0.4
 description: 理想値型・方向型の適合関数、基準分布による正規化、欠損・品質ラベル・頑健性の扱い。
 status: draft
 resource: ../../src/scoring/score.ts
 tags: [model, scoring]
-model_version: 0.3.0
+model_version: 0.4.0
 min_coverage: 0.75
 # Directional metrics: reference-set percentile that counts as "enough", by answer weight (1 = あると嬉しい, 2 = 絶対にほしい)
 directional_targets: { "1": 0.5, "2": 0.8 }
+# Answers on metrics whose |Spearman correlation| over the reference set is >= this share their weight
+redundancy_threshold: 0.5
 generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 
@@ -29,6 +31,14 @@ v0.1 は方向型を「対象都市の 10〜90 パーセンタイルで線形、
 2. スケールが対象 86 都市に依存し、都市を追加・削除すると他の都市のスコアが動く。
 
 百分位（基準分布）に変えることで張り付きがなくなり、対象都市を増減しても他都市のスコアは変わらない。
+
+# 相関する条件の重み（v0.4）
+
+指標どうしには相関がある（基準集合 524 都市圏の順位相関: 徒歩圏の医療・教育 × 文化施設、年降水量 × 雲量、自転車道 × 高速交通など）。両方を重視すると、ほぼ同じ要素を 2 回数えて、その要素に強い都市が過大に有利になる。
+
+そこで、回答者が重視した条件どうしで |ρ| が `redundancy_threshold`（0.5）以上の組があれば、重みを分け合う: w'_i = w_i / (1 + Σ_j |ρ_ij|)。ρ は [基準分布](/model/reference-distribution.md) の `correlations`（人口 100 万人以上の全都市圏での Spearman 順位相関）。重みの補正は回答だけで決まり、どの都市にも同じ重みで採点する。十分な水準 τ は補正前の重み（回答の重要度）で決める。
+
+しきい値 0.5 は「中程度以上の相関」の慣例的な目安で、統計から推定した値ではない。効果は [検証](/reports/validation.md) の 3c に示す。
 
 # v0.2 からの変更（十分な水準）
 

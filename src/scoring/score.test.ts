@@ -64,6 +64,7 @@ const k: Knowledge = {
   modelVersion: "test",
   minCoverage: 0.75,
   directionalTargets: {},
+  redundancyThreshold: 0.5,
   dataVersion: "test",
   sources: [],
   questions: [],
@@ -72,6 +73,7 @@ const k: Knowledge = {
     set: "test",
     levels: [0, 0.5, 1],
     metrics: { walk: { n: 3, quantiles: [0, 50, 100] }, pm: { n: 3, quantiles: [0, 20, 40] } },
+    correlations: {},
   },
   cities: [city("a", 25, 90), city("b", 20, 40), city("c", 25, null), city("d", 30, 60)],
 };
@@ -202,7 +204,7 @@ describe("reference distribution (default scales)", () => {
     const kr: Knowledge = {
       ...k,
       metrics: [metric({ key: "pop", kind: "higher_better", transform: "log10" })],
-      reference: { set: "t", levels: [0, 1], metrics: { pop: { n: 2, quantiles: [10, 1000] } } },
+      reference: { set: "t", levels: [0, 1], metrics: { pop: { n: 2, quantiles: [10, 1000] } }, correlations: {} },
     };
     const s = referenceScales(kr).get("pop")!;
     expect(s).toEqual({ type: "cdf", levels: [0, 1], quantiles: [1, 3] });
@@ -265,5 +267,52 @@ describe("directional targets (enough = full marks)", () => {
     const open = rank(kk, prefs2, { directionalTargets: {} }).ranked.map((r) => r.total);
     expect(Math.max(...capped)).toBe(100);
     expect(capped.filter((x) => x === 100).length).toBeGreaterThanOrEqual(open.filter((x) => x === 100).length);
+  });
+});
+
+describe("shareCorrelatedWeights", () => {
+  const kc: Knowledge = {
+    ...k,
+    reference: {
+      ...k.reference,
+      correlations: { walk: { pm: -0.8, temp: 0.2 }, pm: { walk: -0.8, temp: 0.1 }, temp: { walk: 0.2, pm: 0.1 } },
+    },
+  };
+
+  it("splits weight between strongly correlated answers (|rho| >= threshold), keeping the answer weight", async () => {
+    const { shareCorrelatedWeights } = await import("./score.ts");
+    const out = shareCorrelatedWeights(kc, [
+      { metric: "walk", weight: 1 },
+      { metric: "pm", weight: 2 },
+      { metric: "temp", weight: 1, ideal: 25 },
+    ]);
+    expect(out[0]).toMatchObject({ weight: 1 / 1.8, answerWeight: 1 });
+    expect(out[1]).toMatchObject({ weight: 2 / 1.8, answerWeight: 2 });
+    expect(out[2]).toEqual({ metric: "temp", weight: 1, ideal: 25 }); // weakly correlated: untouched
+  });
+
+  it("does nothing when the partner is not weighted or the threshold is above 1", async () => {
+    const { shareCorrelatedWeights } = await import("./score.ts");
+    const solo = [
+      { metric: "walk", weight: 1 },
+      { metric: "pm", weight: 0 },
+    ];
+    expect(shareCorrelatedWeights(kc, solo)).toEqual(solo);
+    const both = [
+      { metric: "walk", weight: 1 },
+      { metric: "pm", weight: 1 },
+    ];
+    expect(shareCorrelatedWeights(kc, both, 1.01)).toEqual(both);
+  });
+
+  it("uses the answer weight (not the shared weight) to pick the 'enough' target", () => {
+    const kk = { ...kc, directionalTargets: { "1": 0.5, "2": 0.8 } };
+    const r = rank(kk, [
+      { metric: "walk", weight: 1 },
+      { metric: "pm", weight: 1 },
+    ]).ranked;
+    const a = r.find((x) => x.cityId === "a")!;
+    // walk 90 is above the 50th percentile -> capped at 1 even though its shared weight is 0.56
+    expect(a.axes.find((x) => x.metric === "walk")!.fit).toBe(1);
   });
 });

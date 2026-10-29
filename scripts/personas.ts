@@ -20,6 +20,7 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       green: A(1),
       air: A(1),
       culture: A(1),
+      hazard: A(1),
     },
   },
   {
