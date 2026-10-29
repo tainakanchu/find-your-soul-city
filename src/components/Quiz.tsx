@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DEFAULT_IMPORTANCE, type Answer } from "../answers.ts";
 import { knowledge } from "../data.ts";
 
 const IMPORTANCE = [
-  { label: "気にしない", value: 0 },
-  { label: "ふつう", value: 1 },
-  { label: "重要", value: 2 },
+  { label: "気にしない", value: 0, key: "q" },
+  { label: "ふつう", value: 1, key: "w" },
+  { label: "重要", value: 2, key: "e" },
 ];
 
 interface Props {
@@ -24,6 +24,38 @@ export function Quiz({ answers, onAnswer, onDone, onExit }: Props) {
 
   const set = (patch: Partial<Answer>) =>
     onAnswer(q.id, { choice: a?.choice, importance: a?.importance ?? DEFAULT_IMPORTANCE, ...patch });
+  const next = () => (last ? onDone() : setIndex(index + 1));
+  const back = () => (index === 0 ? onExit() : setIndex(index - 1));
+
+  // Keyboard: 1–9 choose an option, Q/W/E set importance, Enter = next, Backspace = back.
+  // Buttons and links keep their native Enter; arrow keys are left to the radio groups.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
+      const target = e.target as HTMLElement;
+      const n = Number(e.key);
+      if (Number.isInteger(n) && n >= 1 && n <= q.options.length) {
+        e.preventDefault();
+        set({ choice: q.options[n - 1].value });
+        return;
+      }
+      const imp = q.importanceControl && IMPORTANCE.find((o) => o.key === e.key.toLowerCase());
+      if (imp) {
+        e.preventDefault();
+        set({ importance: imp.value });
+        return;
+      }
+      if (e.key === "Enter" && !target.closest("button, a") && a?.choice !== undefined) {
+        e.preventDefault();
+        next();
+      } else if (e.key === "Backspace" && !target.closest("input[type=text], textarea")) {
+        e.preventDefault();
+        back();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
 
   return (
     <section className="quiz" aria-labelledby="q-prompt">
@@ -35,9 +67,12 @@ export function Quiz({ answers, onAnswer, onDone, onExit }: Props) {
       </p>
       <fieldset key={q.id}>
         <legend id="q-prompt">{q.prompt}</legend>
-        {q.options.map((o) => (
+        {q.options.map((o, i) => (
           <label key={o.value} className="option">
             <input type="radio" name={q.id} checked={a?.choice === o.value} onChange={() => set({ choice: o.value })} />
+            <kbd className="key" aria-hidden="true">
+              {i + 1}
+            </kbd>
             <span>{o.label}</span>
           </label>
         ))}
@@ -54,25 +89,34 @@ export function Quiz({ answers, onAnswer, onDone, onExit }: Props) {
                   checked={(a?.importance ?? DEFAULT_IMPORTANCE) === o.value}
                   onChange={() => set({ importance: o.value })}
                 />
-                <span>{o.label}</span>
+                <span>
+                  <kbd className="key" aria-hidden="true">
+                    {o.key.toUpperCase()}
+                  </kbd>
+                  {o.label}
+                </span>
               </label>
             ))}
           </div>
         </fieldset>
       )}
       <div className="actions">
-        <button
-          type="button"
-          className="primary"
-          disabled={a?.choice === undefined}
-          onClick={() => (last ? onDone() : setIndex(index + 1))}
-        >
+        <button type="button" className="primary" disabled={a?.choice === undefined} onClick={next}>
           {last ? "結果を見る" : "次へ"}
         </button>
-        <button type="button" className="link" onClick={() => (index === 0 ? onExit() : setIndex(index - 1))}>
+        <button type="button" className="link" onClick={back}>
           {index === 0 ? "トップに戻る" : "前の質問"}
         </button>
       </div>
+      <p className="keys-hint" aria-hidden="true">
+        キーボード: <kbd>1</kbd>〜<kbd>{q.options.length}</kbd> で選択
+        {q.importanceControl && (
+          <>
+            、<kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> で大事さ
+          </>
+        )}
+        、<kbd>Enter</kbd> で次へ、<kbd>Backspace</kbd> で戻る
+      </p>
     </section>
   );
 }
