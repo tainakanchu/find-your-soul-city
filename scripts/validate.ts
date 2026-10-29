@@ -259,6 +259,47 @@ h("3b. 十分な水準（モデル v0.3）の効果");
   );
 }
 
+// --- 3c. Sharing weight between correlated answers ---
+h("3c. 相関する条件の重みの分け合い（モデル v0.4）");
+{
+  const stats = (opts: RankOptions) => {
+    const wins = new Map<string, number>();
+    for (const p of samples) {
+      const id = top(p, opts)[0]?.cityId;
+      if (id) wins.set(id, (wins.get(id) ?? 0) + 1);
+    }
+    const ps = k.cities.map((c) => (wins.get(c.id) ?? 0) / N);
+    const [maxId, maxW] = [...wins].reduce((b, x) => (x[1] > b[1] ? x : b));
+    const eu = [...wins].filter(([id]) => regionOf.get(id) === "Europe").reduce((a, [, w]) => a + w, 0) / N;
+    return [`${nameOf.get(maxId)} ${pct(maxW / N)}`, (1 / ps.reduce((a, x) => a + x * x, 0)).toFixed(1), pct(eu)];
+  };
+  const pairs = k.metrics
+    .flatMap((a) =>
+      k.metrics.filter((b) => a.key < b.key).map((b) => [a, b, k.reference.correlations[a.key]?.[b.key] ?? 0] as const),
+    )
+    .filter(([, , r]) => Math.abs(r) >= k.redundancyThreshold)
+    .toSorted((x, y) => Math.abs(y[2]) - Math.abs(x[2]));
+  out.push(`基準集合での順位相関の絶対値が ${k.redundancyThreshold} 以上の組（両方を重視すると重みを分け合う）:`, "");
+  table(
+    ["条件 A", "条件 B", "順位相関"],
+    pairs.map(([a, b, r]) => [a.label, b.label, r.toFixed(2)]),
+  );
+  out.push("");
+  table(
+    ["方式", "1 位率の最大", "実質的な 1 位の都市数", "欧州の 1 位率"],
+    [
+      ["v0.4 分け合う（本番）", ...stats({})],
+      ["分け合わない（v0.3）", ...stats({ redundancyThreshold: 2 })],
+    ],
+  );
+  out.push(
+    "",
+    compare("分け合わない場合との 1 位・上位 3 の一致", (p) => top(p, { redundancyThreshold: 2 }).map((x) => x.cityId))
+      .slice(1)
+      .join(" / "),
+  );
+}
+
 // --- 4. Weight robustness ---
 h("4. 重みの変更への頑健性");
 const perturb = (p: Preference[], sd: number) => p.map((x) => ({ ...x, weight: x.weight * Math.exp(sd * gauss()) }));

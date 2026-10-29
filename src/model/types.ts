@@ -74,6 +74,8 @@ export interface ReferenceDistribution {
   set: string;
   levels: number[];
   metrics: Record<string, { n: number; quantiles: number[] }>;
+  /** Spearman rank correlation between metrics over the same reference set: correlations[a][b]. */
+  correlations: Record<string, Record<string, number>>;
 }
 
 export interface Knowledge {
@@ -84,6 +86,8 @@ export interface Knowledge {
    * (e.g. { "1": 0.5, "2": 0.8 }). A weight without an entry means "more is always better".
    */
   directionalTargets: Record<string, number>;
+  /** Answers on metrics with |correlation| >= this share their weight (see score.ts `shareCorrelatedWeights`). */
+  redundancyThreshold: number;
   dataVersion: string;
   metrics: Metric[];
   cities: City[];

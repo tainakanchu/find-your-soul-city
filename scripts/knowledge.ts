@@ -219,9 +219,26 @@ for (const m of metrics) {
   else if (r.quantiles.length !== refLevels.length || r.quantiles.some((q, i) => i > 0 && q < r.quantiles[i - 1]))
     fail(refDoc.path, `${m.key}: quantiles must be non-decreasing and match levels`);
 }
+const refCorr = (refDoc?.fm.correlations ?? {}) as Record<string, Record<string, number>>;
+for (const a of metrics) {
+  for (const b of metrics) {
+    if (a.key === b.key) continue;
+    const r = refCorr[a.key]?.[b.key];
+    if (typeof r !== "number" || Math.abs(r) > 1)
+      fail(refDoc?.path ?? ROOT, `correlation ${a.key}/${b.key} missing; run pnpm etl`);
+    else if (Math.abs(r - (refCorr[b.key]?.[a.key] ?? NaN)) > 1e-9)
+      fail(refDoc.path, `correlation ${a.key}/${b.key} not symmetric`);
+  }
+}
 const reference: Knowledge["reference"] = {
   set: refDoc ? str(refDoc, "reference_set") : "",
   levels: refLevels,
+  correlations: Object.fromEntries(
+    metrics.map((a) => [
+      a.key,
+      Object.fromEntries(metrics.filter((b) => b.key !== a.key).map((b) => [b.key, refCorr[a.key]?.[b.key] ?? 0])),
+    ]),
+  ),
   metrics: Object.fromEntries(
     metrics
       .filter((m) => refMetrics[m.key])
@@ -260,6 +277,9 @@ const directionalTargets: Record<string, number> = Object.fromEntries(
   }),
 );
 
+const redundancyThreshold = model ? num(model, "redundancy_threshold") : 1;
+if (!(redundancyThreshold > 0 && redundancyThreshold <= 1)) fail(model.path, "redundancy_threshold must be in (0, 1]");
+
 const body = { metrics, cities, questions, sources, reference };
 for (const msg of findPlaceholders(body)) fail(ROOT, msg);
 
@@ -272,6 +292,7 @@ const knowledge: Knowledge = {
   modelVersion: str(model, "model_version"),
   minCoverage: num(model, "min_coverage"),
   directionalTargets,
+  redundancyThreshold,
   dataVersion: createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 12),
   ...body,
 };

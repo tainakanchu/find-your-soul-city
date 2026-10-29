@@ -158,6 +158,13 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
 
       <Share city={city} score={roundBounded(first.total)} />
 
+      <section className="not-included" aria-labelledby="not-included">
+        <h2 id="not-included">計算に入っていないこと</h2>
+        <p>
+          治安・物価や家賃・医療・言語・ビザ・仕事は、世界の都市を同じ基準で比べられる公開統計がないため、計算に入れていません。訪れたり暮らしたりする前に、公的機関などの最新の情報を確かめてください。
+        </p>
+      </section>
+
       <p className="flights">
         <a href={flightsUrl(city)} target="_blank" rel="noreferrer noopener">
           ✈ 魂の故郷へのフライトを探してみる
