@@ -1,6 +1,6 @@
 {
   "source_id": "itdp-atlas",
-  "generated_at": "2026-10-28T21:00:44Z",
+  "generated_at": "2026-10-29T02:07:13Z",
   "inputs": [
     "https://github.com/ITDP/atlas/releases/tag/update_2024#data_final",
     "https://github.com/ITDP/atlas/releases/download/update_2024/data_final.zip"
@@ -13,6 +13,22 @@
   ],
   "values": {
     "bike_any": {
+      "abidjan": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -285,6 +301,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 9.580983188220097,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 0.5031764857386238,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 24.901736653535966,
         "quality": "observed",
@@ -297,6 +345,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 0.3992605809446467,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -329,6 +393,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 9.917222313994248,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 2.3699233672304887,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -409,6 +505,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 39.32552062425682,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -573,6 +685,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 13.022978102451777,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 1.6160935865471768,
         "quality": "observed",
@@ -585,6 +713,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 0.2110157192497499,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 1.9333854777032957,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -729,6 +905,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 22.72166080223102,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -941,6 +1133,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 1.5026391682731854,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 46.49743837380309,
         "quality": "observed",
@@ -969,6 +1177,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 0.5094509728128779,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -1037,6 +1261,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 16.625164519636503,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 53.85244916894063,
         "quality": "observed",
@@ -1053,6 +1293,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 1.3825341923514245,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 26.511266416061652,
         "quality": "observed",
@@ -1065,6 +1321,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 2.19066439193873,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "bike_pnpbpnab_2024",
           "unit": "%"
         }
@@ -1357,6 +1629,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 2.468372195426202,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "bike_pnpbpnab_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 54.8963230507869,
         "quality": "observed",
@@ -1375,6 +1663,22 @@
       }
     },
     "bike_protected": {
+      "abidjan": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -1647,6 +1951,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 0.14122855610499227,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 9.458319273034926,
         "quality": "observed",
@@ -1659,6 +1995,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -1691,6 +2043,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 9.917222313994248,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -1771,6 +2155,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 14.89358293608117,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -1935,6 +2335,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 13.022978102451777,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 0.0,
         "quality": "observed",
@@ -1947,6 +2363,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 0.2110157192497499,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -2091,6 +2555,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 19.093018337040956,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -2303,6 +2783,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 1.5026391682731854,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 36.143867397610975,
         "quality": "observed",
@@ -2331,6 +2827,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 0.5094509728128779,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -2399,6 +2911,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 7.014445646603185,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 10.821277481876752,
         "quality": "observed",
@@ -2415,6 +2943,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 25.432615428265336,
         "quality": "observed",
@@ -2427,6 +2971,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 1.70412490328669,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "bike_pnpb_2024",
           "unit": "%"
         }
@@ -2719,6 +3279,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "bike_pnpb_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 28.9830565435237,
         "quality": "observed",
@@ -2737,6 +3313,22 @@
       }
     },
     "block_density": {
+      "abidjan": {
+        "value": 65.90231624106065,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "accra": {
         "value": 41.116119812557976,
         "quality": "observed",
@@ -3009,6 +3601,38 @@
           "unit": "blocks/km2"
         }
       },
+      "cebu": {
+        "value": 37.332878900335345,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "chennai": {
+        "value": 68.1206029509497,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "chicago": {
         "value": 75.10589031710344,
         "quality": "observed",
@@ -3021,6 +3645,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "colombo": {
+        "value": 17.239896489210032,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3053,6 +3693,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 53.41199126184239,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "denpasar": {
+        "value": 35.87293747898811,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3133,6 +3805,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "fortaleza": {
+        "value": 74.5284176968333,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3297,6 +3985,22 @@
           "unit": "blocks/km2"
         }
       },
+      "kaohsiung": {
+        "value": 65.98183445691502,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "kathmandu": {
         "value": 36.10303980115615,
         "quality": "observed",
@@ -3309,6 +4013,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "kigali": {
+        "value": 25.98657555907906,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "kinshasa": {
+        "value": 78.73492189087226,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "kochi": {
+        "value": 16.101431726752335,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3453,6 +4205,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "medellin": {
+        "value": 73.04860535454725,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3665,6 +4433,22 @@
           "unit": "blocks/km2"
         }
       },
+      "panama-city": {
+        "value": 43.07881265086041,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "paris": {
         "value": 66.78028831222706,
         "quality": "observed",
@@ -3693,6 +4477,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "phnom-penh": {
+        "value": 45.93968138976116,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -3761,6 +4561,22 @@
           "unit": "blocks/km2"
         }
       },
+      "salvador": {
+        "value": 61.078967652995935,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "san-francisco": {
         "value": 62.48623656555476,
         "quality": "observed",
@@ -3777,6 +4593,22 @@
           "unit": "blocks/km2"
         }
       },
+      "san-jose-cr": {
+        "value": 37.367897879172084,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "santiago": {
         "value": 87.50092824839324,
         "quality": "observed",
@@ -3789,6 +4621,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
+      "santo-domingo": {
+        "value": 72.30997607320217,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "city_blockdensity_2024",
           "unit": "blocks/km2"
         }
@@ -4081,6 +4929,22 @@
           "unit": "blocks/km2"
         }
       },
+      "yangon": {
+        "value": 64.33537993576606,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "city_blockdensity_2024",
+          "unit": "blocks/km2"
+        }
+      },
       "zurich": {
         "value": 96.28056143156314,
         "quality": "observed",
@@ -4099,6 +4963,22 @@
       }
     },
     "car_free_places": {
+      "abidjan": {
+        "value": 18.705211242149915,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 7.0127451783092525,
         "quality": "observed",
@@ -4371,6 +5251,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 16.58365855640957,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 9.785808534146252,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 27.88690644765137,
         "quality": "observed",
@@ -4383,6 +5295,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 6.94988529915343,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -4415,6 +5343,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 43.11856879068588,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 19.678675777774476,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -4495,6 +5455,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 28.462507094451095,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -4659,6 +5635,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 25.632078967039224,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 40.00741195285304,
         "quality": "observed",
@@ -4671,6 +5663,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 23.796715296977048,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 8.52419952581632,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 9.621690497970066,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -4815,6 +5855,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 42.90096444454131,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -5027,6 +6083,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 15.830962129912765,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 69.22649096177169,
         "quality": "observed",
@@ -5055,6 +6127,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 10.115546337030388,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -5123,6 +6211,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 31.91099957288972,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 32.34925496410174,
         "quality": "observed",
@@ -5139,6 +6243,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 23.837785030666463,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 41.85380296153059,
         "quality": "observed",
@@ -5151,6 +6271,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 14.217801022185824,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "walk_pncf_2024",
           "unit": "%"
         }
@@ -5443,6 +6579,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 8.008338521369609,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "walk_pncf_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 76.60634870722923,
         "quality": "observed",
@@ -5461,6 +6613,23 @@
       }
     },
     "frequent_transit": {
+      "abidjan": {
+        "value": 15.1520650108562,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "transit_pnft_2024",
+          "unit": "%",
+          "frequent_stops": 153.0
+        }
+      },
       "accra": {
         "value": 5.605458924195441,
         "quality": "observed",
@@ -5716,6 +6885,23 @@
           "frequent_stops": 1255.0
         }
       },
+      "fortaleza": {
+        "value": 52.948499674082804,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "transit_pnft_2024",
+          "unit": "%",
+          "frequent_stops": 1631.0
+        }
+      },
       "helsinki": {
         "value": 57.7493331041567,
         "quality": "observed",
@@ -5799,6 +6985,40 @@
           "atlas_column": "transit_pnft_2024",
           "unit": "%",
           "frequent_stops": 356.0
+        }
+      },
+      "kigali": {
+        "value": 1.02683036001926,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "transit_pnft_2024",
+          "unit": "%",
+          "frequent_stops": 4.0
+        }
+      },
+      "kochi": {
+        "value": 20.106105886730898,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
+          "atlas_column": "transit_pnft_2024",
+          "unit": "%",
+          "frequent_stops": 804.0
         }
       },
       "lisbon": {
@@ -6262,6 +7482,24 @@
       }
     },
     "rapid_transit": {
+      "abidjan": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -6550,6 +7788,42 @@
           "rt_stations": 67
         }
       },
+      "cebu": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "chennai": {
+        "value": 12.136117858029014,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 73.19345447503794,
+          "rt_stations": 41
+        }
+      },
       "chicago": {
         "value": 15.218487270251405,
         "quality": "observed",
@@ -6566,6 +7840,24 @@
           "unit": "%",
           "rt_line_km": 161.8254410924841,
           "rt_stations": 101
+        }
+      },
+      "colombo": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
         }
       },
       "copenhagen": {
@@ -6598,6 +7890,42 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "dar-es-salaam": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "denpasar": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "transit_pnrt_2024",
           "unit": "%",
           "rt_line_km": 0.0,
@@ -6874,6 +8202,24 @@
           "rt_stations": 0
         }
       },
+      "kaohsiung": {
+        "value": 25.515244484347694,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 58.36810846566766,
+          "rt_stations": 29
+        }
+      },
       "kathmandu": {
         "value": 0.0,
         "quality": "observed",
@@ -6890,6 +8236,60 @@
           "unit": "%",
           "rt_line_km": 0.0,
           "rt_stations": 0
+        }
+      },
+      "kigali": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "kinshasa": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "kochi": {
+        "value": 1.8685016126003045,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 27.159658626135357,
+          "rt_stations": 7
         }
       },
       "lagos": {
@@ -7016,6 +8416,24 @@
           "unit": "%",
           "rt_line_km": 0.0,
           "rt_stations": 0
+        }
+      },
+      "medellin": {
+        "value": 19.698696151861903,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 56.71015261243004,
+          "rt_stations": 34
         }
       },
       "mexico-city": {
@@ -7234,6 +8652,24 @@
           "rt_stations": 74
         }
       },
+      "panama-city": {
+        "value": 14.161238696974229,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 39.35258683687311,
+          "rt_stations": 30
+        }
+      },
       "paris": {
         "value": 40.26641692521607,
         "quality": "observed",
@@ -7268,6 +8704,24 @@
           "unit": "%",
           "rt_line_km": 104.68764462784154,
           "rt_stations": 55
+        }
+      },
+      "phnom-penh": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
         }
       },
       "prague": {
@@ -7360,6 +8814,24 @@
           "rt_stations": 134
         }
       },
+      "san-jose-cr": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "santiago": {
         "value": 22.099597911880643,
         "quality": "observed",
@@ -7376,6 +8848,24 @@
           "unit": "%",
           "rt_line_km": 234.14848484791625,
           "rt_stations": 95
+        }
+      },
+      "santo-domingo": {
+        "value": 8.19182659059992,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 26.71148357562572,
+          "rt_stations": 17
         }
       },
       "sao-paulo": {
@@ -7702,6 +9192,24 @@
           "rt_stations": 38
         }
       },
+      "yangon": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "transit_pnrt_2024",
+          "unit": "%",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "zurich": {
         "value": 49.28821586314018,
         "quality": "observed",
@@ -7722,6 +9230,24 @@
       }
     },
     "rapid_transit_km_per_mpop": {
+      "abidjan": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -8028,6 +9554,42 @@
           "rt_stations": 67
         }
       },
+      "cebu": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "chennai": {
+        "value": 6.484686815380024,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 73.19345447503794,
+          "rt_stations": 41
+        }
+      },
       "chicago": {
         "value": 30.502388745908306,
         "quality": "observed",
@@ -8044,6 +9606,24 @@
           "unit": "km per million people",
           "rt_line_km": 161.8254410924841,
           "rt_stations": 101
+        }
+      },
+      "colombo": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
         }
       },
       "copenhagen": {
@@ -8076,6 +9656,42 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "dar-es-salaam": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "denpasar": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "transit_pnrtrtrall_2024",
           "unit": "km per million people",
           "rt_line_km": 0.0,
@@ -8170,6 +9786,24 @@
           "unit": "km per million people",
           "rt_line_km": 13.644478335316037,
           "rt_stations": 8
+        }
+      },
+      "fortaleza": {
+        "value": 7.231932628310297,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 23.764284550456967,
+          "rt_stations": 4
         }
       },
       "fukuoka": {
@@ -8352,6 +9986,24 @@
           "rt_stations": 0
         }
       },
+      "kaohsiung": {
+        "value": 25.549455558360506,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 58.36810846566766,
+          "rt_stations": 29
+        }
+      },
       "kathmandu": {
         "value": 0.0,
         "quality": "observed",
@@ -8368,6 +10020,60 @@
           "unit": "km per million people",
           "rt_line_km": 0.0,
           "rt_stations": 0
+        }
+      },
+      "kigali": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "kinshasa": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
+      "kochi": {
+        "value": 5.511338576643982,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 27.159658626135357,
+          "rt_stations": 7
         }
       },
       "kuala-lumpur": {
@@ -8530,6 +10236,24 @@
           "unit": "km per million people",
           "rt_line_km": 0.0,
           "rt_stations": 0
+        }
+      },
+      "medellin": {
+        "value": 17.683719634303213,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 56.71015261243004,
+          "rt_stations": 34
         }
       },
       "melbourne": {
@@ -8766,6 +10490,24 @@
           "rt_stations": 74
         }
       },
+      "panama-city": {
+        "value": 25.028397840201254,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 39.35258683687311,
+          "rt_stations": 30
+        }
+      },
       "paris": {
         "value": 88.10880978371318,
         "quality": "observed",
@@ -8800,6 +10542,24 @@
           "unit": "km per million people",
           "rt_line_km": 104.68764462784154,
           "rt_stations": 55
+        }
+      },
+      "phnom-penh": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
         }
       },
       "prague": {
@@ -8874,6 +10634,24 @@
           "rt_stations": 81
         }
       },
+      "salvador": {
+        "value": 11.611334532535075,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 37.86842085681426,
+          "rt_stations": 6
+        }
+      },
       "san-francisco": {
         "value": 56.23861956331991,
         "quality": "observed",
@@ -8892,6 +10670,24 @@
           "rt_stations": 134
         }
       },
+      "san-jose-cr": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "santiago": {
         "value": 35.46156027841793,
         "quality": "observed",
@@ -8908,6 +10704,24 @@
           "unit": "km per million people",
           "rt_line_km": 234.14848484791625,
           "rt_stations": 95
+        }
+      },
+      "santo-domingo": {
+        "value": 5.94332109888658,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 26.71148357562572,
+          "rt_stations": 17
         }
       },
       "sao-paulo": {
@@ -9234,6 +11048,24 @@
           "rt_stations": 38
         }
       },
+      "yangon": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "transit_pnrtrtrall_2024",
+          "unit": "km per million people",
+          "rt_line_km": 0.0,
+          "rt_stations": 0
+        }
+      },
       "zurich": {
         "value": 144.2908642807204,
         "quality": "observed",
@@ -9254,6 +11086,22 @@
       }
     },
     "safe_from_highways": {
+      "abidjan": {
+        "value": 71.26004437635814,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 72.18274863886016,
         "quality": "observed",
@@ -9526,6 +11374,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 89.28412432661585,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 56.64241648340036,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 80.13274675425153,
         "quality": "observed",
@@ -9538,6 +11418,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 81.94813391237528,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -9570,6 +11466,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 77.83669020605214,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 86.75009116764821,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -9650,6 +11578,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 61.590453671682,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -9814,6 +11758,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 80.64418526660859,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 90.35921349040323,
         "quality": "observed",
@@ -9826,6 +11786,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 85.76519384968249,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 88.17078321601893,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 87.80532594947351,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -9970,6 +11978,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 56.612460705488,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -10182,6 +12206,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 53.92485532461029,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 62.08656403168552,
         "quality": "observed",
@@ -10210,6 +12250,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 80.67764813117235,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -10278,6 +12334,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 46.17311255701695,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 63.075061333172485,
         "quality": "observed",
@@ -10294,6 +12366,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 82.33188342710503,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 63.897692836418074,
         "quality": "observed",
@@ -10306,6 +12394,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 62.381760346734815,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "walk_pnnhighways_2024",
           "unit": "%"
         }
@@ -10598,6 +12702,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 85.41644923057245,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "walk_pnnhighways_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 69.33659757202287,
         "quality": "observed",
@@ -10616,6 +12736,22 @@
       }
     },
     "sustainable_transport": {
+      "abidjan": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "transit_pnst_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -10932,6 +13068,38 @@
           "atlas_area_km2": 4614.0,
           "ucdb_area_km2": 4614.0,
           "atlas_pop_2025_vs_ucdb": 0.9937,
+          "atlas_column": "transit_pnst_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "transit_pnst_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "transit_pnst_2024",
           "unit": "%"
         }
@@ -11354,6 +13522,22 @@
       }
     },
     "walk_education": {
+      "abidjan": {
+        "value": 62.3975892427048,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 51.17698303923229,
         "quality": "observed",
@@ -11626,6 +13810,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 51.0109788637493,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 43.30978196418171,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 68.51999377524349,
         "quality": "observed",
@@ -11638,6 +13854,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 43.080316069778405,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -11670,6 +13902,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 59.54549914512464,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 48.369027780396365,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -11750,6 +14014,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 73.36660929888819,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -11914,6 +14194,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 52.743656812866014,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 76.20360904750669,
         "quality": "observed",
@@ -11926,6 +14222,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 33.52344180679275,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 62.3492204226317,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 48.12444066942275,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -12070,6 +14414,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 66.50750015224172,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -12282,6 +14642,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 43.95187729720931,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 81.9074156600254,
         "quality": "observed",
@@ -12310,6 +14686,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 52.45560887008597,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -12378,6 +14770,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 51.426668874205525,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 69.29593079904414,
         "quality": "observed",
@@ -12394,6 +14802,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 63.376107448689076,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 76.56674126116039,
         "quality": "observed",
@@ -12406,6 +14830,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 51.74531771926223,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "walk_pnspne_2024",
           "unit": "%"
         }
@@ -12698,6 +15138,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 60.33330027062889,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "walk_pnspne_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 78.13060852487975,
         "quality": "observed",
@@ -12716,6 +15172,22 @@
       }
     },
     "walk_healthcare": {
+      "abidjan": {
+        "value": 64.04639877565634,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 50.800298546273126,
         "quality": "observed",
@@ -12988,6 +15460,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 46.664794230630754,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 52.95262236212115,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 47.12330822228517,
         "quality": "observed",
@@ -13000,6 +15504,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 30.866305022301265,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13032,6 +15552,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 48.39396357249416,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 49.11280871869257,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13112,6 +15664,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 67.68206278280613,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13276,6 +15844,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 46.42223375704627,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 64.30731452347771,
         "quality": "observed",
@@ -13288,6 +15872,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 29.934608197815592,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 68.86490232221334,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 41.41616102295749,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13432,6 +16064,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 64.78866147313957,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13644,6 +16292,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 39.93696962374853,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 76.7633939821505,
         "quality": "observed",
@@ -13672,6 +16336,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 53.31589535278437,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -13740,6 +16420,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 51.548468520342695,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 48.787626230194384,
         "quality": "observed",
@@ -13756,6 +16452,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 57.837442316304674,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 68.70919902422939,
         "quality": "observed",
@@ -13768,6 +16480,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 56.782123257186036,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "walk_pnspnh_2024",
           "unit": "%"
         }
@@ -14060,6 +16788,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 53.87866443140942,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "walk_pnspnh_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 65.74248114044674,
         "quality": "observed",
@@ -14078,6 +16822,22 @@
       }
     },
     "walk_services": {
+      "abidjan": {
+        "value": 60.313827886542505,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "accra": {
         "value": 41.89817057771329,
         "quality": "observed",
@@ -14350,6 +17110,38 @@
           "unit": "%"
         }
       },
+      "cebu": {
+        "value": 43.124570971639166,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "chennai": {
+        "value": 40.36822881467995,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "chicago": {
         "value": 42.44971384659396,
         "quality": "observed",
@@ -14362,6 +17154,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "colombo": {
+        "value": 25.943726124223073,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -14394,6 +17202,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 46.580069738505856,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "denpasar": {
+        "value": 40.75232796222259,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -14474,6 +17314,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "fortaleza": {
+        "value": 65.3329048399842,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -14638,6 +17494,22 @@
           "unit": "%"
         }
       },
+      "kaohsiung": {
+        "value": 42.974948314369236,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "kathmandu": {
         "value": 64.01489062146985,
         "quality": "observed",
@@ -14650,6 +17522,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "kigali": {
+        "value": 24.036904526468923,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "kinshasa": {
+        "value": 60.07257021714858,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "kochi": {
+        "value": 34.94407676051849,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -14794,6 +17714,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "medellin": {
+        "value": 60.45544683733157,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -15006,6 +17942,22 @@
           "unit": "%"
         }
       },
+      "panama-city": {
+        "value": 32.72544666931293,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "paris": {
         "value": 74.6064750911948,
         "quality": "observed",
@@ -15034,6 +17986,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "phnom-penh": {
+        "value": 42.18687112909701,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -15102,6 +18070,22 @@
           "unit": "%"
         }
       },
+      "salvador": {
+        "value": 43.610117128772494,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "san-francisco": {
         "value": 42.98359148316873,
         "quality": "observed",
@@ -15118,6 +18102,22 @@
           "unit": "%"
         }
       },
+      "san-jose-cr": {
+        "value": 52.77315522082456,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "santiago": {
         "value": 68.07486697625271,
         "quality": "observed",
@@ -15130,6 +18130,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
+      "santo-domingo": {
+        "value": 48.70081414825626,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "walk_pns_2024",
           "unit": "%"
         }
@@ -15422,6 +18438,22 @@
           "unit": "%"
         }
       },
+      "yangon": {
+        "value": 48.91062413362513,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "walk_pns_2024",
+          "unit": "%"
+        }
+      },
       "zurich": {
         "value": 64.63887253325574,
         "quality": "observed",
@@ -15440,6 +18472,22 @@
       }
     },
     "weighted_density": {
+      "abidjan": {
+        "value": 24208.35597016904,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02996",
+          "atlas_name": "The Abidjan / Abobo / Yopougon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 503.0,
+          "ucdb_area_km2": 503.0,
+          "atlas_pop_2025_vs_ucdb": 0.9929,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "accra": {
         "value": 11495.002877481546,
         "quality": "observed",
@@ -15712,6 +18760,38 @@
           "unit": "people/km2"
         }
       },
+      "cebu": {
+        "value": 17173.668097113416,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05065",
+          "atlas_name": "The Cebu City / Lapu-Lapu / Mandaue area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 416.0,
+          "ucdb_area_km2": 416.0,
+          "atlas_pop_2025_vs_ucdb": 0.9932,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "chennai": {
+        "value": 22475.54552634454,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "10300",
+          "atlas_name": "The Chennai / Tambaram / Avadi area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1052.0,
+          "ucdb_area_km2": 1052.0,
+          "atlas_pop_2025_vs_ucdb": 0.9936,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "chicago": {
         "value": 4905.379133345582,
         "quality": "observed",
@@ -15724,6 +18804,22 @@
           "atlas_area_km2": 2046.0,
           "ucdb_area_km2": 2046.0,
           "atlas_pop_2025_vs_ucdb": 0.9986,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "colombo": {
+        "value": 7624.707809615447,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00632",
+          "atlas_name": "The Colombo / Kaduwela / Moratuwa area",
+          "iou": 0.9998,
+          "area_ratio": 1.0001,
+          "atlas_area_km2": 1206.1,
+          "ucdb_area_km2": 1206.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -15756,6 +18852,38 @@
           "atlas_area_km2": 277.0,
           "ucdb_area_km2": 277.0,
           "atlas_pop_2025_vs_ucdb": 0.995,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 25808.466700400248,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "03570",
+          "atlas_name": "The Dar es-Salaam area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 907.0,
+          "ucdb_area_km2": 907.0,
+          "atlas_pop_2025_vs_ucdb": 0.9927,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "denpasar": {
+        "value": 8250.490783149362,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "07783",
+          "atlas_name": "The Denpasar area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 388.0,
+          "ucdb_area_km2": 388.0,
+          "atlas_pop_2025_vs_ucdb": 0.9938,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -15836,6 +18964,22 @@
           "atlas_area_km2": 130.0,
           "ucdb_area_km2": 130.0,
           "atlas_pop_2025_vs_ucdb": 1.0017,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "fortaleza": {
+        "value": 12747.003856431402,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08154",
+          "atlas_name": "The Fortaleza / Caucaia / Maracanaú area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 413.0,
+          "ucdb_area_km2": 413.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -16000,6 +19144,22 @@
           "unit": "people/km2"
         }
       },
+      "kaohsiung": {
+        "value": 13600.0095760048,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01919",
+          "atlas_name": "The Kaohsiung area",
+          "iou": 0.9999,
+          "area_ratio": 0.9999,
+          "atlas_area_km2": 372.0,
+          "ucdb_area_km2": 372.0,
+          "atlas_pop_2025_vs_ucdb": 0.9963,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "kathmandu": {
         "value": 24926.679470947984,
         "quality": "observed",
@@ -16012,6 +19172,54 @@
           "atlas_area_km2": 350.0,
           "ucdb_area_km2": 350.0,
           "atlas_pop_2025_vs_ucdb": 0.996,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "kigali": {
+        "value": 9359.963700659724,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00597",
+          "atlas_name": "The Kigali area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 286.0,
+          "ucdb_area_km2": 286.0,
+          "atlas_pop_2025_vs_ucdb": 0.9951,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "kinshasa": {
+        "value": 57890.503376472865,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01876",
+          "atlas_name": "The Kinshasa area",
+          "iou": 0.9997,
+          "area_ratio": 1.0002,
+          "atlas_area_km2": 487.1,
+          "ucdb_area_km2": 487.0,
+          "atlas_pop_2025_vs_ucdb": 0.9926,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "kochi": {
+        "value": 9745.164002267162,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "09386",
+          "atlas_name": "The Kochi / Ernakulam area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 1266.0,
+          "ucdb_area_km2": 1266.0,
+          "atlas_pop_2025_vs_ucdb": 0.9934,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -16156,6 +19364,22 @@
           "atlas_area_km2": 124.0,
           "ucdb_area_km2": 124.0,
           "atlas_pop_2025_vs_ucdb": 0.9964,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "medellin": {
+        "value": 19748.60670451012,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "02676",
+          "atlas_name": "The Medellín / Bello / Medellin area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 233.0,
+          "ucdb_area_km2": 233.0,
+          "atlas_pop_2025_vs_ucdb": 0.9928,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -16368,6 +19592,22 @@
           "unit": "people/km2"
         }
       },
+      "panama-city": {
+        "value": 10496.284327539335,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00658",
+          "atlas_name": "The Panama area",
+          "iou": 0.9999,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 277.0,
+          "ucdb_area_km2": 277.0,
+          "atlas_pop_2025_vs_ucdb": 0.9935,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "paris": {
         "value": 13968.907982161687,
         "quality": "observed",
@@ -16396,6 +19636,22 @@
           "atlas_area_km2": 784.0,
           "ucdb_area_km2": 784.0,
           "atlas_pop_2025_vs_ucdb": 0.9965,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "phnom-penh": {
+        "value": 15749.068188086218,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01741",
+          "atlas_name": "The Phnom Penh / Ta Khmao area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 354.0,
+          "ucdb_area_km2": 354.0,
+          "atlas_pop_2025_vs_ucdb": 0.993,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -16464,6 +19720,22 @@
           "unit": "people/km2"
         }
       },
+      "salvador": {
+        "value": 19979.238595185525,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "08238",
+          "atlas_name": "The Salvador / Lauro de Freitas area",
+          "iou": 0.9993,
+          "area_ratio": 1.0007,
+          "atlas_area_km2": 323.2,
+          "ucdb_area_km2": 323.0,
+          "atlas_pop_2025_vs_ucdb": 0.9933,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "san-francisco": {
         "value": 5111.299398008764,
         "quality": "observed",
@@ -16480,6 +19752,22 @@
           "unit": "people/km2"
         }
       },
+      "san-jose-cr": {
+        "value": 6973.183497877223,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "00363",
+          "atlas_name": "The San José / Heredia / Alajuela area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 491.0,
+          "ucdb_area_km2": 491.0,
+          "atlas_pop_2025_vs_ucdb": 0.9954,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "santiago": {
         "value": 12874.877225752758,
         "quality": "observed",
@@ -16492,6 +19780,22 @@
           "atlas_area_km2": 801.0,
           "ucdb_area_km2": 801.0,
           "atlas_pop_2025_vs_ucdb": 0.9971,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
+      "santo-domingo": {
+        "value": 14068.900195627644,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "01667",
+          "atlas_name": "The Santo Domingo area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 483.0,
+          "ucdb_area_km2": 483.0,
+          "atlas_pop_2025_vs_ucdb": 0.9941,
           "atlas_column": "city_popdensity_2024",
           "unit": "people/km2"
         }
@@ -16784,6 +20088,22 @@
           "unit": "people/km2"
         }
       },
+      "yangon": {
+        "value": 19066.69161481929,
+        "quality": "observed",
+        "year": 2024,
+        "detail": {
+          "hdc": "05029",
+          "atlas_name": "The Yangon area",
+          "iou": 1.0,
+          "area_ratio": 1.0,
+          "atlas_area_km2": 545.0,
+          "ucdb_area_km2": 545.0,
+          "atlas_pop_2025_vs_ucdb": 0.9959,
+          "atlas_column": "city_popdensity_2024",
+          "unit": "people/km2"
+        }
+      },
       "zurich": {
         "value": 6403.59291886387,
         "quality": "observed",
@@ -16823,7 +20143,12 @@
       "bengaluru": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "cape-town": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "casablanca": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "cebu": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "chennai": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "colombo": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "dakar": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "dar-es-salaam": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "denpasar": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "dhaka": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "edinburgh": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "fukuoka": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
@@ -16831,21 +20156,29 @@
       "havana": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "ho-chi-minh": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "johannesburg": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "kaohsiung": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "kathmandu": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "kinshasa": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "kuala-lumpur": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "lagos": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "lima": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "manila": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "marrakesh": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "medellin": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "melbourne": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "mexico-city": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "montevideo": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "mumbai": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "new-delhi": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "oslo": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "panama-city": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "phnom-penh": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "quito": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "reykjavik": "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)",
+      "salvador": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "san-jose-cr": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "santiago": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
+      "santo-domingo": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "sapporo": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "seoul": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "shanghai": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
@@ -16854,14 +20187,17 @@
       "tehran": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "tokyo": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement",
       "ulaanbaatar": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
+      "yangon": "Atlas value is NA for transit_pnft_2024 (ITDP computes it only from GTFS feeds listed in the Mobility Database; NA = no usable feed covering the agglomeration)",
       "zurich": "Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement"
     },
     "rapid_transit": {
       "bengaluru": "Atlas rapid-transit station data incomplete: 10 stations on 71 line-km (0.14/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 4.4 % is not credible",
+      "fortaleza": "Atlas rapid-transit station data incomplete: 4 stations on 24 line-km (0.17/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.9 % is not credible",
       "kuala-lumpur": "Atlas rapid-transit station data incomplete: 14 stations on 191 line-km (0.07/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.5 % is not credible",
       "london": "Atlas rapid-transit station data incomplete: 3 stations on 536 line-km (0.01/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 0.5 % is not credible",
       "melbourne": "Atlas rapid-transit station data incomplete: 4 stations on 559 line-km (0.01/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.0 % is not credible",
-      "reykjavik": "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)"
+      "reykjavik": "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)",
+      "salvador": "Atlas rapid-transit station data incomplete: 6 stations on 38 line-km (0.16/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 2.8 % is not credible"
     },
     "rapid_transit_km_per_mpop": {
       "reykjavik": "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)"
@@ -16877,30 +20213,44 @@
       "bengaluru": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "cape-town": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "casablanca": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "cebu": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "chennai": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "colombo": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "dakar": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "dar-es-salaam": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "denpasar": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "dhaka": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "edinburgh": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
+      "fortaleza": "component rapid_transit is NA or failed the screen (Atlas rapid-transit station data incomplete: 4 stations on 24 line-km (0.17/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.9 % is not credible); value would be an underestimate",
       "fukuoka": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "hanoi": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "havana": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "ho-chi-minh": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "johannesburg": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "kaohsiung": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "kathmandu": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "kinshasa": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "kuala-lumpur": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "lagos": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "lima": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "london": "component rapid_transit is NA or failed the screen (Atlas rapid-transit station data incomplete: 3 stations on 536 line-km (0.01/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 0.5 % is not credible); value would be an underestimate",
       "manila": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "marrakesh": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "medellin": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "melbourne": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "mexico-city": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "montevideo": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "mumbai": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "new-delhi": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "oslo": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "panama-city": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "phnom-penh": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "quito": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "reykjavik": "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)",
+      "salvador": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "san-jose-cr": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "santiago": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
+      "santo-domingo": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "sapporo": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "seoul": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "shanghai": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
@@ -16909,6 +20259,7 @@
       "tehran": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "tokyo": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate",
       "ulaanbaatar": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
+      "yangon": "component frequent_transit is NA or failed the screen (NA in Atlas); value would be an underestimate",
       "zurich": "component frequent_transit is NA or failed the screen (Atlas reports 0 % with 0 frequent stops found (transit_pnftpoints_2024 = 0): treated as a GTFS ingestion/coverage failure, not a measurement); value would be an underestimate"
     },
     "walk_education": {

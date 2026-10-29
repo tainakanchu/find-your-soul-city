@@ -187,7 +187,12 @@
     "plausibility": "High",
     "koppen_code": 14,
     "koppen_class": "Cfa",
-    "ucdb_names": ["New Taipei", "Taipei", "Taoyuan", "Keelung"]
+    "ucdb_names": [
+      "New Taipei",
+      "Taipei",
+      "Taoyuan",
+      "Keelung"
+    ]
   },
   "singapore": {
     "iso2": "SG",
@@ -204,7 +209,9 @@
     "plausibility": "High",
     "koppen_code": 1,
     "koppen_class": "Af",
-    "ucdb_names": ["Singapore"]
+    "ucdb_names": [
+      "Singapore"
+    ]
   },
   "bangkok": {
     "iso2": "TH",
@@ -221,7 +228,15 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Bangkok", "Nonthaburi", "Pak Kret", "Rangsit", "Samut Sakhon", "Om Noi", "Samut Prakan"]
+    "ucdb_names": [
+      "Bangkok",
+      "Nonthaburi",
+      "Pak Kret",
+      "Rangsit",
+      "Samut Sakhon",
+      "Om Noi",
+      "Samut Prakan"
+    ]
   },
   "hanoi": {
     "iso2": "VN",
@@ -238,7 +253,10 @@
     "plausibility": "High",
     "koppen_code": 11,
     "koppen_class": "Cwa",
-    "ucdb_names": ["Hanoi", "Từ Sơn"]
+    "ucdb_names": [
+      "Hanoi",
+      "Từ Sơn"
+    ]
   },
   "mumbai": {
     "iso2": "IN",
@@ -255,7 +273,12 @@
     "plausibility": "High",
     "koppen_code": 2,
     "koppen_class": "Am",
-    "ucdb_names": ["Mumbai", "Thane", "Navi Mumbai", "Bhiwandi"]
+    "ucdb_names": [
+      "Mumbai",
+      "Thane",
+      "Navi Mumbai",
+      "Bhiwandi"
+    ]
   },
   "dubai": {
     "iso2": "AE",
@@ -272,7 +295,11 @@
     "plausibility": "High",
     "koppen_code": 4,
     "koppen_class": "BWh",
-    "ucdb_names": ["Dubai", "Sharjah", "Ajman"]
+    "ucdb_names": [
+      "Dubai",
+      "Sharjah",
+      "Ajman"
+    ]
   },
   "istanbul": {
     "iso2": "TR",
@@ -289,7 +316,9 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Istanbul"]
+    "ucdb_names": [
+      "Istanbul"
+    ]
   },
   "cairo": {
     "iso2": "EG",
@@ -306,7 +335,15 @@
     "plausibility": "High",
     "koppen_code": 4,
     "koppen_class": "BWh",
-    "ucdb_names": ["Cairo", "Giza", "Shubra al Khayma", "Helwan", "New Cairo", "Fifteenth Of May", "Al-Obour"]
+    "ucdb_names": [
+      "Cairo",
+      "Giza",
+      "Shubra al Khayma",
+      "Helwan",
+      "New Cairo",
+      "Fifteenth Of May",
+      "Al-Obour"
+    ]
   },
   "lagos": {
     "iso2": "NG",
@@ -323,7 +360,10 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Lagos", "Ikeja"]
+    "ucdb_names": [
+      "Lagos",
+      "Ikeja"
+    ]
   },
   "nairobi": {
     "iso2": "KE",
@@ -340,7 +380,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Nairobi"]
+    "ucdb_names": [
+      "Nairobi"
+    ]
   },
   "cape-town": {
     "iso2": "ZA",
@@ -357,7 +399,9 @@
     "plausibility": "High",
     "koppen_code": 9,
     "koppen_class": "Csb",
-    "ucdb_names": ["Cape Town"]
+    "ucdb_names": [
+      "Cape Town"
+    ]
   },
   "london": {
     "iso2": "GB",
@@ -374,7 +418,11 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["London", "Westminster", "City of London"]
+    "ucdb_names": [
+      "London",
+      "Westminster",
+      "City of London"
+    ]
   },
   "paris": {
     "iso2": "FR",
@@ -391,7 +439,13 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Paris", "Argenteuil", "Saint-Denis", "Boulogne-Billancourt", "Montreuil"]
+    "ucdb_names": [
+      "Paris",
+      "Argenteuil",
+      "Saint-Denis",
+      "Boulogne-Billancourt",
+      "Montreuil"
+    ]
   },
   "berlin": {
     "iso2": "DE",
@@ -408,7 +462,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Berlin"]
+    "ucdb_names": [
+      "Berlin"
+    ]
   },
   "amsterdam": {
     "iso2": "NL",
@@ -425,7 +481,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Amsterdam"]
+    "ucdb_names": [
+      "Amsterdam"
+    ]
   },
   "copenhagen": {
     "iso2": "DK",
@@ -442,7 +500,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Copenhagen"]
+    "ucdb_names": [
+      "Copenhagen"
+    ]
   },
   "vienna": {
     "iso2": "AT",
@@ -459,7 +519,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Vienna"]
+    "ucdb_names": [
+      "Vienna"
+    ]
   },
   "helsinki": {
     "iso2": "FI",
@@ -476,7 +538,10 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Helsinki", "Vantaa"]
+    "ucdb_names": [
+      "Helsinki",
+      "Vantaa"
+    ]
   },
   "reykjavik": {
     "iso2": "IS",
@@ -493,7 +558,9 @@
     "plausibility": "High",
     "koppen_code": 16,
     "koppen_class": "Cfc",
-    "ucdb_names": ["Reykjavik"]
+    "ucdb_names": [
+      "Reykjavik"
+    ]
   },
   "lisbon": {
     "iso2": "PT",
@@ -537,7 +604,13 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Barcelona", "l'Hospitalet de Llobregat", "Badalona", "Sabadell", "Santa Coloma de Gramenet"]
+    "ucdb_names": [
+      "Barcelona",
+      "l'Hospitalet de Llobregat",
+      "Badalona",
+      "Sabadell",
+      "Santa Coloma de Gramenet"
+    ]
   },
   "new-york": {
     "iso2": "US",
@@ -649,7 +722,10 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Bogota", "Soacha"]
+    "ucdb_names": [
+      "Bogota",
+      "Soacha"
+    ]
   },
   "sao-paulo": {
     "iso2": "BR",
@@ -759,7 +835,9 @@
     "plausibility": "High",
     "koppen_code": 14,
     "koppen_class": "Cfa",
-    "ucdb_names": ["Sydney"]
+    "ucdb_names": [
+      "Sydney"
+    ]
   },
   "osaka": {
     "iso2": "JP",
@@ -866,7 +944,10 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Sapporo", "Ebetsu"]
+    "ucdb_names": [
+      "Sapporo",
+      "Ebetsu"
+    ]
   },
   "shanghai": {
     "iso2": "CN",
@@ -945,7 +1026,10 @@
     "plausibility": "High",
     "koppen_code": 11,
     "koppen_class": "Cwa",
-    "ucdb_names": ["Hong Kong", "Kowloon"]
+    "ucdb_names": [
+      "Hong Kong",
+      "Kowloon"
+    ]
   },
   "ulaanbaatar": {
     "iso2": "MN",
@@ -962,7 +1046,9 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Ulaanbaatar"]
+    "ucdb_names": [
+      "Ulaanbaatar"
+    ]
   },
   "ho-chi-minh": {
     "iso2": "VN",
@@ -979,7 +1065,14 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Ho Chi Minh City", "Thủ Đức", "Thủ Dầu Một", "Thuận An", "Dĩ An", "Biên Hòa"]
+    "ucdb_names": [
+      "Ho Chi Minh City",
+      "Thủ Đức",
+      "Thủ Dầu Một",
+      "Thuận An",
+      "Dĩ An",
+      "Biên Hòa"
+    ]
   },
   "kuala-lumpur": {
     "iso2": "MY",
@@ -1100,7 +1193,15 @@
     "plausibility": "High",
     "koppen_code": 6,
     "koppen_class": "BSh",
-    "ucdb_names": ["Ghaziabad", "Gurugram", "Noida", "New Delhi", "Bahadurgarh", "Faridabad", "Manesar"]
+    "ucdb_names": [
+      "Ghaziabad",
+      "Gurugram",
+      "Noida",
+      "New Delhi",
+      "Bahadurgarh",
+      "Faridabad",
+      "Manesar"
+    ]
   },
   "bengaluru": {
     "iso2": "IN",
@@ -1117,7 +1218,9 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Bengaluru"]
+    "ucdb_names": [
+      "Bengaluru"
+    ]
   },
   "dhaka": {
     "iso2": "BD",
@@ -1134,7 +1237,16 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Dhaka", "Cumilla", "Narayanganj", "Gazipur", "Narsingdi", "Noakhali", "Munshiganj", "Lakshmipur"]
+    "ucdb_names": [
+      "Dhaka",
+      "Cumilla",
+      "Narayanganj",
+      "Gazipur",
+      "Narsingdi",
+      "Noakhali",
+      "Munshiganj",
+      "Lakshmipur"
+    ]
   },
   "kathmandu": {
     "iso2": "NP",
@@ -1151,7 +1263,10 @@
     "plausibility": "High",
     "koppen_code": 11,
     "koppen_class": "Cwa",
-    "ucdb_names": ["Kathmandu", "Bhaktapur"]
+    "ucdb_names": [
+      "Kathmandu",
+      "Bhaktapur"
+    ]
   },
   "almaty": {
     "iso2": "KZ",
@@ -1168,7 +1283,9 @@
     "plausibility": "High",
     "koppen_code": 25,
     "koppen_class": "Dfa",
-    "ucdb_names": ["Almaty"]
+    "ucdb_names": [
+      "Almaty"
+    ]
   },
   "tehran": {
     "iso2": "IR",
@@ -1185,7 +1302,11 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Tehran", "Eslamshahr", "Qods"]
+    "ucdb_names": [
+      "Tehran",
+      "Eslamshahr",
+      "Qods"
+    ]
   },
   "tbilisi": {
     "iso2": "GE",
@@ -1202,7 +1323,9 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Tbilisi"]
+    "ucdb_names": [
+      "Tbilisi"
+    ]
   },
   "tel-aviv": {
     "iso2": "IL",
@@ -1219,7 +1342,15 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Tel Aviv", "Rishon LeZion", "Petah Tikva", "Holon", "Bat Yam", "Raanana", "Kfar Saba"]
+    "ucdb_names": [
+      "Tel Aviv",
+      "Rishon LeZion",
+      "Petah Tikva",
+      "Holon",
+      "Bat Yam",
+      "Raanana",
+      "Kfar Saba"
+    ]
   },
   "athens": {
     "iso2": "GR",
@@ -1236,7 +1367,11 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Athens", "Piraeus", "Peristeri"]
+    "ucdb_names": [
+      "Athens",
+      "Piraeus",
+      "Peristeri"
+    ]
   },
   "rome": {
     "iso2": "IT",
@@ -1253,7 +1388,9 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Rome"]
+    "ucdb_names": [
+      "Rome"
+    ]
   },
   "milan": {
     "iso2": "IT",
@@ -1270,7 +1407,10 @@
     "plausibility": "High",
     "koppen_code": 14,
     "koppen_class": "Cfa",
-    "ucdb_names": ["Milan", "Monza"]
+    "ucdb_names": [
+      "Milan",
+      "Monza"
+    ]
   },
   "madrid": {
     "iso2": "ES",
@@ -1287,7 +1427,16 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Madrid", "Móstoles", "Leganés", "Alcorcón", "Fuenlabrada", "Getafe", "Parla", "Alcobendas"]
+    "ucdb_names": [
+      "Madrid",
+      "Móstoles",
+      "Leganés",
+      "Alcorcón",
+      "Fuenlabrada",
+      "Getafe",
+      "Parla",
+      "Alcobendas"
+    ]
   },
   "zurich": {
     "iso2": "CH",
@@ -1304,7 +1453,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Zurich"]
+    "ucdb_names": [
+      "Zurich"
+    ]
   },
   "munich": {
     "iso2": "DE",
@@ -1321,7 +1472,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Munich"]
+    "ucdb_names": [
+      "Munich"
+    ]
   },
   "prague": {
     "iso2": "CZ",
@@ -1338,7 +1491,9 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Prague"]
+    "ucdb_names": [
+      "Prague"
+    ]
   },
   "budapest": {
     "iso2": "HU",
@@ -1355,7 +1510,9 @@
     "plausibility": "High",
     "koppen_code": 25,
     "koppen_class": "Dfa",
-    "ucdb_names": ["Budapest"]
+    "ucdb_names": [
+      "Budapest"
+    ]
   },
   "warsaw": {
     "iso2": "PL",
@@ -1372,7 +1529,9 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Warsaw"]
+    "ucdb_names": [
+      "Warsaw"
+    ]
   },
   "stockholm": {
     "iso2": "SE",
@@ -1389,7 +1548,9 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Stockholm"]
+    "ucdb_names": [
+      "Stockholm"
+    ]
   },
   "oslo": {
     "iso2": "NO",
@@ -1406,7 +1567,9 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Oslo"]
+    "ucdb_names": [
+      "Oslo"
+    ]
   },
   "dublin": {
     "iso2": "IE",
@@ -1423,7 +1586,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Dublin"]
+    "ucdb_names": [
+      "Dublin"
+    ]
   },
   "edinburgh": {
     "iso2": "GB",
@@ -1440,7 +1605,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Edinburgh"]
+    "ucdb_names": [
+      "Edinburgh"
+    ]
   },
   "casablanca": {
     "iso2": "MA",
@@ -1457,7 +1624,10 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Casablanca", "Mohammedia"]
+    "ucdb_names": [
+      "Casablanca",
+      "Mohammedia"
+    ]
   },
   "marrakesh": {
     "iso2": "MA",
@@ -1474,7 +1644,9 @@
     "plausibility": "High",
     "koppen_code": 6,
     "koppen_class": "BSh",
-    "ucdb_names": ["Marrakesh"]
+    "ucdb_names": [
+      "Marrakesh"
+    ]
   },
   "dakar": {
     "iso2": "SN",
@@ -1491,7 +1663,12 @@
     "plausibility": "High",
     "koppen_code": 6,
     "koppen_class": "BSh",
-    "ucdb_names": ["Dakar", "Guédiawaye", "Pikine", "Rufisque"]
+    "ucdb_names": [
+      "Dakar",
+      "Guédiawaye",
+      "Pikine",
+      "Rufisque"
+    ]
   },
   "accra": {
     "iso2": "GH",
@@ -1508,7 +1685,10 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Accra", "Tema"]
+    "ucdb_names": [
+      "Accra",
+      "Tema"
+    ]
   },
   "addis-ababa": {
     "iso2": "ET",
@@ -1525,7 +1705,9 @@
     "plausibility": "High",
     "koppen_code": 12,
     "koppen_class": "Cwb",
-    "ucdb_names": ["Addis Ababa"]
+    "ucdb_names": [
+      "Addis Ababa"
+    ]
   },
   "johannesburg": {
     "iso2": "ZA",
@@ -1542,7 +1724,14 @@
     "plausibility": "High",
     "koppen_code": 12,
     "koppen_class": "Cwb",
-    "ucdb_names": ["Johannesburg", "Soweto", "Randburg", "Roodepoort", "Krugersdorp", "Sandton"]
+    "ucdb_names": [
+      "Johannesburg",
+      "Soweto",
+      "Randburg",
+      "Roodepoort",
+      "Krugersdorp",
+      "Sandton"
+    ]
   },
   "toronto": {
     "iso2": "CA",
@@ -1559,7 +1748,15 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Toronto", "Mississauga", "Brampton", "Markham", "Vaughan", "Richmond Hill", "Oakville"]
+    "ucdb_names": [
+      "Toronto",
+      "Mississauga",
+      "Brampton",
+      "Markham",
+      "Vaughan",
+      "Richmond Hill",
+      "Oakville"
+    ]
   },
   "montreal": {
     "iso2": "CA",
@@ -1576,7 +1773,11 @@
     "plausibility": "High",
     "koppen_code": 26,
     "koppen_class": "Dfb",
-    "ucdb_names": ["Montreal", "Laval", "Longueuil"]
+    "ucdb_names": [
+      "Montreal",
+      "Laval",
+      "Longueuil"
+    ]
   },
   "seattle": {
     "iso2": "US",
@@ -1593,7 +1794,10 @@
     "plausibility": "High",
     "koppen_code": 9,
     "koppen_class": "Csb",
-    "ucdb_names": ["Seattle", "Bellevue"]
+    "ucdb_names": [
+      "Seattle",
+      "Bellevue"
+    ]
   },
   "san-francisco": {
     "iso2": "US",
@@ -1691,7 +1895,14 @@
     "plausibility": "High",
     "koppen_code": 7,
     "koppen_class": "BSk",
-    "ucdb_names": ["Denver", "Aurora", "Lakewood", "Thornton", "Centennial", "Westminster"]
+    "ucdb_names": [
+      "Denver",
+      "Aurora",
+      "Lakewood",
+      "Thornton",
+      "Centennial",
+      "Westminster"
+    ]
   },
   "chicago": {
     "iso2": "US",
@@ -1708,7 +1919,11 @@
     "plausibility": "High",
     "koppen_code": 25,
     "koppen_class": "Dfa",
-    "ucdb_names": ["Chicago", "Evanston", "Elmhurst"]
+    "ucdb_names": [
+      "Chicago",
+      "Evanston",
+      "Elmhurst"
+    ]
   },
   "miami": {
     "iso2": "US",
@@ -1759,7 +1974,12 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Honolulu", "Waipahu", "Pearl City", "Aiea"]
+    "ucdb_names": [
+      "Honolulu",
+      "Waipahu",
+      "Pearl City",
+      "Aiea"
+    ]
   },
   "havana": {
     "iso2": "CU",
@@ -1776,7 +1996,9 @@
     "plausibility": "High",
     "koppen_code": 3,
     "koppen_class": "Aw",
-    "ucdb_names": ["Havana"]
+    "ucdb_names": [
+      "Havana"
+    ]
   },
   "lima": {
     "iso2": "PE",
@@ -1793,7 +2015,10 @@
     "plausibility": "High",
     "koppen_code": 4,
     "koppen_class": "BWh",
-    "ucdb_names": ["Lima", "Callao"]
+    "ucdb_names": [
+      "Lima",
+      "Callao"
+    ]
   },
   "quito": {
     "iso2": "EC",
@@ -1810,7 +2035,10 @@
     "plausibility": "High",
     "koppen_code": 9,
     "koppen_class": "Csb",
-    "ucdb_names": ["Quito", "Sangolqui"]
+    "ucdb_names": [
+      "Quito",
+      "Sangolqui"
+    ]
   },
   "santiago": {
     "iso2": "CL",
@@ -1827,7 +2055,9 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Santiago"]
+    "ucdb_names": [
+      "Santiago"
+    ]
   },
   "rio-de-janeiro": {
     "iso2": "BR",
@@ -1871,7 +2101,9 @@
     "plausibility": "High",
     "koppen_code": 14,
     "koppen_class": "Cfa",
-    "ucdb_names": ["Montevideo"]
+    "ucdb_names": [
+      "Montevideo"
+    ]
   },
   "melbourne": {
     "iso2": "AU",
@@ -1888,7 +2120,9 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Melbourne"]
+    "ucdb_names": [
+      "Melbourne"
+    ]
   },
   "perth": {
     "iso2": "AU",
@@ -1905,7 +2139,10 @@
     "plausibility": "High",
     "koppen_code": 8,
     "koppen_class": "Csa",
-    "ucdb_names": ["Perth", "Joondalup"]
+    "ucdb_names": [
+      "Perth",
+      "Joondalup"
+    ]
   },
   "auckland": {
     "iso2": "NZ",
@@ -1922,6 +2159,387 @@
     "plausibility": "High",
     "koppen_code": 15,
     "koppen_class": "Cfb",
-    "ucdb_names": ["Auckland"]
+    "ucdb_names": [
+      "Auckland"
+    ]
+  },
+  "chennai": {
+    "iso2": "IN",
+    "country_name": "India",
+    "country_name_gadm": "India",
+    "region": "Central and Southern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 10300,
+    "name_en": "Chennai",
+    "lat": 13.0115,
+    "lon": 80.1763,
+    "area_km2": 1052.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Chennai",
+      "Tambaram",
+      "Avadi"
+    ]
+  },
+  "kochi": {
+    "iso2": "IN",
+    "country_name": "India",
+    "country_name_gadm": "India",
+    "region": "Central and Southern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 9386,
+    "name_en": "Kochi",
+    "lat": 9.9834,
+    "lon": 76.3118,
+    "area_km2": 1266.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Kochi",
+      "Ernakulam"
+    ]
+  },
+  "colombo": {
+    "iso2": "LK",
+    "country_name": "Sri Lanka",
+    "country_name_gadm": "Sri Lanka",
+    "region": "Central and Southern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 632,
+    "name_en": "Colombo [Sri Jayawardenepura Kotte]",
+    "lat": 6.8484,
+    "lon": 79.9802,
+    "area_km2": 1206.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 1,
+    "koppen_class": "Af",
+    "ucdb_names": [
+      "Colombo",
+      "Kaduwela",
+      "Moratuwa",
+      "Maharagama",
+      "Kesbewa",
+      "Negombo",
+      "Sri Jayawardenepura Kotte",
+      "Kolonnawa",
+      "Kalutara",
+      "Gampaha"
+    ]
+  },
+  "yangon": {
+    "iso2": "MM",
+    "country_name": "Myanmar",
+    "country_name_gadm": "Myanmar",
+    "region": "Eastern and South-Eastern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 5029,
+    "name_en": "Yangon",
+    "lat": 16.9003,
+    "lon": 96.1478,
+    "area_km2": 545.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Yangon"
+    ]
+  },
+  "phnom-penh": {
+    "iso2": "KH",
+    "country_name": "Cambodia",
+    "country_name_gadm": "Cambodia",
+    "region": "Eastern and South-Eastern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 1741,
+    "name_en": "Phnom Penh",
+    "lat": 11.5591,
+    "lon": 104.8773,
+    "area_km2": 354.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Phnom Penh",
+      "Ta Khmao"
+    ]
+  },
+  "cebu": {
+    "iso2": "PH",
+    "country_name": "Philippines",
+    "country_name_gadm": "Philippines",
+    "region": "Eastern and South-Eastern Asia",
+    "income": "Lower Middle",
+    "ucdb_id": 5065,
+    "name_en": "Cebu City",
+    "lat": 10.3129,
+    "lon": 123.9362,
+    "area_km2": 416.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 1,
+    "koppen_class": "Af",
+    "ucdb_names": [
+      "Cebu City",
+      "Lapu-Lapu",
+      "Mandaue",
+      "Talisay",
+      "Danao",
+      "Carcar",
+      "Naga"
+    ]
+  },
+  "denpasar": {
+    "iso2": "ID",
+    "country_name": "Indonesia",
+    "country_name_gadm": "Indonesia",
+    "region": "Eastern and South-Eastern Asia",
+    "income": "Upper Middle",
+    "ucdb_id": 7783,
+    "name_en": "Denpasar",
+    "lat": -8.6746,
+    "lon": 115.2052,
+    "area_km2": 388.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Denpasar"
+    ]
+  },
+  "kaohsiung": {
+    "iso2": "TW",
+    "country_name": "China, Taiwan Province of China",
+    "country_name_gadm": "Taiwan",
+    "region": "Eastern and South-Eastern Asia",
+    "income": "High income",
+    "ucdb_id": 1919,
+    "name_en": "Kaohsiung",
+    "lat": 22.6335,
+    "lon": 120.3421,
+    "area_km2": 372.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Kaohsiung"
+    ]
+  },
+  "medellin": {
+    "iso2": "CO",
+    "country_name": "Colombia",
+    "country_name_gadm": "Colombia",
+    "region": "Latin America and the Caribbean",
+    "income": "Upper Middle",
+    "ucdb_id": 2676,
+    "name_en": "Medellín",
+    "lat": 6.2363,
+    "lon": -75.5735,
+    "area_km2": 233.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 1,
+    "koppen_class": "Af",
+    "ucdb_names": [
+      "Medellín",
+      "Bello",
+      "Medellin"
+    ]
+  },
+  "san-jose-cr": {
+    "iso2": "CR",
+    "country_name": "Costa Rica",
+    "country_name_gadm": "Costa Rica",
+    "region": "Latin America and the Caribbean",
+    "income": "Upper Middle",
+    "ucdb_id": 363,
+    "name_en": "San José",
+    "lat": 9.9468,
+    "lon": -84.1169,
+    "area_km2": 491.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "San José",
+      "Heredia",
+      "Alajuela"
+    ]
+  },
+  "panama-city": {
+    "iso2": "PA",
+    "country_name": "Panama",
+    "country_name_gadm": "Panama",
+    "region": "Latin America and the Caribbean",
+    "income": "High income",
+    "ucdb_id": 658,
+    "name_en": "Panama City",
+    "lat": 9.0565,
+    "lon": -79.4571,
+    "area_km2": 277.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Panama"
+    ]
+  },
+  "santo-domingo": {
+    "iso2": "DO",
+    "country_name": "Dominican Republic",
+    "country_name_gadm": "Dominican Republic",
+    "region": "Latin America and the Caribbean",
+    "income": "Upper Middle",
+    "ucdb_id": 1667,
+    "name_en": "Santo Domingo",
+    "lat": 18.4863,
+    "lon": -69.9052,
+    "area_km2": 483.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Santo Domingo"
+    ]
+  },
+  "salvador": {
+    "iso2": "BR",
+    "country_name": "Brazil",
+    "country_name_gadm": "Brazil",
+    "region": "Latin America and the Caribbean",
+    "income": "Upper Middle",
+    "ucdb_id": 8238,
+    "name_en": "Salvador",
+    "lat": -12.9257,
+    "lon": -38.4146,
+    "area_km2": 323.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 1,
+    "koppen_class": "Af",
+    "ucdb_names": [
+      "Salvador",
+      "Lauro de Freitas"
+    ]
+  },
+  "fortaleza": {
+    "iso2": "BR",
+    "country_name": "Brazil",
+    "country_name_gadm": "Brazil",
+    "region": "Latin America and the Caribbean",
+    "income": "Upper Middle",
+    "ucdb_id": 8154,
+    "name_en": "Fortaleza",
+    "lat": -3.8104,
+    "lon": -38.5418,
+    "area_km2": 413.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Fortaleza",
+      "Caucaia",
+      "Maracanaú"
+    ]
+  },
+  "dar-es-salaam": {
+    "iso2": "TZ",
+    "country_name": "United Republic of Tanzania",
+    "country_name_gadm": "Tanzania",
+    "region": "Sub-Saharan Africa",
+    "income": "Lower Middle",
+    "ucdb_id": 3570,
+    "name_en": "Dar es-Salaam",
+    "lat": -6.7957,
+    "lon": 39.1681,
+    "area_km2": 907.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Dar es-Salaam"
+    ]
+  },
+  "abidjan": {
+    "iso2": "CI",
+    "country_name": "Côte d'Ivoire",
+    "country_name_gadm": "Côte d'Ivoire",
+    "region": "Sub-Saharan Africa",
+    "income": "Lower Middle",
+    "ucdb_id": 2996,
+    "name_en": "Abidjan",
+    "lat": 5.3611,
+    "lon": -3.9969,
+    "area_km2": 503.0,
+    "capital": false,
+    "plausibility": "High",
+    "koppen_code": 2,
+    "koppen_class": "Am",
+    "ucdb_names": [
+      "Abidjan",
+      "Abobo",
+      "Yopougon",
+      "Cocody",
+      "Koumassi",
+      "Port-Bouët",
+      "Adjamé",
+      "Marcory",
+      "Attécoubé",
+      "Anyama",
+      "Le Plateau",
+      "Treichville"
+    ]
+  },
+  "kinshasa": {
+    "iso2": "CD",
+    "country_name": "Democratic Republic of the Congo",
+    "country_name_gadm": "Democratic Republic of the Congo",
+    "region": "Sub-Saharan Africa",
+    "income": "Low income",
+    "ucdb_id": 1876,
+    "name_en": "Kinshasa",
+    "lat": -4.4054,
+    "lon": 15.3489,
+    "area_km2": 487.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Kinshasa"
+    ]
+  },
+  "kigali": {
+    "iso2": "RW",
+    "country_name": "Rwanda",
+    "country_name_gadm": "Rwanda",
+    "region": "Sub-Saharan Africa",
+    "income": "Low income",
+    "ucdb_id": 597,
+    "name_en": "Kigali",
+    "lat": -1.9533,
+    "lon": 30.0988,
+    "area_km2": 286.0,
+    "capital": true,
+    "plausibility": "High",
+    "koppen_code": 3,
+    "koppen_class": "Aw",
+    "ucdb_names": [
+      "Kigali"
+    ]
   }
 }

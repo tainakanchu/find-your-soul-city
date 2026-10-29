@@ -1,6 +1,6 @@
 {
   "source_id": "ghsl-ucdb",
-  "generated_at": "2026-10-28T20:46:13Z",
+  "generated_at": "2026-10-29T02:06:33Z",
   "inputs": [
     "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_UCDB_GLOBE_R2024A/GHS_UCDB_GLOBE_R2024A/V1-2/GHS_UCDB_GLOBE_R2024A_V1_2.zip",
     "https://ndownloader.figshare.com/files/12407516"
@@ -12,6 +12,15 @@
   ],
   "values": {
     "building_height_mean_m": {
+      "abidjan": {
+        "value": 8.280753097,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "accra": {
         "value": 7.359042208,
         "quality": "estimated",
@@ -165,8 +174,35 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "cebu": {
+        "value": 6.301920724,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "chennai": {
+        "value": 7.249135794,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "chicago": {
         "value": 8.356757548,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "colombo": {
+        "value": 6.040452336,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -185,6 +221,24 @@
       },
       "dakar": {
         "value": 7.794729381,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "dar-es-salaam": {
+        "value": 6.864089268,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "denpasar": {
+        "value": 6.627048704,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -230,6 +284,15 @@
       },
       "edinburgh": {
         "value": 7.324792443,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "fortaleza": {
+        "value": 8.431775977,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -327,8 +390,44 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "kaohsiung": {
+        "value": 12.17935457,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "kathmandu": {
         "value": 7.193897292,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "kigali": {
+        "value": 6.936517035,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "kinshasa": {
+        "value": 7.721070985,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "kochi": {
+        "value": 5.144979584,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -410,6 +509,15 @@
       },
       "marrakesh": {
         "value": 7.67341358,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "medellin": {
+        "value": 13.34996519,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -534,6 +642,15 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "panama-city": {
+        "value": 8.201723566,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "paris": {
         "value": 9.760139541,
         "quality": "estimated",
@@ -545,6 +662,15 @@
       },
       "perth": {
         "value": 8.711600412,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "phnom-penh": {
+        "value": 6.667457759,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -597,6 +723,15 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "salvador": {
+        "value": 10.74099391,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "san-francisco": {
         "value": 8.820840721,
         "quality": "estimated",
@@ -606,8 +741,26 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "san-jose-cr": {
+        "value": 7.337020665,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "santiago": {
         "value": 7.941749681,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
+      "santo-domingo": {
+        "value": 7.30792989,
         "quality": "estimated",
         "year": 2018,
         "detail": {
@@ -777,6 +930,15 @@
           "ucdb_epoch_label": 2020
         }
       },
+      "yangon": {
+        "value": 6.857419667,
+        "quality": "estimated",
+        "year": 2018,
+        "detail": {
+          "column": "GH_BUH_AVG_2020",
+          "ucdb_epoch_label": 2020
+        }
+      },
       "zurich": {
         "value": 9.161212625,
         "quality": "estimated",
@@ -788,6 +950,14 @@
       }
     },
     "density_mean": {
+      "abidjan": {
+        "value": 12823.689087475148,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "accra": {
         "value": 5254.653026761819,
         "quality": "estimated",
@@ -924,8 +1094,32 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "cebu": {
+        "value": 7672.08023798077,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "chennai": {
+        "value": 10899.620095057035,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "chicago": {
         "value": 2599.5770215053763,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "colombo": {
+        "value": 3914.538119402985,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -942,6 +1136,22 @@
       },
       "dakar": {
         "value": 14332.858462093864,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 9832.992966923925,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "denpasar": {
+        "value": 5169.973175257732,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -982,6 +1192,14 @@
       },
       "edinburgh": {
         "value": 4078.194620769231,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "fortaleza": {
+        "value": 8048.786031476998,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -1068,8 +1286,40 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "kaohsiung": {
+        "value": 6168.741717741936,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "kathmandu": {
         "value": 11036.27577142857,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "kigali": {
+        "value": 5670.490902097902,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "kinshasa": {
+        "value": 26582.511273100616,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "kochi": {
+        "value": 4003.9671477093207,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -1142,6 +1392,14 @@
       },
       "marrakesh": {
         "value": 9295.891725806452,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "medellin": {
+        "value": 13800.2461416309,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -1252,6 +1510,14 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "panama-city": {
+        "value": 5821.081108303249,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "paris": {
         "value": 6564.662009852217,
         "quality": "estimated",
@@ -1262,6 +1528,14 @@
       },
       "perth": {
         "value": 1731.354244897959,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "phnom-penh": {
+        "value": 6833.702694915255,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -1308,6 +1582,14 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "salvador": {
+        "value": 10233.422721362229,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "san-francisco": {
         "value": 2923.388369268897,
         "quality": "estimated",
@@ -1316,8 +1598,24 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "san-jose-cr": {
+        "value": 4628.455232179226,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "santiago": {
         "value": 8281.855941323345,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
+      "santo-domingo": {
+        "value": 9509.655683229814,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -1468,6 +1766,14 @@
           "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
         }
       },
+      "yangon": {
+        "value": 11359.55543119266,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "formula": "GC_POP_TOT_2025 / GC_UCA_KM2_2025"
+        }
+      },
       "zurich": {
         "value": 3685.6046689839573,
         "quality": "estimated",
@@ -1478,6 +1784,14 @@
       }
     },
     "elevation_mean_m": {
+      "abidjan": {
+        "value": 46.22,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "accra": {
         "value": 38.24,
         "quality": "observed",
@@ -1614,8 +1928,32 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "cebu": {
+        "value": 27.26,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "chennai": {
+        "value": 17.29,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "chicago": {
         "value": 197.54,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "colombo": {
+        "value": 15.04,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1632,6 +1970,22 @@
       },
       "dakar": {
         "value": 11.23,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 65.56,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "denpasar": {
+        "value": 50.26,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1672,6 +2026,14 @@
       },
       "edinburgh": {
         "value": 56.54,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "fortaleza": {
+        "value": 22.15,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1758,8 +2120,40 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "kaohsiung": {
+        "value": 17.86,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "kathmandu": {
         "value": 1364.78,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "kigali": {
+        "value": 1472.64,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "kinshasa": {
+        "value": 338.57,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "kochi": {
+        "value": 9.93,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1832,6 +2226,14 @@
       },
       "marrakesh": {
         "value": 455.86,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "medellin": {
+        "value": 1657.88,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1942,6 +2344,14 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "panama-city": {
+        "value": 55.42,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "paris": {
         "value": 73.27,
         "quality": "observed",
@@ -1952,6 +2362,14 @@
       },
       "perth": {
         "value": 25.29,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "phnom-penh": {
+        "value": 10.46,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -1998,6 +2416,14 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "salvador": {
+        "value": 35.78,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "san-francisco": {
         "value": 41.18,
         "quality": "observed",
@@ -2006,8 +2432,24 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "san-jose-cr": {
+        "value": 1119.74,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "santiago": {
         "value": 591.18,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
+      "santo-domingo": {
+        "value": 29.84,
         "quality": "observed",
         "year": 2025,
         "detail": {
@@ -2158,6 +2600,14 @@
           "column": "GE_ELV_AVG_2025"
         }
       },
+      "yangon": {
+        "value": 8.74,
+        "quality": "observed",
+        "year": 2025,
+        "detail": {
+          "column": "GE_ELV_AVG_2025"
+        }
+      },
       "zurich": {
         "value": 459.38,
         "quality": "observed",
@@ -2168,6 +2618,14 @@
       }
     },
     "ndvi_builtup_mean": {
+      "abidjan": {
+        "value": 0.312754147,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "accra": {
         "value": 0.300362198,
         "quality": "observed",
@@ -2304,8 +2762,32 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "cebu": {
+        "value": 0.483520477,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "chennai": {
+        "value": 0.365426876,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "chicago": {
         "value": 0.393180327,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "colombo": {
+        "value": 0.61627089,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2322,6 +2804,22 @@
       },
       "dakar": {
         "value": 0.151379948,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 0.438223021,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "denpasar": {
+        "value": 0.51032815,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2362,6 +2860,14 @@
       },
       "edinburgh": {
         "value": 0.483293696,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "fortaleza": {
+        "value": 0.360341289,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2448,8 +2954,40 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "kaohsiung": {
+        "value": 0.293842647,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "kathmandu": {
         "value": 0.342960067,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "kigali": {
+        "value": 0.480271347,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "kinshasa": {
+        "value": 0.44449156,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "kochi": {
+        "value": 0.587705498,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2522,6 +3060,14 @@
       },
       "marrakesh": {
         "value": 0.186226394,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "medellin": {
+        "value": 0.453711074,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2632,6 +3178,14 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "panama-city": {
+        "value": 0.448258728,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "paris": {
         "value": 0.43578522,
         "quality": "observed",
@@ -2642,6 +3196,14 @@
       },
       "perth": {
         "value": 0.312687907,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "phnom-penh": {
+        "value": 0.300468655,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2688,6 +3250,14 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "salvador": {
+        "value": 0.410842071,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "san-francisco": {
         "value": 0.293582909,
         "quality": "observed",
@@ -2696,8 +3266,24 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "san-jose-cr": {
+        "value": 0.45535864,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "santiago": {
         "value": 0.223201358,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
+      "santo-domingo": {
+        "value": 0.42377634,
         "quality": "observed",
         "year": 2020,
         "detail": {
@@ -2848,6 +3434,14 @@
           "column": "GR_AVG_GRN_2020"
         }
       },
+      "yangon": {
+        "value": 0.479430978,
+        "quality": "observed",
+        "year": 2020,
+        "detail": {
+          "column": "GR_AVG_GRN_2020"
+        }
+      },
       "zurich": {
         "value": 0.526965177,
         "quality": "observed",
@@ -2858,6 +3452,15 @@
       }
     },
     "pm25_popweighted_ugm3": {
+      "abidjan": {
+        "value": 27.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "accra": {
         "value": 32.0,
         "quality": "estimated",
@@ -3011,8 +3614,35 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "cebu": {
+        "value": 20.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "chennai": {
+        "value": 31.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "chicago": {
         "value": 8.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "colombo": {
+        "value": 24.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3031,6 +3661,24 @@
       },
       "dakar": {
         "value": 42.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "dar-es-salaam": {
+        "value": 12.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "denpasar": {
+        "value": 12.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3075,6 +3723,15 @@
         }
       },
       "edinburgh": {
+        "value": 7.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "fortaleza": {
         "value": 7.0,
         "quality": "estimated",
         "year": 2020,
@@ -3173,8 +3830,44 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "kaohsiung": {
+        "value": 12.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "kathmandu": {
         "value": 44.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "kigali": {
+        "value": 41.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "kinshasa": {
+        "value": 33.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "kochi": {
+        "value": 26.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3256,6 +3949,15 @@
       },
       "marrakesh": {
         "value": 23.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "medellin": {
+        "value": 21.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3380,6 +4082,15 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "panama-city": {
+        "value": 15.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "paris": {
         "value": 10.0,
         "quality": "estimated",
@@ -3391,6 +4102,15 @@
       },
       "perth": {
         "value": 9.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "phnom-penh": {
+        "value": 28.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3443,6 +4163,15 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "salvador": {
+        "value": 8.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "san-francisco": {
         "value": 9.0,
         "quality": "estimated",
@@ -3452,8 +4181,26 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "san-jose-cr": {
+        "value": 18.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "santiago": {
         "value": 22.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
+      "santo-domingo": {
+        "value": 16.0,
         "quality": "estimated",
         "year": 2020,
         "detail": {
@@ -3623,6 +4370,15 @@
           "rounded_to_integer_upstream": true
         }
       },
+      "yangon": {
+        "value": 36.0,
+        "quality": "estimated",
+        "year": 2020,
+        "detail": {
+          "column": "EM_PM2_CON_2020",
+          "rounded_to_integer_upstream": true
+        }
+      },
       "zurich": {
         "value": 8.0,
         "quality": "estimated",
@@ -3634,6 +4390,17 @@
       }
     },
     "tree_cover_share_pct": {
+      "abidjan": {
+        "value": 12.874352596868981,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 40844.2,
+          "uc_area_ha": 50300.0,
+          "lc_total_over_uc_area": 0.812,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "accra": {
         "value": 0.0,
         "quality": "observed",
@@ -3821,6 +4588,28 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "cebu": {
+        "value": 26.201628245052806,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 24547.8,
+          "uc_area_ha": 41600.0,
+          "lc_total_over_uc_area": 0.5901,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "chennai": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 100820.0,
+          "uc_area_ha": 105200.0,
+          "lc_total_over_uc_area": 0.9584,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "chicago": {
         "value": 7.5960522569136,
         "quality": "observed",
@@ -3829,6 +4618,17 @@
           "lc_total_ha": 204600.0,
           "uc_area_ha": 204600.0,
           "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "colombo": {
+        "value": 42.06157306298783,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 99344.8,
+          "uc_area_ha": 120600.0,
+          "lc_total_over_uc_area": 0.8238,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -3851,6 +4651,28 @@
           "lc_total_ha": 25578.0,
           "uc_area_ha": 27700.0,
           "lc_total_over_uc_area": 0.9234,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 41.54714538343929,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 84734.2,
+          "uc_area_ha": 90700.0,
+          "lc_total_over_uc_area": 0.9342,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "denpasar": {
+        "value": 5.453605118494096,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 30506.1,
+          "uc_area_ha": 38800.0,
+          "lc_total_over_uc_area": 0.7862,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -3906,6 +4728,17 @@
           "lc_total_ha": 10018.9,
           "uc_area_ha": 13000.0,
           "lc_total_over_uc_area": 0.7707,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "fortaleza": {
+        "value": 1.7320148054715516,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 35332.6,
+          "uc_area_ha": 41300.0,
+          "lc_total_over_uc_area": 0.8555,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -4019,6 +4852,17 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "kaohsiung": {
+        "value": 7.878133431728015,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 35129.4,
+          "uc_area_ha": 37200.0,
+          "lc_total_over_uc_area": 0.9443,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "kathmandu": {
         "value": 18.099874987808597,
         "quality": "observed",
@@ -4027,6 +4871,39 @@
           "lc_total_ha": 35000.0,
           "uc_area_ha": 35000.0,
           "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "kigali": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 28600.0,
+          "uc_area_ha": 28600.0,
+          "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "kinshasa": {
+        "value": 22.086129610777352,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 48700.0,
+          "uc_area_ha": 48700.0,
+          "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "kochi": {
+        "value": 54.99690112119498,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 111765.0,
+          "uc_area_ha": 126600.0,
+          "lc_total_over_uc_area": 0.8828,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -4125,6 +5002,17 @@
         "detail": {
           "lc_total_ha": 12400.0,
           "uc_area_ha": 12400.0,
+          "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "medellin": {
+        "value": 14.315008797054507,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 23300.0,
+          "uc_area_ha": 23300.0,
           "lc_total_over_uc_area": 1.0,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
@@ -4272,6 +5160,17 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "panama-city": {
+        "value": 24.92951494409813,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 26583.3,
+          "uc_area_ha": 27700.0,
+          "lc_total_over_uc_area": 0.9597,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "paris": {
         "value": 10.15025360131065,
         "quality": "observed",
@@ -4291,6 +5190,17 @@
           "lc_total_ha": 68805.2,
           "uc_area_ha": 78400.0,
           "lc_total_over_uc_area": 0.8776,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "phnom-penh": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 35400.0,
+          "uc_area_ha": 35400.0,
+          "lc_total_over_uc_area": 1.0,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -4349,6 +5259,17 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "salvador": {
+        "value": 21.121311011641314,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 26034.4,
+          "uc_area_ha": 32300.0,
+          "lc_total_over_uc_area": 0.806,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "san-francisco": {
         "value": 5.63759377281616,
         "quality": "observed",
@@ -4360,6 +5281,17 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "san-jose-cr": {
+        "value": 3.8605057394647866,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 49100.0,
+          "uc_area_ha": 49100.0,
+          "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "santiago": {
         "value": 0.0,
         "quality": "observed",
@@ -4368,6 +5300,17 @@
           "lc_total_ha": 80100.0,
           "uc_area_ha": 80100.0,
           "lc_total_over_uc_area": 1.0,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
+      "santo-domingo": {
+        "value": 28.978178551208888,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 44754.0,
+          "uc_area_ha": 48300.0,
+          "lc_total_over_uc_area": 0.9266,
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
@@ -4569,6 +5512,17 @@
           "classes": "CGLS-LC100 111-126 (closed+open forest)"
         }
       },
+      "yangon": {
+        "value": 0.0,
+        "quality": "observed",
+        "year": 2019,
+        "detail": {
+          "lc_total_ha": 53828.8,
+          "uc_area_ha": 54500.0,
+          "lc_total_over_uc_area": 0.9877,
+          "classes": "CGLS-LC100 111-126 (closed+open forest)"
+        }
+      },
       "zurich": {
         "value": 6.984918641461774,
         "quality": "observed",
@@ -4582,6 +5536,14 @@
       }
     },
     "urban_area_km2": {
+      "abidjan": {
+        "value": 503.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "accra": {
         "value": 1121.0,
         "quality": "estimated",
@@ -4718,8 +5680,32 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "cebu": {
+        "value": 416.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "chennai": {
+        "value": 1052.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "chicago": {
         "value": 2046.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "colombo": {
+        "value": 1206.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -4736,6 +5722,22 @@
       },
       "dakar": {
         "value": 277.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 907.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "denpasar": {
+        "value": 388.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -4776,6 +5778,14 @@
       },
       "edinburgh": {
         "value": 130.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "fortaleza": {
+        "value": 413.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -4862,8 +5872,40 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "kaohsiung": {
+        "value": 372.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "kathmandu": {
         "value": 350.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "kigali": {
+        "value": 286.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "kinshasa": {
+        "value": 487.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "kochi": {
+        "value": 1266.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -4936,6 +5978,14 @@
       },
       "marrakesh": {
         "value": 124.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "medellin": {
+        "value": 233.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5046,6 +6096,14 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "panama-city": {
+        "value": 277.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "paris": {
         "value": 1421.0,
         "quality": "estimated",
@@ -5056,6 +6114,14 @@
       },
       "perth": {
         "value": 784.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "phnom-penh": {
+        "value": 354.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5102,6 +6168,14 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "salvador": {
+        "value": 323.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "san-francisco": {
         "value": 1614.0,
         "quality": "estimated",
@@ -5110,8 +6184,24 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "san-jose-cr": {
+        "value": 491.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "santiago": {
         "value": 801.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
+      "santo-domingo": {
+        "value": 483.0,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5262,6 +6352,14 @@
           "column": "GC_UCA_KM2_2025"
         }
       },
+      "yangon": {
+        "value": 545.0,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_UCA_KM2_2025"
+        }
+      },
       "zurich": {
         "value": 187.0,
         "quality": "estimated",
@@ -5272,6 +6370,14 @@
       }
     },
     "urban_pop": {
+      "abidjan": {
+        "value": 6450315.611,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "accra": {
         "value": 5890466.043,
         "quality": "estimated",
@@ -5408,8 +6514,32 @@
           "column": "GC_POP_TOT_2025"
         }
       },
+      "cebu": {
+        "value": 3191585.379,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "chennai": {
+        "value": 11466400.34,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "chicago": {
         "value": 5318734.586,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "colombo": {
+        "value": 4720932.972,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5426,6 +6556,22 @@
       },
       "dakar": {
         "value": 3970201.794,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "dar-es-salaam": {
+        "value": 8918524.621,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "denpasar": {
+        "value": 2005949.592,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5466,6 +6612,14 @@
       },
       "edinburgh": {
         "value": 530165.3007,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "fortaleza": {
+        "value": 3324148.631,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5552,8 +6706,40 @@
           "column": "GC_POP_TOT_2025"
         }
       },
+      "kaohsiung": {
+        "value": 2294771.919,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "kathmandu": {
         "value": 3862696.52,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "kigali": {
+        "value": 1621760.398,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "kinshasa": {
+        "value": 12945682.99,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "kochi": {
+        "value": 5069022.409,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5626,6 +6812,14 @@
       },
       "marrakesh": {
         "value": 1152690.574,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "medellin": {
+        "value": 3215457.351,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5736,6 +6930,14 @@
           "column": "GC_POP_TOT_2025"
         }
       },
+      "panama-city": {
+        "value": 1612439.467,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "paris": {
         "value": 9328384.716,
         "quality": "estimated",
@@ -5746,6 +6948,14 @@
       },
       "perth": {
         "value": 1357381.728,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "phnom-penh": {
+        "value": 2419130.754,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5792,6 +7002,14 @@
           "column": "GC_POP_TOT_2025"
         }
       },
+      "salvador": {
+        "value": 3305395.539,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "san-francisco": {
         "value": 4718348.828,
         "quality": "estimated",
@@ -5800,8 +7018,24 @@
           "column": "GC_POP_TOT_2025"
         }
       },
+      "san-jose-cr": {
+        "value": 2272571.519,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
       "santiago": {
         "value": 6633766.609,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "santo-domingo": {
+        "value": 4593163.695,
         "quality": "estimated",
         "year": 2025,
         "detail": {
@@ -5946,6 +7180,14 @@
       },
       "warsaw": {
         "value": 1999985.522,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "column": "GC_POP_TOT_2025"
+        }
+      },
+      "yangon": {
+        "value": 6190957.71,
         "quality": "estimated",
         "year": 2025,
         "detail": {

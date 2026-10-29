@@ -24,7 +24,7 @@ seoul,348,Seoul,KR,Eastern and South-Eastern Asia,14.067,9755.34,49.7,0.289294,2
 sapporo,351,Sapporo,JP,Eastern and South-Eastern Asia,12.7749,5471.45,39.66,0.330934,15,15.522,353,1.93142e+06
 vancouver,358,Vancouver,CA,Northern America,10.0893,3386.91,60.26,0.457649,6,35.8961,649,2.19811e+06
 uc-362,362,Managua,NI,Latin America and the Caribbean,6.63384,6648.56,150.09,0.486848,16,5.42627,216,1.43609e+06
-uc-363,363,San José,CR,Latin America and the Caribbean,7.33702,4628.46,1119.74,0.455359,18,3.86051,491,2.27257e+06
+san-jose-cr,363,San José,CR,Latin America and the Caribbean,7.33702,4628.46,1119.74,0.455359,18,3.86051,491,2.27257e+06
 havana,367,Havana,CU,Latin America and the Caribbean,6.90454,5086.52,41.45,0.48292,13,33.6736,321,1.63277e+06
 uc-391,391,Bamako,ML,Sub-Saharan Africa,7.05082,9731.11,358.19,0.216511,35,1.3595,407,3.96056e+06
 dublin,394,Dublin,IE,Europe,7.70041,3735.95,47.8,0.488526,8,0,301,1.12452e+06
@@ -47,9 +47,9 @@ helsinki,572,Helsinki,FI,Europe,6.63487,2627.62,19.35,0.44965,8,14.3558,381,1.00
 uc-573,573,Belgrade,RS,Europe,7.67472,6285.58,132.96,0.442725,20,6.91458,191,1.20055e+06
 uc-582,582,Bangui,CF,Sub-Saharan Africa,6.59646,10413.2,375.23,0.376421,37,15.0919,122,1.27041e+06
 uc-586,586,Saint Petersburg,RU,Europe,11.4531,8870.85,13.4,0.329163,9,7.29796,550,4.87897e+06
-uc-597,597,Kigali,RW,Sub-Saharan Africa,6.93652,5670.49,1472.64,0.480271,41,0,286,1.62176e+06
-uc-632,632,Colombo [Sri Jayawardenepura Kotte],LK,Central and Southern Asia,6.04045,3914.54,15.04,0.616271,24,42.0616,1206,4.72093e+06
-uc-658,658,Panama City,PA,Latin America and the Caribbean,8.20172,5821.08,55.42,0.448259,15,24.9295,277,1.61244e+06
+kigali,597,Kigali,RW,Sub-Saharan Africa,6.93652,5670.49,1472.64,0.480271,41,0,286,1.62176e+06
+colombo,632,Colombo [Sri Jayawardenepura Kotte],LK,Central and Southern Asia,6.04045,3914.54,15.04,0.616271,24,42.0616,1206,4.72093e+06
+panama-city,658,Panama City,PA,Latin America and the Caribbean,8.20172,5821.08,55.42,0.448259,15,24.9295,277,1.61244e+06
 uc-666,666,Cochabamba,BO,Latin America and the Caribbean,7.22889,4633.27,2623.85,0.250114,30,0,293,1.35755e+06
 uc-673,673,Coyah,GN,Sub-Saharan Africa,6.81017,9806.92,43.13,0.27572,34,19.8883,305,2.99111e+06
 uc-693,693,Essen,DE,Europe,8.42561,3089.77,60.45,0.508414,10,7.5332,880,2.719e+06
@@ -111,20 +111,20 @@ uc-1619,1619,Damascus,SY,Northern Africa and Western Asia,8.98204,13969,695.86,0
 uc-1634,1634,Astana,KZ,Central and Southern Asia,9.00992,6921.1,353.69,0.251844,11,0,163,1.12814e+06
 uc-1646,1646,Medan,ID,Eastern and South-Eastern Asia,6.92243,7167.42,25.97,0.486161,31,7.63097,607,4.35062e+06
 kuala-lumpur,1648,Kuala Lumpur,MY,Eastern and South-Eastern Asia,10.1667,6278.51,46.23,0.436435,17,11.9641,1340,8.41321e+06
-uc-1667,1667,Santo Domingo,DO,Latin America and the Caribbean,7.30793,9509.66,29.84,0.423776,16,28.9782,483,4.59316e+06
+santo-domingo,1667,Santo Domingo,DO,Latin America and the Caribbean,7.30793,9509.66,29.84,0.423776,16,28.9782,483,4.59316e+06
 stockholm,1693,Stockholm,SE,Europe,7.51358,4554.25,27.84,0.470518,6,17.6077,339,1.54389e+06
 uc-1711,1711,Kampala,UG,Sub-Saharan Africa,6.44738,6392.44,1178.29,0.510989,83,3.91423,810,5.17788e+06
 nairobi,1717,Nairobi,KE,Sub-Saharan Africa,7.90709,11114.1,1684.39,0.435974,20,0,598,6.64626e+06
-uc-1741,1741,Phnom Penh,KH,Eastern and South-Eastern Asia,6.66746,6833.7,10.46,0.300469,28,0,354,2.41913e+06
+phnom-penh,1741,Phnom Penh,KH,Eastern and South-Eastern Asia,6.66746,6833.7,10.46,0.300469,28,0,354,2.41913e+06
 uc-1744,1744,Tainan,TW,Eastern and South-Eastern Asia,11.4546,5003.92,12.58,0.284808,14,1.00405,202,1.01079e+06
 melbourne,1747,Melbourne,AU,Australia and New Zealand,7.52964,2489.55,64.17,0.411148,13,4.39909,1611,4.01066e+06
 uc-1763,1763,Touba,SN,Sub-Saharan Africa,6.2368,7268.69,43.48,0.175966,43,0,161,1.17026e+06
 uc-1799,1799,Aleppo,SY,Northern Africa and Western Asia,8.07943,12691.9,401.16,0.148022,31,0,243,3.08414e+06
 kathmandu,1822,Kathmandu,NP,Central and Southern Asia,7.1939,11036.3,1364.78,0.34296,44,18.0999,350,3.8627e+06
 marrakesh,1853,Marrakesh,MA,Northern Africa and Western Asia,7.67341,9295.89,455.86,0.186226,23,0,124,1.15269e+06
-uc-1876,1876,Kinshasa,CD,Sub-Saharan Africa,7.72107,26582.5,338.57,0.444492,33,22.0861,487,1.29457e+07
+kinshasa,1876,Kinshasa,CD,Sub-Saharan Africa,7.72107,26582.5,338.57,0.444492,33,22.0861,487,1.29457e+07
 uc-1900,1900,Hargeisa,SO,Sub-Saharan Africa,6.12029,17862.5,1302.78,0.164924,18,0,84,1.50045e+06
-uc-1919,1919,Kaohsiung,TW,Eastern and South-Eastern Asia,12.1794,6168.74,17.86,0.293843,12,7.87813,372,2.29477e+06
+kaohsiung,1919,Kaohsiung,TW,Eastern and South-Eastern Asia,12.1794,6168.74,17.86,0.293843,12,7.87813,372,2.29477e+06
 uc-1985,1985,Antananarivo,MG,Sub-Saharan Africa,6.11198,9627.27,1279.93,0.349699,14,0,442,4.25525e+06
 uc-1991,1991,Srinagar,IN,Central and Southern Asia,6.43405,7977.24,1598.86,0.421579,35,7.60649,168,1.34018e+06
 hanoi,1999,Hanoi,VN,Eastern and South-Eastern Asia,5.55196,5368.13,8.88,0.461568,38,4.17331,925,4.96552e+06
@@ -156,7 +156,7 @@ uc-2597,2597,Mandalay,MM,Eastern and South-Eastern Asia,6.51817,9021.69,74.47,0.
 istanbul,2637,Istanbul,TR,Northern Africa and Western Asia,10.9297,11198,88.64,0.289071,18,11.0237,1269,1.42102e+07
 uc-2659,2659,Ürümqi,CN,Eastern and South-Eastern Asia,11.2887,11195.1,774.37,0.242653,48,0,355,3.97426e+06
 uc-2667,2667,Gwangju,KR,Eastern and South-Eastern Asia,12.6502,7518.38,46.45,0.32078,22,7.0635,190,1.42849e+06
-uc-2676,2676,Medellín,CO,Latin America and the Caribbean,13.35,13800.2,1657.88,0.453711,21,14.315,233,3.21546e+06
+medellin,2676,Medellín,CO,Latin America and the Caribbean,13.35,13800.2,1657.88,0.453711,21,14.315,233,3.21546e+06
 uc-2734,2734,Brisbane,AU,Australia and New Zealand,8.11804,1938.81,32.16,0.440708,9,23.2453,701,1.3591e+06
 uc-2747,2747,Rabat,MA,Northern Africa and Western Asia,6.78677,10316.4,51.98,0.252354,14,5.72541,203,2.09422e+06
 uc-2839,2839,Kirkuk,IQ,Northern Africa and Western Asia,6.67116,10586.9,334.23,0.111782,42,0,117,1.23866e+06
@@ -170,7 +170,7 @@ uc-2920,2920,Daegu,KR,Eastern and South-Eastern Asia,14.5617,8014.23,65.71,0.307
 uc-2921,2921,Hiroshima,JP,Eastern and South-Eastern Asia,11.407,3402.8,74.74,0.33884,18,31.4611,338,1.15015e+06
 uc-2967,2967,Mogadishu,SO,Sub-Saharan Africa,6.04373,25798.1,65.37,0.183282,11,0,186,4.79845e+06
 uc-2979,2979,Johor Bahru,MY,Eastern and South-Eastern Asia,7.02858,4074.94,24.8,0.467907,13,19.0279,418,1.70332e+06
-uc-2996,2996,Abidjan,CI,Sub-Saharan Africa,8.28075,12823.7,46.22,0.312754,27,12.8744,503,6.45032e+06
+abidjan,2996,Abidjan,CI,Sub-Saharan Africa,8.28075,12823.7,46.22,0.312754,27,12.8744,503,6.45032e+06
 uc-3026,3026,Riyadh,SA,Northern Africa and Western Asia,9.62649,7193.43,622.01,0.0775497,116,0,1108,7.97032e+06
 uc-3096,3096,Padang,ID,Eastern and South-Eastern Asia,6.78527,5606.43,36.73,0.52896,17,16.9402,216,1.21099e+06
 uc-3105,3105,Guadalajara,MX,Latin America and the Caribbean,8.47305,6920.32,1581.05,0.227476,17,7.51205,598,4.13835e+06
@@ -189,7 +189,7 @@ uc-3509,3509,Malanje,AO,Sub-Saharan Africa,5.25843,13318,1139.55,0.366767,21,22.
 johannesburg,3512,Johannesburg,ZA,Sub-Saharan Africa,7.46271,4893.42,1616.48,0.324588,45,0,1756,8.59284e+06
 uc-3547,3547,Rosario,AR,Latin America and the Caribbean,8.01991,5966.74,24.59,0.328696,14,0,199,1.18738e+06
 uc-3562,3562,Tshikapa,CD,Sub-Saharan Africa,5.81362,20668,503.57,0.518465,33,0,52,1.07473e+06
-uc-3570,3570,Dar es-Salaam,TZ,Sub-Saharan Africa,6.86409,9832.99,65.56,0.438223,12,41.5471,907,8.91852e+06
+dar-es-salaam,3570,Dar es-Salaam,TZ,Sub-Saharan Africa,6.86409,9832.99,65.56,0.438223,12,41.5471,907,8.91852e+06
 uc-3576,3576,Dammam,SA,Northern Africa and Western Asia,8.58999,5186.67,13.47,0.0877934,75,0,508,2.63483e+06
 uc-3586,3586,Pekanbaru,ID,Eastern and South-Eastern Asia,6.09556,5239.49,20.96,0.522455,19,18.4265,234,1.22604e+06
 uc-3673,3673,Zanzibar City,TZ,Sub-Saharan Africa,6.52031,8485.58,25.36,0.492875,11,14.6927,121,1.02676e+06
@@ -253,8 +253,8 @@ uc-4952,4952,Kasaï-Oriental,CD,Sub-Saharan Africa,5.80808,26836.6,608.05,0.5690
 uc-4968,4968,Palembang,ID,Eastern and South-Eastern Asia,6.31464,8992.34,7.27,0.438764,17,5.48041,245,2.20312e+06
 uc-4987,4987,Rostov-on-Don,RU,Europe,10.2955,5414.06,63.38,0.404532,15,0,190,1.02867e+06
 uc-4992,4992,Karaj,IR,Central and Southern Asia,8.04397,11991.4,1276.94,0.180673,33,0,299,3.58542e+06
-uc-5029,5029,Yangon,MM,Eastern and South-Eastern Asia,6.85742,11359.6,8.74,0.479431,36,0,545,6.19096e+06
-uc-5065,5065,Cebu City,PH,Eastern and South-Eastern Asia,6.30192,7672.08,27.26,0.48352,20,26.2016,416,3.19159e+06
+yangon,5029,Yangon,MM,Eastern and South-Eastern Asia,6.85742,11359.6,8.74,0.479431,36,0,545,6.19096e+06
+cebu,5065,Cebu City,PH,Eastern and South-Eastern Asia,6.30192,7672.08,27.26,0.48352,20,26.2016,416,3.19159e+06
 barcelona,5071,Barcelona,ES,Europe,11.5268,8923.2,91.55,0.308302,12,15.8125,438,3.90836e+06
 uc-5077,5077,Konya,TR,Northern Africa and Western Asia,6.14909,4238.87,1036.46,0.231308,29,0,240,1.01733e+06
 seattle,5098,Seattle,US,Northern America,9.16417,1869.67,76.22,0.503995,6,16.8699,1123,2.09964e+06
@@ -362,7 +362,7 @@ uc-7687,7687,Jaipur,IN,Central and Southern Asia,7.09914,9233.73,421.24,0.239159
 uc-7716,7716,Enugu,NG,Sub-Saharan Africa,7.78166,6584.45,185.7,0.367484,32,31.8399,165,1.08643e+06
 uc-7738,7738,Gujranwala,PK,Central and Southern Asia,6.01236,13457.6,227.45,0.299406,64,2.9882,231,3.1087e+06
 uc-7739,7739,Kalyan-Dombivli,IN,Central and Southern Asia,8.4045,18370.6,27.22,0.292967,42,0,175,3.21486e+06
-uc-7783,7783,Denpasar,ID,Eastern and South-Eastern Asia,6.62705,5169.97,50.26,0.510328,12,5.45361,388,2.00595e+06
+denpasar,7783,Denpasar,ID,Eastern and South-Eastern Asia,6.62705,5169.97,50.26,0.510328,12,5.45361,388,2.00595e+06
 uc-7784,7784,Detroit,US,Northern America,8.43374,1639.87,192.08,0.4217,8,2.28867,1170,1.91865e+06
 uc-7794,7794,Lahore,PK,Central and Southern Asia,7.32689,15929.9,212.59,0.266237,69,0.520166,898,1.43051e+07
 rio-de-janeiro,7799,Rio de Janeiro,BR,Latin America and the Caribbean,9.81101,7668.24,45.22,0.429776,16,19.9041,1285,9.85369e+06
@@ -385,9 +385,9 @@ new-york,8099,New York City,US,Northern America,9.54454,4684.15,27.2,0.3824,7,4.
 uc-8100,8100,Vitória,BR,Latin America and the Caribbean,11.371,6363.72,25.8,0.39136,10,0,203,1.29183e+06
 uc-8120,8120,Dehradun,IN,Central and Southern Asia,6.34395,7049.16,654.39,0.42077,46,35.5483,169,1.19131e+06
 uc-8125,8125,Kano,NG,Sub-Saharan Africa,6.34747,12197.2,472.2,0.188943,72,0,419,5.11062e+06
-uc-8154,8154,Fortaleza,BR,Latin America and the Caribbean,8.43178,8048.79,22.15,0.360341,7,1.73201,413,3.32415e+06
+fortaleza,8154,Fortaleza,BR,Latin America and the Caribbean,8.43178,8048.79,22.15,0.360341,7,1.73201,413,3.32415e+06
 uc-8234,8234,Kota,IN,Central and Southern Asia,6.3875,9243.59,269.95,0.287057,50,0,132,1.22015e+06
-uc-8238,8238,Salvador,BR,Latin America and the Caribbean,10.741,10233.4,35.78,0.410842,8,21.1213,323,3.3054e+06
+salvador,8238,Salvador,BR,Latin America and the Caribbean,10.741,10233.4,35.78,0.410842,8,21.1213,323,3.3054e+06
 uc-8255,8255,Boston,US,Northern America,9.70254,3286.04,24.62,0.36028,6,14.4272,508,1.66931e+06
 uc-8258,8258,Pune,IN,Central and Southern Asia,9.07592,11506.9,588.31,0.287327,48,2.12819,580,6.674e+06
 uc-8305,8305,Meerut,IN,Central and Southern Asia,5.59698,9309.67,224.93,0.315919,76,0,233,2.16915e+06
@@ -426,7 +426,7 @@ uc-9298,9298,Ponnani,IN,Central and Southern Asia,3.01955,3649.35,13.15,0.643375
 uc-9329,9329,Dengzhou,CN,Eastern and South-Eastern Asia,4.24262,3626,116.1,0.4585,46,0,302,1.09505e+06
 uc-9346,9346,Lucknow,IN,Central and Southern Asia,6.3883,10165.6,119.68,0.291878,86,0,513,5.21496e+06
 uc-9352,9352,Thrissur,IN,Central and Southern Asia,5.47428,6069.36,18.3,0.616884,23,52.8836,271,1.6448e+06
-uc-9386,9386,Kochi,IN,Central and Southern Asia,5.14498,4003.97,9.93,0.587705,26,54.9969,1266,5.06902e+06
+kochi,9386,Kochi,IN,Central and Southern Asia,5.14498,4003.97,9.93,0.587705,26,54.9969,1266,5.06902e+06
 uc-9390,9390,Mysuru,IN,Central and Southern Asia,6.86215,9138.3,755.2,0.358046,27,4.4505,142,1.29764e+06
 uc-9410,9410,Nagpur,IN,Central and Southern Asia,7.42353,11887.7,310.56,0.288807,50,0,286,3.39989e+06
 uc-9429,9429,Xuchang,CN,Eastern and South-Eastern Asia,7.65666,5175.07,83.15,0.346022,54,0,352,1.82162e+06
@@ -468,7 +468,7 @@ uc-10199,10199,Linyi,CN,Eastern and South-Eastern Asia,8.43958,1876.23,72.9,0.27
 uc-10224,10224,Vijayawada,IN,Central and Southern Asia,8.37373,10782.9,22.65,0.3491,38,0,115,1.24003e+06
 uc-10229,10229,Changsha,CN,Eastern and South-Eastern Asia,13.1208,7676.05,56.29,0.351164,40,0.735588,423,3.24697e+06
 uc-10290,10290,Puducherry,IN,Central and Southern Asia,6.64521,12029.4,11.32,0.424443,27,0,88,1.05859e+06
-uc-10300,10300,Chennai,IN,Central and Southern Asia,7.24914,10899.6,17.29,0.365427,31,0,1052,1.14664e+07
+chennai,10300,Chennai,IN,Central and Southern Asia,7.24914,10899.6,17.29,0.365427,31,0,1052,1.14664e+07
 uc-10306,10306,Maharajganj,IN,Central and Southern Asia,2.57704,2536.53,63.42,0.362837,82,0,1120,2.84092e+06
 uc-10323,10323,Zhuzhou,CN,Eastern and South-Eastern Asia,11.1274,6245.76,58.84,0.40699,38,13.7537,161,1.00557e+06
 uc-10403,10403,Tianjia‘an,CN,Eastern and South-Eastern Asia,9.11297,7007.78,35.05,0.339322,46,0.340949,168,1.17731e+06

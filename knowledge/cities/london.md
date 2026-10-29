@@ -15,7 +15,7 @@ boundary:
   id: 5816
   name: "London"
   area_km2: 1649
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
 metrics:
   bike_protected: { value: 27.1, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 68.7, quality: observed, source: era5, year: "1990-2019" }

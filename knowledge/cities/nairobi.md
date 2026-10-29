@@ -15,7 +15,7 @@ boundary:
   id: 1717
   name: "Nairobi"
   area_km2: 598.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
 metrics:
   bike_protected: { value: 0.73, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 66.4, quality: observed, source: era5, year: "1990-2019" }

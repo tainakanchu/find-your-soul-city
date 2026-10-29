@@ -15,7 +15,7 @@ boundary:
   id: 11345
   name: "Shanghai"
   area_km2: 3128
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
 metrics:
   bike_protected: { value: 9.92, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 61.8, quality: observed, source: era5, year: "1990-2019" }

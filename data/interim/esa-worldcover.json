@@ -1,6 +1,6 @@
 {
   "source_id": "esa-worldcover",
-  "generated_at": "2026-10-28T21:56:22Z",
+  "generated_at": "2026-10-29T02:06:53Z",
   "inputs": [
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/esa_worldcover_grid.geojson",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PVR_V2.0.pdf",
@@ -10,22 +10,36 @@
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N03E000_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N03E099_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N03W003_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N03W006_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N03W075_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06E003_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06E036_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06E078_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06W078_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N06W081_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E036_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E075_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E102_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E105_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09E123_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09W081_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09W084_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N09W087_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12E075_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12E078_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12E099_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12E120_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N12W018_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N15E096_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18E072_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18E105_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18W072_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18W099_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N18W102_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E090_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E105_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E114_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21E120_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21W084_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N21W159_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24E054_Map.tif",
@@ -93,10 +107,17 @@
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N57E018_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N60E024_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N63W024_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S03E030_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S03E036_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S03W081_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S06E015_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S06W039_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S09E036_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S09E039_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S09E105_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S09E114_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S12W078_Map.tif",
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S15W039_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S15W078_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S24W045_Map.tif",
     "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_S24W048_Map.tif",
@@ -118,6 +139,37 @@
   ],
   "values": {
     "built_share": {
+      "abidjan": {
+        "value": 75.08555961390657,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 438.16,
+          "water_km2": 63.64,
+          "polygon_area_pixels_km2": 501.8,
+          "ucdb_area_km2": 503.0,
+          "tiles": [
+            "N03W006"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 12.754,
+            "shrub": 0.55,
+            "grass": 9.303,
+            "crop": 0.305,
+            "built": 75.086,
+            "bare": 1.695,
+            "snow": 0.0,
+            "wetland": 0.305,
+            "mangrove": 0.002,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.682,
+          "green_incl_crop_share": 23.219
+        }
+      },
       "accra": {
         "value": 78.8444266686985,
         "quality": "observed",
@@ -128,7 +180,10 @@
           "water_km2": 55.05,
           "polygon_area_pixels_km2": 1118.51,
           "ucdb_area_km2": 1121.0,
-          "tiles": ["N03W003", "N03E000"],
+          "tiles": [
+            "N03W003",
+            "N03E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -157,7 +212,10 @@
           "water_km2": 0.09,
           "polygon_area_pixels_km2": 463.92,
           "ucdb_area_km2": 465.0,
-          "tiles": ["N06E036", "N09E036"],
+          "tiles": [
+            "N06E036",
+            "N09E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -186,7 +244,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 330.24,
           "ucdb_area_km2": 331.0,
-          "tiles": ["N42E075"],
+          "tiles": [
+            "N42E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -215,7 +275,9 @@
           "water_km2": 36.28,
           "polygon_area_pixels_km2": 307.35,
           "ucdb_area_km2": 308.0,
-          "tiles": ["N51E003"],
+          "tiles": [
+            "N51E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -244,7 +306,9 @@
           "water_km2": 31.69,
           "polygon_area_pixels_km2": 411.06,
           "ucdb_area_km2": 412.0,
-          "tiles": ["N36E021"],
+          "tiles": [
+            "N36E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -273,7 +337,9 @@
           "water_km2": 108.57,
           "polygon_area_pixels_km2": 636.56,
           "ucdb_area_km2": 638.0,
-          "tiles": ["S39E174"],
+          "tiles": [
+            "S39E174"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -302,7 +368,9 @@
           "water_km2": 113.84,
           "polygon_area_pixels_km2": 2690.85,
           "ucdb_area_km2": 2697.0,
-          "tiles": ["N12E099"],
+          "tiles": [
+            "N12E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -331,7 +399,9 @@
           "water_km2": 29.63,
           "polygon_area_pixels_km2": 437.05,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N39E000"],
+          "tiles": [
+            "N39E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -360,7 +430,9 @@
           "water_km2": 26.16,
           "polygon_area_pixels_km2": 2174.11,
           "ucdb_area_km2": 2179.0,
-          "tiles": ["N39E114"],
+          "tiles": [
+            "N39E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -389,7 +461,9 @@
           "water_km2": 10.49,
           "polygon_area_pixels_km2": 1005.77,
           "ucdb_area_km2": 1008.0,
-          "tiles": ["N12E075"],
+          "tiles": [
+            "N12E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -418,7 +492,9 @@
           "water_km2": 15.91,
           "polygon_area_pixels_km2": 679.52,
           "ucdb_area_km2": 681.0,
-          "tiles": ["N51E012"],
+          "tiles": [
+            "N51E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -447,7 +523,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 532.83,
           "ucdb_area_km2": 534.0,
-          "tiles": ["N03W075"],
+          "tiles": [
+            "N03W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -476,7 +554,9 @@
           "water_km2": 11.6,
           "polygon_area_pixels_km2": 367.17,
           "ucdb_area_km2": 368.0,
-          "tiles": ["N45E018"],
+          "tiles": [
+            "N45E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -505,7 +585,9 @@
           "water_km2": 45.09,
           "polygon_area_pixels_km2": 2181.21,
           "ucdb_area_km2": 2186.0,
-          "tiles": ["S36W060"],
+          "tiles": [
+            "S36W060"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -534,7 +616,10 @@
           "water_km2": 40.35,
           "polygon_area_pixels_km2": 1676.23,
           "ucdb_area_km2": 1680.0,
-          "tiles": ["N27E030", "N30E030"],
+          "tiles": [
+            "N27E030",
+            "N30E030"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -563,7 +648,9 @@
           "water_km2": 26.55,
           "polygon_area_pixels_km2": 693.44,
           "ucdb_area_km2": 695.0,
-          "tiles": ["S36E018"],
+          "tiles": [
+            "S36E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -592,7 +679,9 @@
           "water_km2": 33.92,
           "polygon_area_pixels_km2": 414.04,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N33W009"],
+          "tiles": [
+            "N33W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -611,6 +700,68 @@
           "green_incl_crop_share": 46.766
         }
       },
+      "cebu": {
+        "value": 36.6134140109401,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 326.65,
+          "water_km2": 88.44,
+          "polygon_area_pixels_km2": 415.09,
+          "ucdb_area_km2": 416.0,
+          "tiles": [
+            "N09E123"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 48.752,
+            "shrub": 0.004,
+            "grass": 8.583,
+            "crop": 1.689,
+            "built": 36.613,
+            "bare": 1.723,
+            "snow": 0.0,
+            "wetland": 0.017,
+            "mangrove": 2.62,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 21.306,
+          "green_incl_crop_share": 61.664
+        }
+      },
+      "chennai": {
+        "value": 49.28222124307904,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 979.77,
+          "water_km2": 70.15,
+          "polygon_area_pixels_km2": 1049.93,
+          "ucdb_area_km2": 1052.0,
+          "tiles": [
+            "N12E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 26.03,
+            "shrub": 1.031,
+            "grass": 7.676,
+            "crop": 12.995,
+            "built": 49.282,
+            "bare": 1.97,
+            "snow": 0.0,
+            "wetland": 1.016,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.682,
+          "green_incl_crop_share": 48.748
+        }
+      },
       "chicago": {
         "value": 59.51342654100606,
         "quality": "observed",
@@ -621,7 +772,10 @@
           "water_km2": 56.98,
           "polygon_area_pixels_km2": 2041.55,
           "ucdb_area_km2": 2046.0,
-          "tiles": ["N39W090", "N42W090"],
+          "tiles": [
+            "N39W090",
+            "N42W090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -640,6 +794,37 @@
           "green_incl_crop_share": 39.509
         }
       },
+      "colombo": {
+        "value": 26.27933519542028,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1107.6,
+          "water_km2": 95.69,
+          "polygon_area_pixels_km2": 1203.29,
+          "ucdb_area_km2": 1206.0,
+          "tiles": [
+            "N06E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 65.003,
+            "shrub": 0.105,
+            "grass": 3.565,
+            "crop": 4.046,
+            "built": 26.279,
+            "bare": 0.536,
+            "snow": 0.0,
+            "wetland": 0.333,
+            "mangrove": 0.133,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.952,
+          "green_incl_crop_share": 73.185
+        }
+      },
       "copenhagen": {
         "value": 51.7407095165461,
         "quality": "observed",
@@ -650,7 +835,9 @@
           "water_km2": 31.84,
           "polygon_area_pixels_km2": 301.33,
           "ucdb_area_km2": 302.0,
-          "tiles": ["N54E012"],
+          "tiles": [
+            "N54E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -679,7 +866,9 @@
           "water_km2": 43.88,
           "polygon_area_pixels_km2": 276.37,
           "ucdb_area_km2": 277.0,
-          "tiles": ["N12W018"],
+          "tiles": [
+            "N12W018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -698,6 +887,69 @@
           "green_incl_crop_share": 20.949
         }
       },
+      "dar-es-salaam": {
+        "value": 47.312896173218135,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 863.75,
+          "water_km2": 41.18,
+          "polygon_area_pixels_km2": 904.94,
+          "ucdb_area_km2": 907.0,
+          "tiles": [
+            "S09E036",
+            "S09E039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 29.322,
+            "shrub": 1.161,
+            "grass": 19.41,
+            "crop": 0.76,
+            "built": 47.313,
+            "bare": 1.157,
+            "snow": 0.0,
+            "wetland": 0.212,
+            "mangrove": 0.665,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 4.551,
+          "green_incl_crop_share": 51.53
+        }
+      },
+      "denpasar": {
+        "value": 45.48888009570347,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 353.54,
+          "water_km2": 33.63,
+          "polygon_area_pixels_km2": 387.17,
+          "ucdb_area_km2": 388.0,
+          "tiles": [
+            "S09E114"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 28.968,
+            "shrub": 0.0,
+            "grass": 5.467,
+            "crop": 17.07,
+            "built": 45.489,
+            "bare": 0.503,
+            "snow": 0.0,
+            "wetland": 0.052,
+            "mangrove": 2.45,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 8.687,
+          "green_incl_crop_share": 54.008
+        }
+      },
       "denver": {
         "value": 54.81833768998551,
         "quality": "observed",
@@ -708,7 +960,10 @@
           "water_km2": 25.59,
           "polygon_area_pixels_km2": 1191.27,
           "ucdb_area_km2": 1194.0,
-          "tiles": ["N39W108", "N39W105"],
+          "tiles": [
+            "N39W108",
+            "N39W105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -737,7 +992,10 @@
           "water_km2": 163.4,
           "polygon_area_pixels_km2": 6596.45,
           "ucdb_area_km2": 6611.0,
-          "tiles": ["N21E090", "N24E090"],
+          "tiles": [
+            "N21E090",
+            "N24E090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -766,7 +1024,9 @@
           "water_km2": 66.28,
           "polygon_area_pixels_km2": 852.14,
           "ucdb_area_km2": 854.0,
-          "tiles": ["N24E054"],
+          "tiles": [
+            "N24E054"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -795,7 +1055,9 @@
           "water_km2": 20.56,
           "polygon_area_pixels_km2": 300.36,
           "ucdb_area_km2": 301.0,
-          "tiles": ["N51W009"],
+          "tiles": [
+            "N51W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -824,7 +1086,9 @@
           "water_km2": 13.12,
           "polygon_area_pixels_km2": 129.67,
           "ucdb_area_km2": 130.0,
-          "tiles": ["N54W006"],
+          "tiles": [
+            "N54W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -843,6 +1107,37 @@
           "green_incl_crop_share": 53.604
         }
       },
+      "fortaleza": {
+        "value": 61.13785295384117,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 388.19,
+          "water_km2": 23.91,
+          "polygon_area_pixels_km2": 412.1,
+          "ucdb_area_km2": 413.0,
+          "tiles": [
+            "S06W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 17.618,
+            "shrub": 1.645,
+            "grass": 12.573,
+            "crop": 1.668,
+            "built": 61.138,
+            "bare": 2.574,
+            "snow": 0.0,
+            "wetland": 0.493,
+            "mangrove": 2.291,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.801,
+          "green_incl_crop_share": 36.288
+        }
+      },
       "fukuoka": {
         "value": 70.3605214516788,
         "quality": "observed",
@@ -853,7 +1148,9 @@
           "water_km2": 36.61,
           "polygon_area_pixels_km2": 448.94,
           "ucdb_area_km2": 450.0,
-          "tiles": ["N33E129"],
+          "tiles": [
+            "N33E129"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -882,7 +1179,10 @@
           "water_km2": 49.98,
           "polygon_area_pixels_km2": 922.88,
           "ucdb_area_km2": 925.0,
-          "tiles": ["N18E105", "N21E105"],
+          "tiles": [
+            "N18E105",
+            "N21E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -911,7 +1211,9 @@
           "water_km2": 22.75,
           "polygon_area_pixels_km2": 320.29,
           "ucdb_area_km2": 321.0,
-          "tiles": ["N21W084"],
+          "tiles": [
+            "N21W084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -940,7 +1242,9 @@
           "water_km2": 60.72,
           "polygon_area_pixels_km2": 380.16,
           "ucdb_area_km2": 381.0,
-          "tiles": ["N60E024"],
+          "tiles": [
+            "N60E024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -969,7 +1273,9 @@
           "water_km2": 74.44,
           "polygon_area_pixels_km2": 1483.65,
           "ucdb_area_km2": 1487.0,
-          "tiles": ["N09E105"],
+          "tiles": [
+            "N09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -998,7 +1304,9 @@
           "water_km2": 58.04,
           "polygon_area_pixels_km2": 219.44,
           "ucdb_area_km2": 220.0,
-          "tiles": ["N21E114"],
+          "tiles": [
+            "N21E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1027,7 +1335,9 @@
           "water_km2": 24.53,
           "polygon_area_pixels_km2": 176.63,
           "ucdb_area_km2": 177.0,
-          "tiles": ["N21W159"],
+          "tiles": [
+            "N21W159"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1056,7 +1366,9 @@
           "water_km2": 131.68,
           "polygon_area_pixels_km2": 1265.82,
           "ucdb_area_km2": 1269.0,
-          "tiles": ["N39E027"],
+          "tiles": [
+            "N39E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1085,7 +1397,9 @@
           "water_km2": 61.09,
           "polygon_area_pixels_km2": 4603.63,
           "ucdb_area_km2": 4614.0,
-          "tiles": ["S09E105"],
+          "tiles": [
+            "S09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1114,7 +1428,9 @@
           "water_km2": 8.86,
           "polygon_area_pixels_km2": 1752.01,
           "ucdb_area_km2": 1756.0,
-          "tiles": ["S27E027"],
+          "tiles": [
+            "S27E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1133,6 +1449,37 @@
           "green_incl_crop_share": 43.491
         }
       },
+      "kaohsiung": {
+        "value": 61.47526667933379,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 336.37,
+          "water_km2": 34.79,
+          "polygon_area_pixels_km2": 371.16,
+          "ucdb_area_km2": 372.0,
+          "tiles": [
+            "N21E120"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 22.644,
+            "shrub": 0.0,
+            "grass": 4.21,
+            "crop": 8.784,
+            "built": 61.475,
+            "bare": 2.885,
+            "snow": 0.0,
+            "wetland": 0.002,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.373,
+          "green_incl_crop_share": 35.64
+        }
+      },
       "kathmandu": {
         "value": 40.22485126548073,
         "quality": "observed",
@@ -1143,7 +1490,9 @@
           "water_km2": 0.28,
           "polygon_area_pixels_km2": 349.2,
           "ucdb_area_km2": 350.0,
-          "tiles": ["N27E084"],
+          "tiles": [
+            "N27E084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1162,6 +1511,99 @@
           "green_incl_crop_share": 58.656
         }
       },
+      "kigali": {
+        "value": 45.318489570262166,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 284.93,
+          "water_km2": 0.46,
+          "polygon_area_pixels_km2": 285.4,
+          "ucdb_area_km2": 286.0,
+          "tiles": [
+            "S03E030"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 18.397,
+            "shrub": 6.651,
+            "grass": 9.927,
+            "crop": 18.884,
+            "built": 45.318,
+            "bare": 0.799,
+            "snow": 0.0,
+            "wetland": 0.023,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.163,
+          "green_incl_crop_share": 53.882
+        }
+      },
+      "kinshasa": {
+        "value": 55.76198024481898,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 473.68,
+          "water_km2": 12.25,
+          "polygon_area_pixels_km2": 485.92,
+          "ucdb_area_km2": 487.0,
+          "tiles": [
+            "S06E015"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 23.093,
+            "shrub": 1.946,
+            "grass": 13.092,
+            "crop": 5.201,
+            "built": 55.762,
+            "bare": 0.645,
+            "snow": 0.0,
+            "wetland": 0.261,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 2.52,
+          "green_incl_crop_share": 43.593
+        }
+      },
+      "kochi": {
+        "value": 18.893333042719547,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1033.61,
+          "water_km2": 229.53,
+          "polygon_area_pixels_km2": 1263.14,
+          "ucdb_area_km2": 1266.0,
+          "tiles": [
+            "N09E075"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 69.883,
+            "shrub": 0.052,
+            "grass": 7.052,
+            "crop": 2.555,
+            "built": 18.893,
+            "bare": 0.262,
+            "snow": 0.0,
+            "wetland": 0.972,
+            "mangrove": 0.331,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 18.172,
+          "green_incl_crop_share": 80.845
+        }
+      },
       "kuala-lumpur": {
         "value": 58.23956506493608,
         "quality": "observed",
@@ -1172,7 +1614,10 @@
           "water_km2": 25.11,
           "polygon_area_pixels_km2": 1337.07,
           "ucdb_area_km2": 1340.0,
-          "tiles": ["N00E099", "N03E099"],
+          "tiles": [
+            "N00E099",
+            "N03E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1201,7 +1646,9 @@
           "water_km2": 64.42,
           "polygon_area_pixels_km2": 1196.37,
           "ucdb_area_km2": 1199.0,
-          "tiles": ["N06E003"],
+          "tiles": [
+            "N06E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1230,7 +1677,10 @@
           "water_km2": 33.73,
           "polygon_area_pixels_km2": 981.73,
           "ucdb_area_km2": 984.0,
-          "tiles": ["S15W078", "S12W078"],
+          "tiles": [
+            "S15W078",
+            "S12W078"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1259,7 +1709,9 @@
           "water_km2": 33.93,
           "polygon_area_pixels_km2": 425.05,
           "ucdb_area_km2": 426.0,
-          "tiles": ["N36W012"],
+          "tiles": [
+            "N36W012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1288,7 +1740,10 @@
           "water_km2": 38.68,
           "polygon_area_pixels_km2": 1645.15,
           "ucdb_area_km2": 1649.0,
-          "tiles": ["N51W003", "N51E000"],
+          "tiles": [
+            "N51W003",
+            "N51E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1317,7 +1772,9 @@
           "water_km2": 80.24,
           "polygon_area_pixels_km2": 4487.88,
           "ucdb_area_km2": 4498.0,
-          "tiles": ["N33W120"],
+          "tiles": [
+            "N33W120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1346,7 +1803,9 @@
           "water_km2": 0.95,
           "polygon_area_pixels_km2": 678.42,
           "ucdb_area_km2": 680.0,
-          "tiles": ["N39W006"],
+          "tiles": [
+            "N39W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1375,7 +1834,9 @@
           "water_km2": 435.73,
           "polygon_area_pixels_km2": 2549.25,
           "ucdb_area_km2": 2555.0,
-          "tiles": ["N12E120"],
+          "tiles": [
+            "N12E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1404,7 +1865,9 @@
           "water_km2": 0.14,
           "polygon_area_pixels_km2": 123.68,
           "ucdb_area_km2": 124.0,
-          "tiles": ["N30W009"],
+          "tiles": [
+            "N30W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1423,6 +1886,37 @@
           "green_incl_crop_share": 29.76
         }
       },
+      "medellin": {
+        "value": 52.99650392974146,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 232.01,
+          "water_km2": 0.48,
+          "polygon_area_pixels_km2": 232.49,
+          "ucdb_area_km2": 233.0,
+          "tiles": [
+            "N06W078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 31.706,
+            "shrub": 0.004,
+            "grass": 14.338,
+            "crop": 0.008,
+            "built": 52.997,
+            "bare": 0.947,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.209,
+          "green_incl_crop_share": 46.056
+        }
+      },
       "melbourne": {
         "value": 54.13641511816964,
         "quality": "observed",
@@ -1433,7 +1927,9 @@
           "water_km2": 43.87,
           "polygon_area_pixels_km2": 1607.47,
           "ucdb_area_km2": 1611.0,
-          "tiles": ["S39E144"],
+          "tiles": [
+            "S39E144"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1462,7 +1958,10 @@
           "water_km2": 8.98,
           "polygon_area_pixels_km2": 2129.25,
           "ucdb_area_km2": 2134.0,
-          "tiles": ["N18W102", "N18W099"],
+          "tiles": [
+            "N18W102",
+            "N18W099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1491,7 +1990,9 @@
           "water_km2": 278.91,
           "polygon_area_pixels_km2": 2777.81,
           "ucdb_area_km2": 2784.0,
-          "tiles": ["N24W081"],
+          "tiles": [
+            "N24W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1520,7 +2021,10 @@
           "water_km2": 4.32,
           "polygon_area_pixels_km2": 783.23,
           "ucdb_area_km2": 785.0,
-          "tiles": ["N45E006", "N45E009"],
+          "tiles": [
+            "N45E006",
+            "N45E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1549,7 +2053,9 @@
           "water_km2": 25.32,
           "polygon_area_pixels_km2": 236.44,
           "ucdb_area_km2": 237.0,
-          "tiles": ["S36W057"],
+          "tiles": [
+            "S36W057"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1578,7 +2084,9 @@
           "water_km2": 107.32,
           "polygon_area_pixels_km2": 1017.7,
           "ucdb_area_km2": 1020.0,
-          "tiles": ["N45W075"],
+          "tiles": [
+            "N45W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1607,7 +2115,9 @@
           "water_km2": 100.04,
           "polygon_area_pixels_km2": 736.33,
           "ucdb_area_km2": 738.0,
-          "tiles": ["N18E072"],
+          "tiles": [
+            "N18E072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1636,7 +2146,9 @@
           "water_km2": 2.46,
           "polygon_area_pixels_km2": 344.19,
           "ucdb_area_km2": 345.0,
-          "tiles": ["N48E009"],
+          "tiles": [
+            "N48E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1665,7 +2177,9 @@
           "water_km2": 1.42,
           "polygon_area_pixels_km2": 596.65,
           "ucdb_area_km2": 598.0,
-          "tiles": ["S03E036"],
+          "tiles": [
+            "S03E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1694,7 +2208,9 @@
           "water_km2": 17.67,
           "polygon_area_pixels_km2": 2134.35,
           "ucdb_area_km2": 2139.0,
-          "tiles": ["N27E075"],
+          "tiles": [
+            "N27E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1723,7 +2239,9 @@
           "water_km2": 257.69,
           "polygon_area_pixels_km2": 3024.18,
           "ucdb_area_km2": 3031.0,
-          "tiles": ["N39W075"],
+          "tiles": [
+            "N39W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1752,7 +2270,10 @@
           "water_km2": 214.05,
           "polygon_area_pixels_km2": 2207.04,
           "ucdb_area_km2": 2212.0,
-          "tiles": ["N33E132", "N33E135"],
+          "tiles": [
+            "N33E132",
+            "N33E135"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1781,7 +2302,9 @@
           "water_km2": 28.87,
           "polygon_area_pixels_km2": 243.42,
           "ucdb_area_km2": 244.0,
-          "tiles": ["N57E009"],
+          "tiles": [
+            "N57E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1800,6 +2323,38 @@
           "green_incl_crop_share": 60.661
         }
       },
+      "panama-city": {
+        "value": 53.6583549094621,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 261.8,
+          "water_km2": 14.6,
+          "polygon_area_pixels_km2": 276.4,
+          "ucdb_area_km2": 277.0,
+          "tiles": [
+            "N06W081",
+            "N09W081"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 30.541,
+            "shrub": 0.001,
+            "grass": 12.888,
+            "crop": 0.198,
+            "built": 53.658,
+            "bare": 1.147,
+            "snow": 0.0,
+            "wetland": 0.29,
+            "mangrove": 1.277,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.284,
+          "green_incl_crop_share": 45.195
+        }
+      },
       "paris": {
         "value": 53.77960261279905,
         "quality": "observed",
@@ -1810,7 +2365,9 @@
           "water_km2": 23.79,
           "polygon_area_pixels_km2": 1417.82,
           "ucdb_area_km2": 1421.0,
-          "tiles": ["N48E000"],
+          "tiles": [
+            "N48E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1839,7 +2396,9 @@
           "water_km2": 72.17,
           "polygon_area_pixels_km2": 782.22,
           "ucdb_area_km2": 784.0,
-          "tiles": ["S33E114"],
+          "tiles": [
+            "S33E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1858,6 +2417,38 @@
           "green_incl_crop_share": 28.563
         }
       },
+      "phnom-penh": {
+        "value": 52.53833064343874,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 318.84,
+          "water_km2": 34.36,
+          "polygon_area_pixels_km2": 353.2,
+          "ucdb_area_km2": 354.0,
+          "tiles": [
+            "N09E102",
+            "N09E105"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 15.446,
+            "shrub": 0.004,
+            "grass": 16.103,
+            "crop": 6.249,
+            "built": 52.538,
+            "bare": 7.796,
+            "snow": 0.0,
+            "wetland": 1.863,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.728,
+          "green_incl_crop_share": 39.666
+        }
+      },
       "prague": {
         "value": 43.93536087484015,
         "quality": "observed",
@@ -1868,7 +2459,9 @@
           "water_km2": 4.61,
           "polygon_area_pixels_km2": 262.41,
           "ucdb_area_km2": 263.0,
-          "tiles": ["N48E012"],
+          "tiles": [
+            "N48E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1897,7 +2490,9 @@
           "water_km2": 0.11,
           "polygon_area_pixels_km2": 379.13,
           "ucdb_area_km2": 380.0,
-          "tiles": ["S03W081"],
+          "tiles": [
+            "S03W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1926,7 +2521,9 @@
           "water_km2": 22.23,
           "polygon_area_pixels_km2": 96.82,
           "ucdb_area_km2": 97.0,
-          "tiles": ["N63W024"],
+          "tiles": [
+            "N63W024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1955,7 +2552,9 @@
           "water_km2": 60.01,
           "polygon_area_pixels_km2": 1282.12,
           "ucdb_area_km2": 1285.0,
-          "tiles": ["S24W045"],
+          "tiles": [
+            "S24W045"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -1984,7 +2583,10 @@
           "water_km2": 2.4,
           "polygon_area_pixels_km2": 465.93,
           "ucdb_area_km2": 467.0,
-          "tiles": ["N39E012", "N42E012"],
+          "tiles": [
+            "N39E012",
+            "N42E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2003,6 +2605,37 @@
           "green_incl_crop_share": 55.398
         }
       },
+      "salvador": {
+        "value": 55.774622493873494,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 280.68,
+          "water_km2": 41.57,
+          "polygon_area_pixels_km2": 322.25,
+          "ucdb_area_km2": 323.0,
+          "tiles": [
+            "S15W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 33.936,
+            "shrub": 0.298,
+            "grass": 6.92,
+            "crop": 0.045,
+            "built": 55.775,
+            "bare": 2.798,
+            "snow": 0.0,
+            "wetland": 0.229,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.899,
+          "green_incl_crop_share": 41.427
+        }
+      },
       "san-francisco": {
         "value": 68.82425089704716,
         "quality": "observed",
@@ -2013,7 +2646,9 @@
           "water_km2": 95.61,
           "polygon_area_pixels_km2": 1610.35,
           "ucdb_area_km2": 1614.0,
-          "tiles": ["N36W123"],
+          "tiles": [
+            "N36W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2032,6 +2667,38 @@
           "green_incl_crop_share": 30.002
         }
       },
+      "san-jose-cr": {
+        "value": 46.562163492578286,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 489.56,
+          "water_km2": 0.33,
+          "polygon_area_pixels_km2": 489.89,
+          "ucdb_area_km2": 491.0,
+          "tiles": [
+            "N09W087",
+            "N09W084"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 37.494,
+            "shrub": 0.001,
+            "grass": 15.182,
+            "crop": 0.284,
+            "built": 46.562,
+            "bare": 0.476,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.067,
+          "green_incl_crop_share": 52.962
+        }
+      },
       "santiago": {
         "value": 65.76821011105557,
         "quality": "observed",
@@ -2042,7 +2709,9 @@
           "water_km2": 0.85,
           "polygon_area_pixels_km2": 799.17,
           "ucdb_area_km2": 801.0,
-          "tiles": ["S36W072"],
+          "tiles": [
+            "S36W072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2061,6 +2730,37 @@
           "green_incl_crop_share": 27.751
         }
       },
+      "santo-domingo": {
+        "value": 59.320911761548516,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 446.59,
+          "water_km2": 35.34,
+          "polygon_area_pixels_km2": 481.93,
+          "ucdb_area_km2": 483.0,
+          "tiles": [
+            "N18W072"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 25.835,
+            "shrub": 0.022,
+            "grass": 13.442,
+            "crop": 0.184,
+            "built": 59.321,
+            "bare": 0.893,
+            "snow": 0.0,
+            "wetland": 0.303,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.334,
+          "green_incl_crop_share": 39.786
+        }
+      },
       "sao-paulo": {
         "value": 68.11446131632755,
         "quality": "observed",
@@ -2071,7 +2771,9 @@
           "water_km2": 40.63,
           "polygon_area_pixels_km2": 2106.31,
           "ucdb_area_km2": 2111.0,
-          "tiles": ["S24W048"],
+          "tiles": [
+            "S24W048"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2100,7 +2802,9 @@
           "water_km2": 2.09,
           "polygon_area_pixels_km2": 352.19,
           "ucdb_area_km2": 353.0,
-          "tiles": ["N42E141"],
+          "tiles": [
+            "N42E141"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2129,7 +2833,9 @@
           "water_km2": 155.82,
           "polygon_area_pixels_km2": 1120.51,
           "ucdb_area_km2": 1123.0,
-          "tiles": ["N45W123"],
+          "tiles": [
+            "N45W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2158,7 +2864,9 @@
           "water_km2": 90.35,
           "polygon_area_pixels_km2": 2276.77,
           "ucdb_area_km2": 2282.0,
-          "tiles": ["N36E126"],
+          "tiles": [
+            "N36E126"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2187,7 +2895,9 @@
           "water_km2": 148.04,
           "polygon_area_pixels_km2": 3120.71,
           "ucdb_area_km2": 3128.0,
-          "tiles": ["N30E120"],
+          "tiles": [
+            "N30E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2216,7 +2926,9 @@
           "water_km2": 50.68,
           "polygon_area_pixels_km2": 436.96,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N00E102"],
+          "tiles": [
+            "N00E102"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2245,7 +2957,10 @@
           "water_km2": 32.83,
           "polygon_area_pixels_km2": 338.24,
           "ucdb_area_km2": 339.0,
-          "tiles": ["N57E015", "N57E018"],
+          "tiles": [
+            "N57E015",
+            "N57E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2274,7 +2989,9 @@
           "water_km2": 122.55,
           "polygon_area_pixels_km2": 1374.92,
           "ucdb_area_km2": 1378.0,
-          "tiles": ["S36E150"],
+          "tiles": [
+            "S36E150"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2303,7 +3020,9 @@
           "water_km2": 49.48,
           "polygon_area_pixels_km2": 969.8,
           "ucdb_area_km2": 972.0,
-          "tiles": ["N24E120"],
+          "tiles": [
+            "N24E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2332,7 +3051,9 @@
           "water_km2": 3.18,
           "polygon_area_pixels_km2": 150.65,
           "ucdb_area_km2": 151.0,
-          "tiles": ["N39E042"],
+          "tiles": [
+            "N39E042"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2361,7 +3082,9 @@
           "water_km2": 1.82,
           "polygon_area_pixels_km2": 823.22,
           "ucdb_area_km2": 825.0,
-          "tiles": ["N33E051"],
+          "tiles": [
+            "N33E051"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2390,7 +3113,9 @@
           "water_km2": 10.78,
           "polygon_area_pixels_km2": 332.25,
           "ucdb_area_km2": 333.0,
-          "tiles": ["N30E033"],
+          "tiles": [
+            "N30E033"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2419,7 +3144,10 @@
           "water_km2": 288.05,
           "polygon_area_pixels_km2": 5153.56,
           "ucdb_area_km2": 5165.0,
-          "tiles": ["N33E138", "N36E138"],
+          "tiles": [
+            "N33E138",
+            "N36E138"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2448,7 +3176,9 @@
           "water_km2": 59.51,
           "polygon_area_pixels_km2": 1616.38,
           "ucdb_area_km2": 1620.0,
-          "tiles": ["N42W081"],
+          "tiles": [
+            "N42W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2477,7 +3207,10 @@
           "water_km2": 1.57,
           "polygon_area_pixels_km2": 234.44,
           "ucdb_area_km2": 235.0,
-          "tiles": ["N45E105", "N48E105"],
+          "tiles": [
+            "N45E105",
+            "N48E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2506,7 +3239,10 @@
           "water_km2": 63.58,
           "polygon_area_pixels_km2": 647.44,
           "ucdb_area_km2": 649.0,
-          "tiles": ["N48W126", "N48W123"],
+          "tiles": [
+            "N48W126",
+            "N48W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2535,7 +3271,9 @@
           "water_km2": 10.05,
           "polygon_area_pixels_km2": 324.17,
           "ucdb_area_km2": 325.0,
-          "tiles": ["N48E015"],
+          "tiles": [
+            "N48E015"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2564,7 +3302,10 @@
           "water_km2": 7.24,
           "polygon_area_pixels_km2": 414.03,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N51E018", "N51E021"],
+          "tiles": [
+            "N51E018",
+            "N51E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2583,6 +3324,37 @@
           "green_incl_crop_share": 55.236
         }
       },
+      "yangon": {
+        "value": 41.690936732637304,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 507.65,
+          "water_km2": 36.18,
+          "polygon_area_pixels_km2": 543.82,
+          "ucdb_area_km2": 545.0,
+          "tiles": [
+            "N15E096"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 40.326,
+            "shrub": 0.037,
+            "grass": 10.554,
+            "crop": 6.607,
+            "built": 41.691,
+            "bare": 0.754,
+            "snow": 0.0,
+            "wetland": 0.031,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.652,
+          "green_incl_crop_share": 57.555
+        }
+      },
       "zurich": {
         "value": 39.52447681939797,
         "quality": "observed",
@@ -2593,7 +3365,9 @@
           "water_km2": 18.92,
           "polygon_area_pixels_km2": 186.56,
           "ucdb_area_km2": 187.0,
-          "tiles": ["N45E006"],
+          "tiles": [
+            "N45E006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2614,6 +3388,37 @@
       }
     },
     "green_share": {
+      "abidjan": {
+        "value": 22.914482223425264,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 438.16,
+          "water_km2": 63.64,
+          "polygon_area_pixels_km2": 501.8,
+          "ucdb_area_km2": 503.0,
+          "tiles": [
+            "N03W006"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 12.754,
+            "shrub": 0.55,
+            "grass": 9.303,
+            "crop": 0.305,
+            "built": 75.086,
+            "bare": 1.695,
+            "snow": 0.0,
+            "wetland": 0.305,
+            "mangrove": 0.002,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.682,
+          "green_incl_crop_share": 23.219
+        }
+      },
       "accra": {
         "value": 19.393523348757103,
         "quality": "observed",
@@ -2624,7 +3429,10 @@
           "water_km2": 55.05,
           "polygon_area_pixels_km2": 1118.51,
           "ucdb_area_km2": 1121.0,
-          "tiles": ["N03W003", "N03E000"],
+          "tiles": [
+            "N03W003",
+            "N03E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2653,7 +3461,10 @@
           "water_km2": 0.09,
           "polygon_area_pixels_km2": 463.92,
           "ucdb_area_km2": 465.0,
-          "tiles": ["N06E036", "N09E036"],
+          "tiles": [
+            "N06E036",
+            "N09E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2682,7 +3493,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 330.24,
           "ucdb_area_km2": 331.0,
-          "tiles": ["N42E075"],
+          "tiles": [
+            "N42E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2711,7 +3524,9 @@
           "water_km2": 36.28,
           "polygon_area_pixels_km2": 307.35,
           "ucdb_area_km2": 308.0,
-          "tiles": ["N51E003"],
+          "tiles": [
+            "N51E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2740,7 +3555,9 @@
           "water_km2": 31.69,
           "polygon_area_pixels_km2": 411.06,
           "ucdb_area_km2": 412.0,
-          "tiles": ["N36E021"],
+          "tiles": [
+            "N36E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2769,7 +3586,9 @@
           "water_km2": 108.57,
           "polygon_area_pixels_km2": 636.56,
           "ucdb_area_km2": 638.0,
-          "tiles": ["S39E174"],
+          "tiles": [
+            "S39E174"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2798,7 +3617,9 @@
           "water_km2": 113.84,
           "polygon_area_pixels_km2": 2690.85,
           "ucdb_area_km2": 2697.0,
-          "tiles": ["N12E099"],
+          "tiles": [
+            "N12E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2827,7 +3648,9 @@
           "water_km2": 29.63,
           "polygon_area_pixels_km2": 437.05,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N39E000"],
+          "tiles": [
+            "N39E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2856,7 +3679,9 @@
           "water_km2": 26.16,
           "polygon_area_pixels_km2": 2174.11,
           "ucdb_area_km2": 2179.0,
-          "tiles": ["N39E114"],
+          "tiles": [
+            "N39E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2885,7 +3710,9 @@
           "water_km2": 10.49,
           "polygon_area_pixels_km2": 1005.77,
           "ucdb_area_km2": 1008.0,
-          "tiles": ["N12E075"],
+          "tiles": [
+            "N12E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2914,7 +3741,9 @@
           "water_km2": 15.91,
           "polygon_area_pixels_km2": 679.52,
           "ucdb_area_km2": 681.0,
-          "tiles": ["N51E012"],
+          "tiles": [
+            "N51E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2943,7 +3772,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 532.83,
           "ucdb_area_km2": 534.0,
-          "tiles": ["N03W075"],
+          "tiles": [
+            "N03W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -2972,7 +3803,9 @@
           "water_km2": 11.6,
           "polygon_area_pixels_km2": 367.17,
           "ucdb_area_km2": 368.0,
-          "tiles": ["N45E018"],
+          "tiles": [
+            "N45E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3001,7 +3834,9 @@
           "water_km2": 45.09,
           "polygon_area_pixels_km2": 2181.21,
           "ucdb_area_km2": 2186.0,
-          "tiles": ["S36W060"],
+          "tiles": [
+            "S36W060"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3030,7 +3865,10 @@
           "water_km2": 40.35,
           "polygon_area_pixels_km2": 1676.23,
           "ucdb_area_km2": 1680.0,
-          "tiles": ["N27E030", "N30E030"],
+          "tiles": [
+            "N27E030",
+            "N30E030"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3059,7 +3897,9 @@
           "water_km2": 26.55,
           "polygon_area_pixels_km2": 693.44,
           "ucdb_area_km2": 695.0,
-          "tiles": ["S36E018"],
+          "tiles": [
+            "S36E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3088,7 +3928,9 @@
           "water_km2": 33.92,
           "polygon_area_pixels_km2": 414.04,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N33W009"],
+          "tiles": [
+            "N33W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3107,6 +3949,68 @@
           "green_incl_crop_share": 46.766
         }
       },
+      "cebu": {
+        "value": 59.975053168948506,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 326.65,
+          "water_km2": 88.44,
+          "polygon_area_pixels_km2": 415.09,
+          "ucdb_area_km2": 416.0,
+          "tiles": [
+            "N09E123"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 48.752,
+            "shrub": 0.004,
+            "grass": 8.583,
+            "crop": 1.689,
+            "built": 36.613,
+            "bare": 1.723,
+            "snow": 0.0,
+            "wetland": 0.017,
+            "mangrove": 2.62,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 21.306,
+          "green_incl_crop_share": 61.664
+        }
+      },
+      "chennai": {
+        "value": 35.753381665518255,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 979.77,
+          "water_km2": 70.15,
+          "polygon_area_pixels_km2": 1049.93,
+          "ucdb_area_km2": 1052.0,
+          "tiles": [
+            "N12E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 26.03,
+            "shrub": 1.031,
+            "grass": 7.676,
+            "crop": 12.995,
+            "built": 49.282,
+            "bare": 1.97,
+            "snow": 0.0,
+            "wetland": 1.016,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.682,
+          "green_incl_crop_share": 48.748
+        }
+      },
       "chicago": {
         "value": 39.06436338427711,
         "quality": "observed",
@@ -3117,7 +4021,10 @@
           "water_km2": 56.98,
           "polygon_area_pixels_km2": 2041.55,
           "ucdb_area_km2": 2046.0,
-          "tiles": ["N39W090", "N42W090"],
+          "tiles": [
+            "N39W090",
+            "N42W090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3136,6 +4043,37 @@
           "green_incl_crop_share": 39.509
         }
       },
+      "colombo": {
+        "value": 69.13937589219691,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1107.6,
+          "water_km2": 95.69,
+          "polygon_area_pixels_km2": 1203.29,
+          "ucdb_area_km2": 1206.0,
+          "tiles": [
+            "N06E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 65.003,
+            "shrub": 0.105,
+            "grass": 3.565,
+            "crop": 4.046,
+            "built": 26.279,
+            "bare": 0.536,
+            "snow": 0.0,
+            "wetland": 0.333,
+            "mangrove": 0.133,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.952,
+          "green_incl_crop_share": 73.185
+        }
+      },
       "copenhagen": {
         "value": 47.08488468141401,
         "quality": "observed",
@@ -3146,7 +4084,9 @@
           "water_km2": 31.84,
           "polygon_area_pixels_km2": 301.33,
           "ucdb_area_km2": 302.0,
-          "tiles": ["N54E012"],
+          "tiles": [
+            "N54E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3175,7 +4115,9 @@
           "water_km2": 43.88,
           "polygon_area_pixels_km2": 276.37,
           "ucdb_area_km2": 277.0,
-          "tiles": ["N12W018"],
+          "tiles": [
+            "N12W018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3194,6 +4136,69 @@
           "green_incl_crop_share": 20.949
         }
       },
+      "dar-es-salaam": {
+        "value": 50.76989388346992,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 863.75,
+          "water_km2": 41.18,
+          "polygon_area_pixels_km2": 904.94,
+          "ucdb_area_km2": 907.0,
+          "tiles": [
+            "S09E036",
+            "S09E039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 29.322,
+            "shrub": 1.161,
+            "grass": 19.41,
+            "crop": 0.76,
+            "built": 47.313,
+            "bare": 1.157,
+            "snow": 0.0,
+            "wetland": 0.212,
+            "mangrove": 0.665,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 4.551,
+          "green_incl_crop_share": 51.53
+        }
+      },
+      "denpasar": {
+        "value": 36.937832636596426,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 353.54,
+          "water_km2": 33.63,
+          "polygon_area_pixels_km2": 387.17,
+          "ucdb_area_km2": 388.0,
+          "tiles": [
+            "S09E114"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 28.968,
+            "shrub": 0.0,
+            "grass": 5.467,
+            "crop": 17.07,
+            "built": 45.489,
+            "bare": 0.503,
+            "snow": 0.0,
+            "wetland": 0.052,
+            "mangrove": 2.45,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 8.687,
+          "green_incl_crop_share": 54.008
+        }
+      },
       "denver": {
         "value": 41.9823700848377,
         "quality": "observed",
@@ -3204,7 +4209,10 @@
           "water_km2": 25.59,
           "polygon_area_pixels_km2": 1191.27,
           "ucdb_area_km2": 1194.0,
-          "tiles": ["N39W108", "N39W105"],
+          "tiles": [
+            "N39W108",
+            "N39W105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3233,7 +4241,10 @@
           "water_km2": 163.4,
           "polygon_area_pixels_km2": 6596.45,
           "ucdb_area_km2": 6611.0,
-          "tiles": ["N21E090", "N24E090"],
+          "tiles": [
+            "N21E090",
+            "N24E090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3262,7 +4273,9 @@
           "water_km2": 66.28,
           "polygon_area_pixels_km2": 852.14,
           "ucdb_area_km2": 854.0,
-          "tiles": ["N24E054"],
+          "tiles": [
+            "N24E054"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3291,7 +4304,9 @@
           "water_km2": 20.56,
           "polygon_area_pixels_km2": 300.36,
           "ucdb_area_km2": 301.0,
-          "tiles": ["N51W009"],
+          "tiles": [
+            "N51W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3320,7 +4335,9 @@
           "water_km2": 13.12,
           "polygon_area_pixels_km2": 129.67,
           "ucdb_area_km2": 130.0,
-          "tiles": ["N54W006"],
+          "tiles": [
+            "N54W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3339,6 +4356,37 @@
           "green_incl_crop_share": 53.604
         }
       },
+      "fortaleza": {
+        "value": 34.620253411383366,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 388.19,
+          "water_km2": 23.91,
+          "polygon_area_pixels_km2": 412.1,
+          "ucdb_area_km2": 413.0,
+          "tiles": [
+            "S06W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 17.618,
+            "shrub": 1.645,
+            "grass": 12.573,
+            "crop": 1.668,
+            "built": 61.138,
+            "bare": 2.574,
+            "snow": 0.0,
+            "wetland": 0.493,
+            "mangrove": 2.291,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.801,
+          "green_incl_crop_share": 36.288
+        }
+      },
       "fukuoka": {
         "value": 20.791777256850626,
         "quality": "observed",
@@ -3349,7 +4397,9 @@
           "water_km2": 36.61,
           "polygon_area_pixels_km2": 448.94,
           "ucdb_area_km2": 450.0,
-          "tiles": ["N33E129"],
+          "tiles": [
+            "N33E129"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3378,7 +4428,10 @@
           "water_km2": 49.98,
           "polygon_area_pixels_km2": 922.88,
           "ucdb_area_km2": 925.0,
-          "tiles": ["N18E105", "N21E105"],
+          "tiles": [
+            "N18E105",
+            "N21E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3407,7 +4460,9 @@
           "water_km2": 22.75,
           "polygon_area_pixels_km2": 320.29,
           "ucdb_area_km2": 321.0,
-          "tiles": ["N21W084"],
+          "tiles": [
+            "N21W084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3436,7 +4491,9 @@
           "water_km2": 60.72,
           "polygon_area_pixels_km2": 380.16,
           "ucdb_area_km2": 381.0,
-          "tiles": ["N60E024"],
+          "tiles": [
+            "N60E024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3465,7 +4522,9 @@
           "water_km2": 74.44,
           "polygon_area_pixels_km2": 1483.65,
           "ucdb_area_km2": 1487.0,
-          "tiles": ["N09E105"],
+          "tiles": [
+            "N09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3494,7 +4553,9 @@
           "water_km2": 58.04,
           "polygon_area_pixels_km2": 219.44,
           "ucdb_area_km2": 220.0,
-          "tiles": ["N21E114"],
+          "tiles": [
+            "N21E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3523,7 +4584,9 @@
           "water_km2": 24.53,
           "polygon_area_pixels_km2": 176.63,
           "ucdb_area_km2": 177.0,
-          "tiles": ["N21W159"],
+          "tiles": [
+            "N21W159"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3552,7 +4615,9 @@
           "water_km2": 131.68,
           "polygon_area_pixels_km2": 1265.82,
           "ucdb_area_km2": 1269.0,
-          "tiles": ["N39E027"],
+          "tiles": [
+            "N39E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3581,7 +4646,9 @@
           "water_km2": 61.09,
           "polygon_area_pixels_km2": 4603.63,
           "ucdb_area_km2": 4614.0,
-          "tiles": ["S09E105"],
+          "tiles": [
+            "S09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3610,7 +4677,9 @@
           "water_km2": 8.86,
           "polygon_area_pixels_km2": 1752.01,
           "ucdb_area_km2": 1756.0,
-          "tiles": ["S27E027"],
+          "tiles": [
+            "S27E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3629,6 +4698,37 @@
           "green_incl_crop_share": 43.491
         }
       },
+      "kaohsiung": {
+        "value": 26.85571530957395,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 336.37,
+          "water_km2": 34.79,
+          "polygon_area_pixels_km2": 371.16,
+          "ucdb_area_km2": 372.0,
+          "tiles": [
+            "N21E120"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 22.644,
+            "shrub": 0.0,
+            "grass": 4.21,
+            "crop": 8.784,
+            "built": 61.475,
+            "bare": 2.885,
+            "snow": 0.0,
+            "wetland": 0.002,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.373,
+          "green_incl_crop_share": 35.64
+        }
+      },
       "kathmandu": {
         "value": 29.68191922625931,
         "quality": "observed",
@@ -3639,7 +4739,9 @@
           "water_km2": 0.28,
           "polygon_area_pixels_km2": 349.2,
           "ucdb_area_km2": 350.0,
-          "tiles": ["N27E084"],
+          "tiles": [
+            "N27E084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3658,6 +4760,99 @@
           "green_incl_crop_share": 58.656
         }
       },
+      "kigali": {
+        "value": 34.998163539872564,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 284.93,
+          "water_km2": 0.46,
+          "polygon_area_pixels_km2": 285.4,
+          "ucdb_area_km2": 286.0,
+          "tiles": [
+            "S03E030"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 18.397,
+            "shrub": 6.651,
+            "grass": 9.927,
+            "crop": 18.884,
+            "built": 45.318,
+            "bare": 0.799,
+            "snow": 0.0,
+            "wetland": 0.023,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.163,
+          "green_incl_crop_share": 53.882
+        }
+      },
+      "kinshasa": {
+        "value": 38.39211151127157,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 473.68,
+          "water_km2": 12.25,
+          "polygon_area_pixels_km2": 485.92,
+          "ucdb_area_km2": 487.0,
+          "tiles": [
+            "S06E015"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 23.093,
+            "shrub": 1.946,
+            "grass": 13.092,
+            "crop": 5.201,
+            "built": 55.762,
+            "bare": 0.645,
+            "snow": 0.0,
+            "wetland": 0.261,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 2.52,
+          "green_incl_crop_share": 43.593
+        }
+      },
+      "kochi": {
+        "value": 78.29007996601504,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1033.61,
+          "water_km2": 229.53,
+          "polygon_area_pixels_km2": 1263.14,
+          "ucdb_area_km2": 1266.0,
+          "tiles": [
+            "N09E075"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 69.883,
+            "shrub": 0.052,
+            "grass": 7.052,
+            "crop": 2.555,
+            "built": 18.893,
+            "bare": 0.262,
+            "snow": 0.0,
+            "wetland": 0.972,
+            "mangrove": 0.331,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 18.172,
+          "green_incl_crop_share": 80.845
+        }
+      },
       "kuala-lumpur": {
         "value": 39.83582388789765,
         "quality": "observed",
@@ -3668,7 +4863,10 @@
           "water_km2": 25.11,
           "polygon_area_pixels_km2": 1337.07,
           "ucdb_area_km2": 1340.0,
-          "tiles": ["N00E099", "N03E099"],
+          "tiles": [
+            "N00E099",
+            "N03E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3697,7 +4895,9 @@
           "water_km2": 64.42,
           "polygon_area_pixels_km2": 1196.37,
           "ucdb_area_km2": 1199.0,
-          "tiles": ["N06E003"],
+          "tiles": [
+            "N06E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3726,7 +4926,10 @@
           "water_km2": 33.73,
           "polygon_area_pixels_km2": 981.73,
           "ucdb_area_km2": 984.0,
-          "tiles": ["S15W078", "S12W078"],
+          "tiles": [
+            "S15W078",
+            "S12W078"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3755,7 +4958,9 @@
           "water_km2": 33.93,
           "polygon_area_pixels_km2": 425.05,
           "ucdb_area_km2": 426.0,
-          "tiles": ["N36W012"],
+          "tiles": [
+            "N36W012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3784,7 +4989,10 @@
           "water_km2": 38.68,
           "polygon_area_pixels_km2": 1645.15,
           "ucdb_area_km2": 1649.0,
-          "tiles": ["N51W003", "N51E000"],
+          "tiles": [
+            "N51W003",
+            "N51E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3813,7 +5021,9 @@
           "water_km2": 80.24,
           "polygon_area_pixels_km2": 4487.88,
           "ucdb_area_km2": 4498.0,
-          "tiles": ["N33W120"],
+          "tiles": [
+            "N33W120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3842,7 +5052,9 @@
           "water_km2": 0.95,
           "polygon_area_pixels_km2": 678.42,
           "ucdb_area_km2": 680.0,
-          "tiles": ["N39W006"],
+          "tiles": [
+            "N39W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3871,7 +5083,9 @@
           "water_km2": 435.73,
           "polygon_area_pixels_km2": 2549.25,
           "ucdb_area_km2": 2555.0,
-          "tiles": ["N12E120"],
+          "tiles": [
+            "N12E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3900,7 +5114,9 @@
           "water_km2": 0.14,
           "polygon_area_pixels_km2": 123.68,
           "ucdb_area_km2": 124.0,
-          "tiles": ["N30W009"],
+          "tiles": [
+            "N30W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3919,6 +5135,37 @@
           "green_incl_crop_share": 29.76
         }
       },
+      "medellin": {
+        "value": 46.0484399719207,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 232.01,
+          "water_km2": 0.48,
+          "polygon_area_pixels_km2": 232.49,
+          "ucdb_area_km2": 233.0,
+          "tiles": [
+            "N06W078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 31.706,
+            "shrub": 0.004,
+            "grass": 14.338,
+            "crop": 0.008,
+            "built": 52.997,
+            "bare": 0.947,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.209,
+          "green_incl_crop_share": 46.056
+        }
+      },
       "melbourne": {
         "value": 44.03221600454213,
         "quality": "observed",
@@ -3929,7 +5176,9 @@
           "water_km2": 43.87,
           "polygon_area_pixels_km2": 1607.47,
           "ucdb_area_km2": 1611.0,
-          "tiles": ["S39E144"],
+          "tiles": [
+            "S39E144"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3958,7 +5207,10 @@
           "water_km2": 8.98,
           "polygon_area_pixels_km2": 2129.25,
           "ucdb_area_km2": 2134.0,
-          "tiles": ["N18W102", "N18W099"],
+          "tiles": [
+            "N18W102",
+            "N18W099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -3987,7 +5239,9 @@
           "water_km2": 278.91,
           "polygon_area_pixels_km2": 2777.81,
           "ucdb_area_km2": 2784.0,
-          "tiles": ["N24W081"],
+          "tiles": [
+            "N24W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4016,7 +5270,10 @@
           "water_km2": 4.32,
           "polygon_area_pixels_km2": 783.23,
           "ucdb_area_km2": 785.0,
-          "tiles": ["N45E006", "N45E009"],
+          "tiles": [
+            "N45E006",
+            "N45E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4045,7 +5302,9 @@
           "water_km2": 25.32,
           "polygon_area_pixels_km2": 236.44,
           "ucdb_area_km2": 237.0,
-          "tiles": ["S36W057"],
+          "tiles": [
+            "S36W057"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4074,7 +5333,9 @@
           "water_km2": 107.32,
           "polygon_area_pixels_km2": 1017.7,
           "ucdb_area_km2": 1020.0,
-          "tiles": ["N45W075"],
+          "tiles": [
+            "N45W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4103,7 +5364,9 @@
           "water_km2": 100.04,
           "polygon_area_pixels_km2": 736.33,
           "ucdb_area_km2": 738.0,
-          "tiles": ["N18E072"],
+          "tiles": [
+            "N18E072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4132,7 +5395,9 @@
           "water_km2": 2.46,
           "polygon_area_pixels_km2": 344.19,
           "ucdb_area_km2": 345.0,
-          "tiles": ["N48E009"],
+          "tiles": [
+            "N48E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4161,7 +5426,9 @@
           "water_km2": 1.42,
           "polygon_area_pixels_km2": 596.65,
           "ucdb_area_km2": 598.0,
-          "tiles": ["S03E036"],
+          "tiles": [
+            "S03E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4190,7 +5457,9 @@
           "water_km2": 17.67,
           "polygon_area_pixels_km2": 2134.35,
           "ucdb_area_km2": 2139.0,
-          "tiles": ["N27E075"],
+          "tiles": [
+            "N27E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4219,7 +5488,9 @@
           "water_km2": 257.69,
           "polygon_area_pixels_km2": 3024.18,
           "ucdb_area_km2": 3031.0,
-          "tiles": ["N39W075"],
+          "tiles": [
+            "N39W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4248,7 +5519,10 @@
           "water_km2": 214.05,
           "polygon_area_pixels_km2": 2207.04,
           "ucdb_area_km2": 2212.0,
-          "tiles": ["N33E132", "N33E135"],
+          "tiles": [
+            "N33E132",
+            "N33E135"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4277,7 +5551,9 @@
           "water_km2": 28.87,
           "polygon_area_pixels_km2": 243.42,
           "ucdb_area_km2": 244.0,
-          "tiles": ["N57E009"],
+          "tiles": [
+            "N57E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4296,6 +5572,38 @@
           "green_incl_crop_share": 60.661
         }
       },
+      "panama-city": {
+        "value": 44.996987213176155,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 261.8,
+          "water_km2": 14.6,
+          "polygon_area_pixels_km2": 276.4,
+          "ucdb_area_km2": 277.0,
+          "tiles": [
+            "N06W081",
+            "N09W081"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 30.541,
+            "shrub": 0.001,
+            "grass": 12.888,
+            "crop": 0.198,
+            "built": 53.658,
+            "bare": 1.147,
+            "snow": 0.0,
+            "wetland": 0.29,
+            "mangrove": 1.277,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.284,
+          "green_incl_crop_share": 45.195
+        }
+      },
       "paris": {
         "value": 43.04828883359387,
         "quality": "observed",
@@ -4306,7 +5614,9 @@
           "water_km2": 23.79,
           "polygon_area_pixels_km2": 1417.82,
           "ucdb_area_km2": 1421.0,
-          "tiles": ["N48E000"],
+          "tiles": [
+            "N48E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4335,7 +5645,9 @@
           "water_km2": 72.17,
           "polygon_area_pixels_km2": 782.22,
           "ucdb_area_km2": 784.0,
-          "tiles": ["S33E114"],
+          "tiles": [
+            "S33E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4354,6 +5666,38 @@
           "green_incl_crop_share": 28.563
         }
       },
+      "phnom-penh": {
+        "value": 33.41640192674442,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 318.84,
+          "water_km2": 34.36,
+          "polygon_area_pixels_km2": 353.2,
+          "ucdb_area_km2": 354.0,
+          "tiles": [
+            "N09E102",
+            "N09E105"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 15.446,
+            "shrub": 0.004,
+            "grass": 16.103,
+            "crop": 6.249,
+            "built": 52.538,
+            "bare": 7.796,
+            "snow": 0.0,
+            "wetland": 1.863,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.728,
+          "green_incl_crop_share": 39.666
+        }
+      },
       "prague": {
         "value": 50.9083278541315,
         "quality": "observed",
@@ -4364,7 +5708,9 @@
           "water_km2": 4.61,
           "polygon_area_pixels_km2": 262.41,
           "ucdb_area_km2": 263.0,
-          "tiles": ["N48E012"],
+          "tiles": [
+            "N48E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4393,7 +5739,9 @@
           "water_km2": 0.11,
           "polygon_area_pixels_km2": 379.13,
           "ucdb_area_km2": 380.0,
-          "tiles": ["S03W081"],
+          "tiles": [
+            "S03W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4422,7 +5770,9 @@
           "water_km2": 22.23,
           "polygon_area_pixels_km2": 96.82,
           "ucdb_area_km2": 97.0,
-          "tiles": ["N63W024"],
+          "tiles": [
+            "N63W024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4451,7 +5801,9 @@
           "water_km2": 60.01,
           "polygon_area_pixels_km2": 1282.12,
           "ucdb_area_km2": 1285.0,
-          "tiles": ["S24W045"],
+          "tiles": [
+            "S24W045"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4480,7 +5832,10 @@
           "water_km2": 2.4,
           "polygon_area_pixels_km2": 465.93,
           "ucdb_area_km2": 467.0,
-          "tiles": ["N39E012", "N42E012"],
+          "tiles": [
+            "N39E012",
+            "N42E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4499,6 +5854,37 @@
           "green_incl_crop_share": 55.398
         }
       },
+      "salvador": {
+        "value": 41.382803213682436,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 280.68,
+          "water_km2": 41.57,
+          "polygon_area_pixels_km2": 322.25,
+          "ucdb_area_km2": 323.0,
+          "tiles": [
+            "S15W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 33.936,
+            "shrub": 0.298,
+            "grass": 6.92,
+            "crop": 0.045,
+            "built": 55.775,
+            "bare": 2.798,
+            "snow": 0.0,
+            "wetland": 0.229,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.899,
+          "green_incl_crop_share": 41.427
+        }
+      },
       "san-francisco": {
         "value": 29.566517820236758,
         "quality": "observed",
@@ -4509,7 +5895,9 @@
           "water_km2": 95.61,
           "polygon_area_pixels_km2": 1610.35,
           "ucdb_area_km2": 1614.0,
-          "tiles": ["N36W123"],
+          "tiles": [
+            "N36W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4528,6 +5916,38 @@
           "green_incl_crop_share": 30.002
         }
       },
+      "san-jose-cr": {
+        "value": 52.677583685444205,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 489.56,
+          "water_km2": 0.33,
+          "polygon_area_pixels_km2": 489.89,
+          "ucdb_area_km2": 491.0,
+          "tiles": [
+            "N09W087",
+            "N09W084"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 37.494,
+            "shrub": 0.001,
+            "grass": 15.182,
+            "crop": 0.284,
+            "built": 46.562,
+            "bare": 0.476,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.067,
+          "green_incl_crop_share": 52.962
+        }
+      },
       "santiago": {
         "value": 22.720105400781254,
         "quality": "observed",
@@ -4538,7 +5958,9 @@
           "water_km2": 0.85,
           "polygon_area_pixels_km2": 799.17,
           "ucdb_area_km2": 801.0,
-          "tiles": ["S36W072"],
+          "tiles": [
+            "S36W072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4557,6 +5979,37 @@
           "green_incl_crop_share": 27.751
         }
       },
+      "santo-domingo": {
+        "value": 39.60158748173085,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 446.59,
+          "water_km2": 35.34,
+          "polygon_area_pixels_km2": 481.93,
+          "ucdb_area_km2": 483.0,
+          "tiles": [
+            "N18W072"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 25.835,
+            "shrub": 0.022,
+            "grass": 13.442,
+            "crop": 0.184,
+            "built": 59.321,
+            "bare": 0.893,
+            "snow": 0.0,
+            "wetland": 0.303,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.334,
+          "green_incl_crop_share": 39.786
+        }
+      },
       "sao-paulo": {
         "value": 30.61985062097061,
         "quality": "observed",
@@ -4567,7 +6020,9 @@
           "water_km2": 40.63,
           "polygon_area_pixels_km2": 2106.31,
           "ucdb_area_km2": 2111.0,
-          "tiles": ["S24W048"],
+          "tiles": [
+            "S24W048"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4596,7 +6051,9 @@
           "water_km2": 2.09,
           "polygon_area_pixels_km2": 352.19,
           "ucdb_area_km2": 353.0,
-          "tiles": ["N42E141"],
+          "tiles": [
+            "N42E141"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4625,7 +6082,9 @@
           "water_km2": 155.82,
           "polygon_area_pixels_km2": 1120.51,
           "ucdb_area_km2": 1123.0,
-          "tiles": ["N45W123"],
+          "tiles": [
+            "N45W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4654,7 +6113,9 @@
           "water_km2": 90.35,
           "polygon_area_pixels_km2": 2276.77,
           "ucdb_area_km2": 2282.0,
-          "tiles": ["N36E126"],
+          "tiles": [
+            "N36E126"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4683,7 +6144,9 @@
           "water_km2": 148.04,
           "polygon_area_pixels_km2": 3120.71,
           "ucdb_area_km2": 3128.0,
-          "tiles": ["N30E120"],
+          "tiles": [
+            "N30E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4712,7 +6175,9 @@
           "water_km2": 50.68,
           "polygon_area_pixels_km2": 436.96,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N00E102"],
+          "tiles": [
+            "N00E102"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4741,7 +6206,10 @@
           "water_km2": 32.83,
           "polygon_area_pixels_km2": 338.24,
           "ucdb_area_km2": 339.0,
-          "tiles": ["N57E015", "N57E018"],
+          "tiles": [
+            "N57E015",
+            "N57E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4770,7 +6238,9 @@
           "water_km2": 122.55,
           "polygon_area_pixels_km2": 1374.92,
           "ucdb_area_km2": 1378.0,
-          "tiles": ["S36E150"],
+          "tiles": [
+            "S36E150"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4799,7 +6269,9 @@
           "water_km2": 49.48,
           "polygon_area_pixels_km2": 969.8,
           "ucdb_area_km2": 972.0,
-          "tiles": ["N24E120"],
+          "tiles": [
+            "N24E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4828,7 +6300,9 @@
           "water_km2": 3.18,
           "polygon_area_pixels_km2": 150.65,
           "ucdb_area_km2": 151.0,
-          "tiles": ["N39E042"],
+          "tiles": [
+            "N39E042"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4857,7 +6331,9 @@
           "water_km2": 1.82,
           "polygon_area_pixels_km2": 823.22,
           "ucdb_area_km2": 825.0,
-          "tiles": ["N33E051"],
+          "tiles": [
+            "N33E051"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4886,7 +6362,9 @@
           "water_km2": 10.78,
           "polygon_area_pixels_km2": 332.25,
           "ucdb_area_km2": 333.0,
-          "tiles": ["N30E033"],
+          "tiles": [
+            "N30E033"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4915,7 +6393,10 @@
           "water_km2": 288.05,
           "polygon_area_pixels_km2": 5153.56,
           "ucdb_area_km2": 5165.0,
-          "tiles": ["N33E138", "N36E138"],
+          "tiles": [
+            "N33E138",
+            "N36E138"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4944,7 +6425,9 @@
           "water_km2": 59.51,
           "polygon_area_pixels_km2": 1616.38,
           "ucdb_area_km2": 1620.0,
-          "tiles": ["N42W081"],
+          "tiles": [
+            "N42W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -4973,7 +6456,10 @@
           "water_km2": 1.57,
           "polygon_area_pixels_km2": 234.44,
           "ucdb_area_km2": 235.0,
-          "tiles": ["N45E105", "N48E105"],
+          "tiles": [
+            "N45E105",
+            "N48E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5002,7 +6488,10 @@
           "water_km2": 63.58,
           "polygon_area_pixels_km2": 647.44,
           "ucdb_area_km2": 649.0,
-          "tiles": ["N48W126", "N48W123"],
+          "tiles": [
+            "N48W126",
+            "N48W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5031,7 +6520,9 @@
           "water_km2": 10.05,
           "polygon_area_pixels_km2": 324.17,
           "ucdb_area_km2": 325.0,
-          "tiles": ["N48E015"],
+          "tiles": [
+            "N48E015"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5060,7 +6551,10 @@
           "water_km2": 7.24,
           "polygon_area_pixels_km2": 414.03,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N51E018", "N51E021"],
+          "tiles": [
+            "N51E018",
+            "N51E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5079,6 +6573,37 @@
           "green_incl_crop_share": 55.236
         }
       },
+      "yangon": {
+        "value": 50.947515532836995,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 507.65,
+          "water_km2": 36.18,
+          "polygon_area_pixels_km2": 543.82,
+          "ucdb_area_km2": 545.0,
+          "tiles": [
+            "N15E096"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 40.326,
+            "shrub": 0.037,
+            "grass": 10.554,
+            "crop": 6.607,
+            "built": 41.691,
+            "bare": 0.754,
+            "snow": 0.0,
+            "wetland": 0.031,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.652,
+          "green_incl_crop_share": 57.555
+        }
+      },
       "zurich": {
         "value": 54.036976813025944,
         "quality": "observed",
@@ -5089,7 +6614,9 @@
           "water_km2": 18.92,
           "polygon_area_pixels_km2": 186.56,
           "ucdb_area_km2": 187.0,
-          "tiles": ["N45E006"],
+          "tiles": [
+            "N45E006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5110,6 +6637,37 @@
       }
     },
     "tree_share": {
+      "abidjan": {
+        "value": 12.754315497245925,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 438.16,
+          "water_km2": 63.64,
+          "polygon_area_pixels_km2": 501.8,
+          "ucdb_area_km2": 503.0,
+          "tiles": [
+            "N03W006"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 12.754,
+            "shrub": 0.55,
+            "grass": 9.303,
+            "crop": 0.305,
+            "built": 75.086,
+            "bare": 1.695,
+            "snow": 0.0,
+            "wetland": 0.305,
+            "mangrove": 0.002,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.682,
+          "green_incl_crop_share": 23.219
+        }
+      },
       "accra": {
         "value": 4.123263643915573,
         "quality": "observed",
@@ -5120,7 +6678,10 @@
           "water_km2": 55.05,
           "polygon_area_pixels_km2": 1118.51,
           "ucdb_area_km2": 1121.0,
-          "tiles": ["N03W003", "N03E000"],
+          "tiles": [
+            "N03W003",
+            "N03E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5149,7 +6710,10 @@
           "water_km2": 0.09,
           "polygon_area_pixels_km2": 463.92,
           "ucdb_area_km2": 465.0,
-          "tiles": ["N06E036", "N09E036"],
+          "tiles": [
+            "N06E036",
+            "N09E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5178,7 +6742,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 330.24,
           "ucdb_area_km2": 331.0,
-          "tiles": ["N42E075"],
+          "tiles": [
+            "N42E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5207,7 +6773,9 @@
           "water_km2": 36.28,
           "polygon_area_pixels_km2": 307.35,
           "ucdb_area_km2": 308.0,
-          "tiles": ["N51E003"],
+          "tiles": [
+            "N51E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5236,7 +6804,9 @@
           "water_km2": 31.69,
           "polygon_area_pixels_km2": 411.06,
           "ucdb_area_km2": 412.0,
-          "tiles": ["N36E021"],
+          "tiles": [
+            "N36E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5265,7 +6835,9 @@
           "water_km2": 108.57,
           "polygon_area_pixels_km2": 636.56,
           "ucdb_area_km2": 638.0,
-          "tiles": ["S39E174"],
+          "tiles": [
+            "S39E174"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5294,7 +6866,9 @@
           "water_km2": 113.84,
           "polygon_area_pixels_km2": 2690.85,
           "ucdb_area_km2": 2697.0,
-          "tiles": ["N12E099"],
+          "tiles": [
+            "N12E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5323,7 +6897,9 @@
           "water_km2": 29.63,
           "polygon_area_pixels_km2": 437.05,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N39E000"],
+          "tiles": [
+            "N39E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5352,7 +6928,9 @@
           "water_km2": 26.16,
           "polygon_area_pixels_km2": 2174.11,
           "ucdb_area_km2": 2179.0,
-          "tiles": ["N39E114"],
+          "tiles": [
+            "N39E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5381,7 +6959,9 @@
           "water_km2": 10.49,
           "polygon_area_pixels_km2": 1005.77,
           "ucdb_area_km2": 1008.0,
-          "tiles": ["N12E075"],
+          "tiles": [
+            "N12E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5410,7 +6990,9 @@
           "water_km2": 15.91,
           "polygon_area_pixels_km2": 679.52,
           "ucdb_area_km2": 681.0,
-          "tiles": ["N51E012"],
+          "tiles": [
+            "N51E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5439,7 +7021,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 532.83,
           "ucdb_area_km2": 534.0,
-          "tiles": ["N03W075"],
+          "tiles": [
+            "N03W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5468,7 +7052,9 @@
           "water_km2": 11.6,
           "polygon_area_pixels_km2": 367.17,
           "ucdb_area_km2": 368.0,
-          "tiles": ["N45E018"],
+          "tiles": [
+            "N45E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5497,7 +7083,9 @@
           "water_km2": 45.09,
           "polygon_area_pixels_km2": 2181.21,
           "ucdb_area_km2": 2186.0,
-          "tiles": ["S36W060"],
+          "tiles": [
+            "S36W060"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5526,7 +7114,10 @@
           "water_km2": 40.35,
           "polygon_area_pixels_km2": 1676.23,
           "ucdb_area_km2": 1680.0,
-          "tiles": ["N27E030", "N30E030"],
+          "tiles": [
+            "N27E030",
+            "N30E030"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5555,7 +7146,9 @@
           "water_km2": 26.55,
           "polygon_area_pixels_km2": 693.44,
           "ucdb_area_km2": 695.0,
-          "tiles": ["S36E018"],
+          "tiles": [
+            "S36E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5584,7 +7177,9 @@
           "water_km2": 33.92,
           "polygon_area_pixels_km2": 414.04,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N33W009"],
+          "tiles": [
+            "N33W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5603,6 +7198,68 @@
           "green_incl_crop_share": 46.766
         }
       },
+      "cebu": {
+        "value": 48.75175284398457,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 326.65,
+          "water_km2": 88.44,
+          "polygon_area_pixels_km2": 415.09,
+          "ucdb_area_km2": 416.0,
+          "tiles": [
+            "N09E123"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 48.752,
+            "shrub": 0.004,
+            "grass": 8.583,
+            "crop": 1.689,
+            "built": 36.613,
+            "bare": 1.723,
+            "snow": 0.0,
+            "wetland": 0.017,
+            "mangrove": 2.62,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 21.306,
+          "green_incl_crop_share": 61.664
+        }
+      },
+      "chennai": {
+        "value": 26.029796229376462,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 979.77,
+          "water_km2": 70.15,
+          "polygon_area_pixels_km2": 1049.93,
+          "ucdb_area_km2": 1052.0,
+          "tiles": [
+            "N12E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 26.03,
+            "shrub": 1.031,
+            "grass": 7.676,
+            "crop": 12.995,
+            "built": 49.282,
+            "bare": 1.97,
+            "snow": 0.0,
+            "wetland": 1.016,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.682,
+          "green_incl_crop_share": 48.748
+        }
+      },
       "chicago": {
         "value": 26.301157968662768,
         "quality": "observed",
@@ -5613,7 +7270,10 @@
           "water_km2": 56.98,
           "polygon_area_pixels_km2": 2041.55,
           "ucdb_area_km2": 2046.0,
-          "tiles": ["N39W090", "N42W090"],
+          "tiles": [
+            "N39W090",
+            "N42W090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5632,6 +7292,37 @@
           "green_incl_crop_share": 39.509
         }
       },
+      "colombo": {
+        "value": 65.00310193857837,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1107.6,
+          "water_km2": 95.69,
+          "polygon_area_pixels_km2": 1203.29,
+          "ucdb_area_km2": 1206.0,
+          "tiles": [
+            "N06E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 65.003,
+            "shrub": 0.105,
+            "grass": 3.565,
+            "crop": 4.046,
+            "built": 26.279,
+            "bare": 0.536,
+            "snow": 0.0,
+            "wetland": 0.333,
+            "mangrove": 0.133,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.952,
+          "green_incl_crop_share": 73.185
+        }
+      },
       "copenhagen": {
         "value": 28.96307099743232,
         "quality": "observed",
@@ -5642,7 +7333,9 @@
           "water_km2": 31.84,
           "polygon_area_pixels_km2": 301.33,
           "ucdb_area_km2": 302.0,
-          "tiles": ["N54E012"],
+          "tiles": [
+            "N54E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5671,7 +7364,9 @@
           "water_km2": 43.88,
           "polygon_area_pixels_km2": 276.37,
           "ucdb_area_km2": 277.0,
-          "tiles": ["N12W018"],
+          "tiles": [
+            "N12W018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5690,6 +7385,69 @@
           "green_incl_crop_share": 20.949
         }
       },
+      "dar-es-salaam": {
+        "value": 29.32216154631781,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 863.75,
+          "water_km2": 41.18,
+          "polygon_area_pixels_km2": 904.94,
+          "ucdb_area_km2": 907.0,
+          "tiles": [
+            "S09E036",
+            "S09E039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 29.322,
+            "shrub": 1.161,
+            "grass": 19.41,
+            "crop": 0.76,
+            "built": 47.313,
+            "bare": 1.157,
+            "snow": 0.0,
+            "wetland": 0.212,
+            "mangrove": 0.665,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 4.551,
+          "green_incl_crop_share": 51.53
+        }
+      },
+      "denpasar": {
+        "value": 28.968440884516564,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 353.54,
+          "water_km2": 33.63,
+          "polygon_area_pixels_km2": 387.17,
+          "ucdb_area_km2": 388.0,
+          "tiles": [
+            "S09E114"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 28.968,
+            "shrub": 0.0,
+            "grass": 5.467,
+            "crop": 17.07,
+            "built": 45.489,
+            "bare": 0.503,
+            "snow": 0.0,
+            "wetland": 0.052,
+            "mangrove": 2.45,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 8.687,
+          "green_incl_crop_share": 54.008
+        }
+      },
       "denver": {
         "value": 22.26900782518122,
         "quality": "observed",
@@ -5700,7 +7458,10 @@
           "water_km2": 25.59,
           "polygon_area_pixels_km2": 1191.27,
           "ucdb_area_km2": 1194.0,
-          "tiles": ["N39W108", "N39W105"],
+          "tiles": [
+            "N39W108",
+            "N39W105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5729,7 +7490,10 @@
           "water_km2": 163.4,
           "polygon_area_pixels_km2": 6596.45,
           "ucdb_area_km2": 6611.0,
-          "tiles": ["N21E090", "N24E090"],
+          "tiles": [
+            "N21E090",
+            "N24E090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5758,7 +7522,9 @@
           "water_km2": 66.28,
           "polygon_area_pixels_km2": 852.14,
           "ucdb_area_km2": 854.0,
-          "tiles": ["N24E054"],
+          "tiles": [
+            "N24E054"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5787,7 +7553,9 @@
           "water_km2": 20.56,
           "polygon_area_pixels_km2": 300.36,
           "ucdb_area_km2": 301.0,
-          "tiles": ["N51W009"],
+          "tiles": [
+            "N51W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5816,7 +7584,9 @@
           "water_km2": 13.12,
           "polygon_area_pixels_km2": 129.67,
           "ucdb_area_km2": 130.0,
-          "tiles": ["N54W006"],
+          "tiles": [
+            "N54W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5835,6 +7605,37 @@
           "green_incl_crop_share": 53.604
         }
       },
+      "fortaleza": {
+        "value": 17.617698926235725,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 388.19,
+          "water_km2": 23.91,
+          "polygon_area_pixels_km2": 412.1,
+          "ucdb_area_km2": 413.0,
+          "tiles": [
+            "S06W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 17.618,
+            "shrub": 1.645,
+            "grass": 12.573,
+            "crop": 1.668,
+            "built": 61.138,
+            "bare": 2.574,
+            "snow": 0.0,
+            "wetland": 0.493,
+            "mangrove": 2.291,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.801,
+          "green_incl_crop_share": 36.288
+        }
+      },
       "fukuoka": {
         "value": 17.418441718571252,
         "quality": "observed",
@@ -5845,7 +7646,9 @@
           "water_km2": 36.61,
           "polygon_area_pixels_km2": 448.94,
           "ucdb_area_km2": 450.0,
-          "tiles": ["N33E129"],
+          "tiles": [
+            "N33E129"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5874,7 +7677,10 @@
           "water_km2": 49.98,
           "polygon_area_pixels_km2": 922.88,
           "ucdb_area_km2": 925.0,
-          "tiles": ["N18E105", "N21E105"],
+          "tiles": [
+            "N18E105",
+            "N21E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5903,7 +7709,9 @@
           "water_km2": 22.75,
           "polygon_area_pixels_km2": 320.29,
           "ucdb_area_km2": 321.0,
-          "tiles": ["N21W084"],
+          "tiles": [
+            "N21W084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5932,7 +7740,9 @@
           "water_km2": 60.72,
           "polygon_area_pixels_km2": 380.16,
           "ucdb_area_km2": 381.0,
-          "tiles": ["N60E024"],
+          "tiles": [
+            "N60E024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5961,7 +7771,9 @@
           "water_km2": 74.44,
           "polygon_area_pixels_km2": 1483.65,
           "ucdb_area_km2": 1487.0,
-          "tiles": ["N09E105"],
+          "tiles": [
+            "N09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -5990,7 +7802,9 @@
           "water_km2": 58.04,
           "polygon_area_pixels_km2": 219.44,
           "ucdb_area_km2": 220.0,
-          "tiles": ["N21E114"],
+          "tiles": [
+            "N21E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6019,7 +7833,9 @@
           "water_km2": 24.53,
           "polygon_area_pixels_km2": 176.63,
           "ucdb_area_km2": 177.0,
-          "tiles": ["N21W159"],
+          "tiles": [
+            "N21W159"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6048,7 +7864,9 @@
           "water_km2": 131.68,
           "polygon_area_pixels_km2": 1265.82,
           "ucdb_area_km2": 1269.0,
-          "tiles": ["N39E027"],
+          "tiles": [
+            "N39E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6077,7 +7895,9 @@
           "water_km2": 61.09,
           "polygon_area_pixels_km2": 4603.63,
           "ucdb_area_km2": 4614.0,
-          "tiles": ["S09E105"],
+          "tiles": [
+            "S09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6106,7 +7926,9 @@
           "water_km2": 8.86,
           "polygon_area_pixels_km2": 1752.01,
           "ucdb_area_km2": 1756.0,
-          "tiles": ["S27E027"],
+          "tiles": [
+            "S27E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6125,6 +7947,37 @@
           "green_incl_crop_share": 43.491
         }
       },
+      "kaohsiung": {
+        "value": 22.64373821059215,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 336.37,
+          "water_km2": 34.79,
+          "polygon_area_pixels_km2": 371.16,
+          "ucdb_area_km2": 372.0,
+          "tiles": [
+            "N21E120"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 22.644,
+            "shrub": 0.0,
+            "grass": 4.21,
+            "crop": 8.784,
+            "built": 61.475,
+            "bare": 2.885,
+            "snow": 0.0,
+            "wetland": 0.002,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.373,
+          "green_incl_crop_share": 35.64
+        }
+      },
       "kathmandu": {
         "value": 16.83443591859979,
         "quality": "observed",
@@ -6135,7 +7988,9 @@
           "water_km2": 0.28,
           "polygon_area_pixels_km2": 349.2,
           "ucdb_area_km2": 350.0,
-          "tiles": ["N27E084"],
+          "tiles": [
+            "N27E084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6154,6 +8009,99 @@
           "green_incl_crop_share": 58.656
         }
       },
+      "kigali": {
+        "value": 18.39697953217786,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 284.93,
+          "water_km2": 0.46,
+          "polygon_area_pixels_km2": 285.4,
+          "ucdb_area_km2": 286.0,
+          "tiles": [
+            "S03E030"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 18.397,
+            "shrub": 6.651,
+            "grass": 9.927,
+            "crop": 18.884,
+            "built": 45.318,
+            "bare": 0.799,
+            "snow": 0.0,
+            "wetland": 0.023,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.163,
+          "green_incl_crop_share": 53.882
+        }
+      },
+      "kinshasa": {
+        "value": 23.09309092294784,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 473.68,
+          "water_km2": 12.25,
+          "polygon_area_pixels_km2": 485.92,
+          "ucdb_area_km2": 487.0,
+          "tiles": [
+            "S06E015"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 23.093,
+            "shrub": 1.946,
+            "grass": 13.092,
+            "crop": 5.201,
+            "built": 55.762,
+            "bare": 0.645,
+            "snow": 0.0,
+            "wetland": 0.261,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 2.52,
+          "green_incl_crop_share": 43.593
+        }
+      },
+      "kochi": {
+        "value": 69.88293405362816,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1033.61,
+          "water_km2": 229.53,
+          "polygon_area_pixels_km2": 1263.14,
+          "ucdb_area_km2": 1266.0,
+          "tiles": [
+            "N09E075"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 69.883,
+            "shrub": 0.052,
+            "grass": 7.052,
+            "crop": 2.555,
+            "built": 18.893,
+            "bare": 0.262,
+            "snow": 0.0,
+            "wetland": 0.972,
+            "mangrove": 0.331,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 18.172,
+          "green_incl_crop_share": 80.845
+        }
+      },
       "kuala-lumpur": {
         "value": 34.151930450163846,
         "quality": "observed",
@@ -6164,7 +8112,10 @@
           "water_km2": 25.11,
           "polygon_area_pixels_km2": 1337.07,
           "ucdb_area_km2": 1340.0,
-          "tiles": ["N00E099", "N03E099"],
+          "tiles": [
+            "N00E099",
+            "N03E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6193,7 +8144,9 @@
           "water_km2": 64.42,
           "polygon_area_pixels_km2": 1196.37,
           "ucdb_area_km2": 1199.0,
-          "tiles": ["N06E003"],
+          "tiles": [
+            "N06E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6222,7 +8175,10 @@
           "water_km2": 33.73,
           "polygon_area_pixels_km2": 981.73,
           "ucdb_area_km2": 984.0,
-          "tiles": ["S15W078", "S12W078"],
+          "tiles": [
+            "S15W078",
+            "S12W078"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6251,7 +8207,9 @@
           "water_km2": 33.93,
           "polygon_area_pixels_km2": 425.05,
           "ucdb_area_km2": 426.0,
-          "tiles": ["N36W012"],
+          "tiles": [
+            "N36W012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6280,7 +8238,10 @@
           "water_km2": 38.68,
           "polygon_area_pixels_km2": 1645.15,
           "ucdb_area_km2": 1649.0,
-          "tiles": ["N51W003", "N51E000"],
+          "tiles": [
+            "N51W003",
+            "N51E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6309,7 +8270,9 @@
           "water_km2": 80.24,
           "polygon_area_pixels_km2": 4487.88,
           "ucdb_area_km2": 4498.0,
-          "tiles": ["N33W120"],
+          "tiles": [
+            "N33W120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6338,7 +8301,9 @@
           "water_km2": 0.95,
           "polygon_area_pixels_km2": 678.42,
           "ucdb_area_km2": 680.0,
-          "tiles": ["N39W006"],
+          "tiles": [
+            "N39W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6367,7 +8332,9 @@
           "water_km2": 435.73,
           "polygon_area_pixels_km2": 2549.25,
           "ucdb_area_km2": 2555.0,
-          "tiles": ["N12E120"],
+          "tiles": [
+            "N12E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6396,7 +8363,9 @@
           "water_km2": 0.14,
           "polygon_area_pixels_km2": 123.68,
           "ucdb_area_km2": 124.0,
-          "tiles": ["N30W009"],
+          "tiles": [
+            "N30W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6415,6 +8384,37 @@
           "green_incl_crop_share": 29.76
         }
       },
+      "medellin": {
+        "value": 31.706356929614703,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 232.01,
+          "water_km2": 0.48,
+          "polygon_area_pixels_km2": 232.49,
+          "ucdb_area_km2": 233.0,
+          "tiles": [
+            "N06W078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 31.706,
+            "shrub": 0.004,
+            "grass": 14.338,
+            "crop": 0.008,
+            "built": 52.997,
+            "bare": 0.947,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.209,
+          "green_incl_crop_share": 46.056
+        }
+      },
       "melbourne": {
         "value": 29.50569306764453,
         "quality": "observed",
@@ -6425,7 +8425,9 @@
           "water_km2": 43.87,
           "polygon_area_pixels_km2": 1607.47,
           "ucdb_area_km2": 1611.0,
-          "tiles": ["S39E144"],
+          "tiles": [
+            "S39E144"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6454,7 +8456,10 @@
           "water_km2": 8.98,
           "polygon_area_pixels_km2": 2129.25,
           "ucdb_area_km2": 2134.0,
-          "tiles": ["N18W102", "N18W099"],
+          "tiles": [
+            "N18W102",
+            "N18W099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6483,7 +8488,9 @@
           "water_km2": 278.91,
           "polygon_area_pixels_km2": 2777.81,
           "ucdb_area_km2": 2784.0,
-          "tiles": ["N24W081"],
+          "tiles": [
+            "N24W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6512,7 +8519,10 @@
           "water_km2": 4.32,
           "polygon_area_pixels_km2": 783.23,
           "ucdb_area_km2": 785.0,
-          "tiles": ["N45E006", "N45E009"],
+          "tiles": [
+            "N45E006",
+            "N45E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6541,7 +8551,9 @@
           "water_km2": 25.32,
           "polygon_area_pixels_km2": 236.44,
           "ucdb_area_km2": 237.0,
-          "tiles": ["S36W057"],
+          "tiles": [
+            "S36W057"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6570,7 +8582,9 @@
           "water_km2": 107.32,
           "polygon_area_pixels_km2": 1017.7,
           "ucdb_area_km2": 1020.0,
-          "tiles": ["N45W075"],
+          "tiles": [
+            "N45W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6599,7 +8613,9 @@
           "water_km2": 100.04,
           "polygon_area_pixels_km2": 736.33,
           "ucdb_area_km2": 738.0,
-          "tiles": ["N18E072"],
+          "tiles": [
+            "N18E072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6628,7 +8644,9 @@
           "water_km2": 2.46,
           "polygon_area_pixels_km2": 344.19,
           "ucdb_area_km2": 345.0,
-          "tiles": ["N48E009"],
+          "tiles": [
+            "N48E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6657,7 +8675,9 @@
           "water_km2": 1.42,
           "polygon_area_pixels_km2": 596.65,
           "ucdb_area_km2": 598.0,
-          "tiles": ["S03E036"],
+          "tiles": [
+            "S03E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6686,7 +8706,9 @@
           "water_km2": 17.67,
           "polygon_area_pixels_km2": 2134.35,
           "ucdb_area_km2": 2139.0,
-          "tiles": ["N27E075"],
+          "tiles": [
+            "N27E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6715,7 +8737,9 @@
           "water_km2": 257.69,
           "polygon_area_pixels_km2": 3024.18,
           "ucdb_area_km2": 3031.0,
-          "tiles": ["N39W075"],
+          "tiles": [
+            "N39W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6744,7 +8768,10 @@
           "water_km2": 214.05,
           "polygon_area_pixels_km2": 2207.04,
           "ucdb_area_km2": 2212.0,
-          "tiles": ["N33E132", "N33E135"],
+          "tiles": [
+            "N33E132",
+            "N33E135"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6773,7 +8800,9 @@
           "water_km2": 28.87,
           "polygon_area_pixels_km2": 243.42,
           "ucdb_area_km2": 244.0,
-          "tiles": ["N57E009"],
+          "tiles": [
+            "N57E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6792,6 +8821,38 @@
           "green_incl_crop_share": 60.661
         }
       },
+      "panama-city": {
+        "value": 30.54144400815809,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 261.8,
+          "water_km2": 14.6,
+          "polygon_area_pixels_km2": 276.4,
+          "ucdb_area_km2": 277.0,
+          "tiles": [
+            "N06W081",
+            "N09W081"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 30.541,
+            "shrub": 0.001,
+            "grass": 12.888,
+            "crop": 0.198,
+            "built": 53.658,
+            "bare": 1.147,
+            "snow": 0.0,
+            "wetland": 0.29,
+            "mangrove": 1.277,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.284,
+          "green_incl_crop_share": 45.195
+        }
+      },
       "paris": {
         "value": 36.70410041779841,
         "quality": "observed",
@@ -6802,7 +8863,9 @@
           "water_km2": 23.79,
           "polygon_area_pixels_km2": 1417.82,
           "ucdb_area_km2": 1421.0,
-          "tiles": ["N48E000"],
+          "tiles": [
+            "N48E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6831,7 +8894,9 @@
           "water_km2": 72.17,
           "polygon_area_pixels_km2": 782.22,
           "ucdb_area_km2": 784.0,
-          "tiles": ["S33E114"],
+          "tiles": [
+            "S33E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6850,6 +8915,38 @@
           "green_incl_crop_share": 28.563
         }
       },
+      "phnom-penh": {
+        "value": 15.446271564104816,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 318.84,
+          "water_km2": 34.36,
+          "polygon_area_pixels_km2": 353.2,
+          "ucdb_area_km2": 354.0,
+          "tiles": [
+            "N09E102",
+            "N09E105"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 15.446,
+            "shrub": 0.004,
+            "grass": 16.103,
+            "crop": 6.249,
+            "built": 52.538,
+            "bare": 7.796,
+            "snow": 0.0,
+            "wetland": 1.863,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.728,
+          "green_incl_crop_share": 39.666
+        }
+      },
       "prague": {
         "value": 39.87906469546139,
         "quality": "observed",
@@ -6860,7 +8957,9 @@
           "water_km2": 4.61,
           "polygon_area_pixels_km2": 262.41,
           "ucdb_area_km2": 263.0,
-          "tiles": ["N48E012"],
+          "tiles": [
+            "N48E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6889,7 +8988,9 @@
           "water_km2": 0.11,
           "polygon_area_pixels_km2": 379.13,
           "ucdb_area_km2": 380.0,
-          "tiles": ["S03W081"],
+          "tiles": [
+            "S03W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6918,7 +9019,9 @@
           "water_km2": 22.23,
           "polygon_area_pixels_km2": 96.82,
           "ucdb_area_km2": 97.0,
-          "tiles": ["N63W024"],
+          "tiles": [
+            "N63W024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6947,7 +9050,9 @@
           "water_km2": 60.01,
           "polygon_area_pixels_km2": 1282.12,
           "ucdb_area_km2": 1285.0,
-          "tiles": ["S24W045"],
+          "tiles": [
+            "S24W045"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6976,7 +9081,10 @@
           "water_km2": 2.4,
           "polygon_area_pixels_km2": 465.93,
           "ucdb_area_km2": 467.0,
-          "tiles": ["N39E012", "N42E012"],
+          "tiles": [
+            "N39E012",
+            "N42E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -6995,6 +9103,37 @@
           "green_incl_crop_share": 55.398
         }
       },
+      "salvador": {
+        "value": 33.93615871778559,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 280.68,
+          "water_km2": 41.57,
+          "polygon_area_pixels_km2": 322.25,
+          "ucdb_area_km2": 323.0,
+          "tiles": [
+            "S15W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 33.936,
+            "shrub": 0.298,
+            "grass": 6.92,
+            "crop": 0.045,
+            "built": 55.775,
+            "bare": 2.798,
+            "snow": 0.0,
+            "wetland": 0.229,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.899,
+          "green_incl_crop_share": 41.427
+        }
+      },
       "san-francisco": {
         "value": 20.19227590463639,
         "quality": "observed",
@@ -7005,7 +9144,9 @@
           "water_km2": 95.61,
           "polygon_area_pixels_km2": 1610.35,
           "ucdb_area_km2": 1614.0,
-          "tiles": ["N36W123"],
+          "tiles": [
+            "N36W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7024,6 +9165,38 @@
           "green_incl_crop_share": 30.002
         }
       },
+      "san-jose-cr": {
+        "value": 37.4944124279778,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 489.56,
+          "water_km2": 0.33,
+          "polygon_area_pixels_km2": 489.89,
+          "ucdb_area_km2": 491.0,
+          "tiles": [
+            "N09W087",
+            "N09W084"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 37.494,
+            "shrub": 0.001,
+            "grass": 15.182,
+            "crop": 0.284,
+            "built": 46.562,
+            "bare": 0.476,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.067,
+          "green_incl_crop_share": 52.962
+        }
+      },
       "santiago": {
         "value": 10.984898339418347,
         "quality": "observed",
@@ -7034,7 +9207,9 @@
           "water_km2": 0.85,
           "polygon_area_pixels_km2": 799.17,
           "ucdb_area_km2": 801.0,
-          "tiles": ["S36W072"],
+          "tiles": [
+            "S36W072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7053,6 +9228,37 @@
           "green_incl_crop_share": 27.751
         }
       },
+      "santo-domingo": {
+        "value": 25.834903339938844,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 446.59,
+          "water_km2": 35.34,
+          "polygon_area_pixels_km2": 481.93,
+          "ucdb_area_km2": 483.0,
+          "tiles": [
+            "N18W072"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 25.835,
+            "shrub": 0.022,
+            "grass": 13.442,
+            "crop": 0.184,
+            "built": 59.321,
+            "bare": 0.893,
+            "snow": 0.0,
+            "wetland": 0.303,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.334,
+          "green_incl_crop_share": 39.786
+        }
+      },
       "sao-paulo": {
         "value": 22.526138316770826,
         "quality": "observed",
@@ -7063,7 +9269,9 @@
           "water_km2": 40.63,
           "polygon_area_pixels_km2": 2106.31,
           "ucdb_area_km2": 2111.0,
-          "tiles": ["S24W048"],
+          "tiles": [
+            "S24W048"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7092,7 +9300,9 @@
           "water_km2": 2.09,
           "polygon_area_pixels_km2": 352.19,
           "ucdb_area_km2": 353.0,
-          "tiles": ["N42E141"],
+          "tiles": [
+            "N42E141"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7121,7 +9331,9 @@
           "water_km2": 155.82,
           "polygon_area_pixels_km2": 1120.51,
           "ucdb_area_km2": 1123.0,
-          "tiles": ["N45W123"],
+          "tiles": [
+            "N45W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7150,7 +9362,9 @@
           "water_km2": 90.35,
           "polygon_area_pixels_km2": 2276.77,
           "ucdb_area_km2": 2282.0,
-          "tiles": ["N36E126"],
+          "tiles": [
+            "N36E126"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7179,7 +9393,9 @@
           "water_km2": 148.04,
           "polygon_area_pixels_km2": 3120.71,
           "ucdb_area_km2": 3128.0,
-          "tiles": ["N30E120"],
+          "tiles": [
+            "N30E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7208,7 +9424,9 @@
           "water_km2": 50.68,
           "polygon_area_pixels_km2": 436.96,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N00E102"],
+          "tiles": [
+            "N00E102"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7237,7 +9455,10 @@
           "water_km2": 32.83,
           "polygon_area_pixels_km2": 338.24,
           "ucdb_area_km2": 339.0,
-          "tiles": ["N57E015", "N57E018"],
+          "tiles": [
+            "N57E015",
+            "N57E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7266,7 +9487,9 @@
           "water_km2": 122.55,
           "polygon_area_pixels_km2": 1374.92,
           "ucdb_area_km2": 1378.0,
-          "tiles": ["S36E150"],
+          "tiles": [
+            "S36E150"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7295,7 +9518,9 @@
           "water_km2": 49.48,
           "polygon_area_pixels_km2": 969.8,
           "ucdb_area_km2": 972.0,
-          "tiles": ["N24E120"],
+          "tiles": [
+            "N24E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7324,7 +9549,9 @@
           "water_km2": 3.18,
           "polygon_area_pixels_km2": 150.65,
           "ucdb_area_km2": 151.0,
-          "tiles": ["N39E042"],
+          "tiles": [
+            "N39E042"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7353,7 +9580,9 @@
           "water_km2": 1.82,
           "polygon_area_pixels_km2": 823.22,
           "ucdb_area_km2": 825.0,
-          "tiles": ["N33E051"],
+          "tiles": [
+            "N33E051"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7382,7 +9611,9 @@
           "water_km2": 10.78,
           "polygon_area_pixels_km2": 332.25,
           "ucdb_area_km2": 333.0,
-          "tiles": ["N30E033"],
+          "tiles": [
+            "N30E033"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7411,7 +9642,10 @@
           "water_km2": 288.05,
           "polygon_area_pixels_km2": 5153.56,
           "ucdb_area_km2": 5165.0,
-          "tiles": ["N33E138", "N36E138"],
+          "tiles": [
+            "N33E138",
+            "N36E138"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7440,7 +9674,9 @@
           "water_km2": 59.51,
           "polygon_area_pixels_km2": 1616.38,
           "ucdb_area_km2": 1620.0,
-          "tiles": ["N42W081"],
+          "tiles": [
+            "N42W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7469,7 +9705,10 @@
           "water_km2": 1.57,
           "polygon_area_pixels_km2": 234.44,
           "ucdb_area_km2": 235.0,
-          "tiles": ["N45E105", "N48E105"],
+          "tiles": [
+            "N45E105",
+            "N48E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7498,7 +9737,10 @@
           "water_km2": 63.58,
           "polygon_area_pixels_km2": 647.44,
           "ucdb_area_km2": 649.0,
-          "tiles": ["N48W126", "N48W123"],
+          "tiles": [
+            "N48W126",
+            "N48W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7527,7 +9769,9 @@
           "water_km2": 10.05,
           "polygon_area_pixels_km2": 324.17,
           "ucdb_area_km2": 325.0,
-          "tiles": ["N48E015"],
+          "tiles": [
+            "N48E015"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7556,7 +9800,10 @@
           "water_km2": 7.24,
           "polygon_area_pixels_km2": 414.03,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N51E018", "N51E021"],
+          "tiles": [
+            "N51E018",
+            "N51E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7575,6 +9822,37 @@
           "green_incl_crop_share": 55.236
         }
       },
+      "yangon": {
+        "value": 40.32558325989895,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 507.65,
+          "water_km2": 36.18,
+          "polygon_area_pixels_km2": 543.82,
+          "ucdb_area_km2": 545.0,
+          "tiles": [
+            "N15E096"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 40.326,
+            "shrub": 0.037,
+            "grass": 10.554,
+            "crop": 6.607,
+            "built": 41.691,
+            "bare": 0.754,
+            "snow": 0.0,
+            "wetland": 0.031,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.652,
+          "green_incl_crop_share": 57.555
+        }
+      },
       "zurich": {
         "value": 44.29931603275861,
         "quality": "observed",
@@ -7585,7 +9863,9 @@
           "water_km2": 18.92,
           "polygon_area_pixels_km2": 186.56,
           "ucdb_area_km2": 187.0,
-          "tiles": ["N45E006"],
+          "tiles": [
+            "N45E006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7606,6 +9886,37 @@
       }
     },
     "water_share": {
+      "abidjan": {
+        "value": 12.682119519154472,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 438.16,
+          "water_km2": 63.64,
+          "polygon_area_pixels_km2": 501.8,
+          "ucdb_area_km2": 503.0,
+          "tiles": [
+            "N03W006"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 12.754,
+            "shrub": 0.55,
+            "grass": 9.303,
+            "crop": 0.305,
+            "built": 75.086,
+            "bare": 1.695,
+            "snow": 0.0,
+            "wetland": 0.305,
+            "mangrove": 0.002,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.682,
+          "green_incl_crop_share": 23.219
+        }
+      },
       "accra": {
         "value": 4.921649262764531,
         "quality": "observed",
@@ -7616,7 +9927,10 @@
           "water_km2": 55.05,
           "polygon_area_pixels_km2": 1118.51,
           "ucdb_area_km2": 1121.0,
-          "tiles": ["N03W003", "N03E000"],
+          "tiles": [
+            "N03W003",
+            "N03E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7645,7 +9959,10 @@
           "water_km2": 0.09,
           "polygon_area_pixels_km2": 463.92,
           "ucdb_area_km2": 465.0,
-          "tiles": ["N06E036", "N09E036"],
+          "tiles": [
+            "N06E036",
+            "N09E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7674,7 +9991,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 330.24,
           "ucdb_area_km2": 331.0,
-          "tiles": ["N42E075"],
+          "tiles": [
+            "N42E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7703,7 +10022,9 @@
           "water_km2": 36.28,
           "polygon_area_pixels_km2": 307.35,
           "ucdb_area_km2": 308.0,
-          "tiles": ["N51E003"],
+          "tiles": [
+            "N51E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7732,7 +10053,9 @@
           "water_km2": 31.69,
           "polygon_area_pixels_km2": 411.06,
           "ucdb_area_km2": 412.0,
-          "tiles": ["N36E021"],
+          "tiles": [
+            "N36E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7761,7 +10084,9 @@
           "water_km2": 108.57,
           "polygon_area_pixels_km2": 636.56,
           "ucdb_area_km2": 638.0,
-          "tiles": ["S39E174"],
+          "tiles": [
+            "S39E174"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7790,7 +10115,9 @@
           "water_km2": 113.84,
           "polygon_area_pixels_km2": 2690.85,
           "ucdb_area_km2": 2697.0,
-          "tiles": ["N12E099"],
+          "tiles": [
+            "N12E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7819,7 +10146,9 @@
           "water_km2": 29.63,
           "polygon_area_pixels_km2": 437.05,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N39E000"],
+          "tiles": [
+            "N39E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7848,7 +10177,9 @@
           "water_km2": 26.16,
           "polygon_area_pixels_km2": 2174.11,
           "ucdb_area_km2": 2179.0,
-          "tiles": ["N39E114"],
+          "tiles": [
+            "N39E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7877,7 +10208,9 @@
           "water_km2": 10.49,
           "polygon_area_pixels_km2": 1005.77,
           "ucdb_area_km2": 1008.0,
-          "tiles": ["N12E075"],
+          "tiles": [
+            "N12E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7906,7 +10239,9 @@
           "water_km2": 15.91,
           "polygon_area_pixels_km2": 679.52,
           "ucdb_area_km2": 681.0,
-          "tiles": ["N51E012"],
+          "tiles": [
+            "N51E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7935,7 +10270,9 @@
           "water_km2": 1.43,
           "polygon_area_pixels_km2": 532.83,
           "ucdb_area_km2": 534.0,
-          "tiles": ["N03W075"],
+          "tiles": [
+            "N03W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7964,7 +10301,9 @@
           "water_km2": 11.6,
           "polygon_area_pixels_km2": 367.17,
           "ucdb_area_km2": 368.0,
-          "tiles": ["N45E018"],
+          "tiles": [
+            "N45E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -7993,7 +10332,9 @@
           "water_km2": 45.09,
           "polygon_area_pixels_km2": 2181.21,
           "ucdb_area_km2": 2186.0,
-          "tiles": ["S36W060"],
+          "tiles": [
+            "S36W060"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8022,7 +10363,10 @@
           "water_km2": 40.35,
           "polygon_area_pixels_km2": 1676.23,
           "ucdb_area_km2": 1680.0,
-          "tiles": ["N27E030", "N30E030"],
+          "tiles": [
+            "N27E030",
+            "N30E030"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8051,7 +10395,9 @@
           "water_km2": 26.55,
           "polygon_area_pixels_km2": 693.44,
           "ucdb_area_km2": 695.0,
-          "tiles": ["S36E018"],
+          "tiles": [
+            "S36E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8080,7 +10426,9 @@
           "water_km2": 33.92,
           "polygon_area_pixels_km2": 414.04,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N33W009"],
+          "tiles": [
+            "N33W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8099,6 +10447,68 @@
           "green_incl_crop_share": 46.766
         }
       },
+      "cebu": {
+        "value": 21.306103134920328,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 326.65,
+          "water_km2": 88.44,
+          "polygon_area_pixels_km2": 415.09,
+          "ucdb_area_km2": 416.0,
+          "tiles": [
+            "N09E123"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 48.752,
+            "shrub": 0.004,
+            "grass": 8.583,
+            "crop": 1.689,
+            "built": 36.613,
+            "bare": 1.723,
+            "snow": 0.0,
+            "wetland": 0.017,
+            "mangrove": 2.62,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 21.306,
+          "green_incl_crop_share": 61.664
+        }
+      },
+      "chennai": {
+        "value": 6.681566741563254,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 979.77,
+          "water_km2": 70.15,
+          "polygon_area_pixels_km2": 1049.93,
+          "ucdb_area_km2": 1052.0,
+          "tiles": [
+            "N12E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 26.03,
+            "shrub": 1.031,
+            "grass": 7.676,
+            "crop": 12.995,
+            "built": 49.282,
+            "bare": 1.97,
+            "snow": 0.0,
+            "wetland": 1.016,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.682,
+          "green_incl_crop_share": 48.748
+        }
+      },
       "chicago": {
         "value": 2.791247367296161,
         "quality": "observed",
@@ -8109,7 +10519,10 @@
           "water_km2": 56.98,
           "polygon_area_pixels_km2": 2041.55,
           "ucdb_area_km2": 2046.0,
-          "tiles": ["N39W090", "N42W090"],
+          "tiles": [
+            "N39W090",
+            "N42W090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8128,6 +10541,37 @@
           "green_incl_crop_share": 39.509
         }
       },
+      "colombo": {
+        "value": 7.952327752490737,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1107.6,
+          "water_km2": 95.69,
+          "polygon_area_pixels_km2": 1203.29,
+          "ucdb_area_km2": 1206.0,
+          "tiles": [
+            "N06E078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 65.003,
+            "shrub": 0.105,
+            "grass": 3.565,
+            "crop": 4.046,
+            "built": 26.279,
+            "bare": 0.536,
+            "snow": 0.0,
+            "wetland": 0.333,
+            "mangrove": 0.133,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.952,
+          "green_incl_crop_share": 73.185
+        }
+      },
       "copenhagen": {
         "value": 10.566216777045163,
         "quality": "observed",
@@ -8138,7 +10582,9 @@
           "water_km2": 31.84,
           "polygon_area_pixels_km2": 301.33,
           "ucdb_area_km2": 302.0,
-          "tiles": ["N54E012"],
+          "tiles": [
+            "N54E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8167,7 +10613,9 @@
           "water_km2": 43.88,
           "polygon_area_pixels_km2": 276.37,
           "ucdb_area_km2": 277.0,
-          "tiles": ["N12W018"],
+          "tiles": [
+            "N12W018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8186,6 +10634,69 @@
           "green_incl_crop_share": 20.949
         }
       },
+      "dar-es-salaam": {
+        "value": 4.551117206444697,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 863.75,
+          "water_km2": 41.18,
+          "polygon_area_pixels_km2": 904.94,
+          "ucdb_area_km2": 907.0,
+          "tiles": [
+            "S09E036",
+            "S09E039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 29.322,
+            "shrub": 1.161,
+            "grass": 19.41,
+            "crop": 0.76,
+            "built": 47.313,
+            "bare": 1.157,
+            "snow": 0.0,
+            "wetland": 0.212,
+            "mangrove": 0.665,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 4.551,
+          "green_incl_crop_share": 51.53
+        }
+      },
+      "denpasar": {
+        "value": 8.687308020751678,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 353.54,
+          "water_km2": 33.63,
+          "polygon_area_pixels_km2": 387.17,
+          "ucdb_area_km2": 388.0,
+          "tiles": [
+            "S09E114"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 28.968,
+            "shrub": 0.0,
+            "grass": 5.467,
+            "crop": 17.07,
+            "built": 45.489,
+            "bare": 0.503,
+            "snow": 0.0,
+            "wetland": 0.052,
+            "mangrove": 2.45,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 8.687,
+          "green_incl_crop_share": 54.008
+        }
+      },
       "denver": {
         "value": 2.1481353222954587,
         "quality": "observed",
@@ -8196,7 +10707,10 @@
           "water_km2": 25.59,
           "polygon_area_pixels_km2": 1191.27,
           "ucdb_area_km2": 1194.0,
-          "tiles": ["N39W108", "N39W105"],
+          "tiles": [
+            "N39W108",
+            "N39W105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8225,7 +10739,10 @@
           "water_km2": 163.4,
           "polygon_area_pixels_km2": 6596.45,
           "ucdb_area_km2": 6611.0,
-          "tiles": ["N21E090", "N24E090"],
+          "tiles": [
+            "N21E090",
+            "N24E090"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8254,7 +10771,9 @@
           "water_km2": 66.28,
           "polygon_area_pixels_km2": 852.14,
           "ucdb_area_km2": 854.0,
-          "tiles": ["N24E054"],
+          "tiles": [
+            "N24E054"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8283,7 +10802,9 @@
           "water_km2": 20.56,
           "polygon_area_pixels_km2": 300.36,
           "ucdb_area_km2": 301.0,
-          "tiles": ["N51W009"],
+          "tiles": [
+            "N51W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8312,7 +10833,9 @@
           "water_km2": 13.12,
           "polygon_area_pixels_km2": 129.67,
           "ucdb_area_km2": 130.0,
-          "tiles": ["N54W006"],
+          "tiles": [
+            "N54W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8331,6 +10854,37 @@
           "green_incl_crop_share": 53.604
         }
       },
+      "fortaleza": {
+        "value": 5.800943544151588,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 388.19,
+          "water_km2": 23.91,
+          "polygon_area_pixels_km2": 412.1,
+          "ucdb_area_km2": 413.0,
+          "tiles": [
+            "S06W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 17.618,
+            "shrub": 1.645,
+            "grass": 12.573,
+            "crop": 1.668,
+            "built": 61.138,
+            "bare": 2.574,
+            "snow": 0.0,
+            "wetland": 0.493,
+            "mangrove": 2.291,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.801,
+          "green_incl_crop_share": 36.288
+        }
+      },
       "fukuoka": {
         "value": 8.15434379859944,
         "quality": "observed",
@@ -8341,7 +10895,9 @@
           "water_km2": 36.61,
           "polygon_area_pixels_km2": 448.94,
           "ucdb_area_km2": 450.0,
-          "tiles": ["N33E129"],
+          "tiles": [
+            "N33E129"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8370,7 +10926,10 @@
           "water_km2": 49.98,
           "polygon_area_pixels_km2": 922.88,
           "ucdb_area_km2": 925.0,
-          "tiles": ["N18E105", "N21E105"],
+          "tiles": [
+            "N18E105",
+            "N21E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8399,7 +10958,9 @@
           "water_km2": 22.75,
           "polygon_area_pixels_km2": 320.29,
           "ucdb_area_km2": 321.0,
-          "tiles": ["N21W084"],
+          "tiles": [
+            "N21W084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8428,7 +10989,9 @@
           "water_km2": 60.72,
           "polygon_area_pixels_km2": 380.16,
           "ucdb_area_km2": 381.0,
-          "tiles": ["N60E024"],
+          "tiles": [
+            "N60E024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8457,7 +11020,9 @@
           "water_km2": 74.44,
           "polygon_area_pixels_km2": 1483.65,
           "ucdb_area_km2": 1487.0,
-          "tiles": ["N09E105"],
+          "tiles": [
+            "N09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8486,7 +11051,9 @@
           "water_km2": 58.04,
           "polygon_area_pixels_km2": 219.44,
           "ucdb_area_km2": 220.0,
-          "tiles": ["N21E114"],
+          "tiles": [
+            "N21E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8515,7 +11082,9 @@
           "water_km2": 24.53,
           "polygon_area_pixels_km2": 176.63,
           "ucdb_area_km2": 177.0,
-          "tiles": ["N21W159"],
+          "tiles": [
+            "N21W159"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8544,7 +11113,9 @@
           "water_km2": 131.68,
           "polygon_area_pixels_km2": 1265.82,
           "ucdb_area_km2": 1269.0,
-          "tiles": ["N39E027"],
+          "tiles": [
+            "N39E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8573,7 +11144,9 @@
           "water_km2": 61.09,
           "polygon_area_pixels_km2": 4603.63,
           "ucdb_area_km2": 4614.0,
-          "tiles": ["S09E105"],
+          "tiles": [
+            "S09E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8602,7 +11175,9 @@
           "water_km2": 8.86,
           "polygon_area_pixels_km2": 1752.01,
           "ucdb_area_km2": 1756.0,
-          "tiles": ["S27E027"],
+          "tiles": [
+            "S27E027"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8621,6 +11196,37 @@
           "green_incl_crop_share": 43.491
         }
       },
+      "kaohsiung": {
+        "value": 9.37330423256278,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 336.37,
+          "water_km2": 34.79,
+          "polygon_area_pixels_km2": 371.16,
+          "ucdb_area_km2": 372.0,
+          "tiles": [
+            "N21E120"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 22.644,
+            "shrub": 0.0,
+            "grass": 4.21,
+            "crop": 8.784,
+            "built": 61.475,
+            "bare": 2.885,
+            "snow": 0.0,
+            "wetland": 0.002,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.373,
+          "green_incl_crop_share": 35.64
+        }
+      },
       "kathmandu": {
         "value": 0.08009210556537465,
         "quality": "observed",
@@ -8631,7 +11237,9 @@
           "water_km2": 0.28,
           "polygon_area_pixels_km2": 349.2,
           "ucdb_area_km2": 350.0,
-          "tiles": ["N27E084"],
+          "tiles": [
+            "N27E084"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8650,6 +11258,99 @@
           "green_incl_crop_share": 58.656
         }
       },
+      "kigali": {
+        "value": 0.16266475270646083,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 284.93,
+          "water_km2": 0.46,
+          "polygon_area_pixels_km2": 285.4,
+          "ucdb_area_km2": 286.0,
+          "tiles": [
+            "S03E030"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 18.397,
+            "shrub": 6.651,
+            "grass": 9.927,
+            "crop": 18.884,
+            "built": 45.318,
+            "bare": 0.799,
+            "snow": 0.0,
+            "wetland": 0.023,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.163,
+          "green_incl_crop_share": 53.882
+        }
+      },
+      "kinshasa": {
+        "value": 2.519973504559816,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 473.68,
+          "water_km2": 12.25,
+          "polygon_area_pixels_km2": 485.92,
+          "ucdb_area_km2": 487.0,
+          "tiles": [
+            "S06E015"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 23.093,
+            "shrub": 1.946,
+            "grass": 13.092,
+            "crop": 5.201,
+            "built": 55.762,
+            "bare": 0.645,
+            "snow": 0.0,
+            "wetland": 0.261,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 2.52,
+          "green_incl_crop_share": 43.593
+        }
+      },
+      "kochi": {
+        "value": 18.17162191973899,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 1033.61,
+          "water_km2": 229.53,
+          "polygon_area_pixels_km2": 1263.14,
+          "ucdb_area_km2": 1266.0,
+          "tiles": [
+            "N09E075"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 69.883,
+            "shrub": 0.052,
+            "grass": 7.052,
+            "crop": 2.555,
+            "built": 18.893,
+            "bare": 0.262,
+            "snow": 0.0,
+            "wetland": 0.972,
+            "mangrove": 0.331,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 18.172,
+          "green_incl_crop_share": 80.845
+        }
+      },
       "kuala-lumpur": {
         "value": 1.8777251128850956,
         "quality": "observed",
@@ -8660,7 +11361,10 @@
           "water_km2": 25.11,
           "polygon_area_pixels_km2": 1337.07,
           "ucdb_area_km2": 1340.0,
-          "tiles": ["N00E099", "N03E099"],
+          "tiles": [
+            "N00E099",
+            "N03E099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8689,7 +11393,9 @@
           "water_km2": 64.42,
           "polygon_area_pixels_km2": 1196.37,
           "ucdb_area_km2": 1199.0,
-          "tiles": ["N06E003"],
+          "tiles": [
+            "N06E003"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8718,7 +11424,10 @@
           "water_km2": 33.73,
           "polygon_area_pixels_km2": 981.73,
           "ucdb_area_km2": 984.0,
-          "tiles": ["S15W078", "S12W078"],
+          "tiles": [
+            "S15W078",
+            "S12W078"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8747,7 +11456,9 @@
           "water_km2": 33.93,
           "polygon_area_pixels_km2": 425.05,
           "ucdb_area_km2": 426.0,
-          "tiles": ["N36W012"],
+          "tiles": [
+            "N36W012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8776,7 +11487,10 @@
           "water_km2": 38.68,
           "polygon_area_pixels_km2": 1645.15,
           "ucdb_area_km2": 1649.0,
-          "tiles": ["N51W003", "N51E000"],
+          "tiles": [
+            "N51W003",
+            "N51E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8805,7 +11519,9 @@
           "water_km2": 80.24,
           "polygon_area_pixels_km2": 4487.88,
           "ucdb_area_km2": 4498.0,
-          "tiles": ["N33W120"],
+          "tiles": [
+            "N33W120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8834,7 +11550,9 @@
           "water_km2": 0.95,
           "polygon_area_pixels_km2": 678.42,
           "ucdb_area_km2": 680.0,
-          "tiles": ["N39W006"],
+          "tiles": [
+            "N39W006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8863,7 +11581,9 @@
           "water_km2": 435.73,
           "polygon_area_pixels_km2": 2549.25,
           "ucdb_area_km2": 2555.0,
-          "tiles": ["N12E120"],
+          "tiles": [
+            "N12E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8892,7 +11612,9 @@
           "water_km2": 0.14,
           "polygon_area_pixels_km2": 123.68,
           "ucdb_area_km2": 124.0,
-          "tiles": ["N30W009"],
+          "tiles": [
+            "N30W009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8911,6 +11633,37 @@
           "green_incl_crop_share": 29.76
         }
       },
+      "medellin": {
+        "value": 0.20850873214774837,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 232.01,
+          "water_km2": 0.48,
+          "polygon_area_pixels_km2": 232.49,
+          "ucdb_area_km2": 233.0,
+          "tiles": [
+            "N06W078"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 31.706,
+            "shrub": 0.004,
+            "grass": 14.338,
+            "crop": 0.008,
+            "built": 52.997,
+            "bare": 0.947,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.209,
+          "green_incl_crop_share": 46.056
+        }
+      },
       "melbourne": {
         "value": 2.729441921358426,
         "quality": "observed",
@@ -8921,7 +11674,9 @@
           "water_km2": 43.87,
           "polygon_area_pixels_km2": 1607.47,
           "ucdb_area_km2": 1611.0,
-          "tiles": ["S39E144"],
+          "tiles": [
+            "S39E144"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8950,7 +11705,10 @@
           "water_km2": 8.98,
           "polygon_area_pixels_km2": 2129.25,
           "ucdb_area_km2": 2134.0,
-          "tiles": ["N18W102", "N18W099"],
+          "tiles": [
+            "N18W102",
+            "N18W099"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -8979,7 +11737,9 @@
           "water_km2": 278.91,
           "polygon_area_pixels_km2": 2777.81,
           "ucdb_area_km2": 2784.0,
-          "tiles": ["N24W081"],
+          "tiles": [
+            "N24W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9008,7 +11768,10 @@
           "water_km2": 4.32,
           "polygon_area_pixels_km2": 783.23,
           "ucdb_area_km2": 785.0,
-          "tiles": ["N45E006", "N45E009"],
+          "tiles": [
+            "N45E006",
+            "N45E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9037,7 +11800,9 @@
           "water_km2": 25.32,
           "polygon_area_pixels_km2": 236.44,
           "ucdb_area_km2": 237.0,
-          "tiles": ["S36W057"],
+          "tiles": [
+            "S36W057"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9066,7 +11831,9 @@
           "water_km2": 107.32,
           "polygon_area_pixels_km2": 1017.7,
           "ucdb_area_km2": 1020.0,
-          "tiles": ["N45W075"],
+          "tiles": [
+            "N45W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9095,7 +11862,9 @@
           "water_km2": 100.04,
           "polygon_area_pixels_km2": 736.33,
           "ucdb_area_km2": 738.0,
-          "tiles": ["N18E072"],
+          "tiles": [
+            "N18E072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9124,7 +11893,9 @@
           "water_km2": 2.46,
           "polygon_area_pixels_km2": 344.19,
           "ucdb_area_km2": 345.0,
-          "tiles": ["N48E009"],
+          "tiles": [
+            "N48E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9153,7 +11924,9 @@
           "water_km2": 1.42,
           "polygon_area_pixels_km2": 596.65,
           "ucdb_area_km2": 598.0,
-          "tiles": ["S03E036"],
+          "tiles": [
+            "S03E036"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9182,7 +11955,9 @@
           "water_km2": 17.67,
           "polygon_area_pixels_km2": 2134.35,
           "ucdb_area_km2": 2139.0,
-          "tiles": ["N27E075"],
+          "tiles": [
+            "N27E075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9211,7 +11986,9 @@
           "water_km2": 257.69,
           "polygon_area_pixels_km2": 3024.18,
           "ucdb_area_km2": 3031.0,
-          "tiles": ["N39W075"],
+          "tiles": [
+            "N39W075"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9240,7 +12017,10 @@
           "water_km2": 214.05,
           "polygon_area_pixels_km2": 2207.04,
           "ucdb_area_km2": 2212.0,
-          "tiles": ["N33E132", "N33E135"],
+          "tiles": [
+            "N33E132",
+            "N33E135"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9269,7 +12049,9 @@
           "water_km2": 28.87,
           "polygon_area_pixels_km2": 243.42,
           "ucdb_area_km2": 244.0,
-          "tiles": ["N57E009"],
+          "tiles": [
+            "N57E009"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9288,6 +12070,38 @@
           "green_incl_crop_share": 60.661
         }
       },
+      "panama-city": {
+        "value": 5.2837860381590485,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 261.8,
+          "water_km2": 14.6,
+          "polygon_area_pixels_km2": 276.4,
+          "ucdb_area_km2": 277.0,
+          "tiles": [
+            "N06W081",
+            "N09W081"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 30.541,
+            "shrub": 0.001,
+            "grass": 12.888,
+            "crop": 0.198,
+            "built": 53.658,
+            "bare": 1.147,
+            "snow": 0.0,
+            "wetland": 0.29,
+            "mangrove": 1.277,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 5.284,
+          "green_incl_crop_share": 45.195
+        }
+      },
       "paris": {
         "value": 1.6780327206760677,
         "quality": "observed",
@@ -9298,7 +12112,9 @@
           "water_km2": 23.79,
           "polygon_area_pixels_km2": 1417.82,
           "ucdb_area_km2": 1421.0,
-          "tiles": ["N48E000"],
+          "tiles": [
+            "N48E000"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9327,7 +12143,9 @@
           "water_km2": 72.17,
           "polygon_area_pixels_km2": 782.22,
           "ucdb_area_km2": 784.0,
-          "tiles": ["S33E114"],
+          "tiles": [
+            "S33E114"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9346,6 +12164,38 @@
           "green_incl_crop_share": 28.563
         }
       },
+      "phnom-penh": {
+        "value": 9.72820372881516,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 318.84,
+          "water_km2": 34.36,
+          "polygon_area_pixels_km2": 353.2,
+          "ucdb_area_km2": 354.0,
+          "tiles": [
+            "N09E102",
+            "N09E105"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 15.446,
+            "shrub": 0.004,
+            "grass": 16.103,
+            "crop": 6.249,
+            "built": 52.538,
+            "bare": 7.796,
+            "snow": 0.0,
+            "wetland": 1.863,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 9.728,
+          "green_incl_crop_share": 39.666
+        }
+      },
       "prague": {
         "value": 1.7551373488023898,
         "quality": "observed",
@@ -9356,7 +12206,9 @@
           "water_km2": 4.61,
           "polygon_area_pixels_km2": 262.41,
           "ucdb_area_km2": 263.0,
-          "tiles": ["N48E012"],
+          "tiles": [
+            "N48E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9385,7 +12237,9 @@
           "water_km2": 0.11,
           "polygon_area_pixels_km2": 379.13,
           "ucdb_area_km2": 380.0,
-          "tiles": ["S03W081"],
+          "tiles": [
+            "S03W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9414,7 +12268,9 @@
           "water_km2": 22.23,
           "polygon_area_pixels_km2": 96.82,
           "ucdb_area_km2": 97.0,
-          "tiles": ["N63W024"],
+          "tiles": [
+            "N63W024"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9443,7 +12299,9 @@
           "water_km2": 60.01,
           "polygon_area_pixels_km2": 1282.12,
           "ucdb_area_km2": 1285.0,
-          "tiles": ["S24W045"],
+          "tiles": [
+            "S24W045"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9472,7 +12330,10 @@
           "water_km2": 2.4,
           "polygon_area_pixels_km2": 465.93,
           "ucdb_area_km2": 467.0,
-          "tiles": ["N39E012", "N42E012"],
+          "tiles": [
+            "N39E012",
+            "N42E012"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9491,6 +12352,37 @@
           "green_incl_crop_share": 55.398
         }
       },
+      "salvador": {
+        "value": 12.89895267910717,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 280.68,
+          "water_km2": 41.57,
+          "polygon_area_pixels_km2": 322.25,
+          "ucdb_area_km2": 323.0,
+          "tiles": [
+            "S15W039"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 33.936,
+            "shrub": 0.298,
+            "grass": 6.92,
+            "crop": 0.045,
+            "built": 55.775,
+            "bare": 2.798,
+            "snow": 0.0,
+            "wetland": 0.229,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 12.899,
+          "green_incl_crop_share": 41.427
+        }
+      },
       "san-francisco": {
         "value": 5.937020006420451,
         "quality": "observed",
@@ -9501,7 +12393,9 @@
           "water_km2": 95.61,
           "polygon_area_pixels_km2": 1610.35,
           "ucdb_area_km2": 1614.0,
-          "tiles": ["N36W123"],
+          "tiles": [
+            "N36W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9520,6 +12414,38 @@
           "green_incl_crop_share": 30.002
         }
       },
+      "san-jose-cr": {
+        "value": 0.06747966883768008,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 489.56,
+          "water_km2": 0.33,
+          "polygon_area_pixels_km2": 489.89,
+          "ucdb_area_km2": 491.0,
+          "tiles": [
+            "N09W087",
+            "N09W084"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 37.494,
+            "shrub": 0.001,
+            "grass": 15.182,
+            "crop": 0.284,
+            "built": 46.562,
+            "bare": 0.476,
+            "snow": 0.0,
+            "wetland": 0.0,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 0.067,
+          "green_incl_crop_share": 52.962
+        }
+      },
       "santiago": {
         "value": 0.10595400045393012,
         "quality": "observed",
@@ -9530,7 +12456,9 @@
           "water_km2": 0.85,
           "polygon_area_pixels_km2": 799.17,
           "ucdb_area_km2": 801.0,
-          "tiles": ["S36W072"],
+          "tiles": [
+            "S36W072"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9549,6 +12477,37 @@
           "green_incl_crop_share": 27.751
         }
       },
+      "santo-domingo": {
+        "value": 7.333558782304622,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 446.59,
+          "water_km2": 35.34,
+          "polygon_area_pixels_km2": 481.93,
+          "ucdb_area_km2": 483.0,
+          "tiles": [
+            "N18W072"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 25.835,
+            "shrub": 0.022,
+            "grass": 13.442,
+            "crop": 0.184,
+            "built": 59.321,
+            "bare": 0.893,
+            "snow": 0.0,
+            "wetland": 0.303,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 7.334,
+          "green_incl_crop_share": 39.786
+        }
+      },
       "sao-paulo": {
         "value": 1.9289561842123255,
         "quality": "observed",
@@ -9559,7 +12518,9 @@
           "water_km2": 40.63,
           "polygon_area_pixels_km2": 2106.31,
           "ucdb_area_km2": 2111.0,
-          "tiles": ["S24W048"],
+          "tiles": [
+            "S24W048"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9588,7 +12549,9 @@
           "water_km2": 2.09,
           "polygon_area_pixels_km2": 352.19,
           "ucdb_area_km2": 353.0,
-          "tiles": ["N42E141"],
+          "tiles": [
+            "N42E141"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9617,7 +12580,9 @@
           "water_km2": 155.82,
           "polygon_area_pixels_km2": 1120.51,
           "ucdb_area_km2": 1123.0,
-          "tiles": ["N45W123"],
+          "tiles": [
+            "N45W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9646,7 +12611,9 @@
           "water_km2": 90.35,
           "polygon_area_pixels_km2": 2276.77,
           "ucdb_area_km2": 2282.0,
-          "tiles": ["N36E126"],
+          "tiles": [
+            "N36E126"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9675,7 +12642,9 @@
           "water_km2": 148.04,
           "polygon_area_pixels_km2": 3120.71,
           "ucdb_area_km2": 3128.0,
-          "tiles": ["N30E120"],
+          "tiles": [
+            "N30E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9704,7 +12673,9 @@
           "water_km2": 50.68,
           "polygon_area_pixels_km2": 436.96,
           "ucdb_area_km2": 438.0,
-          "tiles": ["N00E102"],
+          "tiles": [
+            "N00E102"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9733,7 +12704,10 @@
           "water_km2": 32.83,
           "polygon_area_pixels_km2": 338.24,
           "ucdb_area_km2": 339.0,
-          "tiles": ["N57E015", "N57E018"],
+          "tiles": [
+            "N57E015",
+            "N57E018"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9762,7 +12736,9 @@
           "water_km2": 122.55,
           "polygon_area_pixels_km2": 1374.92,
           "ucdb_area_km2": 1378.0,
-          "tiles": ["S36E150"],
+          "tiles": [
+            "S36E150"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9791,7 +12767,9 @@
           "water_km2": 49.48,
           "polygon_area_pixels_km2": 969.8,
           "ucdb_area_km2": 972.0,
-          "tiles": ["N24E120"],
+          "tiles": [
+            "N24E120"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9820,7 +12798,9 @@
           "water_km2": 3.18,
           "polygon_area_pixels_km2": 150.65,
           "ucdb_area_km2": 151.0,
-          "tiles": ["N39E042"],
+          "tiles": [
+            "N39E042"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9849,7 +12829,9 @@
           "water_km2": 1.82,
           "polygon_area_pixels_km2": 823.22,
           "ucdb_area_km2": 825.0,
-          "tiles": ["N33E051"],
+          "tiles": [
+            "N33E051"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9878,7 +12860,9 @@
           "water_km2": 10.78,
           "polygon_area_pixels_km2": 332.25,
           "ucdb_area_km2": 333.0,
-          "tiles": ["N30E033"],
+          "tiles": [
+            "N30E033"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9907,7 +12891,10 @@
           "water_km2": 288.05,
           "polygon_area_pixels_km2": 5153.56,
           "ucdb_area_km2": 5165.0,
-          "tiles": ["N33E138", "N36E138"],
+          "tiles": [
+            "N33E138",
+            "N36E138"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9936,7 +12923,9 @@
           "water_km2": 59.51,
           "polygon_area_pixels_km2": 1616.38,
           "ucdb_area_km2": 1620.0,
-          "tiles": ["N42W081"],
+          "tiles": [
+            "N42W081"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9965,7 +12954,10 @@
           "water_km2": 1.57,
           "polygon_area_pixels_km2": 234.44,
           "ucdb_area_km2": 235.0,
-          "tiles": ["N45E105", "N48E105"],
+          "tiles": [
+            "N45E105",
+            "N48E105"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -9994,7 +12986,10 @@
           "water_km2": 63.58,
           "polygon_area_pixels_km2": 647.44,
           "ucdb_area_km2": 649.0,
-          "tiles": ["N48W126", "N48W123"],
+          "tiles": [
+            "N48W126",
+            "N48W123"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -10023,7 +13018,9 @@
           "water_km2": 10.05,
           "polygon_area_pixels_km2": 324.17,
           "ucdb_area_km2": 325.0,
-          "tiles": ["N48E015"],
+          "tiles": [
+            "N48E015"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -10052,7 +13049,10 @@
           "water_km2": 7.24,
           "polygon_area_pixels_km2": 414.03,
           "ucdb_area_km2": 415.0,
-          "tiles": ["N51E018", "N51E021"],
+          "tiles": [
+            "N51E018",
+            "N51E021"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {
@@ -10071,6 +13071,37 @@
           "green_incl_crop_share": 55.236
         }
       },
+      "yangon": {
+        "value": 6.652054684289093,
+        "quality": "observed",
+        "year": 2021,
+        "detail": {
+          "coverage": 1.0,
+          "land_km2": 507.65,
+          "water_km2": 36.18,
+          "polygon_area_pixels_km2": 543.82,
+          "ucdb_area_km2": 545.0,
+          "tiles": [
+            "N15E096"
+          ],
+          "tiles_absent": [],
+          "nodata_km2": 0.0,
+          "land_share_pct": {
+            "tree": 40.326,
+            "shrub": 0.037,
+            "grass": 10.554,
+            "crop": 6.607,
+            "built": 41.691,
+            "bare": 0.754,
+            "snow": 0.0,
+            "wetland": 0.031,
+            "mangrove": 0.0,
+            "moss": 0.0
+          },
+          "water_pct_of_valid_area": 6.652,
+          "green_incl_crop_share": 57.555
+        }
+      },
       "zurich": {
         "value": 10.14338488224901,
         "quality": "observed",
@@ -10081,7 +13112,9 @@
           "water_km2": 18.92,
           "polygon_area_pixels_km2": 186.56,
           "ucdb_area_km2": 187.0,
-          "tiles": ["N45E006"],
+          "tiles": [
+            "N45E006"
+          ],
           "tiles_absent": [],
           "nodata_km2": 0.0,
           "land_share_pct": {

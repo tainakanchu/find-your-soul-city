@@ -93,3 +93,22 @@ cities:
   - { city_id: melbourne, name_ja: メルボルン, ucdb_id: 1747, ucdb_name: Melbourne }
   - { city_id: perth, name_ja: パース, ucdb_id: 498, ucdb_name: Perth }
   - { city_id: auckland, name_ja: オークランド, ucdb_id: 1147, ucdb_name: Auckland }
+  # --- added 2026-10-29: tropical / equatorial cities (Singapore was the only strong tropical candidate) ---
+  - { city_id: chennai, name_ja: チェンナイ, ucdb_id: 10300, ucdb_name: Chennai }
+  - { city_id: kochi, name_ja: コーチ, ucdb_id: 9386, ucdb_name: Kochi }
+  - { city_id: colombo, name_ja: コロンボ, ucdb_id: 632, ucdb_name: "Colombo [Sri Jayawardenepura Kotte]" }
+  - { city_id: yangon, name_ja: ヤンゴン, ucdb_id: 5029, ucdb_name: Yangon }
+  - { city_id: phnom-penh, name_ja: プノンペン, ucdb_id: 1741, ucdb_name: Phnom Penh }
+  - { city_id: cebu, name_ja: セブ, ucdb_id: 5065, ucdb_name: Cebu City }
+  - { city_id: denpasar, name_ja: デンパサール（バリ）, ucdb_id: 7783, ucdb_name: Denpasar }
+  - { city_id: kaohsiung, name_ja: 高雄, ucdb_id: 1919, ucdb_name: Kaohsiung }
+  - { city_id: medellin, name_ja: メデジン, ucdb_id: 2676, ucdb_name: Medellín }
+  - { city_id: san-jose-cr, name_ja: サンホセ（コスタリカ）, ucdb_id: 363, ucdb_name: San José }
+  - { city_id: panama-city, name_ja: パナマシティ, ucdb_id: 658, ucdb_name: Panama City }
+  - { city_id: santo-domingo, name_ja: サントドミンゴ, ucdb_id: 1667, ucdb_name: Santo Domingo }
+  - { city_id: salvador, name_ja: サルバドール, ucdb_id: 8238, ucdb_name: Salvador }
+  - { city_id: fortaleza, name_ja: フォルタレザ, ucdb_id: 8154, ucdb_name: Fortaleza }
+  - { city_id: dar-es-salaam, name_ja: ダルエスサラーム, ucdb_id: 3570, ucdb_name: Dar es-Salaam }
+  - { city_id: abidjan, name_ja: アビジャン, ucdb_id: 2996, ucdb_name: Abidjan }
+  - { city_id: kinshasa, name_ja: キンシャサ, ucdb_id: 1876, ucdb_name: Kinshasa }
+  - { city_id: kigali, name_ja: キガリ, ucdb_id: 597, ucdb_name: Kigali }

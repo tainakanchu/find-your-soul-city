@@ -24,7 +24,7 @@ seoul,348,Seoul,25.74,-2.28,28.02,1196.7,53.9,21.97,21.97,12.41,centres_in_polyg
 sapporo,351,Sapporo,21.65,-4.71,26.36,1111.1,64.3,18.23,18.23,8.61,nearest_land_cell_to_representative_point,1,87,40,0.31
 vancouver,358,Vancouver,18.52,3.98,14.55,2354.6,66.0,12.55,12.55,10.72,centres_in_polygon_land,1,224,60,1.06
 uc-362,362,Managua,28.91,26.15,2.76,1753.0,57.0,19.56,22.54,27.08,nearest_land_cell_to_representative_point,1,284,150,0.87
-uc-363,363,San José,21.34,19.84,1.5,2705.1,74.3,15.67,18.42,20.4,centres_in_polygon_land,1,1170,1120,0.33
+san-jose-cr,363,San José,21.34,19.84,1.5,2705.1,74.3,15.67,18.42,20.4,centres_in_polygon_land,1,1170,1120,0.33
 havana,367,Havana,27.89,22.08,5.81,851.1,46.0,23.4,23.4,25.29,nearest_land_cell_to_representative_point,1,43,41,0.01
 uc-391,391,Bamako,32.71,24.48,8.23,820.6,49.8,12.03,22.79,27.92,nearest_land_cell_to_representative_point,1,409,358,0.33
 dublin,394,Dublin,15.87,6.11,9.76,925.3,73.3,11.81,11.81,10.47,nearest_land_cell_to_representative_point,1,159,48,0.72
@@ -47,9 +47,9 @@ helsinki,572,Helsinki,18.08,-4.84,22.93,734.5,69.5,12.62,12.62,5.95,centres_in_p
 uc-573,573,Belgrade,23.32,0.95,22.37,702.3,54.8,15.49,15.49,12.55,centres_in_polygon_land,1,114,133,-0.12
 uc-582,582,Bangui,27.95,25.0,2.95,1410.8,71.8,21.23,22.43,26.18,nearest_land_cell_to_representative_point,1,439,375,0.42
 uc-586,586,Saint Petersburg,17.33,-5.79,23.12,710.5,72.3,12.79,12.79,5.19,centres_in_polygon_land,1,20,13,0.04
-uc-597,597,Kigali,21.44,19.88,1.56,996.7,73.0,11.58,16.1,20.55,nearest_land_cell_to_representative_point,1,1564,1473,0.6
-uc-632,632,Colombo [Sri Jayawardenepura Kotte],28.43,26.32,2.11,2671.7,74.4,22.85,24.93,27.2,centres_in_polygon_land,1,36,15,0.14
-uc-658,658,Panama City,26.88,25.87,1.01,2092.8,74.2,23.04,24.07,26.32,centres_in_polygon_land,1,89,55,0.22
+kigali,597,Kigali,21.44,19.88,1.56,996.7,73.0,11.58,16.1,20.55,nearest_land_cell_to_representative_point,1,1564,1473,0.6
+colombo,632,Colombo [Sri Jayawardenepura Kotte],28.43,26.32,2.11,2671.7,74.4,22.85,24.93,27.2,centres_in_polygon_land,1,36,15,0.14
+panama-city,658,Panama City,26.88,25.87,1.01,2092.8,74.2,23.04,24.07,26.32,centres_in_polygon_land,1,89,55,0.22
 uc-666,666,Cochabamba,19.25,14.34,4.91,930.8,59.7,5.82,8.56,17.0,nearest_land_cell_to_representative_point,1,3120,2624,3.23
 uc-673,673,Coyah,27.74,25.12,2.62,2561.4,65.4,21.63,23.71,26.37,centres_in_polygon_land,1,62,43,0.12
 uc-693,693,Essen,19.01,3.05,15.97,931.8,68.3,13.21,13.21,10.66,centres_in_polygon_land,3,81,60,0.13
@@ -111,20 +111,20 @@ uc-1619,1619,Damascus,28.0,7.11,20.89,203.3,29.0,10.59,11.82,18.07,centres_in_po
 uc-1634,1634,Astana,20.06,-15.16,35.22,407.5,63.0,11.0,11.0,3.5,nearest_land_cell_to_representative_point,1,362,354,0.06
 uc-1646,1646,Medan,27.13,25.94,1.19,3225.0,86.4,24.25,24.25,26.45,nearest_land_cell_to_representative_point,1,54,26,0.18
 kuala-lumpur,1648,Kuala Lumpur,27.62,26.24,1.38,2571.6,83.2,23.84,24.38,27.03,centres_in_polygon_land,2,68,46,0.14
-uc-1667,1667,Santo Domingo,26.87,23.7,3.18,1102.6,51.5,23.41,23.41,25.52,centres_in_polygon_land,1,85,30,0.36
+santo-domingo,1667,Santo Domingo,26.87,23.7,3.18,1102.6,51.5,23.41,23.41,25.52,centres_in_polygon_land,1,85,30,0.36
 stockholm,1693,Stockholm,17.6,-1.59,19.19,624.8,66.0,12.59,12.61,7.06,centres_in_polygon_land,1,34,28,0.04
 uc-1711,1711,Kampala,22.99,21.19,1.8,1753.0,73.4,18.71,19.19,21.91,centres_in_polygon_land,1,1167,1178,-0.07
 nairobi,1717,Nairobi,20.86,17.05,3.81,678.4,66.4,13.12,14.87,19.06,centres_in_polygon_land,1,1715,1684,0.2
-uc-1741,1741,Phnom Penh,30.22,26.66,3.56,1361.5,71.3,23.33,24.33,28.34,centres_in_polygon_land,1,25,10,0.1
+phnom-penh,1741,Phnom Penh,30.22,26.66,3.56,1361.5,71.3,23.33,24.33,28.34,centres_in_polygon_land,1,25,10,0.1
 uc-1744,1744,Tainan,28.5,17.98,10.53,2100.3,61.2,25.28,25.28,24.14,centres_in_polygon_land,1,-54,13,-0.44
 melbourne,1747,Melbourne,19.67,9.59,10.07,654.9,57.8,11.9,12.41,14.47,centres_in_polygon_land,3,81,64,0.11
 uc-1763,1763,Touba,28.85,24.27,4.58,380.0,45.5,20.39,24.46,27.44,nearest_land_cell_to_representative_point,1,36,43,-0.05
 uc-1799,1799,Aleppo,29.37,7.01,22.36,328.4,30.5,16.01,17.0,18.69,nearest_land_cell_to_representative_point,1,424,401,0.15
 kathmandu,1822,Kathmandu,23.15,10.52,12.63,2817.5,57.9,20.28,20.28,18.27,nearest_land_cell_to_representative_point,1,1527,1365,1.05
 marrakesh,1853,Marrakesh,27.61,11.45,16.16,293.9,33.9,15.62,15.62,19.45,nearest_land_cell_to_representative_point,1,478,456,0.14
-uc-1876,1876,Kinshasa,26.27,23.76,2.51,1161.8,74.0,22.54,22.75,25.37,nearest_land_cell_to_representative_point,1,375,339,0.24
+kinshasa,1876,Kinshasa,26.27,23.76,2.51,1161.8,74.0,22.54,22.75,25.37,nearest_land_cell_to_representative_point,1,375,339,0.24
 uc-1900,1900,Hargeisa,24.25,18.14,6.11,233.2,38.9,12.56,15.53,21.87,nearest_land_cell_to_representative_point,1,1291,1303,-0.08
-uc-1919,1919,Kaohsiung,28.64,18.63,10.01,1971.9,61.7,25.2,25.2,24.56,nearest_land_cell_to_representative_point,1,-35,18,-0.35
+kaohsiung,1919,Kaohsiung,28.64,18.63,10.01,1971.9,61.7,25.2,25.2,24.56,nearest_land_cell_to_representative_point,1,-35,18,-0.35
 uc-1985,1985,Antananarivo,21.4,14.4,7.0,1089.4,65.0,15.64,16.88,18.71,centres_in_polygon_land,1,1371,1280,0.59
 uc-1991,1991,Srinagar,23.17,1.12,22.05,2858.1,49.0,16.41,16.41,13.11,nearest_land_cell_to_representative_point,1,1848,1599,1.62
 hanoi,1999,Hanoi,29.67,16.85,12.82,1765.0,74.5,25.66,25.85,24.24,centres_in_polygon_land,1,17,9,0.05
@@ -156,7 +156,7 @@ uc-2597,2597,Mandalay,32.13,21.26,10.87,1076.6,52.5,18.71,24.62,27.67,nearest_la
 istanbul,2637,Istanbul,24.3,6.33,17.96,743.1,47.6,19.11,19.11,14.84,centres_in_polygon_land,2,83,89,-0.04
 uc-2659,2659,Ürümqi,24.59,-10.22,34.81,411.9,45.8,9.55,9.55,8.76,nearest_land_cell_to_representative_point,1,1077,774,1.97
 uc-2667,2667,Gwangju,26.55,0.87,25.68,1245.0,60.9,22.15,22.15,14.06,nearest_land_cell_to_representative_point,1,119,46,0.47
-uc-2676,2676,Medellín,19.91,19.29,0.62,2959.9,90.3,13.34,14.96,19.58,nearest_land_cell_to_representative_point,1,2033,1658,2.44
+medellin,2676,Medellín,19.91,19.29,0.62,2959.9,90.3,13.34,14.96,19.58,nearest_land_cell_to_representative_point,1,2033,1658,2.44
 uc-2734,2734,Brisbane,24.98,14.65,10.33,912.0,42.2,19.66,19.74,20.26,centres_in_polygon_land,1,69,32,0.24
 uc-2747,2747,Rabat,24.46,13.23,11.23,448.6,41.3,19.27,19.27,18.78,centres_in_polygon_land,1,114,52,0.4
 uc-2839,2839,Kirkuk,36.23,8.87,27.36,500.5,27.3,6.8,6.88,22.56,nearest_land_cell_to_representative_point,1,504,334,1.1
@@ -170,7 +170,7 @@ uc-2920,2920,Daegu,26.89,0.96,25.93,1097.4,54.8,20.91,20.95,14.54,nearest_land_c
 uc-2921,2921,Hiroshima,28.53,5.37,23.16,1607.3,61.7,21.32,21.32,16.75,centres_in_polygon_land,1,358,75,1.84
 uc-2967,2967,Mogadishu,27.9,24.83,3.07,536.8,48.1,23.31,23.44,26.25,nearest_land_cell_to_representative_point,1,53,65,-0.08
 uc-2979,2979,Johor Bahru,27.48,25.96,1.52,2665.7,80.6,24.98,24.98,26.77,centres_in_polygon_land,1,31,25,0.04
-uc-2996,2996,Abidjan,27.47,24.39,3.08,1924.9,72.5,24.39,24.49,25.97,nearest_land_cell_to_representative_point,1,48,46,0.01
+abidjan,2996,Abidjan,27.47,24.39,3.08,1924.9,72.5,24.39,24.49,25.97,nearest_land_cell_to_representative_point,1,48,46,0.01
 uc-3026,3026,Riyadh,36.67,14.28,22.39,69.2,19.2,1.72,5.06,26.68,centres_in_polygon_land,1,635,622,0.09
 uc-3096,3096,Padang,27.9,26.81,1.09,4392.0,89.9,21.73,21.73,27.27,nearest_land_cell_to_representative_point,1,586,37,3.57
 uc-3105,3105,Guadalajara,24.7,17.2,7.51,867.9,49.5,7.94,16.21,20.91,nearest_land_cell_to_representative_point,1,1634,1581,0.34
@@ -189,7 +189,7 @@ uc-3509,3509,Malanje,22.07,20.64,1.43,1069.5,66.3,14.96,18.54,21.49,nearest_land
 johannesburg,3512,Johannesburg,20.21,9.27,10.94,726.6,34.6,14.49,14.49,16.0,centres_in_polygon_land,4,1567,1616,-0.32
 uc-3547,3547,Rosario,24.59,10.3,14.29,1086.1,45.7,17.77,17.79,17.63,nearest_land_cell_to_representative_point,1,35,25,0.07
 uc-3562,3562,Tshikapa,26.43,24.83,1.6,1318.4,70.8,17.92,21.84,25.55,nearest_land_cell_to_representative_point,1,573,504,0.45
-uc-3570,3570,Dar es-Salaam,27.92,24.0,3.92,1080.1,52.8,23.12,23.72,26.03,nearest_land_cell_to_representative_point,1,98,66,0.21
+dar-es-salaam,3570,Dar es-Salaam,27.92,24.0,3.92,1080.1,52.8,23.12,23.72,26.03,nearest_land_cell_to_representative_point,1,98,66,0.21
 uc-3576,3576,Dammam,35.26,16.19,19.07,92.8,18.4,19.74,22.65,26.58,centres_in_polygon_land,1,7,13,-0.04
 uc-3586,3586,Pekanbaru,27.37,26.17,1.2,2513.5,86.7,24.85,24.85,26.75,centres_in_polygon_land,1,22,21,0.0
 uc-3673,3673,Zanzibar City,27.92,24.34,3.57,998.8,50.4,23.46,23.95,26.18,nearest_land_cell_to_representative_point,1,28,25,0.02
@@ -253,8 +253,8 @@ uc-4952,4952,Kasaï-Oriental,25.23,24.04,1.19,1286.7,71.9,17.81,21.63,24.61,near
 uc-4968,4968,Palembang,27.36,26.18,1.18,2472.2,83.2,22.95,24.54,26.79,centres_in_polygon_land,1,9,7,0.01
 uc-4987,4987,Rostov-on-Don,24.05,-3.18,27.23,563.4,59.4,14.58,14.58,10.37,centres_in_polygon_land,1,42,63,-0.14
 uc-4992,4992,Karaj,30.21,1.5,28.71,288.6,27.8,5.48,5.48,16.16,centres_in_polygon_land,1,1474,1277,1.28
-uc-5029,5029,Yangon,31.63,24.46,7.17,2392.8,57.8,22.1,25.29,27.63,nearest_land_cell_to_representative_point,1,9,9,0.0
-uc-5065,5065,Cebu City,29.43,27.23,2.19,2215.3,74.8,25.21,25.21,28.36,nearest_land_cell_to_representative_point,1,68,27,0.26
+yangon,5029,Yangon,31.63,24.46,7.17,2392.8,57.8,22.1,25.29,27.63,nearest_land_cell_to_representative_point,1,9,9,0.0
+cebu,5065,Cebu City,29.43,27.23,2.19,2215.3,74.8,25.21,25.21,28.36,nearest_land_cell_to_representative_point,1,68,27,0.26
 barcelona,5071,Barcelona,24.2,9.03,15.17,619.8,48.0,19.2,19.2,16.0,nearest_land_cell_to_representative_point,1,174,92,0.54
 uc-5077,5077,Konya,25.38,1.43,23.95,331.2,35.5,7.34,7.57,13.44,nearest_land_cell_to_representative_point,1,1189,1036,0.99
 seattle,5098,Seattle,18.16,4.97,13.19,1414.7,64.3,12.71,12.71,11.04,centres_in_polygon_land,2,66,76,-0.07
@@ -362,7 +362,7 @@ uc-7687,7687,Jaipur,33.78,14.69,19.09,542.5,31.2,12.82,23.68,25.39,centres_in_po
 uc-7716,7716,Enugu,28.68,24.72,3.96,1725.7,76.7,18.01,23.27,26.51,centres_in_polygon_land,1,197,186,0.07
 uc-7738,7738,Gujranwala,33.38,12.14,21.24,1008.7,33.8,19.77,25.86,23.82,nearest_land_cell_to_representative_point,1,224,227,-0.02
 uc-7739,7739,Kalyan-Dombivli,30.69,23.83,6.87,1615.1,43.9,23.49,24.78,27.2,nearest_land_cell_to_representative_point,1,51,27,0.15
-uc-7783,7783,Denpasar,27.33,24.99,2.34,2409.1,71.2,23.1,23.1,26.52,nearest_land_cell_to_representative_point,1,337,50,1.86
+denpasar,7783,Denpasar,27.33,24.99,2.34,2409.1,71.2,23.1,23.1,26.52,nearest_land_cell_to_representative_point,1,337,50,1.86
 uc-7784,7784,Detroit,23.06,-3.6,26.66,920.2,61.9,16.36,16.36,10.0,centres_in_polygon_land,2,196,192,0.03
 uc-7794,7794,Lahore,33.46,12.24,21.23,684.8,31.5,20.36,25.65,24.3,centres_in_polygon_land,2,209,213,-0.02
 rio-de-janeiro,7799,Rio de Janeiro,27.63,20.94,6.69,1398.3,60.2,22.02,22.02,24.31,centres_in_polygon_land,1,174,45,0.84
@@ -385,9 +385,9 @@ new-york,8099,New York City,24.41,0.44,23.97,1181.6,56.2,18.4,18.4,12.37,centres
 uc-8100,8100,Vitória,27.45,21.84,5.62,1450.2,60.1,21.32,21.39,24.67,nearest_land_cell_to_representative_point,1,300,26,1.78
 uc-8120,8120,Dehradun,28.52,11.65,16.87,1449.1,36.8,19.39,23.54,21.44,nearest_land_cell_to_representative_point,1,726,654,0.47
 uc-8125,8125,Kano,30.64,20.27,10.37,677.9,46.8,18.29,22.18,25.71,centres_in_polygon_land,1,461,472,-0.07
-uc-8154,8154,Fortaleza,27.45,26.4,1.05,1046.8,47.5,22.95,23.98,26.9,centres_in_polygon_land,1,18,22,-0.02
+fortaleza,8154,Fortaleza,27.45,26.4,1.05,1046.8,47.5,22.95,23.98,26.9,centres_in_polygon_land,1,18,22,-0.02
 uc-8234,8234,Kota,36.21,17.32,18.89,768.2,33.0,12.26,24.0,27.13,nearest_land_cell_to_representative_point,1,308,270,0.25
-uc-8238,8238,Salvador,26.78,23.58,3.2,1325.8,51.0,22.96,22.96,25.39,nearest_land_cell_to_representative_point,1,24,36,-0.07
+salvador,8238,Salvador,26.78,23.58,3.2,1325.8,51.0,22.96,22.96,25.39,nearest_land_cell_to_representative_point,1,24,36,-0.07
 uc-8255,8255,Boston,22.3,-1.13,23.43,1168.0,57.2,16.86,16.86,10.48,centres_in_polygon_land,1,27,25,0.01
 uc-8258,8258,Pune,28.22,21.51,6.71,1204.0,47.9,15.52,21.75,24.65,nearest_land_cell_to_representative_point,1,709,588,0.79
 uc-8305,8305,Meerut,32.6,13.69,18.91,889.8,33.5,21.61,25.76,24.67,centres_in_polygon_land,1,221,225,-0.02
@@ -426,7 +426,7 @@ uc-9298,9298,Ponnani,30.05,26.33,3.72,2702.4,67.2,22.93,24.98,27.96,centres_in_p
 uc-9329,9329,Dengzhou,28.16,2.79,25.37,877.7,59.9,23.39,23.39,16.4,nearest_land_cell_to_representative_point,1,112,116,-0.02
 uc-9346,9346,Lucknow,33.06,14.67,18.39,1006.3,35.0,18.03,25.93,25.44,nearest_land_cell_to_representative_point,1,120,120,-0.0
 uc-9352,9352,Thrissur,29.88,26.19,3.68,2526.8,67.7,22.69,24.87,27.76,centres_in_polygon_land,1,49,18,0.2
-uc-9386,9386,Kochi,29.49,26.05,3.44,2619.1,69.0,22.78,25.2,27.19,nearest_land_cell_to_representative_point,1,-22,10,-0.21
+kochi,9386,Kochi,29.49,26.05,3.44,2619.1,69.0,22.78,25.2,27.19,nearest_land_cell_to_representative_point,1,-22,10,-0.21
 uc-9390,9390,Mysuru,27.79,22.35,5.44,1035.0,65.3,18.8,20.54,24.63,nearest_land_cell_to_representative_point,1,739,755,-0.11
 uc-9410,9410,Nagpur,35.62,20.86,14.76,1134.1,42.5,14.68,23.42,27.23,nearest_land_cell_to_representative_point,1,331,311,0.13
 uc-9429,9429,Xuchang,28.1,1.16,26.93,781.9,55.0,22.8,22.8,15.6,centres_in_polygon_land,2,102,83,0.13
@@ -468,7 +468,7 @@ uc-10199,10199,Linyi,26.82,-0.22,27.04,892.3,54.4,23.06,23.06,14.17,centres_in_p
 uc-10224,10224,Vijayawada,33.34,24.48,8.86,1036.2,56.1,23.96,24.65,28.62,nearest_land_cell_to_representative_point,1,37,23,0.09
 uc-10229,10229,Changsha,29.85,5.99,23.86,1801.0,66.1,23.98,23.98,18.42,centres_in_polygon_land,1,65,56,0.05
 uc-10290,10290,Puducherry,30.72,24.92,5.8,1068.4,62.9,24.73,24.73,28.09,nearest_land_cell_to_representative_point,1,25,11,0.09
-uc-10300,10300,Chennai,31.52,24.78,6.74,997.4,62.5,24.64,24.64,28.35,centres_in_polygon_land,3,28,17,0.07
+chennai,10300,Chennai,31.52,24.78,6.74,997.4,62.5,24.64,24.64,28.35,centres_in_polygon_land,3,28,17,0.07
 uc-10306,10306,Maharajganj,32.17,15.56,16.61,1217.5,39.1,20.53,26.26,25.77,centres_in_polygon_land,3,64,63,0.0
 uc-10323,10323,Zhuzhou,30.23,6.37,23.86,1857.9,66.6,23.93,23.93,18.75,nearest_land_cell_to_representative_point,1,73,59,0.09
 uc-10403,10403,Tianjia‘an,28.43,2.44,25.99,1054.6,59.8,24.3,24.3,16.13,nearest_land_cell_to_representative_point,1,34,35,-0.01

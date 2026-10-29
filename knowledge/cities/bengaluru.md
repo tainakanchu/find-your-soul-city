@@ -15,7 +15,7 @@ boundary:
   id: 9558
   name: "Bengaluru"
   area_km2: 1008
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
 metrics:
   bike_protected: { value: 0.55, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 63.8, quality: observed, source: era5, year: "1990-2019" }

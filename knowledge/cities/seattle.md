@@ -15,7 +15,7 @@ boundary:
   id: 5098
   name: "Seattle"
   area_km2: 1123
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-28T22:03:04Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
 metrics:
   bike_protected: { value: 11.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 64.3, quality: observed, source: era5, year: "1990-2019" }

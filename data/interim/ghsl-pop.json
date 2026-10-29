@@ -1,6 +1,6 @@
 {
   "source_id": "ghsl-pop",
-  "generated_at": "2026-10-28T20:46:13Z",
+  "generated_at": "2026-10-29T02:06:33Z",
   "inputs": [
     "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_54009_1000/V1-0/GHS_POP_E2025_GLOBE_R2023A_54009_1000_V1_0.zip",
     "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_UCDB_GLOBE_R2024A/GHS_UCDB_GLOBE_R2024A/V1-2/GHS_UCDB_GLOBE_R2024A_V1_2.zip"
@@ -10,6 +10,19 @@
   ],
   "values": {
     "density_weighted": {
+      "abidjan": {
+        "value": 24830.529172290324,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 503,
+          "n_nodata": 0,
+          "grid_pop_sum": 6450316,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 31954,
+          "max_cell_density": 60765
+        }
+      },
       "accra": {
         "value": 11713.770214734835,
         "quality": "estimated",
@@ -231,6 +244,32 @@
           "max_cell_density": 121376
         }
       },
+      "cebu": {
+        "value": 17446.11121068211,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 416,
+          "n_nodata": 0,
+          "grid_pop_sum": 3191585,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 18276,
+          "max_cell_density": 72039
+        }
+      },
+      "chennai": {
+        "value": 22677.40766397402,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 1052,
+          "n_nodata": 0,
+          "grid_pop_sum": 11466400,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 29533,
+          "max_cell_density": 59194
+        }
+      },
       "chicago": {
         "value": 4910.154409371479,
         "quality": "estimated",
@@ -242,6 +281,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 5763,
           "max_cell_density": 19018
+        }
+      },
+      "colombo": {
+        "value": 7680.399944518434,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 1206,
+          "n_nodata": 0,
+          "grid_pop_sum": 4720933,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 7414,
+          "max_cell_density": 40237
         }
       },
       "copenhagen": {
@@ -268,6 +320,32 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 30728,
           "max_cell_density": 49248
+        }
+      },
+      "dar-es-salaam": {
+        "value": 26967.301900048715,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 907,
+          "n_nodata": 0,
+          "grid_pop_sum": 8918525,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 26085,
+          "max_cell_density": 83051
+        }
+      },
+      "denpasar": {
+        "value": 8351.96966379473,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 388,
+          "n_nodata": 0,
+          "grid_pop_sum": 2005950,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 11702,
+          "max_cell_density": 15521
         }
       },
       "denver": {
@@ -333,6 +411,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 7569,
           "max_cell_density": 14761
+        }
+      },
+      "fortaleza": {
+        "value": 12798.196417795418,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 413,
+          "n_nodata": 0,
+          "grid_pop_sum": 3324149,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 16960,
+          "max_cell_density": 29653
         }
       },
       "fukuoka": {
@@ -465,6 +556,19 @@
           "max_cell_density": 70677
         }
       },
+      "kaohsiung": {
+        "value": 13677.527475587602,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 372,
+          "n_nodata": 0,
+          "grid_pop_sum": 2294772,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 17832,
+          "max_cell_density": 29331
+        }
+      },
       "kathmandu": {
         "value": 25709.475131769424,
         "quality": "estimated",
@@ -476,6 +580,45 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 31333,
           "max_cell_density": 53924
+        }
+      },
+      "kigali": {
+        "value": 9618.898098097638,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 286,
+          "n_nodata": 0,
+          "grid_pop_sum": 1621760,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 12463,
+          "max_cell_density": 29883
+        }
+      },
+      "kinshasa": {
+        "value": 60538.84757025567,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 487,
+          "n_nodata": 0,
+          "grid_pop_sum": 12945683,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 66779,
+          "max_cell_density": 167543
+        }
+      },
+      "kochi": {
+        "value": 9979.139622987354,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 1266,
+          "n_nodata": 0,
+          "grid_pop_sum": 5069022,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 8864,
+          "max_cell_density": 43335
         }
       },
       "kuala-lumpur": {
@@ -593,6 +736,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 20054,
           "max_cell_density": 91548
+        }
+      },
+      "medellin": {
+        "value": 19645.21382560518,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 233,
+          "n_nodata": 0,
+          "grid_pop_sum": 3215457,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 26233,
+          "max_cell_density": 37736
         }
       },
       "melbourne": {
@@ -764,6 +920,19 @@
           "max_cell_density": 13852
         }
       },
+      "panama-city": {
+        "value": 10682.403912963438,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 277,
+          "n_nodata": 0,
+          "grid_pop_sum": 1612439,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 11478,
+          "max_cell_density": 33580
+        }
+      },
       "paris": {
         "value": 14015.976368824982,
         "quality": "estimated",
@@ -788,6 +957,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 3127,
           "max_cell_density": 7949
+        }
+      },
+      "phnom-penh": {
+        "value": 15969.132965821003,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 354,
+          "n_nodata": 0,
+          "grid_pop_sum": 2419131,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 19152,
+          "max_cell_density": 39638
         }
       },
       "prague": {
@@ -855,6 +1037,19 @@
           "max_cell_density": 26964
         }
       },
+      "salvador": {
+        "value": 20111.13344809704,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 323,
+          "n_nodata": 0,
+          "grid_pop_sum": 3305396,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 23493,
+          "max_cell_density": 47004
+        }
+      },
       "san-francisco": {
         "value": 5116.740933881843,
         "quality": "estimated",
@@ -868,6 +1063,19 @@
           "max_cell_density": 31295
         }
       },
+      "san-jose-cr": {
+        "value": 7013.530254257785,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 491,
+          "n_nodata": 0,
+          "grid_pop_sum": 2272572,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 9474,
+          "max_cell_density": 18778
+        }
+      },
       "santiago": {
         "value": 12961.856372727627,
         "quality": "estimated",
@@ -879,6 +1087,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 15351,
           "max_cell_density": 32320
+        }
+      },
+      "santo-domingo": {
+        "value": 14271.029594083411,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 483,
+          "n_nodata": 0,
+          "grid_pop_sum": 4593164,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 19097,
+          "max_cell_density": 27279
         }
       },
       "sao-paulo": {
@@ -1113,6 +1334,19 @@
           "grid_pop_over_ucdb_pop": 1.0,
           "p90_cell_density": 10549,
           "max_cell_density": 20826
+        }
+      },
+      "yangon": {
+        "value": 19363.682822000304,
+        "quality": "estimated",
+        "year": 2025,
+        "detail": {
+          "n_cells_1km": 545,
+          "n_nodata": 0,
+          "grid_pop_sum": 6190958,
+          "grid_pop_over_ucdb_pop": 1.0,
+          "p90_cell_density": 23570,
+          "max_cell_density": 61420
         }
       },
       "zurich": {
