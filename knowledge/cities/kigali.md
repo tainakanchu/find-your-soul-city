@@ -15,7 +15,7 @@ boundary:
   id: 597
   name: "Kigali"
   area_km2: 286.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 0.21, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 73.0, quality: observed, source: era5, year: "1990-2019" }

@@ -15,7 +15,7 @@ boundary:
   id: 2007
   name: "Los Angeles"
   area_km2: 4498
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 7.02, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 34.6, quality: observed, source: era5, year: "1990-2019" }

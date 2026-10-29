@@ -15,7 +15,7 @@ boundary:
   id: 7799
   name: "Rio de Janeiro"
   area_km2: 1285
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 4.3, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 60.2, quality: observed, source: era5, year: "1990-2019" }

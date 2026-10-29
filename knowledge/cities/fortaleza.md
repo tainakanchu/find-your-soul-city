@@ -15,7 +15,7 @@ boundary:
   id: 8154
   name: "Fortaleza"
   area_km2: 413.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 14.9, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 47.5, quality: observed, source: era5, year: "1990-2019" }

@@ -15,7 +15,7 @@ boundary:
   id: 3338
   name: "Madrid"
   area_km2: 680.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 30.5, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 41.7, quality: observed, source: era5, year: "1990-2019" }

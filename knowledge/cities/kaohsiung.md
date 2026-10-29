@@ -15,7 +15,7 @@ boundary:
   id: 1919
   name: "Kaohsiung"
   area_km2: 372.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 13.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 61.7, quality: observed, source: era5, year: "1990-2019" }

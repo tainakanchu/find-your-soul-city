@@ -15,7 +15,7 @@ boundary:
   id: 8099
   name: "New York City"
   area_km2: 3031
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:09:44Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
 metrics:
   bike_protected: { value: 13.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 56.2, quality: observed, source: era5, year: "1990-2019" }
