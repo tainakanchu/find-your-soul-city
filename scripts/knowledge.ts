@@ -253,6 +253,13 @@ for (const dir of new Set(docs.map((d) => dirname(d.path)))) {
   indexes.set(join(dir, "index.md"), `# ${dir.slice(ROOT.length + 1)}\n\n${items.join("\n")}\n`);
 }
 
+const directionalTargets: Record<string, number> = Object.fromEntries(
+  Object.entries((model?.fm.directional_targets ?? {}) as Record<string, unknown>).map(([w, v]) => {
+    if (typeof v !== "number" || v <= 0 || v > 1) fail(model.path, `directional_targets.${w} must be in (0, 1]`);
+    return [w, Number(v)];
+  }),
+);
+
 const body = { metrics, cities, questions, sources, reference };
 for (const msg of findPlaceholders(body)) fail(ROOT, msg);
 
@@ -264,6 +271,7 @@ if (errors.length) {
 const knowledge: Knowledge = {
   modelVersion: str(model, "model_version"),
   minCoverage: num(model, "min_coverage"),
+  directionalTargets,
   dataVersion: createHash("sha256").update(JSON.stringify(body)).digest("hex").slice(0, 12),
   ...body,
 };

@@ -15,7 +15,7 @@ boundary:
   id: 48
   name: "Reykjavik"
   area_km2: 97.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: null, quality: missing, source: itdp-atlas, year: null, reason: "not in Atlas release update_2024 (no data_final/ghsl_00048/indicators_00048.rds); UCDB 2025 population 206,895 is below the Atlas inclusion threshold of 500,000 (methodology, General Topic 1a)" }
   cloud_cover_annual: { value: 76.6, quality: observed, source: era5, year: "1990-2019" }

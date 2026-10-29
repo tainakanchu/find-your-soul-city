@@ -112,3 +112,30 @@ cities:
   - { city_id: abidjan, name_ja: アビジャン, ucdb_id: 2996, ucdb_name: Abidjan }
   - { city_id: kinshasa, name_ja: キンシャサ, ucdb_id: 1876, ucdb_name: Kinshasa }
   - { city_id: kigali, name_ja: キガリ, ucdb_id: 597, ucdb_name: Kigali }
+  # --- added 2026-10-29: regional balance (each UN SDG region to ~16 cities; Australia/NZ limited to 1M+ centres) ---
+  - { city_id: brisbane, name_ja: ブリスベン, ucdb_id: 2734, ucdb_name: "Brisbane" }
+  - { city_id: karachi, name_ja: カラチ, ucdb_id: 2457, ucdb_name: "Karachi" }
+  - { city_id: lahore, name_ja: ラホール, ucdb_id: 7794, ucdb_name: "Lahore" }
+  - { city_id: islamabad, name_ja: イスラマバード, ucdb_id: 6766, ucdb_name: "Islamabad" }
+  - { city_id: kolkata, name_ja: コルカタ, ucdb_id: 11352, ucdb_name: "Kolkata" }
+  - { city_id: hyderabad, name_ja: ハイデラバード, ucdb_id: 9524, ucdb_name: "Hyderabad" }
+  - { city_id: tashkent, name_ja: タシケント, ucdb_id: 2907, ucdb_name: "Tashkent" }
+  - { city_id: riyadh, name_ja: リヤド, ucdb_id: 3026, ucdb_name: "Riyadh" }
+  - { city_id: doha, name_ja: ドーハ, ucdb_id: 153, ucdb_name: "Doha" }
+  - { city_id: amman, name_ja: アンマン, ucdb_id: 992, ucdb_name: "Amman" }
+  - { city_id: beirut, name_ja: ベイルート, ucdb_id: 458, ucdb_name: "Beirut" }
+  - { city_id: baku, name_ja: バクー, ucdb_id: 2221, ucdb_name: "Baku" }
+  - { city_id: ankara, name_ja: アンカラ, ucdb_id: 4921, ucdb_name: "Ankara" }
+  - { city_id: izmir, name_ja: イズミル, ucdb_id: 1094, ucdb_name: "Izmir" }
+  - { city_id: algiers, name_ja: アルジェ, ucdb_id: 3397, ucdb_name: "Algiers" }
+  - { city_id: tunis, name_ja: チュニス, ucdb_id: 1399, ucdb_name: "Tunis" }
+  - { city_id: kampala, name_ja: カンパラ, ucdb_id: 1711, ucdb_name: "Kampala" }
+  - { city_id: luanda, name_ja: ルアンダ, ucdb_id: 1082, ucdb_name: "Luanda" }
+  - { city_id: lusaka, name_ja: ルサカ, ucdb_id: 1517, ucdb_name: "Lusaka" }
+  - { city_id: maputo, name_ja: マプト, ucdb_id: 299, ucdb_name: "Maputo" }
+  - { city_id: durban, name_ja: ダーバン, ucdb_id: 4787, ucdb_name: "Durban" }
+  - { city_id: boston, name_ja: ボストン, ucdb_id: 8255, ucdb_name: "Boston" }
+  - { city_id: washington, name_ja: ワシントン D.C., ucdb_id: 7910, ucdb_name: "Washington" }
+  - { city_id: houston, name_ja: ヒューストン, ucdb_id: 6167, ucdb_name: "Houston" }
+  - { city_id: phoenix, name_ja: フェニックス, ucdb_id: 4699, ucdb_name: "Phoenix" }
+  - { city_id: minneapolis, name_ja: ミネアポリス, ucdb_id: 7181, ucdb_name: "Minneapolis [Saint Paul]" }

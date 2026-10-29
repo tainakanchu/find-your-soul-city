@@ -79,6 +79,11 @@ export interface ReferenceDistribution {
 export interface Knowledge {
   modelVersion: string;
   minCoverage: number;
+  /**
+   * Directional metrics: reference-set percentile that counts as "enough" (fit 1), by answer weight
+   * (e.g. { "1": 0.5, "2": 0.8 }). A weight without an entry means "more is always better".
+   */
+  directionalTargets: Record<string, number>;
   dataVersion: string;
   metrics: Metric[];
   cities: City[];

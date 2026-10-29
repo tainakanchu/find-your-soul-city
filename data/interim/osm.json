@@ -1,6 +1,6 @@
 {
   "source_id": "osm",
-  "generated_at": "2026-10-29T02:09:36Z",
+  "generated_at": "2026-10-29T02:16:01Z",
   "inputs": [
     "https://qlever.cs.uni-freiburg.de/api/osm-planet#260921",
     "https://qlever.cs.uni-freiburg.de/api/wikidata#0dd66fbb94f388cc",
@@ -41,6 +41,15 @@
           "pop_2025": 7280463
         }
       },
+      "algiers": {
+        "value": 2.2314482522378323,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 74,
+          "pop_2025": 3316232
+        }
+      },
       "almaty": {
         "value": 3.238987649072431,
         "quality": "estimated",
@@ -50,6 +59,15 @@
           "pop_2025": 2315538
         }
       },
+      "amman": {
+        "value": 0.7781803243551745,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 50,
+          "pop_2025": 6425246
+        }
+      },
       "amsterdam": {
         "value": 30.652112737290338,
         "quality": "estimated",
@@ -57,6 +75,15 @@
         "detail": {
           "count_dedup": 375,
           "pop_2025": 1223407
+        }
+      },
+      "ankara": {
+        "value": 2.9220862274122887,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 108,
+          "pop_2025": 3695989
         }
       },
       "athens": {
@@ -75,6 +102,15 @@
         "detail": {
           "count_dedup": 156,
           "pop_2025": 1623898
+        }
+      },
+      "baku": {
+        "value": 7.146282181412874,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 141,
+          "pop_2025": 1973054
         }
       },
       "bangkok": {
@@ -104,6 +140,15 @@
           "pop_2025": 18150576
         }
       },
+      "beirut": {
+        "value": 4.8752408890649965,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 75,
+          "pop_2025": 1538386
+        }
+      },
       "bengaluru": {
         "value": 2.1082406455764904,
         "quality": "estimated",
@@ -129,6 +174,24 @@
         "detail": {
           "count_dedup": 247,
           "pop_2025": 10419361
+        }
+      },
+      "boston": {
+        "value": 17.072922181520056,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 285,
+          "pop_2025": 1669310
+        }
+      },
+      "brisbane": {
+        "value": 9.197232415322787,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 125,
+          "pop_2025": 1359105
         }
       },
       "budapest": {
@@ -266,6 +329,15 @@
           "pop_2025": 37307160
         }
       },
+      "doha": {
+        "value": 1.969283094022551,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 39,
+          "pop_2025": 1980416
+        }
+      },
       "dubai": {
         "value": 2.540807551413216,
         "quality": "estimated",
@@ -282,6 +354,15 @@
         "detail": {
           "count_dedup": 152,
           "pop_2025": 1124520
+        }
+      },
+      "durban": {
+        "value": 0.5808856087398212,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 19,
+          "pop_2025": 3270868
         }
       },
       "edinburgh": {
@@ -365,6 +446,33 @@
           "pop_2025": 541957
         }
       },
+      "houston": {
+        "value": 3.0454769193328786,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 131,
+          "pop_2025": 4301461
+        }
+      },
+      "hyderabad": {
+        "value": 1.9883176014355526,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 188,
+          "pop_2025": 9455230
+        }
+      },
+      "islamabad": {
+        "value": 0.6105592802277833,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 30,
+          "pop_2025": 4913528
+        }
+      },
       "istanbul": {
         "value": 2.969693210431299,
         "quality": "estimated",
@@ -372,6 +480,15 @@
         "detail": {
           "count_dedup": 422,
           "pop_2025": 14210222
+        }
+      },
+      "izmir": {
+        "value": 4.4760400461341705,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 110,
+          "pop_2025": 2457529
         }
       },
       "jakarta": {
@@ -392,6 +509,15 @@
           "pop_2025": 8592843
         }
       },
+      "kampala": {
+        "value": 0.8690819475385368,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 45,
+          "pop_2025": 5177878
+        }
+      },
       "kaohsiung": {
         "value": 3.3554532963587302,
         "quality": "estimated",
@@ -399,6 +525,15 @@
         "detail": {
           "count_dedup": 77,
           "pop_2025": 2294772
+        }
+      },
+      "karachi": {
+        "value": 0.43268013611753825,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 91,
+          "pop_2025": 21031703
         }
       },
       "kathmandu": {
@@ -437,6 +572,15 @@
           "pop_2025": 5069022
         }
       },
+      "kolkata": {
+        "value": 0.5447233918271023,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 127,
+          "pop_2025": 23314585
+        }
+      },
       "kuala-lumpur": {
         "value": 1.842341715612064,
         "quality": "estimated",
@@ -453,6 +597,15 @@
         "detail": {
           "count_dedup": 22,
           "pop_2025": 12846045
+        }
+      },
+      "lahore": {
+        "value": 0.3495266702491426,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 50,
+          "pop_2025": 14305060
         }
       },
       "lima": {
@@ -491,6 +644,24 @@
           "pop_2025": 13474333
         }
       },
+      "luanda": {
+        "value": 0.2827246536416304,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 33,
+          "pop_2025": 11672134
+        }
+      },
+      "lusaka": {
+        "value": 0.13668431561157723,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 5,
+          "pop_2025": 3658064
+        }
+      },
       "madrid": {
         "value": 8.397685448316576,
         "quality": "estimated",
@@ -507,6 +678,15 @@
         "detail": {
           "count_dedup": 337,
           "pop_2025": 25921189
+        }
+      },
+      "maputo": {
+        "value": 0.792444525743844,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 28,
+          "pop_2025": 3533370
         }
       },
       "marrakesh": {
@@ -561,6 +741,15 @@
         "detail": {
           "count_dedup": 416,
           "pop_2025": 3135553
+        }
+      },
+      "minneapolis": {
+        "value": 17.89859896220672,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 218,
+          "pop_2025": 1217972
         }
       },
       "montevideo": {
@@ -680,6 +869,15 @@
           "pop_2025": 2419131
         }
       },
+      "phoenix": {
+        "value": 5.519622461963319,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 144,
+          "pop_2025": 2608874
+        }
+      },
       "prague": {
         "value": 32.79841092464921,
         "quality": "estimated",
@@ -714,6 +912,15 @@
         "detail": {
           "count_dedup": 320,
           "pop_2025": 9853693
+        }
+      },
+      "riyadh": {
+        "value": 0.4767688463300688,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 38,
+          "pop_2025": 7970319
         }
       },
       "rome": {
@@ -851,6 +1058,15 @@
           "pop_2025": 9686521
         }
       },
+      "tashkent": {
+        "value": 2.7873466787053203,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 108,
+          "pop_2025": 3874653
+        }
+      },
       "tbilisi": {
         "value": 14.166058405378395,
         "quality": "estimated",
@@ -896,6 +1112,15 @@
           "pop_2025": 5566382
         }
       },
+      "tunis": {
+        "value": 3.0105703069596017,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 84,
+          "pop_2025": 2790169
+        }
+      },
       "ulaanbaatar": {
         "value": 3.5493618630762467,
         "quality": "estimated",
@@ -930,6 +1155,15 @@
         "detail": {
           "count_dedup": 364,
           "pop_2025": 1999986
+        }
+      },
+      "washington": {
+        "value": 10.369484641423611,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 360,
+          "pop_2025": 3471725
         }
       },
       "yangon": {
@@ -1198,6 +1432,88 @@
           }
         }
       },
+      "algiers": {
+        "value": 0.1581196581196581,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 74,
+          "count_raw": 75,
+          "named_share": 0.827,
+          "raw_counts": {
+            "tourism=museum": 23,
+            "tourism=gallery": 2,
+            "amenity=theatre": 13,
+            "amenity=arts_centre": 15,
+            "amenity=cinema": 22,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 468.0,
+          "pop_2025": 3316232,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.125,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0855,
+          "coverage": {
+            "wikidata": {
+              "n_items": 15,
+              "n_museums": 9,
+              "n_notable": 10,
+              "matched_by_wikidata_link": 5,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.4,
+              "recall": 0.6,
+              "recall_museums": 0.556,
+              "osm_culture_to_wikidata_ratio": 4.93
+            },
+            "overture": {
+              "museum": {
+                "osm": 23,
+                "overture": 27,
+                "ratio": 0.852
+              },
+              "performing_arts": {
+                "osm": 28,
+                "overture": 43,
+                "ratio": 0.651
+              },
+              "cinema": {
+                "osm": 22,
+                "overture": 13,
+                "ratio": 1.692
+              },
+              "gallery": {
+                "osm": 2,
+                "overture": 11,
+                "ratio": 0.182
+              },
+              "bar_pub": {
+                "osm": 10,
+                "overture": 27,
+                "ratio": 0.37
+              },
+              "nightclub": {
+                "osm": 11,
+                "overture": 6,
+                "ratio": 1.833
+              },
+              "culture_core": {
+                "osm": 45,
+                "overture": 40,
+                "ratio": 1.125
+              },
+              "nightlife": {
+                "osm": 21,
+                "overture": 33,
+                "ratio": 0.636
+              }
+            }
+          }
+        }
+      },
       "almaty": {
         "value": 0.22658610271903323,
         "quality": "estimated",
@@ -1280,6 +1596,88 @@
           }
         }
       },
+      "amman": {
+        "value": 0.09615384615384616,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 50,
+          "count_raw": 51,
+          "named_share": 0.882,
+          "raw_counts": {
+            "tourism=museum": 21,
+            "tourism=gallery": 7,
+            "amenity=theatre": 12,
+            "amenity=arts_centre": 3,
+            "amenity=cinema": 8,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 520.0,
+          "pop_2025": 6425246,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.744,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.075,
+          "coverage": {
+            "wikidata": {
+              "n_items": 12,
+              "n_museums": 10,
+              "n_notable": 12,
+              "matched_by_wikidata_link": 6,
+              "matched_by_name_250m": 4,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.833,
+              "recall": 0.833,
+              "recall_museums": 0.8,
+              "osm_culture_to_wikidata_ratio": 4.17
+            },
+            "overture": {
+              "museum": {
+                "osm": 21,
+                "overture": 28,
+                "ratio": 0.75
+              },
+              "performing_arts": {
+                "osm": 15,
+                "overture": 70,
+                "ratio": 0.214
+              },
+              "cinema": {
+                "osm": 8,
+                "overture": 11,
+                "ratio": 0.727
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 52,
+                "ratio": 0.135
+              },
+              "bar_pub": {
+                "osm": 41,
+                "overture": 123,
+                "ratio": 0.333
+              },
+              "nightclub": {
+                "osm": 1,
+                "overture": 7,
+                "ratio": 0.143
+              },
+              "culture_core": {
+                "osm": 29,
+                "overture": 39,
+                "ratio": 0.744
+              },
+              "nightlife": {
+                "osm": 42,
+                "overture": 130,
+                "ratio": 0.323
+              }
+            }
+          }
+        }
+      },
       "amsterdam": {
         "value": 1.2175324675324675,
         "quality": "estimated",
@@ -1357,6 +1755,88 @@
                 "osm": 679,
                 "overture": 997,
                 "ratio": 0.681
+              }
+            }
+          }
+        }
+      },
+      "ankara": {
+        "value": 0.3025210084033613,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 108,
+          "count_raw": 110,
+          "named_share": 0.882,
+          "raw_counts": {
+            "tourism=museum": 54,
+            "tourism=gallery": 5,
+            "amenity=theatre": 23,
+            "amenity=arts_centre": 12,
+            "amenity=cinema": 16,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 357.0,
+          "pop_2025": 3695989,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.372,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.5266,
+          "coverage": {
+            "wikidata": {
+              "n_items": 98,
+              "n_museums": 82,
+              "n_notable": 68,
+              "matched_by_wikidata_link": 24,
+              "matched_by_name_250m": 19,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.439,
+              "recall": 0.559,
+              "recall_museums": 0.439,
+              "osm_culture_to_wikidata_ratio": 1.1
+            },
+            "overture": {
+              "museum": {
+                "osm": 54,
+                "overture": 116,
+                "ratio": 0.466
+              },
+              "performing_arts": {
+                "osm": 35,
+                "overture": 301,
+                "ratio": 0.116
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 72,
+                "ratio": 0.222
+              },
+              "gallery": {
+                "osm": 5,
+                "overture": 291,
+                "ratio": 0.017
+              },
+              "bar_pub": {
+                "osm": 108,
+                "overture": 530,
+                "ratio": 0.204
+              },
+              "nightclub": {
+                "osm": 9,
+                "overture": 172,
+                "ratio": 0.052
+              },
+              "culture_core": {
+                "osm": 70,
+                "overture": 188,
+                "ratio": 0.372
+              },
+              "nightlife": {
+                "osm": 117,
+                "overture": 702,
+                "ratio": 0.167
               }
             }
           }
@@ -1521,6 +2001,88 @@
                 "osm": 309,
                 "overture": 466,
                 "ratio": 0.663
+              }
+            }
+          }
+        }
+      },
+      "baku": {
+        "value": 0.4147058823529412,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 141,
+          "count_raw": 142,
+          "named_share": 0.894,
+          "raw_counts": {
+            "tourism=museum": 48,
+            "tourism=gallery": 1,
+            "amenity=theatre": 30,
+            "amenity=arts_centre": 45,
+            "amenity=cinema": 18,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 340.0,
+          "pop_2025": 1973054,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.667,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.2912,
+          "coverage": {
+            "wikidata": {
+              "n_items": 71,
+              "n_museums": 51,
+              "n_notable": 70,
+              "matched_by_wikidata_link": 22,
+              "matched_by_name_250m": 13,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.493,
+              "recall": 0.5,
+              "recall_museums": 0.373,
+              "osm_culture_to_wikidata_ratio": 1.99
+            },
+            "overture": {
+              "museum": {
+                "osm": 48,
+                "overture": 53,
+                "ratio": 0.906
+              },
+              "performing_arts": {
+                "osm": 75,
+                "overture": 133,
+                "ratio": 0.564
+              },
+              "cinema": {
+                "osm": 18,
+                "overture": 46,
+                "ratio": 0.391
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 51,
+                "ratio": 0.02
+              },
+              "bar_pub": {
+                "osm": 219,
+                "overture": 410,
+                "ratio": 0.534
+              },
+              "nightclub": {
+                "osm": 23,
+                "overture": 50,
+                "ratio": 0.46
+              },
+              "culture_core": {
+                "osm": 66,
+                "overture": 99,
+                "ratio": 0.667
+              },
+              "nightlife": {
+                "osm": 242,
+                "overture": 460,
+                "ratio": 0.526
               }
             }
           }
@@ -1772,6 +2334,88 @@
           }
         }
       },
+      "beirut": {
+        "value": 0.3768844221105528,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 75,
+          "count_raw": 75,
+          "named_share": 0.92,
+          "raw_counts": {
+            "tourism=museum": 18,
+            "tourism=gallery": 12,
+            "amenity=theatre": 24,
+            "amenity=arts_centre": 5,
+            "amenity=cinema": 16,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 199.0,
+          "pop_2025": 1538386,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.63,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.2714,
+          "coverage": {
+            "wikidata": {
+              "n_items": 17,
+              "n_museums": 16,
+              "n_notable": 15,
+              "matched_by_wikidata_link": 9,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.588,
+              "recall": 0.533,
+              "recall_museums": 0.625,
+              "osm_culture_to_wikidata_ratio": 4.41
+            },
+            "overture": {
+              "museum": {
+                "osm": 18,
+                "overture": 34,
+                "ratio": 0.529
+              },
+              "performing_arts": {
+                "osm": 29,
+                "overture": 74,
+                "ratio": 0.392
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 20,
+                "ratio": 0.8
+              },
+              "gallery": {
+                "osm": 12,
+                "overture": 73,
+                "ratio": 0.164
+              },
+              "bar_pub": {
+                "osm": 134,
+                "overture": 280,
+                "ratio": 0.479
+              },
+              "nightclub": {
+                "osm": 21,
+                "overture": 105,
+                "ratio": 0.2
+              },
+              "culture_core": {
+                "osm": 34,
+                "overture": 54,
+                "ratio": 0.63
+              },
+              "nightlife": {
+                "osm": 155,
+                "overture": 385,
+                "ratio": 0.403
+              }
+            }
+          }
+        }
+      },
       "bengaluru": {
         "value": 0.31746031746031744,
         "quality": "estimated",
@@ -2013,6 +2657,170 @@
                 "osm": 916,
                 "overture": 2834,
                 "ratio": 0.323
+              }
+            }
+          }
+        }
+      },
+      "boston": {
+        "value": 0.5610236220472441,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 285,
+          "count_raw": 285,
+          "named_share": 0.979,
+          "raw_counts": {
+            "tourism=museum": 96,
+            "tourism=gallery": 38,
+            "amenity=theatre": 86,
+            "amenity=arts_centre": 37,
+            "amenity=cinema": 23,
+            "amenity=music_venue": 4,
+            "amenity=concert_hall": 1
+          },
+          "area_km2": 508.0,
+          "pop_2025": 1669310,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.496,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.4724,
+          "coverage": {
+            "wikidata": {
+              "n_items": 109,
+              "n_museums": 62,
+              "n_notable": 100,
+              "matched_by_wikidata_link": 51,
+              "matched_by_name_250m": 14,
+              "unmatched_but_linked_from_other_osm_object": 11,
+              "recall_all": 0.596,
+              "recall": 0.59,
+              "recall_museums": 0.742,
+              "osm_culture_to_wikidata_ratio": 2.61
+            },
+            "overture": {
+              "museum": {
+                "osm": 96,
+                "overture": 197,
+                "ratio": 0.487
+              },
+              "performing_arts": {
+                "osm": 128,
+                "overture": 360,
+                "ratio": 0.356
+              },
+              "cinema": {
+                "osm": 23,
+                "overture": 43,
+                "ratio": 0.535
+              },
+              "gallery": {
+                "osm": 38,
+                "overture": 265,
+                "ratio": 0.143
+              },
+              "bar_pub": {
+                "osm": 263,
+                "overture": 632,
+                "ratio": 0.416
+              },
+              "nightclub": {
+                "osm": 22,
+                "overture": 46,
+                "ratio": 0.478
+              },
+              "culture_core": {
+                "osm": 119,
+                "overture": 240,
+                "ratio": 0.496
+              },
+              "nightlife": {
+                "osm": 285,
+                "overture": 678,
+                "ratio": 0.42
+              }
+            }
+          }
+        }
+      },
+      "brisbane": {
+        "value": 0.1783166904422254,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 125,
+          "count_raw": 125,
+          "named_share": 0.968,
+          "raw_counts": {
+            "tourism=museum": 24,
+            "tourism=gallery": 27,
+            "amenity=theatre": 28,
+            "amenity=arts_centre": 16,
+            "amenity=cinema": 28,
+            "amenity=music_venue": 2,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 701.0,
+          "pop_2025": 1359105,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.374,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.1983,
+          "coverage": {
+            "wikidata": {
+              "n_items": 25,
+              "n_museums": 19,
+              "n_notable": 22,
+              "matched_by_wikidata_link": 8,
+              "matched_by_name_250m": 4,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.48,
+              "recall": 0.5,
+              "recall_museums": 0.526,
+              "osm_culture_to_wikidata_ratio": 5.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 24,
+                "overture": 69,
+                "ratio": 0.348
+              },
+              "performing_arts": {
+                "osm": 46,
+                "overture": 198,
+                "ratio": 0.232
+              },
+              "cinema": {
+                "osm": 28,
+                "overture": 70,
+                "ratio": 0.4
+              },
+              "gallery": {
+                "osm": 27,
+                "overture": 149,
+                "ratio": 0.181
+              },
+              "bar_pub": {
+                "osm": 301,
+                "overture": 569,
+                "ratio": 0.529
+              },
+              "nightclub": {
+                "osm": 10,
+                "overture": 52,
+                "ratio": 0.192
+              },
+              "culture_core": {
+                "osm": 52,
+                "overture": 139,
+                "ratio": 0.374
+              },
+              "nightlife": {
+                "osm": 311,
+                "overture": 621,
+                "ratio": 0.501
               }
             }
           }
@@ -3248,6 +4056,88 @@
           }
         }
       },
+      "doha": {
+        "value": 0.09948979591836735,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 39,
+          "count_raw": 41,
+          "named_share": 0.732,
+          "raw_counts": {
+            "tourism=museum": 14,
+            "tourism=gallery": 7,
+            "amenity=theatre": 8,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 11,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 392.0,
+          "pop_2025": 1980416,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.521,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.1224,
+          "coverage": {
+            "wikidata": {
+              "n_items": 11,
+              "n_museums": 9,
+              "n_notable": 10,
+              "matched_by_wikidata_link": 3,
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.545,
+              "recall": 0.6,
+              "recall_museums": 0.556,
+              "osm_culture_to_wikidata_ratio": 3.55
+            },
+            "overture": {
+              "museum": {
+                "osm": 14,
+                "overture": 22,
+                "ratio": 0.636
+              },
+              "performing_arts": {
+                "osm": 9,
+                "overture": 29,
+                "ratio": 0.31
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 26,
+                "ratio": 0.423
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 12,
+                "ratio": 0.583
+              },
+              "bar_pub": {
+                "osm": 9,
+                "overture": 102,
+                "ratio": 0.088
+              },
+              "nightclub": {
+                "osm": 8,
+                "overture": 33,
+                "ratio": 0.242
+              },
+              "culture_core": {
+                "osm": 25,
+                "overture": 48,
+                "ratio": 0.521
+              },
+              "nightlife": {
+                "osm": 17,
+                "overture": 135,
+                "ratio": 0.126
+              }
+            }
+          }
+        }
+      },
       "dubai": {
         "value": 0.1358313817330211,
         "quality": "estimated",
@@ -3407,6 +4297,88 @@
                 "osm": 701,
                 "overture": 949,
                 "ratio": 0.739
+              }
+            }
+          }
+        }
+      },
+      "durban": {
+        "value": 0.023543990086741014,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 19,
+          "count_raw": 19,
+          "named_share": 0.842,
+          "raw_counts": {
+            "tourism=museum": 5,
+            "tourism=gallery": 1,
+            "amenity=theatre": 7,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 5,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 807.0,
+          "pop_2025": 3270868,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.227,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0545,
+          "coverage": {
+            "wikidata": {
+              "n_items": 3,
+              "n_museums": 2,
+              "n_notable": 1,
+              "matched_by_wikidata_link": 0,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.333,
+              "recall": 1.0,
+              "recall_museums": 0.5,
+              "osm_culture_to_wikidata_ratio": 6.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 5,
+                "overture": 31,
+                "ratio": 0.161
+              },
+              "performing_arts": {
+                "osm": 8,
+                "overture": 98,
+                "ratio": 0.082
+              },
+              "cinema": {
+                "osm": 5,
+                "overture": 13,
+                "ratio": 0.385
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 15,
+                "ratio": 0.067
+              },
+              "bar_pub": {
+                "osm": 43,
+                "overture": 281,
+                "ratio": 0.153
+              },
+              "nightclub": {
+                "osm": 5,
+                "overture": 49,
+                "ratio": 0.102
+              },
+              "culture_core": {
+                "osm": 10,
+                "overture": 44,
+                "ratio": 0.227
+              },
+              "nightlife": {
+                "osm": 48,
+                "overture": 330,
+                "ratio": 0.145
               }
             }
           }
@@ -4150,6 +5122,252 @@
           }
         }
       },
+      "houston": {
+        "value": 0.07046799354491662,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 131,
+          "count_raw": 135,
+          "named_share": 0.97,
+          "raw_counts": {
+            "tourism=museum": 45,
+            "tourism=gallery": 12,
+            "amenity=theatre": 41,
+            "amenity=arts_centre": 11,
+            "amenity=cinema": 25,
+            "amenity=music_venue": 1,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 1859.0,
+          "pop_2025": 4301461,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.345,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.1092,
+          "coverage": {
+            "wikidata": {
+              "n_items": 41,
+              "n_museums": 31,
+              "n_notable": 37,
+              "matched_by_wikidata_link": 22,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.585,
+              "recall": 0.568,
+              "recall_museums": 0.613,
+              "osm_culture_to_wikidata_ratio": 3.2
+            },
+            "overture": {
+              "museum": {
+                "osm": 45,
+                "overture": 133,
+                "ratio": 0.338
+              },
+              "performing_arts": {
+                "osm": 53,
+                "overture": 476,
+                "ratio": 0.111
+              },
+              "cinema": {
+                "osm": 25,
+                "overture": 70,
+                "ratio": 0.357
+              },
+              "gallery": {
+                "osm": 12,
+                "overture": 356,
+                "ratio": 0.034
+              },
+              "bar_pub": {
+                "osm": 285,
+                "overture": 1508,
+                "ratio": 0.189
+              },
+              "nightclub": {
+                "osm": 37,
+                "overture": 204,
+                "ratio": 0.181
+              },
+              "culture_core": {
+                "osm": 70,
+                "overture": 203,
+                "ratio": 0.345
+              },
+              "nightlife": {
+                "osm": 322,
+                "overture": 1712,
+                "ratio": 0.188
+              }
+            }
+          }
+        }
+      },
+      "hyderabad": {
+        "value": 0.21147356580427445,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 188,
+          "count_raw": 202,
+          "named_share": 0.926,
+          "raw_counts": {
+            "tourism=museum": 15,
+            "tourism=gallery": 5,
+            "amenity=theatre": 55,
+            "amenity=arts_centre": 3,
+            "amenity=cinema": 124,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 889.0,
+          "pop_2025": 9455230,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.433,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.3611,
+          "coverage": {
+            "wikidata": {
+              "n_items": 6,
+              "n_museums": 6,
+              "n_notable": 6,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.5,
+              "recall": 0.5,
+              "recall_museums": 0.5,
+              "osm_culture_to_wikidata_ratio": 31.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 15,
+                "overture": 37,
+                "ratio": 0.405
+              },
+              "performing_arts": {
+                "osm": 58,
+                "overture": 162,
+                "ratio": 0.358
+              },
+              "cinema": {
+                "osm": 124,
+                "overture": 284,
+                "ratio": 0.437
+              },
+              "gallery": {
+                "osm": 5,
+                "overture": 54,
+                "ratio": 0.093
+              },
+              "bar_pub": {
+                "osm": 146,
+                "overture": 303,
+                "ratio": 0.482
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 54,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 139,
+                "overture": 321,
+                "ratio": 0.433
+              },
+              "nightlife": {
+                "osm": 146,
+                "overture": 357,
+                "ratio": 0.409
+              }
+            }
+          }
+        }
+      },
+      "islamabad": {
+        "value": 0.05454545454545454,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 30,
+          "count_raw": 30,
+          "named_share": 0.8,
+          "raw_counts": {
+            "tourism=museum": 9,
+            "tourism=gallery": 3,
+            "amenity=theatre": 0,
+            "amenity=arts_centre": 2,
+            "amenity=cinema": 16,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 550.0,
+          "pop_2025": 4913528,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.0,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0455,
+          "coverage": {
+            "wikidata": {
+              "n_items": 9,
+              "n_museums": 9,
+              "n_notable": 8,
+              "matched_by_wikidata_link": 7,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.778,
+              "recall": 0.75,
+              "recall_museums": 0.778,
+              "osm_culture_to_wikidata_ratio": 3.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 9,
+                "overture": 10,
+                "ratio": 0.9
+              },
+              "performing_arts": {
+                "osm": 2,
+                "overture": 34,
+                "ratio": 0.059
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 15,
+                "ratio": 1.067
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 16,
+                "ratio": 0.188
+              },
+              "bar_pub": {
+                "osm": 10,
+                "overture": 14,
+                "ratio": 0.714
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 1,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 25,
+                "overture": 25,
+                "ratio": 1.0
+              },
+              "nightlife": {
+                "osm": 10,
+                "overture": 15,
+                "ratio": 0.667
+              }
+            }
+          }
+        }
+      },
       "istanbul": {
         "value": 0.3325453112687155,
         "quality": "estimated",
@@ -4227,6 +5445,88 @@
                 "osm": 483,
                 "overture": 3063,
                 "ratio": 0.158
+              }
+            }
+          }
+        }
+      },
+      "izmir": {
+        "value": 0.3583061889250814,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 110,
+          "count_raw": 113,
+          "named_share": 0.885,
+          "raw_counts": {
+            "tourism=museum": 48,
+            "tourism=gallery": 9,
+            "amenity=theatre": 28,
+            "amenity=arts_centre": 17,
+            "amenity=cinema": 11,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 307.0,
+          "pop_2025": 2457529,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.418,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.4593,
+          "coverage": {
+            "wikidata": {
+              "n_items": 44,
+              "n_museums": 38,
+              "n_notable": 27,
+              "matched_by_wikidata_link": 19,
+              "matched_by_name_250m": 7,
+              "unmatched_but_linked_from_other_osm_object": 6,
+              "recall_all": 0.591,
+              "recall": 0.63,
+              "recall_museums": 0.632,
+              "osm_culture_to_wikidata_ratio": 2.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 48,
+                "overture": 83,
+                "ratio": 0.578
+              },
+              "performing_arts": {
+                "osm": 45,
+                "overture": 271,
+                "ratio": 0.166
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 58,
+                "ratio": 0.19
+              },
+              "gallery": {
+                "osm": 9,
+                "overture": 250,
+                "ratio": 0.036
+              },
+              "bar_pub": {
+                "osm": 79,
+                "overture": 686,
+                "ratio": 0.115
+              },
+              "nightclub": {
+                "osm": 7,
+                "overture": 169,
+                "ratio": 0.041
+              },
+              "culture_core": {
+                "osm": 59,
+                "overture": 141,
+                "ratio": 0.418
+              },
+              "nightlife": {
+                "osm": 86,
+                "overture": 855,
+                "ratio": 0.101
               }
             }
           }
@@ -4396,6 +5696,88 @@
           }
         }
       },
+      "kampala": {
+        "value": 0.05555555555555555,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 45,
+          "count_raw": 45,
+          "named_share": 0.778,
+          "raw_counts": {
+            "tourism=museum": 12,
+            "tourism=gallery": 3,
+            "amenity=theatre": 5,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 24,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 810.0,
+          "pop_2025": 5177878,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.385,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0321,
+          "coverage": {
+            "wikidata": {
+              "n_items": 11,
+              "n_museums": 10,
+              "n_notable": 8,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.455,
+              "recall": 0.625,
+              "recall_museums": 0.4,
+              "osm_culture_to_wikidata_ratio": 4.09
+            },
+            "overture": {
+              "museum": {
+                "osm": 12,
+                "overture": 9,
+                "ratio": 1.333
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 49,
+                "ratio": 0.122
+              },
+              "cinema": {
+                "osm": 24,
+                "overture": 17,
+                "ratio": 1.412
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 23,
+                "ratio": 0.13
+              },
+              "bar_pub": {
+                "osm": 358,
+                "overture": 313,
+                "ratio": 1.144
+              },
+              "nightclub": {
+                "osm": 40,
+                "overture": 31,
+                "ratio": 1.29
+              },
+              "culture_core": {
+                "osm": 36,
+                "overture": 26,
+                "ratio": 1.385
+              },
+              "nightlife": {
+                "osm": 398,
+                "overture": 344,
+                "ratio": 1.157
+              }
+            }
+          }
+        }
+      },
       "kaohsiung": {
         "value": 0.20698924731182797,
         "quality": "estimated",
@@ -4473,6 +5855,88 @@
                 "osm": 42,
                 "overture": 502,
                 "ratio": 0.084
+              }
+            }
+          }
+        }
+      },
+      "karachi": {
+        "value": 0.1091127098321343,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 91,
+          "count_raw": 93,
+          "named_share": 0.946,
+          "raw_counts": {
+            "tourism=museum": 17,
+            "tourism=gallery": 20,
+            "amenity=theatre": 8,
+            "amenity=arts_centre": 8,
+            "amenity=cinema": 40,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 834.0,
+          "pop_2025": 21031703,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.781,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0384,
+          "coverage": {
+            "wikidata": {
+              "n_items": 9,
+              "n_museums": 9,
+              "n_notable": 9,
+              "matched_by_wikidata_link": 1,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.333,
+              "recall": 0.333,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 10.11
+            },
+            "overture": {
+              "museum": {
+                "osm": 17,
+                "overture": 17,
+                "ratio": 1.0
+              },
+              "performing_arts": {
+                "osm": 16,
+                "overture": 60,
+                "ratio": 0.267
+              },
+              "cinema": {
+                "osm": 40,
+                "overture": 15,
+                "ratio": 2.667
+              },
+              "gallery": {
+                "osm": 20,
+                "overture": 35,
+                "ratio": 0.571
+              },
+              "bar_pub": {
+                "osm": 46,
+                "overture": 28,
+                "ratio": 1.643
+              },
+              "nightclub": {
+                "osm": 7,
+                "overture": 2,
+                "ratio": 3.5
+              },
+              "culture_core": {
+                "osm": 57,
+                "overture": 32,
+                "ratio": 1.781
+              },
+              "nightlife": {
+                "osm": 53,
+                "overture": 30,
+                "ratio": 1.767
               }
             }
           }
@@ -4806,6 +6270,88 @@
           }
         }
       },
+      "kolkata": {
+        "value": 0.05116841257050766,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 127,
+          "count_raw": 132,
+          "named_share": 0.909,
+          "raw_counts": {
+            "tourism=museum": 38,
+            "tourism=gallery": 3,
+            "amenity=theatre": 25,
+            "amenity=arts_centre": 8,
+            "amenity=cinema": 58,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 2482.0,
+          "pop_2025": 23314585,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.311,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.1245,
+          "coverage": {
+            "wikidata": {
+              "n_items": 48,
+              "n_museums": 45,
+              "n_notable": 38,
+              "matched_by_wikidata_link": 10,
+              "matched_by_name_250m": 6,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.333,
+              "recall": 0.395,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 2.65
+            },
+            "overture": {
+              "museum": {
+                "osm": 38,
+                "overture": 82,
+                "ratio": 0.463
+              },
+              "performing_arts": {
+                "osm": 33,
+                "overture": 365,
+                "ratio": 0.09
+              },
+              "cinema": {
+                "osm": 58,
+                "overture": 227,
+                "ratio": 0.256
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 102,
+                "ratio": 0.029
+              },
+              "bar_pub": {
+                "osm": 19,
+                "overture": 322,
+                "ratio": 0.059
+              },
+              "nightclub": {
+                "osm": 2,
+                "overture": 60,
+                "ratio": 0.033
+              },
+              "culture_core": {
+                "osm": 96,
+                "overture": 309,
+                "ratio": 0.311
+              },
+              "nightlife": {
+                "osm": 21,
+                "overture": 382,
+                "ratio": 0.055
+              }
+            }
+          }
+        }
+      },
       "kuala-lumpur": {
         "value": 0.11567164179104478,
         "quality": "estimated",
@@ -4965,6 +6511,88 @@
                 "osm": 67,
                 "overture": 303,
                 "ratio": 0.221
+              }
+            }
+          }
+        }
+      },
+      "lahore": {
+        "value": 0.0556792873051225,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 50,
+          "count_raw": 50,
+          "named_share": 0.94,
+          "raw_counts": {
+            "tourism=museum": 11,
+            "tourism=gallery": 3,
+            "amenity=theatre": 4,
+            "amenity=arts_centre": 2,
+            "amenity=cinema": 30,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 898.0,
+          "pop_2025": 14305060,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.079,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0423,
+          "coverage": {
+            "wikidata": {
+              "n_items": 5,
+              "n_museums": 5,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.8,
+              "recall": 1.0,
+              "recall_museums": 0.8,
+              "osm_culture_to_wikidata_ratio": 10.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 11,
+                "overture": 11,
+                "ratio": 1.0
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 69,
+                "ratio": 0.087
+              },
+              "cinema": {
+                "osm": 30,
+                "overture": 27,
+                "ratio": 1.111
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 32,
+                "ratio": 0.094
+              },
+              "bar_pub": {
+                "osm": 7,
+                "overture": 23,
+                "ratio": 0.304
+              },
+              "nightclub": {
+                "osm": 1,
+                "overture": 1,
+                "ratio": 1.0
+              },
+              "culture_core": {
+                "osm": 41,
+                "overture": 38,
+                "ratio": 1.079
+              },
+              "nightlife": {
+                "osm": 8,
+                "overture": 24,
+                "ratio": 0.333
               }
             }
           }
@@ -5298,6 +6926,170 @@
           }
         }
       },
+      "luanda": {
+        "value": 0.035256410256410256,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 33,
+          "count_raw": 33,
+          "named_share": 0.939,
+          "raw_counts": {
+            "tourism=museum": 10,
+            "tourism=gallery": 1,
+            "amenity=theatre": 3,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 16,
+            "amenity=music_venue": 2,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 936.0,
+          "pop_2025": 11672134,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.444,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0192,
+          "coverage": {
+            "wikidata": {
+              "n_items": 5,
+              "n_museums": 4,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 4,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 1.0,
+              "recall": 1.0,
+              "recall_museums": 1.0,
+              "osm_culture_to_wikidata_ratio": 6.6
+            },
+            "overture": {
+              "museum": {
+                "osm": 10,
+                "overture": 9,
+                "ratio": 1.111
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 39,
+                "ratio": 0.154
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 9,
+                "ratio": 1.778
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 3,
+                "ratio": 0.333
+              },
+              "bar_pub": {
+                "osm": 143,
+                "overture": 99,
+                "ratio": 1.444
+              },
+              "nightclub": {
+                "osm": 19,
+                "overture": 15,
+                "ratio": 1.267
+              },
+              "culture_core": {
+                "osm": 26,
+                "overture": 18,
+                "ratio": 1.444
+              },
+              "nightlife": {
+                "osm": 162,
+                "overture": 114,
+                "ratio": 1.421
+              }
+            }
+          }
+        }
+      },
+      "lusaka": {
+        "value": 0.013888888888888888,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 5,
+          "count_raw": 5,
+          "named_share": 1.0,
+          "raw_counts": {
+            "tourism=museum": 1,
+            "tourism=gallery": 0,
+            "amenity=theatre": 1,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 2,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 360.0,
+          "pop_2025": 3658064,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.2,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0417,
+          "coverage": {
+            "wikidata": {
+              "n_items": 2,
+              "n_museums": 0,
+              "n_notable": 0,
+              "matched_by_wikidata_link": 0,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.0,
+              "recall": null,
+              "recall_museums": null,
+              "osm_culture_to_wikidata_ratio": 2.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 1,
+                "overture": 2,
+                "ratio": 0.5
+              },
+              "performing_arts": {
+                "osm": 2,
+                "overture": 25,
+                "ratio": 0.08
+              },
+              "cinema": {
+                "osm": 2,
+                "overture": 13,
+                "ratio": 0.154
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 4,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 694,
+                "overture": 136,
+                "ratio": 5.103
+              },
+              "nightclub": {
+                "osm": 8,
+                "overture": 22,
+                "ratio": 0.364
+              },
+              "culture_core": {
+                "osm": 3,
+                "overture": 15,
+                "ratio": 0.2
+              },
+              "nightlife": {
+                "osm": 702,
+                "overture": 158,
+                "ratio": 4.443
+              }
+            }
+          }
+        }
+      },
       "madrid": {
         "value": 0.7014705882352941,
         "quality": "estimated",
@@ -5457,6 +7249,88 @@
                 "osm": 771,
                 "overture": 2272,
                 "ratio": 0.339
+              }
+            }
+          }
+        }
+      },
+      "maputo": {
+        "value": 0.04912280701754386,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 28,
+          "count_raw": 29,
+          "named_share": 1.0,
+          "raw_counts": {
+            "tourism=museum": 9,
+            "tourism=gallery": 0,
+            "amenity=theatre": 1,
+            "amenity=arts_centre": 11,
+            "amenity=cinema": 8,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 570.0,
+          "pop_2025": 3533370,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 0.944,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0316,
+          "coverage": {
+            "wikidata": {
+              "n_items": 8,
+              "n_museums": 6,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 7,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 1.0,
+              "recall": 1.0,
+              "recall_museums": 1.0,
+              "osm_culture_to_wikidata_ratio": 3.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 9,
+                "overture": 12,
+                "ratio": 0.75
+              },
+              "performing_arts": {
+                "osm": 12,
+                "overture": 23,
+                "ratio": 0.522
+              },
+              "cinema": {
+                "osm": 8,
+                "overture": 6,
+                "ratio": 1.333
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 7,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 268,
+                "overture": 94,
+                "ratio": 2.851
+              },
+              "nightclub": {
+                "osm": 4,
+                "overture": 13,
+                "ratio": 0.308
+              },
+              "culture_core": {
+                "osm": 17,
+                "overture": 18,
+                "ratio": 0.944
+              },
+              "nightlife": {
+                "osm": 272,
+                "overture": 107,
+                "ratio": 2.542
               }
             }
           }
@@ -5949,6 +7823,88 @@
                 "osm": 1544,
                 "overture": 3503,
                 "ratio": 0.441
+              }
+            }
+          }
+        }
+      },
+      "minneapolis": {
+        "value": 0.3567921440261866,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 218,
+          "count_raw": 221,
+          "named_share": 0.95,
+          "raw_counts": {
+            "tourism=museum": 40,
+            "tourism=gallery": 49,
+            "amenity=theatre": 82,
+            "amenity=arts_centre": 32,
+            "amenity=cinema": 15,
+            "amenity=music_venue": 3,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 611.0,
+          "pop_2025": 1217972,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.433,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.2079,
+          "coverage": {
+            "wikidata": {
+              "n_items": 55,
+              "n_museums": 37,
+              "n_notable": 51,
+              "matched_by_wikidata_link": 26,
+              "matched_by_name_250m": 6,
+              "unmatched_but_linked_from_other_osm_object": 7,
+              "recall_all": 0.582,
+              "recall": 0.627,
+              "recall_museums": 0.541,
+              "osm_culture_to_wikidata_ratio": 3.96
+            },
+            "overture": {
+              "museum": {
+                "osm": 40,
+                "overture": 85,
+                "ratio": 0.471
+              },
+              "performing_arts": {
+                "osm": 117,
+                "overture": 283,
+                "ratio": 0.413
+              },
+              "cinema": {
+                "osm": 15,
+                "overture": 42,
+                "ratio": 0.357
+              },
+              "gallery": {
+                "osm": 49,
+                "overture": 318,
+                "ratio": 0.154
+              },
+              "bar_pub": {
+                "osm": 227,
+                "overture": 408,
+                "ratio": 0.556
+              },
+              "nightclub": {
+                "osm": 12,
+                "overture": 30,
+                "ratio": 0.4
+              },
+              "culture_core": {
+                "osm": 55,
+                "overture": 127,
+                "ratio": 0.433
+              },
+              "nightlife": {
+                "osm": 239,
+                "overture": 438,
+                "ratio": 0.546
               }
             }
           }
@@ -7020,6 +8976,88 @@
           }
         }
       },
+      "phoenix": {
+        "value": 0.11042944785276074,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 144,
+          "count_raw": 145,
+          "named_share": 0.841,
+          "raw_counts": {
+            "tourism=museum": 24,
+            "tourism=gallery": 55,
+            "amenity=theatre": 36,
+            "amenity=arts_centre": 8,
+            "amenity=cinema": 21,
+            "amenity=music_venue": 1,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 1304.0,
+          "pop_2025": 2608874,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.378,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0913,
+          "coverage": {
+            "wikidata": {
+              "n_items": 26,
+              "n_museums": 19,
+              "n_notable": 24,
+              "matched_by_wikidata_link": 16,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 4,
+              "recall_all": 0.615,
+              "recall": 0.583,
+              "recall_museums": 0.632,
+              "osm_culture_to_wikidata_ratio": 5.54
+            },
+            "overture": {
+              "museum": {
+                "osm": 24,
+                "overture": 75,
+                "ratio": 0.32
+              },
+              "performing_arts": {
+                "osm": 45,
+                "overture": 232,
+                "ratio": 0.194
+              },
+              "cinema": {
+                "osm": 21,
+                "overture": 44,
+                "ratio": 0.477
+              },
+              "gallery": {
+                "osm": 55,
+                "overture": 260,
+                "ratio": 0.212
+              },
+              "bar_pub": {
+                "osm": 220,
+                "overture": 689,
+                "ratio": 0.319
+              },
+              "nightclub": {
+                "osm": 19,
+                "overture": 55,
+                "ratio": 0.345
+              },
+              "culture_core": {
+                "osm": 45,
+                "overture": 119,
+                "ratio": 0.378
+              },
+              "nightlife": {
+                "osm": 239,
+                "overture": 744,
+                "ratio": 0.321
+              }
+            }
+          }
+        }
+      },
       "prague": {
         "value": 1.4980988593155893,
         "quality": "estimated",
@@ -7343,6 +9381,88 @@
                 "osm": 1051,
                 "overture": 5620,
                 "ratio": 0.187
+              }
+            }
+          }
+        }
+      },
+      "riyadh": {
+        "value": 0.03429602888086643,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 38,
+          "count_raw": 38,
+          "named_share": 0.763,
+          "raw_counts": {
+            "tourism=museum": 12,
+            "tourism=gallery": 0,
+            "amenity=theatre": 11,
+            "amenity=arts_centre": 1,
+            "amenity=cinema": 14,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 1108.0,
+          "pop_2025": 7970319,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.441,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0532,
+          "coverage": {
+            "wikidata": {
+              "n_items": 7,
+              "n_museums": 6,
+              "n_notable": 6,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.286,
+              "recall": 0.333,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 5.43
+            },
+            "overture": {
+              "museum": {
+                "osm": 12,
+                "overture": 22,
+                "ratio": 0.545
+              },
+              "performing_arts": {
+                "osm": 12,
+                "overture": 47,
+                "ratio": 0.255
+              },
+              "cinema": {
+                "osm": 14,
+                "overture": 37,
+                "ratio": 0.378
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 39,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 0,
+                "overture": 122,
+                "ratio": 0.0
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 14,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 26,
+                "overture": 59,
+                "ratio": 0.441
+              },
+              "nightlife": {
+                "osm": 0,
+                "overture": 136,
+                "ratio": 0.0
               }
             }
           }
@@ -8578,6 +10698,88 @@
           }
         }
       },
+      "tashkent": {
+        "value": 0.1806020066889632,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 108,
+          "count_raw": 109,
+          "named_share": 0.862,
+          "raw_counts": {
+            "tourism=museum": 41,
+            "tourism=gallery": 7,
+            "amenity=theatre": 29,
+            "amenity=arts_centre": 12,
+            "amenity=cinema": 20,
+            "amenity=music_venue": 0,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 598.0,
+          "pop_2025": 3874653,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.034,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.0987,
+          "coverage": {
+            "wikidata": {
+              "n_items": 42,
+              "n_museums": 28,
+              "n_notable": 38,
+              "matched_by_wikidata_link": 18,
+              "matched_by_name_250m": 8,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.619,
+              "recall": 0.684,
+              "recall_museums": 0.607,
+              "osm_culture_to_wikidata_ratio": 2.57
+            },
+            "overture": {
+              "museum": {
+                "osm": 41,
+                "overture": 34,
+                "ratio": 1.206
+              },
+              "performing_arts": {
+                "osm": 41,
+                "overture": 81,
+                "ratio": 0.506
+              },
+              "cinema": {
+                "osm": 20,
+                "overture": 25,
+                "ratio": 0.8
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 27,
+                "ratio": 0.259
+              },
+              "bar_pub": {
+                "osm": 123,
+                "overture": 143,
+                "ratio": 0.86
+              },
+              "nightclub": {
+                "osm": 23,
+                "overture": 15,
+                "ratio": 1.533
+              },
+              "culture_core": {
+                "osm": 61,
+                "overture": 59,
+                "ratio": 1.034
+              },
+              "nightlife": {
+                "osm": 146,
+                "overture": 158,
+                "ratio": 0.924
+              }
+            }
+          }
+        }
+      },
       "tbilisi": {
         "value": 0.9271523178807947,
         "quality": "estimated",
@@ -8988,6 +11190,88 @@
           }
         }
       },
+      "tunis": {
+        "value": 0.1721311475409836,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 84,
+          "count_raw": 85,
+          "named_share": 0.929,
+          "raw_counts": {
+            "tourism=museum": 23,
+            "tourism=gallery": 7,
+            "amenity=theatre": 14,
+            "amenity=arts_centre": 29,
+            "amenity=cinema": 11,
+            "amenity=music_venue": 1,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 488.0,
+          "pop_2025": 2790169,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.391,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.1783,
+          "coverage": {
+            "wikidata": {
+              "n_items": 28,
+              "n_museums": 21,
+              "n_notable": 27,
+              "matched_by_wikidata_link": 12,
+              "matched_by_name_250m": 5,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.607,
+              "recall": 0.63,
+              "recall_museums": 0.714,
+              "osm_culture_to_wikidata_ratio": 3.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 23,
+                "overture": 52,
+                "ratio": 0.442
+              },
+              "performing_arts": {
+                "osm": 44,
+                "overture": 148,
+                "ratio": 0.297
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 35,
+                "ratio": 0.314
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 59,
+                "ratio": 0.119
+              },
+              "bar_pub": {
+                "osm": 55,
+                "overture": 153,
+                "ratio": 0.359
+              },
+              "nightclub": {
+                "osm": 6,
+                "overture": 17,
+                "ratio": 0.353
+              },
+              "culture_core": {
+                "osm": 34,
+                "overture": 87,
+                "ratio": 0.391
+              },
+              "nightlife": {
+                "osm": 61,
+                "overture": 170,
+                "ratio": 0.359
+              }
+            }
+          }
+        }
+      },
       "ulaanbaatar": {
         "value": 0.24680851063829787,
         "quality": "estimated",
@@ -9316,6 +11600,88 @@
           }
         }
       },
+      "washington": {
+        "value": 0.2767102229054573,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 360,
+          "count_raw": 366,
+          "named_share": 0.94,
+          "raw_counts": {
+            "tourism=museum": 106,
+            "tourism=gallery": 54,
+            "amenity=theatre": 108,
+            "amenity=arts_centre": 53,
+            "amenity=cinema": 43,
+            "amenity=music_venue": 2,
+            "amenity=concert_hall": 0
+          },
+          "area_km2": 1301.0,
+          "pop_2025": 3471725,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.342,
+          "median_osm_over_overture_86": 0.465,
+          "overture_density_per_km2": 0.3351,
+          "coverage": {
+            "wikidata": {
+              "n_items": 143,
+              "n_museums": 113,
+              "n_notable": 112,
+              "matched_by_wikidata_link": 80,
+              "matched_by_name_250m": 11,
+              "unmatched_but_linked_from_other_osm_object": 12,
+              "recall_all": 0.636,
+              "recall": 0.607,
+              "recall_museums": 0.611,
+              "osm_culture_to_wikidata_ratio": 2.52
+            },
+            "overture": {
+              "museum": {
+                "osm": 106,
+                "overture": 333,
+                "ratio": 0.318
+              },
+              "performing_arts": {
+                "osm": 163,
+                "overture": 425,
+                "ratio": 0.384
+              },
+              "cinema": {
+                "osm": 43,
+                "overture": 103,
+                "ratio": 0.417
+              },
+              "gallery": {
+                "osm": 54,
+                "overture": 396,
+                "ratio": 0.136
+              },
+              "bar_pub": {
+                "osm": 450,
+                "overture": 885,
+                "ratio": 0.508
+              },
+              "nightclub": {
+                "osm": 36,
+                "overture": 72,
+                "ratio": 0.5
+              },
+              "culture_core": {
+                "osm": 149,
+                "overture": 436,
+                "ratio": 0.342
+              },
+              "nightlife": {
+                "osm": 486,
+                "overture": 957,
+                "ratio": 0.508
+              }
+            }
+          }
+        }
+      },
       "yangon": {
         "value": 0.12477064220183487,
         "quality": "estimated",
@@ -9509,6 +11875,15 @@
           "pop_2025": 7280463
         }
       },
+      "algiers": {
+        "value": 0.6030941222264411,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 20,
+          "pop_2025": 3316232
+        }
+      },
       "almaty": {
         "value": 6.6507213060953925,
         "quality": "estimated",
@@ -9518,6 +11893,15 @@
           "pop_2025": 2315538
         }
       },
+      "amman": {
+        "value": 0.6381078659712429,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 41,
+          "pop_2025": 6425246
+        }
+      },
       "amsterdam": {
         "value": 55.500758796320376,
         "quality": "estimated",
@@ -9525,6 +11909,15 @@
         "detail": {
           "count_dedup": 679,
           "pop_2025": 1223407
+        }
+      },
+      "ankara": {
+        "value": 3.1655934130299794,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 117,
+          "pop_2025": 3695989
         }
       },
       "athens": {
@@ -9543,6 +11936,15 @@
         "detail": {
           "count_dedup": 309,
           "pop_2025": 1623898
+        }
+      },
+      "baku": {
+        "value": 12.113201711756574,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "pop_2025": 1973054
         }
       },
       "bangkok": {
@@ -9572,6 +11974,15 @@
           "pop_2025": 18150576
         }
       },
+      "beirut": {
+        "value": 9.945491413692594,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 153,
+          "pop_2025": 1538386
+        }
+      },
       "bengaluru": {
         "value": 2.9120073917025273,
         "quality": "estimated",
@@ -9597,6 +12008,24 @@
         "detail": {
           "count_dedup": 907,
           "pop_2025": 10419361
+        }
+      },
+      "boston": {
+        "value": 17.013017191409457,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 284,
+          "pop_2025": 1669310
+        }
+      },
+      "brisbane": {
+        "value": 22.661980671355348,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 308,
+          "pop_2025": 1359105
         }
       },
       "budapest": {
@@ -9734,6 +12163,15 @@
           "pop_2025": 37307160
         }
       },
+      "doha": {
+        "value": 0.8584054512405991,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 17,
+          "pop_2025": 1980416
+        }
+      },
       "dubai": {
         "value": 4.314992134727617,
         "quality": "estimated",
@@ -9750,6 +12188,15 @@
         "detail": {
           "count_dedup": 694,
           "pop_2025": 1124520
+        }
+      },
+      "durban": {
+        "value": 1.4675004852374431,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 48,
+          "pop_2025": 3270868
         }
       },
       "edinburgh": {
@@ -9833,6 +12280,33 @@
           "pop_2025": 541957
         }
       },
+      "houston": {
+        "value": 7.485828763551045,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 322,
+          "pop_2025": 4301461
+        }
+      },
+      "hyderabad": {
+        "value": 1.5018143585311086,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 142,
+          "pop_2025": 9455230
+        }
+      },
+      "islamabad": {
+        "value": 0.20351976007592779,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 10,
+          "pop_2025": 4913528
+        }
+      },
       "istanbul": {
         "value": 3.35673853406571,
         "quality": "estimated",
@@ -9840,6 +12314,15 @@
         "detail": {
           "count_dedup": 477,
           "pop_2025": 14210222
+        }
+      },
+      "izmir": {
+        "value": 3.418066944320639,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 84,
+          "pop_2025": 2457529
         }
       },
       "jakarta": {
@@ -9860,6 +12343,15 @@
           "pop_2025": 8592843
         }
       },
+      "kampala": {
+        "value": 7.628608206171602,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 395,
+          "pop_2025": 5177878
+        }
+      },
       "kaohsiung": {
         "value": 1.8302472525593074,
         "quality": "estimated",
@@ -9867,6 +12359,15 @@
         "detail": {
           "count_dedup": 42,
           "pop_2025": 2294772
+        }
+      },
+      "karachi": {
+        "value": 0.2520005188376871,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 53,
+          "pop_2025": 21031703
         }
       },
       "kathmandu": {
@@ -9905,6 +12406,15 @@
           "pop_2025": 5069022
         }
       },
+      "kolkata": {
+        "value": 0.09007237187692242,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 21,
+          "pop_2025": 23314585
+        }
+      },
       "kuala-lumpur": {
         "value": 3.7441138091470973,
         "quality": "estimated",
@@ -9921,6 +12431,15 @@
         "detail": {
           "count_dedup": 67,
           "pop_2025": 12846045
+        }
+      },
+      "lahore": {
+        "value": 0.05592426723986282,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 8,
+          "pop_2025": 14305060
         }
       },
       "lima": {
@@ -9959,6 +12478,24 @@
           "pop_2025": 13474333
         }
       },
+      "luanda": {
+        "value": 1.3793536132212878,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 161,
+          "pop_2025": 11672134
+        }
+      },
+      "lusaka": {
+        "value": 18.479719470685243,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 676,
+          "pop_2025": 3658064
+        }
+      },
       "madrid": {
         "value": 59.135902349885484,
         "quality": "estimated",
@@ -9975,6 +12512,15 @@
         "detail": {
           "count_dedup": 770,
           "pop_2025": 25921189
+        }
+      },
+      "maputo": {
+        "value": 7.556524584771656,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 267,
+          "pop_2025": 3533370
         }
       },
       "marrakesh": {
@@ -10029,6 +12575,15 @@
         "detail": {
           "count_dedup": 1540,
           "pop_2025": 3135553
+        }
+      },
+      "minneapolis": {
+        "value": 19.62277592645599,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "pop_2025": 1217972
         }
       },
       "montevideo": {
@@ -10148,6 +12703,15 @@
           "pop_2025": 2419131
         }
       },
+      "phoenix": {
+        "value": 9.161040058397452,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "pop_2025": 2608874
+        }
+      },
       "prague": {
         "value": 78.33326060937796,
         "quality": "estimated",
@@ -10182,6 +12746,15 @@
         "detail": {
           "count_dedup": 1046,
           "pop_2025": 9853693
+        }
+      },
+      "riyadh": {
+        "value": 0.0,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 0,
+          "pop_2025": 7970319
         }
       },
       "rome": {
@@ -10319,6 +12892,15 @@
           "pop_2025": 9686521
         }
       },
+      "tashkent": {
+        "value": 3.742271003817328,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 145,
+          "pop_2025": 3874653
+        }
+      },
       "tbilisi": {
         "value": 33.79616790997417,
         "quality": "estimated",
@@ -10364,6 +12946,15 @@
           "pop_2025": 5566382
         }
       },
+      "tunis": {
+        "value": 2.186247484815901,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 61,
+          "pop_2025": 2790169
+        }
+      },
       "ulaanbaatar": {
         "value": 10.648085589228739,
         "quality": "estimated",
@@ -10398,6 +12989,15 @@
         "detail": {
           "count_dedup": 494,
           "pop_2025": 1999986
+        }
+      },
+      "washington": {
+        "value": 13.941196017913965,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 484,
+          "pop_2025": 3471725
         }
       },
       "yangon": {
@@ -10438,7 +13038,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 10.296,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.5567,
           "coverage": {
             "wikidata": {
@@ -10516,7 +13116,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 2.445,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.2284,
           "coverage": {
             "wikidata": {
@@ -10594,7 +13194,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 3.035,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1226,
           "coverage": {
             "wikidata": {
@@ -10654,6 +13254,84 @@
           }
         }
       },
+      "algiers": {
+        "value": 0.042735042735042736,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 20,
+          "count_raw": 21,
+          "named_share": 0.667,
+          "raw_counts": {
+            "amenity=nightclub": 11,
+            "amenity=bar": 9,
+            "amenity=pub": 1
+          },
+          "area_km2": 468.0,
+          "pop_2025": 3316232,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.636,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.0705,
+          "coverage": {
+            "wikidata": {
+              "n_items": 15,
+              "n_museums": 9,
+              "n_notable": 10,
+              "matched_by_wikidata_link": 5,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.4,
+              "recall": 0.6,
+              "recall_museums": 0.556,
+              "osm_culture_to_wikidata_ratio": 4.93
+            },
+            "overture": {
+              "museum": {
+                "osm": 23,
+                "overture": 27,
+                "ratio": 0.852
+              },
+              "performing_arts": {
+                "osm": 28,
+                "overture": 43,
+                "ratio": 0.651
+              },
+              "cinema": {
+                "osm": 22,
+                "overture": 13,
+                "ratio": 1.692
+              },
+              "gallery": {
+                "osm": 2,
+                "overture": 11,
+                "ratio": 0.182
+              },
+              "bar_pub": {
+                "osm": 10,
+                "overture": 27,
+                "ratio": 0.37
+              },
+              "nightclub": {
+                "osm": 11,
+                "overture": 6,
+                "ratio": 1.833
+              },
+              "culture_core": {
+                "osm": 45,
+                "overture": 40,
+                "ratio": 1.125
+              },
+              "nightlife": {
+                "osm": 21,
+                "overture": 33,
+                "ratio": 0.636
+              }
+            }
+          }
+        }
+      },
       "almaty": {
         "value": 0.4652567975830816,
         "quality": "estimated",
@@ -10672,7 +13350,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.438,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.0634,
           "coverage": {
             "wikidata": {
@@ -10732,6 +13410,84 @@
           }
         }
       },
+      "amman": {
+        "value": 0.07884615384615384,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 41,
+          "count_raw": 42,
+          "named_share": 0.714,
+          "raw_counts": {
+            "amenity=nightclub": 1,
+            "amenity=bar": 32,
+            "amenity=pub": 9
+          },
+          "area_km2": 520.0,
+          "pop_2025": 6425246,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.323,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.25,
+          "coverage": {
+            "wikidata": {
+              "n_items": 12,
+              "n_museums": 10,
+              "n_notable": 12,
+              "matched_by_wikidata_link": 6,
+              "matched_by_name_250m": 4,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.833,
+              "recall": 0.833,
+              "recall_museums": 0.8,
+              "osm_culture_to_wikidata_ratio": 4.17
+            },
+            "overture": {
+              "museum": {
+                "osm": 21,
+                "overture": 28,
+                "ratio": 0.75
+              },
+              "performing_arts": {
+                "osm": 15,
+                "overture": 70,
+                "ratio": 0.214
+              },
+              "cinema": {
+                "osm": 8,
+                "overture": 11,
+                "ratio": 0.727
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 52,
+                "ratio": 0.135
+              },
+              "bar_pub": {
+                "osm": 41,
+                "overture": 123,
+                "ratio": 0.333
+              },
+              "nightclub": {
+                "osm": 1,
+                "overture": 7,
+                "ratio": 0.143
+              },
+              "culture_core": {
+                "osm": 29,
+                "overture": 39,
+                "ratio": 0.744
+              },
+              "nightlife": {
+                "osm": 42,
+                "overture": 130,
+                "ratio": 0.323
+              }
+            }
+          }
+        }
+      },
       "amsterdam": {
         "value": 2.2045454545454546,
         "quality": "estimated",
@@ -10750,7 +13506,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.681,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.237,
           "coverage": {
             "wikidata": {
@@ -10810,6 +13566,84 @@
           }
         }
       },
+      "ankara": {
+        "value": 0.3277310924369748,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 117,
+          "count_raw": 117,
+          "named_share": 0.923,
+          "raw_counts": {
+            "amenity=nightclub": 9,
+            "amenity=bar": 62,
+            "amenity=pub": 46
+          },
+          "area_km2": 357.0,
+          "pop_2025": 3695989,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.167,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 1.9664,
+          "coverage": {
+            "wikidata": {
+              "n_items": 98,
+              "n_museums": 82,
+              "n_notable": 68,
+              "matched_by_wikidata_link": 24,
+              "matched_by_name_250m": 19,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.439,
+              "recall": 0.559,
+              "recall_museums": 0.439,
+              "osm_culture_to_wikidata_ratio": 1.1
+            },
+            "overture": {
+              "museum": {
+                "osm": 54,
+                "overture": 116,
+                "ratio": 0.466
+              },
+              "performing_arts": {
+                "osm": 35,
+                "overture": 301,
+                "ratio": 0.116
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 72,
+                "ratio": 0.222
+              },
+              "gallery": {
+                "osm": 5,
+                "overture": 291,
+                "ratio": 0.017
+              },
+              "bar_pub": {
+                "osm": 108,
+                "overture": 530,
+                "ratio": 0.204
+              },
+              "nightclub": {
+                "osm": 9,
+                "overture": 172,
+                "ratio": 0.052
+              },
+              "culture_core": {
+                "osm": 70,
+                "overture": 188,
+                "ratio": 0.372
+              },
+              "nightlife": {
+                "osm": 117,
+                "overture": 702,
+                "ratio": 0.167
+              }
+            }
+          }
+        }
+      },
       "athens": {
         "value": 1.6432038834951457,
         "quality": "estimated",
@@ -10828,7 +13662,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.38,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 4.3519,
           "coverage": {
             "wikidata": {
@@ -10906,7 +13740,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.663,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7304,
           "coverage": {
             "wikidata": {
@@ -10966,6 +13800,84 @@
           }
         }
       },
+      "baku": {
+        "value": 0.7029411764705882,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "count_raw": 242,
+          "named_share": 0.657,
+          "raw_counts": {
+            "amenity=nightclub": 23,
+            "amenity=bar": 106,
+            "amenity=pub": 113
+          },
+          "area_km2": 340.0,
+          "pop_2025": 1973054,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.526,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 1.3529,
+          "coverage": {
+            "wikidata": {
+              "n_items": 71,
+              "n_museums": 51,
+              "n_notable": 70,
+              "matched_by_wikidata_link": 22,
+              "matched_by_name_250m": 13,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.493,
+              "recall": 0.5,
+              "recall_museums": 0.373,
+              "osm_culture_to_wikidata_ratio": 1.99
+            },
+            "overture": {
+              "museum": {
+                "osm": 48,
+                "overture": 53,
+                "ratio": 0.906
+              },
+              "performing_arts": {
+                "osm": 75,
+                "overture": 133,
+                "ratio": 0.564
+              },
+              "cinema": {
+                "osm": 18,
+                "overture": 46,
+                "ratio": 0.391
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 51,
+                "ratio": 0.02
+              },
+              "bar_pub": {
+                "osm": 219,
+                "overture": 410,
+                "ratio": 0.534
+              },
+              "nightclub": {
+                "osm": 23,
+                "overture": 50,
+                "ratio": 0.46
+              },
+              "culture_core": {
+                "osm": 66,
+                "overture": 99,
+                "ratio": 0.667
+              },
+              "nightlife": {
+                "osm": 242,
+                "overture": 460,
+                "ratio": 0.526
+              }
+            }
+          }
+        }
+      },
       "bangkok": {
         "value": 0.3181312569521691,
         "quality": "estimated",
@@ -10984,7 +13896,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.207,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.5428,
           "coverage": {
             "wikidata": {
@@ -11062,7 +13974,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.543,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 9.7055,
           "coverage": {
             "wikidata": {
@@ -11140,7 +14052,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 1.778,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.0743,
           "coverage": {
             "wikidata": {
@@ -11200,6 +14112,84 @@
           }
         }
       },
+      "beirut": {
+        "value": 0.7688442211055276,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 153,
+          "count_raw": 155,
+          "named_share": 0.974,
+          "raw_counts": {
+            "amenity=nightclub": 21,
+            "amenity=bar": 102,
+            "amenity=pub": 32
+          },
+          "area_km2": 199.0,
+          "pop_2025": 1538386,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.403,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 1.9347,
+          "coverage": {
+            "wikidata": {
+              "n_items": 17,
+              "n_museums": 16,
+              "n_notable": 15,
+              "matched_by_wikidata_link": 9,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.588,
+              "recall": 0.533,
+              "recall_museums": 0.625,
+              "osm_culture_to_wikidata_ratio": 4.41
+            },
+            "overture": {
+              "museum": {
+                "osm": 18,
+                "overture": 34,
+                "ratio": 0.529
+              },
+              "performing_arts": {
+                "osm": 29,
+                "overture": 74,
+                "ratio": 0.392
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 20,
+                "ratio": 0.8
+              },
+              "gallery": {
+                "osm": 12,
+                "overture": 73,
+                "ratio": 0.164
+              },
+              "bar_pub": {
+                "osm": 134,
+                "overture": 280,
+                "ratio": 0.479
+              },
+              "nightclub": {
+                "osm": 21,
+                "overture": 105,
+                "ratio": 0.2
+              },
+              "culture_core": {
+                "osm": 34,
+                "overture": 54,
+                "ratio": 0.63
+              },
+              "nightlife": {
+                "osm": 155,
+                "overture": 385,
+                "ratio": 0.403
+              }
+            }
+          }
+        }
+      },
       "bengaluru": {
         "value": 0.4384920634920635,
         "quality": "estimated",
@@ -11218,7 +14208,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.554,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7917,
           "coverage": {
             "wikidata": {
@@ -11296,7 +14286,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.747,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.9545,
           "coverage": {
             "wikidata": {
@@ -11374,7 +14364,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.323,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 5.3071,
           "coverage": {
             "wikidata": {
@@ -11434,6 +14424,162 @@
           }
         }
       },
+      "boston": {
+        "value": 0.5590551181102362,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 284,
+          "count_raw": 285,
+          "named_share": 0.982,
+          "raw_counts": {
+            "amenity=nightclub": 22,
+            "amenity=bar": 162,
+            "amenity=pub": 101
+          },
+          "area_km2": 508.0,
+          "pop_2025": 1669310,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.42,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 1.3346,
+          "coverage": {
+            "wikidata": {
+              "n_items": 109,
+              "n_museums": 62,
+              "n_notable": 100,
+              "matched_by_wikidata_link": 51,
+              "matched_by_name_250m": 14,
+              "unmatched_but_linked_from_other_osm_object": 11,
+              "recall_all": 0.596,
+              "recall": 0.59,
+              "recall_museums": 0.742,
+              "osm_culture_to_wikidata_ratio": 2.61
+            },
+            "overture": {
+              "museum": {
+                "osm": 96,
+                "overture": 197,
+                "ratio": 0.487
+              },
+              "performing_arts": {
+                "osm": 128,
+                "overture": 360,
+                "ratio": 0.356
+              },
+              "cinema": {
+                "osm": 23,
+                "overture": 43,
+                "ratio": 0.535
+              },
+              "gallery": {
+                "osm": 38,
+                "overture": 265,
+                "ratio": 0.143
+              },
+              "bar_pub": {
+                "osm": 263,
+                "overture": 632,
+                "ratio": 0.416
+              },
+              "nightclub": {
+                "osm": 22,
+                "overture": 46,
+                "ratio": 0.478
+              },
+              "culture_core": {
+                "osm": 119,
+                "overture": 240,
+                "ratio": 0.496
+              },
+              "nightlife": {
+                "osm": 285,
+                "overture": 678,
+                "ratio": 0.42
+              }
+            }
+          }
+        }
+      },
+      "brisbane": {
+        "value": 0.43937232524964337,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 308,
+          "count_raw": 311,
+          "named_share": 0.987,
+          "raw_counts": {
+            "amenity=nightclub": 10,
+            "amenity=bar": 145,
+            "amenity=pub": 156
+          },
+          "area_km2": 701.0,
+          "pop_2025": 1359105,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.501,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.8859,
+          "coverage": {
+            "wikidata": {
+              "n_items": 25,
+              "n_museums": 19,
+              "n_notable": 22,
+              "matched_by_wikidata_link": 8,
+              "matched_by_name_250m": 4,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.48,
+              "recall": 0.5,
+              "recall_museums": 0.526,
+              "osm_culture_to_wikidata_ratio": 5.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 24,
+                "overture": 69,
+                "ratio": 0.348
+              },
+              "performing_arts": {
+                "osm": 46,
+                "overture": 198,
+                "ratio": 0.232
+              },
+              "cinema": {
+                "osm": 28,
+                "overture": 70,
+                "ratio": 0.4
+              },
+              "gallery": {
+                "osm": 27,
+                "overture": 149,
+                "ratio": 0.181
+              },
+              "bar_pub": {
+                "osm": 301,
+                "overture": 569,
+                "ratio": 0.529
+              },
+              "nightclub": {
+                "osm": 10,
+                "overture": 52,
+                "ratio": 0.192
+              },
+              "culture_core": {
+                "osm": 52,
+                "overture": 139,
+                "ratio": 0.374
+              },
+              "nightlife": {
+                "osm": 311,
+                "overture": 621,
+                "ratio": 0.501
+              }
+            }
+          }
+        }
+      },
       "budapest": {
         "value": 2.5842391304347827,
         "quality": "estimated",
@@ -11452,7 +14598,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.723,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.587,
           "coverage": {
             "wikidata": {
@@ -11530,7 +14676,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.31,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.6011,
           "coverage": {
             "wikidata": {
@@ -11608,7 +14754,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.214,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1393,
           "coverage": {
             "wikidata": {
@@ -11686,7 +14832,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.304,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7727,
           "coverage": {
             "wikidata": {
@@ -11764,7 +14910,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.432,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.3181,
           "coverage": {
             "wikidata": {
@@ -11842,7 +14988,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.368,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.863,
           "coverage": {
             "wikidata": {
@@ -11920,7 +15066,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.25,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1901,
           "coverage": {
             "wikidata": {
@@ -11998,7 +15144,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.455,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.1833,
           "coverage": {
             "wikidata": {
@@ -12076,7 +15222,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.468,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1841,
           "coverage": {
             "wikidata": {
@@ -12154,7 +15300,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.709,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.3675,
           "coverage": {
             "wikidata": {
@@ -12232,7 +15378,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 2.073,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1986,
           "coverage": {
             "wikidata": {
@@ -12310,7 +15456,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 9.192,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1951,
           "coverage": {
             "wikidata": {
@@ -12388,7 +15534,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.363,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.884,
           "coverage": {
             "wikidata": {
@@ -12466,7 +15612,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.551,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8308,
           "coverage": {
             "wikidata": {
@@ -12544,7 +15690,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.513,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.0115,
           "coverage": {
             "wikidata": {
@@ -12604,6 +15750,84 @@
           }
         }
       },
+      "doha": {
+        "value": 0.04336734693877551,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 17,
+          "count_raw": 17,
+          "named_share": 0.412,
+          "raw_counts": {
+            "amenity=nightclub": 8,
+            "amenity=bar": 8,
+            "amenity=pub": 1
+          },
+          "area_km2": 392.0,
+          "pop_2025": 1980416,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.126,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.3444,
+          "coverage": {
+            "wikidata": {
+              "n_items": 11,
+              "n_museums": 9,
+              "n_notable": 10,
+              "matched_by_wikidata_link": 3,
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.545,
+              "recall": 0.6,
+              "recall_museums": 0.556,
+              "osm_culture_to_wikidata_ratio": 3.55
+            },
+            "overture": {
+              "museum": {
+                "osm": 14,
+                "overture": 22,
+                "ratio": 0.636
+              },
+              "performing_arts": {
+                "osm": 9,
+                "overture": 29,
+                "ratio": 0.31
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 26,
+                "ratio": 0.423
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 12,
+                "ratio": 0.583
+              },
+              "bar_pub": {
+                "osm": 9,
+                "overture": 102,
+                "ratio": 0.088
+              },
+              "nightclub": {
+                "osm": 8,
+                "overture": 33,
+                "ratio": 0.242
+              },
+              "culture_core": {
+                "osm": 25,
+                "overture": 48,
+                "ratio": 0.521
+              },
+              "nightlife": {
+                "osm": 17,
+                "overture": 135,
+                "ratio": 0.126
+              }
+            }
+          }
+        }
+      },
       "dubai": {
         "value": 0.2306791569086651,
         "quality": "estimated",
@@ -12620,9 +15844,9 @@
           "area_km2": 854.0,
           "pop_2025": 4565478,
           "osm_snapshot": "planet-260921",
-          "coverage_flag": "osm_low_vs_overture",
+          "coverage_flag": "ok",
           "osm_over_overture": 0.243,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.9649,
           "coverage": {
             "wikidata": {
@@ -12700,7 +15924,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.739,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.1528,
           "coverage": {
             "wikidata": {
@@ -12760,6 +15984,84 @@
           }
         }
       },
+      "durban": {
+        "value": 0.05947955390334572,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 48,
+          "count_raw": 48,
+          "named_share": 0.896,
+          "raw_counts": {
+            "amenity=nightclub": 5,
+            "amenity=bar": 29,
+            "amenity=pub": 14
+          },
+          "area_km2": 807.0,
+          "pop_2025": 3270868,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.145,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.4089,
+          "coverage": {
+            "wikidata": {
+              "n_items": 3,
+              "n_museums": 2,
+              "n_notable": 1,
+              "matched_by_wikidata_link": 0,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.333,
+              "recall": 1.0,
+              "recall_museums": 0.5,
+              "osm_culture_to_wikidata_ratio": 6.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 5,
+                "overture": 31,
+                "ratio": 0.161
+              },
+              "performing_arts": {
+                "osm": 8,
+                "overture": 98,
+                "ratio": 0.082
+              },
+              "cinema": {
+                "osm": 5,
+                "overture": 13,
+                "ratio": 0.385
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 15,
+                "ratio": 0.067
+              },
+              "bar_pub": {
+                "osm": 43,
+                "overture": 281,
+                "ratio": 0.153
+              },
+              "nightclub": {
+                "osm": 5,
+                "overture": 49,
+                "ratio": 0.102
+              },
+              "culture_core": {
+                "osm": 10,
+                "overture": 44,
+                "ratio": 0.227
+              },
+              "nightlife": {
+                "osm": 48,
+                "overture": 330,
+                "ratio": 0.145
+              }
+            }
+          }
+        }
+      },
       "edinburgh": {
         "value": 3.8384615384615386,
         "quality": "estimated",
@@ -12778,7 +16080,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.644,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 5.9615,
           "coverage": {
             "wikidata": {
@@ -12856,7 +16158,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.191,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.0872,
           "coverage": {
             "wikidata": {
@@ -12932,9 +16234,9 @@
           "area_km2": 450.0,
           "pop_2025": 2213305,
           "osm_snapshot": "planet-260921",
-          "coverage_flag": "osm_low_vs_overture",
+          "coverage_flag": "ok",
           "osm_over_overture": 0.248,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 6.2622,
           "coverage": {
             "wikidata": {
@@ -13012,7 +16314,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.201,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.3427,
           "coverage": {
             "wikidata": {
@@ -13090,7 +16392,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 1.825,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.6947,
           "coverage": {
             "wikidata": {
@@ -13168,7 +16470,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.794,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.6982,
           "coverage": {
             "wikidata": {
@@ -13246,7 +16548,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.134,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.115,
           "coverage": {
             "wikidata": {
@@ -13324,7 +16626,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.226,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 4.5955,
           "coverage": {
             "wikidata": {
@@ -13402,7 +16704,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.357,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.4237,
           "coverage": {
             "wikidata": {
@@ -13462,6 +16764,240 @@
           }
         }
       },
+      "houston": {
+        "value": 0.17321140398063475,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 322,
+          "count_raw": 322,
+          "named_share": 0.981,
+          "raw_counts": {
+            "amenity=nightclub": 37,
+            "amenity=bar": 228,
+            "amenity=pub": 57
+          },
+          "area_km2": 1859.0,
+          "pop_2025": 4301461,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.188,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.9209,
+          "coverage": {
+            "wikidata": {
+              "n_items": 41,
+              "n_museums": 31,
+              "n_notable": 37,
+              "matched_by_wikidata_link": 22,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 3,
+              "recall_all": 0.585,
+              "recall": 0.568,
+              "recall_museums": 0.613,
+              "osm_culture_to_wikidata_ratio": 3.2
+            },
+            "overture": {
+              "museum": {
+                "osm": 45,
+                "overture": 133,
+                "ratio": 0.338
+              },
+              "performing_arts": {
+                "osm": 53,
+                "overture": 476,
+                "ratio": 0.111
+              },
+              "cinema": {
+                "osm": 25,
+                "overture": 70,
+                "ratio": 0.357
+              },
+              "gallery": {
+                "osm": 12,
+                "overture": 356,
+                "ratio": 0.034
+              },
+              "bar_pub": {
+                "osm": 285,
+                "overture": 1508,
+                "ratio": 0.189
+              },
+              "nightclub": {
+                "osm": 37,
+                "overture": 204,
+                "ratio": 0.181
+              },
+              "culture_core": {
+                "osm": 70,
+                "overture": 203,
+                "ratio": 0.345
+              },
+              "nightlife": {
+                "osm": 322,
+                "overture": 1712,
+                "ratio": 0.188
+              }
+            }
+          }
+        }
+      },
+      "hyderabad": {
+        "value": 0.1597300337457818,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 142,
+          "count_raw": 146,
+          "named_share": 0.836,
+          "raw_counts": {
+            "amenity=nightclub": 0,
+            "amenity=bar": 122,
+            "amenity=pub": 24
+          },
+          "area_km2": 889.0,
+          "pop_2025": 9455230,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.409,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.4016,
+          "coverage": {
+            "wikidata": {
+              "n_items": 6,
+              "n_museums": 6,
+              "n_notable": 6,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.5,
+              "recall": 0.5,
+              "recall_museums": 0.5,
+              "osm_culture_to_wikidata_ratio": 31.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 15,
+                "overture": 37,
+                "ratio": 0.405
+              },
+              "performing_arts": {
+                "osm": 58,
+                "overture": 162,
+                "ratio": 0.358
+              },
+              "cinema": {
+                "osm": 124,
+                "overture": 284,
+                "ratio": 0.437
+              },
+              "gallery": {
+                "osm": 5,
+                "overture": 54,
+                "ratio": 0.093
+              },
+              "bar_pub": {
+                "osm": 146,
+                "overture": 303,
+                "ratio": 0.482
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 54,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 139,
+                "overture": 321,
+                "ratio": 0.433
+              },
+              "nightlife": {
+                "osm": 146,
+                "overture": 357,
+                "ratio": 0.409
+              }
+            }
+          }
+        }
+      },
+      "islamabad": {
+        "value": 0.01818181818181818,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 10,
+          "count_raw": 10,
+          "named_share": 0.8,
+          "raw_counts": {
+            "amenity=nightclub": 0,
+            "amenity=bar": 8,
+            "amenity=pub": 2
+          },
+          "area_km2": 550.0,
+          "pop_2025": 4913528,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.667,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.0273,
+          "coverage": {
+            "wikidata": {
+              "n_items": 9,
+              "n_museums": 9,
+              "n_notable": 8,
+              "matched_by_wikidata_link": 7,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.778,
+              "recall": 0.75,
+              "recall_museums": 0.778,
+              "osm_culture_to_wikidata_ratio": 3.33
+            },
+            "overture": {
+              "museum": {
+                "osm": 9,
+                "overture": 10,
+                "ratio": 0.9
+              },
+              "performing_arts": {
+                "osm": 2,
+                "overture": 34,
+                "ratio": 0.059
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 15,
+                "ratio": 1.067
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 16,
+                "ratio": 0.188
+              },
+              "bar_pub": {
+                "osm": 10,
+                "overture": 14,
+                "ratio": 0.714
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 1,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 25,
+                "overture": 25,
+                "ratio": 1.0
+              },
+              "nightlife": {
+                "osm": 10,
+                "overture": 15,
+                "ratio": 0.667
+              }
+            }
+          }
+        }
+      },
       "istanbul": {
         "value": 0.375886524822695,
         "quality": "estimated",
@@ -13480,7 +17016,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.158,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.4137,
           "coverage": {
             "wikidata": {
@@ -13540,6 +17076,84 @@
           }
         }
       },
+      "izmir": {
+        "value": 0.2736156351791531,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 84,
+          "count_raw": 86,
+          "named_share": 0.907,
+          "raw_counts": {
+            "amenity=nightclub": 7,
+            "amenity=bar": 58,
+            "amenity=pub": 21
+          },
+          "area_km2": 307.0,
+          "pop_2025": 2457529,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.101,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 2.785,
+          "coverage": {
+            "wikidata": {
+              "n_items": 44,
+              "n_museums": 38,
+              "n_notable": 27,
+              "matched_by_wikidata_link": 19,
+              "matched_by_name_250m": 7,
+              "unmatched_but_linked_from_other_osm_object": 6,
+              "recall_all": 0.591,
+              "recall": 0.63,
+              "recall_museums": 0.632,
+              "osm_culture_to_wikidata_ratio": 2.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 48,
+                "overture": 83,
+                "ratio": 0.578
+              },
+              "performing_arts": {
+                "osm": 45,
+                "overture": 271,
+                "ratio": 0.166
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 58,
+                "ratio": 0.19
+              },
+              "gallery": {
+                "osm": 9,
+                "overture": 250,
+                "ratio": 0.036
+              },
+              "bar_pub": {
+                "osm": 79,
+                "overture": 686,
+                "ratio": 0.115
+              },
+              "nightclub": {
+                "osm": 7,
+                "overture": 169,
+                "ratio": 0.041
+              },
+              "culture_core": {
+                "osm": 59,
+                "overture": 141,
+                "ratio": 0.418
+              },
+              "nightlife": {
+                "osm": 86,
+                "overture": 855,
+                "ratio": 0.101
+              }
+            }
+          }
+        }
+      },
       "jakarta": {
         "value": 0.029692241005635025,
         "quality": "estimated",
@@ -13558,7 +17172,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.136,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.2191,
           "coverage": {
             "wikidata": {
@@ -13636,7 +17250,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.108,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7825,
           "coverage": {
             "wikidata": {
@@ -13696,6 +17310,84 @@
           }
         }
       },
+      "kampala": {
+        "value": 0.4876543209876543,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 395,
+          "count_raw": 398,
+          "named_share": 0.771,
+          "raw_counts": {
+            "amenity=nightclub": 40,
+            "amenity=bar": 265,
+            "amenity=pub": 93
+          },
+          "area_km2": 810.0,
+          "pop_2025": 5177878,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.157,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.4247,
+          "coverage": {
+            "wikidata": {
+              "n_items": 11,
+              "n_museums": 10,
+              "n_notable": 8,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 3,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.455,
+              "recall": 0.625,
+              "recall_museums": 0.4,
+              "osm_culture_to_wikidata_ratio": 4.09
+            },
+            "overture": {
+              "museum": {
+                "osm": 12,
+                "overture": 9,
+                "ratio": 1.333
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 49,
+                "ratio": 0.122
+              },
+              "cinema": {
+                "osm": 24,
+                "overture": 17,
+                "ratio": 1.412
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 23,
+                "ratio": 0.13
+              },
+              "bar_pub": {
+                "osm": 358,
+                "overture": 313,
+                "ratio": 1.144
+              },
+              "nightclub": {
+                "osm": 40,
+                "overture": 31,
+                "ratio": 1.29
+              },
+              "culture_core": {
+                "osm": 36,
+                "overture": 26,
+                "ratio": 1.385
+              },
+              "nightlife": {
+                "osm": 398,
+                "overture": 344,
+                "ratio": 1.157
+              }
+            }
+          }
+        }
+      },
       "kaohsiung": {
         "value": 0.11290322580645161,
         "quality": "estimated",
@@ -13714,7 +17406,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.084,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.3495,
           "coverage": {
             "wikidata": {
@@ -13774,6 +17466,84 @@
           }
         }
       },
+      "karachi": {
+        "value": 0.06354916067146282,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 53,
+          "count_raw": 53,
+          "named_share": 0.981,
+          "raw_counts": {
+            "amenity=nightclub": 7,
+            "amenity=bar": 41,
+            "amenity=pub": 5
+          },
+          "area_km2": 834.0,
+          "pop_2025": 21031703,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.767,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.036,
+          "coverage": {
+            "wikidata": {
+              "n_items": 9,
+              "n_museums": 9,
+              "n_notable": 9,
+              "matched_by_wikidata_link": 1,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.333,
+              "recall": 0.333,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 10.11
+            },
+            "overture": {
+              "museum": {
+                "osm": 17,
+                "overture": 17,
+                "ratio": 1.0
+              },
+              "performing_arts": {
+                "osm": 16,
+                "overture": 60,
+                "ratio": 0.267
+              },
+              "cinema": {
+                "osm": 40,
+                "overture": 15,
+                "ratio": 2.667
+              },
+              "gallery": {
+                "osm": 20,
+                "overture": 35,
+                "ratio": 0.571
+              },
+              "bar_pub": {
+                "osm": 46,
+                "overture": 28,
+                "ratio": 1.643
+              },
+              "nightclub": {
+                "osm": 7,
+                "overture": 2,
+                "ratio": 3.5
+              },
+              "culture_core": {
+                "osm": 57,
+                "overture": 32,
+                "ratio": 1.781
+              },
+              "nightlife": {
+                "osm": 53,
+                "overture": 30,
+                "ratio": 1.767
+              }
+            }
+          }
+        }
+      },
       "kathmandu": {
         "value": 0.4542857142857143,
         "quality": "estimated",
@@ -13792,7 +17562,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.464,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.98,
           "coverage": {
             "wikidata": {
@@ -13870,7 +17640,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 1.643,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1469,
           "coverage": {
             "wikidata": {
@@ -13948,7 +17718,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 3.2,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1848,
           "coverage": {
             "wikidata": {
@@ -14026,7 +17796,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 2.839,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.049,
           "coverage": {
             "wikidata": {
@@ -14086,6 +17856,84 @@
           }
         }
       },
+      "kolkata": {
+        "value": 0.008460918614020952,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 21,
+          "count_raw": 21,
+          "named_share": 0.905,
+          "raw_counts": {
+            "amenity=nightclub": 2,
+            "amenity=bar": 14,
+            "amenity=pub": 5
+          },
+          "area_km2": 2482.0,
+          "pop_2025": 23314585,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.055,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.1539,
+          "coverage": {
+            "wikidata": {
+              "n_items": 48,
+              "n_museums": 45,
+              "n_notable": 38,
+              "matched_by_wikidata_link": 10,
+              "matched_by_name_250m": 6,
+              "unmatched_but_linked_from_other_osm_object": 1,
+              "recall_all": 0.333,
+              "recall": 0.395,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 2.65
+            },
+            "overture": {
+              "museum": {
+                "osm": 38,
+                "overture": 82,
+                "ratio": 0.463
+              },
+              "performing_arts": {
+                "osm": 33,
+                "overture": 365,
+                "ratio": 0.09
+              },
+              "cinema": {
+                "osm": 58,
+                "overture": 227,
+                "ratio": 0.256
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 102,
+                "ratio": 0.029
+              },
+              "bar_pub": {
+                "osm": 19,
+                "overture": 322,
+                "ratio": 0.059
+              },
+              "nightclub": {
+                "osm": 2,
+                "overture": 60,
+                "ratio": 0.033
+              },
+              "culture_core": {
+                "osm": 96,
+                "overture": 309,
+                "ratio": 0.311
+              },
+              "nightlife": {
+                "osm": 21,
+                "overture": 382,
+                "ratio": 0.055
+              }
+            }
+          }
+        }
+      },
       "kuala-lumpur": {
         "value": 0.23507462686567165,
         "quality": "estimated",
@@ -14104,7 +17952,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.208,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.1299,
           "coverage": {
             "wikidata": {
@@ -14182,7 +18030,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.221,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.2527,
           "coverage": {
             "wikidata": {
@@ -14242,6 +18090,84 @@
           }
         }
       },
+      "lahore": {
+        "value": 0.008908685968819599,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 8,
+          "count_raw": 8,
+          "named_share": 0.75,
+          "raw_counts": {
+            "amenity=nightclub": 1,
+            "amenity=bar": 5,
+            "amenity=pub": 2
+          },
+          "area_km2": 898.0,
+          "pop_2025": 14305060,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.333,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.0267,
+          "coverage": {
+            "wikidata": {
+              "n_items": 5,
+              "n_museums": 5,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 2,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.8,
+              "recall": 1.0,
+              "recall_museums": 0.8,
+              "osm_culture_to_wikidata_ratio": 10.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 11,
+                "overture": 11,
+                "ratio": 1.0
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 69,
+                "ratio": 0.087
+              },
+              "cinema": {
+                "osm": 30,
+                "overture": 27,
+                "ratio": 1.111
+              },
+              "gallery": {
+                "osm": 3,
+                "overture": 32,
+                "ratio": 0.094
+              },
+              "bar_pub": {
+                "osm": 7,
+                "overture": 23,
+                "ratio": 0.304
+              },
+              "nightclub": {
+                "osm": 1,
+                "overture": 1,
+                "ratio": 1.0
+              },
+              "culture_core": {
+                "osm": 41,
+                "overture": 38,
+                "ratio": 1.079
+              },
+              "nightlife": {
+                "osm": 8,
+                "overture": 24,
+                "ratio": 0.333
+              }
+            }
+          }
+        }
+      },
       "lima": {
         "value": 0.3170731707317073,
         "quality": "estimated",
@@ -14260,7 +18186,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.205,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.565,
           "coverage": {
             "wikidata": {
@@ -14338,7 +18264,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.435,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.8474,
           "coverage": {
             "wikidata": {
@@ -14416,7 +18342,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.518,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 5.5609,
           "coverage": {
             "wikidata": {
@@ -14494,7 +18420,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.256,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7239,
           "coverage": {
             "wikidata": {
@@ -14554,6 +18480,162 @@
           }
         }
       },
+      "luanda": {
+        "value": 0.172008547008547,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 161,
+          "count_raw": 162,
+          "named_share": 0.525,
+          "raw_counts": {
+            "amenity=nightclub": 19,
+            "amenity=bar": 94,
+            "amenity=pub": 49
+          },
+          "area_km2": 936.0,
+          "pop_2025": 11672134,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 1.421,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.1218,
+          "coverage": {
+            "wikidata": {
+              "n_items": 5,
+              "n_museums": 4,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 4,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 1.0,
+              "recall": 1.0,
+              "recall_museums": 1.0,
+              "osm_culture_to_wikidata_ratio": 6.6
+            },
+            "overture": {
+              "museum": {
+                "osm": 10,
+                "overture": 9,
+                "ratio": 1.111
+              },
+              "performing_arts": {
+                "osm": 6,
+                "overture": 39,
+                "ratio": 0.154
+              },
+              "cinema": {
+                "osm": 16,
+                "overture": 9,
+                "ratio": 1.778
+              },
+              "gallery": {
+                "osm": 1,
+                "overture": 3,
+                "ratio": 0.333
+              },
+              "bar_pub": {
+                "osm": 143,
+                "overture": 99,
+                "ratio": 1.444
+              },
+              "nightclub": {
+                "osm": 19,
+                "overture": 15,
+                "ratio": 1.267
+              },
+              "culture_core": {
+                "osm": 26,
+                "overture": 18,
+                "ratio": 1.444
+              },
+              "nightlife": {
+                "osm": 162,
+                "overture": 114,
+                "ratio": 1.421
+              }
+            }
+          }
+        }
+      },
+      "lusaka": {
+        "value": 1.8777777777777778,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 676,
+          "count_raw": 702,
+          "named_share": 0.843,
+          "raw_counts": {
+            "amenity=nightclub": 8,
+            "amenity=bar": 581,
+            "amenity=pub": 113
+          },
+          "area_km2": 360.0,
+          "pop_2025": 3658064,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 4.443,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.4389,
+          "coverage": {
+            "wikidata": {
+              "n_items": 2,
+              "n_museums": 0,
+              "n_notable": 0,
+              "matched_by_wikidata_link": 0,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.0,
+              "recall": null,
+              "recall_museums": null,
+              "osm_culture_to_wikidata_ratio": 2.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 1,
+                "overture": 2,
+                "ratio": 0.5
+              },
+              "performing_arts": {
+                "osm": 2,
+                "overture": 25,
+                "ratio": 0.08
+              },
+              "cinema": {
+                "osm": 2,
+                "overture": 13,
+                "ratio": 0.154
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 4,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 694,
+                "overture": 136,
+                "ratio": 5.103
+              },
+              "nightclub": {
+                "osm": 8,
+                "overture": 22,
+                "ratio": 0.364
+              },
+              "culture_core": {
+                "osm": 3,
+                "overture": 15,
+                "ratio": 0.2
+              },
+              "nightlife": {
+                "osm": 702,
+                "overture": 158,
+                "ratio": 4.443
+              }
+            }
+          }
+        }
+      },
       "madrid": {
         "value": 4.939705882352941,
         "quality": "estimated",
@@ -14572,7 +18654,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.671,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 7.3941,
           "coverage": {
             "wikidata": {
@@ -14650,7 +18732,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.339,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8892,
           "coverage": {
             "wikidata": {
@@ -14710,6 +18792,84 @@
           }
         }
       },
+      "maputo": {
+        "value": 0.46842105263157896,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 267,
+          "count_raw": 272,
+          "named_share": 0.526,
+          "raw_counts": {
+            "amenity=nightclub": 4,
+            "amenity=bar": 266,
+            "amenity=pub": 2
+          },
+          "area_km2": 570.0,
+          "pop_2025": 3533370,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "overture_low_vs_osm",
+          "osm_over_overture": 2.542,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.1877,
+          "coverage": {
+            "wikidata": {
+              "n_items": 8,
+              "n_museums": 6,
+              "n_notable": 4,
+              "matched_by_wikidata_link": 7,
+              "matched_by_name_250m": 1,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 1.0,
+              "recall": 1.0,
+              "recall_museums": 1.0,
+              "osm_culture_to_wikidata_ratio": 3.5
+            },
+            "overture": {
+              "museum": {
+                "osm": 9,
+                "overture": 12,
+                "ratio": 0.75
+              },
+              "performing_arts": {
+                "osm": 12,
+                "overture": 23,
+                "ratio": 0.522
+              },
+              "cinema": {
+                "osm": 8,
+                "overture": 6,
+                "ratio": 1.333
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 7,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 268,
+                "overture": 94,
+                "ratio": 2.851
+              },
+              "nightclub": {
+                "osm": 4,
+                "overture": 13,
+                "ratio": 0.308
+              },
+              "culture_core": {
+                "osm": 17,
+                "overture": 18,
+                "ratio": 0.944
+              },
+              "nightlife": {
+                "osm": 272,
+                "overture": 107,
+                "ratio": 2.542
+              }
+            }
+          }
+        }
+      },
       "marrakesh": {
         "value": 0.3951612903225806,
         "quality": "estimated",
@@ -14728,7 +18888,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.454,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.871,
           "coverage": {
             "wikidata": {
@@ -14806,7 +18966,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.167,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 6.515,
           "coverage": {
             "wikidata": {
@@ -14884,7 +19044,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.551,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.1726,
           "coverage": {
             "wikidata": {
@@ -14962,7 +19122,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.081,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.0417,
           "coverage": {
             "wikidata": {
@@ -15040,7 +19200,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.144,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7547,
           "coverage": {
             "wikidata": {
@@ -15118,7 +19278,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.441,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 4.4624,
           "coverage": {
             "wikidata": {
@@ -15178,6 +19338,84 @@
           }
         }
       },
+      "minneapolis": {
+        "value": 0.3911620294599018,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "count_raw": 239,
+          "named_share": 0.996,
+          "raw_counts": {
+            "amenity=nightclub": 12,
+            "amenity=bar": 134,
+            "amenity=pub": 93
+          },
+          "area_km2": 611.0,
+          "pop_2025": 1217972,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.546,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.7169,
+          "coverage": {
+            "wikidata": {
+              "n_items": 55,
+              "n_museums": 37,
+              "n_notable": 51,
+              "matched_by_wikidata_link": 26,
+              "matched_by_name_250m": 6,
+              "unmatched_but_linked_from_other_osm_object": 7,
+              "recall_all": 0.582,
+              "recall": 0.627,
+              "recall_museums": 0.541,
+              "osm_culture_to_wikidata_ratio": 3.96
+            },
+            "overture": {
+              "museum": {
+                "osm": 40,
+                "overture": 85,
+                "ratio": 0.471
+              },
+              "performing_arts": {
+                "osm": 117,
+                "overture": 283,
+                "ratio": 0.413
+              },
+              "cinema": {
+                "osm": 15,
+                "overture": 42,
+                "ratio": 0.357
+              },
+              "gallery": {
+                "osm": 49,
+                "overture": 318,
+                "ratio": 0.154
+              },
+              "bar_pub": {
+                "osm": 227,
+                "overture": 408,
+                "ratio": 0.556
+              },
+              "nightclub": {
+                "osm": 12,
+                "overture": 30,
+                "ratio": 0.4
+              },
+              "culture_core": {
+                "osm": 55,
+                "overture": 127,
+                "ratio": 0.433
+              },
+              "nightlife": {
+                "osm": 239,
+                "overture": 438,
+                "ratio": 0.546
+              }
+            }
+          }
+        }
+      },
       "montevideo": {
         "value": 0.6371308016877637,
         "quality": "estimated",
@@ -15196,7 +19434,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.404,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.5865,
           "coverage": {
             "wikidata": {
@@ -15274,7 +19512,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.647,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8127,
           "coverage": {
             "wikidata": {
@@ -15352,7 +19590,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.141,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.2317,
           "coverage": {
             "wikidata": {
@@ -15430,7 +19668,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.574,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.2319,
           "coverage": {
             "wikidata": {
@@ -15508,7 +19746,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 1.132,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.9615,
           "coverage": {
             "wikidata": {
@@ -15586,7 +19824,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.142,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.4465,
           "coverage": {
             "wikidata": {
@@ -15664,7 +19902,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.4,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.8769,
           "coverage": {
             "wikidata": {
@@ -15742,7 +19980,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.512,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 6.5809,
           "coverage": {
             "wikidata": {
@@ -15820,7 +20058,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.623,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.1721,
           "coverage": {
             "wikidata": {
@@ -15898,7 +20136,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.601,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8953,
           "coverage": {
             "wikidata": {
@@ -15976,7 +20214,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.748,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.0464,
           "coverage": {
             "wikidata": {
@@ -16054,7 +20292,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.592,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7474,
           "coverage": {
             "wikidata": {
@@ -16132,7 +20370,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.497,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.5847,
           "coverage": {
             "wikidata": {
@@ -16192,6 +20430,84 @@
           }
         }
       },
+      "phoenix": {
+        "value": 0.18328220858895705,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 239,
+          "count_raw": 239,
+          "named_share": 0.95,
+          "raw_counts": {
+            "amenity=nightclub": 19,
+            "amenity=bar": 150,
+            "amenity=pub": 70
+          },
+          "area_km2": 1304.0,
+          "pop_2025": 2608874,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.321,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.5706,
+          "coverage": {
+            "wikidata": {
+              "n_items": 26,
+              "n_museums": 19,
+              "n_notable": 24,
+              "matched_by_wikidata_link": 16,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 4,
+              "recall_all": 0.615,
+              "recall": 0.583,
+              "recall_museums": 0.632,
+              "osm_culture_to_wikidata_ratio": 5.54
+            },
+            "overture": {
+              "museum": {
+                "osm": 24,
+                "overture": 75,
+                "ratio": 0.32
+              },
+              "performing_arts": {
+                "osm": 45,
+                "overture": 232,
+                "ratio": 0.194
+              },
+              "cinema": {
+                "osm": 21,
+                "overture": 44,
+                "ratio": 0.477
+              },
+              "gallery": {
+                "osm": 55,
+                "overture": 260,
+                "ratio": 0.212
+              },
+              "bar_pub": {
+                "osm": 220,
+                "overture": 689,
+                "ratio": 0.319
+              },
+              "nightclub": {
+                "osm": 19,
+                "overture": 55,
+                "ratio": 0.345
+              },
+              "culture_core": {
+                "osm": 45,
+                "overture": 119,
+                "ratio": 0.378
+              },
+              "nightlife": {
+                "osm": 239,
+                "overture": 744,
+                "ratio": 0.321
+              }
+            }
+          }
+        }
+      },
       "prague": {
         "value": 3.5779467680608366,
         "quality": "estimated",
@@ -16210,7 +20526,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.596,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 6.0494,
           "coverage": {
             "wikidata": {
@@ -16288,7 +20604,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.5,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.5684,
           "coverage": {
             "wikidata": {
@@ -16366,7 +20682,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.712,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.2887,
           "coverage": {
             "wikidata": {
@@ -16444,7 +20760,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.187,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 4.3735,
           "coverage": {
             "wikidata": {
@@ -16504,6 +20820,84 @@
           }
         }
       },
+      "riyadh": {
+        "value": 0.0,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 0,
+          "count_raw": 0,
+          "named_share": null,
+          "raw_counts": {
+            "amenity=nightclub": 0,
+            "amenity=bar": 0,
+            "amenity=pub": 0
+          },
+          "area_km2": 1108.0,
+          "pop_2025": 7970319,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "osm_low_vs_overture",
+          "osm_over_overture": 0.0,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.1227,
+          "coverage": {
+            "wikidata": {
+              "n_items": 7,
+              "n_museums": 6,
+              "n_notable": 6,
+              "matched_by_wikidata_link": 2,
+              "matched_by_name_250m": 0,
+              "unmatched_but_linked_from_other_osm_object": 0,
+              "recall_all": 0.286,
+              "recall": 0.333,
+              "recall_museums": 0.333,
+              "osm_culture_to_wikidata_ratio": 5.43
+            },
+            "overture": {
+              "museum": {
+                "osm": 12,
+                "overture": 22,
+                "ratio": 0.545
+              },
+              "performing_arts": {
+                "osm": 12,
+                "overture": 47,
+                "ratio": 0.255
+              },
+              "cinema": {
+                "osm": 14,
+                "overture": 37,
+                "ratio": 0.378
+              },
+              "gallery": {
+                "osm": 0,
+                "overture": 39,
+                "ratio": 0.0
+              },
+              "bar_pub": {
+                "osm": 0,
+                "overture": 122,
+                "ratio": 0.0
+              },
+              "nightclub": {
+                "osm": 0,
+                "overture": 14,
+                "ratio": 0.0
+              },
+              "culture_core": {
+                "osm": 26,
+                "overture": 59,
+                "ratio": 0.441
+              },
+              "nightlife": {
+                "osm": 0,
+                "overture": 136,
+                "ratio": 0.0
+              }
+            }
+          }
+        }
+      },
       "rome": {
         "value": 1.4197002141327624,
         "quality": "estimated",
@@ -16522,7 +20916,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.2,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 7.1392,
           "coverage": {
             "wikidata": {
@@ -16600,7 +20994,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.749,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.4954,
           "coverage": {
             "wikidata": {
@@ -16678,7 +21072,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.575,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.1177,
           "coverage": {
             "wikidata": {
@@ -16756,7 +21150,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.831,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.6497,
           "coverage": {
             "wikidata": {
@@ -16834,7 +21228,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.353,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.4432,
           "coverage": {
             "wikidata": {
@@ -16912,7 +21306,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.358,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.47,
           "coverage": {
             "wikidata": {
@@ -16990,7 +21384,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.116,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 5.3747,
           "coverage": {
             "wikidata": {
@@ -17068,7 +21462,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.119,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 7.0,
           "coverage": {
             "wikidata": {
@@ -17146,7 +21540,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.754,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8566,
           "coverage": {
             "wikidata": {
@@ -17224,7 +21618,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.641,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.9124,
           "coverage": {
             "wikidata": {
@@ -17302,7 +21696,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "overture_low_vs_osm",
           "osm_over_overture": 1.225,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.1052,
           "coverage": {
             "wikidata": {
@@ -17380,7 +21774,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.523,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.3653,
           "coverage": {
             "wikidata": {
@@ -17458,7 +21852,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.449,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.2596,
           "coverage": {
             "wikidata": {
@@ -17536,7 +21930,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.509,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.2358,
           "coverage": {
             "wikidata": {
@@ -17614,7 +22008,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "osm_low_vs_overture",
           "osm_over_overture": 0.177,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 1.8148,
           "coverage": {
             "wikidata": {
@@ -17674,6 +22068,84 @@
           }
         }
       },
+      "tashkent": {
+        "value": 0.24247491638795987,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 145,
+          "count_raw": 146,
+          "named_share": 0.877,
+          "raw_counts": {
+            "amenity=nightclub": 23,
+            "amenity=bar": 96,
+            "amenity=pub": 27
+          },
+          "area_km2": 598.0,
+          "pop_2025": 3874653,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.924,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.2642,
+          "coverage": {
+            "wikidata": {
+              "n_items": 42,
+              "n_museums": 28,
+              "n_notable": 38,
+              "matched_by_wikidata_link": 18,
+              "matched_by_name_250m": 8,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.619,
+              "recall": 0.684,
+              "recall_museums": 0.607,
+              "osm_culture_to_wikidata_ratio": 2.57
+            },
+            "overture": {
+              "museum": {
+                "osm": 41,
+                "overture": 34,
+                "ratio": 1.206
+              },
+              "performing_arts": {
+                "osm": 41,
+                "overture": 81,
+                "ratio": 0.506
+              },
+              "cinema": {
+                "osm": 20,
+                "overture": 25,
+                "ratio": 0.8
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 27,
+                "ratio": 0.259
+              },
+              "bar_pub": {
+                "osm": 123,
+                "overture": 143,
+                "ratio": 0.86
+              },
+              "nightclub": {
+                "osm": 23,
+                "overture": 15,
+                "ratio": 1.533
+              },
+              "culture_core": {
+                "osm": 61,
+                "overture": 59,
+                "ratio": 1.034
+              },
+              "nightlife": {
+                "osm": 146,
+                "overture": 158,
+                "ratio": 0.924
+              }
+            }
+          }
+        }
+      },
       "tbilisi": {
         "value": 2.2119205298013247,
         "quality": "estimated",
@@ -17692,7 +22164,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.635,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.5033,
           "coverage": {
             "wikidata": {
@@ -17770,7 +22242,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.286,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.0255,
           "coverage": {
             "wikidata": {
@@ -17848,7 +22320,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.284,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.8018,
           "coverage": {
             "wikidata": {
@@ -17926,7 +22398,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.395,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 6.2134,
           "coverage": {
             "wikidata": {
@@ -18004,7 +22476,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.512,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.9154,
           "coverage": {
             "wikidata": {
@@ -18064,6 +22536,84 @@
           }
         }
       },
+      "tunis": {
+        "value": 0.125,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 61,
+          "count_raw": 61,
+          "named_share": 0.951,
+          "raw_counts": {
+            "amenity=nightclub": 6,
+            "amenity=bar": 45,
+            "amenity=pub": 10
+          },
+          "area_km2": 488.0,
+          "pop_2025": 2790169,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.359,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.3484,
+          "coverage": {
+            "wikidata": {
+              "n_items": 28,
+              "n_museums": 21,
+              "n_notable": 27,
+              "matched_by_wikidata_link": 12,
+              "matched_by_name_250m": 5,
+              "unmatched_but_linked_from_other_osm_object": 2,
+              "recall_all": 0.607,
+              "recall": 0.63,
+              "recall_museums": 0.714,
+              "osm_culture_to_wikidata_ratio": 3.0
+            },
+            "overture": {
+              "museum": {
+                "osm": 23,
+                "overture": 52,
+                "ratio": 0.442
+              },
+              "performing_arts": {
+                "osm": 44,
+                "overture": 148,
+                "ratio": 0.297
+              },
+              "cinema": {
+                "osm": 11,
+                "overture": 35,
+                "ratio": 0.314
+              },
+              "gallery": {
+                "osm": 7,
+                "overture": 59,
+                "ratio": 0.119
+              },
+              "bar_pub": {
+                "osm": 55,
+                "overture": 153,
+                "ratio": 0.359
+              },
+              "nightclub": {
+                "osm": 6,
+                "overture": 17,
+                "ratio": 0.353
+              },
+              "culture_core": {
+                "osm": 34,
+                "overture": 87,
+                "ratio": 0.391
+              },
+              "nightlife": {
+                "osm": 61,
+                "overture": 170,
+                "ratio": 0.359
+              }
+            }
+          }
+        }
+      },
       "ulaanbaatar": {
         "value": 0.7404255319148936,
         "quality": "estimated",
@@ -18082,7 +22632,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.875,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.8511,
           "coverage": {
             "wikidata": {
@@ -18160,7 +22710,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.686,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7257,
           "coverage": {
             "wikidata": {
@@ -18238,7 +22788,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.606,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.9015,
           "coverage": {
             "wikidata": {
@@ -18316,7 +22866,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.578,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 2.0771,
           "coverage": {
             "wikidata": {
@@ -18376,6 +22926,84 @@
           }
         }
       },
+      "washington": {
+        "value": 0.372021521906226,
+        "quality": "estimated",
+        "year": 2026,
+        "detail": {
+          "count_dedup": 484,
+          "count_raw": 486,
+          "named_share": 0.992,
+          "raw_counts": {
+            "amenity=nightclub": 36,
+            "amenity=bar": 319,
+            "amenity=pub": 131
+          },
+          "area_km2": 1301.0,
+          "pop_2025": 3471725,
+          "osm_snapshot": "planet-260921",
+          "coverage_flag": "ok",
+          "osm_over_overture": 0.508,
+          "median_osm_over_overture_86": 0.483,
+          "overture_density_per_km2": 0.7356,
+          "coverage": {
+            "wikidata": {
+              "n_items": 143,
+              "n_museums": 113,
+              "n_notable": 112,
+              "matched_by_wikidata_link": 80,
+              "matched_by_name_250m": 11,
+              "unmatched_but_linked_from_other_osm_object": 12,
+              "recall_all": 0.636,
+              "recall": 0.607,
+              "recall_museums": 0.611,
+              "osm_culture_to_wikidata_ratio": 2.52
+            },
+            "overture": {
+              "museum": {
+                "osm": 106,
+                "overture": 333,
+                "ratio": 0.318
+              },
+              "performing_arts": {
+                "osm": 163,
+                "overture": 425,
+                "ratio": 0.384
+              },
+              "cinema": {
+                "osm": 43,
+                "overture": 103,
+                "ratio": 0.417
+              },
+              "gallery": {
+                "osm": 54,
+                "overture": 396,
+                "ratio": 0.136
+              },
+              "bar_pub": {
+                "osm": 450,
+                "overture": 885,
+                "ratio": 0.508
+              },
+              "nightclub": {
+                "osm": 36,
+                "overture": 72,
+                "ratio": 0.5
+              },
+              "culture_core": {
+                "osm": 149,
+                "overture": 436,
+                "ratio": 0.342
+              },
+              "nightlife": {
+                "osm": 486,
+                "overture": 957,
+                "ratio": 0.508
+              }
+            }
+          }
+        }
+      },
       "yangon": {
         "value": 0.48073394495412847,
         "quality": "estimated",
@@ -18394,7 +23022,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.668,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 0.7229,
           "coverage": {
             "wikidata": {
@@ -18472,7 +23100,7 @@
           "osm_snapshot": "planet-260921",
           "coverage_flag": "ok",
           "osm_over_overture": 0.585,
-          "median_osm_over_overture_86": 0.498,
+          "median_osm_over_overture_86": 0.483,
           "overture_density_per_km2": 3.5936,
           "coverage": {
             "wikidata": {

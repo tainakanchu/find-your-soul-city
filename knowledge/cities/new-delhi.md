@@ -15,7 +15,7 @@ boundary:
   id: 7963
   name: "New Delhi"
   area_km2: 2139
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 0.97, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 32.4, quality: observed, source: era5, year: "1990-2019" }

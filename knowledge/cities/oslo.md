@@ -15,7 +15,7 @@ boundary:
   id: 828
   name: "Oslo"
   area_km2: 244.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 50.4, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 67.5, quality: observed, source: era5, year: "1990-2019" }

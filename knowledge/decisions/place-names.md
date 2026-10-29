@@ -7,9 +7,11 @@ tags: [decision, display, names]
 decision_status: accepted
 country_names:
   AE: アラブ首長国連邦
+  AO: アンゴラ
   AR: アルゼンチン
   AT: オーストリア
   AU: オーストラリア
+  AZ: アゼルバイジャン
   BD: バングラデシュ
   BR: ブラジル
   CA: カナダ
@@ -25,6 +27,7 @@ country_names:
   DE: ドイツ
   DK: デンマーク
   DO: ドミニカ共和国
+  DZ: アルジェリア
   EC: エクアドル
   EG: エジプト
   ES: スペイン
@@ -44,17 +47,20 @@ country_names:
   IR: イラン
   IS: アイスランド
   IT: イタリア
+  JO: ヨルダン
   JP: 日本
   KE: ケニア
   KH: カンボジア
   KR: 韓国
   KZ: カザフスタン
+  LB: レバノン
   LK: スリランカ
   MA: モロッコ
   MM: ミャンマー
   MN: モンゴル
   MX: メキシコ
   MY: マレーシア
+  MZ: モザンビーク
   NG: ナイジェリア
   NL: オランダ
   NO: ノルウェー
@@ -63,20 +69,27 @@ country_names:
   PA: パナマ
   PE: ペルー
   PH: フィリピン
+  PK: パキスタン
   PL: ポーランド
   PT: ポルトガル
+  QA: カタール
   RW: ルワンダ
+  SA: サウジアラビア
   SE: スウェーデン
   SG: シンガポール
   SN: セネガル
   TH: タイ
+  TN: チュニジア
   TR: トルコ
   TW: 台湾
   TZ: タンザニア
+  UG: ウガンダ
   US: アメリカ
   UY: ウルグアイ
+  UZ: ウズベキスタン
   VN: ベトナム
   ZA: 南アフリカ
+  ZM: ザンビア
 generated: { by: claude, at: 2026-10-28T00:00:00Z }
 ---
 

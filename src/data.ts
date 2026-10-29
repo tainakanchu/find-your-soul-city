@@ -1,4 +1,5 @@
 import raw from "./generated/knowledge.json";
+import { referenceScales } from "./scoring/score.ts";
 import type { Knowledge, Quality } from "./model/types.ts";
 
 export { formatValue, formatYear, roundBounded, placeLabel } from "./format.ts";
@@ -37,3 +38,6 @@ export const stabilityWords = (s: number) =>
     : s >= 0.6
       ? "おおむね安定した 1 位です"
       : "僅差で、条件が少し変わると入れ替わりやすい 1 位です";
+
+/** Percentile scales over the reference set (no "enough" cap) — for describing a city's position. */
+export const refScales = referenceScales(knowledge);

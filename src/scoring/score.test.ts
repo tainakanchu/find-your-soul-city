@@ -63,6 +63,7 @@ const metrics: Metric[] = [
 const k: Knowledge = {
   modelVersion: "test",
   minCoverage: 0.75,
+  directionalTargets: {},
   dataVersion: "test",
   sources: [],
   questions: [],
@@ -244,5 +245,25 @@ describe("roundBounded", () => {
     expect(roundBounded(0.3)).toBe("1 未満");
     expect(roundBounded(0)).toBe("0");
     expect(roundBounded(57.5)).toBe("58");
+  });
+});
+
+describe("directional targets (enough = full marks)", () => {
+  it("caps the fit at 1 once the percentile reaches the target", async () => {
+    const s = referenceScales(k);
+    const walk = k.metrics.find((m) => m.key === "walk")!;
+    const free = fit(walk, 90, undefined, s);
+    expect(fit(walk, 90, undefined, s, 0.5)).toBe(1);
+    expect(fit(walk, 90, undefined, s, 1)).toBeCloseTo(free);
+    expect(fit(walk, 40, undefined, s, 0.5)).toBeCloseTo(Math.min(1, fit(walk, 40, undefined, s) / 0.5));
+  });
+
+  it("uses the model's per-weight targets unless overridden", () => {
+    const kk = { ...k, directionalTargets: { "1": 0.5, "2": 0.8 } };
+    const prefs2 = [{ metric: "walk", weight: 1 }];
+    const capped = rank(kk, prefs2).ranked.map((r) => r.total);
+    const open = rank(kk, prefs2, { directionalTargets: {} }).ranked.map((r) => r.total);
+    expect(Math.max(...capped)).toBe(100);
+    expect(capped.filter((x) => x === 100).length).toBeGreaterThanOrEqual(open.filter((x) => x === 100).length);
   });
 });

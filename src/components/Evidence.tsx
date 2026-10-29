@@ -1,5 +1,6 @@
 import {
   rankWords,
+  refScales,
   KIND_LABEL,
   QUALITY_LABEL,
   formatValue,
@@ -10,7 +11,7 @@ import {
   roundBounded,
 } from "../data.ts";
 import type { City } from "../model/types.ts";
-import type { AxisScore } from "../scoring/score.ts";
+import { fit, type AxisScore } from "../scoring/score.ts";
 import { reportUrl } from "../site.ts";
 
 /** One axis: city value, your ideal or direction, distribution across all cities, and provenance. */
@@ -59,8 +60,18 @@ export function Evidence({ axis, city }: { axis: AxisScore; city: City }) {
             <dd>{KIND_LABEL[m.kind]}</dd>
             {axis.fit !== null && (
               <>
-                <dt>位置</dt>
-                <dd>{rankWords(m.kind, axis.fit)}</dd>
+                {!missing && (
+                  <>
+                    <dt>位置</dt>
+                    <dd>{rankWords(m.kind, fit(m, mv.value!, undefined, refScales))}</dd>
+                  </>
+                )}
+                <dt>十分な水準</dt>
+                <dd>
+                  {(knowledge.directionalTargets[String(axis.weight)] ?? 1) < 1
+                    ? `参照集合の上位 ${Math.round((1 - knowledge.directionalTargets[String(axis.weight)]) * 100)}% 以内なら満点`
+                    : "多いほど良い（上限なし）"}
+                </dd>
               </>
             )}
           </>

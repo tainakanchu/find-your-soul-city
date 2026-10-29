@@ -15,7 +15,7 @@ boundary:
   id: 1142
   name: "Taipei"
   area_km2: 972.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 15.2, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 67.4, quality: observed, source: era5, year: "1990-2019" }

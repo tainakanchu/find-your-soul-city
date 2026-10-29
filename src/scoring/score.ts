@@ -5,6 +5,8 @@ export interface Preference {
   metric: string;
   weight: number;
   ideal?: number;
+  /** Directional metrics: percentile that counts as "enough" for this answer (overrides the model default). */
+  target?: number;
 }
 
 export interface AxisScore {
@@ -21,6 +23,8 @@ export interface CityResult {
   coverage: number;
   /** Total if every missing weighted axis had fit 0 / fit 1. Equal to `total` when nothing is missing. No imputation. */
   bounds: [number, number];
+  /** Same average without the "enough" cap: breaks ties among cities that all reach the targets. */
+  uncapped: number;
   quality: Quality;
   axes: AxisScore[];
 }
@@ -44,6 +48,8 @@ export interface RankOptions {
   scales?: Scales;
   /** Override the coverage threshold (validation: missing-data handling). */
   minCoverage?: number;
+  /** Override the model's directional "enough" percentiles by weight (validation); `{}` = more is always better. */
+  directionalTargets?: Record<string, number>;
 }
 
 const qualityRank = (q: Quality) => QUALITY_ORDER.indexOf(q as (typeof QUALITY_ORDER)[number]);
@@ -92,7 +98,11 @@ export function cdf(levels: number[], qs: number[], x: number): number {
   return levels[i - 1] + ((levels[i] - levels[i - 1]) * (x - qs[i - 1])) / (qs[i] - qs[i - 1]);
 }
 
-export function fit(m: Metric, value: number, ideal: number | undefined, scales: Scales): number {
+/**
+ * `target` (directional metrics only): the percentile that counts as "enough". At or beyond it the fit is 1,
+ * below it the fit falls linearly to 0. Without it the fit is the percentile itself ("more is always better").
+ */
+export function fit(m: Metric, value: number, ideal: number | undefined, scales: Scales, target?: number): number {
   if (m.kind === "ideal") {
     if (ideal === undefined || m.tolerance === null) throw new Error(`ideal/tolerance missing for ${m.key}`);
     const d = (t(m, value) - t(m, ideal)) / m.tolerance;
@@ -107,11 +117,19 @@ export function fit(m: Metric, value: number, ideal: number | undefined, scales:
       : s.hi === s.lo
         ? 1
         : Math.min(1, Math.max(0, (v - s.lo) / (s.hi - s.lo)));
-  return m.kind === "lower_better" ? 1 - x : x;
+  const p = m.kind === "lower_better" ? 1 - x : x;
+  return target === undefined ? p : Math.min(1, p / target);
 }
 
-function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], scales: Scales): CityResult {
+function scoreCity(
+  metrics: Map<string, Metric>,
+  c: City,
+  prefs: Preference[],
+  scales: Scales,
+  targets: Record<string, number>,
+): CityResult {
   let sum = 0;
+  let sumOpen = 0;
   let used = 0;
   let all = 0;
   let quality: Quality = "observed";
@@ -120,8 +138,10 @@ function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], s
     const value = mv?.value ?? null;
     all += p.weight;
     if (value === null || p.weight === 0) return { ...p, value, fit: null };
-    const f = fit(metrics.get(p.metric)!, value, p.ideal, scales);
+    const m = metrics.get(p.metric)!;
+    const f = fit(m, value, p.ideal, scales, p.target ?? targets[String(p.weight)]);
     sum += p.weight * f;
+    sumOpen += p.weight * (m.kind === "ideal" ? f : fit(m, value, undefined, scales));
     used += p.weight;
     if (qualityRank(mv.quality) < qualityRank(quality)) quality = mv.quality;
     return { ...p, value, fit: f };
@@ -131,6 +151,7 @@ function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], s
     total: used === 0 ? 0 : (100 * sum) / used,
     coverage: all === 0 ? 0 : used / all,
     bounds: all === 0 ? [0, 0] : [(100 * sum) / all, (100 * (sum + all - used)) / all],
+    uncapped: used === 0 ? 0 : (100 * sumOpen) / used,
     quality,
     axes,
   };
@@ -139,10 +160,16 @@ function scoreCity(metrics: Map<string, Metric>, c: City, prefs: Preference[], s
 export function rank(k: Knowledge, prefs: Preference[], opts: RankOptions = {}): Ranking {
   const scales = opts.scales ?? referenceScales(k);
   const minCoverage = opts.minCoverage ?? k.minCoverage;
+  const targets = opts.directionalTargets ?? k.directionalTargets ?? {};
   const metrics = new Map(k.metrics.map((m) => [m.key, m]));
   const results = k.cities
-    .map((c) => scoreCity(metrics, c, prefs, scales))
-    .toSorted((a, b) => b.total - a.total || a.cityId.localeCompare(b.cityId));
+    .map((c) => scoreCity(metrics, c, prefs, scales, targets))
+    .toSorted(
+      (a, b) =>
+        (Math.abs(b.total - a.total) < 1e-9 ? 0 : b.total - a.total) ||
+        b.uncapped - a.uncapped ||
+        a.cityId.localeCompare(b.cityId),
+    );
   return {
     ranked: results.filter((r) => r.coverage >= minCoverage),
     insufficient: results.filter((r) => r.coverage < minCoverage),

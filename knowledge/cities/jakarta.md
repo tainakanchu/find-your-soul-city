@@ -15,7 +15,7 @@ boundary:
   id: 5472
   name: "Jakarta"
   area_km2: 4614
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 0.39, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 75.9, quality: observed, source: era5, year: "1990-2019" }

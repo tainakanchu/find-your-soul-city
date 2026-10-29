@@ -109,7 +109,7 @@ const { concentration } = await import("../src/scoring/concentration.ts");
 const conc = concentration(k, N, SEED);
 out.push(
   `- 実質的に 1 位を分け合っている都市の数（1 / Σ p²）: ${conc.effectiveWinners.toFixed(1)}（完全に均等なら ${k.cities.length}）。` +
-    `1 位になったことがない都市: ${conc.neverFirst.length}。テスト（src/scoring/concentration.test.ts）の基準は 1 位率の最大が期待値の 15 倍以下、実質の都市数 18 以上、ジニ係数 0.70 以下。`,
+    `1 位になったことがない都市: ${conc.neverFirst.length}。テスト（src/scoring/concentration.test.ts）の基準は 1 位率の最大が期待値の 14 倍以下、実質の都市数 34 以上、ジニ係数 0.66 以下。`,
 );
 const gaps = base
   .filter((r) => r.length > 1)
@@ -226,6 +226,38 @@ out.push(
   "",
   `- 本番方式で対象都市の 20% を除いたとき、残った都市の順位が完全に一致した割合: ${pct(invariant / N)}（スケールが対象都市に依存しないことの確認）。`,
 );
+
+// --- 3b. "Enough" targets vs. more-is-always-better ---
+h("3b. 十分な水準（モデル v0.3）の効果");
+{
+  const won = (opts: RankOptions) => {
+    const wins = new Map<string, number>();
+    for (const p of samples) {
+      const id = top(p, opts)[0]?.cityId;
+      if (id) wins.set(id, (wins.get(id) ?? 0) + 1);
+    }
+    const ps = k.cities.map((c) => (wins.get(c.id) ?? 0) / N);
+    const [maxId, maxW] = [...wins].reduce((b, x) => (x[1] > b[1] ? x : b));
+    const eu = [...wins].filter(([id]) => regionOf.get(id) === "Europe").reduce((a, [, w]) => a + w, 0) / N;
+    return [`${nameOf.get(maxId)} ${pct(maxW / N)}`, (1 / ps.reduce((a, x) => a + x * x, 0)).toFixed(1), pct(eu)];
+  };
+  out.push(
+    "方向型の指標で「十分な水準」に届いたら満点とする v0.3（あると嬉しい = 参照集合の上位 50%、絶対にほしい = 上位 20%）と、" +
+      "上限なしで比べる v0.2 を、同じ無作為回答で比べた。",
+    "",
+  );
+  table(
+    ["方式", "1 位率の最大", "実質的な 1 位の都市数", "欧州の 1 位率"],
+    [
+      ["v0.3 十分な水準で満点（本番）", ...won({})],
+      ["v0.2 上限なし", ...won({ directionalTargets: {} })],
+    ],
+  );
+  out.push(
+    "",
+    `欧州の都市は対象 ${k.cities.length} 都市の ${pct(k.cities.filter((c) => c.region === "Europe").length / k.cities.length)}。`,
+  );
+}
 
 // --- 4. Weight robustness ---
 h("4. 重みの変更への頑健性");

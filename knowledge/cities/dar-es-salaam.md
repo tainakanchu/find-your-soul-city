@@ -15,7 +15,7 @@ boundary:
   id: 3570
   name: "Dar es-Salaam"
   area_km2: 907.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 9.92, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 52.8, quality: observed, source: era5, year: "1990-2019" }

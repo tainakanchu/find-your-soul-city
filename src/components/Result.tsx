@@ -49,6 +49,7 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
   const used = first.axes.filter((a) => a.weight > 0).toSorted((a, b) => b.weight - a.weight);
   const missingAxes = used.filter((a) => a.value === null);
   const gap = ranked[1] ? first.total - ranked[1].total : null;
+  const tied = ranked.filter((r) => Math.abs(r.total - first.total) < 1e-9).length;
   // Which observation years / periods this result rests on, per source (they differ, see each metric).
   const periods = [
     ...new Map(
@@ -73,7 +74,11 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
         適合度は {roundBounded(first.total)} / 100。{stabilityWords(stable)}（重みを 1 項目ずつ ±10% 動かしても、
         {roundBounded(stable * 100)}% の条件で 1 位のまま）。使ったデータの品質は、最も低いもので「
         {QUALITY_LABEL[first.quality]}」です。
-        {gap !== null && gap < 2 && <> 2 位との差は {gap.toFixed(1)} 点で、僅差です。</>}
+        {tied > 1 ? (
+          <> {tied} 都市が同じ点で並び、十分な水準をどれだけ超えているかで順位を付けました。</>
+        ) : (
+          gap !== null && gap < 2 && <> 2 位との差は {gap.toFixed(1)} 点で、僅差です。</>
+        )}
       </p>
       <p className="note">
         適合度は回答と統計の近さを表す独自の指標で、住みやすさや幸福度の評価ではありません。「魂の故郷」は遊びの呼び名で、占いや前世、あなたとこの街の実際の縁を示すものではありません。順位は都市の優劣ではなく、あなたの答えとの近さの順です。

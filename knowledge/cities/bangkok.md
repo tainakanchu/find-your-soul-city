@@ -15,7 +15,7 @@ boundary:
   id: 2315
   name: "Bangkok"
   area_km2: 2697
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 1.83, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 66.0, quality: observed, source: era5, year: "1990-2019" }

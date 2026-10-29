@@ -15,7 +15,7 @@ boundary:
   id: 1147
   name: "Auckland"
   area_km2: 638.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 18.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 58.8, quality: observed, source: era5, year: "1990-2019" }

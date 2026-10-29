@@ -15,7 +15,7 @@ boundary:
   id: 1007
   name: "Dubai"
   area_km2: 854.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:11:09Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
 metrics:
   bike_protected: { value: 2.15, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 18.5, quality: observed, source: era5, year: "1990-2019" }
