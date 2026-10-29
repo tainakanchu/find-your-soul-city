@@ -35,17 +35,24 @@ export function reachability(k: Knowledge, maxSteps = 60): Reach[] {
     const c = k.cities.find((x) => x.id === id)!;
     const a: Answers = {};
     for (const q of k.questions) {
-      const v = c.metrics[q.metric]?.value;
+      const v = c.metrics[q.metrics[0]]?.value;
       if (q.answerKind === "ideal") {
         if (v == null) a[q.id] = { choice: q.options[0].value, importance: 0 };
         else {
           const best = q.options.reduce((b, o) =>
-            Math.abs(t(q.metric, o.value) - t(q.metric, v)) < Math.abs(t(q.metric, b.value) - t(q.metric, v)) ? o : b,
+            Math.abs(t(q.metrics[0], o.value) - t(q.metrics[0], v)) <
+            Math.abs(t(q.metrics[0], b.value) - t(q.metrics[0], v))
+              ? o
+              : b,
           );
           a[q.id] = { choice: best.value, importance: 2 };
         }
       } else {
-        const f = v == null ? 0 : fit(metricOf.get(q.metric)!, v, undefined, scales);
+        const fs = q.metrics.map((key) => {
+          const x = c.metrics[key]?.value;
+          return x == null ? 0 : fit(metricOf.get(key)!, x, undefined, scales);
+        });
+        const f = fs.reduce((s, x) => s + x, 0) / fs.length;
         a[q.id] = { choice: directional(f), importance: 1 };
       }
     }

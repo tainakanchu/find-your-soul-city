@@ -15,19 +15,21 @@ boundary:
   id: 1747
   name: "Melbourne"
   area_km2: 1611
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T02:16:02Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
 metrics:
   bike_protected: { value: 38.5, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 57.8, quality: observed, source: era5, year: "1990-2019" }
   culture: { value: 0.2, quality: estimated, source: osm, year: 2026 }
   density_weighted: { value: 4139, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 12.4, quality: observed, source: era5, year: "1990-2019" }
+  flood: { value: 1.76, quality: estimated, source: ghsl-hazard, year: 2025 }
   pm25: { value: 13.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 654.9, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: null, quality: missing, source: itdp-atlas, year: null, reason: "Atlas rapid-transit station data incomplete: 4 stations on 559 line-km (0.01/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.0 % is not credible" }
   temp_coldest: { value: 9.59, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 19.7, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 29.5, quality: observed, source: esa-worldcover, year: 2021 }
+  typhoon: { value: 0.0, quality: estimated, source: ghsl-hazard, year: "2004-2016" }
   urban_pop: { value: 4010658, quality: estimated, source: ghsl-ucdb, year: 2025 }
   walk_services: { value: 53.2, quality: observed, source: itdp-atlas, year: 2024 }
 ---
@@ -45,12 +47,14 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 1747「Melbourne」。面積 16
 | 文化施設の密度 | 0.2 件/km² | 2026 | estimated |
 | 人口加重密度 | 4139 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 12.4 ℃ | 1990-2019 | observed |
+| 洪水の想定範囲に住む人口の割合 | 1.76 % | 2025 | estimated |
 | PM2.5 年平均濃度（人口加重） | 13.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 654.9 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 欠損 | — | Atlas rapid-transit station data incomplete: 4 stations on 559 line-km (0.01/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 1.0 % is not credible |
 | 最寒月の平均気温 | 9.59 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 19.7 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 29.5 % | 2021 | observed |
+| 熱帯低気圧（台風・ハリケーン）の被災回数 | 0.0 回/年 | 2004-2016 | estimated |
 | 都市圏の人口 | 4010658 人 | 2025 | estimated |
 | 徒歩圏に医療・教育がある人口の割合 | 53.2 % | 2024 | observed |
 

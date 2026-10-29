@@ -50,7 +50,8 @@ export interface QuestionOption {
 export interface Question {
   id: string;
   order: number;
-  metric: string;
+  /** Metrics this question weighs. Several metrics (importance questions only) share the answer's weight equally. */
+  metrics: string[];
   prompt: string;
   answerKind: "ideal" | "importance";
   importanceControl: boolean;

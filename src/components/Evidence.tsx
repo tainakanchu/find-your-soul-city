@@ -80,7 +80,7 @@ export function Evidence({ axis, city }: { axis: AxisScore; city: City }) {
         <dd>
           {axis.answerWeight ?? axis.weight}
           {axis.answerWeight !== undefined && (
-            <span className="muted">（よく似た条件と分け合い {axis.weight.toFixed(2)}）</span>
+            <span className="muted">（同じ設問やよく似た条件と分け合い {axis.weight.toFixed(2)}）</span>
           )}
         </dd>
         <dt>出典</dt>

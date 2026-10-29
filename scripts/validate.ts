@@ -109,7 +109,7 @@ const { concentration } = await import("../src/scoring/concentration.ts");
 const conc = concentration(k, N, SEED);
 out.push(
   `- 実質的に 1 位を分け合っている都市の数（1 / Σ p²）: ${conc.effectiveWinners.toFixed(1)}（完全に均等なら ${k.cities.length}）。` +
-    `1 位になったことがない都市: ${conc.neverFirst.length}。テスト（src/scoring/concentration.test.ts）の基準は 1 位率の最大が期待値の 14 倍以下、実質の都市数 34 以上、ジニ係数 0.66 以下。`,
+    `1 位になったことがない都市: ${conc.neverFirst.length}。テスト（src/scoring/concentration.test.ts）の基準は 1 位率の最大が期待値の 20 倍以下、実質の都市数 26 以上、ジニ係数 0.68 以下（自然災害の設問を加えた時点で緩めた。理由はテストのコメント）。`,
 );
 const gaps = base
   .filter((r) => r.length > 1)

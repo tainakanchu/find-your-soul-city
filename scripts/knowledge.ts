@@ -189,16 +189,20 @@ const cities: City[] = ofType("City").map((d) => {
 
 const questions: Question[] = ofType("Question")
   .map((d) => {
-    const metric = str(d, "metric");
-    if (!metricKeys.has(metric)) fail(d.path, `metric ${metric} is not an adopted metric`);
+    const raw = d.fm.metrics ?? d.fm.metric;
+    const qMetrics = (Array.isArray(raw) ? raw : [raw]).map(String);
+    if (!qMetrics.length || qMetrics.some((m) => m === "undefined")) fail(d.path, "`metric` or `metrics` is required");
+    for (const m of qMetrics) if (!metricKeys.has(m)) fail(d.path, `metric ${m} is not an adopted metric`);
     const answerKind = str(d, "answer_kind");
+    if (qMetrics.length > 1 && answerKind !== "importance")
+      fail(d.path, "only importance questions may weigh several metrics");
     if (answerKind !== "ideal" && answerKind !== "importance") fail(d.path, `unknown answer_kind ${answerKind}`);
     const options = Array.isArray(d.fm.options) ? (d.fm.options as Fm[]) : [];
     if (options.length < 2) fail(d.path, "needs at least 2 options");
     return {
       id: str(d, "question_id"),
       order: num(d, "order"),
-      metric,
+      metrics: qMetrics,
       prompt: str(d, "title"),
       answerKind: answerKind as Question["answerKind"],
       importanceControl: d.fm.importance_control === true,

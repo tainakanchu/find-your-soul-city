@@ -182,7 +182,7 @@ export function shareCorrelatedWeights(
       .map((q) => Math.abs(corr[p.metric]?.[q.metric] ?? 0))
       .filter((r) => r >= threshold)
       .reduce((a, r) => a + r, 0);
-    return shared === 0 ? p : { ...p, weight: p.weight / (1 + shared), answerWeight: p.weight };
+    return shared === 0 ? p : { ...p, weight: p.weight / (1 + shared), answerWeight: p.answerWeight ?? p.weight };
   });
 }
 

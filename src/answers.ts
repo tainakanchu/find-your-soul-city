@@ -10,10 +10,13 @@ export interface Answer {
 export const DEFAULT_IMPORTANCE = 1;
 
 export function toPreferences(questions: Question[], answers: Record<string, Answer>): Preference[] {
-  return questions.map((q) => {
+  return questions.flatMap((q): Preference[] => {
     const a = answers[q.id] ?? { importance: 0 }; // unanswered = not weighted
-    return q.answerKind === "ideal"
-      ? { metric: q.metric, ideal: a.choice, weight: a.importance }
-      : { metric: q.metric, weight: a.choice ?? 0 };
+    if (q.answerKind === "ideal") return [{ metric: q.metrics[0], ideal: a.choice, weight: a.importance }];
+    // A question over several metrics splits its weight equally; the answer weight still picks the "enough" target.
+    const w = a.choice ?? 0;
+    return q.metrics.map((metric) =>
+      q.metrics.length === 1 ? { metric, weight: w } : { metric, weight: w / q.metrics.length, answerWeight: w },
+    );
   });
 }

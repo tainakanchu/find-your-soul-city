@@ -14,6 +14,9 @@ This license covers the data only. The application source code is under the MIT 
   Mari Rivero, I. et al. (2024), doi:10.2905/1a338be6-7eaf-480c-9664-3a8ade88cbcd.
   Schiavina, M. et al. (2023), doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE.
   The PM2.5 column of GHS-UCDB is derived from WUSTL ACAG SatPM2.5 (Shen et al. 2024).
+- **Natural hazards** (via GHS-UCDB R2024A, CC BY 4.0): river flood — JRC GloFAS flood hazard maps (Baugh et al. 2024);
+  coastal flood — JRC coastal flood maps (Vousdoukas et al. 2018); tropical cyclone occurrence — MYRIAD-HES
+  (Claassen et al. 2023, CC BY 4.0, doi:10.5281/zenodo.8269680).
 - **ERA5**: Contains modified Copernicus Climate Change Service information (ERA5, 1990–2019) [2026].
   Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus
   information or data it contains. Hersbach et al. (2020), doi:10.1002/qj.3803. Accessed via WeatherBench 2.
