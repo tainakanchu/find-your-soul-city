@@ -21,6 +21,10 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       air: A(1),
       culture: A(1),
       hazard: A(1),
+      sunset: A(19.5),
+      late_shops: A(20),
+      late_dining: A(20),
+      sunday: A(50),
     },
   },
   {
@@ -147,6 +151,32 @@ export const PERSONAS: { label: string; answers: Record<string, Answer> }[] = [
       green: A(0),
       air: A(0),
       culture: A(0),
+    },
+  },
+  {
+    label: "夜型（夜遅くまで明るく、深夜も店と飲食店が開いている）",
+    answers: {
+      summer: A(24),
+      winter: A(4, 0),
+      sunset: A(21, 2),
+      late_shops: A(70, 2),
+      late_dining: A(65, 2),
+      sunday: A(95),
+      transit: A(1),
+      culture: A(1),
+    },
+  },
+  {
+    label: "朝型（夜は早く暗く静か、日曜は店が休み）",
+    answers: {
+      summer: A(18),
+      winter: A(-5, 0),
+      sunset: A(19.5, 2),
+      late_shops: A(7, 2),
+      late_dining: A(8, 2),
+      sunday: A(15, 2),
+      green: A(1),
+      bike: A(1),
     },
   },
 ];

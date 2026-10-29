@@ -15,7 +15,7 @@ boundary:
   id: 348
   name: "Seoul"
   area_km2: 2282
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 15.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 53.9, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 19829, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 22.0, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 10.5, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: null, quality: missing, source: osm-hours, year: null, reason: "opening_hours tagged on 2.8% of 55874 eating POIs (minimum 5%)" }
+  late_shops: { value: 71.3, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 26.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 1197, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 32.7, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 96.5, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 19.9, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: -2.28, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 25.7, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 34.1, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 348「Seoul」。面積 2282 km
 | 人口加重密度 | 19829 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 22.0 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 10.5 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 欠損 | — | opening_hours tagged on 2.8% of 55874 eating POIs (minimum 5%) |
+| 深夜 23 時に開いている食料品店の割合 | 71.3 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 26.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 1197 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 32.7 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 96.5 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 19.9 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | -2.28 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 25.7 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 34.1 % | 2021 | observed |

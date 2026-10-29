@@ -1,6 +1,6 @@
 # 欠損率
 
-生成: 2026-10-29T04:27:29Z（`pnpm etl`）。対象 130 都市。
+生成: 2026-10-29T19:13:22Z（`pnpm etl`）。対象 130 都市。
 
 | 指標 | 出典 | 欠損率 | Australia and New Zealand | Central and Southern Asia | Eastern and South-Eastern Asia | Europe | Latin America and the Caribbean | Northern Africa and Western Asia | Northern America | Sub-Saharan Africa |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -10,9 +10,13 @@
 | density_weighted | ghsl-pop | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | dewpoint_max_month | era5 | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | flood | ghsl-hazard | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
+| late_dining | osm-hours | 14% | 0/5 | 3/16 | 1/22 | 0/23 | 2/16 | 4/16 | 0/16 | 8/16 |
+| late_shops | osm-hours | 23% | 0/5 | 8/16 | 2/22 | 0/23 | 2/16 | 7/16 | 0/16 | 11/16 |
 | pm25 | ghsl-ucdb | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | precip_annual | era5 | 5% | 0/5 | 2/16 | 0/22 | 0/23 | 4/16 | 0/16 | 0/16 | 1/16 |
 | rapid_transit | itdp-atlas | 5% | 1/5 | 1/16 | 1/22 | 2/23 | 2/16 | 0/16 | 0/16 | 0/16 |
+| sunday_shops | osm-hours | 23% | 0/5 | 8/16 | 2/22 | 0/23 | 2/16 | 7/16 | 0/16 | 11/16 |
+| sunset_summer | daylight | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | temp_coldest | era5 | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | temp_warmest | era5 | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |
 | tree_share | esa-worldcover | 0% | 0/5 | 0/16 | 0/22 | 0/23 | 0/16 | 0/16 | 0/16 | 0/16 |

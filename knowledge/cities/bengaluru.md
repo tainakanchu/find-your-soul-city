@@ -15,7 +15,7 @@ boundary:
   id: 9558
   name: "Bengaluru"
   area_km2: 1008
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 0.55, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 63.8, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 46588, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 19.8, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.1, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 17.6, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 1.82, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 34.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 964.8, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: null, quality: missing, source: itdp-atlas, year: null, reason: "Atlas rapid-transit station data incomplete: 10 stations on 71 line-km (0.14/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 4.4 % is not credible" }
+  sunday_shops: { value: 88.1, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 18.8, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 21.0, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 27.3, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 18.4, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 9558「Bengaluru」。面積 10
 | 人口加重密度 | 46588 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 19.8 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.1 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 17.6 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 1.82 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 34.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 964.8 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 欠損 | — | Atlas rapid-transit station data incomplete: 10 stations on 71 line-km (0.14/km < 0.2/km); People Near Rapid Transport is computed from stations, so the published 4.4 % is not credible |
+| 日曜の昼に開いている食料品店の割合 | 88.1 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 18.8 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 21.0 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 27.3 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 18.4 % | 2021 | observed |

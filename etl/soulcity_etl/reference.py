@@ -11,10 +11,23 @@ import csv
 import math
 
 from .build import KNOWLEDGE, adopted_metrics
-from .cities import REFERENCE_MIN_POP, reference_centres
+from .cities import REFERENCE_MIN_POP, load_cities, reference_centres
 from .common import REFERENCE, now_iso
 
 LEVELS = [i / 20 for i in range(21)]
+# Metrics with `reference_partial` (a reason) in their doc cover only part of the reference set (e.g. OSM tags that
+# exist in about half the cities). Their correlations need this many common cities instead of half the set.
+PARTIAL_MIN_N = 150  # Spearman SE ~ 1/sqrt(n-1) = 0.08, well inside the 0.5 sharing threshold
+
+
+def _canonical() -> dict[str, int]:
+    """Row id -> GHS-UCDB id, for reference centres only. A centre can appear as `uc-<id>` or under its target id
+    (whichever was current when that source's CSV was written); rows outside the reference set (small targets) drop.
+    """
+    ref = {c.ucdb_id for c in reference_centres()}
+    out = {f"uc-{u}": u for u in ref}
+    out.update({c.city_id: c.ucdb_id for c in load_cities() if c.ucdb_id in ref})
+    return out
 
 
 def quantile(sorted_xs: list[float], q: float) -> float:
@@ -24,7 +37,7 @@ def quantile(sorted_xs: list[float], q: float) -> float:
     return sorted_xs[i] + (sorted_xs[j] - sorted_xs[i]) * (pos - i)
 
 
-def _column(m: dict) -> tuple[str, dict[str, float]]:
+def _column(m: dict) -> tuple[str, dict[int, float]]:
     """(metric_key, {city_id: value}) from the metric's reference CSV."""
     col = m.get("reference_column", m.get("etl_key", m["metric_key"]))
     path = REFERENCE / f"{m['source']}.csv"
@@ -34,7 +47,12 @@ def _column(m: dict) -> tuple[str, dict[str, float]]:
         rows = list(csv.DictReader(f))
     if col not in rows[0]:
         raise SystemExit(f"{m['metric_key']}: column {col} not in {path.name}")
-    return m["metric_key"], {r["city_id"]: float(r[col]) for r in rows if r[col] not in ("", "nan", "NaN", "None")}
+    ids = _canonical()
+    return m["metric_key"], {
+        ids[r["city_id"]]: float(r[col])
+        for r in rows
+        if r["city_id"] in ids and r[col] not in ("", "nan", "NaN", "None")
+    }
 
 
 def _ranks(xs: list[float]) -> list[float]:
@@ -52,7 +70,7 @@ def _ranks(xs: list[float]) -> list[float]:
     return out
 
 
-def spearman(a: dict[str, float], b: dict[str, float]) -> tuple[float, int]:
+def spearman(a: dict[int, float], b: dict[int, float]) -> tuple[float, int]:
     ids = sorted(set(a) & set(b))
     ra, rb = _ranks([a[i] for i in ids]), _ranks([b[i] for i in ids])
     n = len(ids)
@@ -66,6 +84,7 @@ def spearman(a: dict[str, float], b: dict[str, float]) -> tuple[float, int]:
 def correlation_lines(metrics: list[dict]) -> list[str]:
     """Spearman correlation between every pair of adopted metrics over the reference set (pairwise complete)."""
     cols = dict(_column(m) for m in metrics)
+    partial = {m["metric_key"] for m in metrics if m.get("reference_partial")}
     keys = sorted(cols)
     lines = []
     for a in keys:
@@ -74,7 +93,8 @@ def correlation_lines(metrics: list[dict]) -> list[str]:
             if a == b:
                 continue
             r, n = spearman(cols[a], cols[b])
-            if n < 0.5 * len(reference_centres()):
+            need = PARTIAL_MIN_N if {a, b} & partial else 0.5 * len(reference_centres())
+            if n < need:
                 raise SystemExit(f"correlation {a}/{b}: only {n} common reference cities")
             cells.append(f"{b}: {round(r, 3)}")
         lines.append(f"  {a}: {{ {', '.join(cells)} }}")
@@ -95,7 +115,8 @@ def main() -> None:
             rows = list(csv.DictReader(f))
         if col not in rows[0]:
             raise SystemExit(f"{m['metric_key']}: column {col} not in {path.name}")
-        xs = sorted(float(r[col]) for r in rows if r[col] not in ("", "nan", "NaN", "None"))
+        ids = _canonical()
+        xs = sorted(float(r[col]) for r in rows if r["city_id"] in ids and r[col] not in ("", "nan", "NaN", "None"))
         if len(xs) < 0.8 * n_ref:
             raise SystemExit(f"{m['metric_key']}: only {len(xs)}/{n_ref} reference values")
         qs = [round(quantile(xs, q), 4) for q in LEVELS]

@@ -8,7 +8,7 @@ build (knowledge/cities, data/processed) -> reference distributions. Cached raw 
 import importlib
 import sys
 
-STEPS = ["ghsl", "era5", "worldcover", "itdp", "osm", "build", "reference"]
+STEPS = ["ghsl", "era5", "worldcover", "itdp", "osm", "hazard", "daylight", "opening_hours", "build", "reference"]
 WITH_REFERENCE = {"worldcover", "itdp"}  # modules whose reference set is opt-in
 
 if __name__ == "__main__":

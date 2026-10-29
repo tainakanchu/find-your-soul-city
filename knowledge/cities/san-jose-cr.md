@@ -15,7 +15,7 @@ boundary:
   id: 363
   name: "San José"
   area_km2: 491.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 74.3, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 7014, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 18.4, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.01, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 12.6, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 12.5, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 18.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 2705, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 78.5, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 18.0, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 19.8, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 21.3, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 37.5, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 363「San José」。面積 491
 | 人口加重密度 | 7014 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 18.4 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.01 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 12.6 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 12.5 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 18.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 2705 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 0.0 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 78.5 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 18.0 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 19.8 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 21.3 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 37.5 % | 2021 | observed |

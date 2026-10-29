@@ -15,7 +15,7 @@ boundary:
   id: 854
   name: "Athens"
   area_km2: 412.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 3.8, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 35.9, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 12599, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 14.9, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.06, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 65.6, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 15.6, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 14.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 384.2, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 25.0, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 33.0, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 20.8, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 8.8, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 28.0, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 16.0, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 854「Athens」。面積 412.0 
 | 人口加重密度 | 12599 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 14.9 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.06 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 65.6 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 15.6 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 14.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 384.2 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 25.0 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 33.0 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 20.8 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 8.8 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 28.0 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 16.0 % | 2021 | observed |

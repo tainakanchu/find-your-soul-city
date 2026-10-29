@@ -15,7 +15,7 @@ boundary:
   id: 7783
   name: "Denpasar"
   area_km2: 388.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 71.2, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 8352, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 23.1, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.3, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 17.7, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 60.5, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 12.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 2409, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 98.8, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 18.6, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 25.0, quality: estimated, source: era5, year: "1990-2019" }
   temp_warmest: { value: 27.3, quality: estimated, source: era5, year: "1990-2019" }
   tree_share: { value: 29.0, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 7783「Denpasar」。面積 388
 | 人口加重密度 | 8352 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 23.1 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.3 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 17.7 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 60.5 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 12.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 2409 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 0.0 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 98.8 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 18.6 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 25.0 ℃ | 1990-2019 | estimated |
 | 最暖月の平均気温 | 27.3 ℃ | 1990-2019 | estimated |
 | 樹木被覆率 | 29.0 % | 2021 | observed |

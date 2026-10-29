@@ -2,15 +2,16 @@
 
 都市統計 × 個人の好みによる都市適合診断。
 
-都市の指標はすべて公開統計から ETL で算出した実データ（130 都市 × 15 指標、欠損 17/1950）。仮値は使っておらず、混入したらビルドが失敗する。
+都市の指標はすべて公開統計から ETL で算出した実データ（130 都市 × 19 指標、欠損 95/2470）。仮値は使っておらず、混入したらビルドが失敗する。
 
-| ソース                           | 指標                                           | ライセンス |
-| -------------------------------- | ---------------------------------------------- | ---------- |
-| GHS-UCDB R2024A / GHS-POP R2023A | 都市境界、人口、人口加重密度、PM2.5            | CC BY 4.0  |
-| ERA5（C3S、WeatherBench 2 経由） | 最暖月・最寒月の気温、露点、降水、雲量         | CC BY 4.0  |
-| ESA WorldCover 2021              | 樹木被覆率                                     | CC BY 4.0  |
-| ITDP Atlas update_2024           | 徒歩圏の医療・教育、保護自転車道、高速公共交通 | ODbL 1.0   |
-| OpenStreetMap（QLever 経由）     | 文化施設の密度                                 | ODbL 1.0   |
+| ソース                           | 指標                                           | ライセンス                   |
+| -------------------------------- | ---------------------------------------------- | ---------------------------- |
+| GHS-UCDB R2024A / GHS-POP R2023A | 都市境界、人口、人口加重密度、PM2.5            | CC BY 4.0                    |
+| ERA5（C3S、WeatherBench 2 経由） | 最暖月・最寒月の気温、露点、降水、雲量         | CC BY 4.0                    |
+| ESA WorldCover 2021              | 樹木被覆率                                     | CC BY 4.0                    |
+| ITDP Atlas update_2024           | 徒歩圏の医療・教育、保護自転車道、高速公共交通 | ODbL 1.0                     |
+| OpenStreetMap（QLever 経由）     | 文化施設の密度、深夜・日曜の店の営業割合       | ODbL 1.0                     |
+| 天文計算（astral、tzdata）       | 夏至の日の入り時刻                             | ODbL 1.0（タイムゾーン境界） |
 
 都市データ一式は ODbL 1.0（[DATA-LICENSE.md](DATA-LICENSE.md)）。検証結果は [knowledge/reports/validation.md](knowledge/reports/validation.md)、欠損率は [data/processed/coverage.md](data/processed/coverage.md)。
 

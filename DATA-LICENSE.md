@@ -25,6 +25,11 @@ This license covers the data only. The application source code is under the MIT 
 - **ITDP Atlas of Sustainable City Transport**: Contains information from the Atlas of Sustainable City Transport
   (ITDP, atlas.itdp.org, release update_2024), which is made available under the Open Database License (ODbL).
   Based on OpenStreetMap data © OpenStreetMap contributors.
+- **OpenStreetMap** (culture venues, opening hours of shops and restaurants): © OpenStreetMap contributors, ODbL 1.0,
+  https://www.openstreetmap.org/copyright. Retrieved via the QLever osm-planet endpoint (planet 2026-09-21).
+- **Sunset times** are computed: time zones from timezone-boundary-builder
+  (https://github.com/evansiroky/timezone-boundary-builder) via timezonefinder, which is made available under the
+  Open Database License (ODbL) 1.0; IANA Time Zone Database (public domain); solar position with astral (Apache-2.0).
 
 ## Validation-only fields
 

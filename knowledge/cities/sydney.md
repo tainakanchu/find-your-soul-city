@@ -15,7 +15,7 @@ boundary:
   id: 2324
   name: "Sydney"
   area_km2: 1378
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 26.3, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 46.4, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 5243, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 17.2, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.47, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 7.92, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 13.8, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 12.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 709.9, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 18.8, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 96.2, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 20.1, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 11.5, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 23.0, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 39.0, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 2324「Sydney」。面積 1378 
 | 人口加重密度 | 5243 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 17.2 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.47 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 7.92 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 13.8 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 12.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 709.9 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 18.8 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 96.2 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 20.1 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 11.5 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 23.0 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 39.0 % | 2021 | observed |
