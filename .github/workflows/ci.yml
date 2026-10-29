@@ -3,7 +3,7 @@ name: CI / Pages
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -48,14 +48,14 @@ jobs:
         env:
           # Project site: https://<owner>.github.io/<repo>/
           BASE_PATH: /${{ github.event.repository.name }}/
-      - if: github.ref == 'refs/heads/main'
+      - if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
   deploy:
     needs: [etl, check]
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       pages: write

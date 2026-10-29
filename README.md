@@ -67,7 +67,7 @@ Node 22.18 以上（`.ts` を直接実行するため）。ETL は Python 3.12 �
 
 ## デプロイ（GitHub Pages）
 
-`main` への push で `.github/workflows/ci.yml` がチェック → ビルド → Pages へ配信する。初回のみ Pages のソースを GitHub Actions にする:
+`master` への push で `.github/workflows/ci.yml` がチェック → ビルド → Pages へ配信する。初回のみ Pages のソースを GitHub Actions にする:
 
 ```sh
 gh api -X POST "repos/{owner}/{repo}/pages" -f build_type=workflow
