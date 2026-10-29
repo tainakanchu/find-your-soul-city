@@ -1,10 +1,4 @@
 {
   "printWidth": 120,
-  "ignorePatterns": [
-    "knowledge/**",
-    "src/generated/**",
-    "pnpm-lock.yaml",
-    "data/**",
-    "public/og/manifest.json"
-  ]
+  "ignorePatterns": ["knowledge/**", "src/generated/**", "pnpm-lock.yaml", "data/**", "public/og/manifest.json"]
 }
