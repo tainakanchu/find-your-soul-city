@@ -1,0 +1,10 @@
+node_modules
+dist
+src/generated
+*.tsbuildinfo
+.cache
+etl/.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache

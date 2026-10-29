@@ -1,0 +1,15 @@
+name: 不具合・ご意見
+description: 表示の不具合、設問のわかりにくさ、アイデアなど
+labels: [feedback]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 種類
+      options: [不具合, 設問・説明がわかりにくい, 結果に違和感がある, アイデア, その他]
+    validations: { required: true }
+  - type: textarea
+    id: detail
+    attributes:
+      { label: 内容, description: 端末やブラウザ（例 iPhone / Safari）もあれば。診断の回答を書く必要はありません。 }
+    validations: { required: true }

@@ -1,0 +1,525 @@
+city_id,ucdb_id,name_en,iso2,region,density_weighted
+dakar,39,Dakar,SN,Sub-Saharan Africa,24623.2
+uc-40,40,Serrekunda,GM,Sub-Saharan Africa,11393.5
+uc-47,47,Freetown,SL,Sub-Saharan Africa,23953.4
+uc-50,50,Monrovia,LR,Sub-Saharan Africa,10475.8
+uc-70,70,Turin,IT,Europe,11525.5
+uc-109,109,Sofia,BG,Europe,7482.59
+uc-152,152,Manama,BH,Northern Africa and Western Asia,17081.3
+doha,153,Doha,QA,Northern Africa and Western Asia,10931.9
+singapore,178,Singapore,SG,Eastern and South-Eastern Asia,38974.9
+uc-212,212,La Paz,BO,Latin America and the Caribbean,10065.2
+uc-214,214,Mendoza,AR,Latin America and the Caribbean,6873.72
+uc-217,217,Asuncion,PY,Latin America and the Caribbean,3640.71
+uc-222,222,Nouakchott,MR,Sub-Saharan Africa,18658.7
+lisbon,231,Lisbon,PT,Europe,8984.13
+uc-244,244,Rotterdam [The Hague],NL,Europe,5974.59
+uc-258,258,Tripoli,LY,Northern Africa and Western Asia,3594.77
+uc-291,291,Alexandria,EG,Northern Africa and Western Asia,48851.1
+uc-295,295,Bujumbura,BI,Sub-Saharan Africa,24410.2
+maputo,299,Maputo,MZ,Sub-Saharan Africa,12021.6
+uc-312,312,Yerevan,AM,Northern Africa and Western Asia,8241.93
+ulaanbaatar,337,Ulaanbaatar,MN,Eastern and South-Eastern Asia,10403.2
+seoul,348,Seoul,KR,Eastern and South-Eastern Asia,19829.2
+sapporo,351,Sapporo,JP,Eastern and South-Eastern Asia,7429.97
+vancouver,358,Vancouver,CA,Northern America,6085.37
+uc-362,362,Managua,NI,Latin America and the Caribbean,9686.38
+san-jose-cr,363,San José,CR,Latin America and the Caribbean,7013.53
+havana,367,Havana,CU,Latin America and the Caribbean,11419.8
+uc-391,391,Bamako,ML,Sub-Saharan Africa,19901.3
+dublin,394,Dublin,IE,Europe,5405.9
+uc-395,395,Bobo-Dioulasso,BF,Sub-Saharan Africa,11228.4
+uc-424,424,N'Djamena,TD,Sub-Saharan Africa,12588.8
+uc-427,427,Brazzaville,CG,Sub-Saharan Africa,48185.9
+cape-town,431,Cape Town,ZA,Sub-Saharan Africa,13518
+uc-456,456,Gaza,PS,Northern Africa and Western Asia,20279
+tel-aviv,457,Tel Aviv,IL,Northern Africa and Western Asia,13585.7
+beirut,458,Beirut,LB,Northern Africa and Western Asia,20091.5
+uc-461,461,Lilongwe,MW,Sub-Saharan Africa,13626.6
+uc-475,475,Kuwait City,KW,Northern Africa and Western Asia,13107.2
+perth,498,Perth,AU,Australia and New Zealand,2533.98
+uc-507,507,Tijuana,MX,Latin America and the Caribbean,7372.01
+uc-511,511,San Pedro Sula,HN,Latin America and the Caribbean,9619.68
+uc-548,548,Niamey,NE,Sub-Saharan Africa,10166.3
+prague,560,Prague,CZ,Europe,6823.14
+uc-564,564,Cabinda,AO,Sub-Saharan Africa,20117.5
+helsinki,572,Helsinki,FI,Europe,4876.62
+uc-573,573,Belgrade,RS,Europe,9683.05
+uc-582,582,Bangui,CF,Sub-Saharan Africa,23475.1
+uc-586,586,Saint Petersburg,RU,Europe,15385.5
+kigali,597,Kigali,RW,Sub-Saharan Africa,9618.9
+colombo,632,Colombo [Sri Jayawardenepura Kotte],LK,Central and Southern Asia,7680.4
+panama-city,658,Panama City,PA,Latin America and the Caribbean,10682.4
+uc-666,666,Cochabamba,BO,Latin America and the Caribbean,6395.44
+uc-673,673,Coyah,GN,Sub-Saharan Africa,17160
+uc-693,693,Essen,DE,Europe,4172.39
+copenhagen,698,Copenhagen,DK,Europe,9727.6
+uc-724,724,Minsk,BY,Europe,12858.9
+uc-749,749,Medina,SA,Northern Africa and Western Asia,9964.8
+uc-761,761,Herat,AF,Central and Southern Asia,29035.6
+uc-764,764,Bishkek,KG,Central and Southern Asia,21163.3
+uc-792,792,Guayaquil,EC,Latin America and the Caribbean,15767.9
+montevideo,804,Montevideo,UY,Latin America and the Caribbean,8112.84
+uc-820,820,Lomé,TG,Sub-Saharan Africa,8963.32
+uc-832,832,Douala,CM,Sub-Saharan Africa,23261.5
+athens,854,Athens,GR,Europe,12598.7
+uc-876,876,Duhok,IQ,Northern Africa and Western Asia,21606.3
+uc-906,906,Taichung,TW,Eastern and South-Eastern Asia,12492.9
+fukuoka,907,Fukuoka,JP,Eastern and South-Eastern Asia,7378.51
+uc-916,916,San Salvador,SV,Latin America and the Caribbean,10209.4
+uc-945,945,Oran,DZ,Northern Africa and Western Asia,13633.7
+budapest,964,Budapest,HU,Europe,8055.39
+amman,992,Amman,JO,Northern Africa and Western Asia,24035.3
+dubai,1007,Dubai,AE,Northern Africa and Western Asia,9521.78
+uc-1027,1027,Kitakyushu,JP,Eastern and South-Eastern Asia,4666.01
+uc-1058,1058,Porto,PT,Europe,5262.24
+uc-1063,1063,Takoradi,GH,Sub-Saharan Africa,14455.3
+vienna,1081,Vienna,AT,Europe,11062.6
+luanda,1082,Luanda,AO,Sub-Saharan Africa,24906.5
+izmir,1094,Izmir,TR,Northern Africa and Western Asia,18961.5
+uc-1112,1112,Jeddah,SA,Northern Africa and Western Asia,11817.6
+uc-1121,1121,Ashgabat,TM,Central and Southern Asia,13639.1
+taipei,1142,Taipei,TW,Eastern and South-Eastern Asia,23023
+auckland,1147,Auckland,NZ,Australia and New Zealand,3795.08
+uc-1158,1158,Cali,CO,Latin America and the Caribbean,21216.7
+uc-1186,1186,Cologne,DE,Europe,5880.07
+uc-1236,1236,Dushanbe,TJ,Central and Southern Asia,17247.7
+uc-1262,1262,Calgary,CA,Northern America,4266.14
+uc-1268,1268,Maracaibo,VE,Latin America and the Caribbean,9834.88
+uc-1269,1269,Port-au-Prince,HT,Latin America and the Caribbean,12447.9
+uc-1284,1284,Kumasi,GH,Sub-Saharan Africa,19252.7
+lagos,1289,Lagos,NG,Sub-Saharan Africa,24035.5
+uc-1290,1290,Brussels,BE,Europe,12337.9
+uc-1301,1301,Lubango,AO,Sub-Saharan Africa,15106.6
+uc-1365,1365,Tegucigalpa,HN,Latin America and the Caribbean,14913.5
+uc-1375,1375,Santa Cruz de la Sierra,BO,Latin America and the Caribbean,8359.69
+uc-1377,1377,Manaus,BR,Latin America and the Caribbean,14683.2
+tunis,1399,Tunis,TN,Northern Africa and Western Asia,11084.9
+uc-1419,1419,Harare,ZW,Sub-Saharan Africa,5124.29
+uc-1432,1432,Tabriz,IR,Central and Southern Asia,11196.3
+san-francisco,1461,San Francisco,US,Northern America,5116.74
+uc-1487,1487,Ouagadougou,BF,Sub-Saharan Africa,9976.19
+milan,1498,Milan,IT,Europe,7879.2
+lusaka,1517,Lusaka,ZM,Sub-Saharan Africa,16281.1
+uc-1521,1521,Ramallah,PS,Northern Africa and Western Asia,8752.32
+uc-1530,1530,Mosul,IQ,Northern Africa and Western Asia,29255.2
+uc-1531,1531,Mecca,SA,Northern Africa and Western Asia,13303.1
+uc-1564,1564,Edmonton,CA,Northern America,3945.79
+uc-1588,1588,Cotonou,BJ,Sub-Saharan Africa,10243.2
+amsterdam,1590,Amsterdam,NL,Europe,7257.33
+uc-1619,1619,Damascus,SY,Northern Africa and Western Asia,24887.2
+uc-1634,1634,Astana,KZ,Central and Southern Asia,10888.3
+uc-1646,1646,Medan,ID,Eastern and South-Eastern Asia,11568.5
+kuala-lumpur,1648,Kuala Lumpur,MY,Eastern and South-Eastern Asia,9411.84
+santo-domingo,1667,Santo Domingo,DO,Latin America and the Caribbean,14271
+stockholm,1693,Stockholm,SE,Europe,8414.66
+kampala,1711,Kampala,UG,Sub-Saharan Africa,9974.06
+nairobi,1717,Nairobi,KE,Sub-Saharan Africa,42213.7
+phnom-penh,1741,Phnom Penh,KH,Eastern and South-Eastern Asia,15969.1
+uc-1744,1744,Tainan,TW,Eastern and South-Eastern Asia,7997.05
+melbourne,1747,Melbourne,AU,Australia and New Zealand,4138.93
+uc-1763,1763,Touba,SN,Sub-Saharan Africa,9207.73
+uc-1799,1799,Aleppo,SY,Northern Africa and Western Asia,24481.1
+kathmandu,1822,Kathmandu,NP,Central and Southern Asia,25709.5
+marrakesh,1853,Marrakesh,MA,Northern Africa and Western Asia,39191.2
+kinshasa,1876,Kinshasa,CD,Sub-Saharan Africa,60538.8
+uc-1900,1900,Hargeisa,SO,Sub-Saharan Africa,30436.8
+kaohsiung,1919,Kaohsiung,TW,Eastern and South-Eastern Asia,13677.5
+uc-1985,1985,Antananarivo,MG,Sub-Saharan Africa,31509.9
+uc-1991,1991,Srinagar,IN,Central and Southern Asia,27833.7
+hanoi,1999,Hanoi,VN,Eastern and South-Eastern Asia,15680.4
+uc-2005,2005,Angeles,PH,Eastern and South-Eastern Asia,13627.1
+los-angeles,2007,Los Angeles,US,Northern America,4831.77
+uc-2047,2047,Nyala,SD,Northern Africa and Western Asia,13897.7
+uc-2089,2089,Guatemala City,GT,Latin America and the Caribbean,10231.1
+casablanca,2102,Casablanca,MA,Northern Africa and Western Asia,33252
+uc-2125,2125,Kyiv,UA,Europe,10352.3
+lima,2171,Lima,PE,Latin America and the Caribbean,17417.3
+baku,2221,Baku,AZ,Northern Africa and Western Asia,10008.6
+uc-2241,2241,Daejeon,KR,Eastern and South-Eastern Asia,13313.9
+uc-2264,2264,Liverpool,GB,Europe,4818.33
+uc-2276,2276,Yaoundé,CM,Sub-Saharan Africa,33235.2
+uc-2289,2289,Jerusalem,IL,Northern Africa and Western Asia,21072.1
+uc-2306,2306,Shymkent,KZ,Central and Southern Asia,6788.93
+bangkok,2315,Bangkok,TH,Eastern and South-Eastern Asia,12629.8
+manila,2323,Manila,PH,Eastern and South-Eastern Asia,28876.8
+sydney,2324,Sydney,AU,Australia and New Zealand,5242.59
+santiago,2334,Santiago,CL,Latin America and the Caribbean,12961.9
+uc-2335,2335,Cordoba,AR,Latin America and the Caribbean,6040.35
+uc-2359,2359,Bucharest,RO,Europe,13330.4
+uc-2448,2448,Erbil,IQ,Northern Africa and Western Asia,10976.2
+karachi,2457,Karachi,PK,Central and Southern Asia,54551.4
+uc-2471,2471,San Diego,US,Northern America,4059.54
+quito,2544,Quito,EC,Latin America and the Caribbean,9966.93
+uc-2576,2576,Moscow,RU,Europe,17306
+uc-2597,2597,Mandalay,MM,Eastern and South-Eastern Asia,16237.5
+istanbul,2637,Istanbul,TR,Northern Africa and Western Asia,24674.3
+uc-2659,2659,Ürümqi,CN,Eastern and South-Eastern Asia,31539.3
+uc-2667,2667,Gwangju,KR,Eastern and South-Eastern Asia,11052.6
+medellin,2676,Medellín,CO,Latin America and the Caribbean,19645.2
+brisbane,2734,Brisbane,AU,Australia and New Zealand,2866.74
+uc-2747,2747,Rabat,MA,Northern Africa and Western Asia,23719.5
+uc-2839,2839,Kirkuk,IQ,Northern Africa and Western Asia,13186.8
+almaty,2847,Almaty,KZ,Central and Southern Asia,10485.2
+toronto,2869,Toronto,CA,Northern America,6140.73
+paris,2878,Paris,FR,Europe,14016
+uc-2880,2880,Ibadan,NG,Sub-Saharan Africa,14123.8
+uc-2902,2902,Mombasa,KE,Sub-Saharan Africa,17659.6
+tashkent,2907,Tashkent,UZ,Central and Southern Asia,27104.4
+uc-2920,2920,Daegu,KR,Eastern and South-Eastern Asia,13624.3
+uc-2921,2921,Hiroshima,JP,Eastern and South-Eastern Asia,5224.3
+uc-2967,2967,Mogadishu,SO,Sub-Saharan Africa,58511.4
+uc-2979,2979,Johor Bahru,MY,Eastern and South-Eastern Asia,5986.8
+abidjan,2996,Abidjan,CI,Sub-Saharan Africa,24830.5
+riyadh,3026,Riyadh,SA,Northern Africa and Western Asia,10111.6
+uc-3096,3096,Padang,ID,Eastern and South-Eastern Asia,9531.72
+uc-3105,3105,Guadalajara,MX,Latin America and the Caribbean,10783
+uc-3109,3109,Valencia,VE,Latin America and the Caribbean,6877.74
+uc-3130,3130,Bursa,TR,Northern Africa and Western Asia,76858
+accra,3175,Accra,GH,Sub-Saharan Africa,11713.8
+uc-3306,3306,Nampula,MZ,Sub-Saharan Africa,11766.7
+uc-3307,3307,Baghdad,IQ,Northern Africa and Western Asia,14111.3
+madrid,3338,Madrid,ES,Europe,16854.3
+uc-3340,3340,Manchester,GB,Europe,4825.26
+uc-3371,3371,Jammu,IN,Central and Southern Asia,11673.8
+algiers,3397,Algiers,DZ,Northern Africa and Western Asia,13922.9
+uc-3440,3440,Arequipa,PE,Latin America and the Caribbean,9756.01
+uc-3468,3468,Karbala,IQ,Northern Africa and Western Asia,14211.8
+uc-3509,3509,Malanje,AO,Sub-Saharan Africa,20789.3
+johannesburg,3512,Johannesburg,ZA,Sub-Saharan Africa,12683.4
+uc-3547,3547,Rosario,AR,Latin America and the Caribbean,9424.93
+uc-3562,3562,Tshikapa,CD,Sub-Saharan Africa,32742.8
+dar-es-salaam,3570,Dar es-Salaam,TZ,Sub-Saharan Africa,26967.3
+uc-3576,3576,Dammam,SA,Northern Africa and Western Asia,8972.39
+uc-3586,3586,Pekanbaru,ID,Eastern and South-Eastern Asia,7759.51
+uc-3673,3673,Zanzibar City,TZ,Sub-Saharan Africa,18981.7
+montreal,3700,Montreal,CA,Northern America,6042.24
+warsaw,3712,Warsaw,PL,Europe,8045.4
+uc-3739,3739,P'yŏngyang,KP,Eastern and South-Eastern Asia,22252
+uc-3780,3780,Xining,CN,Eastern and South-Eastern Asia,25658.3
+uc-3809,3809,Soshanguve,ZA,Sub-Saharan Africa,5538.71
+uc-3811,3811,Kharkiv,UA,Europe,7903.61
+uc-3823,3823,Rajkot,IN,Central and Southern Asia,18968.6
+uc-3837,3837,Caracas,VE,Latin America and the Caribbean,14443.6
+uc-3860,3860,Al Hillah,IQ,Northern Africa and Western Asia,10805.1
+bogota,3881,Bogota,CO,Latin America and the Caribbean,27679
+uc-3886,3886,Tangier,MA,Northern Africa and Western Asia,37180.8
+uc-3888,3888,Birmingham,GB,Europe,5029.08
+uc-3920,3920,Busan,KR,Eastern and South-Eastern Asia,16617.8
+rome,3938,Rome,IT,Europe,10732
+uc-3943,3943,Pretoria,ZA,Sub-Saharan Africa,8423.57
+uc-3968,3968,Barranquilla,CO,Latin America and the Caribbean,23629.6
+uc-3978,3978,Lyon,FR,Europe,9397.07
+uc-3993,3993,Sana'a,YE,Northern Africa and Western Asia,34690.1
+uc-4034,4034,Al-Najaf,IQ,Northern Africa and Western Asia,16082.1
+uc-4092,4092,Sacramento,US,Northern America,2926.98
+uc-4118,4118,Ta'izz,YE,Northern Africa and Western Asia,35434.2
+uc-4155,4155,Khartoum,SD,Northern Africa and Western Asia,10595.3
+uc-4183,4183,Ilorin,NG,Sub-Saharan Africa,10119.9
+uc-4184,4184,Hamburg,DE,Europe,5097.77
+uc-4230,4230,El Mahalla El Kubra,EG,Northern Africa and Western Asia,31556.7
+uc-4277,4277,Peshawar,PK,Central and Southern Asia,13657.4
+uc-4305,4305,Banha,EG,Northern Africa and Western Asia,12353.9
+uc-4316,4316,Amritsar,IN,Central and Southern Asia,30428.5
+uc-4332,4332,Leeds,GB,Europe,4847.67
+uc-4356,4356,Lanzhou,CN,Eastern and South-Eastern Asia,26196.4
+osaka,4399,Osaka,JP,Eastern and South-Eastern Asia,8375.58
+uc-4407,4407,Fez,MA,Northern Africa and Western Asia,36472.1
+uc-4416,4416,Kananga,CD,Sub-Saharan Africa,25834.2
+buenos-aires,4443,Buenos Aires,AR,Latin America and the Caribbean,9784.37
+uc-4478,4478,León,MX,Latin America and the Caribbean,10744.4
+uc-4490,4490,Naples,IT,Europe,9844.17
+uc-4512,4512,Naha,JP,Eastern and South-Eastern Asia,5911.05
+uc-4522,4522,Valencia,ES,Europe,15159
+uc-4529,4529,Antalya,TR,Northern Africa and Western Asia,10117.6
+uc-4538,4538,Ahwaz,IR,Central and Southern Asia,28560
+uc-4593,4593,Belém,BR,Latin America and the Caribbean,13534.3
+cairo,4605,Cairo,EG,Northern Africa and Western Asia,49637
+uc-4625,4625,Las Vegas,US,Northern America,3977.6
+uc-4644,4644,Nizhny Novgorod,RU,Europe,7537
+uc-4655,4655,Yinchuan,CN,Eastern and South-Eastern Asia,21527.6
+uc-4694,4694,Batam City,ID,Eastern and South-Eastern Asia,14686.3
+phoenix,4699,Phoenix,US,Northern America,2975.12
+uc-4736,4736,Mesa,US,Northern America,2699.46
+uc-4768,4768,Cần Thơ,VN,Eastern and South-Eastern Asia,13604.9
+uc-4773,4773,Torreón,MX,Latin America and the Caribbean,8893.85
+durban,4787,Durban,ZA,Sub-Saharan Africa,7459.2
+uc-4822,4822,Sincan,TR,Northern Africa and Western Asia,30728.7
+uc-4865,4865,Kabul,AF,Central and Southern Asia,30007.6
+ankara,4921,Ankara,TR,Northern Africa and Western Asia,21379.9
+uc-4941,4941,Portland,US,Northern America,2821.49
+uc-4945,4945,Goiânia,BR,Latin America and the Caribbean,7132.45
+uc-4952,4952,Kasaï-Oriental,CD,Sub-Saharan Africa,43222.1
+uc-4968,4968,Palembang,ID,Eastern and South-Eastern Asia,15958.8
+uc-4987,4987,Rostov-on-Don,RU,Europe,7779.97
+uc-4992,4992,Karaj,IR,Central and Southern Asia,25947.5
+yangon,5029,Yangon,MM,Eastern and South-Eastern Asia,19363.7
+cebu,5065,Cebu City,PH,Eastern and South-Eastern Asia,17446.1
+barcelona,5071,Barcelona,ES,Europe,22096.7
+uc-5077,5077,Konya,TR,Northern Africa and Western Asia,6308
+seattle,5098,Seattle,US,Northern America,3015.21
+uc-5157,5157,Ciudad Juárez,MX,Latin America and the Caribbean,5673.15
+uc-5167,5167,El Mansura,EG,Northern Africa and Western Asia,23627.7
+tehran,5174,Tehran,IR,Central and Southern Asia,18627
+uc-5181,5181,Bandar Lampung,ID,Eastern and South-Eastern Asia,9450.05
+uc-5201,5201,Basra,IQ,Northern Africa and Western Asia,17653.2
+uc-5213,5213,Nagoya,JP,Eastern and South-Eastern Asia,5132.79
+uc-5215,5215,San Luis Potosí,MX,Latin America and the Caribbean,9278.23
+uc-5236,5236,Baotou,CN,Eastern and South-Eastern Asia,35381.6
+ho-chi-minh,5239,Ho Chi Minh City,VN,Eastern and South-Eastern Asia,27616.7
+uc-5243,5243,Toluca,MX,Latin America and the Caribbean,6549.75
+munich,5249,Munich,DE,Europe,7866.42
+uc-5294,5294,Đà Nẵng,VN,Eastern and South-Eastern Asia,12968.7
+uc-5314,5314,Mardan,PK,Central and Southern Asia,13607.5
+uc-5315,5315,Jodhpur,IN,Central and Southern Asia,10725.8
+uc-5377,5377,Salt Lake City,US,Northern America,2691.96
+mexico-city,5402,Mexico City,MX,Latin America and the Caribbean,13258.4
+jakarta,5472,Jakarta,ID,Eastern and South-Eastern Asia,14211.6
+berlin,5483,Berlin,DE,Europe,7396.87
+uc-5500,5500,Sendai,JP,Eastern and South-Eastern Asia,6068.52
+uc-5657,5657,Jalandhar,IN,Central and Southern Asia,14205.2
+uc-5678,5678,Hyderabad,PK,Central and Southern Asia,49555.8
+uc-5720,5720,Isfahan,IR,Central and Southern Asia,7887.56
+uc-5748,5748,Bandung,ID,Eastern and South-Eastern Asia,17865.7
+uc-5794,5794,San Antonio,US,Northern America,3030.01
+london,5816,London,GB,Europe,9904.69
+uc-5830,5830,Tarogong,ID,Eastern and South-Eastern Asia,12289.4
+uc-5847,5847,Hohhot,CN,Eastern and South-Eastern Asia,19615.5
+uc-5853,5853,Puebla,MX,Latin America and the Caribbean,7617.53
+uc-5855,5855,Brasilia,BR,Latin America and the Caribbean,11078.4
+addis-ababa,5862,Addis Ababa,ET,Sub-Saharan Africa,31444.6
+uc-5872,5872,Davao City,PH,Eastern and South-Eastern Asia,22163.7
+uc-5901,5901,Kazan,RU,Europe,7540.78
+uc-5906,5906,Khulna,BD,Central and Southern Asia,16797.1
+uc-5918,5918,Al Zaqaziq,EG,Northern Africa and Western Asia,37117.6
+tokyo,5929,Tokyo,JP,Eastern and South-Eastern Asia,10263.7
+denver,5932,Denver,US,Northern America,2821.75
+uc-5935,5935,Benin City,NG,Sub-Saharan Africa,7684.24
+uc-5951,5951,Austin,US,Northern America,3518.36
+uc-5971,5971,Porto Alegre,BR,Latin America and the Caribbean,7814.16
+uc-5985,5985,Tasikmalaya,ID,Eastern and South-Eastern Asia,12258.7
+uc-6000,6000,Savar,BD,Central and Southern Asia,16208.7
+uc-6009,6009,Warri,NG,Sub-Saharan Africa,16074.1
+dhaka,6090,Dhaka,BD,Central and Southern Asia,46751.7
+uc-6131,6131,Monterrey,MX,Latin America and the Caribbean,9333.18
+uc-6143,6143,Ahmedabad,IN,Central and Southern Asia,42596.4
+houston,6167,Houston,US,Northern America,3401.07
+uc-6173,6173,Gaziantep,TR,Northern Africa and Western Asia,27160.3
+uc-6181,6181,Cirebon,ID,Eastern and South-Eastern Asia,11188.8
+uc-6229,6229,Ludhiana,IN,Central and Southern Asia,18588.9
+uc-6297,6297,Kishoreganj,BD,Central and Southern Asia,9853.84
+uc-6321,6321,Lubumbashi,CD,Sub-Saharan Africa,10876.2
+uc-6350,6350,Curitiba,BR,Latin America and the Caribbean,6519.02
+uc-6378,6378,Chengdu,CN,Eastern and South-Eastern Asia,14906.7
+uc-6397,6397,Dallas,US,Northern America,3093.3
+uc-6474,6474,Okene,NG,Sub-Saharan Africa,50531.9
+uc-6485,6485,Tegal,ID,Eastern and South-Eastern Asia,7455.38
+uc-6515,6515,Purwokerto,ID,Eastern and South-Eastern Asia,6562.14
+uc-6525,6525,Sarvestan,IR,Central and Southern Asia,184940
+uc-6635,6635,Pekalongan,ID,Eastern and South-Eastern Asia,7357.98
+uc-6663,6663,Brahmanbaria,BD,Central and Southern Asia,12994.9
+islamabad,6766,Islamabad,PK,Central and Southern Asia,15793.7
+uc-6776,6776,Asyut,EG,Northern Africa and Western Asia,23933.2
+uc-6785,6785,Semarang,ID,Eastern and South-Eastern Asia,10119.4
+uc-6845,6845,Yogyakarta,ID,Eastern and South-Eastern Asia,6954.87
+uc-6897,6897,Mashhad,IR,Central and Southern Asia,38074.9
+uc-6912,6912,Multan,PK,Central and Southern Asia,19475.2
+uc-6913,6913,Surat,IN,Central and Southern Asia,154276
+uc-6958,6958,Surakarta,ID,Eastern and South-Eastern Asia,5814.26
+uc-7021,7021,Vadodara,IN,Central and Southern Asia,16445.2
+uc-7054,7054,Beni,CD,Sub-Saharan Africa,45337.8
+uc-7057,7057,Yekaterinburg,RU,Europe,8483.05
+uc-7078,7078,Campinas,BR,Latin America and the Caribbean,6802.19
+uc-7085,7085,Sargodha,PK,Central and Southern Asia,23763.8
+uc-7092,7092,Onitsha,NG,Sub-Saharan Africa,10452.2
+uc-7093,7093,Suhaj,EG,Northern Africa and Western Asia,19928.4
+uc-7131,7131,Owerri,NG,Sub-Saharan Africa,5171.92
+uc-7151,7151,Chandigarh,IN,Central and Southern Asia,11007.9
+miami,7168,Miami,US,Northern America,3305.91
+uc-7178,7178,Sylhet,BD,Central and Southern Asia,28806.2
+minneapolis,7181,Minneapolis [Saint Paul],US,Northern America,2749.13
+uc-7209,7209,Port Harcourt,NG,Sub-Saharan Africa,16992.3
+uc-7222,7222,Luxor,EG,Northern Africa and Western Asia,82715.1
+uc-7243,7243,Orlando,US,Northern America,2311.54
+sao-paulo,7277,São Paulo,BR,Latin America and the Caribbean,14634.8
+uc-7358,7358,Novosibirsk,RU,Europe,7725.94
+uc-7365,7365,São Luís,BR,Latin America and the Caribbean,8858.75
+uc-7425,7425,Santos,BR,Latin America and the Caribbean,12776.1
+uc-7426,7426,Aboh,NG,Sub-Saharan Africa,5041.74
+uc-7428,7428,Faisalabad,PK,Central and Southern Asia,33137
+uc-7439,7439,Chattogram,BD,Central and Southern Asia,34527.3
+uc-7440,7440,Datong,CN,Eastern and South-Eastern Asia,15864.1
+uc-7459,7459,Surabaya,ID,Eastern and South-Eastern Asia,9652.61
+uc-7468,7468,Malang,ID,Eastern and South-Eastern Asia,10606.8
+uc-7471,7471,Abuja,NG,Sub-Saharan Africa,5611.7
+uc-7516,7516,Kaduna,NG,Sub-Saharan Africa,8594.6
+chicago,7532,Chicago,US,Northern America,4910.15
+uc-7543,7543,Aba,NG,Sub-Saharan Africa,14703.6
+uc-7563,7563,Vasai-Virar,IN,Central and Southern Asia,26521.6
+mumbai,7599,Mumbai,IN,Central and Southern Asia,58854.6
+uc-7676,7676,Belo Horizonte,BR,Latin America and the Caribbean,10508.7
+uc-7687,7687,Jaipur,IN,Central and Southern Asia,15800.9
+uc-7716,7716,Enugu,NG,Sub-Saharan Africa,9782.13
+uc-7738,7738,Gujranwala,PK,Central and Southern Asia,24924.2
+uc-7739,7739,Kalyan-Dombivli,IN,Central and Southern Asia,40759.2
+denpasar,7783,Denpasar,ID,Eastern and South-Eastern Asia,8351.97
+uc-7784,7784,Detroit,US,Northern America,2064.54
+lahore,7794,Lahore,PK,Central and Southern Asia,26759.2
+rio-de-janeiro,7799,Rio de Janeiro,BR,Latin America and the Caribbean,14563.1
+uc-7829,7829,Sialkot,PK,Central and Southern Asia,21986.2
+uc-7867,7867,Mataram,ID,Eastern and South-Eastern Asia,9147.72
+uc-7890,7890,Niterói,BR,Latin America and the Caribbean,10349.7
+washington,7910,Washington,US,Northern America,4213.42
+uc-7943,7943,Shunqing,CN,Eastern and South-Eastern Asia,43873.5
+uc-7958,7958,Samarinda,ID,Eastern and South-Eastern Asia,13993.4
+uc-7959,7959,Baltimore,US,Northern America,3715.79
+uc-7961,7961,Uyo,NG,Sub-Saharan Africa,9151.85
+new-delhi,7963,New Delhi,IN,Central and Southern Asia,31477.8
+uc-7991,7991,Saharanpur,IN,Central and Southern Asia,28953.5
+uc-8006,8006,Xi'an,CN,Eastern and South-Eastern Asia,35266.9
+uc-8012,8012,Nashik,IN,Central and Southern Asia,15505.3
+uc-8013,8013,Kunming,CN,Eastern and South-Eastern Asia,29697.9
+uc-8029,8029,Philadelphia,US,Northern America,6026.22
+uc-8035,8035,Makassar,ID,Eastern and South-Eastern Asia,13312.5
+new-york,8099,New York City,US,Northern America,13617.4
+uc-8100,8100,Vitória,BR,Latin America and the Caribbean,10855.5
+uc-8120,8120,Dehradun,IN,Central and Southern Asia,10708.3
+uc-8125,8125,Kano,NG,Sub-Saharan Africa,25932.9
+fortaleza,8154,Fortaleza,BR,Latin America and the Caribbean,12798.2
+uc-8234,8234,Kota,IN,Central and Southern Asia,14230.2
+salvador,8238,Salvador,BR,Latin America and the Caribbean,20111.1
+boston,8255,Boston,US,Northern America,5891.34
+uc-8258,8258,Pune,IN,Central and Southern Asia,25302.1
+uc-8305,8305,Meerut,IN,Central and Southern Asia,18134.4
+uc-8326,8326,Taiyuan,CN,Eastern and South-Eastern Asia,28354.8
+uc-8353,8353,Maceió,BR,Latin America and the Caribbean,11660.3
+uc-8363,8363,Natal,BR,Latin America and the Caribbean,10302
+uc-8388,8388,Recife,BR,Latin America and the Caribbean,13219.3
+uc-8403,8403,João Pessoa,BR,Latin America and the Caribbean,8929.98
+uc-8557,8557,Chongqing,CN,Eastern and South-Eastern Asia,35181.8
+uc-8564,8564,Maiduguri,NG,Sub-Saharan Africa,14976.1
+uc-8565,8565,Indore,IN,Central and Southern Asia,28343.6
+uc-8584,8584,Linfen,CN,Eastern and South-Eastern Asia,21230.6
+uc-8626,8626,Aligarh,IN,Central and Southern Asia,27395
+uc-8660,8660,Agra,IN,Central and Southern Asia,22623.6
+uc-8666,8666,Moradabad,IN,Central and Southern Asia,28995.9
+uc-8672,8672,Chhatrapati Sambhajinagar,IN,Central and Southern Asia,21111.4
+beijing,8745,Beijing,CN,Eastern and South-Eastern Asia,21581.8
+uc-8789,8789,Shijiazhuang,CN,Eastern and South-Eastern Asia,17612.1
+uc-8806,8806,Gwalior,IN,Central and Southern Asia,20035.7
+uc-8860,8860,Bareilly,IN,Central and Southern Asia,21369.3
+uc-8886,8886,Bhopal,IN,Central and Southern Asia,17011.1
+uc-8945,8945,Honghuagang,CN,Eastern and South-Eastern Asia,29420.8
+uc-8954,8954,Solapur,IN,Central and Southern Asia,20716
+uc-9019,9019,Guiyang,CN,Eastern and South-Eastern Asia,24313.1
+uc-9025,9025,Luoyang,CN,Eastern and South-Eastern Asia,11279.7
+uc-9029,9029,Shiyan,CN,Eastern and South-Eastern Asia,17888.8
+uc-9107,9107,Handan,CN,Eastern and South-Eastern Asia,25280.2
+uc-9127,9127,Tianjin,CN,Eastern and South-Eastern Asia,33959.7
+uc-9191,9191,Anyang,CN,Eastern and South-Eastern Asia,28270.3
+uc-9229,9229,Tangshan,CN,Eastern and South-Eastern Asia,17822.3
+uc-9230,9230,Kozhikode,IN,Central and Southern Asia,22279.3
+uc-9244,9244,Kanpur,IN,Central and Southern Asia,24872.6
+uc-9251,9251,Binhai New Area,CN,Eastern and South-Eastern Asia,15493.7
+uc-9277,9277,Zhengzhou,CN,Eastern and South-Eastern Asia,23585.8
+uc-9298,9298,Ponnani,IN,Central and Southern Asia,11406.8
+uc-9329,9329,Dengzhou,CN,Eastern and South-Eastern Asia,15263.8
+uc-9346,9346,Lucknow,IN,Central and Southern Asia,18459.2
+uc-9352,9352,Thrissur,IN,Central and Southern Asia,11914.1
+kochi,9386,Kochi,IN,Central and Southern Asia,9979.14
+uc-9390,9390,Mysuru,IN,Central and Southern Asia,12328.2
+uc-9410,9410,Nagpur,IN,Central and Southern Asia,20125.7
+uc-9429,9429,Xuchang,CN,Eastern and South-Eastern Asia,15067.8
+uc-9431,9431,Kaifeng,CN,Eastern and South-Eastern Asia,17948.3
+uc-9445,9445,Harbin,CN,Eastern and South-Eastern Asia,28721.5
+uc-9464,9464,Kollam,IN,Central and Southern Asia,11887
+uc-9466,9466,Jabalpur,IN,Central and Southern Asia,19271.5
+uc-9495,9495,Yichang,CN,Eastern and South-Eastern Asia,26363.4
+uc-9510,9510,Coimbatore,IN,Central and Southern Asia,12081
+hyderabad,9524,Hyderabad,IN,Central and Southern Asia,19974.7
+bengaluru,9558,Bengaluru,IN,Central and Southern Asia,46587.9
+uc-9571,9571,Luohe,CN,Eastern and South-Eastern Asia,15250.8
+uc-9603,9603,Jinan,CN,Eastern and South-Eastern Asia,18596.6
+uc-9612,9612,Thiruvananthapuram,IN,Central and Southern Asia,16771.4
+uc-9620,9620,Tiruppur,IN,Central and Southern Asia,9854.41
+uc-9637,9637,Changchun,CN,Eastern and South-Eastern Asia,31418.8
+uc-9676,9676,Colachel,IN,Central and Southern Asia,7191.44
+uc-9714,9714,Prayagraj,IN,Central and Southern Asia,25274.4
+uc-9779,9779,Shenyang,CN,Eastern and South-Eastern Asia,31978
+uc-9800,9800,Salem,IN,Central and Southern Asia,14193.5
+uc-9801,9801,Zibo,CN,Eastern and South-Eastern Asia,8091.96
+uc-9843,9843,Nanning,CN,Eastern and South-Eastern Asia,49455.3
+uc-9860,9860,Gyanpur,IN,Central and Southern Asia,5275.72
+uc-9880,9880,Madurai,IN,Central and Southern Asia,21450.4
+uc-9881,9881,Anshan,CN,Eastern and South-Eastern Asia,22720.2
+uc-9921,9921,Jilin City,CN,Eastern and South-Eastern Asia,27018.7
+uc-9939,9939,Liuzhou,CN,Eastern and South-Eastern Asia,12426.9
+uc-9968,9968,Gorakhpur,IN,Central and Southern Asia,18852.2
+uc-9978,9978,Tiruchirappalli,IN,Central and Southern Asia,18769.2
+uc-9981,9981,Tengzhou,CN,Eastern and South-Eastern Asia,12460.4
+uc-9996,9996,Durg,IN,Central and Southern Asia,14413.5
+uc-10008,10008,Varanasi,IN,Central and Southern Asia,24158
+uc-10074,10074,Raipur,IN,Central and Southern Asia,14219.3
+uc-10099,10099,Fuyang,CN,Eastern and South-Eastern Asia,16377.5
+uc-10113,10113,Dalian,CN,Eastern and South-Eastern Asia,24872.8
+uc-10131,10131,Wuhan,CN,Eastern and South-Eastern Asia,29288.5
+uc-10143,10143,Xuzhou,CN,Eastern and South-Eastern Asia,15104.9
+uc-10199,10199,Linyi,CN,Eastern and South-Eastern Asia,4946.78
+uc-10224,10224,Vijayawada,IN,Central and Southern Asia,20249.3
+uc-10229,10229,Changsha,CN,Eastern and South-Eastern Asia,23789.3
+uc-10290,10290,Puducherry,IN,Central and Southern Asia,22107.6
+chennai,10300,Chennai,IN,Central and Southern Asia,22677.4
+uc-10306,10306,Maharajganj,IN,Central and Southern Asia,5185.4
+uc-10323,10323,Zhuzhou,CN,Eastern and South-Eastern Asia,19357.6
+uc-10403,10403,Tianjia‘an,CN,Eastern and South-Eastern Asia,21587.8
+uc-10444,10444,Marhaura,IN,Central and Southern Asia,3180.88
+uc-10449,10449,Qingdao,CN,Eastern and South-Eastern Asia,20822.5
+uc-10512,10512,Mehsi,IN,Central and Southern Asia,3520.54
+uc-10576,10576,Hajipur,IN,Central and Southern Asia,7835.09
+uc-10586,10586,Patna,IN,Central and Southern Asia,32579.1
+uc-10629,10629,Hefei,CN,Eastern and South-Eastern Asia,47602.2
+uc-10663,10663,Yichun,CN,Eastern and South-Eastern Asia,24380.8
+uc-10695,10695,Xiuying District,CN,Eastern and South-Eastern Asia,15204.6
+uc-10715,10715,Huaiyin District,CN,Eastern and South-Eastern Asia,42974.1
+uc-10766,10766,Bibhutpur,IN,Central and Southern Asia,7302.07
+uc-10796,10796,Visakhapatnam,IN,Central and Southern Asia,19910.6
+uc-10816,10816,Begusarai,IN,Central and Southern Asia,16875.2
+uc-10831,10831,Nanchang,CN,Eastern and South-Eastern Asia,25868.4
+uc-10832,10832,Ranchi,IN,Central and Southern Asia,19187
+uc-10887,10887,Nanjing,CN,Eastern and South-Eastern Asia,33068.9
+uc-10915,10915,Ma'anshan,CN,Eastern and South-Eastern Asia,16949.6
+uc-10927,10927,Wuhu,CN,Eastern and South-Eastern Asia,42594.4
+uc-10933,10933,Guangzhou,CN,Eastern and South-Eastern Asia,22148.8
+uc-10941,10941,Yancheng,CN,Eastern and South-Eastern Asia,9826.47
+uc-10998,10998,Dhanbad,IN,Central and Southern Asia,21982
+uc-11003,11003,Ganzhou,CN,Eastern and South-Eastern Asia,38805.4
+uc-11032,11032,Jamshedpur,IN,Central and Southern Asia,21296.4
+uc-11079,11079,Zhuhai [Macau],CN,Eastern and South-Eastern Asia,37985.3
+uc-11080,11080,Asansol,IN,Central and Southern Asia,37997.5
+uc-11113,11113,Changzhou,CN,Eastern and South-Eastern Asia,12574
+uc-11122,11122,Bhubaneshwar,IN,Central and Southern Asia,12661.3
+uc-11155,11155,Tuen Mun,CN,Eastern and South-Eastern Asia,44820.3
+uc-11173,11173,Huizhou,CN,Eastern and South-Eastern Asia,15756.5
+uc-11184,11184,Dhulian,IN,Central and Southern Asia,17643.8
+hong-kong,11185,Hong Kong,CN,Eastern and South-Eastern Asia,56894.8
+uc-11195,11195,Zhangjiagang,CN,Eastern and South-Eastern Asia,6601.36
+uc-11199,11199,Suzhou,CN,Eastern and South-Eastern Asia,21393.3
+uc-11225,11225,Nantong,CN,Eastern and South-Eastern Asia,21212.3
+uc-11280,11280,Berhampore,IN,Central and Southern Asia,31555.4
+uc-11302,11302,Tamluk,IN,Central and Southern Asia,9653.4
+uc-11311,11311,Hangzhou,CN,Eastern and South-Eastern Asia,13356
+shanghai,11345,Shanghai,CN,Eastern and South-Eastern Asia,30726.5
+kolkata,11352,Kolkata,IN,Central and Southern Asia,44009
+uc-11379,11379,Jinhua,CN,Eastern and South-Eastern Asia,20312.5
+uc-11407,11407,Shantou,CN,Eastern and South-Eastern Asia,14026
+uc-11489,11489,Cixi,CN,Eastern and South-Eastern Asia,7739.43
+uc-11500,11500,Guwahati,IN,Central and Southern Asia,12411.6
+uc-11537,11537,Zhangzhou,CN,Eastern and South-Eastern Asia,11809.3
+uc-11563,11563,Ningbo,CN,Eastern and South-Eastern Asia,18176.7
+uc-11593,11593,Xiamen City,CN,Eastern and South-Eastern Asia,58067.7
+uc-11621,11621,Fuzhou,CN,Eastern and South-Eastern Asia,23286.2
+uc-11623,11623,Quanzhou,CN,Eastern and South-Eastern Asia,10237.3
+uc-11630,11630,Wenzhou,CN,Eastern and South-Eastern Asia,16852.1
+uc-11636,11636,Putian,CN,Eastern and South-Eastern Asia,16336.9
+uc-11653,11653,Yueqing,CN,Eastern and South-Eastern Asia,10688.1
+uc-11665,11665,Taizhou,CN,Eastern and South-Eastern Asia,10740.3

@@ -1,0 +1,29 @@
+name: 数値の誤りを報告
+description: 都市の指標の値がおかしい、出典と合わない、など
+title: "[data] "
+labels: [data]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        アプリの根拠欄から開くと、都市・指標・値・版が自動で入ります。診断の回答は書かなくて大丈夫です。
+  - type: input
+    id: city
+    attributes: { label: 都市（city_id）, placeholder: tokyo }
+    validations: { required: true }
+  - type: input
+    id: metric
+    attributes: { label: 指標（metric_key）, placeholder: temp_warmest }
+    validations: { required: true }
+  - type: input
+    id: value
+    attributes: { label: アプリに表示された値 }
+  - type: input
+    id: version
+    attributes: { label: データ版 / モデル版, description: 「データと計算方法」の最下部にある版 }
+  - type: textarea
+    id: detail
+    attributes:
+      label: どこがおかしいか
+      description: 正しいと思う値と、その根拠（出典の URL など）があれば書いてください。
+    validations: { required: true }
