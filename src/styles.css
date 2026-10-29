@@ -222,6 +222,8 @@ legend {
 .option input:checked + span {
   border-color: var(--sea);
   box-shadow: inset 0 0 0 1px var(--sea);
+  background: color-mix(in srgb, var(--sea) 14%, transparent);
+  font-weight: 600;
 }
 
 .option input:focus-visible + span,
