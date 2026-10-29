@@ -38,16 +38,17 @@ A worldwide-comparable "national chronotype" metric does **not** exist in open f
 - Sample values (total sex, personal care except eating, % in that activity; shows the signal is real):
 
   | geo-year | 04:00 | 06:00 | 23:00 | 00:00 |
-  |---|---|---|---|---|
-  | ES 2010 | 97.5 | 96.0 | 32.1 | 68.6 |
-  | EL 2010 | 99.2 | 94.9 | 35.5 | 71.1 |
-  | NO 2010 | 97.4 | 91.2 | 46.9 | 77.2 |
-  | NL 2020 | 98.8 | 94.4 | 59.6 | 82.9 |
-  | DE 2020 | 97.7 | 86.0 | 68.2 | 88.4 |
-  | PL 2020 | 98.1 | 83.7 | 81.4 | 94.3 |
-  | HU 2020 | 95.2 | 74.5 | 79.6 | 92.3 |
+  | -------- | ----- | ----- | ----- | ----- |
+  | ES 2010  | 97.5  | 96.0  | 32.1  | 68.6  |
+  | EL 2010  | 99.2  | 94.9  | 35.5  | 71.1  |
+  | NO 2010  | 97.4  | 91.2  | 46.9  | 77.2  |
+  | NL 2020  | 98.8  | 94.4  | 59.6  | 82.9  |
+  | DE 2020  | 97.7  | 86.0  | 68.2  | 88.4  |
+  | PL 2020  | 98.1  | 83.7  | 81.4  | 94.3  |
+  | HU 2020  | 95.2  | 74.5  | 79.6  | 92.3  |
 
   (Spain/Greece up late, Poland/Hungary asleep by 23:00. Large and plausible between-country spread.)
+
 - Licence: the metadata page (tus_00_esms) states no licence. Eurostat copyright notice
   (`https://ec.europa.eu/eurostat/help/copyright-notice`): search results say Eurostat editorial content is CC BY 4.0 and
   reuse policy is Commission Decision 2011/833/EU (reuse allowed with source acknowledgement), with an exception for data
