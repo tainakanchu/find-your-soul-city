@@ -1,0 +1,525 @@
+city_id,ucdb_id,name_en,region,quake_pop_share_mmi6plus_pct,quake_mmi_excess_popweighted,river_flood_pop_share_100y_pct,coastal_flood_pop_share_100y_pct,flood_pop_share_100y_pct,tropical_cyclone_hazards_per_year
+dakar,39,Dakar,Sub-Saharan Africa,0,0,0,0.45,0.45,0
+uc-40,40,Serrekunda,Sub-Saharan Africa,0,0,0,0.02,0.02,0
+uc-47,47,Freetown,Sub-Saharan Africa,0,0,0.05,0.2,0.2,0
+uc-50,50,Monrovia,Sub-Saharan Africa,0,0,51.24,0.12,51.24,0
+uc-70,70,Turin,Europe,55.41,0.554098,6.51,0,6.51,0
+uc-109,109,Sofia,Europe,100,2,0.02,0,0.02,0
+uc-152,152,Manama,Northern Africa and Western Asia,0,0,0,2.17,2.17,0
+doha,153,Doha,Northern Africa and Western Asia,0,0,0,0.01,0.01,0
+singapore,178,Singapore,Eastern and South-Eastern Asia,0,0,0,0.04,0.04,0
+uc-212,212,La Paz,Latin America and the Caribbean,100,2,0,0,0,0
+uc-214,214,Mendoza,Latin America and the Caribbean,100,3,0,0,0,0
+uc-217,217,Asuncion,Latin America and the Caribbean,0,0,0.87,0,0.87,0
+uc-222,222,Nouakchott,Sub-Saharan Africa,0,0,4.45,0.15,4.45,0
+lisbon,231,Lisbon,Europe,100,1,0.36,0,0.36,0
+uc-244,244,Rotterdam [The Hague],Europe,0,0,37.76,66.91,66.91,0
+uc-258,258,Tripoli,Northern Africa and Western Asia,0,0,10.63,0.28,10.63,0
+uc-291,291,Alexandria,Northern Africa and Western Asia,0,0,48.8,14.61,48.8,0
+uc-295,295,Bujumbura,Sub-Saharan Africa,100,1,0.46,0,0.46,0
+maputo,299,Maputo,Sub-Saharan Africa,0,0,1.62,0.06,1.62,0
+uc-312,312,Yerevan,Northern Africa and Western Asia,100,2,0.7,0,0.7,0
+ulaanbaatar,337,Ulaanbaatar,Eastern and South-Eastern Asia,0,0,1.59,0,1.59,0
+seoul,348,Seoul,Eastern and South-Eastern Asia,100,0.999992,10.49,1.04,10.49,1
+sapporo,351,Sapporo,Eastern and South-Eastern Asia,100,1,24.21,0,24.21,0.444444
+vancouver,358,Vancouver,Northern America,100,1,12.71,1.36,12.71,0
+uc-362,362,Managua,Latin America and the Caribbean,100,3,0.01,0,0.01,0.777778
+san-jose-cr,363,San José,Latin America and the Caribbean,100,3,0.01,0,0.01,0
+havana,367,Havana,Latin America and the Caribbean,0,0,0.58,0.05,0.58,1.66667
+uc-391,391,Bamako,Sub-Saharan Africa,0,0,0.58,0,0.58,0
+dublin,394,Dublin,Europe,0,0,2.9,0.47,2.9,0
+uc-395,395,Bobo-Dioulasso,Sub-Saharan Africa,0,0,0,0,0,0
+uc-424,424,N'Djamena,Sub-Saharan Africa,0,0,71.03,0,71.03,0
+uc-427,427,Brazzaville,Sub-Saharan Africa,0,0,26.47,0,26.47,0
+cape-town,431,Cape Town,Sub-Saharan Africa,0,0,0.02,0.08,0.08,0
+uc-456,456,Gaza,Northern Africa and Western Asia,0,0,0.01,0.01,0.01,0
+tel-aviv,457,Tel Aviv,Northern Africa and Western Asia,100,1,0.37,0,0.37,0
+beirut,458,Beirut,Northern Africa and Western Asia,100,2.20048,0,0.06,0.06,0
+uc-461,461,Lilongwe,Sub-Saharan Africa,100,1,0.5,0,0.5,0
+uc-475,475,Kuwait City,Northern Africa and Western Asia,0,0,2.25,0.38,2.25,0
+perth,498,Perth,Australia and New Zealand,0,0,6.09,0.04,6.09,0
+uc-507,507,Tijuana,Latin America and the Caribbean,100,1,1.33,0,1.33,0.111111
+uc-511,511,San Pedro Sula,Latin America and the Caribbean,100,2.01813,2.84,0,2.84,1.55556
+uc-548,548,Niamey,Sub-Saharan Africa,0,0,12.32,0,12.32,0
+prague,560,Prague,Europe,0,0,1.91,0,1.91,0
+uc-564,564,Cabinda,Sub-Saharan Africa,0,0,88.01,0.61,88.01,0
+helsinki,572,Helsinki,Europe,0,0,5.17,0.19,5.17,0
+uc-573,573,Belgrade,Europe,100,1,1.88,0,1.88,0
+uc-582,582,Bangui,Sub-Saharan Africa,0,0,21.13,0,21.13,0
+uc-586,586,Saint Petersburg,Europe,0,0,18.85,0.24,18.85,0
+kigali,597,Kigali,Sub-Saharan Africa,0,0,0.62,0,0.62,0
+colombo,632,Colombo [Sri Jayawardenepura Kotte],Central and Southern Asia,0,0,10.45,0.09,10.45,0.111111
+panama-city,658,Panama City,Latin America and the Caribbean,100,2,2.9,0.56,2.9,0
+uc-666,666,Cochabamba,Latin America and the Caribbean,100,2,1.97,0,1.97,0
+uc-673,673,Coyah,Sub-Saharan Africa,0,0,0.31,0.08,0.31,0
+uc-693,693,Essen,Europe,0,0,7.12,0,7.12,0
+copenhagen,698,Copenhagen,Europe,0,0,0,1.41,1.41,0
+uc-724,724,Minsk,Europe,0,0,1.61,0,1.61,0
+uc-749,749,Medina,Northern Africa and Western Asia,0,0,3.19,0,3.19,0
+uc-761,761,Herat,Central and Southern Asia,100,1.65166,0,0,0,0
+uc-764,764,Bishkek,Central and Southern Asia,100,1.99845,0,0,0,0
+uc-792,792,Guayaquil,Latin America and the Caribbean,100,3,36.1,0,36.1,0
+montevideo,804,Montevideo,Latin America and the Caribbean,0,0,2.94,0.15,2.94,0
+uc-820,820,Lomé,Sub-Saharan Africa,0,0,0.7,0.02,0.7,0
+uc-832,832,Douala,Sub-Saharan Africa,0,0,16.92,0,16.92,0
+athens,854,Athens,Europe,100,1.96715,0,0.06,0.06,0
+uc-876,876,Duhok,Northern Africa and Western Asia,100,1,0,0,0,0
+uc-906,906,Taichung,Eastern and South-Eastern Asia,100,3,0.55,0,0.55,3.55556
+fukuoka,907,Fukuoka,Eastern and South-Eastern Asia,100,2,0.16,2.52,2.52,2.44444
+uc-916,916,San Salvador,Latin America and the Caribbean,100,3,0,0,0,0.888889
+uc-945,945,Oran,Northern Africa and Western Asia,100,2,0,0,0,0
+budapest,964,Budapest,Europe,0,0,11.2,0,11.2,0
+amman,992,Amman,Northern Africa and Western Asia,82.31,0.823057,0.09,0,0.09,0
+dubai,1007,Dubai,Northern Africa and Western Asia,0,0,12.96,7.7,12.96,0.111111
+uc-1027,1027,Kitakyushu,Eastern and South-Eastern Asia,100,2,6.6,5.4,6.6,2.55556
+uc-1058,1058,Porto,Europe,0,0,2.21,0.25,2.21,0
+uc-1063,1063,Takoradi,Sub-Saharan Africa,0,0,0.57,0.11,0.57,0
+vienna,1081,Vienna,Europe,0.16,0.0016141,14.61,0,14.61,0
+luanda,1082,Luanda,Sub-Saharan Africa,0,0,0.06,0,0.06,0
+izmir,1094,Izmir,Northern Africa and Western Asia,100,2.99885,0.67,0.33,0.67,0
+uc-1112,1112,Jeddah,Northern Africa and Western Asia,0,0,0.72,0.07,0.72,0
+uc-1121,1121,Ashgabat,Central and Southern Asia,100,2,1.35,0,1.35,0
+taipei,1142,Taipei,Eastern and South-Eastern Asia,100,2.09614,27.92,0.19,27.92,3.44444
+auckland,1147,Auckland,Australia and New Zealand,100,1,0.13,0.09,0.13,0
+uc-1158,1158,Cali,Latin America and the Caribbean,100,2,12.64,0,12.64,0
+uc-1186,1186,Cologne,Europe,0,0,5.09,0,5.09,0
+uc-1236,1236,Dushanbe,Central and Southern Asia,100,2.98234,2.22,0,2.22,0
+uc-1262,1262,Calgary,Northern America,0,0,1.07,0,1.07,0
+uc-1268,1268,Maracaibo,Latin America and the Caribbean,0,0,0.01,0.27,0.27,0.111111
+uc-1269,1269,Port-au-Prince,Latin America and the Caribbean,100,2.58784,0,0.31,0.31,0.555556
+uc-1284,1284,Kumasi,Sub-Saharan Africa,0,0,0,0,0,0
+lagos,1289,Lagos,Sub-Saharan Africa,0,0,11.09,0,11.09,0
+uc-1290,1290,Brussels,Europe,0,0,4.76,0,4.76,0
+uc-1301,1301,Lubango,Sub-Saharan Africa,0,0,0,0,0,0
+uc-1365,1365,Tegucigalpa,Latin America and the Caribbean,100,2,0.13,0,0.13,1.33333
+uc-1375,1375,Santa Cruz de la Sierra,Latin America and the Caribbean,100,1.97143,0.12,0,0.12,0
+uc-1377,1377,Manaus,Latin America and the Caribbean,0,0,0.77,0,0.77,0
+tunis,1399,Tunis,Northern Africa and Western Asia,100,1,6.84,2.45,6.84,0
+uc-1419,1419,Harare,Sub-Saharan Africa,0,0,0.03,0,0.03,0
+uc-1432,1432,Tabriz,Central and Southern Asia,100,3,0.23,0,0.23,0
+san-francisco,1461,San Francisco,Northern America,100,3.02556,3.9,3.35,3.9,0
+uc-1487,1487,Ouagadougou,Sub-Saharan Africa,0,0,0,0,0,0
+milan,1498,Milan,Europe,15.11,0.151118,0.53,0,0.53,0
+lusaka,1517,Lusaka,Sub-Saharan Africa,0,0,0,0,0,0
+uc-1521,1521,Ramallah,Northern Africa and Western Asia,100,1.94515,0,0,0,0
+uc-1530,1530,Mosul,Northern Africa and Western Asia,100,1,1.28,0,1.28,0
+uc-1531,1531,Mecca,Northern Africa and Western Asia,0,0,0,0,0,0
+uc-1564,1564,Edmonton,Northern America,0,0,0.22,0,0.22,0
+uc-1588,1588,Cotonou,Sub-Saharan Africa,0,0,5.42,0.12,5.42,0
+amsterdam,1590,Amsterdam,Europe,0,0,9.46,69.64,69.64,0
+uc-1619,1619,Damascus,Northern Africa and Western Asia,100,1,1.07,0,1.07,0
+uc-1634,1634,Astana,Central and Southern Asia,0,0,23.17,0,23.17,0
+uc-1646,1646,Medan,Eastern and South-Eastern Asia,100,1.02212,0.22,0.03,0.22,0
+kuala-lumpur,1648,Kuala Lumpur,Eastern and South-Eastern Asia,0,0,7.11,0.06,7.11,0
+santo-domingo,1667,Santo Domingo,Latin America and the Caribbean,100,2.98693,1.01,0.01,1.01,0.666667
+stockholm,1693,Stockholm,Europe,0,0,0.13,0,0.13,0
+kampala,1711,Kampala,Sub-Saharan Africa,0,0,0.01,0,0.01,0
+nairobi,1717,Nairobi,Sub-Saharan Africa,0,0,0,0,0,
+phnom-penh,1741,Phnom Penh,Eastern and South-Eastern Asia,0,0,57.5,0,57.5,0
+uc-1744,1744,Tainan,Eastern and South-Eastern Asia,100,3.14686,13.3,1.28,13.3,3.44444
+melbourne,1747,Melbourne,Australia and New Zealand,0,0,1.76,0.18,1.76,0
+uc-1763,1763,Touba,Sub-Saharan Africa,0,0,0,0,0,0
+uc-1799,1799,Aleppo,Northern Africa and Western Asia,100,1,2.9,0,2.9,0
+kathmandu,1822,Kathmandu,Central and Southern Asia,100,3,6.39,0,6.39,0
+marrakesh,1853,Marrakesh,Northern Africa and Western Asia,99.57,0.995698,0,0,0,0
+kinshasa,1876,Kinshasa,Sub-Saharan Africa,0,0,18.39,0,18.39,0
+uc-1900,1900,Hargeisa,Sub-Saharan Africa,0,0,0,0,0,0
+kaohsiung,1919,Kaohsiung,Eastern and South-Eastern Asia,100,2.4149,46.38,1.8,46.38,3.33333
+uc-1985,1985,Antananarivo,Sub-Saharan Africa,0,0,7.64,0,7.64,1.55556
+uc-1991,1991,Srinagar,Central and Southern Asia,100,2.0135,4.82,0,4.82,0
+hanoi,1999,Hanoi,Eastern and South-Eastern Asia,0,0,56.96,0.46,56.96,0.666667
+uc-2005,2005,Angeles,Eastern and South-Eastern Asia,100,2,13.98,0,13.98,3.77778
+los-angeles,2007,Los Angeles,Northern America,100,2.44028,12.83,0.1,12.83,0
+uc-2047,2047,Nyala,Northern Africa and Western Asia,0,0,0.08,0,0.08,0
+uc-2089,2089,Guatemala City,Latin America and the Caribbean,100,3.31421,0,0,0,1.33333
+casablanca,2102,Casablanca,Northern Africa and Western Asia,0,0,2.69,0.38,2.69,0
+uc-2125,2125,Kyiv,Europe,0,0,20.62,0,20.62,0
+lima,2171,Lima,Latin America and the Caribbean,100,3,1.54,0.04,1.54,0
+baku,2221,Baku,Northern Africa and Western Asia,100,2,0,0,0,0
+uc-2241,2241,Daejeon,Eastern and South-Eastern Asia,100,1,1.16,0,1.16,1.33333
+uc-2264,2264,Liverpool,Europe,0,0,0.31,1.43,1.43,0
+uc-2276,2276,Yaoundé,Sub-Saharan Africa,0,0,0,0,0,0
+uc-2289,2289,Jerusalem,Northern Africa and Western Asia,100,1.99052,0,0,0,0
+uc-2306,2306,Shymkent,Central and Southern Asia,100,1,0.56,0,0.56,0
+bangkok,2315,Bangkok,Eastern and South-Eastern Asia,0,0,74.51,0.44,74.51,0
+manila,2323,Manila,Eastern and South-Eastern Asia,100,2.01702,21.69,2.78,21.69,3.77778
+sydney,2324,Sydney,Australia and New Zealand,0,0,0.47,0.02,0.47,0
+santiago,2334,Santiago,Latin America and the Caribbean,100,3,2.49,0,2.49,0
+uc-2335,2335,Cordoba,Latin America and the Caribbean,1.54,0.0154304,2.18,0,2.18,0
+uc-2359,2359,Bucharest,Europe,100,2,3.73,0,3.73,0
+uc-2448,2448,Erbil,Northern Africa and Western Asia,100,1,0,0,0,0
+karachi,2457,Karachi,Central and Southern Asia,100,1.13584,5.9,0.22,5.9,0.111111
+uc-2471,2471,San Diego,Northern America,100,1,0.8,1.01,1.01,0.111111
+quito,2544,Quito,Latin America and the Caribbean,100,3,0.27,0,0.27,0
+uc-2576,2576,Moscow,Europe,0,0,0.79,0,0.79,0
+uc-2597,2597,Mandalay,Eastern and South-Eastern Asia,100,2.02547,16.43,0,16.43,0.333333
+istanbul,2637,Istanbul,Northern Africa and Western Asia,100,2.46171,0,0.12,0.12,0
+uc-2659,2659,Ürümqi,Eastern and South-Eastern Asia,100,2,7.03,0,7.03,0
+uc-2667,2667,Gwangju,Eastern and South-Eastern Asia,100,1,0.11,0,0.11,1.44444
+medellin,2676,Medellín,Latin America and the Caribbean,100,1.00681,0.33,0,0.33,0
+brisbane,2734,Brisbane,Australia and New Zealand,0,0,12.07,0.01,12.07,0
+uc-2747,2747,Rabat,Northern Africa and Western Asia,0,0,1.45,0.01,1.45,0
+uc-2839,2839,Kirkuk,Northern Africa and Western Asia,100,1,2.08,0,2.08,0
+almaty,2847,Almaty,Central and Southern Asia,100,2.52783,0,0,0,0
+toronto,2869,Toronto,Northern America,0,0,0.33,0,0.33,0
+paris,2878,Paris,Europe,0,0,12.36,0,12.36,0
+uc-2880,2880,Ibadan,Sub-Saharan Africa,0,0,0,0,0,0
+uc-2902,2902,Mombasa,Sub-Saharan Africa,0,0,1.67,0.01,1.67,0
+tashkent,2907,Tashkent,Central and Southern Asia,100,1,6.09,0,6.09,0
+uc-2920,2920,Daegu,Eastern and South-Eastern Asia,100,1,2.31,0,2.31,1.88889
+uc-2921,2921,Hiroshima,Eastern and South-Eastern Asia,99.99,2,34.69,12.74,34.69,2.66667
+uc-2967,2967,Mogadishu,Sub-Saharan Africa,0,0,0,0,0,0
+uc-2979,2979,Johor Bahru,Eastern and South-Eastern Asia,0,0,0.1,0.01,0.1,0
+abidjan,2996,Abidjan,Sub-Saharan Africa,0,0,9.01,0,9.01,0
+riyadh,3026,Riyadh,Northern Africa and Western Asia,0,0,0.81,0,0.81,0
+uc-3096,3096,Padang,Eastern and South-Eastern Asia,100,2.94348,5.72,0.95,5.72,0
+uc-3105,3105,Guadalajara,Latin America and the Caribbean,75.69,0.756862,0,0,0,1.33333
+uc-3109,3109,Valencia,Latin America and the Caribbean,65.86,0.658587,0,0,0,0.111111
+uc-3130,3130,Bursa,Northern Africa and Western Asia,100,2.21547,0.49,0,0.49,0
+accra,3175,Accra,Sub-Saharan Africa,0,0,1.33,0,1.33,0
+uc-3306,3306,Nampula,Sub-Saharan Africa,0,0,0,0,0,0.222222
+uc-3307,3307,Baghdad,Northern Africa and Western Asia,0,0,89.53,0,89.53,0
+madrid,3338,Madrid,Europe,0,0,0.3,0,0.3,0
+uc-3340,3340,Manchester,Europe,0,0,1.43,0,1.43,0
+uc-3371,3371,Jammu,Central and Southern Asia,100,2,0.79,0,0.79,0
+algiers,3397,Algiers,Northern Africa and Western Asia,100,2.09356,3.18,0,3.18,0
+uc-3440,3440,Arequipa,Latin America and the Caribbean,100,3,0.4,0,0.4,0
+uc-3468,3468,Karbala,Northern Africa and Western Asia,100,1,44.3,0,44.3,0
+uc-3509,3509,Malanje,Sub-Saharan Africa,0,0,0,0,0,
+johannesburg,3512,Johannesburg,Sub-Saharan Africa,65.12,0.672917,0,0,0,0
+uc-3547,3547,Rosario,Latin America and the Caribbean,0,0,5.23,0,5.23,0
+uc-3562,3562,Tshikapa,Sub-Saharan Africa,0,0,3.29,0,3.29,0
+dar-es-salaam,3570,Dar es-Salaam,Sub-Saharan Africa,0.38,0.00380463,0.53,0.06,0.53,0
+uc-3576,3576,Dammam,Northern Africa and Western Asia,0,0,0,0.51,0.51,0
+uc-3586,3586,Pekanbaru,Eastern and South-Eastern Asia,0,0,5.88,0,5.88,0
+uc-3673,3673,Zanzibar City,Sub-Saharan Africa,0,0,0,0.13,0.13,0
+montreal,3700,Montreal,Northern America,100,1,0.98,0,0.98,0
+warsaw,3712,Warsaw,Europe,0,0,2.8,0,2.8,0
+uc-3739,3739,P'yŏngyang,Eastern and South-Eastern Asia,100,1,4.59,0,4.59,0.444444
+uc-3780,3780,Xining,Eastern and South-Eastern Asia,0,0,6.27,0,6.27,0
+uc-3809,3809,Soshanguve,Sub-Saharan Africa,0,0,0.09,0,0.09,0
+uc-3811,3811,Kharkiv,Europe,0,0,5.54,0,5.54,0
+uc-3823,3823,Rajkot,Central and Southern Asia,100,1,0,0,0,0
+uc-3837,3837,Caracas,Latin America and the Caribbean,100,1,0.42,0,0.42,0.111111
+uc-3860,3860,Al Hillah,Northern Africa and Western Asia,17.06,0.170632,73.84,0,73.84,0
+bogota,3881,Bogota,Latin America and the Caribbean,100,1.11806,4.48,0,4.48,0
+uc-3886,3886,Tangier,Northern Africa and Western Asia,100,1,0,0.14,0.14,0
+uc-3888,3888,Birmingham,Europe,0,0,0,0,0,0
+uc-3920,3920,Busan,Eastern and South-Eastern Asia,100,1,21.29,0.84,21.29,2.11111
+rome,3938,Rome,Europe,46.29,0.464477,8.11,0,8.11,0
+uc-3943,3943,Pretoria,Sub-Saharan Africa,0,0,0,0,0,0
+uc-3968,3968,Barranquilla,Latin America and the Caribbean,0,0,2.88,0,2.88,0.111111
+uc-3978,3978,Lyon,Europe,0,0,16.25,0,16.25,0
+uc-3993,3993,Sana'a,Northern Africa and Western Asia,0,0,4.23,0,4.23,0
+uc-4034,4034,Al-Najaf,Northern Africa and Western Asia,0,0,4.46,0,4.46,0
+uc-4092,4092,Sacramento,Northern America,62.56,0.625591,32.77,0,32.77,0
+uc-4118,4118,Ta'izz,Northern Africa and Western Asia,0,0,0,0,0,0
+uc-4155,4155,Khartoum,Northern Africa and Western Asia,0,0,33.52,0,33.52,0
+uc-4183,4183,Ilorin,Sub-Saharan Africa,0,0,0.45,0,0.45,0
+uc-4184,4184,Hamburg,Europe,0,0,9.57,0.4,9.57,0
+uc-4230,4230,El Mahalla El Kubra,Northern Africa and Western Asia,0,0,18.53,0,18.53,0
+uc-4277,4277,Peshawar,Central and Southern Asia,100,2,7.8,0,7.8,0
+uc-4305,4305,Banha,Northern Africa and Western Asia,100,1,47.56,0,47.56,0
+uc-4316,4316,Amritsar,Central and Southern Asia,100,1.98382,4.79,0,4.79,0
+uc-4332,4332,Leeds,Europe,0,0,1.3,0,1.3,0
+uc-4356,4356,Lanzhou,Eastern and South-Eastern Asia,0,0,3.56,0,3.56,0
+osaka,4399,Osaka,Eastern and South-Eastern Asia,99.97,2.1234,21.55,13.9,21.55,2.77778
+uc-4407,4407,Fez,Northern Africa and Western Asia,100,1.62666,2.75,0,2.75,0
+uc-4416,4416,Kananga,Sub-Saharan Africa,0,0,0,0,0,0
+buenos-aires,4443,Buenos Aires,Latin America and the Caribbean,0,0,20.54,0.01,20.54,0
+uc-4478,4478,León,Latin America and the Caribbean,0,0,0,0,0,1.66667
+uc-4490,4490,Naples,Europe,90.99,0.915873,0.01,0.04,0.04,0
+uc-4512,4512,Naha,Eastern and South-Eastern Asia,100,3,0,2.74,2.74,0
+uc-4522,4522,Valencia,Europe,0,0,4.68,0,4.68,0
+uc-4529,4529,Antalya,Northern Africa and Western Asia,99.5,1.47407,3.05,0.01,3.05,0
+uc-4538,4538,Ahwaz,Central and Southern Asia,100,1.84113,88.54,0,88.54,0
+uc-4593,4593,Belém,Latin America and the Caribbean,0,0,22.5,0,22.5,0
+cairo,4605,Cairo,Northern Africa and Western Asia,100,1.77198,28.28,0,28.28,0
+uc-4625,4625,Las Vegas,Northern America,0,0,3.83,0,3.83,0
+uc-4644,4644,Nizhny Novgorod,Europe,0,0,7.27,0,7.27,0
+uc-4655,4655,Yinchuan,Eastern and South-Eastern Asia,100,1,23.4,0,23.4,0
+uc-4694,4694,Batam City,Eastern and South-Eastern Asia,0,0,0,0.73,0.73,0
+phoenix,4699,Phoenix,Northern America,0,0,7.13,0,7.13,0
+uc-4736,4736,Mesa,Northern America,0,0,4.54,0,4.54,0
+uc-4768,4768,Cần Thơ,Eastern and South-Eastern Asia,0,0,98.72,0,98.72,0
+uc-4773,4773,Torreón,Latin America and the Caribbean,0,0,31.28,0,31.28,0.222222
+durban,4787,Durban,Sub-Saharan Africa,0,0,0.33,0,0.33,0
+uc-4822,4822,Sincan,Northern Africa and Western Asia,100,1,2.98,0,2.98,0
+uc-4865,4865,Kabul,Central and Southern Asia,100,2.13989,8.27,0,8.27,0
+ankara,4921,Ankara,Northern Africa and Western Asia,100,1,1.12,0,1.12,0
+uc-4941,4941,Portland,Northern America,100,1,3.51,0,3.51,0
+uc-4945,4945,Goiânia,Latin America and the Caribbean,0,0,0.26,0,0.26,0
+uc-4952,4952,Kasaï-Oriental,Sub-Saharan Africa,0,0,0.07,0,0.07,0
+uc-4968,4968,Palembang,Eastern and South-Eastern Asia,0,0,24.35,0,24.35,0
+uc-4987,4987,Rostov-on-Don,Europe,0,0,0.47,0,0.47,0
+uc-4992,4992,Karaj,Central and Southern Asia,100,2,0.21,0,0.21,0
+yangon,5029,Yangon,Eastern and South-Eastern Asia,100,1.9609,28.35,12.07,28.35,0.111111
+cebu,5065,Cebu City,Eastern and South-Eastern Asia,100,2,0,5.99,5.99,2.33333
+barcelona,5071,Barcelona,Europe,0,0,4.8,0,4.8,0
+uc-5077,5077,Konya,Northern Africa and Western Asia,100,1,6.14,0,6.14,0
+seattle,5098,Seattle,Northern America,100,2,1.01,0.09,1.01,0
+uc-5157,5157,Ciudad Juárez,Latin America and the Caribbean,0,0,12.18,0,12.18,0.111111
+uc-5167,5167,El Mansura,Northern Africa and Western Asia,0,0,5.09,0,5.09,0
+tehran,5174,Tehran,Central and Southern Asia,100,2.56238,1.19,0,1.19,0
+uc-5181,5181,Bandar Lampung,Eastern and South-Eastern Asia,100,2,0,0.25,0.25,0
+uc-5201,5201,Basra,Northern Africa and Western Asia,0,0,94.74,0,94.74,0
+uc-5213,5213,Nagoya,Eastern and South-Eastern Asia,100,2.85372,28.6,26.12,28.6,2.88889
+uc-5215,5215,San Luis Potosí,Latin America and the Caribbean,0,0,0,0,0,0.888889
+uc-5236,5236,Baotou,Eastern and South-Eastern Asia,100,1,0.07,0,0.07,0
+ho-chi-minh,5239,Ho Chi Minh City,Eastern and South-Eastern Asia,0,0,27.65,0,27.65,0
+uc-5243,5243,Toluca,Latin America and the Caribbean,100,2,0.13,0,0.13,1.33333
+munich,5249,Munich,Europe,0,0,1.68,0,1.68,0
+uc-5294,5294,Đà Nẵng,Eastern and South-Eastern Asia,0,0,85.25,0.83,85.25,0.666667
+uc-5314,5314,Mardan,Central and Southern Asia,100,2,5.4,0,5.4,0
+uc-5315,5315,Jodhpur,Central and Southern Asia,0,0,0.47,0,0.47,0
+uc-5377,5377,Salt Lake City,Northern America,100,1.72992,6.54,0,6.54,0
+mexico-city,5402,Mexico City,Latin America and the Caribbean,100,1.52043,14.41,0,14.41,1.44444
+jakarta,5472,Jakarta,Eastern and South-Eastern Asia,100,1.98583,4.51,0.26,4.51,0
+berlin,5483,Berlin,Europe,0,0,7.32,0,7.32,0
+uc-5500,5500,Sendai,Eastern and South-Eastern Asia,100,2.06164,18.21,5.86,18.21,1.66667
+uc-5657,5657,Jalandhar,Central and Southern Asia,100,2,0,0,0,0
+uc-5678,5678,Hyderabad,Central and Southern Asia,100,1,64.73,0,64.73,0
+uc-5720,5720,Isfahan,Central and Southern Asia,100,1,28.99,0,28.99,0
+uc-5748,5748,Bandung,Eastern and South-Eastern Asia,100,2,2.59,0,2.59,0
+uc-5794,5794,San Antonio,Northern America,0,0,0,0,0,0.555556
+london,5816,London,Europe,0,0,7.46,0.31,7.46,0
+uc-5830,5830,Tarogong,Eastern and South-Eastern Asia,100,2,0.47,0,0.47,0
+uc-5847,5847,Hohhot,Eastern and South-Eastern Asia,100,1,10.95,0,10.95,0
+uc-5853,5853,Puebla,Latin America and the Caribbean,100,2,0.62,0,0.62,1.44444
+uc-5855,5855,Brasilia,Latin America and the Caribbean,0,0,0,0,0,0
+addis-ababa,5862,Addis Ababa,Sub-Saharan Africa,0,0,0.04,0,0.04,0
+uc-5872,5872,Davao City,Eastern and South-Eastern Asia,100,3,12.17,0.73,12.17,0.555556
+uc-5901,5901,Kazan,Europe,0,0,27.93,0,27.93,0
+uc-5906,5906,Khulna,Central and Southern Asia,100,1,22.01,0,22.01,0.555556
+uc-5918,5918,Al Zaqaziq,Northern Africa and Western Asia,100,1,39,0,39,0
+tokyo,5929,Tokyo,Eastern and South-Eastern Asia,100,3.05317,19.26,20.83,20.83,2.33333
+denver,5932,Denver,Northern America,0,0,0.98,0,0.98,0
+uc-5935,5935,Benin City,Sub-Saharan Africa,0,0,0.16,0,0.16,0
+uc-5951,5951,Austin,Northern America,0,0,0.83,0,0.83,0.555556
+uc-5971,5971,Porto Alegre,Latin America and the Caribbean,0,0,11,0,11,0
+uc-5985,5985,Tasikmalaya,Eastern and South-Eastern Asia,100,2,0.05,0,0.05,0
+uc-6000,6000,Savar,Central and Southern Asia,100,1,33.99,0,33.99,0.555556
+uc-6009,6009,Warri,Sub-Saharan Africa,0,0,56.48,0,56.48,0
+dhaka,6090,Dhaka,Central and Southern Asia,100,1.25017,56.76,0.01,56.76,0.555556
+uc-6131,6131,Monterrey,Latin America and the Caribbean,0,0,1.2,0,1.2,0.888889
+uc-6143,6143,Ahmedabad,Central and Southern Asia,0,0,30.01,0,30.01,0
+houston,6167,Houston,Northern America,0,0,13.19,0,13.19,0.777778
+uc-6173,6173,Gaziantep,Northern Africa and Western Asia,100,1,0,0,0,0
+uc-6181,6181,Cirebon,Eastern and South-Eastern Asia,100,1,0,0.24,0.24,0
+uc-6229,6229,Ludhiana,Central and Southern Asia,100,2,11.42,0,11.42,0
+uc-6297,6297,Kishoreganj,Central and Southern Asia,100,1.97178,3.42,0,3.42,0.555556
+uc-6321,6321,Lubumbashi,Sub-Saharan Africa,100,1,0.38,0,0.38,0
+uc-6350,6350,Curitiba,Latin America and the Caribbean,0,0,0.24,0,0.24,0
+uc-6378,6378,Chengdu,Eastern and South-Eastern Asia,100,2,3.34,0,3.34,0
+uc-6397,6397,Dallas,Northern America,0,0,1.43,0,1.43,0.333333
+uc-6474,6474,Okene,Sub-Saharan Africa,0,0,0,0,0,0
+uc-6485,6485,Tegal,Eastern and South-Eastern Asia,100,1,4.37,0.08,4.37,0
+uc-6515,6515,Purwokerto,Eastern and South-Eastern Asia,100,1.32161,0.96,0,0.96,0
+uc-6525,6525,Sarvestan,Central and Southern Asia,100,2,0,0,0,0
+uc-6635,6635,Pekalongan,Eastern and South-Eastern Asia,100,1,2.66,0.08,2.66,0
+uc-6663,6663,Brahmanbaria,Central and Southern Asia,100,2,42.43,0,42.43,0.555556
+islamabad,6766,Islamabad,Central and Southern Asia,100,2.23929,0.65,0,0.65,0
+uc-6776,6776,Asyut,Northern Africa and Western Asia,0,0,45.12,0,45.12,0
+uc-6785,6785,Semarang,Eastern and South-Eastern Asia,100,1,1.49,0.18,1.49,0
+uc-6845,6845,Yogyakarta,Eastern and South-Eastern Asia,100,2,0,0,0,0
+uc-6897,6897,Mashhad,Central and Southern Asia,100,1.18807,0.19,0,0.19,0
+uc-6912,6912,Multan,Central and Southern Asia,100,1,77.1,0,77.1,0
+uc-6913,6913,Surat,Central and Southern Asia,0,0,31.9,3.45,31.9,0.111111
+uc-6958,6958,Surakarta,Eastern and South-Eastern Asia,100,1.15788,11.61,0,11.61,0
+uc-7021,7021,Vadodara,Central and Southern Asia,0,0,25.54,0,25.54,0.111111
+uc-7054,7054,Beni,Sub-Saharan Africa,100,2,0,0,0,0
+uc-7057,7057,Yekaterinburg,Europe,0,0,0.45,0,0.45,0
+uc-7078,7078,Campinas,Latin America and the Caribbean,0,0,0.01,0,0.01,0
+uc-7085,7085,Sargodha,Central and Southern Asia,100,1,1.2,0,1.2,0
+uc-7092,7092,Onitsha,Sub-Saharan Africa,0,0,5.63,0,5.63,0
+uc-7093,7093,Suhaj,Northern Africa and Western Asia,0,0,48.21,0,48.21,0
+uc-7131,7131,Owerri,Sub-Saharan Africa,0,0,0,0,0,0
+uc-7151,7151,Chandigarh,Central and Southern Asia,100,1.9741,0.01,0,0.01,0
+miami,7168,Miami,Northern America,0,0,1.08,0.04,1.08,2.66667
+uc-7178,7178,Sylhet,Central and Southern Asia,100,3,3.78,0,3.78,0.444444
+minneapolis,7181,Minneapolis [Saint Paul],Northern America,0,0,0.15,0,0.15,0
+uc-7209,7209,Port Harcourt,Sub-Saharan Africa,0,0,19.77,0.24,19.77,0
+uc-7222,7222,Luxor,Northern Africa and Western Asia,0,0,47.86,0,47.86,0
+uc-7243,7243,Orlando,Northern America,0,0,0,0,0,2.55556
+sao-paulo,7277,São Paulo,Latin America and the Caribbean,0,0,2.18,0,2.18,0
+uc-7358,7358,Novosibirsk,Europe,0,0,1.16,0,1.16,0
+uc-7365,7365,São Luís,Latin America and the Caribbean,0,0,1.34,0,1.34,0
+uc-7425,7425,Santos,Latin America and the Caribbean,0,0,0.4,0.47,0.47,0
+uc-7426,7426,Aboh,Sub-Saharan Africa,0,0,0,0,0,0
+uc-7428,7428,Faisalabad,Central and Southern Asia,100,1.98756,1.7,0,1.7,0
+uc-7439,7439,Chattogram,Central and Southern Asia,100,2,13.43,42.92,42.92,0.555556
+uc-7440,7440,Datong,Eastern and South-Eastern Asia,100,1,1.9,0,1.9,0
+uc-7459,7459,Surabaya,Eastern and South-Eastern Asia,100,1.00023,12.67,2.12,12.67,0
+uc-7468,7468,Malang,Eastern and South-Eastern Asia,100,2,0.56,0,0.56,0
+uc-7471,7471,Abuja,Sub-Saharan Africa,0,0,0,0,0,0
+uc-7516,7516,Kaduna,Sub-Saharan Africa,0,0,1.19,0,1.19,0
+chicago,7532,Chicago,Northern America,0,0,5.79,0,5.79,0
+uc-7543,7543,Aba,Sub-Saharan Africa,0,0,0,0,0,0
+uc-7563,7563,Vasai-Virar,Central and Southern Asia,100,1,46.72,13.93,46.72,0.111111
+mumbai,7599,Mumbai,Central and Southern Asia,100,1,13.36,3.73,13.36,0.111111
+uc-7676,7676,Belo Horizonte,Latin America and the Caribbean,0,0,0,0,0,0
+uc-7687,7687,Jaipur,Central and Southern Asia,0,0,0,0,0,0
+uc-7716,7716,Enugu,Sub-Saharan Africa,0,0,0,0,0,0
+uc-7738,7738,Gujranwala,Central and Southern Asia,100,1,0,0,0,0
+uc-7739,7739,Kalyan-Dombivli,Central and Southern Asia,100,1,5.1,0,5.1,0.111111
+denpasar,7783,Denpasar,Eastern and South-Eastern Asia,100,2,0,0.3,0.3,0
+uc-7784,7784,Detroit,Northern America,0,0,1.55,0,1.55,0
+lahore,7794,Lahore,Central and Southern Asia,100,1,11.69,0,11.69,0
+rio-de-janeiro,7799,Rio de Janeiro,Latin America and the Caribbean,0,0,0.8,0.01,0.8,0
+uc-7829,7829,Sialkot,Central and Southern Asia,100,1.93012,21.3,0,21.3,0
+uc-7867,7867,Mataram,Eastern and South-Eastern Asia,100,2,0,0.42,0.42,0
+uc-7890,7890,Niterói,Latin America and the Caribbean,0,0,0.5,0.01,0.5,0
+washington,7910,Washington,Northern America,0,0,0.44,0.01,0.44,0.111111
+uc-7943,7943,Shunqing,Eastern and South-Eastern Asia,0,0,12.27,0,12.27,0
+uc-7958,7958,Samarinda,Eastern and South-Eastern Asia,0,0,34.09,0,34.09,0
+uc-7959,7959,Baltimore,Northern America,0,0,0.65,0.46,0.65,0.111111
+uc-7961,7961,Uyo,Sub-Saharan Africa,0,0,0,0,0,0
+new-delhi,7963,New Delhi,Central and Southern Asia,100,1.73385,29.29,0,29.29,0
+uc-7991,7991,Saharanpur,Central and Southern Asia,100,1,0,0,0,0
+uc-8006,8006,Xi'an,Eastern and South-Eastern Asia,0,0,3.76,0,3.76,0
+uc-8012,8012,Nashik,Central and Southern Asia,0,0,0.56,0,0.56,0.111111
+uc-8013,8013,Kunming,Eastern and South-Eastern Asia,100,1.77397,18.01,0,18.01,0.111111
+uc-8029,8029,Philadelphia,Northern America,0,0,7.57,0.04,7.57,0.111111
+uc-8035,8035,Makassar,Eastern and South-Eastern Asia,0,0,2.8,0.82,2.8,0
+new-york,8099,New York City,Northern America,0,0,4.01,7.32,7.32,0.333333
+uc-8100,8100,Vitória,Latin America and the Caribbean,0,0,20.4,3.1,20.4,0
+uc-8120,8120,Dehradun,Central and Southern Asia,100,2,0,0,0,0
+uc-8125,8125,Kano,Sub-Saharan Africa,0,0,0.01,0,0.01,0
+fortaleza,8154,Fortaleza,Latin America and the Caribbean,0,0,0.12,0,0.12,0
+uc-8234,8234,Kota,Central and Southern Asia,0,0,0.35,0,0.35,0
+salvador,8238,Salvador,Latin America and the Caribbean,0,0,0.09,0.07,0.09,0
+boston,8255,Boston,Northern America,0,0,0.64,0.97,0.97,0.333333
+uc-8258,8258,Pune,Central and Southern Asia,100,1,4.34,0,4.34,0.111111
+uc-8305,8305,Meerut,Central and Southern Asia,100,1,12.97,0,12.97,0
+uc-8326,8326,Taiyuan,Eastern and South-Eastern Asia,100,1,,0,,0
+uc-8353,8353,Maceió,Latin America and the Caribbean,0,0,0.11,0.01,0.11,
+uc-8363,8363,Natal,Latin America and the Caribbean,12.25,0.122543,0.5,0,0.5,0
+uc-8388,8388,Recife,Latin America and the Caribbean,0,0,4.46,0.06,4.46,0
+uc-8403,8403,João Pessoa,Latin America and the Caribbean,0,0,2.09,0,2.09,0
+uc-8557,8557,Chongqing,Eastern and South-Eastern Asia,77.61,0.776148,0.77,0,0.77,0
+uc-8564,8564,Maiduguri,Sub-Saharan Africa,0,0,22.8,0,22.8,0
+uc-8565,8565,Indore,Central and Southern Asia,0,0,0,0,0,0
+uc-8584,8584,Linfen,Eastern and South-Eastern Asia,100,1,,0,,0
+uc-8626,8626,Aligarh,Central and Southern Asia,99.98,0.999775,36.28,0,36.28,0
+uc-8660,8660,Agra,Central and Southern Asia,0,0,4.59,0,4.59,0
+uc-8666,8666,Moradabad,Central and Southern Asia,100,1,27.19,0,27.19,0
+uc-8672,8672,Chhatrapati Sambhajinagar,Central and Southern Asia,0,0,0,0,0,0
+beijing,8745,Beijing,Eastern and South-Eastern Asia,99.98,0.999839,2.25,0,2.25,0
+uc-8789,8789,Shijiazhuang,Eastern and South-Eastern Asia,97.67,0.976712,,0,,0
+uc-8806,8806,Gwalior,Central and Southern Asia,0,0,0,0,0,0
+uc-8860,8860,Bareilly,Central and Southern Asia,100,1,3.08,0,3.08,0
+uc-8886,8886,Bhopal,Central and Southern Asia,0,0,0,0,0,0.111111
+uc-8945,8945,Honghuagang,Eastern and South-Eastern Asia,0,0,0.04,0,0.04,0
+uc-8954,8954,Solapur,Central and Southern Asia,100,1,0,0,0,0
+uc-9019,9019,Guiyang,Eastern and South-Eastern Asia,0,0,2.87,0,2.87,0
+uc-9025,9025,Luoyang,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9029,9029,Shiyan,Eastern and South-Eastern Asia,0,0,0,0,0,0
+uc-9107,9107,Handan,Eastern and South-Eastern Asia,3.25,0.0325207,,0,,0
+uc-9127,9127,Tianjin,Eastern and South-Eastern Asia,78.2,0.78198,44.13,0.56,44.13,0
+uc-9191,9191,Anyang,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9229,9229,Tangshan,Eastern and South-Eastern Asia,100,1.99912,7.94,0,7.94,0
+uc-9230,9230,Kozhikode,Central and Southern Asia,0,0,6.97,0,6.97,0
+uc-9244,9244,Kanpur,Central and Southern Asia,0,0,5.52,0,5.52,0
+uc-9251,9251,Binhai New Area,Eastern and South-Eastern Asia,99.69,1,,63.78,,0
+uc-9277,9277,Zhengzhou,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9298,9298,Ponnani,Central and Southern Asia,0,0,11.61,0.55,11.61,0
+uc-9329,9329,Dengzhou,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9346,9346,Lucknow,Central and Southern Asia,0.31,0.00306801,10.69,0,10.69,0
+uc-9352,9352,Thrissur,Central and Southern Asia,0,0,0.92,0,0.92,0
+kochi,9386,Kochi,Central and Southern Asia,0,0,5.43,0.6,5.43,0.222222
+uc-9390,9390,Mysuru,Central and Southern Asia,0,0,0,0,0,0.444444
+uc-9410,9410,Nagpur,Central and Southern Asia,0,0,0,0,0,0.111111
+uc-9429,9429,Xuchang,Eastern and South-Eastern Asia,0.23,0.0023141,,0,,0
+uc-9431,9431,Kaifeng,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9445,9445,Harbin,Eastern and South-Eastern Asia,0,0,15.78,0,15.78,0
+uc-9464,9464,Kollam,Central and Southern Asia,0,0,0.51,0.16,0.51,0.333333
+uc-9466,9466,Jabalpur,Central and Southern Asia,100,1,0.21,0,0.21,0.111111
+uc-9495,9495,Yichang,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9510,9510,Coimbatore,Central and Southern Asia,0,0,0,0,0,0.444444
+hyderabad,9524,Hyderabad,Central and Southern Asia,0,0,0.28,0,0.28,0.555556
+bengaluru,9558,Bengaluru,Central and Southern Asia,0.54,0.00535202,0.1,0,0.1,0.888889
+uc-9571,9571,Luohe,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9603,9603,Jinan,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9612,9612,Thiruvananthapuram,Central and Southern Asia,0,0,0.01,0,0.01,0.333333
+uc-9620,9620,Tiruppur,Central and Southern Asia,0,0,2.85,0,2.85,0.555556
+uc-9637,9637,Changchun,Eastern and South-Eastern Asia,0,0,5.75,0,5.75,0
+uc-9676,9676,Colachel,Central and Southern Asia,0,0,6.69,0,6.69,0.333333
+uc-9714,9714,Prayagraj,Central and Southern Asia,0,0,16.56,0,16.56,0
+uc-9779,9779,Shenyang,Eastern and South-Eastern Asia,3.8,0.0380227,1.34,0,1.34,0
+uc-9800,9800,Salem,Central and Southern Asia,0,0,0.05,0,0.05,0.888889
+uc-9801,9801,Zibo,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9843,9843,Nanning,Eastern and South-Eastern Asia,0,0,67.71,0,67.71,0.777778
+uc-9860,9860,Gyanpur,Central and Southern Asia,0,0,4.59,0,4.59,0.111111
+uc-9880,9880,Madurai,Central and Southern Asia,0,0,34.9,0,34.9,0.555556
+uc-9881,9881,Anshan,Eastern and South-Eastern Asia,100,1,0,0,0,0
+uc-9921,9921,Jilin City,Eastern and South-Eastern Asia,0,0,0.84,0,0.84,0.111111
+uc-9939,9939,Liuzhou,Eastern and South-Eastern Asia,0,0,0.8,0,0.8,0.666667
+uc-9968,9968,Gorakhpur,Central and Southern Asia,100,1,15.1,0,15.1,0
+uc-9978,9978,Tiruchirappalli,Central and Southern Asia,0,0,16.09,0,16.09,0.888889
+uc-9981,9981,Tengzhou,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-9996,9996,Durg,Central and Southern Asia,0,0,0.95,0,0.95,0.111111
+uc-10008,10008,Varanasi,Central and Southern Asia,0,0,11.73,0,11.73,0
+uc-10074,10074,Raipur,Central and Southern Asia,0,0,1.16,0,1.16,0.222222
+uc-10099,10099,Fuyang,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-10113,10113,Dalian,Eastern and South-Eastern Asia,0,0,0,4.06,4.06,0
+uc-10131,10131,Wuhan,Eastern and South-Eastern Asia,0,0,,0,,0
+uc-10143,10143,Xuzhou,Eastern and South-Eastern Asia,0,0,0,0,0,0
+uc-10199,10199,Linyi,Eastern and South-Eastern Asia,2.78,0.0277726,,0,,0
+uc-10224,10224,Vijayawada,Central and Southern Asia,0,0,43.12,0,43.12,0.777778
+uc-10229,10229,Changsha,Eastern and South-Eastern Asia,0,0,16.25,0,16.25,0
+uc-10290,10290,Puducherry,Central and Southern Asia,0,0,29.03,0.02,29.03,1
+chennai,10300,Chennai,Central and Southern Asia,0,0,24.29,0.05,24.29,1
+uc-10306,10306,Maharajganj,Central and Southern Asia,58.88,0.588828,35.8,0,35.8,0
+uc-10323,10323,Zhuzhou,Eastern and South-Eastern Asia,0,0,1.89,0,1.89,0
+uc-10403,10403,Tianjia‘an,Eastern and South-Eastern Asia,0,0,,0,,0.222222
+uc-10444,10444,Marhaura,Central and Southern Asia,0.1,0.00100161,63.23,0,63.23,0
+uc-10449,10449,Qingdao,Eastern and South-Eastern Asia,0,0,1.54,4.73,4.73,0
+uc-10512,10512,Mehsi,Central and Southern Asia,100,1,70.61,0,70.61,0
+uc-10576,10576,Hajipur,Central and Southern Asia,51.96,0.519629,50.55,0,50.55,0.111111
+uc-10586,10586,Patna,Central and Southern Asia,0,0,47.88,0,47.88,0.111111
+uc-10629,10629,Hefei,Eastern and South-Eastern Asia,4.68,0.0468445,,0,,0.444444
+uc-10663,10663,Yichun,Eastern and South-Eastern Asia,0,0,21.82,0,21.82,0
+uc-10695,10695,Xiuying District,Eastern and South-Eastern Asia,0,0,19.68,6.16,19.68,1.22222
+uc-10715,10715,Huaiyin District,Eastern and South-Eastern Asia,0,0,,0,,0.333333
+uc-10766,10766,Bibhutpur,Central and Southern Asia,99.91,0.999123,78.27,0,78.27,0.111111
+uc-10796,10796,Visakhapatnam,Central and Southern Asia,0,0,0,0.11,0.11,0.777778
+uc-10816,10816,Begusarai,Central and Southern Asia,0.56,0.00556396,79.72,0,79.72,0.111111
+uc-10831,10831,Nanchang,Eastern and South-Eastern Asia,0,0,20.99,0,20.99,1.66667
+uc-10832,10832,Ranchi,Central and Southern Asia,100,1,0,0,0,0.444444
+uc-10887,10887,Nanjing,Eastern and South-Eastern Asia,0,0,,0,,0.444444
+uc-10915,10915,Ma'anshan,Eastern and South-Eastern Asia,0,0,,0,,0.555556
+uc-10927,10927,Wuhu,Eastern and South-Eastern Asia,0,0,,0,,0.777778
+uc-10933,10933,Guangzhou,Eastern and South-Eastern Asia,0,0,39.33,7.05,39.33,0.777778
+uc-10941,10941,Yancheng,Eastern and South-Eastern Asia,0,0,100,34.39,100,0.444444
+uc-10998,10998,Dhanbad,Central and Southern Asia,100,1,0.04,0,0.04,0.444444
+uc-11003,11003,Ganzhou,Eastern and South-Eastern Asia,0,0,3.56,0,3.56,0.222222
+uc-11032,11032,Jamshedpur,Central and Southern Asia,100,1,3.32,0,3.32,0.555556
+uc-11079,11079,Zhuhai [Macau],Eastern and South-Eastern Asia,0,0,41.06,6.17,41.06,0.777778
+uc-11080,11080,Asansol,Central and Southern Asia,100,1,0.1,0,0.1,0.444444
+uc-11113,11113,Changzhou,Eastern and South-Eastern Asia,0,0,,0,,0.666667
+uc-11122,11122,Bhubaneshwar,Central and Southern Asia,0,0,7.88,0,7.88,0.444444
+uc-11155,11155,Tuen Mun,Eastern and South-Eastern Asia,0,0,6.59,2.8,6.59,0.777778
+uc-11173,11173,Huizhou,Eastern and South-Eastern Asia,0,0,47.95,0,47.95,0.555556
+uc-11184,11184,Dhulian,Central and Southern Asia,100,1,67.83,0,67.83,0.444444
+hong-kong,11185,Hong Kong,Eastern and South-Eastern Asia,0,0,0,4.22,4.22,0.777778
+uc-11195,11195,Zhangjiagang,Eastern and South-Eastern Asia,0,0,85.29,0,85.29,0.555556
+uc-11199,11199,Suzhou,Eastern and South-Eastern Asia,0,0,93.09,9.99,93.09,0.777778
+uc-11225,11225,Nantong,Eastern and South-Eastern Asia,0,0,99.28,25.45,99.28,0.555556
+uc-11280,11280,Berhampore,Central and Southern Asia,0,0,27.64,0,27.64,0.444444
+uc-11302,11302,Tamluk,Central and Southern Asia,14.16,0.141578,47.56,0,47.56,0.555556
+uc-11311,11311,Hangzhou,Eastern and South-Eastern Asia,0,0,52.33,0,52.33,1.66667
+shanghai,11345,Shanghai,Eastern and South-Eastern Asia,0,0,82.34,64.13,82.34,1
+kolkata,11352,Kolkata,Central and Southern Asia,78.06,0.780591,28.93,0,28.93,0.555556
+uc-11379,11379,Jinhua,Eastern and South-Eastern Asia,0,0,,0,,2.22222
+uc-11407,11407,Shantou,Eastern and South-Eastern Asia,0,0,48.67,47.83,48.67,3.33333
+uc-11489,11489,Cixi,Eastern and South-Eastern Asia,0,0,23.23,97.7,97.7,1.33333
+uc-11500,11500,Guwahati,Central and Southern Asia,100,3,14.5,0,14.5,0.222222
+uc-11537,11537,Zhangzhou,Eastern and South-Eastern Asia,0,0,52.08,37.45,52.08,3.44444
+uc-11563,11563,Ningbo,Eastern and South-Eastern Asia,0,0,59.33,45.11,59.33,1.55556
+uc-11593,11593,Xiamen City,Eastern and South-Eastern Asia,0,0,0.06,3.61,3.61,3.55556
+uc-11621,11621,Fuzhou,Eastern and South-Eastern Asia,0,0,92.56,84.75,92.56,3.55556
+uc-11623,11623,Quanzhou,Eastern and South-Eastern Asia,0,0,2.37,6.86,6.86,3.66667
+uc-11630,11630,Wenzhou,Eastern and South-Eastern Asia,0,0,68.53,95.14,95.14,3
+uc-11636,11636,Putian,Eastern and South-Eastern Asia,0,0,21.23,53.77,53.77,3.55556
+uc-11653,11653,Yueqing,Eastern and South-Eastern Asia,0,0,72.62,90.82,90.82,3
+uc-11665,11665,Taizhou,Eastern and South-Eastern Asia,0,0,62.86,82.7,82.7,2.66667
