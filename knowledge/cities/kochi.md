@@ -15,7 +15,7 @@ boundary:
   id: 9386
   name: "Kochi"
   area_km2: 1266
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 69.0, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 9979, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 25.2, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 5.43, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 30.2, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 4.51, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 26.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 2619, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 1.87, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 56.8, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 18.8, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 26.1, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 29.5, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 69.9, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 9386「Kochi」。面積 1266 k
 | 人口加重密度 | 9979 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 25.2 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 5.43 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 30.2 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 4.51 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 26.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 2619 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 1.87 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 56.8 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 18.8 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 26.1 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 29.5 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 69.9 % | 2021 | observed |

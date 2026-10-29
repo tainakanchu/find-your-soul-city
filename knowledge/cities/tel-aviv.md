@@ -15,7 +15,7 @@ boundary:
   id: 457
   name: "Tel Aviv"
   area_km2: 333.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 29.6, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 27.6, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 13586, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 21.1, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.37, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 42.8, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 56.5, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 21.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 418.4, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 11.2, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 98.3, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 19.8, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 14.1, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 27.3, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 18.0, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 457「Tel Aviv」。面積 333.
 | 人口加重密度 | 13586 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 21.1 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.37 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 42.8 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 56.5 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 21.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 418.4 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 11.2 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 98.3 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 19.8 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 14.1 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 27.3 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 18.0 % | 2021 | observed |

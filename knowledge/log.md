@@ -1,6 +1,8 @@
 # Directory Update Log
 
 ## 2026-10-29
+* **Creation**: 朝型・夜型の設問を 4 問追加（18 問に）。[夏至の日の入り時刻](/metrics/sunset-summer.md)（天文計算、[daylight](/sources/daylight.md)）、[深夜 23 時に開いている食料品店](/metrics/late-shops.md)・[飲食店](/metrics/late-dining.md)、[日曜の昼に開いている食料品店](/metrics/sunday-shops.md)（OSM の営業時間タグ、[osm-hours](/sources/osm-hours.md)）。すべて理想値型（静かな夜・日曜を好む回答もある）。24 時間営業・早朝の飲食店・冬の日の入りなど 5 件は理由つきで不採用。国単位の生活時間調査（HETUS）は 13 か国にしかなく使わない。
+* **Update**: 基準分布の計算を、基準集合（人口 100 万人以上）の都市圏だけに限り、ソースごとに異なる都市 ID（`uc-<id>` と対象都市の ID）を GHS-UCDB の ID にそろえて相関を求めるよう修正。文化施設の分位点と一部の相関が小さく変わった（最大 0.03）。タグのある都市が基準集合の半分に満たない指標（`reference_partial`）は、共通する都市 150 以上で相関を求める。
 * **Creation**: 設問「自然災害が少ない街」を追加。[洪水](/metrics/flood.md)（100 年に 1 度の想定範囲に住む人口の割合）と [熱帯低気圧](/metrics/typhoon.md)（年あたりの被災回数）に重みを等分する。[地震](/metrics/quake.md) は元データが CC BY-NC-SA で不採用。設問は複数の指標をまとめて扱えるようにした（`metrics: [...]`）。
 * **Update**: 偏りの監視テストの基準を緩めた（期待値の 20 倍以下・実質 26 都市以上・ジニ 0.68 以下）。シンガポールが熱帯で唯一、インフラが整い洪水・台風もほぼない都市で、1 位率が上がったため（データの性質で、採点の不具合ではない）。
 * **Update**: [スコア仕様 v0.4](/model/scoring.md)。基準集合で順位相関の絶対値が 0.5 以上の条件を両方重視したときは重みを分け合う。相関行列は [基準分布](/model/reference-distribution.md) に記録。

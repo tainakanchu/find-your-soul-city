@@ -15,7 +15,7 @@ boundary:
   id: 2007
   name: "Los Angeles"
   area_km2: 4498
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 7.02, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 34.6, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 4832, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 15.1, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 12.8, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 15.2, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: 29.0, quality: estimated, source: osm-hours, year: 2026 }
   pm25: { value: 13.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 386.4, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 7.1, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: 96.2, quality: estimated, source: osm-hours, year: 2026 }
+  sunset_summer: { value: 20.1, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 12.7, quality: estimated, source: era5, year: "1990-2019" }
   temp_warmest: { value: 24.0, quality: estimated, source: era5, year: "1990-2019" }
   tree_share: { value: 12.2, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 2007「Los Angeles」。面積 
 | 人口加重密度 | 4832 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 15.1 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 12.8 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 15.2 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 29.0 % | 2026 | estimated |
 | PM2.5 年平均濃度（人口加重） | 13.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 386.4 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 7.1 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 96.2 % | 2026 | estimated |
+| 夏至の日の入り時刻 | 20.1 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 12.7 ℃ | 1990-2019 | estimated |
 | 最暖月の平均気温 | 24.0 ℃ | 1990-2019 | estimated |
 | 樹木被覆率 | 12.2 % | 2021 | observed |

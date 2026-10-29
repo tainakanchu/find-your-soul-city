@@ -10,6 +10,13 @@ export const formatValue = (v: number | null | undefined, unit: string) => {
     case "人/km²":
     case "mm":
       return `${num(v, 0)} ${unit}`;
+    case "時刻": {
+      // Decimal hours on a 24 h clock; >= 24 is after midnight (Reykjavik 24.03 -> 翌 0:02).
+      const min = Math.round(v * 60);
+      const h = Math.floor(min / 60);
+      const time = `${h % 24}:${String(min % 60).padStart(2, "0")}`;
+      return h >= 24 ? `翌 ${time}` : time;
+    }
     case "%":
     case "℃":
       return `${num(v, 1)}${unit}`;

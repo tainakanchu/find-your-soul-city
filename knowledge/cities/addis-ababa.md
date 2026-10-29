@@ -15,7 +15,7 @@ boundary:
   id: 5862
   name: "Addis Ababa"
   area_km2: 465.0
-generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T04:27:29Z }
+generated: { by: etl/soulcity_etl/build.py, at: 2026-10-29T19:13:22Z }
 metrics:
   bike_protected: { value: 0.0, quality: observed, source: itdp-atlas, year: 2024 }
   cloud_cover_annual: { value: 52.3, quality: observed, source: era5, year: "1990-2019" }
@@ -23,9 +23,13 @@ metrics:
   density_weighted: { value: 31445, quality: estimated, source: ghsl-pop, year: 2025 }
   dewpoint_max_month: { value: 12.6, quality: observed, source: era5, year: "1990-2019" }
   flood: { value: 0.04, quality: estimated, source: ghsl-hazard, year: 2025 }
+  late_dining: { value: 22.6, quality: estimated, source: osm-hours, year: 2026 }
+  late_shops: { value: null, quality: missing, source: osm-hours, year: null, reason: "only 16 groceries POIs with a parseable opening_hours tag in the polygon (minimum 50; 208 POIs in total)" }
   pm25: { value: 26.0, quality: estimated, source: ghsl-ucdb, year: 2020 }
   precip_annual: { value: 1882, quality: observed, source: era5, year: "1990-2019" }
   rapid_transit: { value: 15.8, quality: observed, source: itdp-atlas, year: 2024 }
+  sunday_shops: { value: null, quality: missing, source: osm-hours, year: null, reason: "only 16 groceries POIs with a parseable opening_hours tag in the polygon (minimum 50; 208 POIs in total)" }
+  sunset_summer: { value: 18.8, quality: estimated, source: daylight, year: 2025 }
   temp_coldest: { value: 14.7, quality: observed, source: era5, year: "1990-2019" }
   temp_warmest: { value: 17.7, quality: observed, source: era5, year: "1990-2019" }
   tree_share: { value: 9.65, quality: observed, source: esa-worldcover, year: 2021 }
@@ -48,9 +52,13 @@ GHS-UCDB R2024A の都市圏（urban centre）ID 5862「Addis Ababa」。面積 
 | 人口加重密度 | 31445 人/km² | 2025 | estimated |
 | 最も蒸す月の露点温度 | 12.6 ℃ | 1990-2019 | observed |
 | 洪水の想定範囲に住む人口の割合 | 0.04 % | 2025 | estimated |
+| 深夜 23 時に開いている飲食店の割合 | 22.6 % | 2026 | estimated |
+| 深夜 23 時に開いている食料品店の割合 | 欠損 | — | only 16 groceries POIs with a parseable opening_hours tag in the polygon (minimum 50; 208 POIs in total) |
 | PM2.5 年平均濃度（人口加重） | 26.0 µg/m³ | 2020 | estimated |
 | 年降水量 | 1882 mm | 1990-2019 | observed |
 | 高速公共交通の近くに住む人口の割合 | 15.8 % | 2024 | observed |
+| 日曜の昼に開いている食料品店の割合 | 欠損 | — | only 16 groceries POIs with a parseable opening_hours tag in the polygon (minimum 50; 208 POIs in total) |
+| 夏至の日の入り時刻 | 18.8 時刻 | 2025 | estimated |
 | 最寒月の平均気温 | 14.7 ℃ | 1990-2019 | observed |
 | 最暖月の平均気温 | 17.7 ℃ | 1990-2019 | observed |
 | 樹木被覆率 | 9.65 % | 2021 | observed |

@@ -1,6 +1,7 @@
 # sources
 
 * [検討して採用しなかったソース](considered.md) - WHO 大気質、NASA Black Marble、EU Quality of Life、GHCN-M（検証専用）などの判断記録。
+* [日の入り時刻（天文計算）](daylight.md) - 都市の代表点の緯度経度とタイムゾーンから計算した、夏至・冬至の日の入りの時計時刻。外部データの取得なし。
 * [ERA5 再解析（Copernicus C3S）](era5.md) - 1990–2019 年の月別気温・降水・雲量・露点。WeatherBench 2 の公開コピーから取得。CC BY 4.0。
 * [ESA WorldCover 10 m 2021 v200](esa-worldcover.md) - 10 m 解像度の土地被覆。都市圏内の樹木被覆率に使う。CC BY 4.0。
 * [Joint EVS/WVS](evs-wvs.md) - 国単位の価値観調査。都市への外挿ができないため不採用。
@@ -8,4 +9,5 @@
 * [GHS-POP R2023A（1 km 人口グリッド）](ghsl-pop.md) - 人口加重密度の算出に使う 2025 年の 1 km 人口グリッド。CC BY 4.0。
 * [GHS Urban Centre Database R2024A](ghsl-ucdb.md) - 都市圏ポリゴン（全指標の共通境界）、人口、PM2.5 などの都市圏集計値。CC BY 4.0。
 * [ITDP Atlas of Sustainable City Transport](itdp-atlas.md) - 徒歩圏の生活サービス・保護自転車道・高速公共交通への近接人口割合。ODbL 1.0。
+* [OpenStreetMap 営業時間タグ](osm-hours.md) - 食料品店（スーパー・コンビニ）と飲食店の opening_hours タグから、深夜・日曜に開いている店の割合。QLever の osm-planet SPARQL（planet 2026-09-21）から取得。ODbL 1.0。
 * [OpenStreetMap](osm.md) - 文化施設の数え上げ。QLever の osm-planet SPARQL（planet 2026-09-21）から取得。ODbL 1.0。
