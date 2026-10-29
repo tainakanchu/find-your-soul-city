@@ -2,18 +2,18 @@
 
 生成: 2026-10-29T02:09:44Z（`pnpm etl`）。対象 104 都市。
 
-| 指標 | 出典 | 欠損率 | Australia and New Zealand | Central and Southern Asia | Eastern and South-Eastern Asia | Europe | Latin America and the Caribbean | Northern Africa and Western Asia | Northern America | Sub-Saharan Africa |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| bike_protected | itdp-atlas | 1% | 0/4 | 0/10 | 0/22 | 1/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| cloud_cover_annual | era5 | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| culture | osm | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| density_weighted | ghsl-pop | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| dewpoint_max_month | era5 | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| pm25 | ghsl-ucdb | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| precip_annual | era5 | 7% | 0/4 | 2/10 | 0/22 | 0/23 | 4/16 | 0/7 | 0/11 | 1/11 |
-| rapid_transit | itdp-atlas | 7% | 1/4 | 1/10 | 1/22 | 2/23 | 2/16 | 0/7 | 0/11 | 0/11 |
-| temp_coldest | era5 | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| temp_warmest | era5 | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| tree_share | esa-worldcover | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| urban_pop | ghsl-ucdb | 0% | 0/4 | 0/10 | 0/22 | 0/23 | 0/16 | 0/7 | 0/11 | 0/11 |
-| walk_services | itdp-atlas | 1% | 0/4 | 0/10 | 0/22 | 1/23 | 0/16 | 0/7 | 0/11 | 0/11 |
+| 指標               | 出典           | 欠損率 | Australia and New Zealand | Central and Southern Asia | Eastern and South-Eastern Asia | Europe | Latin America and the Caribbean | Northern Africa and Western Asia | Northern America | Sub-Saharan Africa |
+| ------------------ | -------------- | ------ | ------------------------- | ------------------------- | ------------------------------ | ------ | ------------------------------- | -------------------------------- | ---------------- | ------------------ |
+| bike_protected     | itdp-atlas     | 1%     | 0/4                       | 0/10                      | 0/22                           | 1/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| cloud_cover_annual | era5           | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| culture            | osm            | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| density_weighted   | ghsl-pop       | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| dewpoint_max_month | era5           | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| pm25               | ghsl-ucdb      | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| precip_annual      | era5           | 7%     | 0/4                       | 2/10                      | 0/22                           | 0/23   | 4/16                            | 0/7                              | 0/11             | 1/11               |
+| rapid_transit      | itdp-atlas     | 7%     | 1/4                       | 1/10                      | 1/22                           | 2/23   | 2/16                            | 0/7                              | 0/11             | 0/11               |
+| temp_coldest       | era5           | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| temp_warmest       | era5           | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| tree_share         | esa-worldcover | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| urban_pop          | ghsl-ucdb      | 0%     | 0/4                       | 0/10                      | 0/22                           | 0/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |
+| walk_services      | itdp-atlas     | 1%     | 0/4                       | 0/10                      | 0/22                           | 1/23   | 0/16                            | 0/7                              | 0/11             | 0/11               |

@@ -3335,75 +3335,30 @@
     "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
     "variables": {
       "2m_temperature": {
-        "shape": [
-          4,
-          366,
-          721,
-          1440
-        ],
-        "chunks": [
-          3,
-          3,
-          721,
-          1440
-        ],
+        "shape": [4, 366, 721, 1440],
+        "chunks": [3, 3, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "hour",
-            "dayofyear",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["hour", "dayofyear", "latitude", "longitude"],
           "long_name": "2 metre temperature",
           "short_name": "t2m",
           "units": "K"
         }
       },
       "total_precipitation_24hr": {
-        "shape": [
-          4,
-          366,
-          721,
-          1440
-        ],
-        "chunks": [
-          3,
-          3,
-          721,
-          1440
-        ],
+        "shape": [4, 366, 721, 1440],
+        "chunks": [3, 3, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "hour",
-            "dayofyear",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["hour", "dayofyear", "latitude", "longitude"],
           "long_name": "Total precipitation",
           "short_name": "tp",
           "units": "m"
         }
       },
       "total_cloud_cover": {
-        "shape": [
-          4,
-          366,
-          721,
-          1440
-        ],
-        "chunks": [
-          3,
-          3,
-          721,
-          1440
-        ],
+        "shape": [4, 366, 721, 1440],
+        "chunks": [3, 3, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "hour",
-            "dayofyear",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["hour", "dayofyear", "latitude", "longitude"],
           "long_name": "Total cloud cover",
           "short_name": "tcc",
           "standard_name": "cloud_area_fraction",
@@ -3411,59 +3366,35 @@
         }
       },
       "latitude": {
-        "shape": [
-          721
-        ],
-        "chunks": [
-          721
-        ],
+        "shape": [721],
+        "chunks": [721],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "latitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["latitude"],
           "long_name": "latitude",
           "units": "degrees_north"
         }
       },
       "longitude": {
-        "shape": [
-          1440
-        ],
-        "chunks": [
-          1440
-        ],
+        "shape": [1440],
+        "chunks": [1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["longitude"],
           "long_name": "longitude",
           "units": "degrees_east"
         }
       },
       "hour": {
-        "shape": [
-          4
-        ],
-        "chunks": [
-          4
-        ],
+        "shape": [4],
+        "chunks": [4],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "hour"
-          ]
+          "_ARRAY_DIMENSIONS": ["hour"]
         }
       },
       "dayofyear": {
-        "shape": [
-          366
-        ],
-        "chunks": [
-          366
-        ],
+        "shape": [366],
+        "chunks": [366],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "dayofyear"
-          ]
+          "_ARRAY_DIMENSIONS": ["dayofyear"]
         }
       }
     },
@@ -3482,19 +3413,10 @@
     "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
     "variables": {
       "land_sea_mask": {
-        "shape": [
-          721,
-          1440
-        ],
-        "chunks": [
-          721,
-          1440
-        ],
+        "shape": [721, 1440],
+        "chunks": [721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["latitude", "longitude"],
           "long_name": "Land-sea mask",
           "short_name": "lsm",
           "standard_name": "land_binary_mask",
@@ -3502,19 +3424,10 @@
         }
       },
       "geopotential_at_surface": {
-        "shape": [
-          721,
-          1440
-        ],
-        "chunks": [
-          721,
-          1440
-        ],
+        "shape": [721, 1440],
+        "chunks": [721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["latitude", "longitude"],
           "long_name": "Geopotential",
           "short_name": "z",
           "standard_name": "geopotential",
@@ -3531,66 +3444,30 @@
     "kind": "zarr v2 store (consolidated .zmetadata), read chunk by chunk",
     "variables": {
       "2m_temperature": {
-        "shape": [
-          561264,
-          721,
-          1440
-        ],
-        "chunks": [
-          1,
-          721,
-          1440
-        ],
+        "shape": [561264, 721, 1440],
+        "chunks": [1, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "time",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["time", "latitude", "longitude"],
           "long_name": "2 metre temperature",
           "short_name": "t2m",
           "units": "K"
         }
       },
       "2m_dewpoint_temperature": {
-        "shape": [
-          561264,
-          721,
-          1440
-        ],
-        "chunks": [
-          1,
-          721,
-          1440
-        ],
+        "shape": [561264, 721, 1440],
+        "chunks": [1, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "time",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["time", "latitude", "longitude"],
           "long_name": "2 metre dewpoint temperature",
           "short_name": "d2m",
           "units": "K"
         }
       },
       "total_cloud_cover": {
-        "shape": [
-          561264,
-          721,
-          1440
-        ],
-        "chunks": [
-          1,
-          721,
-          1440
-        ],
+        "shape": [561264, 721, 1440],
+        "chunks": [1, 721, 1440],
         "attrs": {
-          "_ARRAY_DIMENSIONS": [
-            "time",
-            "latitude",
-            "longitude"
-          ],
+          "_ARRAY_DIMENSIONS": ["time", "latitude", "longitude"],
           "long_name": "Total cloud cover",
           "short_name": "tcc",
           "standard_name": "cloud_area_fraction",
@@ -3630,26 +3507,12 @@
   "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/*.parquet": {
     "release": "2026-10-21.0",
     "categories": {
-      "museum": [
-        "museum"
-      ],
-      "performing_arts": [
-        "theatre_venue",
-        "performing_arts_venue",
-        "music_venue"
-      ],
-      "cinema": [
-        "movie_theater"
-      ],
-      "gallery": [
-        "art_gallery"
-      ],
-      "bar_pub": [
-        "bar"
-      ],
-      "nightclub": [
-        "dance_club"
-      ]
+      "museum": ["museum"],
+      "performing_arts": ["theatre_venue", "performing_arts_venue", "music_venue"],
+      "cinema": ["movie_theater"],
+      "gallery": ["art_gallery"],
+      "bar_pub": ["bar"],
+      "nightclub": ["dance_club"]
     },
     "filter": "bbox of each target polygon, then point-in-polygon; confidence >= 0.5; operating_status != permanently_closed",
     "path": ".cache/raw/osm/overture/2026-10-21.0",
