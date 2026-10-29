@@ -15,6 +15,7 @@ import {
 import { explain, rank, stability, type AxisScore, type Preference } from "../scoring/score.ts";
 import { Evidence } from "./Evidence.tsx";
 import { Share } from "./Share.tsx";
+import { flightsUrl } from "../share.ts";
 import { WorldPlot } from "./WorldPlot.tsx";
 
 function Reason({ axis }: { axis: AxisScore }) {
@@ -156,6 +157,15 @@ export function Result({ prefs, onRetry, onAbout }: { prefs: Preference[]; onRet
       </ol>
 
       <Share city={city} score={roundBounded(first.total)} />
+
+      <p className="flights">
+        <a href={flightsUrl(city)} target="_blank" rel="noreferrer noopener">
+          ✈ 魂の故郷へのフライトを探してみる
+        </a>
+        <span className="muted">
+          （Google フライトが開きます。送るのは都市名だけで、提携や旅行のおすすめではありません）
+        </span>
+      </p>
 
       <h2>根拠</h2>
       <p className="muted">数字は{city.nameJa}のこの条件での適合度（0〜100）。重みの大きい順。</p>

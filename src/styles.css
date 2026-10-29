@@ -516,3 +516,13 @@ th {
 .share .note {
   margin-top: 0.25rem;
 }
+
+.flights {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+.flights .muted {
+  display: block;
+  font-size: 0.8rem;
+}

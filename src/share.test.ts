@@ -76,3 +76,13 @@ describe("card freshness", () => {
     expect(stale).toEqual([]);
   });
 });
+
+describe("flightsUrl", () => {
+  it("searches Google Flights by the city name only, without bracketed alternates", async () => {
+    const { flightsUrl } = await import("./share.ts");
+    const u = new URL(flightsUrl({ nameEn: "Minneapolis [Saint Paul]" }));
+    expect(u.origin + u.pathname).toBe("https://www.google.com/travel/flights");
+    expect(u.searchParams.get("q")).toBe("Flights to Minneapolis");
+    expect([...u.searchParams.keys()].toSorted()).toEqual(["hl", "q"]);
+  });
+});

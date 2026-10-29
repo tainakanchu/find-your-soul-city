@@ -44,6 +44,16 @@ export const cardContent = (k: Knowledge, city: City) =>
 export const factsLine = (facts: Fact[]) => facts.map((f) => `${f.short} ${f.value}`).join("・");
 
 export const resultPath = (cityId: string) => `r/${cityId}/`;
+/**
+ * Joke link: a Google Flights search to the city. Carries only the city's English name (bracketed alternate names
+ * removed), never the user's answers or origin. Not an affiliate link and not a travel recommendation.
+ */
+export const flightsUrl = (city: Pick<City, "nameEn">) =>
+  `https://www.google.com/travel/flights?${new URLSearchParams({
+    q: `Flights to ${city.nameEn.replace(/\s*\[.*?\]\s*/g, " ").trim()}`,
+    hl: "ja",
+  }).toString()}`;
+
 export const shareUrl = (cityId: string) => `${SITE.url}${resultPath(cityId)}`;
 export const ogImagePath = (cityId: string) => `og/${cityId}.png`;
 export const ogImageUrl = (cityId: string) => `${SITE.url}${ogImagePath(cityId)}`;
