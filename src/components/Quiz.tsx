@@ -8,6 +8,12 @@ const IMPORTANCE = [
   { label: "重要", value: 2, key: "e" },
 ];
 
+/** Focus the i-th radio of a group (keyboard selection moves focus with it). */
+function focusRadio(name: string, i: number) {
+  const radios = document.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`);
+  radios[i]?.focus();
+}
+
 interface Props {
   answers: Record<string, Answer>;
   onAnswer: (id: string, a: Answer) => void;
@@ -37,12 +43,15 @@ export function Quiz({ answers, onAnswer, onDone, onExit }: Props) {
       if (Number.isInteger(n) && n >= 1 && n <= q.options.length) {
         e.preventDefault();
         set({ choice: q.options[n - 1].value });
+        // Keep focus on the chosen option so the focus ring and the selection never point at different rows.
+        focusRadio(q.id, n - 1);
         return;
       }
       const imp = q.importanceControl && IMPORTANCE.find((o) => o.key === e.key.toLowerCase());
       if (imp) {
         e.preventDefault();
         set({ importance: imp.value });
+        focusRadio(`${q.id}-importance`, IMPORTANCE.indexOf(imp));
         return;
       }
       if (e.key === "Enter" && !target.closest("button, a") && a?.choice !== undefined) {
@@ -70,10 +79,12 @@ export function Quiz({ answers, onAnswer, onDone, onExit }: Props) {
         {q.options.map((o, i) => (
           <label key={o.value} className="option">
             <input type="radio" name={q.id} checked={a?.choice === o.value} onChange={() => set({ choice: o.value })} />
-            <kbd className="key" aria-hidden="true">
-              {i + 1}
-            </kbd>
-            <span>{o.label}</span>
+            <span>
+              <kbd className="key" aria-hidden="true">
+                {i + 1}
+              </kbd>
+              {o.label}
+            </span>
           </label>
         ))}
       </fieldset>
