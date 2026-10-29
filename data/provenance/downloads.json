@@ -4504,6 +4504,26 @@
     "sha256": "411e805c76a1b0b8026bf2017cc86cb5dfd6346bedbb1db21ea70af93f750362",
     "retrieved_at": "2026-10-29T03:23:52Z"
   },
+  "pypi:astral==3.2": {
+    "kind": "python-package",
+    "note": "installed from the uv lock; no network use at run time",
+    "retrieved_at": "2026-10-29T18:41:48Z"
+  },
+  "pypi:timezonefinder-data==3.2026.4": {
+    "kind": "python-package",
+    "note": "installed from the uv lock; no network use at run time",
+    "retrieved_at": "2026-10-29T18:41:48Z"
+  },
+  "pypi:timezonefinder==9.0.0": {
+    "kind": "python-package",
+    "note": "installed from the uv lock; no network use at run time",
+    "retrieved_at": "2026-10-29T18:41:48Z"
+  },
+  "pypi:tzdata==2026.5": {
+    "kind": "python-package",
+    "note": "installed from the uv lock; no network use at run time",
+    "retrieved_at": "2026-10-29T18:41:48Z"
+  },
   "s3://overturemaps-us-west-2/release/2026-10-21.0/theme=places/type=place/*.parquet": {
     "release": "2026-10-21.0",
     "categories": {

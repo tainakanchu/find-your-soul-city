@@ -15,6 +15,9 @@ dependencies = [
   "pycountry>=26.2.16",
   "duckdb>=1.5.6",
   "rdata>=1.1.0",
+  "timezonefinder>=9.0.0",
+  "astral>=3.2",
+  "tzdata>=2026.5",
 ]
 
 [dependency-groups]
