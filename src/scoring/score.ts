@@ -99,8 +99,15 @@ export function referenceScales(k: Knowledge): Scales {
 export function cdf(levels: number[], qs: number[], x: number): number {
   if (x < qs[0]) return 0;
   if (x > qs[qs.length - 1]) return 1;
-  const eq = qs.flatMap((q, i) => (q === x ? [levels[i]] : []));
-  if (eq.length) return (eq[0] + eq[eq.length - 1]) / 2;
+  let first = -1;
+  let last = -1;
+  for (let i = 0; i < qs.length; i++) {
+    if (qs[i] === x) {
+      if (first === -1) first = i;
+      last = i;
+    }
+  }
+  if (first !== -1) return (levels[first] + levels[last]) / 2;
   const i = qs.findIndex((q) => q > x);
   return levels[i - 1] + ((levels[i] - levels[i - 1]) * (x - qs[i - 1])) / (qs[i] - qs[i - 1]);
 }
